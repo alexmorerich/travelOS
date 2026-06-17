@@ -14,6 +14,7 @@ import { isHardBlocked, decide } from "./core_engine/constraint_engine";
 import { runLifecycle } from "./core_engine/lifecycle_engine";
 import { runFinance } from "./core_engine/finance_engine";
 import { runScenarios } from "./simulation_engine/scenario_runner";
+import { buildSchedule, toICS } from "./simulation_engine/monthly_scheduler";
 import { runStrategies } from "./v41/strategy_engine";
 import { renderDashboard } from "./dashboard/visualization_generator";
 import { exportObsidian } from "./dashboard/obsidian_exporter";
@@ -90,6 +91,11 @@ function main(): void {
   const strategies = runStrategies(cities, graph, systemConfig.seed);
   writeJson("strategy_comparison.json", strategies);
 
+  // 5c. Time layer — monthly/quarterly schedule + importable calendar
+  const schedule = buildSchedule(plans, cities);
+  writeJson("schedule.json", schedule);
+  writeFileSync(join(OUT, "schedule.ics"), toICS(schedule), "utf8");
+
   // 6. Dashboard + Obsidian
   const sampleAge = systemConfig.risk_heatmap_ages[Math.floor(systemConfig.risk_heatmap_ages.length / 2)] ?? 65;
   const treiSample = {
@@ -115,8 +121,15 @@ function main(): void {
     const nw = `$${Math.round(s.median_terminal_net_worth / 1000)}k`;
     console.log(`  ${s.label.padEnd(34)} survival ${(s.survival_probability * 100).toFixed(1).padStart(5)}%   net worth ${nw}`);
   }
+  const sched = schedule.find((s) => s.age === 55) ?? schedule[0];
+  if (sched && sched.months.length === 12) {
+    const jan = sched.months[0], jul = sched.months[6];
+    console.log("\n  ── seasonal schedule (age 55 sample) ───────");
+    console.log(`  calendar ${sched.calendar_year}:  Jan → ${jan.name_en} ${jan.temp_c}°C   ·   Jul → ${jul.name_en} ${jul.temp_c}°C`);
+    console.log(`  quarters: ${sched.quarters.map((q) => `Q${q.quarter} ${q.name_en}`).join("  ")}`);
+  }
   console.log("  ────────────────────────────────────────────");
-  console.log(`\n  outputs/  → 8 JSON files, dashboard.html, obsidian/ (${noteCount} notes)`);
+  console.log(`\n  outputs/  → 9 JSON files, schedule.ics, dashboard.html, obsidian/ (${noteCount} notes)`);
   console.log("  open outputs/dashboard.html to explore.\n");
 }
 

@@ -1,0 +1,5264 @@
+[
+  {
+    "age": 50,
+    "calendar_year": 2026,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 7.8,
+        "discomfort": 5.1
+      },
+      {
+        "month": 2,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 9.3,
+        "discomfort": 4
+      },
+      {
+        "month": 3,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 12.7,
+        "discomfort": 1.6
+      },
+      {
+        "month": 4,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 18.7,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 20.6,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.4,
+        "discomfort": 0
+      },
+      {
+        "month": 7,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 27.2,
+        "discomfort": 0.7
+      },
+      {
+        "month": 8,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 26.1,
+        "discomfort": 0
+      },
+      {
+        "month": 9,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 20.3,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 12.3,
+        "discomfort": 1.9
+      },
+      {
+        "month": 11,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 12.7,
+        "discomfort": 1.6
+      },
+      {
+        "month": 12,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 9.3,
+        "discomfort": 4
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 2,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "province": "Zhejiang",
+        "days": 60,
+        "move_in": "2026-01-01",
+        "avg_temp_c": 8.6
+      },
+      {
+        "from_month": 3,
+        "to_month": 4,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "province": "Shanghai",
+        "days": 60,
+        "move_in": "2026-03-01",
+        "avg_temp_c": 15.7
+      },
+      {
+        "from_month": 5,
+        "to_month": 7,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Shaanxi",
+        "days": 90,
+        "move_in": "2026-05-01",
+        "avg_temp_c": 24.4
+      },
+      {
+        "from_month": 8,
+        "to_month": 10,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "province": "Beijing",
+        "days": 90,
+        "move_in": "2026-08-01",
+        "avg_temp_c": 19.6
+      },
+      {
+        "from_month": 11,
+        "to_month": 11,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "province": "Shanghai",
+        "days": 30,
+        "move_in": "2026-11-01",
+        "avg_temp_c": 12.7
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "province": "Zhejiang",
+        "days": 30,
+        "move_in": "2026-12-01",
+        "avg_temp_c": 9.3
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "avg_temp_c": 9.9
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 21.6
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": 24.5
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": 11.4
+      }
+    ]
+  },
+  {
+    "age": 51,
+    "calendar_year": 2027,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 4.2,
+        "discomfort": 7.6
+      },
+      {
+        "month": 2,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 5.8,
+        "discomfort": 6.5
+      },
+      {
+        "month": 3,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 10.3,
+        "discomfort": 3.3
+      },
+      {
+        "month": 4,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 16.8,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 23.4,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 18.7,
+        "discomfort": 0
+      },
+      {
+        "month": 7,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 19.9,
+        "discomfort": 0
+      },
+      {
+        "month": 8,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 18.7,
+        "discomfort": 0
+      },
+      {
+        "month": 9,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 21.7,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 10.8,
+        "discomfort": 3
+      },
+      {
+        "month": 11,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 10.3,
+        "discomfort": 3.3
+      },
+      {
+        "month": 12,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 5.8,
+        "discomfort": 6.5
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 2,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "province": "Sichuan",
+        "days": 60,
+        "move_in": "2027-01-01",
+        "avg_temp_c": 5
+      },
+      {
+        "from_month": 3,
+        "to_month": 5,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "province": "Anhui",
+        "days": 90,
+        "move_in": "2027-03-01",
+        "avg_temp_c": 16.8
+      },
+      {
+        "from_month": 6,
+        "to_month": 8,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "province": "Yunnan",
+        "days": 90,
+        "move_in": "2027-06-01",
+        "avg_temp_c": 19.1
+      },
+      {
+        "from_month": 9,
+        "to_month": 9,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "province": "Sichuan",
+        "days": 30,
+        "move_in": "2027-09-01",
+        "avg_temp_c": 21.7
+      },
+      {
+        "from_month": 10,
+        "to_month": 10,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "province": "Yunnan",
+        "days": 30,
+        "move_in": "2027-10-01",
+        "avg_temp_c": 10.8
+      },
+      {
+        "from_month": 11,
+        "to_month": 11,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "province": "Anhui",
+        "days": 30,
+        "move_in": "2027-11-01",
+        "avg_temp_c": 10.3
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "province": "Sichuan",
+        "days": 30,
+        "move_in": "2027-12-01",
+        "avg_temp_c": 5.8
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "avg_temp_c": 6.8
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "avg_temp_c": 19.6
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "avg_temp_c": 20.1
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "avg_temp_c": 9
+      }
+    ]
+  },
+  {
+    "age": 52,
+    "calendar_year": 2028,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "temp_c": 14.5,
+        "discomfort": 0.4
+      },
+      {
+        "month": 2,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "temp_c": 15.7,
+        "discomfort": 0
+      },
+      {
+        "month": 3,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "temp_c": 18.9,
+        "discomfort": 0
+      },
+      {
+        "month": 4,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "name": "洛阳",
+        "temp_c": 15.5,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "temp_c": 24.2,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "name": "洛阳",
+        "temp_c": 27.2,
+        "discomfort": 0.7
+      },
+      {
+        "month": 7,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "name": "洛阳",
+        "temp_c": 29,
+        "discomfort": 1.8
+      },
+      {
+        "month": 8,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "name": "洛阳",
+        "temp_c": 27.2,
+        "discomfort": 0.7
+      },
+      {
+        "month": 9,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "temp_c": 24.2,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "temp_c": 23.4,
+        "discomfort": 0
+      },
+      {
+        "month": 11,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "temp_c": 11.8,
+        "discomfort": 2.2
+      },
+      {
+        "month": 12,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "temp_c": 7.3,
+        "discomfort": 5.4
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 3,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "province": "Fujian",
+        "days": 90,
+        "move_in": "2028-01-01",
+        "avg_temp_c": 16.4
+      },
+      {
+        "from_month": 4,
+        "to_month": 4,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "name": "洛阳",
+        "province": "Henan",
+        "days": 30,
+        "move_in": "2028-04-01",
+        "avg_temp_c": 15.5
+      },
+      {
+        "from_month": 5,
+        "to_month": 5,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "province": "Jiangsu",
+        "days": 30,
+        "move_in": "2028-05-01",
+        "avg_temp_c": 24.2
+      },
+      {
+        "from_month": 6,
+        "to_month": 8,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "name": "洛阳",
+        "province": "Henan",
+        "days": 90,
+        "move_in": "2028-06-01",
+        "avg_temp_c": 27.8
+      },
+      {
+        "from_month": 9,
+        "to_month": 9,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "province": "Jiangsu",
+        "days": 30,
+        "move_in": "2028-09-01",
+        "avg_temp_c": 24.2
+      },
+      {
+        "from_month": 10,
+        "to_month": 10,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "province": "Fujian",
+        "days": 30,
+        "move_in": "2028-10-01",
+        "avg_temp_c": 23.4
+      },
+      {
+        "from_month": 11,
+        "to_month": 12,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "province": "Jiangsu",
+        "days": 60,
+        "move_in": "2028-11-01",
+        "avg_temp_c": 9.6
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "avg_temp_c": 16.4
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "avg_temp_c": 22.3
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "avg_temp_c": 26.8
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "avg_temp_c": 14.2
+      }
+    ]
+  },
+  {
+    "age": 53,
+    "calendar_year": 2029,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-HB-WUHAN",
+        "name_en": "Wuhan",
+        "name": "武汉",
+        "temp_c": 7.4,
+        "discomfort": 5.3
+      },
+      {
+        "month": 2,
+        "city_id": "CN-HB-WUHAN",
+        "name_en": "Wuhan",
+        "name": "武汉",
+        "temp_c": 9,
+        "discomfort": 4.2
+      },
+      {
+        "month": 3,
+        "city_id": "CN-HB-WUHAN",
+        "name_en": "Wuhan",
+        "name": "武汉",
+        "temp_c": 13.2,
+        "discomfort": 1.2
+      },
+      {
+        "month": 4,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 18.6,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 24.6,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "name": "青岛",
+        "temp_c": 27.5,
+        "discomfort": 0.9
+      },
+      {
+        "month": 7,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "name": "青岛",
+        "temp_c": 29.4,
+        "discomfort": 2
+      },
+      {
+        "month": 8,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "name": "青岛",
+        "temp_c": 27.5,
+        "discomfort": 0.9
+      },
+      {
+        "month": 9,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 24.6,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "name": "青岛",
+        "temp_c": 15.3,
+        "discomfort": 0
+      },
+      {
+        "month": 11,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 12.6,
+        "discomfort": 1.7
+      },
+      {
+        "month": 12,
+        "city_id": "CN-HB-WUHAN",
+        "name_en": "Wuhan",
+        "name": "武汉",
+        "temp_c": 9,
+        "discomfort": 4.2
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 3,
+        "city_id": "CN-HB-WUHAN",
+        "name_en": "Wuhan",
+        "name": "武汉",
+        "province": "Hubei",
+        "days": 90,
+        "move_in": "2029-01-01",
+        "avg_temp_c": 9.9
+      },
+      {
+        "from_month": 4,
+        "to_month": 5,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "province": "Jiangsu",
+        "days": 60,
+        "move_in": "2029-04-01",
+        "avg_temp_c": 21.6
+      },
+      {
+        "from_month": 6,
+        "to_month": 8,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "name": "青岛",
+        "province": "Shandong",
+        "days": 90,
+        "move_in": "2029-06-01",
+        "avg_temp_c": 28.1
+      },
+      {
+        "from_month": 9,
+        "to_month": 9,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "province": "Jiangsu",
+        "days": 30,
+        "move_in": "2029-09-01",
+        "avg_temp_c": 24.6
+      },
+      {
+        "from_month": 10,
+        "to_month": 10,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "name": "青岛",
+        "province": "Shandong",
+        "days": 30,
+        "move_in": "2029-10-01",
+        "avg_temp_c": 15.3
+      },
+      {
+        "from_month": 11,
+        "to_month": 11,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "province": "Jiangsu",
+        "days": 30,
+        "move_in": "2029-11-01",
+        "avg_temp_c": 12.6
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-HB-WUHAN",
+        "name_en": "Wuhan",
+        "name": "武汉",
+        "province": "Hubei",
+        "days": 30,
+        "move_in": "2029-12-01",
+        "avg_temp_c": 9
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-HB-WUHAN",
+        "name_en": "Wuhan",
+        "avg_temp_c": 9.9
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "avg_temp_c": 23.6
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "avg_temp_c": 27.2
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "avg_temp_c": 12.3
+      }
+    ]
+  },
+  {
+    "age": 54,
+    "calendar_year": 2030,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 6.7,
+        "discomfort": 5.8
+      },
+      {
+        "month": 2,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 8.3,
+        "discomfort": 4.7
+      },
+      {
+        "month": 3,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 7.3,
+        "discomfort": 5.4
+      },
+      {
+        "month": 4,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 13.9,
+        "discomfort": 0.8
+      },
+      {
+        "month": 5,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 20.6,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 26.1,
+        "discomfort": 0
+      },
+      {
+        "month": 7,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 27.2,
+        "discomfort": 0.7
+      },
+      {
+        "month": 8,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 26.1,
+        "discomfort": 0
+      },
+      {
+        "month": 9,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 20.3,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 12.3,
+        "discomfort": 1.9
+      },
+      {
+        "month": 11,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 7.3,
+        "discomfort": 5.4
+      },
+      {
+        "month": 12,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 8.3,
+        "discomfort": 4.7
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 2,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "province": "Shanghai",
+        "days": 60,
+        "move_in": "2030-01-01",
+        "avg_temp_c": 7.5
+      },
+      {
+        "from_month": 3,
+        "to_month": 5,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Shaanxi",
+        "days": 90,
+        "move_in": "2030-03-01",
+        "avg_temp_c": 13.9
+      },
+      {
+        "from_month": 6,
+        "to_month": 6,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "province": "Beijing",
+        "days": 30,
+        "move_in": "2030-06-01",
+        "avg_temp_c": 26.1
+      },
+      {
+        "from_month": 7,
+        "to_month": 7,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Shaanxi",
+        "days": 30,
+        "move_in": "2030-07-01",
+        "avg_temp_c": 27.2
+      },
+      {
+        "from_month": 8,
+        "to_month": 10,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "province": "Beijing",
+        "days": 90,
+        "move_in": "2030-08-01",
+        "avg_temp_c": 19.6
+      },
+      {
+        "from_month": 11,
+        "to_month": 11,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Shaanxi",
+        "days": 30,
+        "move_in": "2030-11-01",
+        "avg_temp_c": 7.3
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "province": "Shanghai",
+        "days": 30,
+        "move_in": "2030-12-01",
+        "avg_temp_c": 8.3
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "avg_temp_c": 7.4
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 20.2
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": 24.5
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": 9.3
+      }
+    ]
+  },
+  {
+    "age": 55,
+    "calendar_year": 2031,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 7.8,
+        "discomfort": 5.1
+      },
+      {
+        "month": 2,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 9.3,
+        "discomfort": 4
+      },
+      {
+        "month": 3,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 13.6,
+        "discomfort": 1
+      },
+      {
+        "month": 4,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 16.8,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 23.4,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 26,
+        "discomfort": 0
+      },
+      {
+        "month": 7,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 27.6,
+        "discomfort": 1
+      },
+      {
+        "month": 8,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 26,
+        "discomfort": 0
+      },
+      {
+        "month": 9,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 23.4,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 15.9,
+        "discomfort": 0
+      },
+      {
+        "month": 11,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 10.3,
+        "discomfort": 3.3
+      },
+      {
+        "month": 12,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 9.3,
+        "discomfort": 4
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 3,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "province": "Zhejiang",
+        "days": 90,
+        "move_in": "2031-01-01",
+        "avg_temp_c": 10.2
+      },
+      {
+        "from_month": 4,
+        "to_month": 5,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "province": "Anhui",
+        "days": 60,
+        "move_in": "2031-04-01",
+        "avg_temp_c": 20.1
+      },
+      {
+        "from_month": 6,
+        "to_month": 8,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "province": "Sichuan",
+        "days": 90,
+        "move_in": "2031-06-01",
+        "avg_temp_c": 26.5
+      },
+      {
+        "from_month": 9,
+        "to_month": 9,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "province": "Anhui",
+        "days": 30,
+        "move_in": "2031-09-01",
+        "avg_temp_c": 23.4
+      },
+      {
+        "from_month": 10,
+        "to_month": 10,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "province": "Sichuan",
+        "days": 30,
+        "move_in": "2031-10-01",
+        "avg_temp_c": 15.9
+      },
+      {
+        "from_month": 11,
+        "to_month": 11,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "province": "Anhui",
+        "days": 30,
+        "move_in": "2031-11-01",
+        "avg_temp_c": 10.3
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "province": "Zhejiang",
+        "days": 30,
+        "move_in": "2031-12-01",
+        "avg_temp_c": 9.3
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "avg_temp_c": 10.2
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "avg_temp_c": 22.1
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "avg_temp_c": 25.7
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "avg_temp_c": 11.8
+      }
+    ]
+  },
+  {
+    "age": 56,
+    "calendar_year": 2032,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "temp_c": 14.5,
+        "discomfort": 0.4
+      },
+      {
+        "month": 2,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "temp_c": 15.7,
+        "discomfort": 0
+      },
+      {
+        "month": 3,
+        "city_id": "CN-GX-GUILIN",
+        "name_en": "Guilin",
+        "name": "桂林",
+        "temp_c": 17.3,
+        "discomfort": 0
+      },
+      {
+        "month": 4,
+        "city_id": "CN-GX-GUILIN",
+        "name_en": "Guilin",
+        "name": "桂林",
+        "temp_c": 22,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 15.3,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 18.7,
+        "discomfort": 0
+      },
+      {
+        "month": 7,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 19.9,
+        "discomfort": 0
+      },
+      {
+        "month": 8,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 18.7,
+        "discomfort": 0
+      },
+      {
+        "month": 9,
+        "city_id": "CN-GX-GUILIN",
+        "name_en": "Guilin",
+        "name": "桂林",
+        "temp_c": 26.6,
+        "discomfort": 0.4
+      },
+      {
+        "month": 10,
+        "city_id": "CN-GX-GUILIN",
+        "name_en": "Guilin",
+        "name": "桂林",
+        "temp_c": 22,
+        "discomfort": 0
+      },
+      {
+        "month": 11,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "temp_c": 18.9,
+        "discomfort": 0
+      },
+      {
+        "month": 12,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "temp_c": 15.7,
+        "discomfort": 0
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 2,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2032-01-01",
+        "avg_temp_c": 15.1
+      },
+      {
+        "from_month": 3,
+        "to_month": 4,
+        "city_id": "CN-GX-GUILIN",
+        "name_en": "Guilin",
+        "name": "桂林",
+        "province": "Guangxi",
+        "days": 60,
+        "move_in": "2032-03-01",
+        "avg_temp_c": 19.7
+      },
+      {
+        "from_month": 5,
+        "to_month": 8,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "province": "Yunnan",
+        "days": 120,
+        "move_in": "2032-05-01",
+        "avg_temp_c": 18.2
+      },
+      {
+        "from_month": 9,
+        "to_month": 10,
+        "city_id": "CN-GX-GUILIN",
+        "name_en": "Guilin",
+        "name": "桂林",
+        "province": "Guangxi",
+        "days": 60,
+        "move_in": "2032-09-01",
+        "avg_temp_c": 24.3
+      },
+      {
+        "from_month": 11,
+        "to_month": 12,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2032-11-01",
+        "avg_temp_c": 17.3
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "avg_temp_c": 15.8
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "avg_temp_c": 18.7
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "avg_temp_c": 21.7
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "avg_temp_c": 18.9
+      }
+    ]
+  },
+  {
+    "age": 57,
+    "calendar_year": 2033,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 6.6,
+        "discomfort": 5.9
+      },
+      {
+        "month": 2,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 8.2,
+        "discomfort": 4.7
+      },
+      {
+        "month": 3,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 12.6,
+        "discomfort": 1.7
+      },
+      {
+        "month": 4,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "temp_c": 18,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "temp_c": 24.2,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "name": "青岛",
+        "temp_c": 27.5,
+        "discomfort": 0.9
+      },
+      {
+        "month": 7,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "name": "青岛",
+        "temp_c": 29.4,
+        "discomfort": 2
+      },
+      {
+        "month": 8,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "name": "青岛",
+        "temp_c": 27.5,
+        "discomfort": 0.9
+      },
+      {
+        "month": 9,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "temp_c": 24.2,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "name": "青岛",
+        "temp_c": 15.3,
+        "discomfort": 0
+      },
+      {
+        "month": 11,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "temp_c": 11.8,
+        "discomfort": 2.2
+      },
+      {
+        "month": 12,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 8.2,
+        "discomfort": 4.7
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 3,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "province": "Jiangsu",
+        "days": 90,
+        "move_in": "2033-01-01",
+        "avg_temp_c": 9.1
+      },
+      {
+        "from_month": 4,
+        "to_month": 5,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "province": "Jiangsu",
+        "days": 60,
+        "move_in": "2033-04-01",
+        "avg_temp_c": 21.1
+      },
+      {
+        "from_month": 6,
+        "to_month": 8,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "name": "青岛",
+        "province": "Shandong",
+        "days": 90,
+        "move_in": "2033-06-01",
+        "avg_temp_c": 28.1
+      },
+      {
+        "from_month": 9,
+        "to_month": 9,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "province": "Jiangsu",
+        "days": 30,
+        "move_in": "2033-09-01",
+        "avg_temp_c": 24.2
+      },
+      {
+        "from_month": 10,
+        "to_month": 10,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "name": "青岛",
+        "province": "Shandong",
+        "days": 30,
+        "move_in": "2033-10-01",
+        "avg_temp_c": 15.3
+      },
+      {
+        "from_month": 11,
+        "to_month": 11,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "province": "Jiangsu",
+        "days": 30,
+        "move_in": "2033-11-01",
+        "avg_temp_c": 11.8
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "province": "Jiangsu",
+        "days": 30,
+        "move_in": "2033-12-01",
+        "avg_temp_c": 8.2
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "avg_temp_c": 9.1
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "avg_temp_c": 23.2
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "avg_temp_c": 27
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "avg_temp_c": 11.8
+      }
+    ]
+  },
+  {
+    "age": 58,
+    "calendar_year": 2034,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 6.7,
+        "discomfort": 5.8
+      },
+      {
+        "month": 2,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 8.3,
+        "discomfort": 4.7
+      },
+      {
+        "month": 3,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 12.7,
+        "discomfort": 1.6
+      },
+      {
+        "month": 4,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 13.9,
+        "discomfort": 0.8
+      },
+      {
+        "month": 5,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 20.3,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.4,
+        "discomfort": 0
+      },
+      {
+        "month": 7,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 27.2,
+        "discomfort": 0.7
+      },
+      {
+        "month": 8,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 26.1,
+        "discomfort": 0
+      },
+      {
+        "month": 9,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 20.3,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 12.3,
+        "discomfort": 1.9
+      },
+      {
+        "month": 11,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 7.3,
+        "discomfort": 5.4
+      },
+      {
+        "month": 12,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 8.3,
+        "discomfort": 4.7
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 3,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "province": "Shanghai",
+        "days": 90,
+        "move_in": "2034-01-01",
+        "avg_temp_c": 9.2
+      },
+      {
+        "from_month": 4,
+        "to_month": 4,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Shaanxi",
+        "days": 30,
+        "move_in": "2034-04-01",
+        "avg_temp_c": 13.9
+      },
+      {
+        "from_month": 5,
+        "to_month": 5,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "province": "Beijing",
+        "days": 30,
+        "move_in": "2034-05-01",
+        "avg_temp_c": 20.3
+      },
+      {
+        "from_month": 6,
+        "to_month": 7,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Shaanxi",
+        "days": 60,
+        "move_in": "2034-06-01",
+        "avg_temp_c": 26.3
+      },
+      {
+        "from_month": 8,
+        "to_month": 10,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "province": "Beijing",
+        "days": 90,
+        "move_in": "2034-08-01",
+        "avg_temp_c": 19.6
+      },
+      {
+        "from_month": 11,
+        "to_month": 11,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Shaanxi",
+        "days": 30,
+        "move_in": "2034-11-01",
+        "avg_temp_c": 7.3
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "province": "Shanghai",
+        "days": 30,
+        "move_in": "2034-12-01",
+        "avg_temp_c": 8.3
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "avg_temp_c": 9.2
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 19.9
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": 24.5
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": 9.3
+      }
+    ]
+  },
+  {
+    "age": 59,
+    "calendar_year": 2035,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 7.8,
+        "discomfort": 5.1
+      },
+      {
+        "month": 2,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 9.3,
+        "discomfort": 4
+      },
+      {
+        "month": 3,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 13.6,
+        "discomfort": 1
+      },
+      {
+        "month": 4,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 16.8,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 23.4,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 26,
+        "discomfort": 0
+      },
+      {
+        "month": 7,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 27.6,
+        "discomfort": 1
+      },
+      {
+        "month": 8,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 26,
+        "discomfort": 0
+      },
+      {
+        "month": 9,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 23.4,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 15.9,
+        "discomfort": 0
+      },
+      {
+        "month": 11,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 10.3,
+        "discomfort": 3.3
+      },
+      {
+        "month": 12,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 9.3,
+        "discomfort": 4
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 3,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "province": "Zhejiang",
+        "days": 90,
+        "move_in": "2035-01-01",
+        "avg_temp_c": 10.2
+      },
+      {
+        "from_month": 4,
+        "to_month": 5,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "province": "Anhui",
+        "days": 60,
+        "move_in": "2035-04-01",
+        "avg_temp_c": 20.1
+      },
+      {
+        "from_month": 6,
+        "to_month": 8,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "province": "Sichuan",
+        "days": 90,
+        "move_in": "2035-06-01",
+        "avg_temp_c": 26.5
+      },
+      {
+        "from_month": 9,
+        "to_month": 9,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "province": "Anhui",
+        "days": 30,
+        "move_in": "2035-09-01",
+        "avg_temp_c": 23.4
+      },
+      {
+        "from_month": 10,
+        "to_month": 10,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "province": "Sichuan",
+        "days": 30,
+        "move_in": "2035-10-01",
+        "avg_temp_c": 15.9
+      },
+      {
+        "from_month": 11,
+        "to_month": 11,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "province": "Anhui",
+        "days": 30,
+        "move_in": "2035-11-01",
+        "avg_temp_c": 10.3
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "province": "Zhejiang",
+        "days": 30,
+        "move_in": "2035-12-01",
+        "avg_temp_c": 9.3
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "avg_temp_c": 10.2
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-AH-SUZHOU",
+        "name_en": "Suzhou",
+        "avg_temp_c": 22.1
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "avg_temp_c": 25.7
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "avg_temp_c": 11.8
+      }
+    ]
+  },
+  {
+    "age": 60,
+    "calendar_year": 2036,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "temp_c": 14.5,
+        "discomfort": 0.4
+      },
+      {
+        "month": 2,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "temp_c": 15.7,
+        "discomfort": 0
+      },
+      {
+        "month": 3,
+        "city_id": "CN-GX-GUILIN",
+        "name_en": "Guilin",
+        "name": "桂林",
+        "temp_c": 17.3,
+        "discomfort": 0
+      },
+      {
+        "month": 4,
+        "city_id": "CN-GX-GUILIN",
+        "name_en": "Guilin",
+        "name": "桂林",
+        "temp_c": 22,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "name": "洛阳",
+        "temp_c": 22.2,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "name": "洛阳",
+        "temp_c": 27.2,
+        "discomfort": 0.7
+      },
+      {
+        "month": 7,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "name": "洛阳",
+        "temp_c": 29,
+        "discomfort": 1.8
+      },
+      {
+        "month": 8,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "name": "洛阳",
+        "temp_c": 27.2,
+        "discomfort": 0.7
+      },
+      {
+        "month": 9,
+        "city_id": "CN-GX-GUILIN",
+        "name_en": "Guilin",
+        "name": "桂林",
+        "temp_c": 26.6,
+        "discomfort": 0.4
+      },
+      {
+        "month": 10,
+        "city_id": "CN-GX-GUILIN",
+        "name_en": "Guilin",
+        "name": "桂林",
+        "temp_c": 22,
+        "discomfort": 0
+      },
+      {
+        "month": 11,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "temp_c": 18.9,
+        "discomfort": 0
+      },
+      {
+        "month": 12,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "temp_c": 15.7,
+        "discomfort": 0
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 2,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2036-01-01",
+        "avg_temp_c": 15.1
+      },
+      {
+        "from_month": 3,
+        "to_month": 4,
+        "city_id": "CN-GX-GUILIN",
+        "name_en": "Guilin",
+        "name": "桂林",
+        "province": "Guangxi",
+        "days": 60,
+        "move_in": "2036-03-01",
+        "avg_temp_c": 19.7
+      },
+      {
+        "from_month": 5,
+        "to_month": 8,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "name": "洛阳",
+        "province": "Henan",
+        "days": 120,
+        "move_in": "2036-05-01",
+        "avg_temp_c": 26.4
+      },
+      {
+        "from_month": 9,
+        "to_month": 10,
+        "city_id": "CN-GX-GUILIN",
+        "name_en": "Guilin",
+        "name": "桂林",
+        "province": "Guangxi",
+        "days": 60,
+        "move_in": "2036-09-01",
+        "avg_temp_c": 24.3
+      },
+      {
+        "from_month": 11,
+        "to_month": 12,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2036-11-01",
+        "avg_temp_c": 17.3
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "avg_temp_c": 15.8
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "avg_temp_c": 23.8
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "avg_temp_c": 27.6
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "avg_temp_c": 18.9
+      }
+    ]
+  },
+  {
+    "age": 61,
+    "calendar_year": 2037,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "temp_c": 5.7,
+        "discomfort": 6.5
+      },
+      {
+        "month": 2,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "temp_c": 7.3,
+        "discomfort": 5.4
+      },
+      {
+        "month": 3,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "temp_c": 11.8,
+        "discomfort": 2.2
+      },
+      {
+        "month": 4,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "name": "青岛",
+        "temp_c": 15.3,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "name": "青岛",
+        "temp_c": 22.3,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "name": "青岛",
+        "temp_c": 27.5,
+        "discomfort": 0.9
+      },
+      {
+        "month": 7,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "name": "青岛",
+        "temp_c": 29.4,
+        "discomfort": 2
+      },
+      {
+        "month": 8,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "name": "青岛",
+        "temp_c": 27.5,
+        "discomfort": 0.9
+      },
+      {
+        "month": 9,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "name": "青岛",
+        "temp_c": 22.3,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "temp_c": 18,
+        "discomfort": 0
+      },
+      {
+        "month": 11,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "temp_c": 11.8,
+        "discomfort": 2.2
+      },
+      {
+        "month": 12,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "temp_c": 7.3,
+        "discomfort": 5.4
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 3,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "province": "Jiangsu",
+        "days": 90,
+        "move_in": "2037-01-01",
+        "avg_temp_c": 8.3
+      },
+      {
+        "from_month": 4,
+        "to_month": 9,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "name": "青岛",
+        "province": "Shandong",
+        "days": 180,
+        "move_in": "2037-04-01",
+        "avg_temp_c": 24.1
+      },
+      {
+        "from_month": 10,
+        "to_month": 12,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "province": "Jiangsu",
+        "days": 90,
+        "move_in": "2037-10-01",
+        "avg_temp_c": 12.4
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "avg_temp_c": 8.3
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "avg_temp_c": 21.7
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "avg_temp_c": 26.4
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "avg_temp_c": 12.4
+      }
+    ]
+  },
+  {
+    "age": 62,
+    "calendar_year": 2038,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 0.6,
+        "discomfort": 10.1
+      },
+      {
+        "month": 2,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 2.4,
+        "discomfort": 8.8
+      },
+      {
+        "month": 3,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 7.3,
+        "discomfort": 5.4
+      },
+      {
+        "month": 4,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 13.9,
+        "discomfort": 0.8
+      },
+      {
+        "month": 5,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 20.3,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 26.1,
+        "discomfort": 0
+      },
+      {
+        "month": 7,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 28.2,
+        "discomfort": 1.3
+      },
+      {
+        "month": 8,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 26.1,
+        "discomfort": 0
+      },
+      {
+        "month": 9,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 20.3,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 12.3,
+        "discomfort": 1.9
+      },
+      {
+        "month": 11,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 7.3,
+        "discomfort": 5.4
+      },
+      {
+        "month": 12,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 2.4,
+        "discomfort": 8.8
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 4,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Shaanxi",
+        "days": 120,
+        "move_in": "2038-01-01",
+        "avg_temp_c": 6.1
+      },
+      {
+        "from_month": 5,
+        "to_month": 10,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "province": "Beijing",
+        "days": 180,
+        "move_in": "2038-05-01",
+        "avg_temp_c": 22.2
+      },
+      {
+        "from_month": 11,
+        "to_month": 12,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Shaanxi",
+        "days": 60,
+        "move_in": "2038-11-01",
+        "avg_temp_c": 4.9
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 3.4
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": 20.1
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": 24.9
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 7.3
+      }
+    ]
+  },
+  {
+    "age": 63,
+    "calendar_year": 2039,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 7.8,
+        "discomfort": 5.1
+      },
+      {
+        "month": 2,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 9.3,
+        "discomfort": 4
+      },
+      {
+        "month": 3,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 13.6,
+        "discomfort": 1
+      },
+      {
+        "month": 4,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 18.7,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 24.6,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 29,
+        "discomfort": 1.8
+      },
+      {
+        "month": 7,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 30.6,
+        "discomfort": 2.8
+      },
+      {
+        "month": 8,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 29,
+        "discomfort": 1.8
+      },
+      {
+        "month": 9,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 24.6,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 19.3,
+        "discomfort": 0
+      },
+      {
+        "month": 11,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 13.6,
+        "discomfort": 1
+      },
+      {
+        "month": 12,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 9.3,
+        "discomfort": 4
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 3,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "province": "Zhejiang",
+        "days": 90,
+        "move_in": "2039-01-01",
+        "avg_temp_c": 10.2
+      },
+      {
+        "from_month": 4,
+        "to_month": 9,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "province": "Shanghai",
+        "days": 180,
+        "move_in": "2039-04-01",
+        "avg_temp_c": 26.1
+      },
+      {
+        "from_month": 10,
+        "to_month": 12,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "province": "Zhejiang",
+        "days": 90,
+        "move_in": "2039-10-01",
+        "avg_temp_c": 14.1
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "avg_temp_c": 10.2
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "avg_temp_c": 24.1
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "avg_temp_c": 28.1
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "avg_temp_c": 14.1
+      }
+    ]
+  },
+  {
+    "age": 64,
+    "calendar_year": 2040,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 6.6,
+        "discomfort": 5.9
+      },
+      {
+        "month": 2,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 8.2,
+        "discomfort": 4.7
+      },
+      {
+        "month": 3,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 12.6,
+        "discomfort": 1.7
+      },
+      {
+        "month": 4,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 18.6,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "name": "洛阳",
+        "temp_c": 22.2,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "name": "洛阳",
+        "temp_c": 27.2,
+        "discomfort": 0.7
+      },
+      {
+        "month": 7,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "name": "洛阳",
+        "temp_c": 29,
+        "discomfort": 1.8
+      },
+      {
+        "month": 8,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "name": "洛阳",
+        "temp_c": 27.2,
+        "discomfort": 0.7
+      },
+      {
+        "month": 9,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "name": "洛阳",
+        "temp_c": 22.2,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "name": "洛阳",
+        "temp_c": 15.5,
+        "discomfort": 0
+      },
+      {
+        "month": 11,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 12.6,
+        "discomfort": 1.7
+      },
+      {
+        "month": 12,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "temp_c": 8.2,
+        "discomfort": 4.7
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 4,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "province": "Jiangsu",
+        "days": 120,
+        "move_in": "2040-01-01",
+        "avg_temp_c": 11.5
+      },
+      {
+        "from_month": 5,
+        "to_month": 10,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "name": "洛阳",
+        "province": "Henan",
+        "days": 180,
+        "move_in": "2040-05-01",
+        "avg_temp_c": 23.9
+      },
+      {
+        "from_month": 11,
+        "to_month": 12,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "name": "苏州",
+        "province": "Jiangsu",
+        "days": 60,
+        "move_in": "2040-11-01",
+        "avg_temp_c": 10.4
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "avg_temp_c": 9.1
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "avg_temp_c": 22.7
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "avg_temp_c": 26.1
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "avg_temp_c": 12.1
+      }
+    ]
+  },
+  {
+    "age": 65,
+    "calendar_year": 2041,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 4.2,
+        "discomfort": 7.6
+      },
+      {
+        "month": 2,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 5.8,
+        "discomfort": 6.5
+      },
+      {
+        "month": 3,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 10,
+        "discomfort": 3.5
+      },
+      {
+        "month": 4,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 15.9,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 15.3,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 18.7,
+        "discomfort": 0
+      },
+      {
+        "month": 7,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 19.9,
+        "discomfort": 0
+      },
+      {
+        "month": 8,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 18.7,
+        "discomfort": 0
+      },
+      {
+        "month": 9,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 15.3,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 10.8,
+        "discomfort": 3
+      },
+      {
+        "month": 11,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 10,
+        "discomfort": 3.5
+      },
+      {
+        "month": 12,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 5.8,
+        "discomfort": 6.5
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 4,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "province": "Sichuan",
+        "days": 120,
+        "move_in": "2041-01-01",
+        "avg_temp_c": 9
+      },
+      {
+        "from_month": 5,
+        "to_month": 10,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "province": "Yunnan",
+        "days": 180,
+        "move_in": "2041-05-01",
+        "avg_temp_c": 16.5
+      },
+      {
+        "from_month": 11,
+        "to_month": 12,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "province": "Sichuan",
+        "days": 60,
+        "move_in": "2041-11-01",
+        "avg_temp_c": 7.9
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "avg_temp_c": 6.7
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "avg_temp_c": 16.6
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "avg_temp_c": 18
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "avg_temp_c": 8.9
+      }
+    ]
+  },
+  {
+    "age": 66,
+    "calendar_year": 2042,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 0.6,
+        "discomfort": 10.1
+      },
+      {
+        "month": 2,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 2.4,
+        "discomfort": 8.8
+      },
+      {
+        "month": 3,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 7.3,
+        "discomfort": 5.4
+      },
+      {
+        "month": 4,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 13.9,
+        "discomfort": 0.8
+      },
+      {
+        "month": 5,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 20.3,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 26.1,
+        "discomfort": 0
+      },
+      {
+        "month": 7,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 28.2,
+        "discomfort": 1.3
+      },
+      {
+        "month": 8,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 26.1,
+        "discomfort": 0
+      },
+      {
+        "month": 9,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 20.3,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 12.3,
+        "discomfort": 1.9
+      },
+      {
+        "month": 11,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 7.3,
+        "discomfort": 5.4
+      },
+      {
+        "month": 12,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 2.4,
+        "discomfort": 8.8
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 4,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Shaanxi",
+        "days": 120,
+        "move_in": "2042-01-01",
+        "avg_temp_c": 6.1
+      },
+      {
+        "from_month": 5,
+        "to_month": 10,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "province": "Beijing",
+        "days": 180,
+        "move_in": "2042-05-01",
+        "avg_temp_c": 22.2
+      },
+      {
+        "from_month": 11,
+        "to_month": 12,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Shaanxi",
+        "days": 60,
+        "move_in": "2042-11-01",
+        "avg_temp_c": 4.9
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 3.4
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": 20.1
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": 24.9
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 7.3
+      }
+    ]
+  },
+  {
+    "age": 67,
+    "calendar_year": 2043,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 7.8,
+        "discomfort": 5.1
+      },
+      {
+        "month": 2,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 9.3,
+        "discomfort": 4
+      },
+      {
+        "month": 3,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 13.6,
+        "discomfort": 1
+      },
+      {
+        "month": 4,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 18.7,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 24.6,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 29,
+        "discomfort": 1.8
+      },
+      {
+        "month": 7,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 30.6,
+        "discomfort": 2.8
+      },
+      {
+        "month": 8,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 29,
+        "discomfort": 1.8
+      },
+      {
+        "month": 9,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 24.6,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 19.3,
+        "discomfort": 0
+      },
+      {
+        "month": 11,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 13.6,
+        "discomfort": 1
+      },
+      {
+        "month": 12,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 9.3,
+        "discomfort": 4
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 3,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "province": "Zhejiang",
+        "days": 90,
+        "move_in": "2043-01-01",
+        "avg_temp_c": 10.2
+      },
+      {
+        "from_month": 4,
+        "to_month": 9,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "province": "Shanghai",
+        "days": 180,
+        "move_in": "2043-04-01",
+        "avg_temp_c": 26.1
+      },
+      {
+        "from_month": 10,
+        "to_month": 12,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "province": "Zhejiang",
+        "days": 90,
+        "move_in": "2043-10-01",
+        "avg_temp_c": 14.1
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "avg_temp_c": 10.2
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "avg_temp_c": 24.1
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "avg_temp_c": 28.1
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "avg_temp_c": 14.1
+      }
+    ]
+  },
+  {
+    "age": 68,
+    "calendar_year": 2044,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-GD-SHENZHEN",
+        "name_en": "Shenzhen",
+        "name": "深圳",
+        "temp_c": 16.7,
+        "discomfort": 0
+      },
+      {
+        "month": 2,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "temp_c": 15.7,
+        "discomfort": 0
+      },
+      {
+        "month": 3,
+        "city_id": "CN-GD-SHENZHEN",
+        "name_en": "Shenzhen",
+        "name": "深圳",
+        "temp_c": 20.8,
+        "discomfort": 0
+      },
+      {
+        "month": 4,
+        "city_id": "CN-GD-SHENZHEN",
+        "name_en": "Shenzhen",
+        "name": "深圳",
+        "temp_c": 24.8,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "temp_c": 27.8,
+        "discomfort": 1.1
+      },
+      {
+        "month": 6,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "temp_c": 31.1,
+        "discomfort": 3.1
+      },
+      {
+        "month": 7,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "temp_c": 32.3,
+        "discomfort": 3.8
+      },
+      {
+        "month": 8,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "temp_c": 31.1,
+        "discomfort": 3.1
+      },
+      {
+        "month": 9,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "temp_c": 27.8,
+        "discomfort": 1.1
+      },
+      {
+        "month": 10,
+        "city_id": "CN-GD-SHENZHEN",
+        "name_en": "Shenzhen",
+        "name": "深圳",
+        "temp_c": 24.8,
+        "discomfort": 0
+      },
+      {
+        "month": 11,
+        "city_id": "CN-GD-SHENZHEN",
+        "name_en": "Shenzhen",
+        "name": "深圳",
+        "temp_c": 20.8,
+        "discomfort": 0
+      },
+      {
+        "month": 12,
+        "city_id": "CN-GD-SHENZHEN",
+        "name_en": "Shenzhen",
+        "name": "深圳",
+        "temp_c": 17.8,
+        "discomfort": 0
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 1,
+        "city_id": "CN-GD-SHENZHEN",
+        "name_en": "Shenzhen",
+        "name": "深圳",
+        "province": "Guangdong",
+        "days": 30,
+        "move_in": "2044-01-01",
+        "avg_temp_c": 16.7
+      },
+      {
+        "from_month": 2,
+        "to_month": 2,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "province": "Fujian",
+        "days": 30,
+        "move_in": "2044-02-01",
+        "avg_temp_c": 15.7
+      },
+      {
+        "from_month": 3,
+        "to_month": 4,
+        "city_id": "CN-GD-SHENZHEN",
+        "name_en": "Shenzhen",
+        "name": "深圳",
+        "province": "Guangdong",
+        "days": 60,
+        "move_in": "2044-03-01",
+        "avg_temp_c": 22.8
+      },
+      {
+        "from_month": 5,
+        "to_month": 9,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "province": "Fujian",
+        "days": 150,
+        "move_in": "2044-05-01",
+        "avg_temp_c": 30
+      },
+      {
+        "from_month": 10,
+        "to_month": 12,
+        "city_id": "CN-GD-SHENZHEN",
+        "name_en": "Shenzhen",
+        "name": "深圳",
+        "province": "Guangdong",
+        "days": 90,
+        "move_in": "2044-10-01",
+        "avg_temp_c": 21.1
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-GD-SHENZHEN",
+        "name_en": "Shenzhen",
+        "avg_temp_c": 17.7
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "avg_temp_c": 27.9
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "avg_temp_c": 30.4
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-GD-SHENZHEN",
+        "name_en": "Shenzhen",
+        "avg_temp_c": 21.1
+      }
+    ]
+  },
+  {
+    "age": 69,
+    "calendar_year": 2045,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 4.2,
+        "discomfort": 7.6
+      },
+      {
+        "month": 2,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 5.8,
+        "discomfort": 6.5
+      },
+      {
+        "month": 3,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 10,
+        "discomfort": 3.5
+      },
+      {
+        "month": 4,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 15.9,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 15.3,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 18.7,
+        "discomfort": 0
+      },
+      {
+        "month": 7,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 19.9,
+        "discomfort": 0
+      },
+      {
+        "month": 8,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 18.7,
+        "discomfort": 0
+      },
+      {
+        "month": 9,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 15.3,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 10.8,
+        "discomfort": 3
+      },
+      {
+        "month": 11,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 10,
+        "discomfort": 3.5
+      },
+      {
+        "month": 12,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "temp_c": 5.8,
+        "discomfort": 6.5
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 4,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "province": "Sichuan",
+        "days": 120,
+        "move_in": "2045-01-01",
+        "avg_temp_c": 9
+      },
+      {
+        "from_month": 5,
+        "to_month": 10,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "province": "Yunnan",
+        "days": 180,
+        "move_in": "2045-05-01",
+        "avg_temp_c": 16.5
+      },
+      {
+        "from_month": 11,
+        "to_month": 12,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "province": "Sichuan",
+        "days": 60,
+        "move_in": "2045-11-01",
+        "avg_temp_c": 7.9
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "avg_temp_c": 6.7
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "avg_temp_c": 16.6
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "avg_temp_c": 18
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "avg_temp_c": 8.9
+      }
+    ]
+  },
+  {
+    "age": 70,
+    "calendar_year": 2046,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 0.6,
+        "discomfort": 10.1
+      },
+      {
+        "month": 2,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 2.4,
+        "discomfort": 8.8
+      },
+      {
+        "month": 3,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 7.3,
+        "discomfort": 5.4
+      },
+      {
+        "month": 4,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 13.9,
+        "discomfort": 0.8
+      },
+      {
+        "month": 5,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 20.6,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.4,
+        "discomfort": 0
+      },
+      {
+        "month": 7,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 27.2,
+        "discomfort": 0.7
+      },
+      {
+        "month": 8,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.4,
+        "discomfort": 0
+      },
+      {
+        "month": 9,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 20.6,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 13.9,
+        "discomfort": 0.8
+      },
+      {
+        "month": 11,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 7.3,
+        "discomfort": 5.4
+      },
+      {
+        "month": 12,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 2.4,
+        "discomfort": 8.8
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 12,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Shaanxi",
+        "days": 360,
+        "move_in": "2046-01-01",
+        "avg_temp_c": 13.9
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 3.4
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 20
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 24.4
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 7.9
+      }
+    ]
+  },
+  {
+    "age": 71,
+    "calendar_year": 2047,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": -3.5,
+        "discomfort": 13
+      },
+      {
+        "month": 2,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": -1.4,
+        "discomfort": 11.5
+      },
+      {
+        "month": 3,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 4.4,
+        "discomfort": 7.4
+      },
+      {
+        "month": 4,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 12.3,
+        "discomfort": 1.9
+      },
+      {
+        "month": 5,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 20.3,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 26.1,
+        "discomfort": 0
+      },
+      {
+        "month": 7,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 28.2,
+        "discomfort": 1.3
+      },
+      {
+        "month": 8,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 26.1,
+        "discomfort": 0
+      },
+      {
+        "month": 9,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 20.3,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 12.3,
+        "discomfort": 1.9
+      },
+      {
+        "month": 11,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 4.4,
+        "discomfort": 7.4
+      },
+      {
+        "month": 12,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": -1.4,
+        "discomfort": 11.5
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 12,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "province": "Beijing",
+        "days": 360,
+        "move_in": "2047-01-01",
+        "avg_temp_c": 12.3
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": -0.2
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": 19.6
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": 24.9
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": 5.1
+      }
+    ]
+  },
+  {
+    "age": 72,
+    "calendar_year": 2048,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 6.7,
+        "discomfort": 5.8
+      },
+      {
+        "month": 2,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 8.3,
+        "discomfort": 4.7
+      },
+      {
+        "month": 3,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 12.7,
+        "discomfort": 1.6
+      },
+      {
+        "month": 4,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 18.7,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 24.6,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 29,
+        "discomfort": 1.8
+      },
+      {
+        "month": 7,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 30.6,
+        "discomfort": 2.8
+      },
+      {
+        "month": 8,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 29,
+        "discomfort": 1.8
+      },
+      {
+        "month": 9,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 24.6,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 18.7,
+        "discomfort": 0
+      },
+      {
+        "month": 11,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 12.7,
+        "discomfort": 1.6
+      },
+      {
+        "month": 12,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 8.3,
+        "discomfort": 4.7
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 12,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "province": "Shanghai",
+        "days": 360,
+        "move_in": "2048-01-01",
+        "avg_temp_c": 18.7
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "avg_temp_c": 9.2
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "avg_temp_c": 24.1
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "avg_temp_c": 28.1
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "avg_temp_c": 13.2
+      }
+    ]
+  },
+  {
+    "age": 73,
+    "calendar_year": 2049,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 7.8,
+        "discomfort": 5.1
+      },
+      {
+        "month": 2,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 9.3,
+        "discomfort": 4
+      },
+      {
+        "month": 3,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 13.6,
+        "discomfort": 1
+      },
+      {
+        "month": 4,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 19.3,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 25.1,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 29.3,
+        "discomfort": 2
+      },
+      {
+        "month": 7,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 30.8,
+        "discomfort": 2.9
+      },
+      {
+        "month": 8,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 29.3,
+        "discomfort": 2
+      },
+      {
+        "month": 9,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 25.1,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 19.3,
+        "discomfort": 0
+      },
+      {
+        "month": 11,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 13.6,
+        "discomfort": 1
+      },
+      {
+        "month": 12,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 9.3,
+        "discomfort": 4
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 12,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "province": "Zhejiang",
+        "days": 360,
+        "move_in": "2049-01-01",
+        "avg_temp_c": 19.3
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "avg_temp_c": 10.2
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "avg_temp_c": 24.6
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "avg_temp_c": 28.4
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "avg_temp_c": 14.1
+      }
+    ]
+  },
+  {
+    "age": 74,
+    "calendar_year": 2050,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 0.6,
+        "discomfort": 10.1
+      },
+      {
+        "month": 2,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 2.4,
+        "discomfort": 8.8
+      },
+      {
+        "month": 3,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 7.3,
+        "discomfort": 5.4
+      },
+      {
+        "month": 4,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 13.9,
+        "discomfort": 0.8
+      },
+      {
+        "month": 5,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 20.6,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.4,
+        "discomfort": 0
+      },
+      {
+        "month": 7,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 27.2,
+        "discomfort": 0.7
+      },
+      {
+        "month": 8,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.4,
+        "discomfort": 0
+      },
+      {
+        "month": 9,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 20.6,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 13.9,
+        "discomfort": 0.8
+      },
+      {
+        "month": 11,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 7.3,
+        "discomfort": 5.4
+      },
+      {
+        "month": 12,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 2.4,
+        "discomfort": 8.8
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 12,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Shaanxi",
+        "days": 360,
+        "move_in": "2050-01-01",
+        "avg_temp_c": 13.9
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 3.4
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 20
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 24.4
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 7.9
+      }
+    ]
+  },
+  {
+    "age": 75,
+    "calendar_year": 2051,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": -3.5,
+        "discomfort": 13
+      },
+      {
+        "month": 2,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": -1.4,
+        "discomfort": 11.5
+      },
+      {
+        "month": 3,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 4.4,
+        "discomfort": 7.4
+      },
+      {
+        "month": 4,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 12.3,
+        "discomfort": 1.9
+      },
+      {
+        "month": 5,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 20.3,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 26.1,
+        "discomfort": 0
+      },
+      {
+        "month": 7,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 28.2,
+        "discomfort": 1.3
+      },
+      {
+        "month": 8,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 26.1,
+        "discomfort": 0
+      },
+      {
+        "month": 9,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 20.3,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 12.3,
+        "discomfort": 1.9
+      },
+      {
+        "month": 11,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 4.4,
+        "discomfort": 7.4
+      },
+      {
+        "month": 12,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": -1.4,
+        "discomfort": 11.5
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 12,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "province": "Beijing",
+        "days": 360,
+        "move_in": "2051-01-01",
+        "avg_temp_c": 12.3
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": -0.2
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": 19.6
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": 24.9
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": 5.1
+      }
+    ]
+  },
+  {
+    "age": 76,
+    "calendar_year": 2052,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 6.7,
+        "discomfort": 5.8
+      },
+      {
+        "month": 2,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 8.3,
+        "discomfort": 4.7
+      },
+      {
+        "month": 3,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 12.7,
+        "discomfort": 1.6
+      },
+      {
+        "month": 4,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 18.7,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 24.6,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 29,
+        "discomfort": 1.8
+      },
+      {
+        "month": 7,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 30.6,
+        "discomfort": 2.8
+      },
+      {
+        "month": 8,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 29,
+        "discomfort": 1.8
+      },
+      {
+        "month": 9,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 24.6,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 18.7,
+        "discomfort": 0
+      },
+      {
+        "month": 11,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 12.7,
+        "discomfort": 1.6
+      },
+      {
+        "month": 12,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 8.3,
+        "discomfort": 4.7
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 12,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "province": "Shanghai",
+        "days": 360,
+        "move_in": "2052-01-01",
+        "avg_temp_c": 18.7
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "avg_temp_c": 9.2
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "avg_temp_c": 24.1
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "avg_temp_c": 28.1
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "avg_temp_c": 13.2
+      }
+    ]
+  },
+  {
+    "age": 77,
+    "calendar_year": 2053,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 7.8,
+        "discomfort": 5.1
+      },
+      {
+        "month": 2,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 9.3,
+        "discomfort": 4
+      },
+      {
+        "month": 3,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 13.6,
+        "discomfort": 1
+      },
+      {
+        "month": 4,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 19.3,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 25.1,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 29.3,
+        "discomfort": 2
+      },
+      {
+        "month": 7,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 30.8,
+        "discomfort": 2.9
+      },
+      {
+        "month": 8,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 29.3,
+        "discomfort": 2
+      },
+      {
+        "month": 9,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 25.1,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 19.3,
+        "discomfort": 0
+      },
+      {
+        "month": 11,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 13.6,
+        "discomfort": 1
+      },
+      {
+        "month": 12,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "temp_c": 9.3,
+        "discomfort": 4
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 12,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "province": "Zhejiang",
+        "days": 360,
+        "move_in": "2053-01-01",
+        "avg_temp_c": 19.3
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "avg_temp_c": 10.2
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "avg_temp_c": 24.6
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "avg_temp_c": 28.4
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "avg_temp_c": 14.1
+      }
+    ]
+  },
+  {
+    "age": 78,
+    "calendar_year": 2054,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 0.6,
+        "discomfort": 10.1
+      },
+      {
+        "month": 2,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 2.4,
+        "discomfort": 8.8
+      },
+      {
+        "month": 3,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 7.3,
+        "discomfort": 5.4
+      },
+      {
+        "month": 4,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 13.9,
+        "discomfort": 0.8
+      },
+      {
+        "month": 5,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 20.6,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.4,
+        "discomfort": 0
+      },
+      {
+        "month": 7,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 27.2,
+        "discomfort": 0.7
+      },
+      {
+        "month": 8,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.4,
+        "discomfort": 0
+      },
+      {
+        "month": 9,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 20.6,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 13.9,
+        "discomfort": 0.8
+      },
+      {
+        "month": 11,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 7.3,
+        "discomfort": 5.4
+      },
+      {
+        "month": 12,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 2.4,
+        "discomfort": 8.8
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 12,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Shaanxi",
+        "days": 360,
+        "move_in": "2054-01-01",
+        "avg_temp_c": 13.9
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 3.4
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 20
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 24.4
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 7.9
+      }
+    ]
+  },
+  {
+    "age": 79,
+    "calendar_year": 2055,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": -3.5,
+        "discomfort": 13
+      },
+      {
+        "month": 2,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": -1.4,
+        "discomfort": 11.5
+      },
+      {
+        "month": 3,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 4.4,
+        "discomfort": 7.4
+      },
+      {
+        "month": 4,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 12.3,
+        "discomfort": 1.9
+      },
+      {
+        "month": 5,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 20.3,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 26.1,
+        "discomfort": 0
+      },
+      {
+        "month": 7,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 28.2,
+        "discomfort": 1.3
+      },
+      {
+        "month": 8,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 26.1,
+        "discomfort": 0
+      },
+      {
+        "month": 9,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 20.3,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 12.3,
+        "discomfort": 1.9
+      },
+      {
+        "month": 11,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": 4.4,
+        "discomfort": 7.4
+      },
+      {
+        "month": 12,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "temp_c": -1.4,
+        "discomfort": 11.5
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 12,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "name": "北京",
+        "province": "Beijing",
+        "days": 360,
+        "move_in": "2055-01-01",
+        "avg_temp_c": 12.3
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": -0.2
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": 19.6
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": 24.9
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "avg_temp_c": 5.1
+      }
+    ]
+  },
+  {
+    "age": 80,
+    "calendar_year": 2056,
+    "months": [
+      {
+        "month": 1,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 6.7,
+        "discomfort": 5.8
+      },
+      {
+        "month": 2,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 8.3,
+        "discomfort": 4.7
+      },
+      {
+        "month": 3,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 12.7,
+        "discomfort": 1.6
+      },
+      {
+        "month": 4,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 18.7,
+        "discomfort": 0
+      },
+      {
+        "month": 5,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 24.6,
+        "discomfort": 0
+      },
+      {
+        "month": 6,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 29,
+        "discomfort": 1.8
+      },
+      {
+        "month": 7,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 30.6,
+        "discomfort": 2.8
+      },
+      {
+        "month": 8,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 29,
+        "discomfort": 1.8
+      },
+      {
+        "month": 9,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 24.6,
+        "discomfort": 0
+      },
+      {
+        "month": 10,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 18.7,
+        "discomfort": 0
+      },
+      {
+        "month": 11,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 12.7,
+        "discomfort": 1.6
+      },
+      {
+        "month": 12,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "temp_c": 8.3,
+        "discomfort": 4.7
+      }
+    ],
+    "blocks": [
+      {
+        "from_month": 1,
+        "to_month": 12,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "province": "Shanghai",
+        "days": 360,
+        "move_in": "2056-01-01",
+        "avg_temp_c": 18.7
+      }
+    ],
+    "quarters": [
+      {
+        "quarter": 1,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "avg_temp_c": 9.2
+      },
+      {
+        "quarter": 2,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "avg_temp_c": 24.1
+      },
+      {
+        "quarter": 3,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "avg_temp_c": 28.1
+      },
+      {
+        "quarter": 4,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "avg_temp_c": 13.2
+      }
+    ]
+  }
+]

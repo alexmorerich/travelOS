@@ -2,6 +2,7 @@
   "seed": 12345,
   "age_start": 50,
   "age_end": 80,
+  "base_calendar_year": 2026,
   "base_city": "CN-GD-SHENZHEN",
   "radius_km": 1500,
   "max_cities_per_year": 4,

@@ -86,6 +86,44 @@ export interface RegionPhase {
   annual_cost_usd: number;
 }
 
+// ---- monthly / quarterly schedule (time layer) ---------------------------
+
+export interface ScheduleMonth {
+  month: number;          // 1–12
+  city_id: string;
+  name_en: string;
+  name: string;
+  temp_c: number;         // estimated mean temp that month
+  discomfort: number;
+}
+
+export interface ScheduleBlock {
+  from_month: number;
+  to_month: number;
+  city_id: string;
+  name_en: string;
+  name: string;
+  province: string;
+  days: number;
+  move_in: string;        // YYYY-MM-DD
+  avg_temp_c: number;
+}
+
+export interface ScheduleQuarter {
+  quarter: number;        // 1–4
+  city_id: string;
+  name_en: string;
+  avg_temp_c: number;
+}
+
+export interface ScheduleYear {
+  age: number;
+  calendar_year: number;
+  months: ScheduleMonth[];
+  blocks: ScheduleBlock[];
+  quarters: ScheduleQuarter[];
+}
+
 export interface TrajectoryPoint {
   age: number;
   p10: number;
@@ -163,6 +201,7 @@ export interface SystemConfig {
   seed: number;
   age_start: number;
   age_end: number;
+  base_calendar_year: number;
   base_city: string;
   radius_km: number;
   max_cities_per_year: number;
