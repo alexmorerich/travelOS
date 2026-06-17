@@ -17,6 +17,7 @@ import { runScenarios } from "./simulation_engine/scenario_runner";
 import { buildSchedule, toICS } from "./simulation_engine/monthly_scheduler";
 import { runStrategies } from "./v41/strategy_engine";
 import { renderDashboard } from "./dashboard/visualization_generator";
+import { renderTimeline } from "./dashboard/timeline_generator";
 import { exportObsidian } from "./dashboard/obsidian_exporter";
 import { percentile } from "./lib/geo";
 import type { ProcessedCity, Graph } from "./types";
@@ -103,6 +104,7 @@ function main(): void {
     values: riskAtAge(cities, sampleAge).filter((c) => c.decision !== "BLOCKED").map((c) => ({ name_en: c.name_en, TREI: c.TREI })),
   };
   writeFileSync(join(OUT, "dashboard.html"), renderDashboard({ plans, finance, treiSample, validation, scenarios, strategies, schedule, seed: systemConfig.seed }), "utf8");
+  writeFileSync(join(OUT, "timeline.html"), renderTimeline({ schedule, cities, finance, seed: systemConfig.seed }), "utf8");
   const noteCount = exportObsidian({ plans, phases, finance, schedule, seed: systemConfig.seed }, OUT);
 
   // Summary — the numbers the whole system exists to produce.
@@ -129,8 +131,9 @@ function main(): void {
     console.log(`  quarters: ${sched.quarters.map((q) => `Q${q.quarter} ${q.name_en}`).join("  ")}`);
   }
   console.log("  ────────────────────────────────────────────");
-  console.log(`\n  outputs/  → 9 JSON files, schedule.ics, dashboard.html, obsidian/ (${noteCount} notes)`);
-  console.log("  open outputs/dashboard.html to explore.\n");
+  console.log(`\n  outputs/  → 9 JSON files, schedule.ics, dashboard.html, timeline.html, obsidian/ (${noteCount} notes)`);
+  console.log("  open outputs/timeline.html  → interactive map: scrub the route, see city + cost over 30 years");
+  console.log("  open outputs/dashboard.html → comparisons, survival curve, calendar.\n");
 }
 
 main();

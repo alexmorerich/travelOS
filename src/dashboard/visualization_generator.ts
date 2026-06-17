@@ -178,7 +178,8 @@ export function renderDashboard(d: DashboardInput): string {
 </style></head>
 <body><div class="wrap">
   <h1>🌍 Travel Life OS v4.0 — Life Trajectory Dashboard</h1>
-  <p class="sub">Deterministic run · seed ${d.seed} · ${d.plans.length} years (age ${d.plans[0]?.age}–${d.plans[d.plans.length - 1]?.age}) · ${d.finance.n_paths.toLocaleString()} Monte Carlo paths</p>
+  <p class="sub">Deterministic run · seed ${d.seed} · ${d.plans.length} years (age ${d.plans[0]?.age}–${d.plans[d.plans.length - 1]?.age}) · ${d.finance.n_paths.toLocaleString()} Monte Carlo paths<br/>
+  🗺️ <a href="timeline.html" style="color:#4f8bff;font-weight:600">Open the interactive timeline →</a> — scrub the route month-by-month, see city + cost as you go</p>
 
   <div class="cards">
     <div class="card"><div class="k">P(capital survives to 80)</div><div class="v" style="color:${survColor}">${surv}%</div></div>
