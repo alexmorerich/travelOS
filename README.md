@@ -42,6 +42,10 @@ Full cost reality (age-rising healthcare + tax drag + rent-vs-buy), ranked by su
 
 Each year is split into 12 months and each month placed in its most comfortable city, producing a **snowbird pattern** — e.g. at age 60: winter in **Xiamen (14.5°C)**, summer inland. Exported as `schedule.json`, a quarterly rollup, and an importable **`schedule.ics`**.
 
+![Interactive timeline — scrub the 30-year route on a China map, with live city + cost](docs/timeline.png)
+
+> ⭐ **`open outputs/timeline.html`** — scrub or ▶ Play across all 372 months; the blue trail is your route footprint, the panel shows where you are and what it costs (above: Jul 2041, age 65, Kunming — $1,800/mo, $378k spent, $140k left).
+
 > Planning model, **not financial advice.** Non-geographic fields are rule-based estimates (see [Data honesty](#data-honesty)).
 
 ---
