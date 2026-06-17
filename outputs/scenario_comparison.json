@@ -2,40 +2,40 @@
   {
     "key": "frugal",
     "label": "Cost-minimized",
-    "survival_probability": 0.645,
-    "median_bankruptcy_age": 74,
-    "mean_annual_cost_usd": 14983,
-    "effective_withdrawal_rate": 0.03,
-    "median_terminal_net_worth": 79231,
+    "survival_probability": 0.705,
+    "median_bankruptcy_age": 75,
+    "mean_annual_cost_usd": 14095,
+    "effective_withdrawal_rate": 0.0282,
+    "median_terminal_net_worth": 114095,
     "sample_itinerary_age65": [
-      "Yangshuo",
-      "Guilin"
+      "Longnan",
+      "Qingyang"
     ]
   },
   {
     "key": "balanced",
     "label": "Balanced",
-    "survival_probability": 0.3775,
+    "survival_probability": 0.41,
     "median_bankruptcy_age": 72,
-    "mean_annual_cost_usd": 19866,
-    "effective_withdrawal_rate": 0.0397,
+    "mean_annual_cost_usd": 19096,
+    "effective_withdrawal_rate": 0.0382,
     "median_terminal_net_worth": 0,
     "sample_itinerary_age65": [
-      "Suzhou",
-      "Nanjing"
+      "Lijiang",
+      "Kunming"
     ]
   },
   {
     "key": "experience",
     "label": "Experience-optimized",
-    "survival_probability": 0.1455,
-    "median_bankruptcy_age": 70,
-    "mean_annual_cost_usd": 25636,
-    "effective_withdrawal_rate": 0.0513,
+    "survival_probability": 0.138,
+    "median_bankruptcy_age": 69,
+    "mean_annual_cost_usd": 25841,
+    "effective_withdrawal_rate": 0.0517,
     "median_terminal_net_worth": 0,
     "sample_itinerary_age65": [
-      "Luoyang",
-      "Kaifeng"
+      "Chengdu",
+      "Kunming"
     ]
   }
 ]

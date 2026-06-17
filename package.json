@@ -10,6 +10,7 @@
   "scripts": {
     "start": "tsx src/index.ts",
     "simulate": "tsx src/index.ts",
+    "anchors": "python3 scripts/build_anchors_from_geonames.py",
     "enrich": "tsx src/data_pipeline/enrich_estimates.ts",
     "db": "tsx src/scripts/build_db.ts",
     "typecheck": "tsc --noEmit",

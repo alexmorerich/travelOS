@@ -10,7 +10,7 @@ tags: [travel-os, yearly-plan]
 
 # Age 70
 
-> Physiology factor **R_age = 0.35** · TREI cutoff 1.58 · annual cost **$21,583**
+> Physiology factor **R_age = 0.35** · TREI cutoff 3.12 · annual cost **$21,583**
 
 [[Age-69|← Age 69]] · [[Age-71|Age 71 →]]
 
@@ -20,4 +20,4 @@ tags: [travel-os, yearly-plan]
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
 | Xi'an (西安) | Shaanxi | 365 | 1800 | 2.28 | 1.33 | 0.87 | ALLOWED |
 
-Starts from `CN-SC-CHENGDU`. See [[Travel-OS-Overview]].
+Starts from `CN-YN-KUNMING`. See [[Travel-OS-Overview]].

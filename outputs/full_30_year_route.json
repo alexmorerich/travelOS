@@ -14,7 +14,7 @@
     "age": 51,
     "primary_region": "Sichuan + multi-region loop",
     "cities": [
-      "Nanjing",
+      "Suzhou",
       "Chengdu",
       "Kunming"
     ],
@@ -22,63 +22,63 @@
   },
   {
     "age": 52,
-    "primary_region": "Henan + multi-region loop",
+    "primary_region": "Fujian + multi-region loop",
     "cities": [
       "Luoyang",
-      "Kaifeng",
-      "Suzhou"
+      "Xiamen",
+      "Nanjing"
     ],
-    "annual_cost_usd": 17559
+    "annual_cost_usd": 20223
   },
   {
     "age": 53,
-    "primary_region": "Fujian + multi-region loop",
+    "primary_region": "Jiangsu + multi-region loop",
     "cities": [
-      "Xiamen",
-      "Quanzhou",
-      "Sanya"
+      "Suzhou",
+      "Qingdao",
+      "Wuhan"
     ],
-    "annual_cost_usd": 24151
+    "annual_cost_usd": 22199
   },
   {
     "age": 54,
     "primary_region": "Shaanxi + multi-region loop",
     "cities": [
-      "Guilin",
       "Xi'an",
-      "Beijing"
+      "Beijing",
+      "Shanghai"
     ],
-    "annual_cost_usd": 26252
+    "annual_cost_usd": 32553
   },
   {
     "age": 55,
     "primary_region": "Zhejiang + multi-region loop",
     "cities": [
-      "Shanghai",
       "Hangzhou",
-      "Nanjing"
+      "Suzhou",
+      "Chengdu"
     ],
-    "annual_cost_usd": 27796
+    "annual_cost_usd": 21583
   },
   {
     "age": 56,
-    "primary_region": "Sichuan + multi-region loop",
+    "primary_region": "Fujian + multi-region loop",
     "cities": [
-      "Chengdu",
       "Kunming",
-      "Luoyang"
+      "Guilin",
+      "Xiamen"
     ],
-    "annual_cost_usd": 19711
+    "annual_cost_usd": 20261
   },
   {
     "age": 57,
-    "primary_region": "Fujian + multi-region loop",
+    "primary_region": "Jiangsu + multi-region loop",
     "cities": [
-      "Quanzhou",
-      "Xiamen",
-      "Suzhou"
+      "Nanjing",
+      "Suzhou",
+      "Qingdao"
     ],
-    "annual_cost_usd": 22806
+    "annual_cost_usd": 22165
   },
   {
     "age": 58,
@@ -86,38 +86,38 @@
     "cities": [
       "Beijing",
       "Xi'an",
-      "Kaifeng"
+      "Shanghai"
     ],
-    "annual_cost_usd": 26219
+    "annual_cost_usd": 32640
   },
   {
     "age": 59,
-    "primary_region": "Shanghai + multi-region loop",
+    "primary_region": "Zhejiang + multi-region loop",
     "cities": [
       "Hangzhou",
-      "Shanghai",
-      "Nanjing"
+      "Suzhou",
+      "Chengdu"
     ],
-    "annual_cost_usd": 28101
+    "annual_cost_usd": 21583
   },
   {
     "age": 60,
-    "primary_region": "Sichuan + multi-region loop",
+    "primary_region": "Fujian + multi-region loop",
     "cities": [
-      "Chengdu",
-      "Luoyang",
-      "Qingdao"
+      "Guilin",
+      "Xiamen",
+      "Luoyang"
     ],
-    "annual_cost_usd": 20191
+    "annual_cost_usd": 18300
   },
   {
     "age": 61,
-    "primary_region": "Fujian dual-base",
+    "primary_region": "Jiangsu dual-base",
     "cities": [
-      "Xiamen",
-      "Quanzhou"
+      "Qingdao",
+      "Nanjing"
     ],
-    "annual_cost_usd": 23382
+    "annual_cost_usd": 22466
   },
   {
     "age": 62,
@@ -126,7 +126,7 @@
       "Xi'an",
       "Beijing"
     ],
-    "annual_cost_usd": 29954
+    "annual_cost_usd": 29862
   },
   {
     "age": 63,
@@ -139,30 +139,30 @@
   },
   {
     "age": 64,
-    "primary_region": "Sichuan dual-base",
+    "primary_region": "Jiangsu dual-base",
     "cities": [
-      "Nanjing",
-      "Chengdu"
+      "Suzhou",
+      "Luoyang"
     ],
-    "annual_cost_usd": 21583
+    "annual_cost_usd": 18643
   },
   {
     "age": 65,
-    "primary_region": "Henan dual-base",
+    "primary_region": "Sichuan dual-base",
     "cities": [
-      "Luoyang",
-      "Kaifeng"
+      "Chengdu",
+      "Kunming"
     ],
-    "annual_cost_usd": 15588
+    "annual_cost_usd": 21583
   },
   {
     "age": 66,
     "primary_region": "Beijing dual-base",
     "cities": [
-      "Beijing",
-      "Xi'an"
+      "Xi'an",
+      "Beijing"
     ],
-    "annual_cost_usd": 30046
+    "annual_cost_usd": 30000
   },
   {
     "age": 67,
@@ -171,25 +171,25 @@
       "Shanghai",
       "Hangzhou"
     ],
-    "annual_cost_usd": 30545
+    "annual_cost_usd": 30596
   },
   {
     "age": 68,
-    "primary_region": "Jiangsu dual-base",
+    "primary_region": "Fujian dual-base",
     "cities": [
-      "Suzhou",
-      "Quanzhou"
+      "Xiamen",
+      "Shenzhen"
     ],
-    "annual_cost_usd": 22475
+    "annual_cost_usd": 31431
   },
   {
     "age": 69,
     "primary_region": "Sichuan dual-base",
     "cities": [
-      "Sanya",
-      "Chengdu"
+      "Chengdu",
+      "Kunming"
     ],
-    "annual_cost_usd": 23676
+    "annual_cost_usd": 21583
   },
   {
     "age": 70,

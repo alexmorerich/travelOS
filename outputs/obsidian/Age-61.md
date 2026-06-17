@@ -1,16 +1,16 @@
 ---
 age: 61
 r_age: 0.62
-annual_cost_usd: 23382
-cities: ["Xiamen", "Quanzhou"]
-provinces: ["Fujian"]
-lead_trei: 0.58
+annual_cost_usd: 22466
+cities: ["Qingdao", "Nanjing"]
+provinces: ["Shandong", "Jiangsu"]
+lead_trei: 0.5
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 61
 
-> Physiology factor **R_age = 0.62** · TREI cutoff 0.89 · annual cost **$23,382**
+> Physiology factor **R_age = 0.62** · TREI cutoff 1.76 · annual cost **$22,466**
 
 [[Age-60|← Age 60]] · [[Age-62|Age 62 →]]
 
@@ -18,7 +18,7 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Xiamen (厦门) | Fujian | 175 | 1950 | 2.71 | 1.33 | 0.58 | ALLOWED |
-| Quanzhou (泉州) | Fujian | 190 | 1950 | 2.71 | 1.33 | 0.58 | ALLOWED |
+| Qingdao (青岛) | Shandong | 179 | 1950 | 2.31 | 1.33 | 0.5 | ALLOWED |
+| Nanjing (南京) | Jiangsu | 186 | 1800 | 2.97 | 1.33 | 0.64 | ALLOWED |
 
-Starts from `CN-SD-QINGDAO`. See [[Travel-OS-Overview]].
+Starts from `CN-HA-LUOYANG`. See [[Travel-OS-Overview]].

@@ -1,16 +1,16 @@
 ---
 age: 53
 r_age: 0.815
-annual_cost_usd: 24151
-cities: ["Xiamen", "Quanzhou", "Sanya"]
-provinces: ["Fujian", "Hainan"]
-lead_trei: 0.44
+annual_cost_usd: 22199
+cities: ["Suzhou", "Qingdao", "Wuhan"]
+provinces: ["Jiangsu", "Shandong", "Hubei"]
+lead_trei: 0.49
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 53
 
-> Physiology factor **R_age = 0.815** · TREI cutoff 0.68 · annual cost **$24,151**
+> Physiology factor **R_age = 0.815** · TREI cutoff 1.34 · annual cost **$22,199**
 
 [[Age-52|← Age 52]] · [[Age-54|Age 54 →]]
 
@@ -18,8 +18,8 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Xiamen (厦门) | Fujian | 122 | 1950 | 2.71 | 1.33 | 0.44 | ALLOWED |
-| Quanzhou (泉州) | Fujian | 126 | 1950 | 2.71 | 1.33 | 0.44 | ALLOWED |
-| Sanya (三亚) | Hainan | 117 | 2150 | 1.92 | 1.33 | 0.31 | ALLOWED |
+| Suzhou (苏州) | Jiangsu | 133 | 1800 | 2.97 | 1.33 | 0.49 | ALLOWED |
+| Qingdao (青岛) | Shandong | 125 | 1950 | 2.31 | 1.33 | 0.38 | ALLOWED |
+| Wuhan (武汉) | Hubei | 107 | 1800 | 2.97 | 1.33 | 0.49 | ALLOWED |
 
-Starts from `CN-JS-SUZHOU`. See [[Travel-OS-Overview]].
+Starts from `CN-JS-NANJING`. See [[Travel-OS-Overview]].

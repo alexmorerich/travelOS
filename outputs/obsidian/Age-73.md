@@ -10,7 +10,7 @@ tags: [travel-os, yearly-plan]
 
 # Age 73
 
-> Physiology factor **R_age = 0.35** · TREI cutoff 1.58 · annual cost **$21,583**
+> Physiology factor **R_age = 0.35** · TREI cutoff 1.91 · annual cost **$21,583**
 
 [[Age-72|← Age 72]] · [[Age-74|Age 74 →]]
 
