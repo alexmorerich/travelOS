@@ -50,6 +50,72 @@ Each year is split into 12 months and each month placed in its most comfortable 
 
 ---
 
+## 📖 Beginner's tutorial
+
+New here? This explains **what the system does, the ideas behind it, and how to use it** — no finance or coding background needed.
+
+### What problem does it solve?
+
+Imagine planning the second half of life (ages **50–80**) as someone who can live anywhere in China. Three things pull against each other:
+
+- **Health & safety** — as you age you want to stay near good hospitals and avoid harsh climates / high altitude.
+- **Experience & comfort** — you'd like interesting, pleasant places.
+- **Money** — a fixed pot (default **$500,000**) must last ~30 years.
+
+This tool plays out all 30 years, **month by month**, and shows you **where to live each month, what it costs, and whether the money lasts.**
+
+### The big idea
+
+It loads **284 real Chinese cities**, scores each on risk, walks a year-by-year path that respects your aging health, then runs **thousands of simulated futures** to estimate the odds your savings survive to 80. Same inputs → same outputs, every time (fully deterministic).
+
+### Key concepts (plain English)
+
+| Concept | In one sentence |
+|---|---|
+| **R_age** (health factor) | A number from 1.0 (robust) down to 0.35 (fragile) that shrinks with age — older means travel less and avoid risk more. |
+| **TREI** (risk score) | "How risky is this city for me *right now*?" — combines hospital distance, climate, and altitude, scaled by your age. Lower = safer. |
+| **The safety gate** | Hard rules that can't be broken: no city >2 h from a top (tier-3A) hospital; after 70, nothing above 2,500 m. Everything else is *ranked*, not banned. |
+| **Routing** | Each year it picks a few cities by value-for-money (nice + safe + affordable). Older = fewer cities, until you settle in one place. |
+| **Snowbird schedule** | Within each year, the 12 months go to the most comfortable city for that season (warm south in winter, cooler places in summer). |
+| **Monte Carlo + survival %** | Markets are uncertain, so it simulates 2,000 possible futures (good years, crashes, recessions) and reports the **% where your money lasts to 80** — the headline number. |
+| **Strategies** | It compares life plans (keep moving vs. buy a home and settle; onshore vs. offshore money) and ranks them by survival. |
+
+### Your first run (3 steps)
+
+```bash
+git clone https://github.com/alexmorerich/travelOS && cd travelOS
+npm install
+npm run anchors && npm run enrich && npm run simulate
+```
+
+Then open the results:
+
+- **`outputs/timeline.html`** — the ⭐ interactive demo: drag the slider (or press ▶ Play) to move through 30 years and watch your route + cost unfold.
+- **`outputs/dashboard.html`** — the survival probability, the "frugal vs. fancy" comparison, and the seasonal calendar.
+- **`outputs/schedule.ics`** — import into your phone / Google Calendar to see the plan as real calendar events.
+
+### Reading the interactive timeline
+
+As you scrub: the **blue trail** is your route so far (your "footprint"), the **yellow dot** is where you are that month, and the panel shows the **city, month, age, monthly cost, total spent, and money left.** When "money left" turns orange/red, the plan is running low.
+
+### Make it about *you*
+
+Everything lives in `config/` — edit a value and re-run `npm run simulate`:
+
+- **Start city / age range / start year** → `config/system_config.json` (`base_city`, `age_start`, `age_end`, `base_calendar_year`)
+- **Your money** → `config/finance.json` (`initial_portfolio_usd` + return assumptions)
+- **Fancy vs. frugal** → `config/routing_profiles.json` (default is "experience"; "frugal" spends far less)
+- **Buy a home? Insurance? Offshore?** → `config/strategies.json`
+
+### FAQ
+
+- **Is this financial advice?** No — it's a planning model with illustrative assumptions. It never trades or touches real money.
+- **Are the city numbers real?** Coordinates and altitude are real (GeoNames). Hospital time, climate, and cost are *rule-based estimates* — good for exploring, not gospel.
+- **Why 284 and not 300?** That's every prefecture-level city GeoNames lists; the pipeline scales further by adding data (toward ~2,800 counties).
+- **The survival % looks low!** That's the point — it shows **spending is the biggest lever.** Try the `frugal` profile and watch it jump from ~14% to ~70%.
+
+---
+
 ## 🚀 Quickstart
 
 ```bash
@@ -290,6 +356,53 @@ MIT © 2026 alexmorerich · city data © GeoNames (CC BY 4.0)
 每年拆成 12 个月，每月安置到最舒适的城市，形成**候鸟模式**——如 60 岁：冬季在**厦门（14.5°C）**，夏季转内陆。导出为 `schedule.json`、季度汇总，以及可导入的 **`schedule.ics`**。
 
 > 规划模型，**不构成投资建议**。非地理字段为规则化估算（见[数据诚实性](#数据诚实性-1)）。
+
+## 📖 新手教程
+
+第一次接触？本节用大白话讲清**它做什么、背后的思路、怎么用**——无需金融或编程基础。
+
+### 它解决什么问题
+
+设想你规划下半生（**50–80 岁**），可在中国任意城市旅居。三股力量相互拉扯：**健康与安全**（年长后想靠近好医院、避开极端气候/高海拔）、**体验与舒适**、**钱**（默认 **50 万美元**要撑约 30 年）。本工具逐月推演 30 年，告诉你**每月住哪、花多少、钱够不够撑到 80。**
+
+### 核心概念（大白话）
+
+| 概念 | 一句话 |
+|---|---|
+| **R_age**（健康因子） | 1.0（硬朗）→ 0.35（脆弱），随年龄下降——越老越少折腾、更避险。 |
+| **TREI**（风险分） | “这座城市现在对我多危险？”综合医院距离、气候、海拔，并按年龄缩放。越低越安全。 |
+| **安全门控** | 硬规则：三甲医院 2 小时外不去；70 岁后海拔 >2500m 不去。其余只排序、不禁止。 |
+| **路由** | 每年按“性价比”（好玩+安全+便宜）选几座城；越老越少，最终定居一城。 |
+| **候鸟排程** | 每年 12 个月放到当季最舒适的城市（冬南夏凉）。 |
+| **蒙特卡洛 + 存活率** | 市场不确定，模拟 2000 种未来（牛市、崩盘、衰退），报告“钱撑到 80”的百分比——头号数字。 |
+| **策略** | 比较人生方案（一直游牧 vs 买房定居；在岸 vs 离岸），按存活率排序。 |
+
+### 三步上手
+
+```bash
+git clone https://github.com/alexmorerich/travelOS && cd travelOS
+npm install
+npm run anchors && npm run enrich && npm run simulate
+```
+
+然后打开：**`outputs/timeline.html`**（⭐ 交互演示，拖动滑块或 ▶ 播放，看路线+花费随 30 年展开）、**`outputs/dashboard.html`**（存活率、节俭vs奢华对比、季节日历）、**`outputs/schedule.ics`**（导入手机/谷歌日历）。
+
+### 看交互时间轴
+
+拖动时：**蓝色轨迹**是你的路线足迹，**黄点**是当月所在城市，面板显示**城市、月份、年龄、月度花费、累计支出、剩余资产**。当“剩余资产”变橙/红，说明计划吃紧。
+
+### 改成你自己的
+
+编辑 `config/` 后重跑 `npm run simulate`：起点城市/年龄/起始年（`system_config.json`）、本金与收益假设（`finance.json`）、奢华还是节俭（`routing_profiles.json`）、买房/保险/离岸（`strategies.json`）。
+
+### 常见问题
+
+- **算投资建议吗？** 不是，是带示意假设的规划模型，从不交易真钱。
+- **城市数据真实吗？** 经纬度/海拔来自 GeoNames（真实）；医院时间/气候/成本为规则化估算。
+- **为何 284 而非 300？** 这是 GeoNames 收录的全部地级市；管线可继续扩展（迈向 ~2800 县）。
+- **存活率好低！** 这正是重点——**支出是最大杠杆**，试试 `frugal` profile，看它从约 14% 飙到约 70%。
+
+---
 
 ## 🚀 快速开始
 

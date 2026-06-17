@@ -103,8 +103,23 @@ function main(): void {
     age: sampleAge,
     values: riskAtAge(cities, sampleAge).filter((c) => c.decision !== "BLOCKED").map((c) => ({ name_en: c.name_en, TREI: c.TREI })),
   };
-  writeFileSync(join(OUT, "dashboard.html"), renderDashboard({ plans, finance, treiSample, validation, scenarios, strategies, schedule, seed: systemConfig.seed }), "utf8");
-  writeFileSync(join(OUT, "timeline.html"), renderTimeline({ schedule, cities, finance, seed: systemConfig.seed }), "utf8");
+  const dashboardHtml = renderDashboard({ plans, finance, treiSample, validation, scenarios, strategies, schedule, seed: systemConfig.seed });
+  const timelineHtml = renderTimeline({ schedule, cities, finance, seed: systemConfig.seed });
+  writeFileSync(join(OUT, "dashboard.html"), dashboardHtml, "utf8");
+  writeFileSync(join(OUT, "timeline.html"), timelineHtml, "utf8");
+
+  // Pages-ready copies under docs/ so the static demo can be hosted on GitHub
+  // Pages (source: main /docs). index.html redirects to the interactive timeline.
+  const DOCS = join(ROOT, "docs");
+  mkdirSync(DOCS, { recursive: true });
+  writeFileSync(join(DOCS, "timeline.html"), timelineHtml, "utf8");
+  writeFileSync(join(DOCS, "dashboard.html"), dashboardHtml, "utf8");
+  writeFileSync(
+    join(DOCS, "index.html"),
+    '<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=./timeline.html"><title>Travel Life OS</title><body style="background:#0c1320;color:#dfe6f1;font-family:sans-serif"><a href="./timeline.html" style="color:#4f8bff">Open the interactive timeline →</a></body>',
+    "utf8",
+  );
+
   const noteCount = exportObsidian({ plans, phases, finance, schedule, seed: systemConfig.seed }, OUT);
 
   // Summary — the numbers the whole system exists to produce.
