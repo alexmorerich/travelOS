@@ -1,0 +1,41 @@
+[
+  {
+    "key": "frugal",
+    "label": "Cost-minimized",
+    "survival_probability": 0.645,
+    "median_bankruptcy_age": 74,
+    "mean_annual_cost_usd": 14983,
+    "effective_withdrawal_rate": 0.03,
+    "median_terminal_net_worth": 79231,
+    "sample_itinerary_age65": [
+      "Yangshuo",
+      "Guilin"
+    ]
+  },
+  {
+    "key": "balanced",
+    "label": "Balanced",
+    "survival_probability": 0.3775,
+    "median_bankruptcy_age": 72,
+    "mean_annual_cost_usd": 19866,
+    "effective_withdrawal_rate": 0.0397,
+    "median_terminal_net_worth": 0,
+    "sample_itinerary_age65": [
+      "Suzhou",
+      "Nanjing"
+    ]
+  },
+  {
+    "key": "experience",
+    "label": "Experience-optimized",
+    "survival_probability": 0.1455,
+    "median_bankruptcy_age": 70,
+    "mean_annual_cost_usd": 25636,
+    "effective_withdrawal_rate": 0.0513,
+    "median_terminal_net_worth": 0,
+    "sample_itinerary_age65": [
+      "Luoyang",
+      "Kaifeng"
+    ]
+  }
+]

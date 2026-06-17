@@ -1,16 +1,16 @@
 ---
 age: 66
 r_age: 0.476
-annual_cost_usd: 30243
-cities: ["Xi'an", "Beijing"]
-provinces: ["Shaanxi", "Beijing"]
-lead_trei: 0.75
+annual_cost_usd: 30046
+cities: ["Beijing", "Xi'an"]
+provinces: ["Beijing", "Shaanxi"]
+lead_trei: 0.42
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 66
 
-> Physiology factor **R_age = 0.476** · TREI cutoff 1.35 · annual cost **$30,243**
+> Physiology factor **R_age = 0.476** · TREI cutoff 1.16 · annual cost **$30,046**
 
 [[Age-65|← Age 65]] · [[Age-67|Age 67 →]]
 
@@ -18,7 +18,7 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Xi'an (西安) | Shaanxi | 167 | 1600 | 2.67 | 1.33 | 0.75 | ALLOWED |
-| Beijing (北京) | Beijing | 198 | 3300 | 2.19 | 0.8 | 0.37 | ALLOWED |
+| Beijing (北京) | Beijing | 184 | 3200 | 2.28 | 0.87 | 0.42 | ALLOWED |
+| Xi'an (西安) | Shaanxi | 181 | 1800 | 2.28 | 1.33 | 0.64 | ALLOWED |
 
-Starts from `CN-GD-GUANGZHOU`. See [[Travel-OS-Overview]].
+Starts from `CN-HA-KAIFENG`. See [[Travel-OS-Overview]].

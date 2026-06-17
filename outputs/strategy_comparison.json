@@ -1,0 +1,87 @@
+[
+  {
+    "key": "nomad_frugal",
+    "label": "Nomad · frugal",
+    "survival_probability": 0.2735,
+    "median_bankruptcy_age": 72,
+    "mean_annual_cost_usd": 19853,
+    "effective_withdrawal_rate": 0.0397,
+    "median_terminal_net_worth": 0,
+    "sample_itinerary_age65": [
+      "Yangshuo",
+      "Guilin"
+    ],
+    "buy": false,
+    "settle_city": null,
+    "jurisdiction": "onshore",
+    "property_price_usd": 0
+  },
+  {
+    "key": "offshore_frugal_settle",
+    "label": "Offshore + frugal + settle Chengdu",
+    "survival_probability": 0.1015,
+    "median_bankruptcy_age": 66,
+    "mean_annual_cost_usd": 31772,
+    "effective_withdrawal_rate": 0.0635,
+    "median_terminal_net_worth": 226800,
+    "sample_itinerary_age65": [
+      "Yangshuo",
+      "Guilin"
+    ],
+    "buy": true,
+    "settle_city": "CN-SC-CHENGDU",
+    "jurisdiction": "offshore",
+    "property_price_usd": 226800
+  },
+  {
+    "key": "settle_daya_bay",
+    "label": "Buy & settle · Daya Bay",
+    "survival_probability": 0.049,
+    "median_bankruptcy_age": 66,
+    "mean_annual_cost_usd": 32487,
+    "effective_withdrawal_rate": 0.065,
+    "median_terminal_net_worth": 182700,
+    "sample_itinerary_age65": [
+      "Suzhou",
+      "Nanjing"
+    ],
+    "buy": true,
+    "settle_city": "CN-GD-HUIZHOU",
+    "jurisdiction": "onshore",
+    "property_price_usd": 182700
+  },
+  {
+    "key": "nomad_experience",
+    "label": "Nomad · experience",
+    "survival_probability": 0.038,
+    "median_bankruptcy_age": 67,
+    "mean_annual_cost_usd": 29075,
+    "effective_withdrawal_rate": 0.0582,
+    "median_terminal_net_worth": 0,
+    "sample_itinerary_age65": [
+      "Luoyang",
+      "Kaifeng"
+    ],
+    "buy": false,
+    "settle_city": null,
+    "jurisdiction": "onshore",
+    "property_price_usd": 0
+  },
+  {
+    "key": "settle_chengdu",
+    "label": "Buy & settle · Chengdu",
+    "survival_probability": 0.0315,
+    "median_bankruptcy_age": 66,
+    "mean_annual_cost_usd": 35018,
+    "effective_withdrawal_rate": 0.07,
+    "median_terminal_net_worth": 226800,
+    "sample_itinerary_age65": [
+      "Suzhou",
+      "Nanjing"
+    ],
+    "buy": true,
+    "settle_city": "CN-SC-CHENGDU",
+    "jurisdiction": "onshore",
+    "property_price_usd": 226800
+  }
+]

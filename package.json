@@ -10,6 +10,7 @@
   "scripts": {
     "start": "tsx src/index.ts",
     "simulate": "tsx src/index.ts",
+    "enrich": "tsx src/data_pipeline/enrich_estimates.ts",
     "db": "tsx src/scripts/build_db.ts",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf outputs/*.json outputs/dashboard.html outputs/obsidian outputs/travel_os.db"

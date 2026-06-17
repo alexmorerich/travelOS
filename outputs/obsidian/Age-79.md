@@ -1,16 +1,16 @@
 ---
 age: 79
 r_age: 0.35
-annual_cost_usd: 39570
+annual_cost_usd: 38371
 cities: ["Beijing"]
 provinces: ["Beijing"]
-lead_trei: 0.5
+lead_trei: 0.56
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 79
 
-> Physiology factor **R_age = 0.35** · TREI cutoff 1.63 · annual cost **$39,570**
+> Physiology factor **R_age = 0.35** · TREI cutoff 1.58 · annual cost **$38,371**
 
 [[Age-78|← Age 78]] · [[Age-80|Age 80 →]]
 
@@ -18,6 +18,6 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Beijing (北京) | Beijing | 365 | 3300 | 2.19 | 0.8 | 0.5 | ALLOWED |
+| Beijing (北京) | Beijing | 365 | 3200 | 2.28 | 0.87 | 0.56 | ALLOWED |
 
 Starts from `CN-SN-XIAN`. See [[Travel-OS-Overview]].

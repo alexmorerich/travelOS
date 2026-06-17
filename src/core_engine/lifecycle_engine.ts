@@ -5,7 +5,7 @@
 import { systemConfig } from "../config";
 import { makeRng, deriveSeed } from "../lib/rng";
 import { planYear } from "./routing_engine";
-import type { ProcessedCity, Graph, YearPlan, RegionPhase } from "../types";
+import type { ProcessedCity, Graph, YearPlan, RegionPhase, RoutingWeights } from "../types";
 
 export interface LifecycleResult {
   plans: YearPlan[];
@@ -17,6 +17,7 @@ export function runLifecycle(
   nodes: ProcessedCity[],
   graph: Graph,
   baseSeed: number,
+  weights: RoutingWeights,
 ): LifecycleResult {
   const plans: YearPlan[] = [];
   const history: { age: number; ids: string[] }[] = [];
@@ -37,6 +38,7 @@ export function runLifecycle(
       visitedRecent: recent,
       rng: makeRng(seed),
       seed,
+      weights,
     });
     plans.push(plan);
     if (plan.cities.length > 0) {

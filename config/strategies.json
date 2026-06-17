@@ -1,0 +1,33 @@
+{
+  "_comment": "v4.1 life-strategy comparison. Each strategy couples a routing profile with a housing plan (rent vs buy-and-settle), a tax jurisdiction, and a healthcare posture. The engine runs the full Monte Carlo for each and ranks by survival — this is the 'optimal retirement strategy selector'.",
+  "housing": {
+    "_doc": "Property price ≈ monthly_cost · rent_fraction · 12 · price_to_annual_rent. After buying, rent is removed from living cost and replaced by ownership_cost_rate · price (tax + maintenance). The home is an illiquid asset counted in terminal net worth but NOT in liquid survival.",
+    "rent_fraction": 0.35,
+    "price_to_annual_rent": 30,
+    "ownership_cost_rate": 0.012,
+    "appreciation_real": 0.0
+  },
+  "healthcare": {
+    "_doc": "Age-rising out-of-pocket medical cost drawn each year, plus a rising-probability tail event. Insurance dampens the tail.",
+    "base_oop_usd": 1200,
+    "growth": 1.06,
+    "tail_prob_base": 0.02,
+    "tail_prob_slope": 0.004,
+    "tail_min_usd": 12000,
+    "tail_max_usd": 45000,
+    "insurance_tail_factor": 0.3,
+    "insurance_premium_usd": 3000
+  },
+  "tax": {
+    "_doc": "Annual drag subtracted from real return. Offshore (HK/SG) custody carries less friction than onshore for this profile.",
+    "onshore_return_drag": 0.006,
+    "offshore_return_drag": 0.0
+  },
+  "strategies": [
+    { "key": "nomad_experience", "label": "Nomad · experience", "routing": "experience", "buy": false, "jurisdiction": "onshore", "insurance": false },
+    { "key": "nomad_frugal", "label": "Nomad · frugal", "routing": "frugal", "buy": false, "jurisdiction": "onshore", "insurance": false },
+    { "key": "settle_daya_bay", "label": "Buy & settle · Daya Bay", "routing": "balanced", "buy": true, "settle_city": "CN-GD-HUIZHOU", "buy_age": 66, "jurisdiction": "onshore", "insurance": true },
+    { "key": "settle_chengdu", "label": "Buy & settle · Chengdu", "routing": "balanced", "buy": true, "settle_city": "CN-SC-CHENGDU", "buy_age": 66, "jurisdiction": "onshore", "insurance": true },
+    { "key": "offshore_frugal_settle", "label": "Offshore + frugal + settle Chengdu", "routing": "frugal", "buy": true, "settle_city": "CN-SC-CHENGDU", "buy_age": 66, "jurisdiction": "offshore", "insurance": true }
+  ]
+}

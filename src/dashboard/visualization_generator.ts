@@ -1,6 +1,6 @@
 // Renders a single self-contained dark-theme HTML dashboard (inline SVG, no
 // external/CDN dependencies) so it opens straight from disk.
-import type { YearPlan, FinanceResult } from "../types";
+import type { YearPlan, FinanceResult, ScenarioResult, StrategyResult } from "../types";
 import type { ValidationReport } from "../data_layer/validate";
 
 export interface DashboardInput {
@@ -8,7 +8,39 @@ export interface DashboardInput {
   finance: FinanceResult;
   treiSample: { age: number; values: { name_en: string; TREI: number }[] };
   validation: ValidationReport;
+  scenarios: ScenarioResult[];
+  strategies: StrategyResult[];
   seed: number;
+}
+
+function pct(p: number): string {
+  return (p * 100).toFixed(1) + "%";
+}
+function survBar(p: number): string {
+  const color = p >= 0.8 ? "#46b97a" : p >= 0.5 ? "#e0a13a" : "#e0563a";
+  return `<div style="background:#1b2740;border-radius:4px;overflow:hidden;height:16px;min-width:90px">
+    <div style="width:${Math.max(2, p * 100).toFixed(0)}%;height:100%;background:${color}"></div></div>`;
+}
+
+function scenarioTable(scenarios: ScenarioResult[]): string {
+  const rows = scenarios.map((s) => `<tr>
+    <td>${s.label}</td>
+    <td style="display:flex;gap:8px;align-items:center">${survBar(s.survival_probability)} ${pct(s.survival_probability)}</td>
+    <td style="text-align:right">$${s.mean_annual_cost_usd.toLocaleString()}</td>
+    <td style="text-align:right">${s.median_bankruptcy_age ?? "—"}</td>
+  </tr>`).join("");
+  return `<table><thead><tr><th>Routing objective</th><th>Survival to 80</th><th style="text-align:right">Mean $/yr</th><th style="text-align:right">Median bankruptcy</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+
+function strategyTable(strategies: StrategyResult[]): string {
+  const rows = strategies.map((s, i) => `<tr>
+    <td>${i === 0 ? "🏆 " : ""}${s.label}</td>
+    <td style="display:flex;gap:8px;align-items:center">${survBar(s.survival_probability)} ${pct(s.survival_probability)}</td>
+    <td style="text-align:right">$${Math.round(s.median_terminal_net_worth / 1000)}k</td>
+    <td style="text-align:right">${s.property_price_usd ? "$" + Math.round(s.property_price_usd / 1000) + "k" : "—"}</td>
+    <td style="text-align:right">${s.median_bankruptcy_age ?? "—"}</td>
+  </tr>`).join("");
+  return `<table><thead><tr><th>Strategy</th><th>Survival to 80</th><th style="text-align:right">Median net worth</th><th style="text-align:right">Home</th><th style="text-align:right">Median bankruptcy</th></tr></thead><tbody>${rows}</tbody></table>`;
 }
 
 const W = 860;
@@ -131,7 +163,12 @@ export function renderDashboard(d: DashboardInput): string {
     <div class="card"><div class="k">Median terminal</div><div class="v">${fmtUsd(d.finance.p50_terminal)}</div></div>
   </div>
 
-  <div class="panel"><h2>💰 Portfolio survival curve (real USD · p10–p90 band, p50 line)</h2>${survivalCurve(d.finance)}</div>
+  <div class="panel"><h2>🛣️ Routing lever — survival by objective (rent-only)</h2>${scenarioTable(d.scenarios)}
+    <p class="foot" style="margin-top:6px">Same safety gates, same finance model — the only change is how much you pay for experience.</p></div>
+  <div class="panel"><h2>🧠 v4.1 strategy selector — coupled housing + healthcare + tax (ranked)</h2>${strategyTable(d.strategies)}
+    <p class="foot" style="margin-top:6px">Survival is on LIQUID capital; net worth includes an owned home. Buying lowers drawdown and floors net worth but shrinks the liquid buffer.</p></div>
+
+  <div class="panel"><h2>💰 Portfolio survival curve — primary run (real USD · p10–p90 band, p50 line)</h2>${survivalCurve(d.finance)}</div>
   <div class="panel"><h2>🌡️ TREI risk distribution across cities</h2>${treiHistogram(d.treiSample)}</div>
   <div class="panel"><h2>🗺️ 30-year route</h2><div class="scroll">${routeTable(d.plans)}</div></div>
 

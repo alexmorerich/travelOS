@@ -56,3 +56,27 @@ CREATE TABLE IF NOT EXISTS finance_summary (
   effective_withdrawal_rate REAL NOT NULL,
   p50_terminal              REAL NOT NULL
 );
+
+-- Task 1: routing-profile comparison (rent-only baseline)
+CREATE TABLE IF NOT EXISTS scenario_results (
+  key                       TEXT PRIMARY KEY,
+  label                     TEXT NOT NULL,
+  survival_probability      REAL NOT NULL,
+  median_bankruptcy_age     INTEGER,
+  mean_annual_cost_usd      REAL NOT NULL,
+  effective_withdrawal_rate REAL NOT NULL
+);
+
+-- v4.1: coupled life-strategy comparison
+CREATE TABLE IF NOT EXISTS strategy_results (
+  key                       TEXT PRIMARY KEY,
+  label                     TEXT NOT NULL,
+  routing                   TEXT,
+  buy                       INTEGER NOT NULL,
+  settle_city               TEXT,
+  jurisdiction              TEXT NOT NULL,
+  property_price_usd        REAL NOT NULL,
+  survival_probability      REAL NOT NULL,
+  median_bankruptcy_age     INTEGER,
+  median_terminal_net_worth REAL NOT NULL
+);

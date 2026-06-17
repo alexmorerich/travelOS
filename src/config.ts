@@ -8,6 +8,8 @@ import type {
   NormalizationConfig,
   ThresholdsConfig,
   FinanceConfig,
+  RoutingProfilesConfig,
+  StrategiesConfig,
 } from "./types";
 
 const here = dirname(fileURLToPath(import.meta.url)); // .../src
@@ -21,3 +23,5 @@ export const systemConfig = load<SystemConfig>("config/system_config.json");
 export const normalization = load<NormalizationConfig>("config/normalization.json");
 export const thresholds = load<ThresholdsConfig>("config/thresholds.json");
 export const financeConfig = load<FinanceConfig>("config/finance.json");
+export const routingProfiles = load<RoutingProfilesConfig>("config/routing_profiles.json");
+export const strategiesConfig = load<StrategiesConfig>("config/strategies.json");

@@ -13,7 +13,7 @@ import { systemConfig, thresholds } from "../config";
 import { clamp, percentile } from "../lib/geo";
 import { rAge, trei, medicalRisk } from "./trei_engine";
 import { isHardBlocked, decide } from "./constraint_engine";
-import type { ProcessedCity, Graph, YearPlan, YearPlanCity, Decision } from "../types";
+import type { ProcessedCity, Graph, YearPlan, YearPlanCity, Decision, RoutingWeights } from "../types";
 import type { Rng } from "../lib/rng";
 
 export interface YearContext {
@@ -24,6 +24,7 @@ export interface YearContext {
   visitedRecent: Set<string>;
   rng: Rng;
   seed: number;
+  weights: RoutingWeights;
 }
 
 interface Scored {
@@ -38,16 +39,16 @@ function utilityOf(
   city: ProcessedCity,
   treiValue: number,
   travelKm: number,
+  w: RoutingWeights,
 ): number {
-  const r = systemConfig.routing;
-  const cultureTerm = city.cultural_value / (treiValue + r.utility_eps);
-  const costTerm = r.cost_weight * ((city.monthly_cost_usd ?? 2000) / 1000);
-  const travelTerm = r.travel_weight * (travelKm / 1000);
+  const cultureTerm = w.culture_pursuit * (city.cultural_value / (treiValue + w.utility_eps));
+  const costTerm = w.cost_weight * ((city.monthly_cost_usd ?? 2000) / 1000);
+  const travelTerm = w.travel_weight * (travelKm / 1000);
   return cultureTerm - costTerm - travelTerm;
 }
 
 export function planYear(ctx: YearContext): YearPlan {
-  const { nodes, graph, age, startCity, visitedRecent, rng, seed } = ctx;
+  const { nodes, graph, age, startCity, visitedRecent, rng, seed, weights } = ctx;
   const R = rAge(age);
 
   // Per-age risk for every node, plus the feasible-set TREI distribution.
@@ -77,7 +78,7 @@ export function planYear(ctx: YearContext): YearPlan {
       if (usedThisYear.has(id) || visitedRecent.has(id)) continue;
       const rec = byId.get(id);
       if (!rec || rec.blocked) continue;
-      const u = utilityOf(rec.city, rec.treiVal, edge.distance_km);
+      const u = utilityOf(rec.city, rec.treiVal, edge.distance_km, weights);
       candidates.push({
         scored: {
           city: rec.city,
@@ -93,7 +94,7 @@ export function planYear(ctx: YearContext): YearPlan {
 
     candidates.sort((a, b) => b.scored.utility - a.scored.utility);
     const best = candidates[0].scored.utility;
-    const band = systemConfig.routing.tie_break_band;
+    const band = weights.tie_break_band;
     const tied = candidates.filter(
       (c) => best - c.scored.utility <= Math.abs(best) * band,
     );

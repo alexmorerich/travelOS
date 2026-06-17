@@ -95,6 +95,7 @@ export interface TrajectoryPoint {
 }
 
 export interface FinanceResult {
+  label?: string;
   initial_portfolio_usd: number;
   n_paths: number;
   survival_probability: number;
@@ -102,10 +103,58 @@ export interface FinanceResult {
   p10_terminal: number;
   p50_terminal: number;
   p90_terminal: number;
+  median_terminal_net_worth: number;   // liquid + illiquid (property) at end
   mean_annual_cost_usd: number;
   effective_withdrawal_rate: number;
   trajectories: TrajectoryPoint[];
   bankruptcy_ages: number[];
+}
+
+// ---- routing profiles (Task 1: cost-minimizing mode) ---------------------
+
+export interface RoutingWeights {
+  tie_break_band: number;
+  utility_eps: number;
+  cost_weight: number;
+  travel_weight: number;
+  culture_pursuit: number;   // multiplier on the culture/(TREI+eps) term
+}
+
+export interface RoutingProfile {
+  key: string;
+  label: string;
+  weights: RoutingWeights;
+}
+
+export interface ScenarioResult {
+  key: string;
+  label: string;
+  survival_probability: number;
+  median_bankruptcy_age: number | null;
+  mean_annual_cost_usd: number;
+  effective_withdrawal_rate: number;
+  median_terminal_net_worth: number;
+  sample_itinerary_age65: string[];
+}
+
+// ---- v4.1 strategies (housing + healthcare + tax coupling) ---------------
+
+export interface StrategyConfig {
+  key: string;
+  label: string;
+  routing: string;                 // routing profile key
+  buy: boolean;
+  settle_city?: string;            // required if buy
+  buy_age?: number;                // required if buy
+  jurisdiction: "onshore" | "offshore";
+  insurance: boolean;              // dampens healthcare tail
+}
+
+export interface StrategyResult extends ScenarioResult {
+  buy: boolean;
+  settle_city: string | null;
+  jurisdiction: string;
+  property_price_usd: number;
 }
 
 // ---- config shapes -------------------------------------------------------
@@ -156,4 +205,39 @@ export interface FinanceConfig {
   recession_probability: number;
   recession_mean_return: number;
   recession_sd_return: number;
+}
+
+export interface RoutingProfilesConfig {
+  primary: string;
+  profiles: RoutingProfile[];
+}
+
+export interface HousingParams {
+  rent_fraction: number;
+  price_to_annual_rent: number;
+  ownership_cost_rate: number;
+  appreciation_real: number;
+}
+
+export interface HealthcareParams {
+  base_oop_usd: number;
+  growth: number;
+  tail_prob_base: number;
+  tail_prob_slope: number;
+  tail_min_usd: number;
+  tail_max_usd: number;
+  insurance_tail_factor: number;
+  insurance_premium_usd: number;
+}
+
+export interface TaxParams {
+  onshore_return_drag: number;
+  offshore_return_drag: number;
+}
+
+export interface StrategiesConfig {
+  housing: HousingParams;
+  healthcare: HealthcareParams;
+  tax: TaxParams;
+  strategies: StrategyConfig[];
 }

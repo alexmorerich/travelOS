@@ -1,0 +1,21 @@
+{
+  "_comment": "Routing objective presets. utility = culture_pursuit·culture/(TREI+eps) − cost_weight·(cost/1000) − travel_weight·(dist/1000). 'frugal' is the cost-minimizing mode: it still obeys every hard safety gate, it just stops paying for experience.",
+  "primary": "experience",
+  "profiles": [
+    {
+      "key": "experience",
+      "label": "Experience-optimized",
+      "weights": { "tie_break_band": 0.05, "utility_eps": 0.5, "cost_weight": 0.8, "travel_weight": 0.4, "culture_pursuit": 1.0 }
+    },
+    {
+      "key": "balanced",
+      "label": "Balanced",
+      "weights": { "tie_break_band": 0.05, "utility_eps": 0.5, "cost_weight": 2.5, "travel_weight": 0.5, "culture_pursuit": 1.0 }
+    },
+    {
+      "key": "frugal",
+      "label": "Cost-minimized",
+      "weights": { "tie_break_band": 0.05, "utility_eps": 0.5, "cost_weight": 7.0, "travel_weight": 0.6, "culture_pursuit": 0.25 }
+    }
+  ]
+}

@@ -1,16 +1,16 @@
 ---
 age: 51
 r_age: 0.856
-annual_cost_usd: 21436
-cities: ["Xiamen", "Guilin", "Chengdu"]
-provinces: ["Fujian", "Guangxi", "Sichuan"]
-lead_trei: 0.31
+annual_cost_usd: 21583
+cities: ["Nanjing", "Chengdu", "Kunming"]
+provinces: ["Jiangsu", "Sichuan", "Yunnan"]
+lead_trei: 0.46
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 51
 
-> Physiology factor **R_age = 0.856** · TREI cutoff 0.75 · annual cost **$21,436**
+> Physiology factor **R_age = 0.856** · TREI cutoff 0.65 · annual cost **$21,583**
 
 [[Age-50|← Age 50]] · [[Age-52|Age 52 →]]
 
@@ -18,8 +18,8 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Xiamen (厦门) | Fujian | 125 | 2200 | 2.19 | 1.2 | 0.31 | ALLOWED |
-| Guilin (桂林) | Guangxi | 109 | 1300 | 2.59 | 2 | 0.6 | ALLOWED |
-| Chengdu (成都) | Sichuan | 131 | 1800 | 2.83 | 1.2 | 0.4 | ALLOWED |
+| Nanjing (南京) | Jiangsu | 120 | 1800 | 2.97 | 1.33 | 0.46 | ALLOWED |
+| Chengdu (成都) | Sichuan | 129 | 1800 | 2.97 | 1.33 | 0.46 | ALLOWED |
+| Kunming (昆明) | Yunnan | 116 | 1800 | 2.97 | 1.33 | 0.46 | ALLOWED |
 
 Starts from `CN-SH-SHANGHAI`. See [[Travel-OS-Overview]].

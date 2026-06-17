@@ -1,6 +1,6 @@
 {
-  "total_nodes": 50,
-  "valid": 49,
+  "total_nodes": 101,
+  "valid": 100,
   "partial": 1,
   "invalid": 0,
   "missing_geo": 0,

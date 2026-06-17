@@ -9,7 +9,7 @@ import { join } from "node:path";
 import { ROOT } from "../config";
 import { loadCities } from "../data_layer/loader";
 import { buildGraph } from "../graph_layer/city_graph_builder";
-import type { YearPlan, FinanceResult } from "../types";
+import type { YearPlan, FinanceResult, ScenarioResult, StrategyResult } from "../types";
 
 async function loadDriver(): Promise<any | null> {
   try {
@@ -40,12 +40,16 @@ async function main(): Promise<void> {
   const dbPath = join(outDir, "travel_os.db");
   const db = new Database(dbPath);
   db.exec(readFileSync(join(ROOT, "database/schema.sql"), "utf8"));
-  db.exec("DELETE FROM cities; DELETE FROM edges; DELETE FROM yearly_plan_cities; DELETE FROM finance_summary;");
+  // Delete children before parents (cities is referenced by edges/plans).
+  db.exec("DELETE FROM edges; DELETE FROM yearly_plan_cities; DELETE FROM finance_summary; DELETE FROM scenario_results; DELETE FROM strategy_results; DELETE FROM cities;");
 
   const cities = loadCities();
   const graph = buildGraph(cities);
   const plans = JSON.parse(readFileSync(planPath, "utf8")) as YearPlan[];
   const finance = JSON.parse(readFileSync(financePath, "utf8")) as FinanceResult;
+  const readOpt = <T>(p: string): T[] => (existsSync(p) ? (JSON.parse(readFileSync(p, "utf8")) as T[]) : []);
+  const scenarios = readOpt<ScenarioResult>(join(outDir, "scenario_comparison.json"));
+  const strategies = readOpt<StrategyResult>(join(outDir, "strategy_comparison.json"));
 
   const insertCity = db.prepare(
     `INSERT INTO cities (id,name,name_en,province,lat,lng,altitude_m,tier3_hospital_minutes,avg_temp_range,humidity_index,monthly_cost_usd,cultural_value,env_risk,completeness)
@@ -82,6 +86,14 @@ async function main(): Promise<void> {
       finance.initial_portfolio_usd, finance.n_paths, finance.survival_probability,
       finance.median_bankruptcy_age, finance.effective_withdrawal_rate, finance.p50_terminal,
     );
+    const insScenario = db.prepare(
+      `INSERT INTO scenario_results (key,label,survival_probability,median_bankruptcy_age,mean_annual_cost_usd,effective_withdrawal_rate) VALUES (?,?,?,?,?,?)`,
+    );
+    for (const s of scenarios) insScenario.run(s.key, s.label, s.survival_probability, s.median_bankruptcy_age, s.mean_annual_cost_usd, s.effective_withdrawal_rate);
+    const insStrategy = db.prepare(
+      `INSERT INTO strategy_results (key,label,routing,buy,settle_city,jurisdiction,property_price_usd,survival_probability,median_bankruptcy_age,median_terminal_net_worth) VALUES (?,?,?,?,?,?,?,?,?,?)`,
+    );
+    for (const s of strategies) insStrategy.run(s.key, s.label, null, s.buy ? 1 : 0, s.settle_city, s.jurisdiction, s.property_price_usd, s.survival_probability, s.median_bankruptcy_age, s.median_terminal_net_worth);
   });
   tx();
 
