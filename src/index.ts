@@ -102,8 +102,8 @@ function main(): void {
     age: sampleAge,
     values: riskAtAge(cities, sampleAge).filter((c) => c.decision !== "BLOCKED").map((c) => ({ name_en: c.name_en, TREI: c.TREI })),
   };
-  writeFileSync(join(OUT, "dashboard.html"), renderDashboard({ plans, finance, treiSample, validation, scenarios, strategies, seed: systemConfig.seed }), "utf8");
-  const noteCount = exportObsidian({ plans, phases, finance, seed: systemConfig.seed }, OUT);
+  writeFileSync(join(OUT, "dashboard.html"), renderDashboard({ plans, finance, treiSample, validation, scenarios, strategies, schedule, seed: systemConfig.seed }), "utf8");
+  const noteCount = exportObsidian({ plans, phases, finance, schedule, seed: systemConfig.seed }, OUT);
 
   // Summary — the numbers the whole system exists to produce.
   console.log("\n  ── primary run (experience-optimized) ──────");

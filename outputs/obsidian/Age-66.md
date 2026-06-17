@@ -1,5 +1,6 @@
 ---
 age: 66
+calendar_year: 2042
 r_age: 0.476
 annual_cost_usd: 30000
 cities: ["Xi'an", "Beijing"]
@@ -20,5 +21,25 @@ tags: [travel-os, yearly-plan]
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
 | Xi'an (西安) | Shaanxi | 182 | 1800 | 2.28 | 1.33 | 0.64 | ALLOWED |
 | Beijing (北京) | Beijing | 183 | 3200 | 2.28 | 0.87 | 0.42 | ALLOWED |
+
+
+## Monthly schedule — calendar 2042
+
+> Q1 Xi'an (3.4°C) · Q2 Beijing (20.1°C) · Q3 Beijing (24.9°C) · Q4 Xi'an (7.3°C)
+
+| Month | City | Est °C | Discomfort |
+|-------|------|-------:|-----------:|
+| Jan | Xi'an (西安) | 0.6 | 10.1 |
+| Feb | Xi'an (西安) | 2.4 | 8.8 |
+| Mar | Xi'an (西安) | 7.3 | 5.4 |
+| Apr | Xi'an (西安) | 13.9 | 0.8 |
+| May | Beijing (北京) | 20.3 | 0 |
+| Jun | Beijing (北京) | 26.1 | 0 |
+| Jul | Beijing (北京) | 28.2 | 1.3 |
+| Aug | Beijing (北京) | 26.1 | 0 |
+| Sep | Beijing (北京) | 20.3 | 0 |
+| Oct | Beijing (北京) | 12.3 | 1.9 |
+| Nov | Xi'an (西安) | 7.3 | 5.4 |
+| Dec | Xi'an (西安) | 2.4 | 8.8 |
 
 Starts from `CN-YN-KUNMING`. See [[Travel-OS-Overview]].

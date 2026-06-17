@@ -2,15 +2,15 @@
 
 **Deterministic geo-life planning + financial-constraint engine for China (ages 50–80).**
 
-A constrained life-trajectory optimizer — *not* a travel planner. It loads real Chinese cities, scores each on medical / climate / altitude risk, walks a weighted city graph year by year under an age-physiology constraint, and runs a Monte Carlo drawdown of a US$500k portfolio — now coupled with **housing, healthcare, and tax** — to answer the one question that decides everything:
+A constrained life-trajectory optimizer — *not* a travel planner. It loads **284 real prefecture-level cities**, scores each on medical / climate / altitude risk, walks a weighted city graph year by year under an age-physiology constraint, runs a Monte Carlo drawdown of a US$500k portfolio coupled with **housing, healthcare, and tax**, and emits a **month-by-month residence calendar** you can import as `.ics`. It answers the two questions that decide everything:
 
-> **Does the money last to 80 — and which life strategy survives best?**
+> **Does the money last to 80 — which life strategy survives best — and where should I physically be each month?**
 
 *English · [中文](#-中文文档)*
 
 ---
 
-## ⚡ Headline results (default config, 101 cities, 2,000 MC paths)
+## ⚡ Headline results (default config · 284 cities · 2,000 MC paths)
 
 ### The routing lever — survival is dominated by spend rate, not itinerary polish
 
@@ -18,11 +18,11 @@ Same safety gates, same finance model. The *only* change is how much you pay for
 
 | Routing objective | Survival to 80 | Mean spend | Median bankruptcy |
 |---|---:|---:|---:|
-| **Cost-minimized** | **64.5%** | $14,983/yr | — |
-| Balanced | 37.8% | $19,866/yr | 76 |
-| Experience-optimized | 14.5% | $25,636/yr | 70 |
+| **Cost-minimized** | **70.5%** | $14,095/yr | — |
+| Balanced | 41.0% | $19,096/yr | 76 |
+| Experience-optimized | 13.8% | $25,841/yr | 69 |
 
-Switching the routing objective moves survival **14.5% → 64.5%**. That single table is the thesis of the whole project: the lever is cost, not polish.
+Switching the routing objective moves survival **13.8% → 70.5%**. That single table is the thesis: the lever is cost, not polish.
 
 ### The v4.1 strategy selector — coupled housing + healthcare + tax
 
@@ -30,18 +30,19 @@ Full cost reality (age-rising healthcare + tax drag + rent-vs-buy), ranked by su
 
 | Strategy | Survival to 80 | Median net worth | Owns home |
 |---|---:|---:|---:|
-| 🏆 **Nomad · frugal** | **27.4%** | $0 | — |
-| Offshore + frugal + settle Chengdu | 10.2% | $227k | ✅ |
-| Buy & settle · Daya Bay | 4.9% | $183k | ✅ |
-| Nomad · experience | 3.8% | $0 | — |
-| Buy & settle · Chengdu | 3.1% | $227k | ✅ |
+| 🏆 **Nomad · frugal** | **30.3%** | $0 | — |
+| Offshore + frugal + settle Chengdu | 11.0% | $227k | ✅ |
+| Buy & settle · Daya Bay | 7.8% | $164k | ✅ |
+| Buy & settle · Chengdu | 3.8% | $227k | ✅ |
+| Nomad · experience | 3.4% | $0 | — |
 
-**Three honest findings the engine surfaces:**
-1. **Healthcare is not a footnote.** It alone roughly *halves* survival — frugal nomad drops from 64.5% (rent-only) to 27.4% once age-rising medical cost + tax drag are modeled. Most retirement plans ignore this; this one doesn't.
-2. **Buying a home late (66) after 16 years of drawdown wrecks liquid survival** but floors net worth — you end up house-rich, cash-poor. If you buy, buy *earlier* or route *frugally* beforehand.
-3. **The robust play is frugal + offshore**, with or without a home. Optimizing tax efficiency on an experience-maximizing nomad plan is rearranging deck chairs.
+**Three honest findings the engine surfaces:** (1) healthcare alone roughly *halves* survival (frugal drops 70.5% rent-only → 30.3% once medical + tax are modeled); (2) buying a home late after drawdown wrecks liquid survival but floors net worth; (3) the robust play is frugal + offshore.
 
-> Planning model, **not financial advice.** Non-geographic data fields are rule-based estimates (see [Data honesty](#data-honesty)).
+### The time layer — a seasonal residence calendar
+
+Each year is split into 12 months and each month placed in its most comfortable city, producing a **snowbird pattern** — e.g. at age 60: winter in **Xiamen (14.5°C)**, summer inland. Exported as `schedule.json`, a quarterly rollup, and an importable **`schedule.ics`**.
+
+> Planning model, **not financial advice.** Non-geographic fields are rule-based estimates (see [Data honesty](#data-honesty)).
 
 ---
 
@@ -49,25 +50,28 @@ Full cost reality (age-rising healthcare + tax drag + rent-vs-buy), ranked by su
 
 ```bash
 npm install
-npm run enrich          # build data/cities_china.json from real-geo anchors
-npm run simulate        # full pipeline -> outputs/ (routing + scenarios + v4.1 strategies)
+npm run anchors         # download GeoNames -> data/city_anchors.json (284 cities) [needs python3 + network]
+npm run enrich          # anchors -> data/cities_china.json (rule-based estimates)
+npm run simulate        # full pipeline -> outputs/ (routing + scenarios + v4.1 + schedule)
 open outputs/dashboard.html
+open outputs/schedule.ics   # import the 30-year residence calendar
 
-npm run db              # optional: D1-compatible SQLite (cities, edges, plans, scenarios, strategies)
+npm run db              # optional: D1-compatible SQLite (cities, edges, plans, scenarios, strategies, schedule)
 npm run typecheck
 ```
 
-Node ≥ 20. Core sim has **no native dependencies**; `better-sqlite3` is optional (only `npm run db`).
+Node ≥ 20; `npm run anchors` needs python3 + network (the committed dataset already includes its output, so you can skip it). Core sim has **no native dependencies**; `better-sqlite3` is optional (only `npm run db`).
 
 ---
 
 ## 🧭 Pipeline
 
 ```
-anchors ─▶ enrich ─▶ load ─▶ validate ─▶ weighted graph ─▶ TREI risk
-   ─▶ routing walk (age 50→80)  ─┬─▶ primary plan + dashboard + Obsidian
-                                 ├─▶ Task 1: routing-profile comparison
-                                 └─▶ v4.1: coupled strategy selector (housing+healthcare+tax)
+GeoNames ─▶ anchors ─▶ enrich ─▶ load ─▶ validate ─▶ weighted graph ─▶ TREI risk
+   ─▶ routing walk (age 50→80) ─┬─▶ primary plan + dashboard + Obsidian
+                                ├─▶ Task 1: routing-profile comparison
+                                ├─▶ v4.1: coupled strategy selector (housing+healthcare+tax)
+                                └─▶ time layer: monthly schedule + quarters + .ics
    ─▶ Monte Carlo drawdown ─▶ survival probability
 ```
 
@@ -80,33 +84,31 @@ Everything is **deterministic**: a given `(dataset, seed)` reproduces bit-for-bi
 ```
 travelOS/
 ├── config/
-│   ├── system_config.json       # seed, age range, base city, radius
+│   ├── system_config.json       # seed, age range, base city, radius, base_calendar_year
 │   ├── normalization.json       # the 0–10 risk curves
 │   ├── thresholds.json          # hybrid gate (percentile + hospital/altitude)
 │   ├── finance.json             # Monte Carlo return regimes
 │   ├── routing_profiles.json    # experience / balanced / frugal (Task 1)
 │   └── strategies.json          # v4.1 housing + healthcare + tax + strategies
 ├── data/
-│   ├── city_anchors.json        # ~100 cities: REAL geo + curated tags (source of truth)
+│   ├── city_anchors.json        # 284 cities: REAL geo + curated tags (from GeoNames)
 │   └── cities_china.json        # GENERATED by `npm run enrich`
+├── scripts/
+│   └── build_anchors_from_geonames.py   # the real admin-division ingest (npm run anchors)
 ├── database/schema.sql          # D1-compatible relational schema
 ├── src/
-│   ├── data_pipeline/
-│   │   ├── enrich_estimates.ts        # anchors -> dataset (documented rules)
-│   │   └── fetch_china_admin_divisions.ts  # scaling stub (300/2800)
+│   ├── data_pipeline/{enrich_estimates,fetch_china_admin_divisions}.ts
 │   ├── core_engine/
 │   │   ├── trei_engine.ts        # normalization + env_risk + R_age + TREI
 │   │   ├── constraint_engine.ts  # hybrid absolute + percentile gate
 │   │   ├── routing_engine.ts     # yearly greedy graph walk (profile-weighted)
 │   │   ├── lifecycle_engine.ts   # 30-year loop, state carry
-│   │   └── finance_engine.ts     # Monte Carlo drawdown (+ v4.1 coupling hooks)
+│   │   ├── finance_engine.ts     # Monte Carlo drawdown (+ v4.1 coupling hooks)
+│   │   └── climate_engine.ts     # seasonal monthly-temperature model
 │   ├── simulation_engine/
-│   │   └── scenario_runner.ts    # Task 1: routing-profile comparison
-│   ├── v41/
-│   │   ├── housing_engine.ts     # rent vs buy-and-settle
-│   │   ├── healthcare_engine.ts  # age-rising stochastic OOP medical cost
-│   │   ├── tax_engine.ts         # onshore/offshore return drag
-│   │   └── strategy_engine.ts    # the optimal-strategy selector
+│   │   ├── scenario_runner.ts    # Task 1: routing-profile comparison
+│   │   └── monthly_scheduler.ts  # time layer: months -> cities + .ics
+│   ├── v41/{housing,healthcare,tax,strategy}_engine.ts
 │   ├── graph_layer/ · data_layer/ · dashboard/ · lib/ · scripts/
 │   └── config.ts · types.ts · index.ts
 └── outputs/                      # generated artifacts
@@ -126,8 +128,8 @@ travelOS/
 | `medical_risk` | linear: minutes to tier-3A, 0→0 … 150→10 |
 
 ```
-env_risk = 0.4·altitude + 0.3·climate + 0.3·humidity     (missing input ⇒ +penalty, flag PARTIAL)
-R_age    = clamp(1 − ((age−40)/40)^1.5, 0.35, 1.0)        (NaN-safe; age 50→0.875, 80→0.35)
+env_risk = 0.4·altitude + 0.3·climate + 0.3·humidity   (missing input ⇒ +penalty, flag PARTIAL)
+R_age    = clamp(1 − ((age−40)/40)^1.5, 0.35, 1.0)      (NaN-safe; 50→0.875, 80→0.35)
 TREI     = (env_risk · medical_risk) / (R_age · 10)
 ```
 
@@ -142,29 +144,37 @@ ALLOWED       otherwise
 
 ### Routing — a profile-weighted graph walk
 
-Per year, from the current city, consider feasible graph neighbours not visited in 3 years; rank by
-
 ```
 utility = culture_pursuit·culture/(TREI+eps) − cost_weight·(monthly_cost/1000) − travel_weight·(dist/1000)
 ```
 
-The three **routing profiles** (`config/routing_profiles.json`) just change those weights — `frugal` cranks `cost_weight` and drops `culture_pursuit`, so it picks the cheapest *safe* cities. Cities-per-year = `round(4·R_age)`, so itineraries collapse from ~4 cities at 50 to single-city stabilization by 70.
+Three profiles (`config/routing_profiles.json`) change those weights; `frugal` cranks `cost_weight` and drops `culture_pursuit`. Cities-per-year = `round(4·R_age)`, so itineraries collapse from ~4 cities at 50 to single-city stabilization by 70.
 
 ### Finance — Monte Carlo drawdown (real USD)
 
 ```
-portfolio(t+1) = portfolio(t)·(1 + real_return_t − tax_drag) − living − healthcare(age) − lump(age)
-real_return_t ~ N(3.5%, 11%)  normally  /  N(−18%, 10%)  in a recession year (p=10%)
+portfolio(t+1) = portfolio(t)·(1 + real_return − tax_drag) − living − healthcare(age) − lump(age)
+real_return ~ N(3.5%, 11%) normally / N(−18%, 10%) in a recession year (p=10%)
 ```
 
-`living` comes from the routing plan (geography→cost coupling). v4.1 adds `tax_drag`, a stochastic `healthcare(age)`, and one-time `lump` outflows (property purchase). Thousands of seeded paths → `survival_probability`, `median_bankruptcy_age`, p10/50/90 trajectories, and median terminal **net worth** (liquid + owned home).
+Thousands of seeded paths → survival, median bankruptcy age, p10/50/90 trajectories, terminal net worth (liquid + owned home).
 
 ### v4.1 coupling
 
-- **Housing** (`housing_engine.ts`): a *buy* strategy converts liquid cash to an illiquid home at `buy_age`, then replaces rent with ownership cost. Survival is on liquid capital; the home shows up in net worth.
-- **Healthcare** (`healthcare_engine.ts`): OOP cost rises ~6%/yr with a rising-probability tail event; insurance dampens the tail for a premium. Drawn inside the MC so it contributes to sequence risk.
-- **Tax** (`tax_engine.ts`): onshore vs offshore (HK/SG) return drag.
-- **Strategy selector** (`strategy_engine.ts`): runs the full coupled MC for each strategy and ranks by survival.
+- **Housing**: a *buy* strategy converts liquid cash to an illiquid home at `buy_age`, replacing rent with ownership cost.
+- **Healthcare**: OOP cost rises ~6%/yr with a rising-probability tail; insurance dampens it for a premium. Drawn inside the MC.
+- **Tax**: onshore vs offshore (HK/SG) return drag.
+- **Strategy selector**: runs the full coupled MC per strategy and ranks by survival.
+
+### Seasonal climate + scheduling
+
+```
+mean(lat,alt)  = 28 − 0.7·(|lat|−18) − 0.0065·alt
+amplitude(lat) = 6 + 0.45·(|lat|−18)
+temp(month)    = mean − amplitude·cos(2π·(month−1)/12)     (Jan coldest, Jul warmest)
+```
+
+The scheduler keeps each year's day counts (so cost is unchanged) and assigns the **hardest months first** to their most comfortable city — yielding a snowbird calendar when the year's cities allow it. Exported to `schedule.json` (+ quarters) and `schedule.ics`.
 
 ---
 
@@ -172,62 +182,63 @@ real_return_t ~ N(3.5%, 11%)  normally  /  N(−18%, 10%)  in a recession year (
 
 | File | Contents |
 |---|---|
-| `yearly_plan.json` | 31 yearly plans (primary profile): cities, days, per-city risk/TREI/utility/decision |
+| `yearly_plan.json` | 31 yearly plans (primary profile) |
 | `full_30_year_route.json` | compressed life-phase narrative |
-| `cashflow_report.json` | primary survival probability, bankruptcy distribution, p10/50/90 trajectories |
-| `scenario_comparison.json` | **Task 1** — survival per routing profile (rent-only) |
+| `cashflow_report.json` | primary survival probability + p10/50/90 trajectories |
+| `scenario_comparison.json` | **Task 1** — survival per routing profile |
 | `strategy_comparison.json` | **v4.1** — survival per coupled life-strategy, ranked |
+| `schedule.json` | **time layer** — month-by-month residence + quarters |
+| `schedule.ics` | importable 30-year residence calendar |
 | `risk_heatmap.json` | per-city TREI + decision at representative ages |
-| `edges.json` | the weighted city graph (3,287 edges) |
+| `edges.json` | the weighted city graph (24,071 edges) |
 | `invalid_nodes_report.json` | data-quality audit |
-| `dashboard.html` | self-contained dashboard: both comparison tables, survival curve, TREI histogram, route |
-| `obsidian/` | linked vault — overview + one note per year |
-| `travel_os.db` | SQLite (D1-compatible): cities, edges, plans, scenarios, strategies |
+| `dashboard.html` | self-contained dashboard: comparisons, survival curve, TREI histogram, seasonal calendar, route |
+| `obsidian/` | linked vault — overview + one note per year (with monthly schedule) |
+| `travel_os.db` | SQLite (D1-compatible): cities, edges, plans, scenarios, strategies, schedule |
 
 ---
 
 ## ⚙️ Tuning
 
-- **Routing objectives** — `config/routing_profiles.json` (weights for experience/balanced/frugal).
-- **Strategies** — `config/strategies.json` (add a city, change `buy_age`, toggle insurance/jurisdiction).
+- **Routing objectives** — `config/routing_profiles.json`.
+- **Strategies / housing / healthcare / tax** — `config/strategies.json`.
 - **Risk curves / gate** — `config/normalization.json`, `config/thresholds.json`.
-- **Returns / healthcare / housing** — `config/finance.json`, `config/strategies.json`.
-- **The person** — `config/system_config.json` (`base_city`, `age_start/end`, `seed`).
+- **Returns** — `config/finance.json`.
+- **The person / start year** — `config/system_config.json` (`base_city`, `age_start/end`, `base_calendar_year`, `seed`).
 
 ---
 
-## 📈 Scaling toward 300 / 2,800
+## 📈 Scaling toward 2,800 counties
 
-The MVP ships ~100 real-geo anchors. To scale:
+The dataset is built by `npm run anchors` from GeoNames (PPLC/PPLA/PPLA2 seats → 284 prefecture-level cities). To go further:
 
-1. Append anchors to `data/city_anchors.json` (real `lat/lng/altitude` + `tier`/tags), run `npm run enrich`. The enricher and engine are size-agnostic.
-2. `src/data_pipeline/fetch_china_admin_divisions.ts` documents the ingest contract for NBS/GADM/SRTM + hospital-time sources.
-3. Graph is O(n²) within `radius_km` — fine to a few thousand nodes in SQLite; beyond that persist `edges` to D1.
-4. Replace rule-based estimates with measured data; keep the `source`/`method` tags so approximations stay visible.
+1. Extend `scripts/build_anchors_from_geonames.py` to include PPLA3 (county seats) or ingest NBS division codes → ~2,800 nodes; the enricher and engine are size-agnostic.
+2. Graph is O(n²) within `radius_km` — fine to a few thousand nodes in SQLite; beyond that persist `edges` to D1.
+3. Replace rule-based estimates with measured data (Amap/OSRM hospital travel-time, climate normals); keep the `source` tags so approximations stay visible.
 
 ---
 
 ## 🧪 Design decisions (resolved across the v3.x → v4.1 review cycle)
 
-- **No coverage collapse** — percentile + absolute hybrid gate (a fixed `TREI<6` cutoff excluded almost all of China).
-- **Consistent units** — normalized 0–10 sub-scores with documented curves, no raw `max()`.
+- **No coverage collapse** — percentile + absolute hybrid gate.
+- **Consistent units** — normalized 0–10 sub-scores, no raw `max()`.
 - **No silent null optimism** — missing data → penalty + PARTIAL/BLOCK.
-- **Real routing** — a graph walk with a visited-set and a start location, not a ranked list.
-- **Honest money** — Monte Carlo with sequence-of-returns risk, now coupled to housing/healthcare/tax.
-- **No fake precision** — great-circle travel times, explicitly tagged.
-- **Rule-based data** — estimate fields derived from documented rules, not 500 hand-fudged cells.
+- **Real routing** — graph walk with a visited-set and a start location.
+- **Honest money** — Monte Carlo with sequence-of-returns risk, coupled to housing/healthcare/tax.
+- **Real data, real mess** — GeoNames ingest exposed (and the pipeline fixes) missing capitals, `-9999` elevation, and noisy names.
+- **No fake precision** — great-circle travel times and a seasonal climate model, both explicitly tagged.
 
 ### Data honesty
 
-`lat`, `lng`, `altitude_m` are real approximate geographic values. `tier3_hospital_minutes`, `avg_temp_range`, `humidity_index`, `monthly_cost_usd`, `cultural_value` are **rule-based estimates** (`src/data_pipeline/enrich_estimates.ts`) — good enough to exercise the engine, not authoritative. Replace via the data pipeline before treating any specific city result as real.
+`lat`, `lng`, `altitude_m` come from **GeoNames** (CC BY). `tier3_hospital_minutes`, `avg_temp_range`, `humidity_index`, `monthly_cost_usd`, `cultural_value`, and monthly temperatures are **rule-based estimates** — good enough to exercise the engine, not authoritative. Replace via the data pipeline before treating any specific city result as real.
 
 ## 🗺️ Roadmap (v4.2)
 
-Buy-age sweep (find the optimal purchase age, not a fixed 66), dynamic spend (cut costs when the portfolio drops), partial annuitization, and a real hospital-travel-time ingest to graduate medical risk from estimate to measured.
+Season-aware *routing* (pick the year's cities for complementary seasons, not just place them), buy-age sweep, dynamic spend, and a measured hospital-travel-time ingest.
 
 ## License
 
-MIT © 2026 alexmorerich
+MIT © 2026 alexmorerich · city data © GeoNames (CC BY 4.0)
 
 ---
 ---
@@ -238,40 +249,39 @@ MIT © 2026 alexmorerich
 
 **面向中国、覆盖 50–80 岁的确定性「地理-人生」规划 + 金融约束引擎。**
 
-这不是旅行规划器，而是**带约束的人生轨迹优化器**。它加载真实中国城市，对每座城市的医疗 / 气候 / 海拔风险打分，在年龄生理约束下逐年在加权城市图上行走，并对 50 万美元资产组合做蒙特卡洛消耗模拟——现已耦合**住房、医疗、税务**——回答那个决定一切的问题：
+这不是旅行规划器，而是**带约束的人生轨迹优化器**。它加载 **284 座真实地级市**，对每座城市的医疗 / 气候 / 海拔风险打分，在年龄生理约束下逐年在加权城市图上行走，对 50 万美元资产组合做耦合**住房、医疗、税务**的蒙特卡洛消耗模拟，并输出可导入 `.ics` 的**逐月居住日历**。它回答那三个决定一切的问题：
 
-> **钱能撑到 80 岁吗？哪种人生策略存活率最高？**
+> **钱能撑到 80 岁吗？哪种人生策略存活率最高？每个月该待在哪里？**
 
-## ⚡ 核心结论（默认配置，101 城，2000 条路径）
+## ⚡ 核心结论（默认配置 · 284 城 · 2000 条路径）
 
 ### 路由杠杆——存活率由支出水平主导，而非行程精细度
 
-相同安全门控、相同金融模型，**唯一**的变化是为「体验」付多少钱：
-
 | 路由目标 | 撑到 80 岁 | 平均支出 | 中位破产年龄 |
 |---|---:|---:|---:|
-| **成本最小化** | **64.5%** | $14,983/年 | — |
-| 平衡 | 37.8% | $19,866/年 | 76 |
-| 体验优先 | 14.5% | $25,636/年 | 70 |
+| **成本最小化** | **70.5%** | $14,095/年 | — |
+| 平衡 | 41.0% | $19,096/年 | 76 |
+| 体验优先 | 13.8% | $25,841/年 | 69 |
 
-仅切换路由目标，存活率就从 **14.5% → 64.5%**。这张表是整个项目的论点：杠杆是成本，不是精细度。
+仅切换路由目标，存活率从 **13.8% → 70.5%**。杠杆是成本，不是精细度。
 
 ### v4.1 策略选择器——耦合住房 + 医疗 + 税务
 
-完整成本现实（随龄上升的医疗 + 税务拖累 + 租 vs 买），按**流动资本**存活率排序：
+按**流动资本**存活率排序：
 
 | 策略 | 撑到 80 岁 | 中位净资产 | 拥有住房 |
 |---|---:|---:|---:|
-| 🏆 **游牧 · 节俭** | **27.4%** | $0 | — |
-| 离岸 + 节俭 + 定居成都 | 10.2% | $227k | ✅ |
-| 买房定居 · 大亚湾 | 4.9% | $183k | ✅ |
-| 游牧 · 体验 | 3.8% | $0 | — |
-| 买房定居 · 成都 | 3.1% | $227k | ✅ |
+| 🏆 **游牧 · 节俭** | **30.3%** | $0 | — |
+| 离岸 + 节俭 + 定居成都 | 11.0% | $227k | ✅ |
+| 买房定居 · 大亚湾 | 7.8% | $164k | ✅ |
+| 买房定居 · 成都 | 3.8% | $227k | ✅ |
+| 游牧 · 体验 | 3.4% | $0 | — |
 
-**引擎揭示的三个诚实发现：**
-1. **医疗不是脚注。** 仅医疗一项就让存活率**腰斩**——节俭游牧从 64.5%（仅租房）降到 27.4%，一旦计入随龄上升的医疗成本 + 税务拖累。多数退休计划忽略这点，本系统不忽略。
-2. **66 岁、消耗 16 年后才买房，会摧毁流动存活率**，但托住净资产——你变成「有房无钱」。要买就**更早**买，或买之前**节俭**路由。
-3. **稳健打法是节俭 + 离岸**，买不买房都行。在体验最大化的游牧计划之上优化税效，是在搬甲板上的椅子。
+**三个诚实发现：**（1）仅医疗一项就让存活率**腰斩**（节俭从仅租房 70.5% 降到 30.3%）；（2）消耗多年后才在 66 岁买房会摧毁流动存活率，但托住净资产；（3）稳健打法是节俭 + 离岸。
+
+### 时间层——季节性居住日历
+
+每年拆成 12 个月，每月安置到最舒适的城市，形成**候鸟模式**——如 60 岁：冬季在**厦门（14.5°C）**，夏季转内陆。导出为 `schedule.json`、季度汇总，以及可导入的 **`schedule.ics`**。
 
 > 规划模型，**不构成投资建议**。非地理字段为规则化估算（见[数据诚实性](#数据诚实性-1)）。
 
@@ -279,51 +289,44 @@ MIT © 2026 alexmorerich
 
 ```bash
 npm install
-npm run enrich          # 从真实地理锚点生成 data/cities_china.json
-npm run simulate        # 完整管线 -> outputs/（路由 + 场景 + v4.1 策略）
+npm run anchors         # 下载 GeoNames -> data/city_anchors.json（284 城）[需 python3 + 网络]
+npm run enrich          # 锚点 -> data/cities_china.json（规则化估算）
+npm run simulate        # 完整管线 -> outputs/（路由 + 场景 + v4.1 + 日历）
 open outputs/dashboard.html
+open outputs/schedule.ics   # 导入 30 年居住日历
 
-npm run db              # 可选：D1 兼容 SQLite（城市、边、计划、场景、策略）
+npm run db              # 可选：D1 兼容 SQLite（城市/边/计划/场景/策略/日历）
 npm run typecheck
 ```
 
-Node ≥ 20。核心模拟**无原生依赖**；`better-sqlite3` 可选（仅 `npm run db`）。
+Node ≥ 20；`npm run anchors` 需 python3 + 网络（仓库已含其输出，可跳过）。核心模拟**无原生依赖**；`better-sqlite3` 可选。
 
 ## 🔬 引擎细节
 
 ### 风险归一化（`config/normalization.json`）
 
-| 子分数 | 映射 |
-|---|---|
-| `altitude_score` | 分段：≤500m 平坦，1500–3500m 缺氧带爬升至 10 |
-| `climate_variance_score` | 线性：年温差 10°C→0 … 45°C→10 |
-| `humidity_score` | `\|湿度 − 50\| / 5`，截断 0–10 |
-| `medical_risk` | 线性：到三甲分钟数 0→0 … 150→10 |
-
 ```
-env_risk = 0.4·海拔 + 0.3·气候 + 0.3·湿度        （缺输入 ⇒ +惩罚，标记 PARTIAL）
-R_age    = clamp(1 − ((age−40)/40)^1.5, 0.35, 1.0)  （NaN 安全；50→0.875，80→0.35）
+env_risk = 0.4·海拔 + 0.3·气候 + 0.3·湿度   （缺输入 ⇒ +惩罚，标记 PARTIAL）
+R_age    = clamp(1 − ((age−40)/40)^1.5, 0.35, 1.0)
 TREI     = (env_risk · medical_risk) / (R_age · 10)
 ```
 
 ### 混合可行性门控
 
 ```
-BLOCKED       医院 > 120 分钟  或  医院数据未知
-BLOCKED       年龄 > 70 且 海拔 > 2500m（海拔未知 ⇒ 视为不安全）
-LOW_PRIORITY  TREI > 当年可行集合的 85 百分位
+BLOCKED       医院 > 120 分钟 或 未知
+BLOCKED       年龄 > 70 且 海拔 > 2500m（海拔未知 ⇒ 不安全）
+LOW_PRIORITY  TREI > 当年可行集合 85 百分位
 ALLOWED       其他
 ```
 
 ### 路由——按 profile 加权的图行走
 
-每年从当前城市出发，考虑近 3 年未访问的可行邻居，按效用排序：
-
 ```
 utility = culture_pursuit·culture/(TREI+eps) − cost_weight·(月成本/1000) − travel_weight·(距离/1000)
 ```
 
-三个**路由 profile**（`config/routing_profiles.json`）只改这些权重——`frugal` 拉高 `cost_weight`、压低 `culture_pursuit`，于是选最便宜的**安全**城市。每年城市数 = `round(4·R_age)`，行程从 50 岁约 4 城收敛到 70 岁单城定居。
+三个 profile（experience/balanced/frugal）改这些权重；`frugal` 拉高成本权重、压低文化追求。每年城市数 = `round(4·R_age)`。
 
 ### 金融——蒙特卡洛消耗（实际美元）
 
@@ -332,58 +335,52 @@ utility = culture_pursuit·culture/(TREI+eps) − cost_weight·(月成本/1000) 
 实际收益 ~ N(3.5%, 11%) 正常 / N(−18%, 10%) 衰退年（p=10%）
 ```
 
-`生活`来自路由计划（地理→成本耦合）。v4.1 增加 `税务拖累`、随机 `医疗(age)`、一次性 `购房` 流出。数千条种子路径 → `survival_probability`、`median_bankruptcy_age`、p10/50/90 轨迹，以及中位最终**净资产**（流动 + 自有住房）。
-
 ### v4.1 耦合
 
-- **住房**（`housing_engine.ts`）：买房策略在 `buy_age` 将流动现金转为非流动住房，之后以持有成本替代房租。存活率按流动资本计；住房计入净资产。
-- **医疗**（`healthcare_engine.ts`）：自付成本随龄约 6%/年上升，并有概率渐增的尾部事件；保险以保费换取尾部减免。在 MC 内抽样，故贡献顺序风险。
-- **税务**（`tax_engine.ts`）：在岸 vs 离岸（港/新）收益拖累。
-- **策略选择器**（`strategy_engine.ts`）：对每个策略运行完整耦合 MC，按存活率排序。
+- **住房**：买房策略在 `buy_age` 将现金转为非流动住房，以持有成本替代房租。
+- **医疗**：自付随龄约 6%/年上升，含概率渐增尾部事件；保险换尾部减免。
+- **税务**：在岸 vs 离岸（港/新）收益拖累。
+- **策略选择器**：对每策略运行完整耦合 MC，按存活率排序。
+
+### 季节性气候 + 排程
+
+```
+mean(lat,alt)  = 28 − 0.7·(|lat|−18) − 0.0065·alt
+temp(month)    = mean − amplitude·cos(2π·(month−1)/12)   （1 月最冷，7 月最热）
+```
+
+排程保留每年的天数（成本不变），把**最难的月份优先**安置到最舒适的城市——在城市集合允许时形成候鸟日历。导出 `schedule.json`（含季度）与 `schedule.ics`。
 
 ## 📊 输出文件（`outputs/`）
 
 | 文件 | 内容 |
 |---|---|
-| `yearly_plan.json` | 31 份年度计划（主 profile）：城市、天数、各城风险/TREI/效用/决策 |
-| `full_30_year_route.json` | 压缩的人生阶段叙事 |
-| `cashflow_report.json` | 主存活概率、破产分布、p10/50/90 轨迹 |
-| `scenario_comparison.json` | **任务 1** — 各路由 profile 存活率（仅租房）|
-| `strategy_comparison.json` | **v4.1** — 各耦合人生策略存活率，已排序 |
-| `risk_heatmap.json` | 代表年龄下各城 TREI + 决策 |
-| `edges.json` | 加权城市图（3287 条边）|
-| `invalid_nodes_report.json` | 数据质量审计 |
-| `dashboard.html` | 自包含仪表盘：两张对比表 + 存活曲线 + TREI 直方图 + 路线 |
-| `obsidian/` | 互链笔记库——总览 + 每年一篇 |
-| `travel_os.db` | SQLite（D1 兼容）：城市、边、计划、场景、策略 |
+| `yearly_plan.json` | 31 份年度计划（主 profile）|
+| `scenario_comparison.json` | **任务 1** — 各路由 profile 存活率 |
+| `strategy_comparison.json` | **v4.1** — 各耦合策略存活率，已排序 |
+| `schedule.json` | **时间层** — 逐月居住 + 季度 |
+| `schedule.ics` | 可导入的 30 年居住日历 |
+| `cashflow_report.json` · `risk_heatmap.json` · `edges.json` · `invalid_nodes_report.json` | 现金流 / 风险热图 / 图（24071 边）/ 数据审计 |
+| `dashboard.html` | 自包含仪表盘：对比表 + 存活曲线 + TREI 直方图 + 季节日历 + 路线 |
+| `obsidian/` | 互链笔记库——总览 + 每年一篇（含逐月排程）|
+| `travel_os.db` | SQLite（D1 兼容）：城市/边/计划/场景/策略/日历 |
 
-## 📈 扩展到 300 / 2800
+## 📈 扩展到 2800 县
 
-MVP 内置约 100 个真实地理锚点。扩展：
+数据由 `npm run anchors` 从 GeoNames 构建（PPLC/PPLA/PPLA2 → 284 地级市）。继续扩展：
 
-1. 向 `data/city_anchors.json` 追加锚点（真实 `lat/lng/altitude` + `tier`/标签），运行 `npm run enrich`。enricher 与引擎均与规模无关。
-2. `src/data_pipeline/fetch_china_admin_divisions.ts` 记录了 NBS/GADM/SRTM + 医院通行时间源的接入契约。
-3. 图在 `radius_km` 内为 O(n²)——数千节点在 SQLite 内无压力；再大则把 `edges` 落到 D1。
-4. 用实测数据替换规则估算；保留 `source`/`method` 标签让近似保持可见。
-
-## 🧪 设计决策（v3.x → v4.1 评审周期逐一解决）
-
-- **不再全境过滤** — 百分位 + 绝对混合门控（固定 `TREI<6` 会过滤掉几乎全中国）。
-- **单位一致** — 归一化 0–10 子分数 + 文档化曲线，杜绝裸 `max()`。
-- **缺失不乐观** — 缺数据 → 惩罚 + PARTIAL/BLOCK。
-- **真路由** — 带已访问集合与起点的图行走，而非排序列表。
-- **诚实的钱** — 带顺序风险的蒙特卡洛，现耦合住房/医疗/税务。
-- **不假精度** — 大圆旅行时间，显式标注。
-- **规则化数据** — 估算字段由文档化规则导出，而非 500 个手工拍脑袋的格子。
+1. 扩展 `scripts/build_anchors_from_geonames.py` 纳入 PPLA3（县级）或接入 NBS 行政区划码 → ~2800 节点；enricher 与引擎与规模无关。
+2. 图在 `radius_km` 内为 O(n²)——数千节点 SQLite 无压力；再大则 `edges` 落 D1。
+3. 用实测数据替换规则估算（高德/OSRM 医院通行时间、气候常年值）；保留 `source` 标签。
 
 ### 数据诚实性
 
-`lat`、`lng`、`altitude_m` 为真实近似地理值。`tier3_hospital_minutes`、`avg_temp_range`、`humidity_index`、`monthly_cost_usd`、`cultural_value` 为**规则化估算**（`src/data_pipeline/enrich_estimates.ts`）——足以驱动引擎，但非权威。把任何具体城市结果当真前，请先通过数据管线替换为实测值。
+`lat`、`lng`、`altitude_m` 来自 **GeoNames**（CC BY）。`tier3_hospital_minutes`、`avg_temp_range`、`humidity_index`、`monthly_cost_usd`、`cultural_value` 及逐月温度为**规则化估算**——足以驱动引擎，但非权威。把任何具体城市结果当真前，请先通过数据管线替换为实测值。
 
 ## 🗺️ 路线图（v4.2）
 
-购房年龄扫描（找最优购房年龄，而非固定 66）、动态支出（资产下跌时削减成本）、部分年金化，以及真实医院通行时间接入，把医疗风险从估算升级为实测。
+季节感知的**路由选择**（按互补季节选城，而非仅事后排布）、购房年龄扫描、动态支出、真实医院通行时间接入。
 
 ## 许可证
 
-MIT © 2026 alexmorerich
+MIT © 2026 alexmorerich · 城市数据 © GeoNames（CC BY 4.0）

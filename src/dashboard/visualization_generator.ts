@@ -1,6 +1,6 @@
 // Renders a single self-contained dark-theme HTML dashboard (inline SVG, no
 // external/CDN dependencies) so it opens straight from disk.
-import type { YearPlan, FinanceResult, ScenarioResult, StrategyResult } from "../types";
+import type { YearPlan, FinanceResult, ScenarioResult, StrategyResult, ScheduleYear } from "../types";
 import type { ValidationReport } from "../data_layer/validate";
 
 export interface DashboardInput {
@@ -10,7 +10,31 @@ export interface DashboardInput {
   validation: ValidationReport;
   scenarios: ScenarioResult[];
   strategies: StrategyResult[];
+  schedule: ScheduleYear[];
   seed: number;
+}
+
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+function tempColor(t: number): string {
+  if (t <= 4) return "#3b6fd4";
+  if (t <= 14) return "#4a9bd1";
+  if (t <= 26) return "#46b97a";
+  if (t <= 30) return "#e0a13a";
+  return "#e0563a";
+}
+
+function scheduleStrip(schedule: ScheduleYear[]): string {
+  // Show a few representative years as 12-month colour strips.
+  const picks = [52, 60, 70].map((a) => schedule.find((s) => s.age === a)).filter(Boolean) as ScheduleYear[];
+  const rows = picks.map((yr) => {
+    const cells = yr.months.map((m) =>
+      `<td title="${m.name_en} ${m.temp_c}°C" style="background:${tempColor(m.temp_c)};color:#0c1320;font-size:10px;padding:3px 2px;text-align:center;min-width:42px">
+        <div style="font-weight:600">${MONTHS[m.month - 1]}</div><div>${m.name_en.slice(0, 7)}</div><div>${Math.round(m.temp_c)}°</div></td>`,
+    ).join("");
+    return `<tr><td style="padding-right:10px;color:#7c8aa5;white-space:nowrap">Age ${yr.age} · ${yr.calendar_year}</td>${cells}</tr>`;
+  }).join("");
+  return `<table style="border-collapse:separate;border-spacing:2px"><tbody>${rows}</tbody></table>`;
 }
 
 function pct(p: number): string {
@@ -170,6 +194,8 @@ export function renderDashboard(d: DashboardInput): string {
 
   <div class="panel"><h2>💰 Portfolio survival curve — primary run (real USD · p10–p90 band, p50 line)</h2>${survivalCurve(d.finance)}</div>
   <div class="panel"><h2>🌡️ TREI risk distribution across cities</h2>${treiHistogram(d.treiSample)}</div>
+  <div class="panel"><h2>📅 Seasonal residence calendar (sample years)</h2>${scheduleStrip(d.schedule)}
+    <p class="foot" style="margin-top:6px">Colour = estimated monthly temperature (blue cold → red hot). Full month-by-month plan in <code>schedule.json</code>; importable calendar in <code>schedule.ics</code>.</p></div>
   <div class="panel"><h2>🗺️ 30-year route</h2><div class="scroll">${routeTable(d.plans)}</div></div>
 
   <p class="foot">Data: ${d.validation.total_nodes} nodes (${d.validation.valid} VALID, ${d.validation.partial} PARTIAL, ${d.validation.invalid} INVALID).

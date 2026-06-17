@@ -80,3 +80,16 @@ CREATE TABLE IF NOT EXISTS strategy_results (
   median_bankruptcy_age     INTEGER,
   median_terminal_net_worth REAL NOT NULL
 );
+
+-- Time layer: month-by-month residence schedule
+CREATE TABLE IF NOT EXISTS schedule_months (
+  age            INTEGER NOT NULL,
+  calendar_year  INTEGER NOT NULL,
+  month          INTEGER NOT NULL,
+  city_id        TEXT NOT NULL,
+  name_en        TEXT NOT NULL,
+  temp_c         REAL NOT NULL,
+  discomfort     REAL NOT NULL,
+  PRIMARY KEY (age, month)
+);
+CREATE INDEX IF NOT EXISTS idx_sched_age ON schedule_months(age);

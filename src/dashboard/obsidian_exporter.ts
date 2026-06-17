@@ -2,23 +2,45 @@
 // properties usable by Dataview/Bases) plus one linked note per year.
 import { mkdirSync, writeFileSync, rmSync } from "node:fs";
 import { join } from "node:path";
-import type { YearPlan, RegionPhase, FinanceResult } from "../types";
+import type { YearPlan, RegionPhase, FinanceResult, ScheduleYear } from "../types";
 
 export interface ObsidianInput {
   plans: YearPlan[];
   phases: RegionPhase[];
   finance: FinanceResult;
+  schedule: ScheduleYear[];
   seed: number;
 }
+
+const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 function ageNoteName(age: number): string {
   return `Age-${age}`;
 }
 
-function yearNote(plan: YearPlan, prev: number | null, next: number | null): string {
+function scheduleSection(sched: ScheduleYear | undefined): string {
+  if (!sched || sched.months.length === 0) return "";
+  const rows = sched.months
+    .map((m) => `| ${MON[m.month - 1]} | ${m.name_en} (${m.name}) | ${m.temp_c} | ${m.discomfort} |`)
+    .join("\n");
+  const q = sched.quarters.map((x) => `Q${x.quarter} ${x.name_en} (${x.avg_temp_c}°C)`).join(" · ");
+  return `
+
+## Monthly schedule — calendar ${sched.calendar_year}
+
+> ${q}
+
+| Month | City | Est °C | Discomfort |
+|-------|------|-------:|-----------:|
+${rows}
+`;
+}
+
+function yearNote(plan: YearPlan, sched: ScheduleYear | undefined, prev: number | null, next: number | null): string {
   const fm = [
     "---",
     `age: ${plan.age}`,
+    `calendar_year: ${sched?.calendar_year ?? "null"}`,
     `r_age: ${plan.R_age}`,
     `annual_cost_usd: ${plan.annual_cost_usd}`,
     `cities: [${plan.cities.map((c) => `"${c.name_en}"`).join(", ")}]`,
@@ -53,7 +75,7 @@ ${nav}
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
 ${rows}
-
+${scheduleSection(sched)}
 Starts from \`${plan.start_city}\`. See [[Travel-OS-Overview]].
 `;
 }
@@ -105,10 +127,11 @@ export function exportObsidian(input: ObsidianInput, outDir: string): number {
   mkdirSync(dir, { recursive: true });
 
   writeFileSync(join(dir, "Travel-OS-Overview.md"), overviewNote(input), "utf8");
+  const schedByAge = new Map(input.schedule.map((s) => [s.age, s]));
   input.plans.forEach((plan, i) => {
     const prev = i > 0 ? input.plans[i - 1].age : null;
     const next = i < input.plans.length - 1 ? input.plans[i + 1].age : null;
-    writeFileSync(join(dir, `${ageNoteName(plan.age)}.md`), yearNote(plan, prev, next), "utf8");
+    writeFileSync(join(dir, `${ageNoteName(plan.age)}.md`), yearNote(plan, schedByAge.get(plan.age), prev, next), "utf8");
   });
   return input.plans.length + 1;
 }

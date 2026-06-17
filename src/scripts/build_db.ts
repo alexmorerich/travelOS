@@ -9,7 +9,7 @@ import { join } from "node:path";
 import { ROOT } from "../config";
 import { loadCities } from "../data_layer/loader";
 import { buildGraph } from "../graph_layer/city_graph_builder";
-import type { YearPlan, FinanceResult, ScenarioResult, StrategyResult } from "../types";
+import type { YearPlan, FinanceResult, ScenarioResult, StrategyResult, ScheduleYear } from "../types";
 
 async function loadDriver(): Promise<any | null> {
   try {
@@ -41,7 +41,7 @@ async function main(): Promise<void> {
   const db = new Database(dbPath);
   db.exec(readFileSync(join(ROOT, "database/schema.sql"), "utf8"));
   // Delete children before parents (cities is referenced by edges/plans).
-  db.exec("DELETE FROM edges; DELETE FROM yearly_plan_cities; DELETE FROM finance_summary; DELETE FROM scenario_results; DELETE FROM strategy_results; DELETE FROM cities;");
+  db.exec("DELETE FROM edges; DELETE FROM yearly_plan_cities; DELETE FROM finance_summary; DELETE FROM scenario_results; DELETE FROM strategy_results; DELETE FROM schedule_months; DELETE FROM cities;");
 
   const cities = loadCities();
   const graph = buildGraph(cities);
@@ -50,6 +50,7 @@ async function main(): Promise<void> {
   const readOpt = <T>(p: string): T[] => (existsSync(p) ? (JSON.parse(readFileSync(p, "utf8")) as T[]) : []);
   const scenarios = readOpt<ScenarioResult>(join(outDir, "scenario_comparison.json"));
   const strategies = readOpt<StrategyResult>(join(outDir, "strategy_comparison.json"));
+  const schedule = readOpt<ScheduleYear>(join(outDir, "schedule.json"));
 
   const insertCity = db.prepare(
     `INSERT INTO cities (id,name,name_en,province,lat,lng,altitude_m,tier3_hospital_minutes,avg_temp_range,humidity_index,monthly_cost_usd,cultural_value,env_risk,completeness)
@@ -94,6 +95,10 @@ async function main(): Promise<void> {
       `INSERT INTO strategy_results (key,label,routing,buy,settle_city,jurisdiction,property_price_usd,survival_probability,median_bankruptcy_age,median_terminal_net_worth) VALUES (?,?,?,?,?,?,?,?,?,?)`,
     );
     for (const s of strategies) insStrategy.run(s.key, s.label, null, s.buy ? 1 : 0, s.settle_city, s.jurisdiction, s.property_price_usd, s.survival_probability, s.median_bankruptcy_age, s.median_terminal_net_worth);
+    const insSched = db.prepare(
+      `INSERT INTO schedule_months (age,calendar_year,month,city_id,name_en,temp_c,discomfort) VALUES (?,?,?,?,?,?,?)`,
+    );
+    for (const yr of schedule) for (const m of yr.months) insSched.run(yr.age, yr.calendar_year, m.month, m.city_id, m.name_en, m.temp_c, m.discomfort);
   });
   tx();
 
