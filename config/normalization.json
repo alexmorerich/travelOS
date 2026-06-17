@@ -1,0 +1,40 @@
+{
+  "_comment": "Explicit risk-normalization curves. These were the missing quantitative content in v3.x specs. Every sub-score maps a raw real-world value to a common 0-10 risk scale. Tune here, not in code.",
+  "env_weights": {
+    "altitude": 0.4,
+    "climate": 0.3,
+    "humidity": 0.3
+  },
+  "curves": {
+    "altitude_score": {
+      "_doc": "metres above sea level -> 0..10. Flat below 500m; risk ramps through the 1500-3500m hypoxia band.",
+      "type": "piecewise",
+      "points": [[0, 0], [500, 0], [1500, 3], [2500, 6], [3500, 9], [5000, 10]]
+    },
+    "climate_variance_score": {
+      "_doc": "annual temperature range (deg C, hottest-month avg high minus coldest-month avg low) -> 0..10.",
+      "type": "linear",
+      "in": [10, 45],
+      "out": [0, 10]
+    },
+    "humidity_score": {
+      "_doc": "annual mean relative humidity (%). Comfort centred on ~50%; both arid and muggy extremes score higher.",
+      "type": "abs_distance",
+      "center": 50,
+      "scale": 5,
+      "max": 10
+    },
+    "medical_risk": {
+      "_doc": "minutes to nearest tier-3A hospital -> 0..10. 120 min (the hard 2h limit) maps to 8.",
+      "type": "linear",
+      "in": [0, 150],
+      "out": [0, 10]
+    }
+  },
+  "penalties": {
+    "_doc": "Missing data is NOT treated optimistically. A node missing an input takes an additive risk penalty and is flagged PARTIAL.",
+    "env_missing": 2,
+    "medical_missing": 3
+  },
+  "culture_default": 3
+}

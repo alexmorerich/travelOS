@@ -1,0 +1,11 @@
+{
+  "_comment": "Hybrid gate: hard absolute safety ceilings + a relative percentile cut. The percentile keeps coverage from collapsing; the absolute gates keep safety meaningful (a pure percentile alone would still 'allow' the 85% safest cities even if all are dangerous).",
+  "trei_percentile_cutoff": 85,
+  "max_hospital_minutes": 120,
+  "elderly_age": 70,
+  "elderly_max_altitude_m": 2500,
+  "validation": {
+    "max_missing_geo_fraction": 0.10,
+    "fail_on_geo_gap": false
+  }
+}

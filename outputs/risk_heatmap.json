@@ -1,0 +1,1822 @@
+[
+  {
+    "age": 50,
+    "cities": [
+      {
+        "id": "CN-GD-SHENZHEN",
+        "name_en": "Shenzhen",
+        "province": "Guangdong",
+        "env_risk": 2.48,
+        "medical_risk": 1,
+        "TREI": 0.28,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "province": "Shanghai",
+        "env_risk": 2.87,
+        "medical_risk": 0.8,
+        "TREI": 0.26,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "province": "Beijing",
+        "env_risk": 2.19,
+        "medical_risk": 0.8,
+        "TREI": 0.2,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GD-GUANGZHOU",
+        "name_en": "Guangzhou",
+        "province": "Guangdong",
+        "env_risk": 2.31,
+        "medical_risk": 1,
+        "TREI": 0.26,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "province": "Sichuan",
+        "env_risk": 2.83,
+        "medical_risk": 1.2,
+        "TREI": 0.39,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-CQ-CHONGQING",
+        "name_en": "Chongqing",
+        "province": "Chongqing",
+        "env_risk": 3,
+        "medical_risk": 1.33,
+        "TREI": 0.46,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "province": "Zhejiang",
+        "env_risk": 2.93,
+        "medical_risk": 1,
+        "TREI": 0.34,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "province": "Jiangsu",
+        "env_risk": 3.1,
+        "medical_risk": 1.07,
+        "TREI": 0.38,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HB-WUHAN",
+        "name_en": "Wuhan",
+        "province": "Hubei",
+        "env_risk": 3.28,
+        "medical_risk": 1.2,
+        "TREI": 0.45,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "province": "Shaanxi",
+        "env_risk": 2.67,
+        "medical_risk": 1.33,
+        "TREI": 0.41,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "province": "Jiangsu",
+        "env_risk": 2.99,
+        "medical_risk": 1.07,
+        "TREI": 0.36,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "province": "Shandong",
+        "env_risk": 2.52,
+        "medical_risk": 1.33,
+        "TREI": 0.38,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "province": "Fujian",
+        "env_risk": 2.19,
+        "medical_risk": 1.2,
+        "TREI": 0.3,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HN-CHANGSHA",
+        "name_en": "Changsha",
+        "province": "Hunan",
+        "env_risk": 3.34,
+        "medical_risk": 1.33,
+        "TREI": 0.51,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HA-ZHENGZHOU",
+        "name_en": "Zhengzhou",
+        "province": "Henan",
+        "env_risk": 2.55,
+        "medical_risk": 1.47,
+        "TREI": 0.43,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-TJ-TIANJIN",
+        "name_en": "Tianjin",
+        "province": "Tianjin",
+        "env_risk": 2.64,
+        "medical_risk": 1.2,
+        "TREI": 0.36,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SD-JINAN",
+        "name_en": "Jinan",
+        "province": "Shandong",
+        "env_risk": 2.43,
+        "medical_risk": 1.33,
+        "TREI": 0.37,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-AH-HEFEI",
+        "name_en": "Hefei",
+        "province": "Anhui",
+        "env_risk": 3.1,
+        "medical_risk": 1.47,
+        "TREI": 0.52,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JX-NANCHANG",
+        "name_en": "Nanchang",
+        "province": "Jiangxi",
+        "env_risk": 3.14,
+        "medical_risk": 1.47,
+        "TREI": 0.53,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-FJ-FUZHOU",
+        "name_en": "Fuzhou",
+        "province": "Fujian",
+        "env_risk": 2.37,
+        "medical_risk": 1.33,
+        "TREI": 0.36,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-ZJ-NINGBO",
+        "name_en": "Ningbo",
+        "province": "Zhejiang",
+        "env_risk": 2.91,
+        "medical_risk": 1.2,
+        "TREI": 0.4,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JS-WUXI",
+        "name_en": "Wuxi",
+        "province": "Jiangsu",
+        "env_risk": 2.99,
+        "medical_risk": 1.2,
+        "TREI": 0.41,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GD-DONGGUAN",
+        "name_en": "Dongguan",
+        "province": "Guangdong",
+        "env_risk": 2.37,
+        "medical_risk": 1.47,
+        "TREI": 0.4,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GD-FOSHAN",
+        "name_en": "Foshan",
+        "province": "Guangdong",
+        "env_risk": 2.37,
+        "medical_risk": 1.47,
+        "TREI": 0.4,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GD-ZHUHAI",
+        "name_en": "Zhuhai",
+        "province": "Guangdong",
+        "env_risk": 2.34,
+        "medical_risk": 1.67,
+        "TREI": 0.45,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GD-HUIZHOU",
+        "name_en": "Huizhou (Daya Bay)",
+        "province": "Guangdong",
+        "env_risk": 2.45,
+        "medical_risk": 2,
+        "TREI": 0.56,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-LN-SHENYANG",
+        "name_en": "Shenyang",
+        "province": "Liaoning",
+        "env_risk": 3.24,
+        "medical_risk": 1.47,
+        "TREI": 0.54,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-LN-DALIAN",
+        "name_en": "Dalian",
+        "province": "Liaoning",
+        "env_risk": 2.5,
+        "medical_risk": 1.47,
+        "TREI": 0.42,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JL-CHANGCHUN",
+        "name_en": "Changchun",
+        "province": "Jilin",
+        "env_risk": 3.41,
+        "medical_risk": 1.67,
+        "TREI": 0.65,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HL-HARBIN",
+        "name_en": "Harbin",
+        "province": "Heilongjiang",
+        "env_risk": 3.96,
+        "medical_risk": 1.67,
+        "TREI": 0.75,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-HE-SHIJIAZHUANG",
+        "name_en": "Shijiazhuang",
+        "province": "Hebei",
+        "env_risk": 2.4,
+        "medical_risk": 1.6,
+        "TREI": 0.44,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SX-TAIYUAN",
+        "name_en": "Taiyuan",
+        "province": "Shanxi",
+        "env_risk": 2.43,
+        "medical_risk": 1.6,
+        "TREI": 0.45,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GX-NANNING",
+        "name_en": "Nanning",
+        "province": "Guangxi",
+        "env_risk": 2.25,
+        "medical_risk": 1.6,
+        "TREI": 0.41,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GX-GUILIN",
+        "name_en": "Guilin",
+        "province": "Guangxi",
+        "env_risk": 2.59,
+        "medical_risk": 2,
+        "TREI": 0.59,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GX-YANGSHUO",
+        "name_en": "Yangshuo",
+        "province": "Guangxi",
+        "env_risk": 2.59,
+        "medical_risk": 4,
+        "TREI": 1.18,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "province": "Yunnan",
+        "env_risk": 3.01,
+        "medical_risk": 1.47,
+        "TREI": 0.5,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-YN-DALI",
+        "name_en": "Dali",
+        "province": "Yunnan",
+        "env_risk": 3.01,
+        "medical_risk": 2.67,
+        "TREI": 0.92,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-YN-LIJIANG",
+        "name_en": "Lijiang",
+        "province": "Yunnan",
+        "env_risk": 3.39,
+        "medical_risk": 3.33,
+        "TREI": 1.29,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-YN-SHANGRILA",
+        "name_en": "Shangri-La",
+        "province": "Yunnan",
+        "env_risk": 4.49,
+        "medical_risk": 6,
+        "TREI": 3.08,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-GZ-GUIYANG",
+        "name_en": "Guiyang",
+        "province": "Guizhou",
+        "env_risk": 2.99,
+        "medical_risk": 1.6,
+        "TREI": 0.55,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-XZ-LHASA",
+        "name_en": "Lhasa",
+        "province": "Tibet",
+        "env_risk": 5.31,
+        "medical_risk": 3,
+        "TREI": 1.82,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-QH-XINING",
+        "name_en": "Xining",
+        "province": "Qinghai",
+        "env_risk": 3.8,
+        "medical_risk": 2.33,
+        "TREI": 1.01,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-GS-LANZHOU",
+        "name_en": "Lanzhou",
+        "province": "Gansu",
+        "env_risk": 3.13,
+        "medical_risk": 1.87,
+        "TREI": 0.67,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-NX-YINCHUAN",
+        "name_en": "Yinchuan",
+        "province": "Ningxia",
+        "env_risk": 2.74,
+        "medical_risk": 2,
+        "TREI": 0.63,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-NM-HOHHOT",
+        "name_en": "Hohhot",
+        "province": "Inner Mongolia",
+        "env_risk": 2.84,
+        "medical_risk": 2,
+        "TREI": 0.65,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-XJ-URUMQI",
+        "name_en": "Urumqi",
+        "province": "Xinjiang",
+        "env_risk": 2.88,
+        "medical_risk": 2.33,
+        "TREI": 0.77,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-HI-SANYA",
+        "name_en": "Sanya",
+        "province": "Hainan",
+        "env_risk": 1.8,
+        "medical_risk": 2.33,
+        "TREI": 0.48,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HI-HAIKOU",
+        "name_en": "Haikou",
+        "province": "Hainan",
+        "env_risk": 2.09,
+        "medical_risk": 1.87,
+        "TREI": 0.45,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-ZJ-WENZHOU",
+        "name_en": "Wenzhou",
+        "province": "Zhejiang",
+        "env_risk": 2.79,
+        "medical_risk": 1.47,
+        "TREI": 0.47,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-XZ-MEDOG",
+        "name_en": "Medog",
+        "province": "Tibet",
+        "env_risk": 3.2,
+        "medical_risk": 10,
+        "TREI": 3.65,
+        "decision": "BLOCKED"
+      }
+    ]
+  },
+  {
+    "age": 60,
+    "cities": [
+      {
+        "id": "CN-GD-SHENZHEN",
+        "name_en": "Shenzhen",
+        "province": "Guangdong",
+        "env_risk": 2.48,
+        "medical_risk": 1,
+        "TREI": 0.38,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "province": "Shanghai",
+        "env_risk": 2.87,
+        "medical_risk": 0.8,
+        "TREI": 0.36,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "province": "Beijing",
+        "env_risk": 2.19,
+        "medical_risk": 0.8,
+        "TREI": 0.27,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GD-GUANGZHOU",
+        "name_en": "Guangzhou",
+        "province": "Guangdong",
+        "env_risk": 2.31,
+        "medical_risk": 1,
+        "TREI": 0.36,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "province": "Sichuan",
+        "env_risk": 2.83,
+        "medical_risk": 1.2,
+        "TREI": 0.53,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-CQ-CHONGQING",
+        "name_en": "Chongqing",
+        "province": "Chongqing",
+        "env_risk": 3,
+        "medical_risk": 1.33,
+        "TREI": 0.62,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "province": "Zhejiang",
+        "env_risk": 2.93,
+        "medical_risk": 1,
+        "TREI": 0.45,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "province": "Jiangsu",
+        "env_risk": 3.1,
+        "medical_risk": 1.07,
+        "TREI": 0.51,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HB-WUHAN",
+        "name_en": "Wuhan",
+        "province": "Hubei",
+        "env_risk": 3.28,
+        "medical_risk": 1.2,
+        "TREI": 0.61,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "province": "Shaanxi",
+        "env_risk": 2.67,
+        "medical_risk": 1.33,
+        "TREI": 0.55,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "province": "Jiangsu",
+        "env_risk": 2.99,
+        "medical_risk": 1.07,
+        "TREI": 0.49,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "province": "Shandong",
+        "env_risk": 2.52,
+        "medical_risk": 1.33,
+        "TREI": 0.52,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "province": "Fujian",
+        "env_risk": 2.19,
+        "medical_risk": 1.2,
+        "TREI": 0.41,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HN-CHANGSHA",
+        "name_en": "Changsha",
+        "province": "Hunan",
+        "env_risk": 3.34,
+        "medical_risk": 1.33,
+        "TREI": 0.69,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HA-ZHENGZHOU",
+        "name_en": "Zhengzhou",
+        "province": "Henan",
+        "env_risk": 2.55,
+        "medical_risk": 1.47,
+        "TREI": 0.58,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-TJ-TIANJIN",
+        "name_en": "Tianjin",
+        "province": "Tianjin",
+        "env_risk": 2.64,
+        "medical_risk": 1.2,
+        "TREI": 0.49,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SD-JINAN",
+        "name_en": "Jinan",
+        "province": "Shandong",
+        "env_risk": 2.43,
+        "medical_risk": 1.33,
+        "TREI": 0.5,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-AH-HEFEI",
+        "name_en": "Hefei",
+        "province": "Anhui",
+        "env_risk": 3.1,
+        "medical_risk": 1.47,
+        "TREI": 0.7,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JX-NANCHANG",
+        "name_en": "Nanchang",
+        "province": "Jiangxi",
+        "env_risk": 3.14,
+        "medical_risk": 1.47,
+        "TREI": 0.71,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-FJ-FUZHOU",
+        "name_en": "Fuzhou",
+        "province": "Fujian",
+        "env_risk": 2.37,
+        "medical_risk": 1.33,
+        "TREI": 0.49,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-ZJ-NINGBO",
+        "name_en": "Ningbo",
+        "province": "Zhejiang",
+        "env_risk": 2.91,
+        "medical_risk": 1.2,
+        "TREI": 0.54,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JS-WUXI",
+        "name_en": "Wuxi",
+        "province": "Jiangsu",
+        "env_risk": 2.99,
+        "medical_risk": 1.2,
+        "TREI": 0.56,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GD-DONGGUAN",
+        "name_en": "Dongguan",
+        "province": "Guangdong",
+        "env_risk": 2.37,
+        "medical_risk": 1.47,
+        "TREI": 0.54,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GD-FOSHAN",
+        "name_en": "Foshan",
+        "province": "Guangdong",
+        "env_risk": 2.37,
+        "medical_risk": 1.47,
+        "TREI": 0.54,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GD-ZHUHAI",
+        "name_en": "Zhuhai",
+        "province": "Guangdong",
+        "env_risk": 2.34,
+        "medical_risk": 1.67,
+        "TREI": 0.6,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GD-HUIZHOU",
+        "name_en": "Huizhou (Daya Bay)",
+        "province": "Guangdong",
+        "env_risk": 2.45,
+        "medical_risk": 2,
+        "TREI": 0.76,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-LN-SHENYANG",
+        "name_en": "Shenyang",
+        "province": "Liaoning",
+        "env_risk": 3.24,
+        "medical_risk": 1.47,
+        "TREI": 0.74,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-LN-DALIAN",
+        "name_en": "Dalian",
+        "province": "Liaoning",
+        "env_risk": 2.5,
+        "medical_risk": 1.47,
+        "TREI": 0.57,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JL-CHANGCHUN",
+        "name_en": "Changchun",
+        "province": "Jilin",
+        "env_risk": 3.41,
+        "medical_risk": 1.67,
+        "TREI": 0.88,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HL-HARBIN",
+        "name_en": "Harbin",
+        "province": "Heilongjiang",
+        "env_risk": 3.96,
+        "medical_risk": 1.67,
+        "TREI": 1.02,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-HE-SHIJIAZHUANG",
+        "name_en": "Shijiazhuang",
+        "province": "Hebei",
+        "env_risk": 2.4,
+        "medical_risk": 1.6,
+        "TREI": 0.59,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SX-TAIYUAN",
+        "name_en": "Taiyuan",
+        "province": "Shanxi",
+        "env_risk": 2.43,
+        "medical_risk": 1.6,
+        "TREI": 0.6,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GX-NANNING",
+        "name_en": "Nanning",
+        "province": "Guangxi",
+        "env_risk": 2.25,
+        "medical_risk": 1.6,
+        "TREI": 0.56,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GX-GUILIN",
+        "name_en": "Guilin",
+        "province": "Guangxi",
+        "env_risk": 2.59,
+        "medical_risk": 2,
+        "TREI": 0.8,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GX-YANGSHUO",
+        "name_en": "Yangshuo",
+        "province": "Guangxi",
+        "env_risk": 2.59,
+        "medical_risk": 4,
+        "TREI": 1.6,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "province": "Yunnan",
+        "env_risk": 3.01,
+        "medical_risk": 1.47,
+        "TREI": 0.68,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-YN-DALI",
+        "name_en": "Dali",
+        "province": "Yunnan",
+        "env_risk": 3.01,
+        "medical_risk": 2.67,
+        "TREI": 1.24,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-YN-LIJIANG",
+        "name_en": "Lijiang",
+        "province": "Yunnan",
+        "env_risk": 3.39,
+        "medical_risk": 3.33,
+        "TREI": 1.75,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-YN-SHANGRILA",
+        "name_en": "Shangri-La",
+        "province": "Yunnan",
+        "env_risk": 4.49,
+        "medical_risk": 6,
+        "TREI": 4.17,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-GZ-GUIYANG",
+        "name_en": "Guiyang",
+        "province": "Guizhou",
+        "env_risk": 2.99,
+        "medical_risk": 1.6,
+        "TREI": 0.74,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-XZ-LHASA",
+        "name_en": "Lhasa",
+        "province": "Tibet",
+        "env_risk": 5.31,
+        "medical_risk": 3,
+        "TREI": 2.46,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-QH-XINING",
+        "name_en": "Xining",
+        "province": "Qinghai",
+        "env_risk": 3.8,
+        "medical_risk": 2.33,
+        "TREI": 1.37,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-GS-LANZHOU",
+        "name_en": "Lanzhou",
+        "province": "Gansu",
+        "env_risk": 3.13,
+        "medical_risk": 1.87,
+        "TREI": 0.9,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-NX-YINCHUAN",
+        "name_en": "Yinchuan",
+        "province": "Ningxia",
+        "env_risk": 2.74,
+        "medical_risk": 2,
+        "TREI": 0.85,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-NM-HOHHOT",
+        "name_en": "Hohhot",
+        "province": "Inner Mongolia",
+        "env_risk": 2.84,
+        "medical_risk": 2,
+        "TREI": 0.88,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-XJ-URUMQI",
+        "name_en": "Urumqi",
+        "province": "Xinjiang",
+        "env_risk": 2.88,
+        "medical_risk": 2.33,
+        "TREI": 1.04,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-HI-SANYA",
+        "name_en": "Sanya",
+        "province": "Hainan",
+        "env_risk": 1.8,
+        "medical_risk": 2.33,
+        "TREI": 0.65,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HI-HAIKOU",
+        "name_en": "Haikou",
+        "province": "Hainan",
+        "env_risk": 2.09,
+        "medical_risk": 1.87,
+        "TREI": 0.6,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-ZJ-WENZHOU",
+        "name_en": "Wenzhou",
+        "province": "Zhejiang",
+        "env_risk": 2.79,
+        "medical_risk": 1.47,
+        "TREI": 0.63,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-XZ-MEDOG",
+        "name_en": "Medog",
+        "province": "Tibet",
+        "env_risk": 3.2,
+        "medical_risk": 10,
+        "TREI": 4.95,
+        "decision": "BLOCKED"
+      }
+    ]
+  },
+  {
+    "age": 70,
+    "cities": [
+      {
+        "id": "CN-GD-SHENZHEN",
+        "name_en": "Shenzhen",
+        "province": "Guangdong",
+        "env_risk": 2.48,
+        "medical_risk": 1,
+        "TREI": 0.71,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "province": "Shanghai",
+        "env_risk": 2.87,
+        "medical_risk": 0.8,
+        "TREI": 0.66,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "province": "Beijing",
+        "env_risk": 2.19,
+        "medical_risk": 0.8,
+        "TREI": 0.5,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GD-GUANGZHOU",
+        "name_en": "Guangzhou",
+        "province": "Guangdong",
+        "env_risk": 2.31,
+        "medical_risk": 1,
+        "TREI": 0.66,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "province": "Sichuan",
+        "env_risk": 2.83,
+        "medical_risk": 1.2,
+        "TREI": 0.97,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-CQ-CHONGQING",
+        "name_en": "Chongqing",
+        "province": "Chongqing",
+        "env_risk": 3,
+        "medical_risk": 1.33,
+        "TREI": 1.14,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "province": "Zhejiang",
+        "env_risk": 2.93,
+        "medical_risk": 1,
+        "TREI": 0.84,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "province": "Jiangsu",
+        "env_risk": 3.1,
+        "medical_risk": 1.07,
+        "TREI": 0.94,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HB-WUHAN",
+        "name_en": "Wuhan",
+        "province": "Hubei",
+        "env_risk": 3.28,
+        "medical_risk": 1.2,
+        "TREI": 1.12,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "province": "Shaanxi",
+        "env_risk": 2.67,
+        "medical_risk": 1.33,
+        "TREI": 1.02,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "province": "Jiangsu",
+        "env_risk": 2.99,
+        "medical_risk": 1.07,
+        "TREI": 0.91,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "province": "Shandong",
+        "env_risk": 2.52,
+        "medical_risk": 1.33,
+        "TREI": 0.96,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "province": "Fujian",
+        "env_risk": 2.19,
+        "medical_risk": 1.2,
+        "TREI": 0.75,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HN-CHANGSHA",
+        "name_en": "Changsha",
+        "province": "Hunan",
+        "env_risk": 3.34,
+        "medical_risk": 1.33,
+        "TREI": 1.27,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HA-ZHENGZHOU",
+        "name_en": "Zhengzhou",
+        "province": "Henan",
+        "env_risk": 2.55,
+        "medical_risk": 1.47,
+        "TREI": 1.07,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-TJ-TIANJIN",
+        "name_en": "Tianjin",
+        "province": "Tianjin",
+        "env_risk": 2.64,
+        "medical_risk": 1.2,
+        "TREI": 0.9,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SD-JINAN",
+        "name_en": "Jinan",
+        "province": "Shandong",
+        "env_risk": 2.43,
+        "medical_risk": 1.33,
+        "TREI": 0.93,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-AH-HEFEI",
+        "name_en": "Hefei",
+        "province": "Anhui",
+        "env_risk": 3.1,
+        "medical_risk": 1.47,
+        "TREI": 1.3,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JX-NANCHANG",
+        "name_en": "Nanchang",
+        "province": "Jiangxi",
+        "env_risk": 3.14,
+        "medical_risk": 1.47,
+        "TREI": 1.31,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-FJ-FUZHOU",
+        "name_en": "Fuzhou",
+        "province": "Fujian",
+        "env_risk": 2.37,
+        "medical_risk": 1.33,
+        "TREI": 0.9,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-ZJ-NINGBO",
+        "name_en": "Ningbo",
+        "province": "Zhejiang",
+        "env_risk": 2.91,
+        "medical_risk": 1.2,
+        "TREI": 0.99,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JS-WUXI",
+        "name_en": "Wuxi",
+        "province": "Jiangsu",
+        "env_risk": 2.99,
+        "medical_risk": 1.2,
+        "TREI": 1.02,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GD-DONGGUAN",
+        "name_en": "Dongguan",
+        "province": "Guangdong",
+        "env_risk": 2.37,
+        "medical_risk": 1.47,
+        "TREI": 0.99,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GD-FOSHAN",
+        "name_en": "Foshan",
+        "province": "Guangdong",
+        "env_risk": 2.37,
+        "medical_risk": 1.47,
+        "TREI": 0.99,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GD-ZHUHAI",
+        "name_en": "Zhuhai",
+        "province": "Guangdong",
+        "env_risk": 2.34,
+        "medical_risk": 1.67,
+        "TREI": 1.11,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GD-HUIZHOU",
+        "name_en": "Huizhou (Daya Bay)",
+        "province": "Guangdong",
+        "env_risk": 2.45,
+        "medical_risk": 2,
+        "TREI": 1.4,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-LN-SHENYANG",
+        "name_en": "Shenyang",
+        "province": "Liaoning",
+        "env_risk": 3.24,
+        "medical_risk": 1.47,
+        "TREI": 1.36,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-LN-DALIAN",
+        "name_en": "Dalian",
+        "province": "Liaoning",
+        "env_risk": 2.5,
+        "medical_risk": 1.47,
+        "TREI": 1.05,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JL-CHANGCHUN",
+        "name_en": "Changchun",
+        "province": "Jilin",
+        "env_risk": 3.41,
+        "medical_risk": 1.67,
+        "TREI": 1.62,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HL-HARBIN",
+        "name_en": "Harbin",
+        "province": "Heilongjiang",
+        "env_risk": 3.96,
+        "medical_risk": 1.67,
+        "TREI": 1.88,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-HE-SHIJIAZHUANG",
+        "name_en": "Shijiazhuang",
+        "province": "Hebei",
+        "env_risk": 2.4,
+        "medical_risk": 1.6,
+        "TREI": 1.1,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SX-TAIYUAN",
+        "name_en": "Taiyuan",
+        "province": "Shanxi",
+        "env_risk": 2.43,
+        "medical_risk": 1.6,
+        "TREI": 1.11,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GX-NANNING",
+        "name_en": "Nanning",
+        "province": "Guangxi",
+        "env_risk": 2.25,
+        "medical_risk": 1.6,
+        "TREI": 1.03,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GX-GUILIN",
+        "name_en": "Guilin",
+        "province": "Guangxi",
+        "env_risk": 2.59,
+        "medical_risk": 2,
+        "TREI": 1.48,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GX-YANGSHUO",
+        "name_en": "Yangshuo",
+        "province": "Guangxi",
+        "env_risk": 2.59,
+        "medical_risk": 4,
+        "TREI": 2.95,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "province": "Yunnan",
+        "env_risk": 3.01,
+        "medical_risk": 1.47,
+        "TREI": 1.26,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-YN-DALI",
+        "name_en": "Dali",
+        "province": "Yunnan",
+        "env_risk": 3.01,
+        "medical_risk": 2.67,
+        "TREI": 2.29,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-YN-LIJIANG",
+        "name_en": "Lijiang",
+        "province": "Yunnan",
+        "env_risk": 3.39,
+        "medical_risk": 3.33,
+        "TREI": 3.23,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-YN-SHANGRILA",
+        "name_en": "Shangri-La",
+        "province": "Yunnan",
+        "env_risk": 4.49,
+        "medical_risk": 6,
+        "TREI": 7.69,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-GZ-GUIYANG",
+        "name_en": "Guiyang",
+        "province": "Guizhou",
+        "env_risk": 2.99,
+        "medical_risk": 1.6,
+        "TREI": 1.36,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-XZ-LHASA",
+        "name_en": "Lhasa",
+        "province": "Tibet",
+        "env_risk": 5.31,
+        "medical_risk": 3,
+        "TREI": 4.55,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-QH-XINING",
+        "name_en": "Xining",
+        "province": "Qinghai",
+        "env_risk": 3.8,
+        "medical_risk": 2.33,
+        "TREI": 2.53,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-GS-LANZHOU",
+        "name_en": "Lanzhou",
+        "province": "Gansu",
+        "env_risk": 3.13,
+        "medical_risk": 1.87,
+        "TREI": 1.67,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-NX-YINCHUAN",
+        "name_en": "Yinchuan",
+        "province": "Ningxia",
+        "env_risk": 2.74,
+        "medical_risk": 2,
+        "TREI": 1.56,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-NM-HOHHOT",
+        "name_en": "Hohhot",
+        "province": "Inner Mongolia",
+        "env_risk": 2.84,
+        "medical_risk": 2,
+        "TREI": 1.62,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-XJ-URUMQI",
+        "name_en": "Urumqi",
+        "province": "Xinjiang",
+        "env_risk": 2.88,
+        "medical_risk": 2.33,
+        "TREI": 1.92,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-HI-SANYA",
+        "name_en": "Sanya",
+        "province": "Hainan",
+        "env_risk": 1.8,
+        "medical_risk": 2.33,
+        "TREI": 1.2,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HI-HAIKOU",
+        "name_en": "Haikou",
+        "province": "Hainan",
+        "env_risk": 2.09,
+        "medical_risk": 1.87,
+        "TREI": 1.11,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-ZJ-WENZHOU",
+        "name_en": "Wenzhou",
+        "province": "Zhejiang",
+        "env_risk": 2.79,
+        "medical_risk": 1.47,
+        "TREI": 1.17,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-XZ-MEDOG",
+        "name_en": "Medog",
+        "province": "Tibet",
+        "env_risk": 3.2,
+        "medical_risk": 10,
+        "TREI": 9.12,
+        "decision": "BLOCKED"
+      }
+    ]
+  },
+  {
+    "age": 78,
+    "cities": [
+      {
+        "id": "CN-GD-SHENZHEN",
+        "name_en": "Shenzhen",
+        "province": "Guangdong",
+        "env_risk": 2.48,
+        "medical_risk": 1,
+        "TREI": 0.71,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "province": "Shanghai",
+        "env_risk": 2.87,
+        "medical_risk": 0.8,
+        "TREI": 0.66,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-BJ-BEIJING",
+        "name_en": "Beijing",
+        "province": "Beijing",
+        "env_risk": 2.19,
+        "medical_risk": 0.8,
+        "TREI": 0.5,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GD-GUANGZHOU",
+        "name_en": "Guangzhou",
+        "province": "Guangdong",
+        "env_risk": 2.31,
+        "medical_risk": 1,
+        "TREI": 0.66,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "province": "Sichuan",
+        "env_risk": 2.83,
+        "medical_risk": 1.2,
+        "TREI": 0.97,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-CQ-CHONGQING",
+        "name_en": "Chongqing",
+        "province": "Chongqing",
+        "env_risk": 3,
+        "medical_risk": 1.33,
+        "TREI": 1.14,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "province": "Zhejiang",
+        "env_risk": 2.93,
+        "medical_risk": 1,
+        "TREI": 0.84,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "province": "Jiangsu",
+        "env_risk": 3.1,
+        "medical_risk": 1.07,
+        "TREI": 0.95,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HB-WUHAN",
+        "name_en": "Wuhan",
+        "province": "Hubei",
+        "env_risk": 3.28,
+        "medical_risk": 1.2,
+        "TREI": 1.13,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "province": "Shaanxi",
+        "env_risk": 2.67,
+        "medical_risk": 1.33,
+        "TREI": 1.02,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JS-SUZHOU",
+        "name_en": "Suzhou",
+        "province": "Jiangsu",
+        "env_risk": 2.99,
+        "medical_risk": 1.07,
+        "TREI": 0.91,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "province": "Shandong",
+        "env_risk": 2.52,
+        "medical_risk": 1.33,
+        "TREI": 0.96,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "province": "Fujian",
+        "env_risk": 2.19,
+        "medical_risk": 1.2,
+        "TREI": 0.75,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HN-CHANGSHA",
+        "name_en": "Changsha",
+        "province": "Hunan",
+        "env_risk": 3.34,
+        "medical_risk": 1.33,
+        "TREI": 1.27,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HA-ZHENGZHOU",
+        "name_en": "Zhengzhou",
+        "province": "Henan",
+        "env_risk": 2.55,
+        "medical_risk": 1.47,
+        "TREI": 1.07,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-TJ-TIANJIN",
+        "name_en": "Tianjin",
+        "province": "Tianjin",
+        "env_risk": 2.64,
+        "medical_risk": 1.2,
+        "TREI": 0.91,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SD-JINAN",
+        "name_en": "Jinan",
+        "province": "Shandong",
+        "env_risk": 2.43,
+        "medical_risk": 1.33,
+        "TREI": 0.93,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-AH-HEFEI",
+        "name_en": "Hefei",
+        "province": "Anhui",
+        "env_risk": 3.1,
+        "medical_risk": 1.47,
+        "TREI": 1.3,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JX-NANCHANG",
+        "name_en": "Nanchang",
+        "province": "Jiangxi",
+        "env_risk": 3.14,
+        "medical_risk": 1.47,
+        "TREI": 1.31,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-FJ-FUZHOU",
+        "name_en": "Fuzhou",
+        "province": "Fujian",
+        "env_risk": 2.37,
+        "medical_risk": 1.33,
+        "TREI": 0.9,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-ZJ-NINGBO",
+        "name_en": "Ningbo",
+        "province": "Zhejiang",
+        "env_risk": 2.91,
+        "medical_risk": 1.2,
+        "TREI": 1,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JS-WUXI",
+        "name_en": "Wuxi",
+        "province": "Jiangsu",
+        "env_risk": 2.99,
+        "medical_risk": 1.2,
+        "TREI": 1.03,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GD-DONGGUAN",
+        "name_en": "Dongguan",
+        "province": "Guangdong",
+        "env_risk": 2.37,
+        "medical_risk": 1.47,
+        "TREI": 0.99,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GD-FOSHAN",
+        "name_en": "Foshan",
+        "province": "Guangdong",
+        "env_risk": 2.37,
+        "medical_risk": 1.47,
+        "TREI": 0.99,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GD-ZHUHAI",
+        "name_en": "Zhuhai",
+        "province": "Guangdong",
+        "env_risk": 2.34,
+        "medical_risk": 1.67,
+        "TREI": 1.11,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GD-HUIZHOU",
+        "name_en": "Huizhou (Daya Bay)",
+        "province": "Guangdong",
+        "env_risk": 2.45,
+        "medical_risk": 2,
+        "TREI": 1.4,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-LN-SHENYANG",
+        "name_en": "Shenyang",
+        "province": "Liaoning",
+        "env_risk": 3.24,
+        "medical_risk": 1.47,
+        "TREI": 1.36,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-LN-DALIAN",
+        "name_en": "Dalian",
+        "province": "Liaoning",
+        "env_risk": 2.5,
+        "medical_risk": 1.47,
+        "TREI": 1.05,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JL-CHANGCHUN",
+        "name_en": "Changchun",
+        "province": "Jilin",
+        "env_risk": 3.41,
+        "medical_risk": 1.67,
+        "TREI": 1.62,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HL-HARBIN",
+        "name_en": "Harbin",
+        "province": "Heilongjiang",
+        "env_risk": 3.96,
+        "medical_risk": 1.67,
+        "TREI": 1.89,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-HE-SHIJIAZHUANG",
+        "name_en": "Shijiazhuang",
+        "province": "Hebei",
+        "env_risk": 2.4,
+        "medical_risk": 1.6,
+        "TREI": 1.1,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SX-TAIYUAN",
+        "name_en": "Taiyuan",
+        "province": "Shanxi",
+        "env_risk": 2.43,
+        "medical_risk": 1.6,
+        "TREI": 1.11,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GX-NANNING",
+        "name_en": "Nanning",
+        "province": "Guangxi",
+        "env_risk": 2.25,
+        "medical_risk": 1.6,
+        "TREI": 1.03,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GX-GUILIN",
+        "name_en": "Guilin",
+        "province": "Guangxi",
+        "env_risk": 2.59,
+        "medical_risk": 2,
+        "TREI": 1.48,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-GX-YANGSHUO",
+        "name_en": "Yangshuo",
+        "province": "Guangxi",
+        "env_risk": 2.59,
+        "medical_risk": 4,
+        "TREI": 2.96,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "province": "Yunnan",
+        "env_risk": 3.01,
+        "medical_risk": 1.47,
+        "TREI": 1.26,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-YN-DALI",
+        "name_en": "Dali",
+        "province": "Yunnan",
+        "env_risk": 3.01,
+        "medical_risk": 2.67,
+        "TREI": 2.3,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-YN-LIJIANG",
+        "name_en": "Lijiang",
+        "province": "Yunnan",
+        "env_risk": 3.39,
+        "medical_risk": 3.33,
+        "TREI": 3.23,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-YN-SHANGRILA",
+        "name_en": "Shangri-La",
+        "province": "Yunnan",
+        "env_risk": 4.49,
+        "medical_risk": 6,
+        "TREI": 7.7,
+        "decision": "BLOCKED"
+      },
+      {
+        "id": "CN-GZ-GUIYANG",
+        "name_en": "Guiyang",
+        "province": "Guizhou",
+        "env_risk": 2.99,
+        "medical_risk": 1.6,
+        "TREI": 1.37,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-XZ-LHASA",
+        "name_en": "Lhasa",
+        "province": "Tibet",
+        "env_risk": 5.31,
+        "medical_risk": 3,
+        "TREI": 4.55,
+        "decision": "BLOCKED"
+      },
+      {
+        "id": "CN-QH-XINING",
+        "name_en": "Xining",
+        "province": "Qinghai",
+        "env_risk": 3.8,
+        "medical_risk": 2.33,
+        "TREI": 2.53,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-GS-LANZHOU",
+        "name_en": "Lanzhou",
+        "province": "Gansu",
+        "env_risk": 3.13,
+        "medical_risk": 1.87,
+        "TREI": 1.67,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-NX-YINCHUAN",
+        "name_en": "Yinchuan",
+        "province": "Ningxia",
+        "env_risk": 2.74,
+        "medical_risk": 2,
+        "TREI": 1.56,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-NM-HOHHOT",
+        "name_en": "Hohhot",
+        "province": "Inner Mongolia",
+        "env_risk": 2.84,
+        "medical_risk": 2,
+        "TREI": 1.62,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-XJ-URUMQI",
+        "name_en": "Urumqi",
+        "province": "Xinjiang",
+        "env_risk": 2.88,
+        "medical_risk": 2.33,
+        "TREI": 1.92,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-HI-SANYA",
+        "name_en": "Sanya",
+        "province": "Hainan",
+        "env_risk": 1.8,
+        "medical_risk": 2.33,
+        "TREI": 1.2,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HI-HAIKOU",
+        "name_en": "Haikou",
+        "province": "Hainan",
+        "env_risk": 2.09,
+        "medical_risk": 1.87,
+        "TREI": 1.12,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-ZJ-WENZHOU",
+        "name_en": "Wenzhou",
+        "province": "Zhejiang",
+        "env_risk": 2.79,
+        "medical_risk": 1.47,
+        "TREI": 1.17,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-XZ-MEDOG",
+        "name_en": "Medog",
+        "province": "Tibet",
+        "env_risk": 3.2,
+        "medical_risk": 10,
+        "TREI": 9.13,
+        "decision": "BLOCKED"
+      }
+    ]
+  }
+]

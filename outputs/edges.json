@@ -1,0 +1,5834 @@
+[
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-SH-SHANGHAI",
+    "distance_km": 1213,
+    "travel_time_hours": 7.01,
+    "cost_index": 97,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-GD-GUANGZHOU",
+    "distance_km": 105,
+    "travel_time_hours": 1.98,
+    "cost_index": 8,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-SC-CHENGDU",
+    "distance_km": 1341,
+    "travel_time_hours": 7.6,
+    "cost_index": 107,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-CQ-CHONGQING",
+    "distance_km": 1082,
+    "travel_time_hours": 6.42,
+    "cost_index": 87,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-ZJ-HANGZHOU",
+    "distance_km": 1051,
+    "travel_time_hours": 6.28,
+    "cost_index": 84,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-JS-NANJING",
+    "distance_km": 1157,
+    "travel_time_hours": 6.76,
+    "cost_index": 93,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-HB-WUHAN",
+    "distance_km": 895,
+    "travel_time_hours": 5.57,
+    "cost_index": 72,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-SN-XIAN",
+    "distance_km": 1404,
+    "travel_time_hours": 7.88,
+    "cost_index": 112,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-JS-SUZHOU",
+    "distance_km": 1171,
+    "travel_time_hours": 6.82,
+    "cost_index": 94,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-FJ-XIAMEN",
+    "distance_km": 464,
+    "travel_time_hours": 3.61,
+    "cost_index": 37,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-HN-CHANGSHA",
+    "distance_km": 643,
+    "travel_time_hours": 4.42,
+    "cost_index": 51,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-HA-ZHENGZHOU",
+    "distance_km": 1358,
+    "travel_time_hours": 7.67,
+    "cost_index": 109,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-AH-HEFEI",
+    "distance_km": 1078,
+    "travel_time_hours": 6.4,
+    "cost_index": 86,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-JX-NANCHANG",
+    "distance_km": 706,
+    "travel_time_hours": 4.71,
+    "cost_index": 56,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-FJ-FUZHOU",
+    "distance_km": 660,
+    "travel_time_hours": 4.5,
+    "cost_index": 53,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-ZJ-NINGBO",
+    "distance_km": 1105,
+    "travel_time_hours": 6.52,
+    "cost_index": 88,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-JS-WUXI",
+    "distance_km": 1171,
+    "travel_time_hours": 6.82,
+    "cost_index": 94,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-GD-DONGGUAN",
+    "distance_km": 62,
+    "travel_time_hours": 1.78,
+    "cost_index": 5,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-GD-FOSHAN",
+    "distance_km": 110,
+    "travel_time_hours": 2,
+    "cost_index": 9,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-GD-ZHUHAI",
+    "distance_km": 58,
+    "travel_time_hours": 1.76,
+    "cost_index": 5,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 47,
+    "travel_time_hours": 1.71,
+    "cost_index": 4,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-GX-NANNING",
+    "distance_km": 585,
+    "travel_time_hours": 4.16,
+    "cost_index": 47,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 489,
+    "travel_time_hours": 3.72,
+    "cost_index": 39,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 441,
+    "travel_time_hours": 3.5,
+    "cost_index": 35,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-YN-KUNMING",
+    "distance_km": 1187,
+    "travel_time_hours": 6.9,
+    "cost_index": 95,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-YN-DALI",
+    "distance_km": 1440,
+    "travel_time_hours": 8.05,
+    "cost_index": 115,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-YN-LIJIANG",
+    "distance_km": 1476,
+    "travel_time_hours": 8.21,
+    "cost_index": 118,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 879,
+    "travel_time_hours": 5.5,
+    "cost_index": 70,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-HI-SANYA",
+    "distance_km": 673,
+    "travel_time_hours": 4.56,
+    "cost_index": 54,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 477,
+    "travel_time_hours": 3.67,
+    "cost_index": 38,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-SHENZHEN",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 902,
+    "travel_time_hours": 5.6,
+    "cost_index": 72,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-BJ-BEIJING",
+    "distance_km": 1067,
+    "travel_time_hours": 6.35,
+    "cost_index": 85,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-GD-GUANGZHOU",
+    "distance_km": 1212,
+    "travel_time_hours": 7.01,
+    "cost_index": 97,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-CQ-CHONGQING",
+    "distance_km": 1442,
+    "travel_time_hours": 8.05,
+    "cost_index": 115,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-ZJ-HANGZHOU",
+    "distance_km": 165,
+    "travel_time_hours": 2.25,
+    "cost_index": 13,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-JS-NANJING",
+    "distance_km": 269,
+    "travel_time_hours": 2.72,
+    "cost_index": 22,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-HB-WUHAN",
+    "distance_km": 687,
+    "travel_time_hours": 4.62,
+    "cost_index": 55,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-SN-XIAN",
+    "distance_km": 1220,
+    "travel_time_hours": 7.05,
+    "cost_index": 98,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-JS-SUZHOU",
+    "distance_km": 81,
+    "travel_time_hours": 1.87,
+    "cost_index": 6,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-SD-QINGDAO",
+    "distance_km": 548,
+    "travel_time_hours": 3.99,
+    "cost_index": 44,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-FJ-XIAMEN",
+    "distance_km": 821,
+    "travel_time_hours": 5.23,
+    "cost_index": 66,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-HN-CHANGSHA",
+    "distance_km": 888,
+    "travel_time_hours": 5.54,
+    "cost_index": 71,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-HA-ZHENGZHOU",
+    "distance_km": 830,
+    "travel_time_hours": 5.27,
+    "cost_index": 66,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-TJ-TIANJIN",
+    "distance_km": 955,
+    "travel_time_hours": 5.84,
+    "cost_index": 76,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-SD-JINAN",
+    "distance_km": 724,
+    "travel_time_hours": 4.79,
+    "cost_index": 58,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-AH-HEFEI",
+    "distance_km": 407,
+    "travel_time_hours": 3.35,
+    "cost_index": 33,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-JX-NANCHANG",
+    "distance_km": 610,
+    "travel_time_hours": 4.27,
+    "cost_index": 49,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-FJ-FUZHOU",
+    "distance_km": 612,
+    "travel_time_hours": 4.28,
+    "cost_index": 49,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-ZJ-NINGBO",
+    "distance_km": 151,
+    "travel_time_hours": 2.19,
+    "cost_index": 12,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-JS-WUXI",
+    "distance_km": 114,
+    "travel_time_hours": 2.02,
+    "cost_index": 9,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-GD-DONGGUAN",
+    "distance_km": 1190,
+    "travel_time_hours": 6.91,
+    "cost_index": 95,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-GD-FOSHAN",
+    "distance_km": 1230,
+    "travel_time_hours": 7.09,
+    "cost_index": 98,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-GD-ZHUHAI",
+    "distance_km": 1266,
+    "travel_time_hours": 7.26,
+    "cost_index": 101,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 1168,
+    "travel_time_hours": 6.81,
+    "cost_index": 93,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-LN-SHENYANG",
+    "distance_km": 1188,
+    "travel_time_hours": 6.9,
+    "cost_index": 95,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-LN-DALIAN",
+    "distance_km": 854,
+    "travel_time_hours": 5.38,
+    "cost_index": 68,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-JL-CHANGCHUN",
+    "distance_km": 1440,
+    "travel_time_hours": 8.05,
+    "cost_index": 115,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 989,
+    "travel_time_hours": 5.99,
+    "cost_index": 79,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 1100,
+    "travel_time_hours": 6.5,
+    "cost_index": 88,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 1279,
+    "travel_time_hours": 7.31,
+    "cost_index": 102,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 1294,
+    "travel_time_hours": 7.38,
+    "cost_index": 103,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 1379,
+    "travel_time_hours": 7.77,
+    "cost_index": 110,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SH-SHANGHAI",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 367,
+    "travel_time_hours": 3.17,
+    "cost_index": 29,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-CQ-CHONGQING",
+    "distance_km": 1459,
+    "travel_time_hours": 8.13,
+    "cost_index": 117,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-ZJ-HANGZHOU",
+    "distance_km": 1123,
+    "travel_time_hours": 6.61,
+    "cost_index": 90,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-JS-NANJING",
+    "distance_km": 898,
+    "travel_time_hours": 5.58,
+    "cost_index": 72,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-HB-WUHAN",
+    "distance_km": 1053,
+    "travel_time_hours": 6.28,
+    "cost_index": 84,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-SN-XIAN",
+    "distance_km": 905,
+    "travel_time_hours": 5.62,
+    "cost_index": 72,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-JS-SUZHOU",
+    "distance_km": 1029,
+    "travel_time_hours": 6.18,
+    "cost_index": 82,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-SD-QINGDAO",
+    "distance_km": 550,
+    "travel_time_hours": 4,
+    "cost_index": 44,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-HN-CHANGSHA",
+    "distance_km": 1336,
+    "travel_time_hours": 7.57,
+    "cost_index": 107,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-HA-ZHENGZHOU",
+    "distance_km": 623,
+    "travel_time_hours": 4.33,
+    "cost_index": 50,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-TJ-TIANJIN",
+    "distance_km": 114,
+    "travel_time_hours": 2.02,
+    "cost_index": 9,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-SD-JINAN",
+    "distance_km": 367,
+    "travel_time_hours": 3.17,
+    "cost_index": 29,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-AH-HEFEI",
+    "distance_km": 901,
+    "travel_time_hours": 5.6,
+    "cost_index": 72,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-JX-NANCHANG",
+    "distance_km": 1249,
+    "travel_time_hours": 7.18,
+    "cost_index": 100,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-ZJ-NINGBO",
+    "distance_km": 1209,
+    "travel_time_hours": 7,
+    "cost_index": 97,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-JS-WUXI",
+    "distance_km": 999,
+    "travel_time_hours": 6.04,
+    "cost_index": 80,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-LN-SHENYANG",
+    "distance_km": 627,
+    "travel_time_hours": 4.35,
+    "cost_index": 50,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-LN-DALIAN",
+    "distance_km": 460,
+    "travel_time_hours": 3.59,
+    "cost_index": 37,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-JL-CHANGCHUN",
+    "distance_km": 856,
+    "travel_time_hours": 5.39,
+    "cost_index": 69,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-HL-HARBIN",
+    "distance_km": 1053,
+    "travel_time_hours": 6.28,
+    "cost_index": 84,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 264,
+    "travel_time_hours": 2.7,
+    "cost_index": 21,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 403,
+    "travel_time_hours": 3.33,
+    "cost_index": 32,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-QH-XINING",
+    "distance_km": 1327,
+    "travel_time_hours": 7.53,
+    "cost_index": 106,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 1181,
+    "travel_time_hours": 6.87,
+    "cost_index": 94,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 891,
+    "travel_time_hours": 5.55,
+    "cost_index": 71,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 408,
+    "travel_time_hours": 3.36,
+    "cost_index": 33,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-BJ-BEIJING",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 1381,
+    "travel_time_hours": 7.78,
+    "cost_index": 110,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-SC-CHENGDU",
+    "distance_km": 1237,
+    "travel_time_hours": 7.12,
+    "cost_index": 99,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-CQ-CHONGQING",
+    "distance_km": 978,
+    "travel_time_hours": 5.95,
+    "cost_index": 78,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-ZJ-HANGZHOU",
+    "distance_km": 1048,
+    "travel_time_hours": 6.26,
+    "cost_index": 84,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-JS-NANJING",
+    "distance_km": 1133,
+    "travel_time_hours": 6.65,
+    "cost_index": 91,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-HB-WUHAN",
+    "distance_km": 836,
+    "travel_time_hours": 5.3,
+    "cost_index": 67,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-SN-XIAN",
+    "distance_km": 1315,
+    "travel_time_hours": 7.48,
+    "cost_index": 105,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-JS-SUZHOU",
+    "distance_km": 1163,
+    "travel_time_hours": 6.79,
+    "cost_index": 93,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-FJ-XIAMEN",
+    "distance_km": 514,
+    "travel_time_hours": 3.84,
+    "cost_index": 41,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-HN-CHANGSHA",
+    "distance_km": 568,
+    "travel_time_hours": 4.08,
+    "cost_index": 45,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-HA-ZHENGZHOU",
+    "distance_km": 1293,
+    "travel_time_hours": 7.38,
+    "cost_index": 103,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-AH-HEFEI",
+    "distance_km": 1042,
+    "travel_time_hours": 6.24,
+    "cost_index": 83,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-JX-NANCHANG",
+    "distance_km": 670,
+    "travel_time_hours": 4.54,
+    "cost_index": 54,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-FJ-FUZHOU",
+    "distance_km": 693,
+    "travel_time_hours": 4.65,
+    "cost_index": 55,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-ZJ-NINGBO",
+    "distance_km": 1114,
+    "travel_time_hours": 6.56,
+    "cost_index": 89,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-JS-WUXI",
+    "distance_km": 1161,
+    "travel_time_hours": 6.78,
+    "cost_index": 93,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-GD-DONGGUAN",
+    "distance_km": 52,
+    "travel_time_hours": 1.73,
+    "cost_index": 4,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-GD-FOSHAN",
+    "distance_km": 19,
+    "travel_time_hours": 1.59,
+    "cost_index": 2,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-GD-ZHUHAI",
+    "distance_km": 101,
+    "travel_time_hours": 1.96,
+    "cost_index": 8,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 124,
+    "travel_time_hours": 2.07,
+    "cost_index": 10,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-GX-NANNING",
+    "distance_km": 502,
+    "travel_time_hours": 3.78,
+    "cost_index": 40,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 384,
+    "travel_time_hours": 3.24,
+    "cost_index": 31,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 336,
+    "travel_time_hours": 3.03,
+    "cost_index": 27,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-YN-KUNMING",
+    "distance_km": 1092,
+    "travel_time_hours": 6.46,
+    "cost_index": 87,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-YN-DALI",
+    "distance_km": 1344,
+    "travel_time_hours": 7.61,
+    "cost_index": 107,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-YN-LIJIANG",
+    "distance_km": 1376,
+    "travel_time_hours": 7.76,
+    "cost_index": 110,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-YN-SHANGRILA",
+    "distance_km": 1456,
+    "travel_time_hours": 8.12,
+    "cost_index": 116,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 775,
+    "travel_time_hours": 5.02,
+    "cost_index": 62,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-HI-SANYA",
+    "distance_km": 668,
+    "travel_time_hours": 4.54,
+    "cost_index": 53,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 459,
+    "travel_time_hours": 3.59,
+    "cost_index": 37,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-GUANGZHOU",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 922,
+    "travel_time_hours": 5.69,
+    "cost_index": 74,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-CQ-CHONGQING",
+    "distance_km": 268,
+    "travel_time_hours": 2.72,
+    "cost_index": 21,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-JS-NANJING",
+    "distance_km": 1406,
+    "travel_time_hours": 7.89,
+    "cost_index": 112,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-HB-WUHAN",
+    "distance_km": 980,
+    "travel_time_hours": 5.95,
+    "cost_index": 78,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-SN-XIAN",
+    "distance_km": 613,
+    "travel_time_hours": 4.29,
+    "cost_index": 49,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-HN-CHANGSHA",
+    "distance_km": 900,
+    "travel_time_hours": 5.59,
+    "cost_index": 72,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-HA-ZHENGZHOU",
+    "distance_km": 1002,
+    "travel_time_hours": 6.05,
+    "cost_index": 80,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-SD-JINAN",
+    "distance_km": 1378,
+    "travel_time_hours": 7.76,
+    "cost_index": 110,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-AH-HEFEI",
+    "distance_km": 1257,
+    "travel_time_hours": 7.21,
+    "cost_index": 101,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-JX-NANCHANG",
+    "distance_km": 1160,
+    "travel_time_hours": 6.77,
+    "cost_index": 93,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-GD-DONGGUAN",
+    "distance_km": 1281,
+    "travel_time_hours": 7.32,
+    "cost_index": 102,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-GD-FOSHAN",
+    "distance_km": 1235,
+    "travel_time_hours": 7.11,
+    "cost_index": 99,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-GD-ZHUHAI",
+    "distance_km": 1328,
+    "travel_time_hours": 7.54,
+    "cost_index": 106,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 1348,
+    "travel_time_hours": 7.63,
+    "cost_index": 108,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 1260,
+    "travel_time_hours": 7.23,
+    "cost_index": 101,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 1117,
+    "travel_time_hours": 6.58,
+    "cost_index": 89,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-GX-NANNING",
+    "distance_km": 970,
+    "travel_time_hours": 5.91,
+    "cost_index": 78,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 855,
+    "travel_time_hours": 5.39,
+    "cost_index": 68,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 909,
+    "travel_time_hours": 5.63,
+    "cost_index": 73,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-YN-KUNMING",
+    "distance_km": 639,
+    "travel_time_hours": 4.4,
+    "cost_index": 51,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-YN-DALI",
+    "distance_km": 674,
+    "travel_time_hours": 4.56,
+    "cost_index": 54,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-YN-LIJIANG",
+    "distance_km": 564,
+    "travel_time_hours": 4.07,
+    "cost_index": 45,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-YN-SHANGRILA",
+    "distance_km": 528,
+    "travel_time_hours": 3.9,
+    "cost_index": 42,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 511,
+    "travel_time_hours": 3.82,
+    "cost_index": 41,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-XZ-LHASA",
+    "distance_km": 1248,
+    "travel_time_hours": 7.17,
+    "cost_index": 100,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-QH-XINING",
+    "distance_km": 696,
+    "travel_time_hours": 4.66,
+    "cost_index": 56,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 601,
+    "travel_time_hours": 4.23,
+    "cost_index": 48,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 893,
+    "travel_time_hours": 5.56,
+    "cost_index": 71,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 1326,
+    "travel_time_hours": 7.53,
+    "cost_index": 106,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-HI-SANYA",
+    "distance_km": 1485,
+    "travel_time_hours": 8.25,
+    "cost_index": 119,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 1337,
+    "travel_time_hours": 7.58,
+    "cost_index": 107,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SC-CHENGDU",
+    "to": "CN-XZ-MEDOG",
+    "distance_km": 857,
+    "travel_time_hours": 5.4,
+    "cost_index": 69,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-ZJ-HANGZHOU",
+    "distance_km": 1312,
+    "travel_time_hours": 7.47,
+    "cost_index": 105,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-JS-NANJING",
+    "distance_km": 1202,
+    "travel_time_hours": 6.96,
+    "cost_index": 96,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-HB-WUHAN",
+    "distance_km": 755,
+    "travel_time_hours": 4.93,
+    "cost_index": 60,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-SN-XIAN",
+    "distance_km": 577,
+    "travel_time_hours": 4.12,
+    "cost_index": 46,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-JS-SUZHOU",
+    "distance_km": 1362,
+    "travel_time_hours": 7.69,
+    "cost_index": 109,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-SD-QINGDAO",
+    "distance_km": 1479,
+    "travel_time_hours": 8.22,
+    "cost_index": 118,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-FJ-XIAMEN",
+    "distance_km": 1274,
+    "travel_time_hours": 7.29,
+    "cost_index": 102,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-HN-CHANGSHA",
+    "distance_km": 639,
+    "travel_time_hours": 4.41,
+    "cost_index": 51,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-HA-ZHENGZHOU",
+    "distance_km": 880,
+    "travel_time_hours": 5.5,
+    "cost_index": 70,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-TJ-TIANJIN",
+    "distance_km": 1439,
+    "travel_time_hours": 8.04,
+    "cost_index": 115,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-SD-JINAN",
+    "distance_km": 1260,
+    "travel_time_hours": 7.23,
+    "cost_index": 101,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-AH-HEFEI",
+    "distance_km": 1051,
+    "travel_time_hours": 6.28,
+    "cost_index": 84,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-JX-NANCHANG",
+    "distance_km": 909,
+    "travel_time_hours": 5.63,
+    "cost_index": 73,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-FJ-FUZHOU",
+    "distance_km": 1312,
+    "travel_time_hours": 7.46,
+    "cost_index": 105,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-ZJ-NINGBO",
+    "distance_km": 1448,
+    "travel_time_hours": 8.08,
+    "cost_index": 116,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-JS-WUXI",
+    "distance_km": 1334,
+    "travel_time_hours": 7.57,
+    "cost_index": 107,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-GD-DONGGUAN",
+    "distance_km": 1021,
+    "travel_time_hours": 6.14,
+    "cost_index": 82,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-GD-FOSHAN",
+    "distance_km": 978,
+    "travel_time_hours": 5.95,
+    "cost_index": 78,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-GD-ZHUHAI",
+    "distance_km": 1072,
+    "travel_time_hours": 6.37,
+    "cost_index": 86,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 1086,
+    "travel_time_hours": 6.44,
+    "cost_index": 87,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 1195,
+    "travel_time_hours": 6.93,
+    "cost_index": 96,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 1077,
+    "travel_time_hours": 6.4,
+    "cost_index": 86,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-GX-NANNING",
+    "distance_km": 771,
+    "travel_time_hours": 5,
+    "cost_index": 62,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 603,
+    "travel_time_hours": 4.24,
+    "cost_index": 48,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 659,
+    "travel_time_hours": 4.5,
+    "cost_index": 53,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-YN-KUNMING",
+    "distance_km": 630,
+    "travel_time_hours": 4.36,
+    "cost_index": 50,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-YN-DALI",
+    "distance_km": 759,
+    "travel_time_hours": 4.95,
+    "cost_index": 61,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-YN-LIJIANG",
+    "distance_km": 688,
+    "travel_time_hours": 4.63,
+    "cost_index": 55,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-YN-SHANGRILA",
+    "distance_km": 695,
+    "travel_time_hours": 4.66,
+    "cost_index": 56,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 324,
+    "travel_time_hours": 2.97,
+    "cost_index": 26,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-XZ-LHASA",
+    "distance_km": 1489,
+    "travel_time_hours": 8.27,
+    "cost_index": 119,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-QH-XINING",
+    "distance_km": 902,
+    "travel_time_hours": 5.6,
+    "cost_index": 72,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 766,
+    "travel_time_hours": 4.98,
+    "cost_index": 61,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 993,
+    "travel_time_hours": 6.02,
+    "cost_index": 79,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 1340,
+    "travel_time_hours": 7.59,
+    "cost_index": 107,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-HI-SANYA",
+    "distance_km": 1293,
+    "travel_time_hours": 7.38,
+    "cost_index": 103,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 1125,
+    "travel_time_hours": 6.61,
+    "cost_index": 90,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 1389,
+    "travel_time_hours": 7.81,
+    "cost_index": 111,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-CQ-CHONGQING",
+    "to": "CN-XZ-MEDOG",
+    "distance_km": 1089,
+    "travel_time_hours": 6.45,
+    "cost_index": 87,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-JS-NANJING",
+    "distance_km": 237,
+    "travel_time_hours": 2.58,
+    "cost_index": 19,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-HB-WUHAN",
+    "distance_km": 561,
+    "travel_time_hours": 4.05,
+    "cost_index": 45,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-SN-XIAN",
+    "distance_km": 1146,
+    "travel_time_hours": 6.71,
+    "cost_index": 92,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-JS-SUZHOU",
+    "distance_km": 123,
+    "travel_time_hours": 2.06,
+    "cost_index": 10,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-SD-QINGDAO",
+    "distance_km": 645,
+    "travel_time_hours": 4.43,
+    "cost_index": 52,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-FJ-XIAMEN",
+    "distance_km": 675,
+    "travel_time_hours": 4.57,
+    "cost_index": 54,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-HN-CHANGSHA",
+    "distance_km": 735,
+    "travel_time_hours": 4.84,
+    "cost_index": 59,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-HA-ZHENGZHOU",
+    "distance_km": 789,
+    "travel_time_hours": 5.09,
+    "cost_index": 63,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-TJ-TIANJIN",
+    "distance_km": 1016,
+    "travel_time_hours": 6.12,
+    "cost_index": 81,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-SD-JINAN",
+    "distance_km": 763,
+    "travel_time_hours": 4.97,
+    "cost_index": 61,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-AH-HEFEI",
+    "distance_km": 327,
+    "travel_time_hours": 2.99,
+    "cost_index": 26,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-JX-NANCHANG",
+    "distance_km": 451,
+    "travel_time_hours": 3.55,
+    "cost_index": 36,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-FJ-FUZHOU",
+    "distance_km": 474,
+    "travel_time_hours": 3.66,
+    "cost_index": 38,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-ZJ-NINGBO",
+    "distance_km": 142,
+    "travel_time_hours": 2.14,
+    "cost_index": 11,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-JS-WUXI",
+    "distance_km": 137,
+    "travel_time_hours": 2.12,
+    "cost_index": 11,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-GD-DONGGUAN",
+    "distance_km": 1026,
+    "travel_time_hours": 6.17,
+    "cost_index": 82,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-GD-FOSHAN",
+    "distance_km": 1066,
+    "travel_time_hours": 6.35,
+    "cost_index": 85,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-GD-ZHUHAI",
+    "distance_km": 1104,
+    "travel_time_hours": 6.52,
+    "cost_index": 88,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 1007,
+    "travel_time_hours": 6.08,
+    "cost_index": 81,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-LN-SHENYANG",
+    "distance_km": 1315,
+    "travel_time_hours": 7.48,
+    "cost_index": 105,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-LN-DALIAN",
+    "distance_km": 970,
+    "travel_time_hours": 5.91,
+    "cost_index": 78,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 1007,
+    "travel_time_hours": 6.08,
+    "cost_index": 81,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 1096,
+    "travel_time_hours": 6.48,
+    "cost_index": 88,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-GX-NANNING",
+    "distance_km": 1434,
+    "travel_time_hours": 8.02,
+    "cost_index": 115,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 1117,
+    "travel_time_hours": 6.58,
+    "cost_index": 89,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 1131,
+    "travel_time_hours": 6.64,
+    "cost_index": 90,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 1381,
+    "travel_time_hours": 7.78,
+    "cost_index": 110,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 1398,
+    "travel_time_hours": 7.85,
+    "cost_index": 112,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-HANGZHOU",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 258,
+    "travel_time_hours": 2.67,
+    "cost_index": 21,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-HB-WUHAN",
+    "distance_km": 457,
+    "travel_time_hours": 3.58,
+    "cost_index": 37,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-SN-XIAN",
+    "distance_km": 951,
+    "travel_time_hours": 5.82,
+    "cost_index": 76,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-JS-SUZHOU",
+    "distance_km": 192,
+    "travel_time_hours": 2.37,
+    "cost_index": 15,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-SD-QINGDAO",
+    "distance_km": 469,
+    "travel_time_hours": 3.63,
+    "cost_index": 38,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-FJ-XIAMEN",
+    "distance_km": 846,
+    "travel_time_hours": 5.34,
+    "cost_index": 68,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-HN-CHANGSHA",
+    "distance_km": 706,
+    "travel_time_hours": 4.71,
+    "cost_index": 56,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-HA-ZHENGZHOU",
+    "distance_km": 566,
+    "travel_time_hours": 4.07,
+    "cost_index": 45,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-TJ-TIANJIN",
+    "distance_km": 794,
+    "travel_time_hours": 5.11,
+    "cost_index": 64,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-SD-JINAN",
+    "distance_km": 533,
+    "travel_time_hours": 3.92,
+    "cost_index": 43,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-AH-HEFEI",
+    "distance_km": 151,
+    "travel_time_hours": 2.18,
+    "cost_index": 12,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-JX-NANCHANG",
+    "distance_km": 470,
+    "travel_time_hours": 3.64,
+    "cost_index": 38,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-FJ-FUZHOU",
+    "distance_km": 668,
+    "travel_time_hours": 4.54,
+    "cost_index": 53,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-ZJ-NINGBO",
+    "distance_km": 358,
+    "travel_time_hours": 3.13,
+    "cost_index": 29,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-JS-WUXI",
+    "distance_km": 156,
+    "travel_time_hours": 2.21,
+    "cost_index": 12,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-GD-DONGGUAN",
+    "distance_km": 1121,
+    "travel_time_hours": 6.6,
+    "cost_index": 90,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-GD-FOSHAN",
+    "distance_km": 1150,
+    "travel_time_hours": 6.73,
+    "cost_index": 92,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-GD-ZHUHAI",
+    "distance_km": 1204,
+    "travel_time_hours": 6.97,
+    "cost_index": 96,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 1116,
+    "travel_time_hours": 6.57,
+    "cost_index": 89,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-LN-SHENYANG",
+    "distance_km": 1158,
+    "travel_time_hours": 6.76,
+    "cost_index": 93,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-LN-DALIAN",
+    "distance_km": 803,
+    "travel_time_hours": 5.15,
+    "cost_index": 64,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-JL-CHANGCHUN",
+    "distance_km": 1426,
+    "travel_time_hours": 7.98,
+    "cost_index": 114,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 771,
+    "travel_time_hours": 5,
+    "cost_index": 62,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 861,
+    "travel_time_hours": 5.41,
+    "cost_index": 69,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-GX-NANNING",
+    "distance_km": 1453,
+    "travel_time_hours": 8.1,
+    "cost_index": 116,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 1121,
+    "travel_time_hours": 6.6,
+    "cost_index": 90,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 1146,
+    "travel_time_hours": 6.71,
+    "cost_index": 92,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 1323,
+    "travel_time_hours": 7.51,
+    "cost_index": 106,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 1447,
+    "travel_time_hours": 8.08,
+    "cost_index": 116,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 1345,
+    "travel_time_hours": 7.61,
+    "cost_index": 108,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 1161,
+    "travel_time_hours": 6.78,
+    "cost_index": 93,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-NANJING",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 487,
+    "travel_time_hours": 3.71,
+    "cost_index": 39,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-SN-XIAN",
+    "distance_km": 654,
+    "travel_time_hours": 4.47,
+    "cost_index": 52,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-JS-SUZHOU",
+    "distance_km": 607,
+    "travel_time_hours": 4.26,
+    "cost_index": 49,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-SD-QINGDAO",
+    "distance_km": 830,
+    "travel_time_hours": 5.27,
+    "cost_index": 66,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-FJ-XIAMEN",
+    "distance_km": 775,
+    "travel_time_hours": 5.02,
+    "cost_index": 62,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-HN-CHANGSHA",
+    "distance_km": 294,
+    "travel_time_hours": 2.84,
+    "cost_index": 24,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-HA-ZHENGZHOU",
+    "distance_km": 467,
+    "travel_time_hours": 3.62,
+    "cost_index": 37,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-TJ-TIANJIN",
+    "distance_km": 980,
+    "travel_time_hours": 5.95,
+    "cost_index": 78,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-SD-JINAN",
+    "distance_km": 722,
+    "travel_time_hours": 4.78,
+    "cost_index": 58,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-AH-HEFEI",
+    "distance_km": 310,
+    "travel_time_hours": 2.91,
+    "cost_index": 25,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-JX-NANCHANG",
+    "distance_km": 260,
+    "travel_time_hours": 2.68,
+    "cost_index": 21,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-FJ-FUZHOU",
+    "distance_km": 701,
+    "travel_time_hours": 4.68,
+    "cost_index": 56,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-ZJ-NINGBO",
+    "distance_km": 700,
+    "travel_time_hours": 4.68,
+    "cost_index": 56,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-JS-WUXI",
+    "distance_km": 580,
+    "travel_time_hours": 4.14,
+    "cost_index": 46,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-GD-DONGGUAN",
+    "distance_km": 844,
+    "travel_time_hours": 5.33,
+    "cost_index": 67,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-GD-FOSHAN",
+    "distance_km": 850,
+    "travel_time_hours": 5.36,
+    "cost_index": 68,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-GD-ZHUHAI",
+    "distance_km": 928,
+    "travel_time_hours": 5.72,
+    "cost_index": 74,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 866,
+    "travel_time_hours": 5.44,
+    "cost_index": 69,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-LN-SHENYANG",
+    "distance_km": 1489,
+    "travel_time_hours": 8.27,
+    "cost_index": 119,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-LN-DALIAN",
+    "distance_km": 1140,
+    "travel_time_hours": 6.68,
+    "cost_index": 91,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 829,
+    "travel_time_hours": 5.27,
+    "cost_index": 66,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 825,
+    "travel_time_hours": 5.25,
+    "cost_index": 66,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-GX-NANNING",
+    "distance_km": 1046,
+    "travel_time_hours": 6.25,
+    "cost_index": 84,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 711,
+    "travel_time_hours": 4.73,
+    "cost_index": 57,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 747,
+    "travel_time_hours": 4.9,
+    "cost_index": 60,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-YN-KUNMING",
+    "distance_km": 1296,
+    "travel_time_hours": 7.39,
+    "cost_index": 104,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-YN-DALI",
+    "distance_km": 1483,
+    "travel_time_hours": 8.24,
+    "cost_index": 119,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-YN-LIJIANG",
+    "distance_km": 1433,
+    "travel_time_hours": 8.01,
+    "cost_index": 115,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-YN-SHANGRILA",
+    "distance_km": 1449,
+    "travel_time_hours": 8.09,
+    "cost_index": 116,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 868,
+    "travel_time_hours": 5.45,
+    "cost_index": 69,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-QH-XINING",
+    "distance_km": 1339,
+    "travel_time_hours": 7.58,
+    "cost_index": 107,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 1147,
+    "travel_time_hours": 6.71,
+    "cost_index": 92,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 1148,
+    "travel_time_hours": 6.72,
+    "cost_index": 92,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 1163,
+    "travel_time_hours": 6.79,
+    "cost_index": 93,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-HI-SANYA",
+    "distance_km": 1455,
+    "travel_time_hours": 8.11,
+    "cost_index": 116,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 1239,
+    "travel_time_hours": 7.13,
+    "cost_index": 99,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HB-WUHAN",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 683,
+    "travel_time_hours": 4.61,
+    "cost_index": 55,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-JS-SUZHOU",
+    "distance_km": 1142,
+    "travel_time_hours": 6.69,
+    "cost_index": 91,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-SD-QINGDAO",
+    "distance_km": 1056,
+    "travel_time_hours": 6.3,
+    "cost_index": 85,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-FJ-XIAMEN",
+    "distance_km": 1408,
+    "travel_time_hours": 7.9,
+    "cost_index": 113,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-HN-CHANGSHA",
+    "distance_km": 778,
+    "travel_time_hours": 5.04,
+    "cost_index": 62,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-HA-ZHENGZHOU",
+    "distance_km": 431,
+    "travel_time_hours": 3.46,
+    "cost_index": 34,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-TJ-TIANJIN",
+    "distance_km": 905,
+    "travel_time_hours": 5.61,
+    "cost_index": 72,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-SD-JINAN",
+    "distance_km": 784,
+    "travel_time_hours": 5.06,
+    "cost_index": 63,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-AH-HEFEI",
+    "distance_km": 821,
+    "travel_time_hours": 5.23,
+    "cost_index": 66,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-JX-NANCHANG",
+    "distance_km": 909,
+    "travel_time_hours": 5.63,
+    "cost_index": 73,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-FJ-FUZHOU",
+    "distance_km": 1354,
+    "travel_time_hours": 7.65,
+    "cost_index": 108,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-ZJ-NINGBO",
+    "distance_km": 1286,
+    "travel_time_hours": 7.35,
+    "cost_index": 103,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-JS-WUXI",
+    "distance_km": 1107,
+    "travel_time_hours": 6.53,
+    "cost_index": 89,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-GD-DONGGUAN",
+    "distance_km": 1343,
+    "travel_time_hours": 7.6,
+    "cost_index": 107,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-GD-FOSHAN",
+    "distance_km": 1323,
+    "travel_time_hours": 7.51,
+    "cost_index": 106,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-GD-ZHUHAI",
+    "distance_km": 1416,
+    "travel_time_hours": 7.94,
+    "cost_index": 113,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 1390,
+    "travel_time_hours": 7.82,
+    "cost_index": 111,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-LN-DALIAN",
+    "distance_km": 1238,
+    "travel_time_hours": 7.13,
+    "cost_index": 99,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 647,
+    "travel_time_hours": 4.44,
+    "cost_index": 52,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 509,
+    "travel_time_hours": 3.81,
+    "cost_index": 41,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-GX-NANNING",
+    "distance_km": 1282,
+    "travel_time_hours": 7.33,
+    "cost_index": 103,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 1017,
+    "travel_time_hours": 6.12,
+    "cost_index": 81,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 1073,
+    "travel_time_hours": 6.38,
+    "cost_index": 86,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-YN-KUNMING",
+    "distance_km": 1196,
+    "travel_time_hours": 6.94,
+    "cost_index": 96,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-YN-DALI",
+    "distance_km": 1279,
+    "travel_time_hours": 7.32,
+    "cost_index": 102,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-YN-LIJIANG",
+    "distance_km": 1177,
+    "travel_time_hours": 6.85,
+    "cost_index": 94,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-YN-SHANGRILA",
+    "distance_km": 1138,
+    "travel_time_hours": 6.67,
+    "cost_index": 91,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 883,
+    "travel_time_hours": 5.51,
+    "cost_index": 71,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-QH-XINING",
+    "distance_km": 696,
+    "travel_time_hours": 4.66,
+    "cost_index": 56,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 502,
+    "travel_time_hours": 3.78,
+    "cost_index": 40,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 521,
+    "travel_time_hours": 3.87,
+    "cost_index": 42,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 764,
+    "travel_time_hours": 4.97,
+    "cost_index": 61,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 1321,
+    "travel_time_hours": 7.5,
+    "cost_index": 106,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SN-XIAN",
+    "to": "CN-XZ-MEDOG",
+    "distance_km": 1402,
+    "travel_time_hours": 7.87,
+    "cost_index": 112,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-SD-QINGDAO",
+    "distance_km": 531,
+    "travel_time_hours": 3.91,
+    "cost_index": 42,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-FJ-XIAMEN",
+    "distance_km": 798,
+    "travel_time_hours": 5.13,
+    "cost_index": 64,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-HN-CHANGSHA",
+    "distance_km": 816,
+    "travel_time_hours": 5.21,
+    "cost_index": 65,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-HA-ZHENGZHOU",
+    "distance_km": 757,
+    "travel_time_hours": 4.94,
+    "cost_index": 61,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-TJ-TIANJIN",
+    "distance_km": 919,
+    "travel_time_hours": 5.68,
+    "cost_index": 74,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-SD-JINAN",
+    "distance_km": 677,
+    "travel_time_hours": 4.58,
+    "cost_index": 54,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-AH-HEFEI",
+    "distance_km": 326,
+    "travel_time_hours": 2.98,
+    "cost_index": 26,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-JX-NANCHANG",
+    "distance_km": 543,
+    "travel_time_hours": 3.97,
+    "cost_index": 43,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-FJ-FUZHOU",
+    "distance_km": 596,
+    "travel_time_hours": 4.21,
+    "cost_index": 48,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-ZJ-NINGBO",
+    "distance_km": 182,
+    "travel_time_hours": 2.33,
+    "cost_index": 15,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-JS-WUXI",
+    "distance_km": 36,
+    "travel_time_hours": 1.66,
+    "cost_index": 3,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-GD-DONGGUAN",
+    "distance_km": 1144,
+    "travel_time_hours": 6.7,
+    "cost_index": 91,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-GD-FOSHAN",
+    "distance_km": 1182,
+    "travel_time_hours": 6.87,
+    "cost_index": 95,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-GD-ZHUHAI",
+    "distance_km": 1223,
+    "travel_time_hours": 7.06,
+    "cost_index": 98,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 1126,
+    "travel_time_hours": 6.62,
+    "cost_index": 90,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-LN-SHENYANG",
+    "distance_km": 1194,
+    "travel_time_hours": 6.93,
+    "cost_index": 96,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-LN-DALIAN",
+    "distance_km": 851,
+    "travel_time_hours": 5.37,
+    "cost_index": 68,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-JL-CHANGCHUN",
+    "distance_km": 1452,
+    "travel_time_hours": 8.1,
+    "cost_index": 116,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 934,
+    "travel_time_hours": 5.75,
+    "cost_index": 75,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 1038,
+    "travel_time_hours": 6.22,
+    "cost_index": 83,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 1213,
+    "travel_time_hours": 7.01,
+    "cost_index": 97,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 1229,
+    "travel_time_hours": 7.09,
+    "cost_index": 98,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 1454,
+    "travel_time_hours": 8.11,
+    "cost_index": 116,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 1325,
+    "travel_time_hours": 7.52,
+    "cost_index": 106,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-SUZHOU",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 367,
+    "travel_time_hours": 3.17,
+    "cost_index": 29,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-QINGDAO",
+    "to": "CN-FJ-XIAMEN",
+    "distance_km": 1307,
+    "travel_time_hours": 7.44,
+    "cost_index": 105,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-QINGDAO",
+    "to": "CN-HN-CHANGSHA",
+    "distance_km": 1117,
+    "travel_time_hours": 6.58,
+    "cost_index": 89,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-QINGDAO",
+    "to": "CN-HA-ZHENGZHOU",
+    "distance_km": 630,
+    "travel_time_hours": 4.36,
+    "cost_index": 50,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-QINGDAO",
+    "to": "CN-TJ-TIANJIN",
+    "distance_km": 436,
+    "travel_time_hours": 3.48,
+    "cost_index": 35,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-QINGDAO",
+    "to": "CN-SD-JINAN",
+    "distance_km": 299,
+    "travel_time_hours": 2.86,
+    "cost_index": 24,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-QINGDAO",
+    "to": "CN-AH-HEFEI",
+    "distance_km": 555,
+    "travel_time_hours": 4.02,
+    "cost_index": 44,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-QINGDAO",
+    "to": "CN-JX-NANCHANG",
+    "distance_km": 925,
+    "travel_time_hours": 5.7,
+    "cost_index": 74,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-QINGDAO",
+    "to": "CN-FJ-FUZHOU",
+    "distance_km": 1117,
+    "travel_time_hours": 6.58,
+    "cost_index": 89,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-QINGDAO",
+    "to": "CN-ZJ-NINGBO",
+    "distance_km": 698,
+    "travel_time_hours": 4.67,
+    "cost_index": 56,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-QINGDAO",
+    "to": "CN-JS-WUXI",
+    "distance_km": 509,
+    "travel_time_hours": 3.82,
+    "cost_index": 41,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-QINGDAO",
+    "to": "CN-LN-SHENYANG",
+    "distance_km": 689,
+    "travel_time_hours": 4.63,
+    "cost_index": 55,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-QINGDAO",
+    "to": "CN-LN-DALIAN",
+    "distance_km": 334,
+    "travel_time_hours": 3.02,
+    "cost_index": 27,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-QINGDAO",
+    "to": "CN-JL-CHANGCHUN",
+    "distance_km": 959,
+    "travel_time_hours": 5.86,
+    "cost_index": 77,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-QINGDAO",
+    "to": "CN-HL-HARBIN",
+    "distance_km": 1198,
+    "travel_time_hours": 6.95,
+    "cost_index": 96,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-QINGDAO",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 565,
+    "travel_time_hours": 4.07,
+    "cost_index": 45,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-QINGDAO",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 724,
+    "travel_time_hours": 4.79,
+    "cost_index": 58,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-QINGDAO",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 1486,
+    "travel_time_hours": 8.25,
+    "cost_index": 119,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-QINGDAO",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 1279,
+    "travel_time_hours": 7.31,
+    "cost_index": 102,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-QINGDAO",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 919,
+    "travel_time_hours": 5.68,
+    "cost_index": 74,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-QINGDAO",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 898,
+    "travel_time_hours": 5.58,
+    "cost_index": 72,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-XIAMEN",
+    "to": "CN-HN-CHANGSHA",
+    "distance_km": 661,
+    "travel_time_hours": 4.5,
+    "cost_index": 53,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-XIAMEN",
+    "to": "CN-HA-ZHENGZHOU",
+    "distance_km": 1221,
+    "travel_time_hours": 7.05,
+    "cost_index": 98,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-XIAMEN",
+    "to": "CN-SD-JINAN",
+    "distance_km": 1356,
+    "travel_time_hours": 7.67,
+    "cost_index": 109,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-XIAMEN",
+    "to": "CN-AH-HEFEI",
+    "distance_km": 821,
+    "travel_time_hours": 5.23,
+    "cost_index": 66,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-XIAMEN",
+    "to": "CN-JX-NANCHANG",
+    "distance_km": 517,
+    "travel_time_hours": 3.85,
+    "cost_index": 41,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-XIAMEN",
+    "to": "CN-FJ-FUZHOU",
+    "distance_km": 215,
+    "travel_time_hours": 2.48,
+    "cost_index": 17,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-XIAMEN",
+    "to": "CN-ZJ-NINGBO",
+    "distance_km": 690,
+    "travel_time_hours": 4.64,
+    "cost_index": 55,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-XIAMEN",
+    "to": "CN-JS-WUXI",
+    "distance_km": 809,
+    "travel_time_hours": 5.18,
+    "cost_index": 65,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-XIAMEN",
+    "to": "CN-GD-DONGGUAN",
+    "distance_km": 471,
+    "travel_time_hours": 3.64,
+    "cost_index": 38,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-XIAMEN",
+    "to": "CN-GD-FOSHAN",
+    "distance_km": 531,
+    "travel_time_hours": 3.91,
+    "cost_index": 42,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-XIAMEN",
+    "to": "CN-GD-ZHUHAI",
+    "distance_km": 522,
+    "travel_time_hours": 3.87,
+    "cost_index": 42,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-XIAMEN",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 418,
+    "travel_time_hours": 3.4,
+    "cost_index": 33,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-XIAMEN",
+    "to": "CN-GX-NANNING",
+    "distance_km": 1007,
+    "travel_time_hours": 6.08,
+    "cost_index": 81,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-XIAMEN",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 792,
+    "travel_time_hours": 5.1,
+    "cost_index": 63,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-XIAMEN",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 769,
+    "travel_time_hours": 4.99,
+    "cost_index": 62,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-XIAMEN",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 1174,
+    "travel_time_hours": 6.84,
+    "cost_index": 94,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-XIAMEN",
+    "to": "CN-HI-SANYA",
+    "distance_km": 1126,
+    "travel_time_hours": 6.62,
+    "cost_index": 90,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-XIAMEN",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 939,
+    "travel_time_hours": 5.77,
+    "cost_index": 75,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-XIAMEN",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 470,
+    "travel_time_hours": 3.64,
+    "cost_index": 38,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-HA-ZHENGZHOU",
+    "distance_km": 728,
+    "travel_time_hours": 4.81,
+    "cost_index": 58,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-TJ-TIANJIN",
+    "distance_km": 1269,
+    "travel_time_hours": 7.27,
+    "cost_index": 102,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-SD-JINAN",
+    "distance_km": 1015,
+    "travel_time_hours": 6.11,
+    "cost_index": 81,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-AH-HEFEI",
+    "distance_km": 574,
+    "travel_time_hours": 4.11,
+    "cost_index": 46,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-JX-NANCHANG",
+    "distance_km": 290,
+    "travel_time_hours": 2.82,
+    "cost_index": 23,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-FJ-FUZHOU",
+    "distance_km": 673,
+    "travel_time_hours": 4.56,
+    "cost_index": 54,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-ZJ-NINGBO",
+    "distance_km": 856,
+    "travel_time_hours": 5.39,
+    "cost_index": 69,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-JS-WUXI",
+    "distance_km": 798,
+    "travel_time_hours": 5.13,
+    "cost_index": 64,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-GD-DONGGUAN",
+    "distance_km": 585,
+    "travel_time_hours": 4.16,
+    "cost_index": 47,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-GD-FOSHAN",
+    "distance_km": 580,
+    "travel_time_hours": 4.13,
+    "cost_index": 46,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-GD-ZHUHAI",
+    "distance_km": 666,
+    "travel_time_hours": 4.53,
+    "cost_index": 53,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 622,
+    "travel_time_hours": 4.33,
+    "cost_index": 50,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-LN-DALIAN",
+    "distance_km": 1432,
+    "travel_time_hours": 8.01,
+    "cost_index": 115,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 1101,
+    "travel_time_hours": 6.5,
+    "cost_index": 88,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 1073,
+    "travel_time_hours": 6.38,
+    "cost_index": 86,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-GX-NANNING",
+    "distance_km": 756,
+    "travel_time_hours": 4.94,
+    "cost_index": 60,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 421,
+    "travel_time_hours": 3.42,
+    "cost_index": 34,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 454,
+    "travel_time_hours": 3.57,
+    "cost_index": 36,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-YN-KUNMING",
+    "distance_km": 1076,
+    "travel_time_hours": 6.39,
+    "cost_index": 86,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-YN-DALI",
+    "distance_km": 1289,
+    "travel_time_hours": 7.36,
+    "cost_index": 103,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-YN-LIJIANG",
+    "distance_km": 1262,
+    "travel_time_hours": 7.24,
+    "cost_index": 101,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-YN-SHANGRILA",
+    "distance_km": 1299,
+    "travel_time_hours": 7.4,
+    "cost_index": 104,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 647,
+    "travel_time_hours": 4.44,
+    "cost_index": 52,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-QH-XINING",
+    "distance_km": 1401,
+    "travel_time_hours": 7.87,
+    "cost_index": 112,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 1221,
+    "travel_time_hours": 7.05,
+    "cost_index": 98,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 1299,
+    "travel_time_hours": 7.4,
+    "cost_index": 104,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 1406,
+    "travel_time_hours": 7.89,
+    "cost_index": 113,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-HI-SANYA",
+    "distance_km": 1164,
+    "travel_time_hours": 6.79,
+    "cost_index": 93,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 949,
+    "travel_time_hours": 5.81,
+    "cost_index": 76,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HN-CHANGSHA",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 761,
+    "travel_time_hours": 4.96,
+    "cost_index": 61,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-TJ-TIANJIN",
+    "distance_km": 577,
+    "travel_time_hours": 4.12,
+    "cost_index": 46,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-SD-JINAN",
+    "distance_km": 380,
+    "travel_time_hours": 3.23,
+    "cost_index": 30,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-AH-HEFEI",
+    "distance_km": 468,
+    "travel_time_hours": 3.63,
+    "cost_index": 37,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-JX-NANCHANG",
+    "distance_km": 707,
+    "travel_time_hours": 4.72,
+    "cost_index": 57,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-FJ-FUZHOU",
+    "distance_km": 1108,
+    "travel_time_hours": 6.54,
+    "cost_index": 89,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-ZJ-NINGBO",
+    "distance_km": 921,
+    "travel_time_hours": 5.69,
+    "cost_index": 74,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-JS-WUXI",
+    "distance_km": 721,
+    "travel_time_hours": 4.78,
+    "cost_index": 58,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-GD-DONGGUAN",
+    "distance_km": 1304,
+    "travel_time_hours": 7.43,
+    "cost_index": 104,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-GD-FOSHAN",
+    "distance_km": 1305,
+    "travel_time_hours": 7.43,
+    "cost_index": 104,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-GD-ZHUHAI",
+    "distance_km": 1388,
+    "travel_time_hours": 7.81,
+    "cost_index": 111,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 1331,
+    "travel_time_hours": 7.55,
+    "cost_index": 106,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-LN-SHENYANG",
+    "distance_km": 1160,
+    "travel_time_hours": 6.77,
+    "cost_index": 93,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-LN-DALIAN",
+    "distance_km": 848,
+    "travel_time_hours": 5.35,
+    "cost_index": 68,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-JL-CHANGCHUN",
+    "distance_km": 1422,
+    "travel_time_hours": 7.97,
+    "cost_index": 114,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 374,
+    "travel_time_hours": 3.2,
+    "cost_index": 30,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 360,
+    "travel_time_hours": 3.14,
+    "cost_index": 29,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-GX-NANNING",
+    "distance_km": 1421,
+    "travel_time_hours": 7.96,
+    "cost_index": 114,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 1102,
+    "travel_time_hours": 6.51,
+    "cost_index": 88,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 1149,
+    "travel_time_hours": 6.72,
+    "cost_index": 92,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 1121,
+    "travel_time_hours": 6.59,
+    "cost_index": 90,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-QH-XINING",
+    "distance_km": 1089,
+    "travel_time_hours": 6.45,
+    "cost_index": 87,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 899,
+    "travel_time_hours": 5.59,
+    "cost_index": 72,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 779,
+    "travel_time_hours": 5.04,
+    "cost_index": 62,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 697,
+    "travel_time_hours": 4.67,
+    "cost_index": 56,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HA-ZHENGZHOU",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 1007,
+    "travel_time_hours": 6.08,
+    "cost_index": 81,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-TJ-TIANJIN",
+    "to": "CN-SD-JINAN",
+    "distance_km": 270,
+    "travel_time_hours": 2.73,
+    "cost_index": 22,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-TJ-TIANJIN",
+    "to": "CN-AH-HEFEI",
+    "distance_km": 807,
+    "travel_time_hours": 5.17,
+    "cost_index": 65,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-TJ-TIANJIN",
+    "to": "CN-JX-NANCHANG",
+    "distance_km": 1163,
+    "travel_time_hours": 6.79,
+    "cost_index": 93,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-TJ-TIANJIN",
+    "to": "CN-FJ-FUZHOU",
+    "distance_km": 1460,
+    "travel_time_hours": 8.14,
+    "cost_index": 117,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-TJ-TIANJIN",
+    "to": "CN-ZJ-NINGBO",
+    "distance_km": 1099,
+    "travel_time_hours": 6.49,
+    "cost_index": 88,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-TJ-TIANJIN",
+    "to": "CN-JS-WUXI",
+    "distance_km": 890,
+    "travel_time_hours": 5.54,
+    "cost_index": 71,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-TJ-TIANJIN",
+    "to": "CN-LN-SHENYANG",
+    "distance_km": 608,
+    "travel_time_hours": 4.26,
+    "cost_index": 49,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-TJ-TIANJIN",
+    "to": "CN-LN-DALIAN",
+    "distance_km": 382,
+    "travel_time_hours": 3.23,
+    "cost_index": 31,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-TJ-TIANJIN",
+    "to": "CN-JL-CHANGCHUN",
+    "distance_km": 857,
+    "travel_time_hours": 5.4,
+    "cost_index": 69,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-TJ-TIANJIN",
+    "to": "CN-HL-HARBIN",
+    "distance_km": 1068,
+    "travel_time_hours": 6.36,
+    "cost_index": 85,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-TJ-TIANJIN",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 261,
+    "travel_time_hours": 2.69,
+    "cost_index": 21,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-TJ-TIANJIN",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 427,
+    "travel_time_hours": 3.44,
+    "cost_index": 34,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-TJ-TIANJIN",
+    "to": "CN-QH-XINING",
+    "distance_km": 1379,
+    "travel_time_hours": 7.77,
+    "cost_index": 110,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-TJ-TIANJIN",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 1224,
+    "travel_time_hours": 7.06,
+    "cost_index": 98,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-TJ-TIANJIN",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 953,
+    "travel_time_hours": 5.83,
+    "cost_index": 76,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-TJ-TIANJIN",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 504,
+    "travel_time_hours": 3.79,
+    "cost_index": 40,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-TJ-TIANJIN",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 1274,
+    "travel_time_hours": 7.29,
+    "cost_index": 102,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-JINAN",
+    "to": "CN-AH-HEFEI",
+    "distance_km": 537,
+    "travel_time_hours": 3.94,
+    "cost_index": 43,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-JINAN",
+    "to": "CN-JX-NANCHANG",
+    "distance_km": 894,
+    "travel_time_hours": 5.56,
+    "cost_index": 72,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-JINAN",
+    "to": "CN-FJ-FUZHOU",
+    "distance_km": 1194,
+    "travel_time_hours": 6.93,
+    "cost_index": 96,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-JINAN",
+    "to": "CN-ZJ-NINGBO",
+    "distance_km": 859,
+    "travel_time_hours": 5.4,
+    "cost_index": 69,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-JINAN",
+    "to": "CN-JS-WUXI",
+    "distance_km": 645,
+    "travel_time_hours": 4.43,
+    "cost_index": 52,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-JINAN",
+    "to": "CN-LN-SHENYANG",
+    "distance_km": 789,
+    "travel_time_hours": 5.09,
+    "cost_index": 63,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-JINAN",
+    "to": "CN-LN-DALIAN",
+    "distance_km": 468,
+    "travel_time_hours": 3.63,
+    "cost_index": 37,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-JINAN",
+    "to": "CN-JL-CHANGCHUN",
+    "distance_km": 1057,
+    "travel_time_hours": 6.31,
+    "cost_index": 85,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-JINAN",
+    "to": "CN-HL-HARBIN",
+    "distance_km": 1284,
+    "travel_time_hours": 7.34,
+    "cost_index": 103,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-JINAN",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 278,
+    "travel_time_hours": 2.76,
+    "cost_index": 22,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-JINAN",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 427,
+    "travel_time_hours": 3.44,
+    "cost_index": 34,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-JINAN",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 1422,
+    "travel_time_hours": 7.96,
+    "cost_index": 114,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-JINAN",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 1463,
+    "travel_time_hours": 8.15,
+    "cost_index": 117,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-JINAN",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 1489,
+    "travel_time_hours": 8.27,
+    "cost_index": 119,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-JINAN",
+    "to": "CN-QH-XINING",
+    "distance_km": 1367,
+    "travel_time_hours": 7.72,
+    "cost_index": 109,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-JINAN",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 1191,
+    "travel_time_hours": 6.91,
+    "cost_index": 95,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-JINAN",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 981,
+    "travel_time_hours": 5.96,
+    "cost_index": 78,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-JINAN",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 658,
+    "travel_time_hours": 4.49,
+    "cost_index": 53,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SD-JINAN",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 1019,
+    "travel_time_hours": 6.13,
+    "cost_index": 81,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-JX-NANCHANG",
+    "distance_km": 373,
+    "travel_time_hours": 3.2,
+    "cost_index": 30,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-FJ-FUZHOU",
+    "distance_km": 670,
+    "travel_time_hours": 4.55,
+    "cost_index": 54,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-ZJ-NINGBO",
+    "distance_km": 466,
+    "travel_time_hours": 3.62,
+    "cost_index": 37,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-JS-WUXI",
+    "distance_km": 294,
+    "travel_time_hours": 2.84,
+    "cost_index": 24,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-GD-DONGGUAN",
+    "distance_km": 1037,
+    "travel_time_hours": 6.21,
+    "cost_index": 83,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-GD-FOSHAN",
+    "distance_km": 1059,
+    "travel_time_hours": 6.31,
+    "cost_index": 85,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-GD-ZHUHAI",
+    "distance_km": 1122,
+    "travel_time_hours": 6.6,
+    "cost_index": 90,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 1041,
+    "travel_time_hours": 6.23,
+    "cost_index": 83,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-LN-SHENYANG",
+    "distance_km": 1239,
+    "travel_time_hours": 7.13,
+    "cost_index": 99,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-LN-DALIAN",
+    "distance_km": 882,
+    "travel_time_hours": 5.51,
+    "cost_index": 71,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 735,
+    "travel_time_hours": 4.84,
+    "cost_index": 59,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 797,
+    "travel_time_hours": 5.12,
+    "cost_index": 64,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-GX-NANNING",
+    "distance_km": 1328,
+    "travel_time_hours": 7.54,
+    "cost_index": 106,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 994,
+    "travel_time_hours": 6.02,
+    "cost_index": 80,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 1023,
+    "travel_time_hours": 6.15,
+    "cost_index": 82,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 1177,
+    "travel_time_hours": 6.85,
+    "cost_index": 94,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 1322,
+    "travel_time_hours": 7.51,
+    "cost_index": 106,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 1244,
+    "travel_time_hours": 7.15,
+    "cost_index": 99,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 1116,
+    "travel_time_hours": 6.57,
+    "cost_index": 89,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 1480,
+    "travel_time_hours": 8.23,
+    "cost_index": 118,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-AH-HEFEI",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 541,
+    "travel_time_hours": 3.96,
+    "cost_index": 43,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-FJ-FUZHOU",
+    "distance_km": 447,
+    "travel_time_hours": 3.53,
+    "cost_index": 36,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-ZJ-NINGBO",
+    "distance_km": 567,
+    "travel_time_hours": 4.08,
+    "cost_index": 45,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-JS-WUXI",
+    "distance_km": 530,
+    "travel_time_hours": 3.91,
+    "cost_index": 42,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-GD-DONGGUAN",
+    "distance_km": 664,
+    "travel_time_hours": 4.52,
+    "cost_index": 53,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-GD-FOSHAN",
+    "distance_km": 686,
+    "travel_time_hours": 4.62,
+    "cost_index": 55,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-GD-ZHUHAI",
+    "distance_km": 749,
+    "travel_time_hours": 4.9,
+    "cost_index": 60,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 670,
+    "travel_time_hours": 4.54,
+    "cost_index": 54,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-LN-DALIAN",
+    "distance_km": 1255,
+    "travel_time_hours": 7.2,
+    "cost_index": 100,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 1048,
+    "travel_time_hours": 6.26,
+    "cost_index": 84,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 1067,
+    "travel_time_hours": 6.35,
+    "cost_index": 85,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-GX-NANNING",
+    "distance_km": 993,
+    "travel_time_hours": 6.01,
+    "cost_index": 79,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 670,
+    "travel_time_hours": 4.54,
+    "cost_index": 54,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 687,
+    "travel_time_hours": 4.62,
+    "cost_index": 55,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-YN-KUNMING",
+    "distance_km": 1365,
+    "travel_time_hours": 7.7,
+    "cost_index": 109,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 936,
+    "travel_time_hours": 5.76,
+    "cost_index": 75,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 1395,
+    "travel_time_hours": 7.84,
+    "cost_index": 112,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 1407,
+    "travel_time_hours": 7.9,
+    "cost_index": 113,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 1403,
+    "travel_time_hours": 7.88,
+    "cost_index": 112,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-HI-SANYA",
+    "distance_km": 1328,
+    "travel_time_hours": 7.53,
+    "cost_index": 106,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 1112,
+    "travel_time_hours": 6.56,
+    "cost_index": 89,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JX-NANCHANG",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 480,
+    "travel_time_hours": 3.68,
+    "cost_index": 38,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-FUZHOU",
+    "to": "CN-ZJ-NINGBO",
+    "distance_km": 477,
+    "travel_time_hours": 3.67,
+    "cost_index": 38,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-FUZHOU",
+    "to": "CN-JS-WUXI",
+    "distance_km": 611,
+    "travel_time_hours": 4.28,
+    "cost_index": 49,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-FUZHOU",
+    "to": "CN-GD-DONGGUAN",
+    "distance_km": 656,
+    "travel_time_hours": 4.48,
+    "cost_index": 52,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-FUZHOU",
+    "to": "CN-GD-FOSHAN",
+    "distance_km": 711,
+    "travel_time_hours": 4.73,
+    "cost_index": 57,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-FUZHOU",
+    "to": "CN-GD-ZHUHAI",
+    "distance_km": 718,
+    "travel_time_hours": 4.76,
+    "cost_index": 57,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-FUZHOU",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 613,
+    "travel_time_hours": 4.29,
+    "cost_index": 49,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-FUZHOU",
+    "to": "CN-LN-DALIAN",
+    "distance_km": 1444,
+    "travel_time_hours": 8.06,
+    "cost_index": 116,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-FUZHOU",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 1405,
+    "travel_time_hours": 7.89,
+    "cost_index": 112,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-FUZHOU",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 1457,
+    "travel_time_hours": 8.12,
+    "cost_index": 117,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-FUZHOU",
+    "to": "CN-GX-NANNING",
+    "distance_km": 1163,
+    "travel_time_hours": 6.79,
+    "cost_index": 93,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-FUZHOU",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 907,
+    "travel_time_hours": 5.62,
+    "cost_index": 73,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-FUZHOU",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 896,
+    "travel_time_hours": 5.57,
+    "cost_index": 72,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-FUZHOU",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 1263,
+    "travel_time_hours": 7.24,
+    "cost_index": 101,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-FUZHOU",
+    "to": "CN-HI-SANYA",
+    "distance_km": 1330,
+    "travel_time_hours": 7.55,
+    "cost_index": 106,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-FUZHOU",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 1137,
+    "travel_time_hours": 6.67,
+    "cost_index": 91,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-FJ-FUZHOU",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 255,
+    "travel_time_hours": 2.66,
+    "cost_index": 20,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-NINGBO",
+    "to": "CN-JS-WUXI",
+    "distance_km": 216,
+    "travel_time_hours": 2.48,
+    "cost_index": 17,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-NINGBO",
+    "to": "CN-GD-DONGGUAN",
+    "distance_km": 1087,
+    "travel_time_hours": 6.44,
+    "cost_index": 87,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-NINGBO",
+    "to": "CN-GD-FOSHAN",
+    "distance_km": 1133,
+    "travel_time_hours": 6.65,
+    "cost_index": 91,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-NINGBO",
+    "to": "CN-GD-ZHUHAI",
+    "distance_km": 1160,
+    "travel_time_hours": 6.77,
+    "cost_index": 93,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-NINGBO",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 1059,
+    "travel_time_hours": 6.31,
+    "cost_index": 85,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-NINGBO",
+    "to": "CN-LN-SHENYANG",
+    "distance_km": 1337,
+    "travel_time_hours": 7.58,
+    "cost_index": 107,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-NINGBO",
+    "to": "CN-LN-DALIAN",
+    "distance_km": 1005,
+    "travel_time_hours": 6.07,
+    "cost_index": 80,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-NINGBO",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 1116,
+    "travel_time_hours": 6.57,
+    "cost_index": 89,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-NINGBO",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 1216,
+    "travel_time_hours": 7.03,
+    "cost_index": 97,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-NINGBO",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 1221,
+    "travel_time_hours": 7.05,
+    "cost_index": 98,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-NINGBO",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 1230,
+    "travel_time_hours": 7.09,
+    "cost_index": 98,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-ZJ-NINGBO",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 224,
+    "travel_time_hours": 2.52,
+    "cost_index": 18,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-WUXI",
+    "to": "CN-GD-DONGGUAN",
+    "distance_km": 1143,
+    "travel_time_hours": 6.69,
+    "cost_index": 91,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-WUXI",
+    "to": "CN-GD-FOSHAN",
+    "distance_km": 1179,
+    "travel_time_hours": 6.86,
+    "cost_index": 94,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-WUXI",
+    "to": "CN-GD-ZHUHAI",
+    "distance_km": 1223,
+    "travel_time_hours": 7.06,
+    "cost_index": 98,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-WUXI",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 1128,
+    "travel_time_hours": 6.63,
+    "cost_index": 90,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-WUXI",
+    "to": "CN-LN-SHENYANG",
+    "distance_km": 1179,
+    "travel_time_hours": 6.86,
+    "cost_index": 94,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-WUXI",
+    "to": "CN-LN-DALIAN",
+    "distance_km": 833,
+    "travel_time_hours": 5.29,
+    "cost_index": 67,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-WUXI",
+    "to": "CN-JL-CHANGCHUN",
+    "distance_km": 1439,
+    "travel_time_hours": 8.04,
+    "cost_index": 115,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-WUXI",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 900,
+    "travel_time_hours": 5.59,
+    "cost_index": 72,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-WUXI",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 1003,
+    "travel_time_hours": 6.06,
+    "cost_index": 80,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-WUXI",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 1199,
+    "travel_time_hours": 6.95,
+    "cost_index": 96,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-WUXI",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 1217,
+    "travel_time_hours": 7.03,
+    "cost_index": 97,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-WUXI",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 1433,
+    "travel_time_hours": 8.01,
+    "cost_index": 115,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-WUXI",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 1498,
+    "travel_time_hours": 8.31,
+    "cost_index": 120,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-WUXI",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 1291,
+    "travel_time_hours": 7.37,
+    "cost_index": 103,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JS-WUXI",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 390,
+    "travel_time_hours": 3.27,
+    "cost_index": 31,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-DONGGUAN",
+    "to": "CN-GD-FOSHAN",
+    "distance_km": 64,
+    "travel_time_hours": 1.79,
+    "cost_index": 5,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-DONGGUAN",
+    "to": "CN-GD-ZHUHAI",
+    "distance_km": 85,
+    "travel_time_hours": 1.89,
+    "cost_index": 7,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-DONGGUAN",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 73,
+    "travel_time_hours": 1.83,
+    "cost_index": 6,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-DONGGUAN",
+    "to": "CN-GX-NANNING",
+    "distance_km": 551,
+    "travel_time_hours": 4.01,
+    "cost_index": 44,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-DONGGUAN",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 431,
+    "travel_time_hours": 3.46,
+    "cost_index": 34,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-DONGGUAN",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 385,
+    "travel_time_hours": 3.25,
+    "cost_index": 31,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-DONGGUAN",
+    "to": "CN-YN-KUNMING",
+    "distance_km": 1143,
+    "travel_time_hours": 6.7,
+    "cost_index": 91,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-DONGGUAN",
+    "to": "CN-YN-DALI",
+    "distance_km": 1395,
+    "travel_time_hours": 7.84,
+    "cost_index": 112,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-DONGGUAN",
+    "to": "CN-YN-LIJIANG",
+    "distance_km": 1428,
+    "travel_time_hours": 7.99,
+    "cost_index": 114,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-DONGGUAN",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 824,
+    "travel_time_hours": 5.24,
+    "cost_index": 66,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-DONGGUAN",
+    "to": "CN-HI-SANYA",
+    "distance_km": 690,
+    "travel_time_hours": 4.64,
+    "cost_index": 55,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-DONGGUAN",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 485,
+    "travel_time_hours": 3.71,
+    "cost_index": 39,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-DONGGUAN",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 890,
+    "travel_time_hours": 5.55,
+    "cost_index": 71,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-FOSHAN",
+    "to": "CN-GD-ZHUHAI",
+    "distance_km": 96,
+    "travel_time_hours": 1.94,
+    "cost_index": 8,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-FOSHAN",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 135,
+    "travel_time_hours": 2.12,
+    "cost_index": 11,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-FOSHAN",
+    "to": "CN-GX-NANNING",
+    "distance_km": 487,
+    "travel_time_hours": 3.71,
+    "cost_index": 39,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-FOSHAN",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 381,
+    "travel_time_hours": 3.23,
+    "cost_index": 30,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-FOSHAN",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 331,
+    "travel_time_hours": 3.01,
+    "cost_index": 27,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-FOSHAN",
+    "to": "CN-YN-KUNMING",
+    "distance_km": 1080,
+    "travel_time_hours": 6.41,
+    "cost_index": 86,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-FOSHAN",
+    "to": "CN-YN-DALI",
+    "distance_km": 1333,
+    "travel_time_hours": 7.56,
+    "cost_index": 107,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-FOSHAN",
+    "to": "CN-YN-LIJIANG",
+    "distance_km": 1367,
+    "travel_time_hours": 7.71,
+    "cost_index": 109,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-FOSHAN",
+    "to": "CN-YN-SHANGRILA",
+    "distance_km": 1448,
+    "travel_time_hours": 8.08,
+    "cost_index": 116,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-FOSHAN",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 769,
+    "travel_time_hours": 5,
+    "cost_index": 62,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-FOSHAN",
+    "to": "CN-HI-SANYA",
+    "distance_km": 650,
+    "travel_time_hours": 4.45,
+    "cost_index": 52,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-FOSHAN",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 440,
+    "travel_time_hours": 3.5,
+    "cost_index": 35,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-FOSHAN",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 940,
+    "travel_time_hours": 5.77,
+    "cost_index": 75,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-ZHUHAI",
+    "to": "CN-GD-HUIZHOU",
+    "distance_km": 104,
+    "travel_time_hours": 1.97,
+    "cost_index": 8,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-ZHUHAI",
+    "to": "CN-GX-NANNING",
+    "distance_km": 539,
+    "travel_time_hours": 3.95,
+    "cost_index": 43,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-ZHUHAI",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 473,
+    "travel_time_hours": 3.65,
+    "cost_index": 38,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-ZHUHAI",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 421,
+    "travel_time_hours": 3.41,
+    "cost_index": 34,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-ZHUHAI",
+    "to": "CN-YN-KUNMING",
+    "distance_km": 1149,
+    "travel_time_hours": 6.72,
+    "cost_index": 92,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-ZHUHAI",
+    "to": "CN-YN-DALI",
+    "distance_km": 1402,
+    "travel_time_hours": 7.87,
+    "cost_index": 112,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-ZHUHAI",
+    "to": "CN-YN-LIJIANG",
+    "distance_km": 1442,
+    "travel_time_hours": 8.06,
+    "cost_index": 115,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-ZHUHAI",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 855,
+    "travel_time_hours": 5.39,
+    "cost_index": 68,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-ZHUHAI",
+    "to": "CN-HI-SANYA",
+    "distance_km": 616,
+    "travel_time_hours": 4.3,
+    "cost_index": 49,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-ZHUHAI",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 419,
+    "travel_time_hours": 3.41,
+    "cost_index": 34,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-ZHUHAI",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 959,
+    "travel_time_hours": 5.86,
+    "cost_index": 77,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-HUIZHOU",
+    "to": "CN-GX-NANNING",
+    "distance_km": 620,
+    "travel_time_hours": 4.32,
+    "cost_index": 50,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-HUIZHOU",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 501,
+    "travel_time_hours": 3.78,
+    "cost_index": 40,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-HUIZHOU",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 456,
+    "travel_time_hours": 3.57,
+    "cost_index": 37,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-HUIZHOU",
+    "to": "CN-YN-KUNMING",
+    "distance_km": 1216,
+    "travel_time_hours": 7.03,
+    "cost_index": 97,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-HUIZHOU",
+    "to": "CN-YN-DALI",
+    "distance_km": 1468,
+    "travel_time_hours": 8.17,
+    "cost_index": 117,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-HUIZHOU",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 895,
+    "travel_time_hours": 5.57,
+    "cost_index": 72,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-HUIZHOU",
+    "to": "CN-HI-SANYA",
+    "distance_km": 719,
+    "travel_time_hours": 4.77,
+    "cost_index": 58,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-HUIZHOU",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 524,
+    "travel_time_hours": 3.88,
+    "cost_index": 42,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GD-HUIZHOU",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 855,
+    "travel_time_hours": 5.39,
+    "cost_index": 68,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-LN-SHENYANG",
+    "to": "CN-LN-DALIAN",
+    "distance_km": 356,
+    "travel_time_hours": 3.12,
+    "cost_index": 29,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-LN-SHENYANG",
+    "to": "CN-JL-CHANGCHUN",
+    "distance_km": 272,
+    "travel_time_hours": 2.74,
+    "cost_index": 22,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-LN-SHENYANG",
+    "to": "CN-HL-HARBIN",
+    "distance_km": 510,
+    "travel_time_hours": 3.82,
+    "cost_index": 41,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-LN-SHENYANG",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 867,
+    "travel_time_hours": 5.44,
+    "cost_index": 69,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-LN-SHENYANG",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 1026,
+    "travel_time_hours": 6.16,
+    "cost_index": 82,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-LN-SHENYANG",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 980,
+    "travel_time_hours": 5.96,
+    "cost_index": 78,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-LN-DALIAN",
+    "to": "CN-JL-CHANGCHUN",
+    "distance_km": 627,
+    "travel_time_hours": 4.35,
+    "cost_index": 50,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-LN-DALIAN",
+    "to": "CN-HL-HARBIN",
+    "distance_km": 866,
+    "travel_time_hours": 5.44,
+    "cost_index": 69,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-LN-DALIAN",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 625,
+    "travel_time_hours": 4.34,
+    "cost_index": 50,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-LN-DALIAN",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 798,
+    "travel_time_hours": 5.13,
+    "cost_index": 64,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-LN-DALIAN",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 1334,
+    "travel_time_hours": 7.56,
+    "cost_index": 107,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-LN-DALIAN",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 868,
+    "travel_time_hours": 5.44,
+    "cost_index": 69,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-LN-DALIAN",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 1216,
+    "travel_time_hours": 7.03,
+    "cost_index": 97,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JL-CHANGCHUN",
+    "to": "CN-HL-HARBIN",
+    "distance_km": 240,
+    "travel_time_hours": 2.59,
+    "cost_index": 19,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JL-CHANGCHUN",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 1111,
+    "travel_time_hours": 6.55,
+    "cost_index": 89,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JL-CHANGCHUN",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 1259,
+    "travel_time_hours": 7.22,
+    "cost_index": 101,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-JL-CHANGCHUN",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 1162,
+    "travel_time_hours": 6.78,
+    "cost_index": 93,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HL-HARBIN",
+    "to": "CN-HE-SHIJIAZHUANG",
+    "distance_km": 1314,
+    "travel_time_hours": 7.47,
+    "cost_index": 105,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HL-HARBIN",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 1452,
+    "travel_time_hours": 8.1,
+    "cost_index": 116,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HL-HARBIN",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 1314,
+    "travel_time_hours": 7.47,
+    "cost_index": 105,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HE-SHIJIAZHUANG",
+    "to": "CN-SX-TAIYUAN",
+    "distance_km": 173,
+    "travel_time_hours": 2.29,
+    "cost_index": 14,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HE-SHIJIAZHUANG",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 1475,
+    "travel_time_hours": 8.2,
+    "cost_index": 118,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HE-SHIJIAZHUANG",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 1466,
+    "travel_time_hours": 8.16,
+    "cost_index": 117,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HE-SHIJIAZHUANG",
+    "to": "CN-QH-XINING",
+    "distance_km": 1136,
+    "travel_time_hours": 6.66,
+    "cost_index": 91,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HE-SHIJIAZHUANG",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 972,
+    "travel_time_hours": 5.92,
+    "cost_index": 78,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HE-SHIJIAZHUANG",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 724,
+    "travel_time_hours": 4.79,
+    "cost_index": 58,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HE-SHIJIAZHUANG",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 391,
+    "travel_time_hours": 3.28,
+    "cost_index": 31,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HE-SHIJIAZHUANG",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 1256,
+    "travel_time_hours": 7.21,
+    "cost_index": 100,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SX-TAIYUAN",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 1417,
+    "travel_time_hours": 7.94,
+    "cost_index": 113,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SX-TAIYUAN",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 1469,
+    "travel_time_hours": 8.18,
+    "cost_index": 117,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SX-TAIYUAN",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 1365,
+    "travel_time_hours": 7.71,
+    "cost_index": 109,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SX-TAIYUAN",
+    "to": "CN-QH-XINING",
+    "distance_km": 963,
+    "travel_time_hours": 5.88,
+    "cost_index": 77,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SX-TAIYUAN",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 800,
+    "travel_time_hours": 5.14,
+    "cost_index": 64,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SX-TAIYUAN",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 557,
+    "travel_time_hours": 4.03,
+    "cost_index": 45,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SX-TAIYUAN",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 337,
+    "travel_time_hours": 3.03,
+    "cost_index": 27,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-SX-TAIYUAN",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 1334,
+    "travel_time_hours": 7.56,
+    "cost_index": 107,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-NANNING",
+    "to": "CN-GX-GUILIN",
+    "distance_km": 335,
+    "travel_time_hours": 3.02,
+    "cost_index": 27,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-NANNING",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 307,
+    "travel_time_hours": 2.89,
+    "cost_index": 25,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-NANNING",
+    "to": "CN-YN-KUNMING",
+    "distance_km": 626,
+    "travel_time_hours": 4.35,
+    "cost_index": 50,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-NANNING",
+    "to": "CN-YN-DALI",
+    "distance_km": 878,
+    "travel_time_hours": 5.49,
+    "cost_index": 70,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-NANNING",
+    "to": "CN-YN-LIJIANG",
+    "distance_km": 936,
+    "travel_time_hours": 5.75,
+    "cost_index": 75,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-NANNING",
+    "to": "CN-YN-SHANGRILA",
+    "distance_km": 1032,
+    "travel_time_hours": 6.19,
+    "cost_index": 83,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-NANNING",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 461,
+    "travel_time_hours": 3.59,
+    "cost_index": 37,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-NANNING",
+    "to": "CN-HI-SANYA",
+    "distance_km": 522,
+    "travel_time_hours": 3.87,
+    "cost_index": 42,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-NANNING",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 369,
+    "travel_time_hours": 3.18,
+    "cost_index": 30,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-NANNING",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 1365,
+    "travel_time_hours": 7.7,
+    "cost_index": 109,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-NANNING",
+    "to": "CN-XZ-MEDOG",
+    "distance_km": 1491,
+    "travel_time_hours": 8.28,
+    "cost_index": 119,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-GUILIN",
+    "to": "CN-GX-YANGSHUO",
+    "distance_km": 58,
+    "travel_time_hours": 1.76,
+    "cost_index": 5,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-GUILIN",
+    "to": "CN-YN-KUNMING",
+    "distance_km": 763,
+    "travel_time_hours": 4.97,
+    "cost_index": 61,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-GUILIN",
+    "to": "CN-YN-DALI",
+    "distance_km": 1007,
+    "travel_time_hours": 6.08,
+    "cost_index": 81,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-GUILIN",
+    "to": "CN-YN-LIJIANG",
+    "distance_km": 1020,
+    "travel_time_hours": 6.14,
+    "cost_index": 82,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-GUILIN",
+    "to": "CN-YN-SHANGRILA",
+    "distance_km": 1090,
+    "travel_time_hours": 6.45,
+    "cost_index": 87,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-GUILIN",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 397,
+    "travel_time_hours": 3.3,
+    "cost_index": 32,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-GUILIN",
+    "to": "CN-QH-XINING",
+    "distance_km": 1499,
+    "travel_time_hours": 8.31,
+    "cost_index": 120,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-GUILIN",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 1349,
+    "travel_time_hours": 7.63,
+    "cost_index": 108,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-GUILIN",
+    "to": "CN-HI-SANYA",
+    "distance_km": 785,
+    "travel_time_hours": 5.07,
+    "cost_index": 63,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-GUILIN",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 582,
+    "travel_time_hours": 4.14,
+    "cost_index": 47,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-GUILIN",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 1078,
+    "travel_time_hours": 6.4,
+    "cost_index": 86,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-YANGSHUO",
+    "to": "CN-YN-KUNMING",
+    "distance_km": 785,
+    "travel_time_hours": 5.07,
+    "cost_index": 63,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-YANGSHUO",
+    "to": "CN-YN-DALI",
+    "distance_km": 1032,
+    "travel_time_hours": 6.19,
+    "cost_index": 83,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-YANGSHUO",
+    "to": "CN-YN-LIJIANG",
+    "distance_km": 1052,
+    "travel_time_hours": 6.28,
+    "cost_index": 84,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-YANGSHUO",
+    "to": "CN-YN-SHANGRILA",
+    "distance_km": 1126,
+    "travel_time_hours": 6.62,
+    "cost_index": 90,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-YANGSHUO",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 439,
+    "travel_time_hours": 3.5,
+    "cost_index": 35,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-YANGSHUO",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 1406,
+    "travel_time_hours": 7.89,
+    "cost_index": 113,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-YANGSHUO",
+    "to": "CN-HI-SANYA",
+    "distance_km": 733,
+    "travel_time_hours": 4.83,
+    "cost_index": 59,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-YANGSHUO",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 527,
+    "travel_time_hours": 3.9,
+    "cost_index": 42,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GX-YANGSHUO",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 1078,
+    "travel_time_hours": 6.4,
+    "cost_index": 86,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-KUNMING",
+    "to": "CN-YN-DALI",
+    "distance_km": 253,
+    "travel_time_hours": 2.65,
+    "cost_index": 20,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-KUNMING",
+    "to": "CN-YN-LIJIANG",
+    "distance_km": 320,
+    "travel_time_hours": 2.95,
+    "cost_index": 26,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-KUNMING",
+    "to": "CN-YN-SHANGRILA",
+    "distance_km": 430,
+    "travel_time_hours": 3.45,
+    "cost_index": 34,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-KUNMING",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 431,
+    "travel_time_hours": 3.46,
+    "cost_index": 34,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-KUNMING",
+    "to": "CN-XZ-LHASA",
+    "distance_km": 1252,
+    "travel_time_hours": 7.19,
+    "cost_index": 100,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-KUNMING",
+    "to": "CN-QH-XINING",
+    "distance_km": 1291,
+    "travel_time_hours": 7.37,
+    "cost_index": 103,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-KUNMING",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 1230,
+    "travel_time_hours": 7.09,
+    "cost_index": 98,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-KUNMING",
+    "to": "CN-HI-SANYA",
+    "distance_km": 1031,
+    "travel_time_hours": 6.19,
+    "cost_index": 82,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-KUNMING",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 959,
+    "travel_time_hours": 5.86,
+    "cost_index": 77,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-KUNMING",
+    "to": "CN-XZ-MEDOG",
+    "distance_km": 874,
+    "travel_time_hours": 5.47,
+    "cost_index": 70,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-DALI",
+    "to": "CN-YN-LIJIANG",
+    "distance_km": 139,
+    "travel_time_hours": 2.13,
+    "cost_index": 11,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-DALI",
+    "to": "CN-YN-SHANGRILA",
+    "distance_km": 252,
+    "travel_time_hours": 2.65,
+    "cost_index": 20,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-DALI",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 645,
+    "travel_time_hours": 4.43,
+    "cost_index": 52,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-DALI",
+    "to": "CN-XZ-LHASA",
+    "distance_km": 1005,
+    "travel_time_hours": 6.07,
+    "cost_index": 80,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-DALI",
+    "to": "CN-QH-XINING",
+    "distance_km": 1233,
+    "travel_time_hours": 7.1,
+    "cost_index": 99,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-DALI",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 1210,
+    "travel_time_hours": 7,
+    "cost_index": 97,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-DALI",
+    "to": "CN-HI-SANYA",
+    "distance_km": 1255,
+    "travel_time_hours": 7.21,
+    "cost_index": 100,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-DALI",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 1201,
+    "travel_time_hours": 6.96,
+    "cost_index": 96,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-DALI",
+    "to": "CN-XZ-MEDOG",
+    "distance_km": 641,
+    "travel_time_hours": 4.42,
+    "cost_index": 51,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-LIJIANG",
+    "to": "CN-YN-SHANGRILA",
+    "distance_km": 118,
+    "travel_time_hours": 2.04,
+    "cost_index": 9,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-LIJIANG",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 636,
+    "travel_time_hours": 4.39,
+    "cost_index": 51,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-LIJIANG",
+    "to": "CN-XZ-LHASA",
+    "distance_km": 942,
+    "travel_time_hours": 5.78,
+    "cost_index": 75,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-LIJIANG",
+    "to": "CN-QH-XINING",
+    "distance_km": 1095,
+    "travel_time_hours": 6.48,
+    "cost_index": 88,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-LIJIANG",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 1078,
+    "travel_time_hours": 6.4,
+    "cost_index": 86,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-LIJIANG",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 1409,
+    "travel_time_hours": 7.9,
+    "cost_index": 113,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-LIJIANG",
+    "to": "CN-HI-SANYA",
+    "distance_km": 1350,
+    "travel_time_hours": 7.64,
+    "cost_index": 108,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-LIJIANG",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 1278,
+    "travel_time_hours": 7.31,
+    "cost_index": 102,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-LIJIANG",
+    "to": "CN-XZ-MEDOG",
+    "distance_km": 556,
+    "travel_time_hours": 4.03,
+    "cost_index": 44,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-SHANGRILA",
+    "to": "CN-GZ-GUIYANG",
+    "distance_km": 696,
+    "travel_time_hours": 4.67,
+    "cost_index": 56,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-SHANGRILA",
+    "to": "CN-XZ-LHASA",
+    "distance_km": 860,
+    "travel_time_hours": 5.41,
+    "cost_index": 69,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-SHANGRILA",
+    "to": "CN-QH-XINING",
+    "distance_km": 998,
+    "travel_time_hours": 6.03,
+    "cost_index": 80,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-SHANGRILA",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 995,
+    "travel_time_hours": 6.02,
+    "cost_index": 80,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-SHANGRILA",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 1332,
+    "travel_time_hours": 7.55,
+    "cost_index": 107,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-SHANGRILA",
+    "to": "CN-HI-SANYA",
+    "distance_km": 1461,
+    "travel_time_hours": 8.14,
+    "cost_index": 117,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-SHANGRILA",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 1381,
+    "travel_time_hours": 7.78,
+    "cost_index": 111,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-YN-SHANGRILA",
+    "to": "CN-XZ-MEDOG",
+    "distance_km": 462,
+    "travel_time_hours": 3.6,
+    "cost_index": 37,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GZ-GUIYANG",
+    "to": "CN-QH-XINING",
+    "distance_km": 1199,
+    "travel_time_hours": 6.95,
+    "cost_index": 96,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GZ-GUIYANG",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 1079,
+    "travel_time_hours": 6.41,
+    "cost_index": 86,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GZ-GUIYANG",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 1317,
+    "travel_time_hours": 7.49,
+    "cost_index": 105,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GZ-GUIYANG",
+    "to": "CN-HI-SANYA",
+    "distance_km": 980,
+    "travel_time_hours": 5.95,
+    "cost_index": 78,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GZ-GUIYANG",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 826,
+    "travel_time_hours": 5.25,
+    "cost_index": 66,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GZ-GUIYANG",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 1397,
+    "travel_time_hours": 7.85,
+    "cost_index": 112,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GZ-GUIYANG",
+    "to": "CN-XZ-MEDOG",
+    "distance_km": 1151,
+    "travel_time_hours": 6.73,
+    "cost_index": 92,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-XZ-LHASA",
+    "to": "CN-QH-XINING",
+    "distance_km": 1256,
+    "travel_time_hours": 7.21,
+    "cost_index": 101,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-XZ-LHASA",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 1381,
+    "travel_time_hours": 7.78,
+    "cost_index": 111,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-XZ-LHASA",
+    "to": "CN-XZ-MEDOG",
+    "distance_km": 404,
+    "travel_time_hours": 3.34,
+    "cost_index": 32,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-QH-XINING",
+    "to": "CN-GS-LANZHOU",
+    "distance_km": 194,
+    "travel_time_hours": 2.38,
+    "cost_index": 16,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-QH-XINING",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 444,
+    "travel_time_hours": 3.52,
+    "cost_index": 36,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-QH-XINING",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 983,
+    "travel_time_hours": 5.97,
+    "cost_index": 79,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-QH-XINING",
+    "to": "CN-XJ-URUMQI",
+    "distance_km": 1442,
+    "travel_time_hours": 8.05,
+    "cost_index": 115,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-QH-XINING",
+    "to": "CN-XZ-MEDOG",
+    "distance_km": 1011,
+    "travel_time_hours": 6.09,
+    "cost_index": 81,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GS-LANZHOU",
+    "to": "CN-NX-YINCHUAN",
+    "distance_km": 344,
+    "travel_time_hours": 3.06,
+    "cost_index": 27,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GS-LANZHOU",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 870,
+    "travel_time_hours": 5.46,
+    "cost_index": 70,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-GS-LANZHOU",
+    "to": "CN-XZ-MEDOG",
+    "distance_km": 1093,
+    "travel_time_hours": 6.47,
+    "cost_index": 87,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-NX-YINCHUAN",
+    "to": "CN-NM-HOHHOT",
+    "distance_km": 540,
+    "travel_time_hours": 3.95,
+    "cost_index": 43,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-NX-YINCHUAN",
+    "to": "CN-XZ-MEDOG",
+    "distance_km": 1431,
+    "travel_time_hours": 8.01,
+    "cost_index": 115,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HI-SANYA",
+    "to": "CN-HI-HAIKOU",
+    "distance_km": 216,
+    "travel_time_hours": 2.48,
+    "cost_index": 17,
+    "method": "great_circle"
+  },
+  {
+    "from": "CN-HI-HAIKOU",
+    "to": "CN-ZJ-WENZHOU",
+    "distance_km": 1375,
+    "travel_time_hours": 7.75,
+    "cost_index": 110,
+    "method": "great_circle"
+  }
+]

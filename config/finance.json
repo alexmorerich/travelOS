@@ -1,0 +1,10 @@
+{
+  "_comment": "Monte Carlo drawdown model in REAL (inflation-adjusted) USD. Spending is held constant in real terms and returns are real returns, so inflation is handled implicitly and the survival probability is directly meaningful. Regimes inject sequence-of-returns risk via a recession draw.",
+  "initial_portfolio_usd": 500000,
+  "n_paths": 2000,
+  "mean_real_return": 0.035,
+  "sd_real_return": 0.11,
+  "recession_probability": 0.10,
+  "recession_mean_return": -0.18,
+  "recession_sd_return": 0.10
+}

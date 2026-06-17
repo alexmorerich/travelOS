@@ -1,0 +1,23 @@
+{
+  "total_nodes": 50,
+  "valid": 49,
+  "partial": 1,
+  "invalid": 0,
+  "missing_geo": 0,
+  "missing_geo_fraction": 0,
+  "missing_medical": 1,
+  "invalid_nodes": [
+    {
+      "id": "CN-XZ-MEDOG",
+      "name_en": "Medog",
+      "completeness": "PARTIAL",
+      "missing": [
+        "medical"
+      ]
+    }
+  ],
+  "warnings": [
+    "1 node(s) PARTIAL (penalised, not optimistic)."
+  ],
+  "passed": true
+}

@@ -1,0 +1,17 @@
+{
+  "seed": 12345,
+  "age_start": 50,
+  "age_end": 80,
+  "base_city": "CN-GD-SHENZHEN",
+  "radius_km": 1500,
+  "max_cities_per_year": 4,
+  "visited_window_years": 3,
+  "days_per_year": 365,
+  "routing": {
+    "tie_break_band": 0.05,
+    "utility_eps": 0.5,
+    "cost_weight": 0.8,
+    "travel_weight": 0.4
+  },
+  "risk_heatmap_ages": [50, 60, 70, 78]
+}

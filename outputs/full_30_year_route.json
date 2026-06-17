@@ -1,0 +1,282 @@
+[
+  {
+    "age": 50,
+    "primary_region": "Beijing + multi-region loop",
+    "cities": [
+      "Xi'an",
+      "Beijing",
+      "Hangzhou",
+      "Shanghai"
+    ],
+    "annual_cost_usd": 31899
+  },
+  {
+    "age": 51,
+    "primary_region": "Sichuan + multi-region loop",
+    "cities": [
+      "Xiamen",
+      "Guilin",
+      "Chengdu"
+    ],
+    "annual_cost_usd": 21436
+  },
+  {
+    "age": 52,
+    "primary_region": "Jiangsu + multi-region loop",
+    "cities": [
+      "Nanjing",
+      "Suzhou",
+      "Qingdao"
+    ],
+    "annual_cost_usd": 25325
+  },
+  {
+    "age": 53,
+    "primary_region": "Guangdong + multi-region loop",
+    "cities": [
+      "Jinan",
+      "Wuhan",
+      "Guangzhou"
+    ],
+    "annual_cost_usd": 24892
+  },
+  {
+    "age": 54,
+    "primary_region": "Beijing + multi-region loop",
+    "cities": [
+      "Xi'an",
+      "Beijing",
+      "Hangzhou"
+    ],
+    "annual_cost_usd": 29474
+  },
+  {
+    "age": 55,
+    "primary_region": "Fujian + multi-region loop",
+    "cities": [
+      "Shanghai",
+      "Xiamen",
+      "Guilin"
+    ],
+    "annual_cost_usd": 28095
+  },
+  {
+    "age": 56,
+    "primary_region": "Jiangsu + multi-region loop",
+    "cities": [
+      "Chengdu",
+      "Nanjing",
+      "Suzhou"
+    ],
+    "annual_cost_usd": 24616
+  },
+  {
+    "age": 57,
+    "primary_region": "Guangdong + multi-region loop",
+    "cities": [
+      "Guangzhou",
+      "Kunming",
+      "Wuhan"
+    ],
+    "annual_cost_usd": 24333
+  },
+  {
+    "age": 58,
+    "primary_region": "Beijing + multi-region loop",
+    "cities": [
+      "Beijing",
+      "Xi'an",
+      "Hangzhou"
+    ],
+    "annual_cost_usd": 29478
+  },
+  {
+    "age": 59,
+    "primary_region": "Fujian + multi-region loop",
+    "cities": [
+      "Xiamen",
+      "Shanghai",
+      "Guilin"
+    ],
+    "annual_cost_usd": 28173
+  },
+  {
+    "age": 60,
+    "primary_region": "Jiangsu + multi-region loop",
+    "cities": [
+      "Chengdu",
+      "Nanjing",
+      "Suzhou"
+    ],
+    "annual_cost_usd": 24622
+  },
+  {
+    "age": 61,
+    "primary_region": "Guangdong dual-base",
+    "cities": [
+      "Guangzhou",
+      "Kunming"
+    ],
+    "annual_cost_usd": 26058
+  },
+  {
+    "age": 62,
+    "primary_region": "Beijing dual-base",
+    "cities": [
+      "Xi'an",
+      "Beijing"
+    ],
+    "annual_cost_usd": 30020
+  },
+  {
+    "age": 63,
+    "primary_region": "Zhejiang dual-base",
+    "cities": [
+      "Hangzhou",
+      "Shanghai"
+    ],
+    "annual_cost_usd": 34560
+  },
+  {
+    "age": 64,
+    "primary_region": "Fujian dual-base",
+    "cities": [
+      "Xiamen",
+      "Nanjing"
+    ],
+    "annual_cost_usd": 25828
+  },
+  {
+    "age": 65,
+    "primary_region": "Sichuan dual-base",
+    "cities": [
+      "Chengdu",
+      "Guangzhou"
+    ],
+    "annual_cost_usd": 26938
+  },
+  {
+    "age": 66,
+    "primary_region": "Beijing dual-base",
+    "cities": [
+      "Xi'an",
+      "Beijing"
+    ],
+    "annual_cost_usd": 30243
+  },
+  {
+    "age": 67,
+    "primary_region": "Zhejiang dual-base",
+    "cities": [
+      "Hangzhou",
+      "Shanghai"
+    ],
+    "annual_cost_usd": 34593
+  },
+  {
+    "age": 68,
+    "primary_region": "Fujian dual-base",
+    "cities": [
+      "Xiamen",
+      "Nanjing"
+    ],
+    "annual_cost_usd": 25834
+  },
+  {
+    "age": 69,
+    "primary_region": "Sichuan dual-base",
+    "cities": [
+      "Chengdu",
+      "Guilin"
+    ],
+    "annual_cost_usd": 18972
+  },
+  {
+    "age": 70,
+    "primary_region": "Shaanxi single-city",
+    "cities": [
+      "Xi'an"
+    ],
+    "annual_cost_usd": 19185
+  },
+  {
+    "age": 71,
+    "primary_region": "Beijing single-city",
+    "cities": [
+      "Beijing"
+    ],
+    "annual_cost_usd": 39570
+  },
+  {
+    "age": 72,
+    "primary_region": "Zhejiang single-city",
+    "cities": [
+      "Hangzhou"
+    ],
+    "annual_cost_usd": 28778
+  },
+  {
+    "age": 73,
+    "primary_region": "Fujian single-city",
+    "cities": [
+      "Xiamen"
+    ],
+    "annual_cost_usd": 26380
+  },
+  {
+    "age": 74,
+    "primary_region": "Shaanxi single-city",
+    "cities": [
+      "Xi'an"
+    ],
+    "annual_cost_usd": 19185
+  },
+  {
+    "age": 75,
+    "primary_region": "Beijing single-city",
+    "cities": [
+      "Beijing"
+    ],
+    "annual_cost_usd": 39570
+  },
+  {
+    "age": 76,
+    "primary_region": "Zhejiang single-city",
+    "cities": [
+      "Hangzhou"
+    ],
+    "annual_cost_usd": 28778
+  },
+  {
+    "age": 77,
+    "primary_region": "Fujian single-city",
+    "cities": [
+      "Xiamen"
+    ],
+    "annual_cost_usd": 26380
+  },
+  {
+    "age": 78,
+    "primary_region": "Shaanxi single-city",
+    "cities": [
+      "Xi'an"
+    ],
+    "annual_cost_usd": 19185
+  },
+  {
+    "age": 79,
+    "primary_region": "Beijing single-city",
+    "cities": [
+      "Beijing"
+    ],
+    "annual_cost_usd": 39570
+  },
+  {
+    "age": 80,
+    "primary_region": "Zhejiang single-city",
+    "cities": [
+      "Hangzhou"
+    ],
+    "annual_cost_usd": 28778
+  }
+]

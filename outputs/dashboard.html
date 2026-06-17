@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Travel Life OS v4.0 — Dashboard</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; background:#0c1320; color:#dfe6f1; font:14px/1.5 -apple-system,Segoe UI,Roboto,sans-serif; }
+  .wrap { max-width:900px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { font-size:22px; margin:0 0 4px; }
+  .sub { color:#7c8aa5; margin:0 0 28px; font-size:13px; }
+  .cards { display:flex; gap:14px; flex-wrap:wrap; margin-bottom:28px; }
+  .card { flex:1; min-width:170px; background:#121b2c; border:1px solid #1e2a40; border-radius:12px; padding:16px 18px; }
+  .card .k { color:#7c8aa5; font-size:12px; text-transform:uppercase; letter-spacing:.04em; }
+  .card .v { font-size:28px; font-weight:650; margin-top:6px; }
+  .panel { background:#121b2c; border:1px solid #1e2a40; border-radius:12px; padding:18px 18px 10px; margin-bottom:22px; }
+  .panel h2 { font-size:15px; margin:0 0 10px; }
+  table { width:100%; border-collapse:collapse; font-size:12.5px; }
+  th,td { padding:6px 8px; border-bottom:1px solid #1b2740; text-align:left; }
+  th { color:#7c8aa5; font-weight:600; position:sticky; top:0; background:#121b2c; }
+  .scroll { max-height:420px; overflow:auto; }
+  .foot { color:#5d6a85; font-size:11.5px; margin-top:24px; }
+</style></head>
+<body><div class="wrap">
+  <h1>🌍 Travel Life OS v4.0 — Life Trajectory Dashboard</h1>
+  <p class="sub">Deterministic run · seed 12345 · 31 years (age 50–80) · 2,000 Monte Carlo paths</p>
+
+  <div class="cards">
+    <div class="card"><div class="k">P(capital survives to 80)</div><div class="v" style="color:#e0563a">11.6%</div></div>
+    <div class="card"><div class="k">Median bankruptcy age</div><div class="v">68</div></div>
+    <div class="card"><div class="k">Effective withdrawal</div><div class="v">5.5%</div></div>
+    <div class="card"><div class="k">Median terminal</div><div class="v">$0</div></div>
+  </div>
+
+  <div class="panel"><h2>💰 Portfolio survival curve (real USD · p10–p90 band, p50 line)</h2><svg viewBox="0 0 860 280" width="100%">
+    <line x1="70" y1="240" x2="840" y2="240" stroke="#23304a"/>
+      <text x="62" y="244" fill="#7c8aa5" font-size="11" text-anchor="end">$0</text><line x1="70" y1="185" x2="840" y2="185" stroke="#23304a"/>
+      <text x="62" y="189" fill="#7c8aa5" font-size="11" text-anchor="end">$152,912</text><line x1="70" y1="130" x2="840" y2="130" stroke="#23304a"/>
+      <text x="62" y="134" fill="#7c8aa5" font-size="11" text-anchor="end">$305,823</text><line x1="70" y1="75" x2="840" y2="75" stroke="#23304a"/>
+      <text x="62" y="79" fill="#7c8aa5" font-size="11" text-anchor="end">$458,735</text><line x1="70" y1="20" x2="840" y2="20" stroke="#23304a"/>
+      <text x="62" y="24" fill="#7c8aa5" font-size="11" text-anchor="end">$611,646</text><text x="70" y="258" fill="#7c8aa5" font-size="11" text-anchor="middle">50</text><text x="198.33333333333331" y="258" fill="#7c8aa5" font-size="11" text-anchor="middle">55</text><text x="326.66666666666663" y="258" fill="#7c8aa5" font-size="11" text-anchor="middle">60</text><text x="455" y="258" fill="#7c8aa5" font-size="11" text-anchor="middle">65</text><text x="583.3333333333333" y="258" fill="#7c8aa5" font-size="11" text-anchor="middle">70</text><text x="711.6666666666667" y="258" fill="#7c8aa5" font-size="11" text-anchor="middle">75</text><text x="840" y="258" fill="#7c8aa5" font-size="11" text-anchor="middle">80</text>
+    <polygon points="70.0,40.9 95.7,34.7 121.3,30.5 147.0,30.9 172.7,33.4 198.3,34.2 224.0,33.6 249.7,39.8 275.3,44.1 301.0,51.3 326.7,54.7 352.3,58.1 378.0,66.8 403.7,78.6 429.3,81.3 455.0,88.3 480.7,96.2 506.3,106.3 532.0,117.8 557.7,121.2 583.3,127.7 609.0,143.7 634.7,151.1 660.3,160.9 686.0,167.0 711.7,179.8 737.3,189.3 763.0,199.0 788.7,205.8 814.3,219.8 840.0,229.9 840.0,240.0 814.3,240.0 788.7,240.0 763.0,240.0 737.3,240.0 711.7,240.0 686.0,240.0 660.3,240.0 634.7,240.0 609.0,240.0 583.3,240.0 557.7,240.0 532.0,240.0 506.3,240.0 480.7,240.0 455.0,240.0 429.3,240.0 403.7,240.0 378.0,238.4 352.3,227.7 326.7,218.1 301.0,209.2 275.3,199.6 249.7,188.6 224.0,179.4 198.3,167.8 172.7,155.8 147.0,142.1 121.3,129.3 95.7,115.5 70.0,97.2" fill="#2f6df6" opacity="0.18"/>
+    <polyline points="70.0,67.0 95.7,74.3 121.3,82.2 147.0,90.2 172.7,100.2 198.3,109.7 224.0,117.8 249.7,126.3 275.3,136.0 301.0,145.7 326.7,154.9 352.3,164.8 378.0,175.7 403.7,187.2 429.3,198.1 455.0,207.4 480.7,218.3 506.3,231.2 532.0,240.0 557.7,240.0 583.3,240.0 609.0,240.0 634.7,240.0 660.3,240.0 686.0,240.0 711.7,240.0 737.3,240.0 763.0,240.0 788.7,240.0 814.3,240.0 840.0,240.0" fill="none" stroke="#4f8bff" stroke-width="2.5"/>
+    <line x1="70" y1="60.15741131307979" x2="840" y2="60.15741131307979" stroke="#e0a13a" stroke-dasharray="4 4"/>
+    <text x="840" y="54.15741131307979" fill="#e0a13a" font-size="10" text-anchor="end">initial $500k</text>
+  </svg></div>
+  <div class="panel"><h2>🌡️ TREI risk distribution across cities</h2><svg viewBox="0 0 860 240" width="100%">
+    <line x1="40" y1="200" x2="840" y2="200" stroke="#23304a"/>
+    <rect x="42" y="194" width="62.66666666666667" height="6" fill="#46b97a"/>
+      <text x="73.33333333333334" y="214" fill="#7c8aa5" font-size="10" text-anchor="middle">0</text><rect x="108.66666666666667" y="20" width="62.66666666666667" height="180" fill="#46b97a"/>
+      <text x="140" y="214" fill="#7c8aa5" font-size="10" text-anchor="middle">1</text><rect x="175.33333333333334" y="128" width="62.66666666666667" height="72" fill="#46b97a"/>
+      <text x="206.66666666666669" y="214" fill="#7c8aa5" font-size="10" text-anchor="middle">1</text><rect x="242" y="188" width="62.66666666666667" height="12" fill="#46b97a"/>
+      <text x="273.3333333333333" y="214" fill="#7c8aa5" font-size="10" text-anchor="middle">2</text><rect x="308.6666666666667" y="194" width="62.66666666666667" height="6" fill="#46b97a"/>
+      <text x="340" y="214" fill="#7c8aa5" font-size="10" text-anchor="middle">3</text><rect x="375.33333333333337" y="194" width="62.66666666666667" height="6" fill="#46b97a"/>
+      <text x="406.6666666666667" y="214" fill="#7c8aa5" font-size="10" text-anchor="middle">3</text><rect x="442" y="200" width="62.66666666666667" height="0" fill="#46b97a"/>
+      <text x="473.3333333333333" y="214" fill="#7c8aa5" font-size="10" text-anchor="middle">4</text><rect x="508.6666666666667" y="194" width="62.66666666666667" height="6" fill="#46b97a"/>
+      <text x="540" y="214" fill="#7c8aa5" font-size="10" text-anchor="middle">4</text><rect x="575.3333333333334" y="200" width="62.66666666666667" height="0" fill="#46b97a"/>
+      <text x="606.6666666666667" y="214" fill="#7c8aa5" font-size="10" text-anchor="middle">5</text><rect x="642" y="200" width="62.66666666666667" height="0" fill="#46b97a"/>
+      <text x="673.3333333333334" y="214" fill="#7c8aa5" font-size="10" text-anchor="middle">6</text><rect x="708.6666666666667" y="200" width="62.66666666666667" height="0" fill="#46b97a"/>
+      <text x="740.0000000000001" y="214" fill="#7c8aa5" font-size="10" text-anchor="middle">6</text><rect x="775.3333333333334" y="194" width="62.66666666666667" height="6" fill="#46b97a"/>
+      <text x="806.6666666666667" y="214" fill="#7c8aa5" font-size="10" text-anchor="middle">7</text>
+    <text x="430" y="236" fill="#7c8aa5" font-size="11" text-anchor="middle">TREI bucket (age 70)</text>
+  </svg></div>
+  <div class="panel"><h2>🗺️ 30-year route</h2><div class="scroll"><table>
+    <thead><tr><th>Age</th><th>R_age</th><th>Cities (days)</th><th style="text-align:right">Annual cost</th><th style="text-align:right">Lead TREI</th></tr></thead>
+    <tbody><tr>
+      <td>50</td><td>0.88</td>
+      <td>Xi'an (96d), Beijing (102d), Hangzhou (87d), Shanghai (80d)</td>
+      <td style="text-align:right">$31,899</td>
+      <td style="text-align:right">0.4</td>
+    </tr><tr>
+      <td>51</td><td>0.86</td>
+      <td>Xiamen (125d), Guilin (109d), Chengdu (131d)</td>
+      <td style="text-align:right">$21,436</td>
+      <td style="text-align:right">0.3</td>
+    </tr><tr>
+      <td>52</td><td>0.84</td>
+      <td>Nanjing (123d), Suzhou (132d), Qingdao (110d)</td>
+      <td style="text-align:right">$25,325</td>
+      <td style="text-align:right">0.4</td>
+    </tr><tr>
+      <td>53</td><td>0.81</td>
+      <td>Jinan (113d), Wuhan (117d), Guangzhou (135d)</td>
+      <td style="text-align:right">$24,892</td>
+      <td style="text-align:right">0.4</td>
+    </tr><tr>
+      <td>54</td><td>0.79</td>
+      <td>Xi'an (122d), Beijing (132d), Hangzhou (111d)</td>
+      <td style="text-align:right">$29,474</td>
+      <td style="text-align:right">0.5</td>
+    </tr><tr>
+      <td>55</td><td>0.77</td>
+      <td>Shanghai (126d), Xiamen (129d), Guilin (110d)</td>
+      <td style="text-align:right">$28,095</td>
+      <td style="text-align:right">0.3</td>
+    </tr><tr>
+      <td>56</td><td>0.75</td>
+      <td>Chengdu (136d), Nanjing (111d), Suzhou (118d)</td>
+      <td style="text-align:right">$24,616</td>
+      <td style="text-align:right">0.5</td>
+    </tr><tr>
+      <td>57</td><td>0.72</td>
+      <td>Guangzhou (132d), Kunming (125d), Wuhan (108d)</td>
+      <td style="text-align:right">$24,333</td>
+      <td style="text-align:right">0.3</td>
+    </tr><tr>
+      <td>58</td><td>0.70</td>
+      <td>Beijing (133d), Xi'an (123d), Hangzhou (109d)</td>
+      <td style="text-align:right">$29,478</td>
+      <td style="text-align:right">0.3</td>
+    </tr><tr>
+      <td>59</td><td>0.67</td>
+      <td>Xiamen (134d), Shanghai (125d), Guilin (106d)</td>
+      <td style="text-align:right">$28,173</td>
+      <td style="text-align:right">0.4</td>
+    </tr><tr>
+      <td>60</td><td>0.65</td>
+      <td>Chengdu (136d), Nanjing (110d), Suzhou (119d)</td>
+      <td style="text-align:right">$24,622</td>
+      <td style="text-align:right">0.5</td>
+    </tr><tr>
+      <td>61</td><td>0.62</td>
+      <td>Guangzhou (189d), Kunming (176d)</td>
+      <td style="text-align:right">$26,058</td>
+      <td style="text-align:right">0.4</td>
+    </tr><tr>
+      <td>62</td><td>0.59</td>
+      <td>Xi'an (171d), Beijing (194d)</td>
+      <td style="text-align:right">$30,020</td>
+      <td style="text-align:right">0.6</td>
+    </tr><tr>
+      <td>63</td><td>0.56</td>
+      <td>Hangzhou (189d), Shanghai (176d)</td>
+      <td style="text-align:right">$34,560</td>
+      <td style="text-align:right">0.5</td>
+    </tr><tr>
+      <td>64</td><td>0.54</td>
+      <td>Xiamen (197d), Nanjing (168d)</td>
+      <td style="text-align:right">$25,828</td>
+      <td style="text-align:right">0.5</td>
+    </tr><tr>
+      <td>65</td><td>0.51</td>
+      <td>Chengdu (202d), Guangzhou (163d)</td>
+      <td style="text-align:right">$26,938</td>
+      <td style="text-align:right">0.7</td>
+    </tr><tr>
+      <td>66</td><td>0.48</td>
+      <td>Xi'an (167d), Beijing (198d)</td>
+      <td style="text-align:right">$30,243</td>
+      <td style="text-align:right">0.8</td>
+    </tr><tr>
+      <td>67</td><td>0.45</td>
+      <td>Hangzhou (188d), Shanghai (177d)</td>
+      <td style="text-align:right">$34,593</td>
+      <td style="text-align:right">0.7</td>
+    </tr><tr>
+      <td>68</td><td>0.41</td>
+      <td>Xiamen (199d), Nanjing (166d)</td>
+      <td style="text-align:right">$25,834</td>
+      <td style="text-align:right">0.6</td>
+    </tr><tr>
+      <td>69</td><td>0.38</td>
+      <td>Chengdu (206d), Guilin (159d)</td>
+      <td style="text-align:right">$18,972</td>
+      <td style="text-align:right">0.9</td>
+    </tr><tr>
+      <td>70</td><td>0.35</td>
+      <td>Xi'an (365d)</td>
+      <td style="text-align:right">$19,185</td>
+      <td style="text-align:right">1.0</td>
+    </tr><tr>
+      <td>71</td><td>0.35</td>
+      <td>Beijing (365d)</td>
+      <td style="text-align:right">$39,570</td>
+      <td style="text-align:right">0.5</td>
+    </tr><tr>
+      <td>72</td><td>0.35</td>
+      <td>Hangzhou (365d)</td>
+      <td style="text-align:right">$28,778</td>
+      <td style="text-align:right">0.8</td>
+    </tr><tr>
+      <td>73</td><td>0.35</td>
+      <td>Xiamen (365d)</td>
+      <td style="text-align:right">$26,380</td>
+      <td style="text-align:right">0.8</td>
+    </tr><tr>
+      <td>74</td><td>0.35</td>
+      <td>Xi'an (365d)</td>
+      <td style="text-align:right">$19,185</td>
+      <td style="text-align:right">1.0</td>
+    </tr><tr>
+      <td>75</td><td>0.35</td>
+      <td>Beijing (365d)</td>
+      <td style="text-align:right">$39,570</td>
+      <td style="text-align:right">0.5</td>
+    </tr><tr>
+      <td>76</td><td>0.35</td>
+      <td>Hangzhou (365d)</td>
+      <td style="text-align:right">$28,778</td>
+      <td style="text-align:right">0.8</td>
+    </tr><tr>
+      <td>77</td><td>0.35</td>
+      <td>Xiamen (365d)</td>
+      <td style="text-align:right">$26,380</td>
+      <td style="text-align:right">0.8</td>
+    </tr><tr>
+      <td>78</td><td>0.35</td>
+      <td>Xi'an (365d)</td>
+      <td style="text-align:right">$19,185</td>
+      <td style="text-align:right">1.0</td>
+    </tr><tr>
+      <td>79</td><td>0.35</td>
+      <td>Beijing (365d)</td>
+      <td style="text-align:right">$39,570</td>
+      <td style="text-align:right">0.5</td>
+    </tr><tr>
+      <td>80</td><td>0.35</td>
+      <td>Hangzhou (365d)</td>
+      <td style="text-align:right">$28,778</td>
+      <td style="text-align:right">0.8</td>
+    </tr></tbody></table></div></div>
+
+  <p class="foot">Data: 50 nodes (49 VALID, 1 PARTIAL, 0 INVALID).
+  Edges are great-circle approximations. Risk thresholds are hybrid (absolute hospital/altitude ceilings + relative TREI percentile).
+  This is a planning model, not financial advice.</p>
+</div></body></html>
