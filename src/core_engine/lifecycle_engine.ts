@@ -58,13 +58,13 @@ function summarisePhases(plans: YearPlan[]): RegionPhase[] {
     const byProvince = new Map<string, number>();
     for (const c of p.cities) byProvince.set(c.province, (byProvince.get(c.province) ?? 0) + c.days);
     const primary = [...byProvince.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] ?? "—";
-    const label =
+    const shape =
       p.cities.length >= 3 ? `${primary} + multi-region loop`
       : p.cities.length === 2 ? `${primary} dual-base`
       : `${primary} single-city`;
     return {
       age: p.age,
-      primary_region: label,
+      primary_region: `[${p.band}] ${shape}`,
       cities: p.cities.map((c) => c.name_en),
       annual_cost_usd: p.annual_cost_usd,
     };

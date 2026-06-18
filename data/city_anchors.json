@@ -3,10 +3,22 @@
     "description": "Real-geography anchors built from GeoNames (PPLA/PPLA2 seats) + curated tags.",
     "source": "GeoNames CN dump (CC BY 4.0), https://www.geonames.org",
     "generator": "scripts/build_anchors_from_geonames.py",
-    "count": 284,
+    "count": 701,
     "tags": "tier 1|2|3; coastal (<60km to coast); remote (west region or >2500m); culture override; med_access 'none' => hospital=null"
   },
   "anchors": [
+    {
+      "id": "CN-XX-CHONGMING",
+      "name": "崇明",
+      "name_en": "Chongming",
+      "province": "",
+      "lat": 31.6185,
+      "lng": 121.6962,
+      "altitude_m": 6,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
     {
       "id": "CN-AH-ANQING",
       "name": "安庆",
@@ -58,6 +70,17 @@
       "tier": 3
     },
     {
+      "id": "CN-AH-GUSHU",
+      "name": "姑熟",
+      "name_en": "Gushu",
+      "province": "Anhui",
+      "lat": 31.5605,
+      "lng": 118.4815,
+      "altitude_m": 13,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-AH-HEFEI",
       "name": "合肥",
       "name_en": "Hefei",
@@ -78,6 +101,50 @@
       "tier": 3
     },
     {
+      "id": "CN-AH-HUAIYUANCHENGGUANZHEN",
+      "name": "怀远城关镇",
+      "name_en": "Huaiyuan Chengguanzhen",
+      "province": "Anhui",
+      "lat": 32.9589,
+      "lng": 117.1657,
+      "altitude_m": 19,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-AH-HUANGSHAN",
+      "name": "屯溪",
+      "name_en": "Huangshan",
+      "province": "Anhui",
+      "lat": 29.7114,
+      "lng": 118.3125,
+      "altitude_m": 134,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-AH-HUICHENG",
+      "name": "徽城",
+      "name_en": "Huicheng",
+      "province": "Anhui",
+      "lat": 29.8693,
+      "lng": 118.4336,
+      "altitude_m": 133,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-AH-HUOQIUCHENGGUANZHEN",
+      "name": "霍邱城关镇",
+      "name_en": "Huoqiu Chengguanzhen",
+      "province": "Anhui",
+      "lat": 32.3547,
+      "lng": 116.2939,
+      "altitude_m": 30,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-AH-LUAN",
       "name": "六安",
       "name_en": "Lu'an",
@@ -86,6 +153,17 @@
       "lng": 116.5169,
       "altitude_m": 81,
       "tier": 3
+    },
+    {
+      "id": "CN-AH-LUCHENG",
+      "name": "庐城",
+      "name_en": "Lucheng",
+      "province": "Anhui",
+      "lat": 31.2336,
+      "lng": 117.2806,
+      "altitude_m": 15,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-AH-MAANSHAN",
@@ -98,6 +176,28 @@
       "tier": 3
     },
     {
+      "id": "CN-AH-MENGCHENGCHENGGUANZHEN",
+      "name": "蒙城城关镇",
+      "name_en": "Mengcheng Chengguanzhen",
+      "province": "Anhui",
+      "lat": 33.2661,
+      "lng": 116.5661,
+      "altitude_m": 29,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-AH-SUIXI",
+      "name": "濉溪",
+      "name_en": "Suixi",
+      "province": "Anhui",
+      "lat": 33.8907,
+      "lng": 116.7747,
+      "altitude_m": 34,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-AH-SUZHOU",
       "name": "苏州",
       "name_en": "Suzhou",
@@ -107,6 +207,28 @@
       "altitude_m": 34,
       "tier": 2,
       "culture": 8
+    },
+    {
+      "id": "CN-AH-TAOZHOU",
+      "name": "广德",
+      "name_en": "Taozhou",
+      "province": "Anhui",
+      "lat": 30.9064,
+      "lng": 119.4086,
+      "altitude_m": 49,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-AH-TONGLING",
+      "name": "五松",
+      "name_en": "Tongling",
+      "province": "Anhui",
+      "lat": 30.95,
+      "lng": 117.7833,
+      "altitude_m": 7,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-AH-WUHU",
@@ -129,6 +251,17 @@
       "tier": 3
     },
     {
+      "id": "CN-AH-YINGSHANGCHENGGUANZHEN",
+      "name": "颖上城关镇",
+      "name_en": "Yingshang Chengguanzhen",
+      "province": "Anhui",
+      "lat": 32.6294,
+      "lng": 116.2701,
+      "altitude_m": 26,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-BJ-BEIJING",
       "name": "北京",
       "name_en": "Beijing",
@@ -138,6 +271,72 @@
       "altitude_m": 49,
       "tier": 1,
       "culture": 9
+    },
+    {
+      "id": "CN-CQ-BACHUAN",
+      "name": "巴川",
+      "name_en": "Bachuan",
+      "province": "Chongqing",
+      "lat": 29.8486,
+      "lng": 106.0505,
+      "altitude_m": 279,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-BANAN",
+      "name": "巴南区",
+      "name_en": "Banan",
+      "province": "Chongqing",
+      "lat": 29.3786,
+      "lng": 106.54,
+      "altitude_m": 216,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-BEIBEI",
+      "name": "北碚",
+      "name_en": "Beibei",
+      "province": "Chongqing",
+      "lat": 29.8274,
+      "lng": 106.4364,
+      "altitude_m": 237,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-BISHAN",
+      "name": "璧城",
+      "name_en": "Bishan",
+      "province": "Chongqing",
+      "lat": 29.5949,
+      "lng": 106.2248,
+      "altitude_m": 283,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-CHANGYUAN",
+      "name": "昌元",
+      "name_en": "Changyuan",
+      "province": "Chongqing",
+      "lat": 29.405,
+      "lng": 105.5883,
+      "altitude_m": 319,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-CHENGXIANG",
+      "name": "城厢",
+      "name_en": "Chengxiang",
+      "province": "Chongqing",
+      "lat": 31.398,
+      "lng": 109.5706,
+      "altitude_m": 328,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-CQ-CHONGQING",
@@ -151,6 +350,326 @@
       "culture": 7
     },
     {
+      "id": "CN-CQ-FENGCHENG",
+      "name": "凤城",
+      "name_en": "Fengcheng",
+      "province": "Chongqing",
+      "lat": 29.8259,
+      "lng": 107.0602,
+      "altitude_m": 260,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-FULING",
+      "name": "涪陵",
+      "name_en": "Fuling",
+      "province": "Chongqing",
+      "lat": 29.71,
+      "lng": 107.3939,
+      "altitude_m": 232,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-GUIXI",
+      "name": "垫江县",
+      "name_en": "Guixi",
+      "province": "Chongqing",
+      "lat": 30.3335,
+      "lng": 107.3454,
+      "altitude_m": 412,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-GUNAN",
+      "name": "古南",
+      "name_en": "Gunan",
+      "province": "Chongqing",
+      "lat": 29.0231,
+      "lng": 106.648,
+      "altitude_m": 297,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-HANFENG",
+      "name": "开县",
+      "name_en": "Hanfeng",
+      "province": "Chongqing",
+      "lat": 31.1695,
+      "lng": 108.4031,
+      "altitude_m": 182,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-HANJIA",
+      "name": "彭水",
+      "name_en": "Hanjia",
+      "province": "Chongqing",
+      "lat": 29.2952,
+      "lng": 108.1613,
+      "altitude_m": 295,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-JIJIANG",
+      "name": "几江",
+      "name_en": "Jijiang",
+      "province": "Chongqing",
+      "lat": 29.2899,
+      "lng": 106.25,
+      "altitude_m": 213,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-LIANGPING",
+      "name": "梁平",
+      "name_en": "Liangping",
+      "province": "Chongqing",
+      "lat": 30.6611,
+      "lng": 107.7661,
+      "altitude_m": 467,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-LIZHI",
+      "name": "涪陵区",
+      "name_en": "Lizhi",
+      "province": "Chongqing",
+      "lat": 29.7032,
+      "lng": 107.3952,
+      "altitude_m": 287,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-NANBIN",
+      "name": "南宾",
+      "name_en": "Nanbin",
+      "province": "Chongqing",
+      "lat": 29.9994,
+      "lng": 108.1091,
+      "altitude_m": 549,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-NANCHUAN",
+      "name": "东城",
+      "name_en": "Nanchuan",
+      "province": "Chongqing",
+      "lat": 29.152,
+      "lng": 107.1034,
+      "altitude_m": 538,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-NANJIN",
+      "name": "南津",
+      "name_en": "Nanjin",
+      "province": "Chongqing",
+      "lat": 29.985,
+      "lng": 106.2653,
+      "altitude_m": 223,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-QIANJIANG",
+      "name": "城西",
+      "name_en": "Qianjiang",
+      "province": "Chongqing",
+      "lat": 29.5328,
+      "lng": 108.7748,
+      "altitude_m": 582,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-SANHE",
+      "name": "三合",
+      "name_en": "Sanhe",
+      "province": "Chongqing",
+      "lat": 29.8686,
+      "lng": 107.7303,
+      "altitude_m": 224,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-SHUANGFENGQIAO",
+      "name": "双凤桥",
+      "name_en": "Shuangfengqiao",
+      "province": "Chongqing",
+      "lat": 29.7186,
+      "lng": 106.6271,
+      "altitude_m": 449,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-TANGXIANG",
+      "name": "大足县",
+      "name_en": "Tangxiang",
+      "province": "Chongqing",
+      "lat": 29.7023,
+      "lng": 105.7236,
+      "altitude_m": 378,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-WANSHENG",
+      "name": "万盛",
+      "name_en": "Wansheng",
+      "province": "Chongqing",
+      "lat": 28.9629,
+      "lng": 106.9284,
+      "altitude_m": 324,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-WANXIAN",
+      "name": "万州",
+      "name_en": "Wanxian",
+      "province": "Chongqing",
+      "lat": 30.816,
+      "lng": 108.3741,
+      "altitude_m": 232,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-WANZHOU",
+      "name": "万州区",
+      "name_en": "Wanzhou",
+      "province": "Chongqing",
+      "lat": 30.7645,
+      "lng": 108.3959,
+      "altitude_m": 205,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-WULONG",
+      "name": "武隆",
+      "name_en": "Wulong",
+      "province": "Chongqing",
+      "lat": 29.3243,
+      "lng": 107.7606,
+      "altitude_m": 217,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-WUSHAN",
+      "name": "巫山县",
+      "name_en": "Wushan",
+      "province": "Chongqing",
+      "lat": 31.0775,
+      "lng": 109.8764,
+      "altitude_m": 291,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-YONGAN",
+      "name": "奉节县",
+      "name_en": "Yong'an",
+      "province": "Chongqing",
+      "lat": 31.0189,
+      "lng": 109.4595,
+      "altitude_m": 310,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-YONGCHUAN",
+      "name": "永川",
+      "name_en": "Yongchuan",
+      "province": "Chongqing",
+      "lat": 29.3538,
+      "lng": 105.8939,
+      "altitude_m": 326,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-ZHONGDUO",
+      "name": "钟多",
+      "name_en": "Zhongduo",
+      "province": "Chongqing",
+      "lat": 28.8466,
+      "lng": 108.7642,
+      "altitude_m": 672,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-ZHONGHE",
+      "name": "中和",
+      "name_en": "Zhonghe",
+      "province": "Chongqing",
+      "lat": 28.4505,
+      "lng": 108.989,
+      "altitude_m": 357,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-CQ-ZITONG",
+      "name": "梓潼",
+      "name_en": "Zitong",
+      "province": "Chongqing",
+      "lat": 30.1782,
+      "lng": 105.8299,
+      "altitude_m": 258,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-FJ-FUAN",
+      "name": "城阳",
+      "name_en": "Fu'an",
+      "province": "Fujian",
+      "lat": 27.0913,
+      "lng": 119.6445,
+      "altitude_m": 20,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-FJ-FUDING",
+      "name": "福鼎",
+      "name_en": "Fuding",
+      "province": "Fujian",
+      "lat": 27.3273,
+      "lng": 120.214,
+      "altitude_m": 13,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-FJ-FUQING",
+      "name": "福清",
+      "name_en": "Fuqing",
+      "province": "Fujian",
+      "lat": 25.7294,
+      "lng": 119.3747,
+      "altitude_m": 17,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
       "id": "CN-FJ-FUZHOU",
       "name": "福州",
       "name_en": "Fuzhou",
@@ -160,6 +679,40 @@
       "altitude_m": 14,
       "tier": 2,
       "coastal": true
+    },
+    {
+      "id": "CN-FJ-JIANOU",
+      "name": "建瓯",
+      "name_en": "Jian'ou",
+      "province": "Fujian",
+      "lat": 27.0415,
+      "lng": 118.319,
+      "altitude_m": 116,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-FJ-JINJIANG",
+      "name": "晉江",
+      "name_en": "Jinjiang",
+      "province": "Fujian",
+      "lat": 24.8198,
+      "lng": 118.5742,
+      "altitude_m": 33,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-FJ-LIANCHENG",
+      "name": "莲峰",
+      "name_en": "Liancheng",
+      "province": "Fujian",
+      "lat": 25.7183,
+      "lng": 116.7489,
+      "altitude_m": 379,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-FJ-LONGYAN",
@@ -192,6 +745,17 @@
       "tier": 3
     },
     {
+      "id": "CN-FJ-PUCHENG",
+      "name": "南浦",
+      "name_en": "Pucheng",
+      "province": "Fujian",
+      "lat": 27.9233,
+      "lng": 118.5333,
+      "altitude_m": 235,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-FJ-PUTIAN",
       "name": "莆田",
       "name_en": "Putian",
@@ -221,6 +785,40 @@
       "lng": 117.6186,
       "altitude_m": 126,
       "tier": 3
+    },
+    {
+      "id": "CN-FJ-SHAOWU",
+      "name": "邵武",
+      "name_en": "Shaowu",
+      "province": "Fujian",
+      "lat": 27.3409,
+      "lng": 117.4831,
+      "altitude_m": 196,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-FJ-SHIMA",
+      "name": "石码",
+      "name_en": "Shima",
+      "province": "Fujian",
+      "lat": 24.4465,
+      "lng": 117.8122,
+      "altitude_m": 11,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-FJ-WUYISHAN",
+      "name": "武夷山",
+      "name_en": "Wuyishan",
+      "province": "Fujian",
+      "lat": 27.7599,
+      "lng": 118.0307,
+      "altitude_m": 224,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-FJ-XIAMEN",
@@ -257,6 +855,30 @@
       "remote": true
     },
     {
+      "id": "CN-GS-BEIDAO",
+      "name": "北道",
+      "name_en": "Beidao",
+      "province": "Gansu",
+      "lat": 34.5686,
+      "lng": 105.8933,
+      "altitude_m": 1087,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-GS-CHENGXIANCHENGGUANZHEN",
+      "name": "城关镇",
+      "name_en": "Chengxian Chengguanzhen",
+      "province": "Gansu",
+      "lat": 33.7478,
+      "lng": 105.7329,
+      "altitude_m": 964,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
       "id": "CN-GS-DINGXI",
       "name": "定西",
       "name_en": "Dingxi",
@@ -265,6 +887,42 @@
       "lng": 104.623,
       "altitude_m": 1908,
       "tier": 3,
+      "remote": true
+    },
+    {
+      "id": "CN-GS-DUNHUANG",
+      "name": "敦煌",
+      "name_en": "Dunhuang",
+      "province": "Gansu",
+      "lat": 40.1667,
+      "lng": 94.6833,
+      "altitude_m": 1131,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-GS-GANGUCHENGGUANZHEN",
+      "name": "甘古城关镇",
+      "name_en": "Gangu Chengguanzhen",
+      "province": "Gansu",
+      "lat": 34.7356,
+      "lng": 105.3263,
+      "altitude_m": 1287,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-GS-HEZUO",
+      "name": "合作",
+      "name_en": "Hezuo",
+      "province": "Gansu",
+      "lat": 34.9856,
+      "lng": 102.9094,
+      "altitude_m": 2898,
+      "tier": 3,
+      "county": true,
       "remote": true
     },
     {
@@ -312,6 +970,30 @@
       "remote": true
     },
     {
+      "id": "CN-GS-LINXIACHENGGUANZHEN",
+      "name": "临夏城关镇",
+      "name_en": "Linxia Chengguanzhen",
+      "province": "Gansu",
+      "lat": 35.6003,
+      "lng": 103.2064,
+      "altitude_m": 1893,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-GS-LIXIAN",
+      "name": "Lixian",
+      "name_en": "Lixian",
+      "province": "Gansu",
+      "lat": 34.19,
+      "lng": 105.1725,
+      "altitude_m": 1418,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
       "id": "CN-GS-LONGNAN",
       "name": "陇南",
       "name_en": "Longnan",
@@ -345,6 +1027,18 @@
       "remote": true
     },
     {
+      "id": "CN-GS-TIANSHUI",
+      "name": "天水",
+      "name_en": "Tianshui",
+      "province": "Gansu",
+      "lat": 34.5795,
+      "lng": 105.7424,
+      "altitude_m": 1153,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
       "id": "CN-GS-WUWEI",
       "name": "武威",
       "name_en": "Wuwei",
@@ -353,6 +1047,30 @@
       "lng": 102.632,
       "altitude_m": 1542,
       "tier": 3,
+      "remote": true
+    },
+    {
+      "id": "CN-GS-XINGGUO",
+      "name": "兴国",
+      "name_en": "Xingguo",
+      "province": "Gansu",
+      "lat": 34.8586,
+      "lng": 105.6686,
+      "altitude_m": 1219,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-GS-ZHANGJIACHUAN",
+      "name": "张家川",
+      "name_en": "Zhangjiachuan",
+      "province": "Gansu",
+      "lat": 34.9876,
+      "lng": 106.209,
+      "altitude_m": 1671,
+      "tier": 3,
+      "county": true,
       "remote": true
     },
     {
@@ -367,6 +1085,42 @@
       "remote": true
     },
     {
+      "id": "CN-GD-ANBU",
+      "name": "庵埠",
+      "name_en": "Anbu",
+      "province": "Guangdong",
+      "lat": 23.4489,
+      "lng": 116.6809,
+      "altitude_m": 15,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-GD-BAOAN",
+      "name": "Bao'an",
+      "name_en": "Bao'an",
+      "province": "Guangdong",
+      "lat": 22.5521,
+      "lng": 113.8829,
+      "altitude_m": 0,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-GD-CHANGSHA",
+      "name": "长沙",
+      "name_en": "Changsha",
+      "province": "Guangdong",
+      "lat": 22.3812,
+      "lng": 112.6849,
+      "altitude_m": 6,
+      "tier": 2,
+      "county": true,
+      "culture": 7
+    },
+    {
       "id": "CN-GD-CHAOZHOU",
       "name": "潮州",
       "name_en": "Chaozhou",
@@ -378,6 +1132,30 @@
       "coastal": true
     },
     {
+      "id": "CN-GD-CHENGHUA",
+      "name": "澄华",
+      "name_en": "Chenghua",
+      "province": "Guangdong",
+      "lat": 23.4613,
+      "lng": 116.7701,
+      "altitude_m": 13,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-GD-DANSHUI",
+      "name": "惠阳区",
+      "name_en": "Danshui",
+      "province": "Guangdong",
+      "lat": 22.7984,
+      "lng": 114.4672,
+      "altitude_m": 27,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
       "id": "CN-GD-DONGGUAN",
       "name": "东莞",
       "name_en": "Dongguan",
@@ -386,6 +1164,39 @@
       "lng": 113.7487,
       "altitude_m": 1,
       "tier": 2
+    },
+    {
+      "id": "CN-GD-DONGHAI",
+      "name": "东海",
+      "name_en": "Donghai",
+      "province": "Guangdong",
+      "lat": 22.9459,
+      "lng": 115.642,
+      "altitude_m": 14,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-GD-DUCHENG",
+      "name": "都城",
+      "name_en": "Ducheng",
+      "province": "Guangdong",
+      "lat": 23.2421,
+      "lng": 111.5284,
+      "altitude_m": 23,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-GD-ENCHENG",
+      "name": "思城",
+      "name_en": "Encheng",
+      "province": "Guangdong",
+      "lat": 22.1866,
+      "lng": 112.3042,
+      "altitude_m": 25,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-GD-FOSHAN",
@@ -409,6 +1220,17 @@
       "culture": 7
     },
     {
+      "id": "CN-GD-HEPO",
+      "name": "河婆",
+      "name_en": "Hepo",
+      "province": "Guangdong",
+      "lat": 23.4308,
+      "lng": 115.8299,
+      "altitude_m": 41,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-GD-HEYUAN",
       "name": "河源",
       "name_en": "Heyuan",
@@ -417,6 +1239,41 @@
       "lng": 114.6833,
       "altitude_m": 31,
       "tier": 3
+    },
+    {
+      "id": "CN-GD-HUAICHENG",
+      "name": "怀城",
+      "name_en": "Huaicheng",
+      "province": "Guangdong",
+      "lat": 23.9195,
+      "lng": 112.1763,
+      "altitude_m": 59,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-GD-HUANGGANG",
+      "name": "黄冈",
+      "name_en": "Huanggang",
+      "province": "Guangdong",
+      "lat": 23.677,
+      "lng": 116.9996,
+      "altitude_m": 13,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-GD-HUICHENG",
+      "name": "惠城",
+      "name_en": "Huicheng",
+      "province": "Guangdong",
+      "lat": 23.0385,
+      "lng": 116.2899,
+      "altitude_m": 10,
+      "tier": 3,
+      "county": true,
+      "coastal": true
     },
     {
       "id": "CN-GD-HUIZHOU",
@@ -450,6 +1307,74 @@
       "coastal": true
     },
     {
+      "id": "CN-GD-JINGAN",
+      "name": "井岸",
+      "name_en": "Jing'an",
+      "province": "Guangdong",
+      "lat": 22.2107,
+      "lng": 113.2922,
+      "altitude_m": 15,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-GD-LECHENG",
+      "name": "乐城",
+      "name_en": "Lecheng",
+      "province": "Guangdong",
+      "lat": 25.128,
+      "lng": 113.3504,
+      "altitude_m": 109,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-GD-LIANZHOU",
+      "name": "连州",
+      "name_en": "Lianzhou",
+      "province": "Guangdong",
+      "lat": 24.7819,
+      "lng": 112.3712,
+      "altitude_m": 99,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-GD-LICHENG",
+      "name": "曾城",
+      "name_en": "Licheng",
+      "province": "Guangdong",
+      "lat": 23.2955,
+      "lng": 113.8247,
+      "altitude_m": 24,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-GD-LUOYANG",
+      "name": "洛阳",
+      "name_en": "Luoyang",
+      "province": "Guangdong",
+      "lat": 23.1624,
+      "lng": 114.2734,
+      "altitude_m": 16,
+      "tier": 3,
+      "county": true,
+      "culture": 8
+    },
+    {
+      "id": "CN-GD-MABA",
+      "name": "马坝",
+      "name_en": "Maba",
+      "province": "Guangdong",
+      "lat": 24.6841,
+      "lng": 113.5984,
+      "altitude_m": 68,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-GD-MAOMING",
       "name": "茂名",
       "name_en": "Maoming",
@@ -468,6 +1393,17 @@
       "lng": 116.1177,
       "altitude_m": 84,
       "tier": 3
+    },
+    {
+      "id": "CN-GD-PINGSHAN",
+      "name": "平山",
+      "name_en": "Pingshan",
+      "province": "Guangdong",
+      "lat": 22.9938,
+      "lng": 114.7131,
+      "altitude_m": 22,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-GD-QINGYUAN",
@@ -533,6 +1469,17 @@
       "tier": 3
     },
     {
+      "id": "CN-GD-SHAPING",
+      "name": "沙坪",
+      "name_en": "Shaping",
+      "province": "Guangdong",
+      "lat": 22.7702,
+      "lng": 112.9578,
+      "altitude_m": 9,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-GD-SHENZHEN",
       "name": "深圳",
       "name_en": "Shenzhen",
@@ -541,6 +1488,74 @@
       "lng": 114.0683,
       "altitude_m": 4,
       "tier": 1,
+      "coastal": true
+    },
+    {
+      "id": "CN-GD-SHENZHENCITYCENTRE",
+      "name": "Shenzhen City Centre",
+      "name_en": "Shenzhen City Centre",
+      "province": "Guangdong",
+      "lat": 22.5359,
+      "lng": 114.0771,
+      "altitude_m": 4,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-GD-SHIQIAO",
+      "name": "市桥",
+      "name_en": "Shiqiao",
+      "province": "Guangdong",
+      "lat": 22.9464,
+      "lng": 113.3577,
+      "altitude_m": 11,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-GD-TAISHAN",
+      "name": "台城",
+      "name_en": "Taishan",
+      "province": "Guangdong",
+      "lat": 22.2513,
+      "lng": 112.7799,
+      "altitude_m": 3,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-GD-XINGNING",
+      "name": "兴城",
+      "name_en": "Xingning",
+      "province": "Guangdong",
+      "lat": 24.1483,
+      "lng": 115.7227,
+      "altitude_m": 122,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-GD-XIONGZHOU",
+      "name": "雄州",
+      "name_en": "Xiongzhou",
+      "province": "Guangdong",
+      "lat": 25.1167,
+      "lng": 114.3,
+      "altitude_m": 119,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-GD-XUCHENG",
+      "name": "徐城",
+      "name_en": "Xucheng",
+      "province": "Guangdong",
+      "lat": 20.3302,
+      "lng": 110.1664,
+      "altitude_m": 74,
+      "tier": 3,
+      "county": true,
       "coastal": true
     },
     {
@@ -669,6 +1684,17 @@
       "culture": 9
     },
     {
+      "id": "CN-GX-GUIPING",
+      "name": "桂平",
+      "name_en": "Guiping",
+      "province": "Guangxi",
+      "lat": 23.3948,
+      "lng": 110.0743,
+      "altitude_m": 50,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-GX-HECHI",
       "name": "河池市",
       "name_en": "Hechi",
@@ -677,6 +1703,18 @@
       "lng": 108.0838,
       "altitude_m": 222,
       "tier": 3
+    },
+    {
+      "id": "CN-GX-HEPU",
+      "name": "合浦",
+      "name_en": "Hepu",
+      "province": "Guangxi",
+      "lat": 21.6592,
+      "lng": 109.2001,
+      "altitude_m": 12,
+      "tier": 3,
+      "county": true,
+      "coastal": true
     },
     {
       "id": "CN-GX-HEZHOU",
@@ -719,6 +1757,17 @@
       "tier": 2
     },
     {
+      "id": "CN-GX-PINGNAN",
+      "name": "平南",
+      "name_en": "Pingnan",
+      "province": "Guangxi",
+      "lat": 23.5418,
+      "lng": 110.3893,
+      "altitude_m": 39,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-GX-QINZHOU",
       "name": "欽州",
       "name_en": "Qinzhou",
@@ -727,6 +1776,17 @@
       "lng": 108.6506,
       "altitude_m": 12,
       "tier": 3
+    },
+    {
+      "id": "CN-GX-SHANGSI",
+      "name": "上思",
+      "name_en": "Shangsi",
+      "province": "Guangxi",
+      "lat": 22.1563,
+      "lng": 107.9795,
+      "altitude_m": 188,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-GX-WUZHOU",
@@ -739,14 +1799,48 @@
       "tier": 3
     },
     {
+      "id": "CN-GX-YIZHOU",
+      "name": "宜州",
+      "name_en": "Yizhou",
+      "province": "Guangxi",
+      "lat": 24.5,
+      "lng": 108.6667,
+      "altitude_m": 136,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-GX-YONGNING",
+      "name": "蒲庙",
+      "name_en": "Yongning",
+      "province": "Guangxi",
+      "lat": 22.761,
+      "lng": 108.4836,
+      "altitude_m": 82,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-GX-YULIN",
       "name": "玉林",
       "name_en": "Yulin",
       "province": "Guangxi",
-      "lat": 22.6554,
-      "lng": 110.1782,
+      "lat": 22.6305,
+      "lng": 110.1469,
       "altitude_m": 87,
-      "tier": 3
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-GZ-ANLONG",
+      "name": "Anlong",
+      "name_en": "Anlong",
+      "province": "Guizhou",
+      "lat": 25.1,
+      "lng": 105.5167,
+      "altitude_m": 1479,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-GZ-ANSHUN",
@@ -789,6 +1883,17 @@
       "tier": 3
     },
     {
+      "id": "CN-GZ-LOUSHANGUAN",
+      "name": "娄山关",
+      "name_en": "Loushanguan",
+      "province": "Guizhou",
+      "lat": 28.1368,
+      "lng": 106.822,
+      "altitude_m": 935,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-GZ-TONGREN",
       "name": "铜仁市",
       "name_en": "Tongren",
@@ -797,6 +1902,28 @@
       "lng": 109.1853,
       "altitude_m": 263,
       "tier": 3
+    },
+    {
+      "id": "CN-GZ-XINGREN",
+      "name": "Xingren",
+      "name_en": "Xingren",
+      "province": "Guizhou",
+      "lat": 25.4333,
+      "lng": 105.2333,
+      "altitude_m": 1445,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-GZ-XINGYI",
+      "name": "兴义",
+      "name_en": "Xingyi",
+      "province": "Guizhou",
+      "lat": 25.0962,
+      "lng": 104.9064,
+      "altitude_m": 1192,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-GZ-ZUNYI",
@@ -809,6 +1936,17 @@
       "tier": 3
     },
     {
+      "id": "CN-HI-BASUO",
+      "name": "东方市",
+      "name_en": "Basuo",
+      "province": "Hainan",
+      "lat": 19.1027,
+      "lng": 108.6656,
+      "altitude_m": 17,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-HI-HAIKOU",
       "name": "海口",
       "name_en": "Haikou",
@@ -818,6 +1956,40 @@
       "altitude_m": 9,
       "tier": 2,
       "coastal": true
+    },
+    {
+      "id": "CN-HI-JINJIANG",
+      "name": "澄迈县",
+      "name_en": "Jinjiang",
+      "province": "Hainan",
+      "lat": 19.7288,
+      "lng": 110.0085,
+      "altitude_m": 22,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-HI-LINGAO",
+      "name": "临城",
+      "name_en": "Lingao",
+      "province": "Hainan",
+      "lat": 19.9087,
+      "lng": 109.6872,
+      "altitude_m": 33,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HI-NADA",
+      "name": "儋州市",
+      "name_en": "Nada",
+      "province": "Hainan",
+      "lat": 19.5213,
+      "lng": 109.579,
+      "altitude_m": 148,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-HI-QIONGHAI",
@@ -862,6 +2034,17 @@
       "tier": 3
     },
     {
+      "id": "CN-HI-WENCHANG",
+      "name": "文城",
+      "name_en": "Wenchang",
+      "province": "Hainan",
+      "lat": 19.5516,
+      "lng": 110.8028,
+      "altitude_m": 17,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-HI-WUZHISHAN",
       "name": "五指山市",
       "name_en": "Wuzhishan",
@@ -883,6 +2066,17 @@
       "tier": 3
     },
     {
+      "id": "CN-HE-BOTOU",
+      "name": "泊头",
+      "name_en": "Botou",
+      "province": "Hebei",
+      "lat": 38.0737,
+      "lng": 116.5667,
+      "altitude_m": 21,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-HE-CANGZHOU",
       "name": "沧州",
       "name_en": "Cangzhou",
@@ -891,6 +2085,40 @@
       "lng": 116.8533,
       "altitude_m": 15,
       "tier": 3
+    },
+    {
+      "id": "CN-HE-CHANGLI",
+      "name": "昌黎",
+      "name_en": "Changli",
+      "province": "Hebei",
+      "lat": 39.7065,
+      "lng": 119.1603,
+      "altitude_m": 13,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-HE-DINGZHOU",
+      "name": "定州",
+      "name_en": "Dingzhou",
+      "province": "Hebei",
+      "lat": 38.5147,
+      "lng": 114.9868,
+      "altitude_m": 54,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HE-FENGRUN",
+      "name": "丰润",
+      "name_en": "Fengrun",
+      "province": "Hebei",
+      "lat": 39.8266,
+      "lng": 118.1382,
+      "altitude_m": 25,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-HE-HANDAN",
@@ -913,6 +2141,28 @@
       "tier": 3
     },
     {
+      "id": "CN-HE-HUAIYANG",
+      "name": "槐阳",
+      "name_en": "Huaiyang",
+      "province": "Hebei",
+      "lat": 37.7615,
+      "lng": 114.517,
+      "altitude_m": 70,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HE-JIZHOU",
+      "name": "冀州",
+      "name_en": "Jizhou",
+      "province": "Hebei",
+      "lat": 37.5505,
+      "lng": 115.5687,
+      "altitude_m": 22,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-HE-LANGFANG",
       "name": "廊坊",
       "name_en": "Langfang",
@@ -923,6 +2173,28 @@
       "tier": 3
     },
     {
+      "id": "CN-HE-LUANCHENG",
+      "name": "栾城",
+      "name_en": "Luancheng",
+      "province": "Hebei",
+      "lat": 37.8845,
+      "lng": 114.6463,
+      "altitude_m": 53,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HE-NANGONG",
+      "name": "南宫",
+      "name_en": "Nangong",
+      "province": "Hebei",
+      "lat": 37.3546,
+      "lng": 115.3888,
+      "altitude_m": 32,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-HE-QINHUANGDAO",
       "name": "秦皇岛",
       "name_en": "Qinhuangdao",
@@ -931,6 +2203,40 @@
       "lng": 119.5894,
       "altitude_m": 2,
       "tier": 3,
+      "coastal": true
+    },
+    {
+      "id": "CN-HE-RENQIU",
+      "name": "任丘",
+      "name_en": "Renqiu",
+      "province": "Hebei",
+      "lat": 38.7094,
+      "lng": 116.1009,
+      "altitude_m": 17,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HE-SANHE",
+      "name": "三河",
+      "name_en": "Sanhe",
+      "province": "Hebei",
+      "lat": 39.9805,
+      "lng": 117.0689,
+      "altitude_m": 24,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HE-SHANHAIGUAN",
+      "name": "山海关",
+      "name_en": "Shanhaiguan",
+      "province": "Hebei",
+      "lat": 40.0012,
+      "lng": 119.754,
+      "altitude_m": 4,
+      "tier": 3,
+      "county": true,
       "coastal": true
     },
     {
@@ -964,6 +2270,39 @@
       "tier": 3
     },
     {
+      "id": "CN-HE-XINJI",
+      "name": "辛集",
+      "name_en": "Xinji",
+      "province": "Hebei",
+      "lat": 37.926,
+      "lng": 115.2191,
+      "altitude_m": 33,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HE-XINLE",
+      "name": "新乐",
+      "name_en": "Xinle",
+      "province": "Hebei",
+      "lat": 38.349,
+      "lng": 114.6853,
+      "altitude_m": 60,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HE-XUANHUA",
+      "name": "宣化",
+      "name_en": "Xuanhua",
+      "province": "Hebei",
+      "lat": 40.6121,
+      "lng": 115.0646,
+      "altitude_m": 607,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-HE-ZHANGJIAKOU",
       "name": "张家口",
       "name_en": "Zhangjiakou",
@@ -972,6 +2311,105 @@
       "lng": 114.8714,
       "altitude_m": 744,
       "tier": 3
+    },
+    {
+      "id": "CN-HE-ZHENGDING",
+      "name": "正定",
+      "name_en": "Zhengding",
+      "province": "Hebei",
+      "lat": 38.145,
+      "lng": 114.5656,
+      "altitude_m": 64,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-ACHENG",
+      "name": "阿城",
+      "name_en": "Acheng",
+      "province": "Heilongjiang",
+      "lat": 45.5456,
+      "lng": 126.9519,
+      "altitude_m": 149,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-ANDA",
+      "name": "安达",
+      "name_en": "Anda",
+      "province": "Heilongjiang",
+      "lat": 46.4487,
+      "lng": 125.3016,
+      "altitude_m": 143,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-BAIQUAN",
+      "name": "拜泉",
+      "name_en": "Baiquan",
+      "province": "Heilongjiang",
+      "lat": 47.6066,
+      "lng": 126.0823,
+      "altitude_m": 226,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-BAOQING",
+      "name": "宝清",
+      "name_en": "Baoqing",
+      "province": "Heilongjiang",
+      "lat": 46.3245,
+      "lng": 132.1897,
+      "altitude_m": 94,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-BAOSHAN",
+      "name": "宝山",
+      "name_en": "Baoshan",
+      "province": "Heilongjiang",
+      "lat": 46.5747,
+      "lng": 131.3932,
+      "altitude_m": 192,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-BINXIAN",
+      "name": "宾县",
+      "name_en": "Bin Xian",
+      "province": "Heilongjiang",
+      "lat": 45.7427,
+      "lng": 127.4605,
+      "altitude_m": 191,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-BOLI",
+      "name": "勃利",
+      "name_en": "Boli",
+      "province": "Heilongjiang",
+      "lat": 45.7529,
+      "lng": 130.5845,
+      "altitude_m": 216,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-CHENGZIHE",
+      "name": "城子河",
+      "name_en": "Chengzihe",
+      "province": "Heilongjiang",
+      "lat": 45.3361,
+      "lng": 131.0049,
+      "altitude_m": 199,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-HL-DAQING",
@@ -992,6 +2430,83 @@
       "lng": 124.7124,
       "altitude_m": 348,
       "tier": 3
+    },
+    {
+      "id": "CN-HL-DIDAO",
+      "name": "东兴",
+      "name_en": "Didao",
+      "province": "Heilongjiang",
+      "lat": 45.3473,
+      "lng": 130.8369,
+      "altitude_m": 198,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-DONGNING",
+      "name": "东宁",
+      "name_en": "Dongning",
+      "province": "Heilongjiang",
+      "lat": 44.0844,
+      "lng": 131.1184,
+      "altitude_m": 149,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-FUJIN",
+      "name": "富锦",
+      "name_en": "Fujin",
+      "province": "Heilongjiang",
+      "lat": 47.2472,
+      "lng": 132.0296,
+      "altitude_m": 60,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-FUYU",
+      "name": "富裕",
+      "name_en": "Fuyu",
+      "province": "Heilongjiang",
+      "lat": 47.7949,
+      "lng": 124.4577,
+      "altitude_m": 146,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-GANNAN",
+      "name": "甘南",
+      "name_en": "Gannan",
+      "province": "Heilongjiang",
+      "lat": 47.9204,
+      "lng": 123.5005,
+      "altitude_m": 179,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-HAILIN",
+      "name": "海林",
+      "name_en": "Hailin",
+      "province": "Heilongjiang",
+      "lat": 44.5715,
+      "lng": 129.3854,
+      "altitude_m": 255,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-HAILUN",
+      "name": "海伦",
+      "name_en": "Hailun",
+      "province": "Heilongjiang",
+      "lat": 47.4466,
+      "lng": 126.9248,
+      "altitude_m": 230,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-HL-HARBIN",
@@ -1024,6 +2539,50 @@
       "tier": 3
     },
     {
+      "id": "CN-HL-HENGSHAN",
+      "name": "奋斗",
+      "name_en": "Hengshan",
+      "province": "Heilongjiang",
+      "lat": 45.2084,
+      "lng": 130.8981,
+      "altitude_m": 260,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-HONGGANG",
+      "name": "红岗",
+      "name_en": "Honggang",
+      "province": "Heilongjiang",
+      "lat": 46.3974,
+      "lng": 124.8845,
+      "altitude_m": 123,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-HUANAN",
+      "name": "桦南",
+      "name_en": "Huanan",
+      "province": "Heilongjiang",
+      "lat": 46.2362,
+      "lng": 130.5464,
+      "altitude_m": 153,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-HULAN",
+      "name": "呼兰",
+      "name_en": "Hulan",
+      "province": "Heilongjiang",
+      "lat": 45.8933,
+      "lng": 126.5784,
+      "altitude_m": 132,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-HL-JIAMUSI",
       "name": "佳木斯",
       "name_en": "Jiamusi",
@@ -1032,6 +2591,17 @@
       "lng": 130.3112,
       "altitude_m": 66,
       "tier": 3
+    },
+    {
+      "id": "CN-HL-JIDONG",
+      "name": "鸡东",
+      "name_en": "Jidong",
+      "province": "Heilongjiang",
+      "lat": 45.256,
+      "lng": 131.1164,
+      "altitude_m": 251,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-HL-JIXI",
@@ -1044,6 +2614,94 @@
       "tier": 3
     },
     {
+      "id": "CN-HL-JIXIAN",
+      "name": "集贤",
+      "name_en": "Jixian",
+      "province": "Heilongjiang",
+      "lat": 46.7259,
+      "lng": 131.1331,
+      "altitude_m": 105,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-LANXI",
+      "name": "兰西",
+      "name_en": "Lanxi",
+      "province": "Heilongjiang",
+      "lat": 46.2577,
+      "lng": 126.2806,
+      "altitude_m": 152,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-LIANHE",
+      "name": "南岔",
+      "name_en": "Lianhe",
+      "province": "Heilongjiang",
+      "lat": 47.1333,
+      "lng": 129.2743,
+      "altitude_m": 173,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-LINGDONG",
+      "name": "岭东",
+      "name_en": "Lingdong",
+      "province": "Heilongjiang",
+      "lat": 46.5543,
+      "lng": 131.1449,
+      "altitude_m": 165,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-LINKOU",
+      "name": "林口",
+      "name_en": "Linkou",
+      "province": "Heilongjiang",
+      "lat": 45.2762,
+      "lng": 130.2733,
+      "altitude_m": 286,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-LONGFENG",
+      "name": "龙凤",
+      "name_en": "Longfeng",
+      "province": "Heilongjiang",
+      "lat": 46.5317,
+      "lng": 125.1038,
+      "altitude_m": 147,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-LONGJIANG",
+      "name": "龙江",
+      "name_en": "Longjiang",
+      "province": "Heilongjiang",
+      "lat": 47.336,
+      "lng": 123.196,
+      "altitude_m": 182,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-MINGSHUI",
+      "name": "明水",
+      "name_en": "Mingshui",
+      "province": "Heilongjiang",
+      "lat": 47.1794,
+      "lng": 125.9028,
+      "altitude_m": 241,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-HL-MUDANJIANG",
       "name": "牡丹江",
       "name_en": "Mudanjiang",
@@ -1052,6 +2710,61 @@
       "lng": 129.6259,
       "altitude_m": 254,
       "tier": 3
+    },
+    {
+      "id": "CN-HL-MULING",
+      "name": "八面通",
+      "name_en": "Muling",
+      "province": "Heilongjiang",
+      "lat": 44.9165,
+      "lng": 130.5171,
+      "altitude_m": 259,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-NEHE",
+      "name": "讷河",
+      "name_en": "Nehe",
+      "province": "Heilongjiang",
+      "lat": 48.4793,
+      "lng": 124.8702,
+      "altitude_m": 206,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-NENJIANG",
+      "name": "嫩江",
+      "name_en": "Nenjiang",
+      "province": "Heilongjiang",
+      "lat": 49.1741,
+      "lng": 125.2197,
+      "altitude_m": 228,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-NIANZISHAN",
+      "name": "碾子山",
+      "name_en": "Nianzishan",
+      "province": "Heilongjiang",
+      "lat": 47.5134,
+      "lng": 122.8879,
+      "altitude_m": 231,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-QINGGANG",
+      "name": "青冈",
+      "name_en": "Qinggang",
+      "province": "Heilongjiang",
+      "lat": 46.6983,
+      "lng": 126.0921,
+      "altitude_m": 209,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-HL-QIQIHAR",
@@ -1074,6 +2787,28 @@
       "tier": 3
     },
     {
+      "id": "CN-HL-SHANGZHI",
+      "name": "尚志",
+      "name_en": "Shangzhi",
+      "province": "Heilongjiang",
+      "lat": 45.2056,
+      "lng": 128.0024,
+      "altitude_m": 174,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-SHUANGCHENG",
+      "name": "双城",
+      "name_en": "Shuangcheng",
+      "province": "Heilongjiang",
+      "lat": 45.3798,
+      "lng": 126.3071,
+      "altitude_m": 164,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-HL-SHUANGYASHAN",
       "name": "双鴨山市",
       "name_en": "Shuangyashan",
@@ -1094,6 +2829,127 @@
       "tier": 3
     },
     {
+      "id": "CN-HL-SUILING",
+      "name": "绥棱",
+      "name_en": "Suiling",
+      "province": "Heilongjiang",
+      "lat": 47.2349,
+      "lng": 127.1077,
+      "altitude_m": 164,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-TAHE",
+      "name": "塔河",
+      "name_en": "Tahe",
+      "province": "Heilongjiang",
+      "lat": 52.3215,
+      "lng": 124.6976,
+      "altitude_m": 353,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-TAILAI",
+      "name": "泰来",
+      "name_en": "Tailai",
+      "province": "Heilongjiang",
+      "lat": 46.39,
+      "lng": 123.4085,
+      "altitude_m": 141,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-TIELI",
+      "name": "铁力",
+      "name_en": "Tieli",
+      "province": "Heilongjiang",
+      "lat": 46.9754,
+      "lng": 128.048,
+      "altitude_m": 209,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-WANGKUI",
+      "name": "望奎",
+      "name_en": "Wangkui",
+      "province": "Heilongjiang",
+      "lat": 46.8321,
+      "lng": 126.4766,
+      "altitude_m": 178,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-WUCHANG",
+      "name": "五常",
+      "name_en": "Wuchang",
+      "province": "Heilongjiang",
+      "lat": 44.9275,
+      "lng": 127.1604,
+      "altitude_m": 190,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-YILAN",
+      "name": "依兰",
+      "name_en": "Yilan",
+      "province": "Heilongjiang",
+      "lat": 46.3223,
+      "lng": 129.5608,
+      "altitude_m": 92,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-YOUHAO",
+      "name": "友好",
+      "name_en": "Youhao",
+      "province": "Heilongjiang",
+      "lat": 47.8531,
+      "lng": 128.8356,
+      "altitude_m": 238,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-ZHAODONG",
+      "name": "肇东",
+      "name_en": "Zhaodong",
+      "province": "Heilongjiang",
+      "lat": 46.0522,
+      "lng": 125.9552,
+      "altitude_m": 143,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-ZHAOYUAN",
+      "name": "肇源",
+      "name_en": "Zhaoyuan",
+      "province": "Heilongjiang",
+      "lat": 45.5197,
+      "lng": 125.0763,
+      "altitude_m": 129,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HL-ZHAOZHOU",
+      "name": "肇州",
+      "name_en": "Zhaozhou",
+      "province": "Heilongjiang",
+      "lat": 45.706,
+      "lng": 125.2661,
+      "altitude_m": 154,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-HA-ANYANG",
       "name": "安阳市",
       "name_en": "Anyang",
@@ -1102,6 +2958,39 @@
       "lng": 114.3828,
       "altitude_m": 70,
       "tier": 3
+    },
+    {
+      "id": "CN-HA-DENGZHOU",
+      "name": "花洲",
+      "name_en": "Dengzhou",
+      "province": "Henan",
+      "lat": 32.6827,
+      "lng": 112.0887,
+      "altitude_m": 114,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HA-DINGCHENG",
+      "name": "定城",
+      "name_en": "Dingcheng",
+      "province": "Henan",
+      "lat": 32.1272,
+      "lng": 115.0394,
+      "altitude_m": 34,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HA-FANGCHENG",
+      "name": "方城",
+      "name_en": "Fangcheng",
+      "province": "Henan",
+      "lat": 33.2569,
+      "lng": 113.001,
+      "altitude_m": 182,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-HA-HEBI",
@@ -1185,6 +3074,28 @@
       "tier": 3
     },
     {
+      "id": "CN-HA-PUYANGCHENGGUANZHEN",
+      "name": "濮阳",
+      "name_en": "Puyang Chengguanzhen",
+      "province": "Henan",
+      "lat": 35.7062,
+      "lng": 115.0279,
+      "altitude_m": 58,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HA-RUNING",
+      "name": "汝宁",
+      "name_en": "Runing",
+      "province": "Henan",
+      "lat": 33.0011,
+      "lng": 114.3542,
+      "altitude_m": 56,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-HA-SANMENXIA",
       "name": "三門峡市",
       "name_en": "Sanmenxia",
@@ -1205,6 +3116,61 @@
       "tier": 3
     },
     {
+      "id": "CN-HA-SONGYANG",
+      "name": "嵩阳",
+      "name_en": "Songyang",
+      "province": "Henan",
+      "lat": 34.4555,
+      "lng": 113.0319,
+      "altitude_m": 369,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HA-TANGHE",
+      "name": "唐河",
+      "name_en": "Tanghe",
+      "province": "Henan",
+      "lat": 32.6855,
+      "lng": 112.8323,
+      "altitude_m": 105,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HA-WACHENGNEIGHBORHOOD",
+      "name": "娲城",
+      "name_en": "Wacheng Neighborhood",
+      "province": "Henan",
+      "lat": 33.7833,
+      "lng": 114.5167,
+      "altitude_m": 56,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HA-XIANGCHENG",
+      "name": "襄城",
+      "name_en": "Xiangcheng",
+      "province": "Henan",
+      "lat": 33.8541,
+      "lng": 113.4872,
+      "altitude_m": 82,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HA-XINCHENG",
+      "name": "新城",
+      "name_en": "Xincheng",
+      "province": "Henan",
+      "lat": 33.6333,
+      "lng": 115.1833,
+      "altitude_m": 43,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-HA-XINXIANG",
       "name": "南干道",
       "name_en": "Xinxiang",
@@ -1213,6 +3179,17 @@
       "lng": 113.8015,
       "altitude_m": 82,
       "tier": 3
+    },
+    {
+      "id": "CN-HA-XINYE",
+      "name": "新野",
+      "name_en": "Xinye",
+      "province": "Henan",
+      "lat": 32.5288,
+      "lng": 112.3651,
+      "altitude_m": 83,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-HA-XUCHANG",
@@ -1225,6 +3202,17 @@
       "tier": 3
     },
     {
+      "id": "CN-HA-YUZHOU",
+      "name": "禹州",
+      "name_en": "Yuzhou",
+      "province": "Henan",
+      "lat": 34.1547,
+      "lng": 113.4681,
+      "altitude_m": 123,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-HA-ZHENGZHOU",
       "name": "郑州",
       "name_en": "Zhengzhou",
@@ -1233,6 +3221,17 @@
       "lng": 113.6486,
       "altitude_m": 104,
       "tier": 2
+    },
+    {
+      "id": "CN-HA-ZHENPING",
+      "name": "镇平",
+      "name_en": "Zhenping",
+      "province": "Henan",
+      "lat": 33.0346,
+      "lng": 112.2276,
+      "altitude_m": 196,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-HA-ZHOUKOU",
@@ -1255,6 +3254,39 @@
       "tier": 3
     },
     {
+      "id": "CN-HB-ANLU",
+      "name": "安陆",
+      "name_en": "Anlu",
+      "province": "Hubei",
+      "lat": 31.2575,
+      "lng": 113.6783,
+      "altitude_m": 49,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HB-CAIDIAN",
+      "name": "蔡甸",
+      "name_en": "Caidian",
+      "province": "Hubei",
+      "lat": 30.5833,
+      "lng": 114.0333,
+      "altitude_m": 24,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HB-CAOHE",
+      "name": "漕河",
+      "name_en": "Caohe",
+      "province": "Hubei",
+      "lat": 30.2297,
+      "lng": 115.4335,
+      "altitude_m": 27,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-HB-EZHOU",
       "name": "鄂州",
       "name_en": "E'zhou",
@@ -1275,6 +3307,17 @@
       "tier": 3
     },
     {
+      "id": "CN-HB-GUCHENGCHENGGUANZHEN",
+      "name": "古城城关镇",
+      "name_en": "Gucheng Chengguanzhen",
+      "province": "Hubei",
+      "lat": 32.266,
+      "lng": 111.6348,
+      "altitude_m": 88,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-HB-HUANGGANG",
       "name": "黃岡",
       "name_en": "Huanggang",
@@ -1283,6 +3326,28 @@
       "lng": 114.8704,
       "altitude_m": 46,
       "tier": 3
+    },
+    {
+      "id": "CN-HB-HUANGMEI",
+      "name": "黄梅",
+      "name_en": "Huangmei",
+      "province": "Hubei",
+      "lat": 30.1924,
+      "lng": 116.025,
+      "altitude_m": 48,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HB-HUANGPI",
+      "name": "黄陂",
+      "name_en": "Huangpi",
+      "province": "Hubei",
+      "lat": 30.8845,
+      "lng": 114.3779,
+      "altitude_m": 29,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-HB-HUANGSHI",
@@ -1313,6 +3378,28 @@
       "lng": 112.1903,
       "altitude_m": 39,
       "tier": 3
+    },
+    {
+      "id": "CN-HB-NANZHANGCHENGGUANZHEN",
+      "name": "南漳城关镇",
+      "name_en": "Nanzhang Chengguanzhen",
+      "province": "Hubei",
+      "lat": 31.7839,
+      "lng": 111.8275,
+      "altitude_m": 130,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HB-QINGQUAN",
+      "name": "浠水县",
+      "name_en": "Qingquan",
+      "province": "Hubei",
+      "lat": 30.4511,
+      "lng": 115.2559,
+      "altitude_m": 35,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-HB-SHIYAN",
@@ -1346,6 +3433,17 @@
       "culture": 7
     },
     {
+      "id": "CN-HB-WUXUE",
+      "name": "武穴",
+      "name_en": "Wuxue",
+      "province": "Hubei",
+      "lat": 29.8506,
+      "lng": 115.5525,
+      "altitude_m": 23,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-HB-XIANGYANG",
       "name": "襄阳",
       "name_en": "Xiangyang",
@@ -1376,6 +3474,28 @@
       "tier": 3
     },
     {
+      "id": "CN-HB-XINSHI",
+      "name": "新市",
+      "name_en": "Xinshi",
+      "province": "Hubei",
+      "lat": 31.047,
+      "lng": 113.141,
+      "altitude_m": 115,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HB-YEZHOU",
+      "name": "业州",
+      "name_en": "Yezhou",
+      "province": "Hubei",
+      "lat": 30.6037,
+      "lng": 109.7233,
+      "altitude_m": 557,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-HB-YICHANG",
       "name": "宜昌",
       "name_en": "Yichang",
@@ -1384,6 +3504,39 @@
       "lng": 111.2847,
       "altitude_m": 63,
       "tier": 3
+    },
+    {
+      "id": "CN-HB-YICHENG",
+      "name": "鄢城",
+      "name_en": "Yicheng",
+      "province": "Hubei",
+      "lat": 31.7047,
+      "lng": 112.2561,
+      "altitude_m": 63,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HB-YUNMENGCHENGGUANZHEN",
+      "name": "云梦城关镇",
+      "name_en": "Yunmeng Chengguanzhen",
+      "province": "Hubei",
+      "lat": 31.0625,
+      "lng": 113.7655,
+      "altitude_m": 43,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HN-CHANGDE",
+      "name": "常徳",
+      "name_en": "Changde",
+      "province": "Hunan",
+      "lat": 29.0321,
+      "lng": 111.6984,
+      "altitude_m": 38,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-HN-CHANGSHA",
@@ -1407,6 +3560,17 @@
       "tier": 3
     },
     {
+      "id": "CN-HN-GUANKOU",
+      "name": "关口",
+      "name_en": "Guankou",
+      "province": "Hunan",
+      "lat": 28.1586,
+      "lng": 113.6271,
+      "altitude_m": 79,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-HN-HESHAN",
       "name": "益阳",
       "name_en": "Heshan",
@@ -1415,6 +3579,17 @@
       "lng": 112.3473,
       "altitude_m": 73,
       "tier": 3
+    },
+    {
+      "id": "CN-HN-HONGQIAO",
+      "name": "洪桥",
+      "name_en": "Hongqiao",
+      "province": "Hunan",
+      "lat": 26.7684,
+      "lng": 112.1081,
+      "altitude_m": 125,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-HN-HUAIHUA",
@@ -1427,6 +3602,17 @@
       "tier": 3
     },
     {
+      "id": "CN-HN-JINSHI",
+      "name": "津市",
+      "name_en": "Jinshi",
+      "province": "Hunan",
+      "lat": 29.6049,
+      "lng": 111.8701,
+      "altitude_m": 65,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-HN-JISHOU",
       "name": "乾州",
       "name_en": "Jishou",
@@ -1435,6 +3621,28 @@
       "lng": 109.7335,
       "altitude_m": 201,
       "tier": 3
+    },
+    {
+      "id": "CN-HN-LEIYANG",
+      "name": "耒阳",
+      "name_en": "Leiyang",
+      "province": "Hunan",
+      "lat": 26.4024,
+      "lng": 112.8591,
+      "altitude_m": 69,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HN-LIANYUAN",
+      "name": "涟源",
+      "name_en": "Lianyuan",
+      "province": "Hunan",
+      "lat": 27.6883,
+      "lng": 111.6642,
+      "altitude_m": 151,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-HN-LOUDI",
@@ -1447,6 +3655,28 @@
       "tier": 3
     },
     {
+      "id": "CN-HN-QIONGHU",
+      "name": "沅江市",
+      "name_en": "Qionghu",
+      "province": "Hunan",
+      "lat": 28.8412,
+      "lng": 112.3551,
+      "altitude_m": 44,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HN-SHANGMEI",
+      "name": "上梅",
+      "name_en": "Shangmei",
+      "province": "Hunan",
+      "lat": 27.7428,
+      "lng": 111.2956,
+      "altitude_m": 179,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-HN-SHAOYANG",
       "name": "邵阳市",
       "name_en": "Shaoyang",
@@ -1457,6 +3687,50 @@
       "tier": 3
     },
     {
+      "id": "CN-HN-SHENLIU",
+      "name": "安乡",
+      "name_en": "Shenliu",
+      "province": "Hunan",
+      "lat": 29.4137,
+      "lng": 112.1643,
+      "altitude_m": 33,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HN-WENXING",
+      "name": "文星",
+      "name_en": "Wenxing",
+      "province": "Hunan",
+      "lat": 28.6821,
+      "lng": 112.8786,
+      "altitude_m": 51,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HN-WUGANG",
+      "name": "武冈",
+      "name_en": "Wugang",
+      "province": "Hunan",
+      "lat": 26.7279,
+      "lng": 110.632,
+      "altitude_m": 319,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HN-WUXI",
+      "name": "无锡",
+      "name_en": "Wuxi",
+      "province": "Hunan",
+      "lat": 26.5844,
+      "lng": 111.859,
+      "altitude_m": 94,
+      "tier": 2,
+      "county": true
+    },
+    {
       "id": "CN-HN-XIANGTAN",
       "name": "湘潭",
       "name_en": "Xiangtan",
@@ -1465,6 +3739,28 @@
       "lng": 112.9,
       "altitude_m": 31,
       "tier": 3
+    },
+    {
+      "id": "CN-HN-XISHAN",
+      "name": "西山",
+      "name_en": "Xishan",
+      "province": "Hunan",
+      "lat": 27.6667,
+      "lng": 113.5,
+      "altitude_m": 69,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-HN-YONGFENG",
+      "name": "永丰",
+      "name_en": "Yongfeng",
+      "province": "Hunan",
+      "lat": 27.4549,
+      "lng": 112.1694,
+      "altitude_m": 111,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-HN-YONGZHOU",
@@ -1507,6 +3803,30 @@
       "tier": 3
     },
     {
+      "id": "CN-NM-BAYANHOT",
+      "name": "巴彦浩特",
+      "name_en": "Bayan Hot",
+      "province": "Inner Mongolia",
+      "lat": 38.8386,
+      "lng": 105.6686,
+      "altitude_m": 1529,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-NM-BEICHENGQU",
+      "name": "丰镇",
+      "name_en": "Beichengqu",
+      "province": "Inner Mongolia",
+      "lat": 40.4394,
+      "lng": 113.1536,
+      "altitude_m": 1196,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
       "id": "CN-NM-CHIFENG",
       "name": "红山区",
       "name_en": "Chifeng",
@@ -1515,6 +3835,30 @@
       "lng": 118.9636,
       "altitude_m": 570,
       "tier": 3,
+      "remote": true
+    },
+    {
+      "id": "CN-NM-GENHE",
+      "name": "根河",
+      "name_en": "Genhe",
+      "province": "Inner Mongolia",
+      "lat": 50.7833,
+      "lng": 121.5167,
+      "altitude_m": 713,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-NM-HAILAR",
+      "name": "海拉尔区",
+      "name_en": "Hailar",
+      "province": "Inner Mongolia",
+      "lat": 49.2,
+      "lng": 119.7,
+      "altitude_m": 624,
+      "tier": 3,
+      "county": true,
       "remote": true
     },
     {
@@ -1537,6 +3881,54 @@
       "lng": 119.7558,
       "altitude_m": 611,
       "tier": 3,
+      "remote": true
+    },
+    {
+      "id": "CN-NM-OROQENZIZHIQI",
+      "name": "鄂伦春自治旗",
+      "name_en": "Oroqen Zizhiqi",
+      "province": "Inner Mongolia",
+      "lat": 50.5667,
+      "lng": 123.7167,
+      "altitude_m": 419,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-NM-PINGZHUANG",
+      "name": "元宝山区",
+      "name_en": "Pingzhuang",
+      "province": "Inner Mongolia",
+      "lat": 42.0372,
+      "lng": 119.2889,
+      "altitude_m": 514,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-NM-SALAQI",
+      "name": "土默特右旗",
+      "name_en": "Salaqi",
+      "province": "Inner Mongolia",
+      "lat": 40.5414,
+      "lng": 110.5108,
+      "altitude_m": 1000,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-NM-SHIGUAI",
+      "name": "石拐",
+      "name_en": "Shiguai",
+      "province": "Inner Mongolia",
+      "lat": 40.7058,
+      "lng": 110.2856,
+      "altitude_m": 1337,
+      "tier": 3,
+      "county": true,
       "remote": true
     },
     {
@@ -1584,6 +3976,42 @@
       "remote": true
     },
     {
+      "id": "CN-NM-YAKESHI",
+      "name": "喜桂图旗",
+      "name_en": "Yakeshi",
+      "province": "Inner Mongolia",
+      "lat": 49.2833,
+      "lng": 120.7333,
+      "altitude_m": 661,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-NM-ZHALANTUN",
+      "name": "兴华",
+      "name_en": "Zhalantun",
+      "province": "Inner Mongolia",
+      "lat": 48.0095,
+      "lng": 122.7365,
+      "altitude_m": 320,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-JS-CHANGSHU",
+      "name": "Changshu",
+      "name_en": "Changshu",
+      "province": "Jiangsu",
+      "lat": 31.6461,
+      "lng": 120.7422,
+      "altitude_m": 9,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
       "id": "CN-JS-CHANGZHOU",
       "name": "常州",
       "name_en": "Changzhou",
@@ -1592,6 +4020,142 @@
       "lng": 119.954,
       "altitude_m": 9,
       "tier": 3
+    },
+    {
+      "id": "CN-JS-DAZHONG",
+      "name": "大中",
+      "name_en": "Dazhong",
+      "province": "Jiangsu",
+      "lat": 33.1997,
+      "lng": 120.4578,
+      "altitude_m": 7,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-JS-DONGTAI",
+      "name": "东台",
+      "name_en": "Dongtai",
+      "province": "Jiangsu",
+      "lat": 32.8523,
+      "lng": 120.3095,
+      "altitude_m": 7,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JS-FENGCHENG",
+      "name": "Fengcheng",
+      "name_en": "Fengcheng",
+      "province": "Jiangsu",
+      "lat": 34.7039,
+      "lng": 116.5872,
+      "altitude_m": 40,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JS-GAOYOU",
+      "name": "高邮",
+      "name_en": "Gaoyou",
+      "province": "Jiangsu",
+      "lat": 32.7893,
+      "lng": 119.4418,
+      "altitude_m": 6,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JS-HEDE",
+      "name": "合德",
+      "name_en": "Hede",
+      "province": "Jiangsu",
+      "lat": 33.7722,
+      "lng": 120.2618,
+      "altitude_m": 2,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-JS-HUILONG",
+      "name": "启动",
+      "name_en": "Huilong",
+      "province": "Jiangsu",
+      "lat": 31.8111,
+      "lng": 121.655,
+      "altitude_m": 7,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JS-JIANGYAN",
+      "name": "姜堰",
+      "name_en": "Jiangyan",
+      "province": "Jiangsu",
+      "lat": 32.5061,
+      "lng": 120.1428,
+      "altitude_m": 9,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JS-JIANGYIN",
+      "name": "江阴市",
+      "name_en": "Jiangyin",
+      "province": "Jiangsu",
+      "lat": 31.911,
+      "lng": 120.263,
+      "altitude_m": 7,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JS-JIAWANG",
+      "name": "Jiawang",
+      "name_en": "Jiawang",
+      "province": "Jiangsu",
+      "lat": 34.4328,
+      "lng": 117.4419,
+      "altitude_m": 31,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JS-JINSHA",
+      "name": "通州",
+      "name_en": "Jinsha",
+      "province": "Jiangsu",
+      "lat": 32.0898,
+      "lng": 121.0735,
+      "altitude_m": 6,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-JS-JUEGANG",
+      "name": "如东县",
+      "name_en": "Juegang",
+      "province": "Jiangsu",
+      "lat": 32.3174,
+      "lng": 121.1855,
+      "altitude_m": 10,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-JS-KUNSHAN",
+      "name": "崑山",
+      "name_en": "Kunshan",
+      "province": "Jiangsu",
+      "lat": 31.3776,
+      "lng": 120.9543,
+      "altitude_m": 10,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-JS-LIANYUNGANG",
@@ -1603,6 +4167,17 @@
       "altitude_m": 1,
       "tier": 3,
       "coastal": true
+    },
+    {
+      "id": "CN-JS-LICHENG",
+      "name": "凓城",
+      "name_en": "Licheng",
+      "province": "Jiangsu",
+      "lat": 31.4281,
+      "lng": 119.4835,
+      "altitude_m": 9,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-JS-NANJING",
@@ -1627,6 +4202,62 @@
       "coastal": true
     },
     {
+      "id": "CN-JS-PEICHENG",
+      "name": "Peicheng",
+      "name_en": "Peicheng",
+      "province": "Jiangsu",
+      "lat": 34.7361,
+      "lng": 116.9247,
+      "altitude_m": 40,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JS-PIZHOU",
+      "name": "Pizhou",
+      "name_en": "Pizhou",
+      "province": "Jiangsu",
+      "lat": 34.3114,
+      "lng": 117.9503,
+      "altitude_m": 25,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JS-RUGAO",
+      "name": "Rugao",
+      "name_en": "Rugao",
+      "province": "Jiangsu",
+      "lat": 32.3704,
+      "lng": 120.5765,
+      "altitude_m": 6,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-JS-SONGLING",
+      "name": "松陵",
+      "name_en": "Songling",
+      "province": "Jiangsu",
+      "lat": 31.1933,
+      "lng": 120.7176,
+      "altitude_m": 5,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JS-SUICHENG",
+      "name": "Suicheng",
+      "name_en": "Suicheng",
+      "province": "Jiangsu",
+      "lat": 33.8963,
+      "lng": 117.9331,
+      "altitude_m": 22,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-JS-SUQIAN",
       "name": "宿迁市",
       "name_en": "Suqian",
@@ -1648,6 +4279,50 @@
       "culture": 8
     },
     {
+      "id": "CN-JS-TAICANG",
+      "name": "城厢",
+      "name_en": "Taicang",
+      "province": "Jiangsu",
+      "lat": 31.4478,
+      "lng": 121.0939,
+      "altitude_m": 4,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JS-TAIXING",
+      "name": "泰兴",
+      "name_en": "Taixing",
+      "province": "Jiangsu",
+      "lat": 32.1667,
+      "lng": 120.0136,
+      "altitude_m": 9,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JS-TAIZHOU",
+      "name": "泰州",
+      "name_en": "Taizhou",
+      "province": "Jiangsu",
+      "lat": 32.4907,
+      "lng": 119.9081,
+      "altitude_m": 10,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JS-TONGSHAN",
+      "name": "徐州",
+      "name_en": "Tongshan",
+      "province": "Jiangsu",
+      "lat": 34.1805,
+      "lng": 117.1571,
+      "altitude_m": 37,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-JS-WUXI",
       "name": "无锡",
       "name_en": "Wuxi",
@@ -1656,6 +4331,28 @@
       "lng": 120.2886,
       "altitude_m": 10,
       "tier": 2
+    },
+    {
+      "id": "CN-JS-XIANNUE",
+      "name": "仙女",
+      "name_en": "Xiannue",
+      "province": "Jiangsu",
+      "lat": 32.4281,
+      "lng": 119.5605,
+      "altitude_m": 13,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JS-XINYI",
+      "name": "新安",
+      "name_en": "Xinyi",
+      "province": "Jiangsu",
+      "lat": 34.3842,
+      "lng": 118.3462,
+      "altitude_m": 31,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-JS-XUZHOU",
@@ -1679,6 +4376,40 @@
       "coastal": true
     },
     {
+      "id": "CN-JS-YIXING",
+      "name": "宜兴市",
+      "name_en": "Yixing",
+      "province": "Jiangsu",
+      "lat": 31.3606,
+      "lng": 119.8202,
+      "altitude_m": 8,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JS-YUNLONG",
+      "name": "Yunlong",
+      "name_en": "Yunlong",
+      "province": "Jiangsu",
+      "lat": 34.2528,
+      "lng": 117.2517,
+      "altitude_m": 30,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JS-ZHANGJIAGANG",
+      "name": "张家港",
+      "name_en": "Zhangjiagang",
+      "province": "Jiangsu",
+      "lat": 31.865,
+      "lng": 120.5389,
+      "altitude_m": 13,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
       "id": "CN-JS-ZHENJIANG",
       "name": "鎮江",
       "name_en": "Zhenjiang",
@@ -1687,6 +4418,83 @@
       "lng": 119.4551,
       "altitude_m": 26,
       "tier": 3
+    },
+    {
+      "id": "CN-JS-ZHENZHOU",
+      "name": "仪征市",
+      "name_en": "Zhenzhou",
+      "province": "Jiangsu",
+      "lat": 32.2803,
+      "lng": 119.17,
+      "altitude_m": 10,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JX-AOXI",
+      "name": "乐安县",
+      "name_en": "Aoxi",
+      "province": "Jiangxi",
+      "lat": 27.4259,
+      "lng": 115.8364,
+      "altitude_m": 173,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JX-BASHAN",
+      "name": "崇仁县",
+      "name_en": "Bashan",
+      "province": "Jiangxi",
+      "lat": 27.7682,
+      "lng": 116.0502,
+      "altitude_m": 63,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JX-DENGBU",
+      "name": "余江县",
+      "name_en": "Dengbu",
+      "province": "Jiangxi",
+      "lat": 28.2084,
+      "lng": 116.8172,
+      "altitude_m": 43,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JX-DUNHOU",
+      "name": "吉安县",
+      "name_en": "Dunhou",
+      "province": "Jiangxi",
+      "lat": 27.05,
+      "lng": 114.9,
+      "altitude_m": 65,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JX-FENGGANG",
+      "name": "宜黄县",
+      "name_en": "Fenggang",
+      "province": "Jiangxi",
+      "lat": 27.5457,
+      "lng": 116.2146,
+      "altitude_m": 102,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JX-FENYI",
+      "name": "分宜",
+      "name_en": "Fenyi",
+      "province": "Jiangxi",
+      "lat": 27.8112,
+      "lng": 114.668,
+      "altitude_m": 84,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-JX-FUZHOU",
@@ -1709,6 +4517,17 @@
       "tier": 3
     },
     {
+      "id": "CN-JX-HUAYUAN",
+      "name": "花园",
+      "name_en": "Huayuan",
+      "province": "Jiangxi",
+      "lat": 28.2863,
+      "lng": 117.2066,
+      "altitude_m": 29,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-JX-JIAN",
       "name": "吉安",
       "name_en": "Ji'an",
@@ -1717,6 +4536,28 @@
       "lng": 114.9793,
       "altitude_m": 72,
       "tier": 3
+    },
+    {
+      "id": "CN-JX-JIANCHANG",
+      "name": "南城县",
+      "name_en": "Jianchang",
+      "province": "Jiangxi",
+      "lat": 27.5583,
+      "lng": 116.6398,
+      "altitude_m": 78,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JX-JINFENG",
+      "name": "金峰",
+      "name_en": "Jinfeng",
+      "province": "Jiangxi",
+      "lat": 28.2385,
+      "lng": 116.6005,
+      "altitude_m": 40,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-JX-JINGDEZHEN",
@@ -1750,6 +4591,17 @@
       "tier": 2
     },
     {
+      "id": "CN-JX-PENGZE",
+      "name": "Pengze",
+      "name_en": "Pengze",
+      "province": "Jiangxi",
+      "lat": 29.8988,
+      "lng": 116.5457,
+      "altitude_m": 51,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-JX-PINGXIANG",
       "name": "萍乡",
       "name_en": "Pingxiang",
@@ -1758,6 +4610,28 @@
       "lng": 113.8535,
       "altitude_m": 167,
       "tier": 3
+    },
+    {
+      "id": "CN-JX-POYANG",
+      "name": "鄱阳",
+      "name_en": "Poyang",
+      "province": "Jiangxi",
+      "lat": 28.9924,
+      "lng": 116.6675,
+      "altitude_m": 23,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JX-QINCHENG",
+      "name": "南丰县",
+      "name_en": "Qincheng",
+      "province": "Jiangxi",
+      "lat": 27.2127,
+      "lng": 116.5301,
+      "altitude_m": 98,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-JX-SHANGRAO",
@@ -1780,6 +4654,28 @@
       "tier": 3
     },
     {
+      "id": "CN-JX-XIUGU",
+      "name": "秀谷",
+      "name_en": "Xiugu",
+      "province": "Jiangxi",
+      "lat": 27.9113,
+      "lng": 116.7764,
+      "altitude_m": 101,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JX-XUJIANG",
+      "name": "广昌县",
+      "name_en": "Xujiang",
+      "province": "Jiangxi",
+      "lat": 26.8394,
+      "lng": 116.3201,
+      "altitude_m": 142,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-JX-YICHUN",
       "name": "宜春",
       "name_en": "Yichun",
@@ -1798,6 +4694,17 @@
       "lng": 117.0,
       "altitude_m": 34,
       "tier": 3
+    },
+    {
+      "id": "CN-JL-ANTU",
+      "name": "安图",
+      "name_en": "Antu",
+      "province": "Jilin",
+      "lat": 43.1025,
+      "lng": 128.9085,
+      "altitude_m": 347,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-JL-BAICHENG",
@@ -1820,6 +4727,17 @@
       "tier": 3
     },
     {
+      "id": "CN-JL-CHANGBAI",
+      "name": "长白",
+      "name_en": "Changbai",
+      "province": "Jilin",
+      "lat": 41.4177,
+      "lng": 128.1962,
+      "altitude_m": 720,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-JL-CHANGCHUN",
       "name": "长春",
       "name_en": "Changchun",
@@ -1828,6 +4746,83 @@
       "lng": 125.3228,
       "altitude_m": 206,
       "tier": 2
+    },
+    {
+      "id": "CN-JL-CHAOYANG",
+      "name": "Chaoyang",
+      "name_en": "Chaoyang",
+      "province": "Jilin",
+      "lat": 42.6622,
+      "lng": 126.0263,
+      "altitude_m": 297,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JL-DEHUI",
+      "name": "德惠",
+      "name_en": "Dehui",
+      "province": "Jilin",
+      "lat": 44.5367,
+      "lng": 125.6943,
+      "altitude_m": 174,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JL-DONGFENG",
+      "name": "东丰",
+      "name_en": "Dongfeng",
+      "province": "Jilin",
+      "lat": 42.6739,
+      "lng": 125.5289,
+      "altitude_m": 330,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JL-DUNHUA",
+      "name": "敦化",
+      "name_en": "Dunhua",
+      "province": "Jilin",
+      "lat": 43.3695,
+      "lng": 128.2286,
+      "altitude_m": 509,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JL-HUADIAN",
+      "name": "桦甸",
+      "name_en": "Huadian",
+      "province": "Jilin",
+      "lat": 42.9721,
+      "lng": 126.7411,
+      "altitude_m": 264,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JL-HUNCHUN",
+      "name": "珲春",
+      "name_en": "Hunchun",
+      "province": "Jilin",
+      "lat": 42.8674,
+      "lng": 130.3569,
+      "altitude_m": 42,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JL-JIAOHE",
+      "name": "民主",
+      "name_en": "Jiaohe",
+      "province": "Jilin",
+      "lat": 43.7213,
+      "lng": 127.3347,
+      "altitude_m": 279,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-JL-JILIN",
@@ -1840,6 +4835,72 @@
       "tier": 3
     },
     {
+      "id": "CN-JL-JIUTAI",
+      "name": "九台",
+      "name_en": "Jiutai",
+      "province": "Jilin",
+      "lat": 44.1513,
+      "lng": 125.8298,
+      "altitude_m": 170,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JL-KAITONG",
+      "name": "开通",
+      "name_en": "Kaitong",
+      "province": "Jilin",
+      "lat": 44.8091,
+      "lng": 123.0811,
+      "altitude_m": 149,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JL-LINJIANG",
+      "name": "临江",
+      "name_en": "Linjiang",
+      "province": "Jilin",
+      "lat": 41.8069,
+      "lng": 126.9078,
+      "altitude_m": 339,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JL-LISHU",
+      "name": "梨树",
+      "name_en": "Lishu",
+      "province": "Jilin",
+      "lat": 43.3073,
+      "lng": 124.3337,
+      "altitude_m": 165,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JL-LIUHE",
+      "name": "柳河",
+      "name_en": "Liuhe",
+      "province": "Jilin",
+      "lat": 42.2847,
+      "lng": 125.7454,
+      "altitude_m": 355,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JL-LONGJING",
+      "name": "龙井",
+      "name_en": "Longjing",
+      "province": "Jilin",
+      "lat": 42.7713,
+      "lng": 129.4231,
+      "altitude_m": 245,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-JL-LONGSHAN",
       "name": "辽源",
       "name_en": "Longshan",
@@ -1848,6 +4909,61 @@
       "lng": 125.1367,
       "altitude_m": 259,
       "tier": 3
+    },
+    {
+      "id": "CN-JL-MEIHEKOU",
+      "name": "梅河口",
+      "name_en": "Meihekou",
+      "province": "Jilin",
+      "lat": 42.5287,
+      "lng": 125.6788,
+      "altitude_m": 319,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JL-PANSHI",
+      "name": "磐石",
+      "name_en": "Panshi",
+      "province": "Jilin",
+      "lat": 42.9372,
+      "lng": 126.0574,
+      "altitude_m": 307,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JL-SHUANGLIAO",
+      "name": "双辽",
+      "name_en": "Shuangliao",
+      "province": "Jilin",
+      "lat": 43.5107,
+      "lng": 123.5007,
+      "altitude_m": 115,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JL-SHUANGYANG",
+      "name": "双阳",
+      "name_en": "Shuangyang",
+      "province": "Jilin",
+      "lat": 43.5226,
+      "lng": 125.6595,
+      "altitude_m": 210,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JL-SHULAN",
+      "name": "舒兰",
+      "name_en": "Shulan",
+      "province": "Jilin",
+      "lat": 44.4113,
+      "lng": 126.9483,
+      "altitude_m": 239,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-JL-SONGYUAN",
@@ -1860,6 +4976,17 @@
       "tier": 3
     },
     {
+      "id": "CN-JL-TAONAN",
+      "name": "光明",
+      "name_en": "Taonan",
+      "province": "Jilin",
+      "lat": 45.3332,
+      "lng": 122.7846,
+      "altitude_m": 148,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-JL-TONGHUA",
       "name": "通化",
       "name_en": "Tonghua",
@@ -1868,6 +4995,28 @@
       "lng": 125.9264,
       "altitude_m": 375,
       "tier": 3
+    },
+    {
+      "id": "CN-JL-TUMEN",
+      "name": "图们",
+      "name_en": "Tumen",
+      "province": "Jilin",
+      "lat": 42.9656,
+      "lng": 129.842,
+      "altitude_m": 98,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JL-WANGQING",
+      "name": "汪清",
+      "name_en": "Wangqing",
+      "province": "Jilin",
+      "lat": 43.3108,
+      "lng": 129.7633,
+      "altitude_m": 252,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-JL-YANJI",
@@ -1880,6 +5029,39 @@
       "tier": 3
     },
     {
+      "id": "CN-JL-YUSHU",
+      "name": "榆树",
+      "name_en": "Yushu",
+      "province": "Jilin",
+      "lat": 44.8275,
+      "lng": 126.5406,
+      "altitude_m": 196,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-JL-ZHENLAI",
+      "name": "镇赉",
+      "name_en": "Zhenlai",
+      "province": "Jilin",
+      "lat": 45.8496,
+      "lng": 123.1979,
+      "altitude_m": 139,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-LN-CHANGTU",
+      "name": "昌图",
+      "name_en": "Changtu",
+      "province": "Liaoning",
+      "lat": 42.7788,
+      "lng": 124.0954,
+      "altitude_m": 135,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-LN-CHAOYANG",
       "name": "朝阳市",
       "name_en": "Chaoyang",
@@ -1888,6 +5070,18 @@
       "lng": 120.4586,
       "altitude_m": 162,
       "tier": 3
+    },
+    {
+      "id": "CN-LN-DASHIQIAO",
+      "name": "大石桥",
+      "name_en": "Dashiqiao",
+      "province": "Liaoning",
+      "lat": 40.6373,
+      "lng": 122.5025,
+      "altitude_m": 16,
+      "tier": 3,
+      "county": true,
+      "coastal": true
     },
     {
       "id": "CN-LN-FUSHUN",
@@ -1900,6 +5094,18 @@
       "tier": 3
     },
     {
+      "id": "CN-LN-HAICHENG",
+      "name": "海城",
+      "name_en": "Haicheng",
+      "province": "Liaoning",
+      "lat": 40.8516,
+      "lng": 122.7475,
+      "altitude_m": 33,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
       "id": "CN-LN-HULUDAO",
       "name": "葫芦岛",
       "name_en": "Huludao",
@@ -1908,6 +5114,28 @@
       "lng": 120.8355,
       "altitude_m": 17,
       "tier": 3
+    },
+    {
+      "id": "CN-LN-LIANSHAN",
+      "name": "连山",
+      "name_en": "Lianshan",
+      "province": "Liaoning",
+      "lat": 40.7643,
+      "lng": 120.8533,
+      "altitude_m": 17,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-LN-NANPIAO",
+      "name": "南票",
+      "name_en": "Nanpiao",
+      "province": "Liaoning",
+      "lat": 41.0982,
+      "lng": 120.7479,
+      "altitude_m": 98,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-LN-PANJIN",
@@ -1929,6 +5157,17 @@
       "lng": 123.4328,
       "altitude_m": 53,
       "tier": 2
+    },
+    {
+      "id": "CN-LN-XIAOSHI",
+      "name": "小市",
+      "name_en": "Xiaoshi",
+      "province": "Liaoning",
+      "lat": 41.2971,
+      "lng": 124.1209,
+      "altitude_m": 206,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-LN-YINGKOU",
@@ -1975,6 +5214,30 @@
       "remote": true
     },
     {
+      "id": "CN-NX-XIGANG",
+      "name": "习岗",
+      "name_en": "Xigang",
+      "province": "Ningxia",
+      "lat": 38.5526,
+      "lng": 106.3481,
+      "altitude_m": 1111,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-NX-YANGHE",
+      "name": "杨和",
+      "name_en": "Yanghe",
+      "province": "Ningxia",
+      "lat": 38.2785,
+      "lng": 106.2478,
+      "altitude_m": 1123,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
       "id": "CN-NX-YINCHUAN",
       "name": "银川",
       "name_en": "Yinchuan",
@@ -1997,6 +5260,18 @@
       "remote": true
     },
     {
+      "id": "CN-QH-LUSHAR",
+      "name": "湟中县",
+      "name_en": "Lushar",
+      "province": "Qinghai",
+      "lat": 36.4842,
+      "lng": 101.5633,
+      "altitude_m": 2738,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
       "id": "CN-QH-MAQINCOUNTY",
       "name": "玛沁县",
       "name_en": "Maqin County",
@@ -2016,6 +5291,18 @@
       "lng": 100.6131,
       "altitude_m": 2839,
       "tier": 3,
+      "remote": true
+    },
+    {
+      "id": "CN-QH-QIAOTOU",
+      "name": "桥头",
+      "name_en": "Qiaotou",
+      "province": "Qinghai",
+      "lat": 36.935,
+      "lng": 101.6736,
+      "altitude_m": 2487,
+      "tier": 3,
+      "county": true,
       "remote": true
     },
     {
@@ -2083,6 +5370,39 @@
       "tier": 3
     },
     {
+      "id": "CN-SN-CHENGGU",
+      "name": "Chenggu",
+      "name_en": "Chenggu",
+      "province": "Shaanxi",
+      "lat": 33.1492,
+      "lng": 107.3258,
+      "altitude_m": 485,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SN-GUOZHEN",
+      "name": "虢镇",
+      "name_en": "Guozhen",
+      "province": "Shaanxi",
+      "lat": 34.3659,
+      "lng": 107.359,
+      "altitude_m": 551,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SN-HANYINCHENGGUANZHEN",
+      "name": "汉阴县",
+      "name_en": "Hanyin Chengguanzhen",
+      "province": "Shaanxi",
+      "lat": 32.8914,
+      "lng": 108.5047,
+      "altitude_m": 361,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-SN-HANZHONG",
       "name": "汉中",
       "name_en": "Hanzhong",
@@ -2091,6 +5411,39 @@
       "lng": 107.0221,
       "altitude_m": 517,
       "tier": 3
+    },
+    {
+      "id": "CN-SN-LINTONG",
+      "name": "临潼",
+      "name_en": "Lintong",
+      "province": "Shaanxi",
+      "lat": 34.378,
+      "lng": 109.2089,
+      "altitude_m": 425,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SN-LUEEYANGCHENGGUANZHEN",
+      "name": "略阳",
+      "name_en": "Lueeyang Chengguanzhen",
+      "province": "Shaanxi",
+      "lat": 33.3321,
+      "lng": 106.155,
+      "altitude_m": 745,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SN-MIANYANG",
+      "name": "绵阳",
+      "name_en": "Mianyang",
+      "province": "Shaanxi",
+      "lat": 33.157,
+      "lng": 106.6945,
+      "altitude_m": 549,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-SN-SHANGLUO",
@@ -2111,6 +5464,17 @@
       "lng": 108.9506,
       "altitude_m": 711,
       "tier": 3
+    },
+    {
+      "id": "CN-SN-WAYAOBU",
+      "name": "Wayaobu",
+      "name_en": "Wayaobu",
+      "province": "Shaanxi",
+      "lat": 37.1361,
+      "lng": 109.6597,
+      "altitude_m": 1110,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-SN-WEINAN",
@@ -2134,6 +5498,39 @@
       "culture": 10
     },
     {
+      "id": "CN-SN-XIANYANG",
+      "name": "咸阳",
+      "name_en": "Xianyang",
+      "province": "Shaanxi",
+      "lat": 34.3378,
+      "lng": 108.7026,
+      "altitude_m": 387,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SN-XIXIANG",
+      "name": "西乡",
+      "name_en": "Xixiang",
+      "province": "Shaanxi",
+      "lat": 32.987,
+      "lng": 107.764,
+      "altitude_m": 440,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SN-XUNYANG",
+      "name": "Xunyang",
+      "name_en": "Xunyang",
+      "province": "Shaanxi",
+      "lat": 32.8239,
+      "lng": 109.3653,
+      "altitude_m": 453,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-SN-YANAN",
       "name": "延安",
       "name_en": "Yan'an",
@@ -2142,6 +5539,40 @@
       "lng": 109.4917,
       "altitude_m": 960,
       "tier": 3
+    },
+    {
+      "id": "CN-SN-YANGZHOU",
+      "name": "扬州",
+      "name_en": "Yangzhou",
+      "province": "Shaanxi",
+      "lat": 33.2219,
+      "lng": 107.5427,
+      "altitude_m": 474,
+      "tier": 3,
+      "county": true,
+      "culture": 7
+    },
+    {
+      "id": "CN-SN-YANLIANG",
+      "name": "阎良",
+      "name_en": "Yanliang",
+      "province": "Shaanxi",
+      "lat": 34.6592,
+      "lng": 109.2292,
+      "altitude_m": 395,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SN-YINTAI",
+      "name": "Yintai",
+      "name_en": "Yintai",
+      "province": "Shaanxi",
+      "lat": 35.1152,
+      "lng": 109.097,
+      "altitude_m": 856,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-SN-YULINSHI",
@@ -2164,6 +5595,28 @@
       "tier": 3
     },
     {
+      "id": "CN-SD-CHANGYI",
+      "name": "奎聚",
+      "name_en": "Changyi",
+      "province": "Shandong",
+      "lat": 36.8536,
+      "lng": 119.3908,
+      "altitude_m": 12,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SD-DENGZHOU",
+      "name": "登州",
+      "name_en": "Dengzhou",
+      "province": "Shandong",
+      "lat": 37.8082,
+      "lng": 120.7591,
+      "altitude_m": 23,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-SD-DEZHOU",
       "name": "徳州市",
       "name_en": "Dezhou",
@@ -2172,6 +5625,17 @@
       "lng": 116.3671,
       "altitude_m": 25,
       "tier": 3
+    },
+    {
+      "id": "CN-SD-DINGTAO",
+      "name": "定陶",
+      "name_en": "Dingtao",
+      "province": "Shandong",
+      "lat": 35.0744,
+      "lng": 115.5658,
+      "altitude_m": 53,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-SD-DONGYING",
@@ -2184,6 +5648,17 @@
       "tier": 3
     },
     {
+      "id": "CN-SD-GAOMI",
+      "name": "Gaomi",
+      "name_en": "Gaomi",
+      "province": "Shandong",
+      "lat": 36.3833,
+      "lng": 119.7528,
+      "altitude_m": 24,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-SD-HEZE",
       "name": "菏泽",
       "name_en": "Heze",
@@ -2194,6 +5669,30 @@
       "tier": 3
     },
     {
+      "id": "CN-SD-JIAOZHOU",
+      "name": "Jiaozhou",
+      "name_en": "Jiaozhou",
+      "province": "Shandong",
+      "lat": 36.2839,
+      "lng": 120.0033,
+      "altitude_m": 10,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-SD-JIMO",
+      "name": "即墨",
+      "name_en": "Jimo",
+      "province": "Shandong",
+      "lat": 36.3897,
+      "lng": 120.4622,
+      "altitude_m": 25,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
       "id": "CN-SD-JINAN",
       "name": "济南",
       "name_en": "Jinan",
@@ -2202,6 +5701,50 @@
       "lng": 116.9972,
       "altitude_m": 32,
       "tier": 2
+    },
+    {
+      "id": "CN-SD-JUYE",
+      "name": "巨野",
+      "name_en": "Juye",
+      "province": "Shandong",
+      "lat": 35.3874,
+      "lng": 116.0717,
+      "altitude_m": 36,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SD-LAIWU",
+      "name": "莱芜市",
+      "name_en": "Laiwu",
+      "province": "Shandong",
+      "lat": 36.1928,
+      "lng": 117.6569,
+      "altitude_m": 182,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SD-LAIXI",
+      "name": "Laixi",
+      "name_en": "Laixi",
+      "province": "Shandong",
+      "lat": 36.8592,
+      "lng": 120.5269,
+      "altitude_m": 54,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SD-LAIZHOU",
+      "name": "掖县",
+      "name_en": "Laizhou",
+      "province": "Shandong",
+      "lat": 37.1807,
+      "lng": 119.9422,
+      "altitude_m": 43,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-SD-LIAOCHENG",
@@ -2224,6 +5767,28 @@
       "tier": 3
     },
     {
+      "id": "CN-SD-NANMA",
+      "name": "南麻",
+      "name_en": "Nanma",
+      "province": "Shandong",
+      "lat": 36.1848,
+      "lng": 118.1549,
+      "altitude_m": 283,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SD-PINGDU",
+      "name": "平度",
+      "name_en": "Pingdu",
+      "province": "Shandong",
+      "lat": 36.7844,
+      "lng": 119.9464,
+      "altitude_m": 59,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-SD-QINGDAO",
       "name": "青岛",
       "name_en": "Qingdao",
@@ -2234,6 +5799,29 @@
       "tier": 2,
       "coastal": true,
       "culture": 7
+    },
+    {
+      "id": "CN-SD-QINGNIAN",
+      "name": "临青",
+      "name_en": "Qingnian",
+      "province": "Shandong",
+      "lat": 36.8409,
+      "lng": 115.7109,
+      "altitude_m": 38,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SD-QINGYANG",
+      "name": "清洋",
+      "name_en": "Qingyang",
+      "province": "Shandong",
+      "lat": 37.4958,
+      "lng": 121.2581,
+      "altitude_m": 12,
+      "tier": 3,
+      "county": true,
+      "coastal": true
     },
     {
       "id": "CN-SD-RIZHAO",
@@ -2257,6 +5845,17 @@
       "tier": 3
     },
     {
+      "id": "CN-SD-TIANFU",
+      "name": "天福",
+      "name_en": "Tianfu",
+      "province": "Shandong",
+      "lat": 37.2637,
+      "lng": 122.0523,
+      "altitude_m": 50,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-SD-WEIHAI",
       "name": "威海",
       "name_en": "Weihai",
@@ -2265,6 +5864,143 @@
       "lng": 122.1136,
       "altitude_m": 14,
       "tier": 3
+    },
+    {
+      "id": "CN-SD-YANGGU",
+      "name": "阳谷",
+      "name_en": "Yanggu",
+      "province": "Shandong",
+      "lat": 36.1106,
+      "lng": 115.7753,
+      "altitude_m": 42,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SD-YANTA",
+      "name": "雁塔",
+      "name_en": "Yanta",
+      "province": "Shandong",
+      "lat": 36.2411,
+      "lng": 115.6672,
+      "altitude_m": 41,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SD-YATOU",
+      "name": "崖头",
+      "name_en": "Yatou",
+      "province": "Shandong",
+      "lat": 37.1566,
+      "lng": 122.4376,
+      "altitude_m": 12,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SD-YINZHU",
+      "name": "隐珠",
+      "name_en": "Yinzhu",
+      "province": "Shandong",
+      "lat": 35.8786,
+      "lng": 119.9753,
+      "altitude_m": 8,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-SD-ZHAOYUAN",
+      "name": "招远市",
+      "name_en": "Zhaoyuan",
+      "province": "Shandong",
+      "lat": 37.365,
+      "lng": 120.41,
+      "altitude_m": 74,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SD-ZHUCHENGCITY",
+      "name": "Zhu Cheng City",
+      "name_en": "Zhu Cheng City",
+      "province": "Shandong",
+      "lat": 35.995,
+      "lng": 119.4026,
+      "altitude_m": 67,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SD-ZHUANGYUAN",
+      "name": "庄园",
+      "name_en": "Zhuangyuan",
+      "province": "Shandong",
+      "lat": 37.3055,
+      "lng": 120.8275,
+      "altitude_m": 135,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-SD-ZHUCHENG",
+      "name": "密州",
+      "name_en": "Zhucheng",
+      "province": "Shandong",
+      "lat": 35.9947,
+      "lng": 119.3975,
+      "altitude_m": 64,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SH-BAOSHAN",
+      "name": "宝山",
+      "name_en": "Baoshan",
+      "province": "Shanghai",
+      "lat": 31.4084,
+      "lng": 121.4896,
+      "altitude_m": 5,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-SH-CHANGNING",
+      "name": "长宁",
+      "name_en": "Changning",
+      "province": "Shanghai",
+      "lat": 31.2174,
+      "lng": 121.421,
+      "altitude_m": 12,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-SH-HONGKOU",
+      "name": "虹口",
+      "name_en": "Hongkou",
+      "province": "Shanghai",
+      "lat": 31.25,
+      "lng": 121.4892,
+      "altitude_m": -3,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-SH-QINGPU",
+      "name": "青浦",
+      "name_en": "Qingpu",
+      "province": "Shanghai",
+      "lat": 31.1539,
+      "lng": 121.1141,
+      "altitude_m": 6,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-SH-SHANGHAI",
@@ -2277,6 +6013,53 @@
       "tier": 1,
       "coastal": true,
       "culture": 8
+    },
+    {
+      "id": "CN-SH-SONGJIANG",
+      "name": "松江",
+      "name_en": "Songjiang",
+      "province": "Shanghai",
+      "lat": 31.0344,
+      "lng": 121.2233,
+      "altitude_m": 3,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-SH-XIAYANG",
+      "name": "夏阳",
+      "name_en": "Xiayang",
+      "province": "Shanghai",
+      "lat": 31.1497,
+      "lng": 121.1159,
+      "altitude_m": 6,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SH-XUHUI",
+      "name": "徐汇",
+      "name_en": "Xuhui",
+      "province": "Shanghai",
+      "lat": 31.1959,
+      "lng": 121.4471,
+      "altitude_m": 11,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-SH-YANGPU",
+      "name": "杨浦",
+      "name_en": "Yangpu",
+      "province": "Shanghai",
+      "lat": 31.2619,
+      "lng": 121.519,
+      "altitude_m": 9,
+      "tier": 3,
+      "county": true,
+      "coastal": true
     },
     {
       "id": "CN-SX-CHANGZHI",
@@ -2369,6 +6152,17 @@
       "tier": 3
     },
     {
+      "id": "CN-SC-BAIXI",
+      "name": "宜宾县",
+      "name_en": "Baixi",
+      "province": "Sichuan",
+      "lat": 28.6997,
+      "lng": 104.5492,
+      "altitude_m": 296,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-SC-BARKAM",
       "name": "马尔康市",
       "name_en": "Barkam",
@@ -2390,6 +6184,17 @@
       "tier": 3
     },
     {
+      "id": "CN-SC-CHANGNING",
+      "name": "长宁",
+      "name_en": "Changning",
+      "province": "Sichuan",
+      "lat": 28.5777,
+      "lng": 104.9209,
+      "altitude_m": 264,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-SC-CHENGDU",
       "name": "成都",
       "name_en": "Chengdu",
@@ -2399,6 +6204,17 @@
       "altitude_m": 499,
       "tier": 2,
       "culture": 9
+    },
+    {
+      "id": "CN-SC-CHONGLONG",
+      "name": "重龙",
+      "name_en": "Chonglong",
+      "province": "Sichuan",
+      "lat": 29.7806,
+      "lng": 104.8522,
+      "altitude_m": 361,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-SC-DAZHOU",
@@ -2421,6 +6237,39 @@
       "tier": 3
     },
     {
+      "id": "CN-SC-DONGHE",
+      "name": "东河",
+      "name_en": "Donghe",
+      "province": "Sichuan",
+      "lat": 32.2334,
+      "lng": 106.3013,
+      "altitude_m": 483,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SC-FUJI",
+      "name": "福集",
+      "name_en": "Fuji",
+      "province": "Sichuan",
+      "lat": 29.1482,
+      "lng": 105.3739,
+      "altitude_m": 291,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SC-GAOPING",
+      "name": "高坪",
+      "name_en": "Gaoping",
+      "province": "Sichuan",
+      "lat": 30.7758,
+      "lng": 106.1029,
+      "altitude_m": 283,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-SC-GUANGAN",
       "name": "广安市",
       "name_en": "Guang'an",
@@ -2441,6 +6290,61 @@
       "tier": 3
     },
     {
+      "id": "CN-SC-GULIN",
+      "name": "古蔺",
+      "name_en": "Gulin",
+      "province": "Sichuan",
+      "lat": 28.0422,
+      "lng": 105.8104,
+      "altitude_m": 506,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SC-GUSONG",
+      "name": "古宋",
+      "name_en": "Gusong",
+      "province": "Sichuan",
+      "lat": 28.3133,
+      "lng": 105.2377,
+      "altitude_m": 474,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SC-HEJIANG",
+      "name": "合江",
+      "name_en": "Hejiang",
+      "province": "Sichuan",
+      "lat": 28.8116,
+      "lng": 105.8336,
+      "altitude_m": 236,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SC-JIANGAN",
+      "name": "江安",
+      "name_en": "Jiang'an",
+      "province": "Sichuan",
+      "lat": 28.7334,
+      "lng": 105.0683,
+      "altitude_m": 282,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SC-JUNLIAN",
+      "name": "筠连",
+      "name_en": "Junlian",
+      "province": "Sichuan",
+      "lat": 28.1711,
+      "lng": 104.5116,
+      "altitude_m": 450,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-SC-KANGDING",
       "name": "康定市",
       "name_en": "Kangding",
@@ -2450,6 +6354,28 @@
       "altitude_m": 2826,
       "tier": 3,
       "remote": true
+    },
+    {
+      "id": "CN-SC-LANGZHONG",
+      "name": "阆中",
+      "name_en": "Langzhong",
+      "province": "Sichuan",
+      "lat": 31.5504,
+      "lng": 105.9938,
+      "altitude_m": 362,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SC-LUOJIANG",
+      "name": "罗江",
+      "name_en": "Luojiang",
+      "province": "Sichuan",
+      "lat": 31.305,
+      "lng": 104.5048,
+      "altitude_m": 509,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-SC-LUZHOU",
@@ -2472,6 +6398,17 @@
       "tier": 3
     },
     {
+      "id": "CN-SC-MIANYANG",
+      "name": "绵阳",
+      "name_en": "Mianyang",
+      "province": "Sichuan",
+      "lat": 31.4678,
+      "lng": 104.6817,
+      "altitude_m": 471,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-SC-NANCHONG",
       "name": "南充",
       "name_en": "Nanchong",
@@ -2480,6 +6417,39 @@
       "lng": 106.0847,
       "altitude_m": 287,
       "tier": 3
+    },
+    {
+      "id": "CN-SC-NANLONG",
+      "name": "南隆",
+      "name_en": "Nanlong",
+      "province": "Sichuan",
+      "lat": 31.3533,
+      "lng": 106.0631,
+      "altitude_m": 352,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SC-NANXI",
+      "name": "南溪",
+      "name_en": "Nanxi",
+      "province": "Sichuan",
+      "lat": 28.8421,
+      "lng": 104.9796,
+      "altitude_m": 274,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SC-NEIJIANG",
+      "name": "內江",
+      "name_en": "Neijiang",
+      "province": "Sichuan",
+      "lat": 29.5835,
+      "lng": 105.0622,
+      "altitude_m": 349,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-SC-PANZHIHUA",
@@ -2492,6 +6462,39 @@
       "tier": 3
     },
     {
+      "id": "CN-SC-SUINING",
+      "name": "遂宁",
+      "name_en": "Suining",
+      "province": "Sichuan",
+      "lat": 30.508,
+      "lng": 105.5733,
+      "altitude_m": 291,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SC-TIANPENG",
+      "name": "天彭",
+      "name_en": "Tianpeng",
+      "province": "Sichuan",
+      "lat": 30.9866,
+      "lng": 103.9393,
+      "altitude_m": 611,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SC-TONGCHUAN",
+      "name": "潼川",
+      "name_en": "Tongchuan",
+      "province": "Sichuan",
+      "lat": 31.0941,
+      "lng": 105.0873,
+      "altitude_m": 386,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-SC-XICHANG",
       "name": "西昌",
       "name_en": "Xichang",
@@ -2502,6 +6505,28 @@
       "tier": 3
     },
     {
+      "id": "CN-SC-XUNCHANG",
+      "name": "巡场",
+      "name_en": "Xunchang",
+      "province": "Sichuan",
+      "lat": 28.4543,
+      "lng": 104.715,
+      "altitude_m": 515,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-SC-XUYONG",
+      "name": "叙永",
+      "name_en": "Xuyong",
+      "province": "Sichuan",
+      "lat": 28.1699,
+      "lng": 105.4345,
+      "altitude_m": 367,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-SC-YAAN",
       "name": "雅安市",
       "name_en": "Ya'an",
@@ -2510,6 +6535,17 @@
       "lng": 102.999,
       "altitude_m": 591,
       "tier": 3
+    },
+    {
+      "id": "CN-SC-YIBIN",
+      "name": "叙州城",
+      "name_en": "Yibin",
+      "province": "Sichuan",
+      "lat": 28.7593,
+      "lng": 104.6399,
+      "altitude_m": 323,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-SC-ZIYANG",
@@ -2530,6 +6566,18 @@
       "lng": 117.1767,
       "altitude_m": 11,
       "tier": 2,
+      "coastal": true
+    },
+    {
+      "id": "CN-TJ-XIANSHUIGU",
+      "name": "咸水沽",
+      "name_en": "Xianshuigu",
+      "province": "Tianjin",
+      "lat": 38.985,
+      "lng": 117.3828,
+      "altitude_m": 5,
+      "tier": 3,
+      "county": true,
       "coastal": true
     },
     {
@@ -2657,6 +6705,18 @@
       "remote": true
     },
     {
+      "id": "CN-XJ-ALAER",
+      "name": "阿拉尔",
+      "name_en": "Ala'er",
+      "province": "Xinjiang",
+      "lat": 40.5418,
+      "lng": 81.2657,
+      "altitude_m": 1014,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
       "id": "CN-XJ-AQSU",
       "name": "阿克苏",
       "name_en": "Aqsu",
@@ -2690,6 +6750,18 @@
       "remote": true
     },
     {
+      "id": "CN-XJ-EMIN",
+      "name": "额敏",
+      "name_en": "Emin",
+      "province": "Xinjiang",
+      "lat": 46.5258,
+      "lng": 83.6342,
+      "altitude_m": 522,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
       "id": "CN-XJ-GHULJA",
       "name": "伊宁",
       "name_en": "Ghulja",
@@ -2698,6 +6770,42 @@
       "lng": 81.3215,
       "altitude_m": 639,
       "tier": 3,
+      "remote": true
+    },
+    {
+      "id": "CN-XJ-GUJANGBAGH",
+      "name": "古江巴格",
+      "name_en": "Gujangbagh",
+      "province": "Xinjiang",
+      "lat": 37.1093,
+      "lng": 79.9343,
+      "altitude_m": 1366,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-XJ-HUOCHENG",
+      "name": "霍城",
+      "name_en": "Huocheng",
+      "province": "Xinjiang",
+      "lat": 44.053,
+      "lng": 80.8717,
+      "altitude_m": 639,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-XJ-JINSHANLU",
+      "name": "金山路",
+      "name_en": "Jinshanlu",
+      "province": "Xinjiang",
+      "lat": 47.8505,
+      "lng": 88.1329,
+      "altitude_m": 886,
+      "tier": 3,
+      "county": true,
       "remote": true
     },
     {
@@ -2732,6 +6840,54 @@
       "lng": 86.1523,
       "altitude_m": 945,
       "tier": 3,
+      "remote": true
+    },
+    {
+      "id": "CN-XJ-QARAQASH",
+      "name": "喀拉喀什",
+      "name_en": "Qaraqash",
+      "province": "Xinjiang",
+      "lat": 37.2725,
+      "lng": 79.7344,
+      "altitude_m": 1330,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-XJ-QARASU",
+      "name": "卡拉苏",
+      "name_en": "Qarasu",
+      "province": "Xinjiang",
+      "lat": 44.2028,
+      "lng": 80.4164,
+      "altitude_m": 789,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-XJ-SANDAOHEZI",
+      "name": "三道河子",
+      "name_en": "Sandaohezi",
+      "province": "Xinjiang",
+      "lat": 44.326,
+      "lng": 85.6201,
+      "altitude_m": 528,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-XJ-SHIHEZI",
+      "name": "石河子",
+      "name_en": "Shihezi",
+      "province": "Xinjiang",
+      "lat": 44.3023,
+      "lng": 86.0369,
+      "altitude_m": 467,
+      "tier": 3,
+      "county": true,
       "remote": true
     },
     {
@@ -2779,6 +6935,77 @@
       "remote": true
     },
     {
+      "id": "CN-XJ-WENSU",
+      "name": "温宿",
+      "name_en": "Wensu",
+      "province": "Xinjiang",
+      "lat": 41.2755,
+      "lng": 80.2361,
+      "altitude_m": 1118,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-XJ-WUSU",
+      "name": "乌苏",
+      "name_en": "Wusu",
+      "province": "Xinjiang",
+      "lat": 44.431,
+      "lng": 84.6762,
+      "altitude_m": 474,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-XJ-XINCHENG",
+      "name": "库车",
+      "name_en": "Xincheng",
+      "province": "Xinjiang",
+      "lat": 41.715,
+      "lng": 82.9325,
+      "altitude_m": 1048,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-XJ-XININGLU",
+      "name": "独山子",
+      "name_en": "Xininglu",
+      "province": "Xinjiang",
+      "lat": 44.3396,
+      "lng": 84.9043,
+      "altitude_m": 692,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-XJ-XINYUAN",
+      "name": "新源",
+      "name_en": "Xinyuan",
+      "province": "Xinjiang",
+      "lat": 43.4265,
+      "lng": 83.2496,
+      "altitude_m": 953,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-YN-ANNING",
+      "name": "安宁",
+      "name_en": "Anning",
+      "province": "Yunnan",
+      "lat": 24.9227,
+      "lng": 102.485,
+      "altitude_m": 1836,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-YN-BAOSHAN",
       "name": "保山",
       "name_en": "Baoshan",
@@ -2808,6 +7035,50 @@
       "altitude_m": 1977,
       "tier": 3,
       "culture": 9
+    },
+    {
+      "id": "CN-YN-GEJIU",
+      "name": "个旧市",
+      "name_en": "Gejiu",
+      "province": "Yunnan",
+      "lat": 23.3608,
+      "lng": 103.1537,
+      "altitude_m": 1708,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-YN-JINGHONG",
+      "name": "景洪",
+      "name_en": "Jinghong",
+      "province": "Yunnan",
+      "lat": 22.0026,
+      "lng": 100.7697,
+      "altitude_m": 547,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-YN-JINNIU",
+      "name": "金牛",
+      "name_en": "Jinniu",
+      "province": "Yunnan",
+      "lat": 25.8006,
+      "lng": 100.5743,
+      "altitude_m": 1444,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-YN-KAIHUA",
+      "name": "开化",
+      "name_en": "Kaihua",
+      "province": "Yunnan",
+      "lat": 23.3695,
+      "lng": 104.2772,
+      "altitude_m": 1371,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-YN-KUNMING",
@@ -2842,6 +7113,50 @@
       "tier": 3
     },
     {
+      "id": "CN-YN-LIUKU",
+      "name": "Liuku",
+      "name_en": "Liuku",
+      "province": "Yunnan",
+      "lat": 25.8505,
+      "lng": 98.8557,
+      "altitude_m": 829,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-YN-LONGLINGCOUNTY",
+      "name": "Longling County",
+      "name_en": "Longling County",
+      "province": "Yunnan",
+      "lat": 24.5866,
+      "lng": 98.6893,
+      "altitude_m": 1572,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-YN-LONGQUAN",
+      "name": "易门",
+      "name_en": "Longquan",
+      "province": "Yunnan",
+      "lat": 24.6719,
+      "lng": 102.1613,
+      "altitude_m": 1591,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-YN-LONGSHAN",
+      "name": "龙山",
+      "name_en": "Longshan",
+      "province": "Yunnan",
+      "lat": 24.6009,
+      "lng": 98.7042,
+      "altitude_m": 1590,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-YN-LUSHUI",
       "name": "泸水市",
       "name_en": "Lushui",
@@ -2852,6 +7167,50 @@
       "tier": 3
     },
     {
+      "id": "CN-YN-MABAI",
+      "name": "马白",
+      "name_en": "Mabai",
+      "province": "Yunnan",
+      "lat": 23.0128,
+      "lng": 104.4508,
+      "altitude_m": 1501,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-YN-MENGHUAN",
+      "name": "芒市",
+      "name_en": "Menghuan",
+      "province": "Yunnan",
+      "lat": 24.4353,
+      "lng": 98.5837,
+      "altitude_m": 938,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-YN-MENGLANG",
+      "name": "勐朗",
+      "name_en": "Menglang",
+      "province": "Yunnan",
+      "lat": 22.5621,
+      "lng": 99.9103,
+      "altitude_m": 1082,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-YN-MENGMAO",
+      "name": "勐卯",
+      "name_en": "Mengmao",
+      "province": "Yunnan",
+      "lat": 24.0014,
+      "lng": 97.865,
+      "altitude_m": 754,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-YN-MENGZI",
       "name": "蒙自市",
       "name_en": "Mengzi",
@@ -2860,6 +7219,50 @@
       "lng": 103.3821,
       "altitude_m": 1306,
       "tier": 3
+    },
+    {
+      "id": "CN-YN-MICHENG",
+      "name": "弥城",
+      "name_en": "Micheng",
+      "province": "Yunnan",
+      "lat": 25.3429,
+      "lng": 100.4873,
+      "altitude_m": 1671,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-YN-MIYANG",
+      "name": "弥勒",
+      "name_en": "Miyang",
+      "province": "Yunnan",
+      "lat": 24.4042,
+      "lng": 103.4428,
+      "altitude_m": 1433,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-YN-NINGER",
+      "name": "宁洱",
+      "name_en": "Ning'er",
+      "province": "Yunnan",
+      "lat": 23.0405,
+      "lng": 101.0368,
+      "altitude_m": 1380,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-YN-PUER",
+      "name": "思茅",
+      "name_en": "Pu'er",
+      "province": "Yunnan",
+      "lat": 22.7886,
+      "lng": 100.9748,
+      "altitude_m": 1331,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-YN-SHANGRILA",
@@ -2873,6 +7276,28 @@
       "remote": true
     },
     {
+      "id": "CN-YN-SHUIFU",
+      "name": "向家坝",
+      "name_en": "Shuifu",
+      "province": "Yunnan",
+      "lat": 28.6321,
+      "lng": 104.4078,
+      "altitude_m": 276,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-YN-TENGYUE",
+      "name": "腾越",
+      "name_en": "Tengyue",
+      "province": "Yunnan",
+      "lat": 24.9949,
+      "lng": 98.5128,
+      "altitude_m": 1639,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-YN-WENSHANCITY",
       "name": "文山",
       "name_en": "Wenshan City",
@@ -2881,6 +7306,129 @@
       "lng": 104.2505,
       "altitude_m": 1257,
       "tier": 3
+    },
+    {
+      "id": "CN-YN-XIANGCHENG",
+      "name": "祥城",
+      "name_en": "Xiangcheng",
+      "province": "Yunnan",
+      "lat": 25.4669,
+      "lng": 100.5625,
+      "altitude_m": 1986,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-YN-YINGJIANG",
+      "name": "平原",
+      "name_en": "Yingjiang",
+      "province": "Yunnan",
+      "lat": 24.7102,
+      "lng": 97.9367,
+      "altitude_m": 826,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-YN-YONGBEI",
+      "name": "永北",
+      "name_en": "Yongbei",
+      "province": "Yunnan",
+      "lat": 26.6462,
+      "lng": 100.7807,
+      "altitude_m": 2537,
+      "tier": 3,
+      "county": true,
+      "remote": true
+    },
+    {
+      "id": "CN-YN-YUXI",
+      "name": "玉渓市",
+      "name_en": "Yuxi",
+      "province": "Yunnan",
+      "lat": 24.355,
+      "lng": 102.5422,
+      "altitude_m": 1638,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-YN-ZHONGSHU",
+      "name": "中枢",
+      "name_en": "Zhongshu",
+      "province": "Yunnan",
+      "lat": 24.5167,
+      "lng": 103.7667,
+      "altitude_m": 1701,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-ZJ-CIXI",
+      "name": "慈溪",
+      "name_en": "Cixi",
+      "province": "Zhejiang",
+      "lat": 30.1764,
+      "lng": 121.2457,
+      "altitude_m": 11,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-ZJ-DEQING",
+      "name": "德清",
+      "name_en": "Deqing",
+      "province": "Zhejiang",
+      "lat": 30.5449,
+      "lng": 119.9599,
+      "altitude_m": 9,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-ZJ-DONGYANG",
+      "name": "东阳",
+      "name_en": "Dongyang",
+      "province": "Zhejiang",
+      "lat": 29.2678,
+      "lng": 120.2253,
+      "altitude_m": 97,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-ZJ-FENGHUA",
+      "name": "奉化",
+      "name_en": "Fenghua",
+      "province": "Zhejiang",
+      "lat": 29.6563,
+      "lng": 121.4064,
+      "altitude_m": 17,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-ZJ-FUYANG",
+      "name": "富阳",
+      "name_en": "Fuyang",
+      "province": "Zhejiang",
+      "lat": 30.0533,
+      "lng": 119.9519,
+      "altitude_m": 22,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-ZJ-HAINING",
+      "name": "硖石",
+      "name_en": "Haining",
+      "province": "Zhejiang",
+      "lat": 30.5363,
+      "lng": 120.6864,
+      "altitude_m": 7,
+      "tier": 3,
+      "county": true
     },
     {
       "id": "CN-ZJ-HANGZHOU",
@@ -2924,6 +7472,17 @@
       "tier": 3
     },
     {
+      "id": "CN-ZJ-LINPING",
+      "name": "临平",
+      "name_en": "Linping",
+      "province": "Zhejiang",
+      "lat": 30.4225,
+      "lng": 120.2972,
+      "altitude_m": 15,
+      "tier": 3,
+      "county": true
+    },
+    {
       "id": "CN-ZJ-LISHUI",
       "name": "丽水",
       "name_en": "Lishui",
@@ -2945,6 +7504,40 @@
       "coastal": true
     },
     {
+      "id": "CN-ZJ-NINGHAI",
+      "name": "宁海",
+      "name_en": "Ninghai",
+      "province": "Zhejiang",
+      "lat": 29.2892,
+      "lng": 121.4247,
+      "altitude_m": 38,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-ZJ-PUYANG",
+      "name": "浦阳",
+      "name_en": "Puyang",
+      "province": "Zhejiang",
+      "lat": 29.4568,
+      "lng": 119.8887,
+      "altitude_m": 76,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-ZJ-SHAOXING",
+      "name": "绍兴",
+      "name_en": "Shaoxing",
+      "province": "Zhejiang",
+      "lat": 30.0024,
+      "lng": 120.5786,
+      "altitude_m": 21,
+      "tier": 3,
+      "county": true,
+      "culture": 7
+    },
+    {
       "id": "CN-ZJ-TAIZHOU",
       "name": "台州",
       "name_en": "Taizhou",
@@ -2954,6 +7547,86 @@
       "altitude_m": 15,
       "tier": 3,
       "coastal": true
+    },
+    {
+      "id": "CN-ZJ-WENZHOU",
+      "name": "温州",
+      "name_en": "Wenzhou",
+      "province": "Zhejiang",
+      "lat": 27.9994,
+      "lng": 120.6668,
+      "altitude_m": 10,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-ZJ-XIAOSHAN",
+      "name": "萧山",
+      "name_en": "Xiaoshan",
+      "province": "Zhejiang",
+      "lat": 30.1675,
+      "lng": 120.2588,
+      "altitude_m": 14,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-ZJ-YIWU",
+      "name": "义乌",
+      "name_en": "Yiwu",
+      "province": "Zhejiang",
+      "lat": 29.3151,
+      "lng": 120.0768,
+      "altitude_m": 84,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-ZJ-YUYAO",
+      "name": "余姚",
+      "name_en": "Yuyao",
+      "province": "Zhejiang",
+      "lat": 30.05,
+      "lng": 121.1494,
+      "altitude_m": 59,
+      "tier": 3,
+      "county": true
+    },
+    {
+      "id": "CN-ZJ-ZHAOBAOSHAN",
+      "name": "招宝山",
+      "name_en": "Zhaobaoshan",
+      "province": "Zhejiang",
+      "lat": 29.9695,
+      "lng": 121.6875,
+      "altitude_m": 3,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-ZJ-ZHOUSHAN",
+      "name": "定海",
+      "name_en": "Zhoushan",
+      "province": "Zhejiang",
+      "lat": 29.9887,
+      "lng": 122.2049,
+      "altitude_m": 2,
+      "tier": 3,
+      "county": true,
+      "coastal": true
+    },
+    {
+      "id": "CN-ZJ-ZHUJI",
+      "name": "诸暨",
+      "name_en": "Zhuji",
+      "province": "Zhejiang",
+      "lat": 29.7188,
+      "lng": 120.2423,
+      "altitude_m": 23,
+      "tier": 3,
+      "county": true
     }
   ]
 }

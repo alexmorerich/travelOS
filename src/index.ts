@@ -145,6 +145,16 @@ function main(): void {
     console.log(`  calendar ${sched.calendar_year}:  Jan → ${jan.name_en} ${jan.temp_c}°C   ·   Jul → ${jul.name_en} ${jul.temp_c}°C`);
     console.log(`  quarters: ${sched.quarters.map((q) => `Q${q.quarter} ${q.name_en}`).join("  ")}`);
   }
+
+  console.log("\n  ── 30-year lifecycle matrix ────────────────");
+  for (const b of ["Expedition", "Cultural deep-dive", "Climate & comfort"]) {
+    const bp = plans.filter((p) => p.band === b);
+    if (!bp.length) continue;
+    const ages = `${bp[0].age}-${bp[bp.length - 1].age}`;
+    const fshare = ((bp.reduce((s, p) => s + p.frontier_share, 0) / bp.length) * 100).toFixed(0);
+    const provs = [...new Set(bp.flatMap((p) => p.provinces_visited))].slice(0, 5).join(", ");
+    console.log(`  ${b.padEnd(20)} age ${ages.padEnd(6)} frontier ${fshare.padStart(3)}%  ${provs}`);
+  }
   console.log("  ────────────────────────────────────────────");
   console.log(`\n  outputs/  → 9 JSON files, schedule.ics, dashboard.html, timeline.html, obsidian/ (${noteCount} notes)`);
   console.log("  open outputs/timeline.html  → interactive map: scrub the route, see city + cost over 30 years");

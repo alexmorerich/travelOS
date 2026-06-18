@@ -21,6 +21,7 @@ interface Anchor {
   tier: 1 | 2 | 3;
   coastal?: boolean;
   remote?: boolean;
+  county?: boolean;
   med_access?: "none";
   culture?: number;
 }
@@ -75,19 +76,22 @@ function tempRange(a: Anchor, zone: ClimateZone): number {
 
 function hospitalMinutes(a: Anchor): number | null {
   if (a.med_access === "none") return null; // no tier-3A within range
-  let m = TIER_HOSPITAL_MIN[a.tier];
-  if (a.remote) m += 35;
-  if (a.altitude_m > 2500) m += 20;
-  return Math.min(m, 115); // prefecture seats stay just inside the 2h ceiling
+  // County seats lean on the prefecture city's tier-3A hospital, so access is
+  // worse; remote high-altitude county seats can exceed the 2h ceiling (BLOCKED).
+  let m = a.county ? 50 : TIER_HOSPITAL_MIN[a.tier];
+  if (a.remote) m += a.county ? 50 : 35;
+  if (a.altitude_m > 2500) m += 30;
+  return Math.min(m, a.county ? 170 : 115);
 }
 
 function monthlyCost(a: Anchor, zone: ClimateZone): number {
   let c = TIER_COST_USD[a.tier];
+  if (a.county) c -= 200; // smaller rural towns are cheaper to live in
   if (a.coastal) c += 150;
   if (zone === "tropical") c += 200; // Hainan resort premium
   if (a.remote) c -= 150;
   if (a.province === "Tibet" || a.province === "Xinjiang") c += 100; // logistics
-  return Math.round(c / 50) * 50;
+  return Math.max(700, Math.round(c / 50) * 50);
 }
 
 function enrichOne(a: Anchor) {
@@ -100,6 +104,7 @@ function enrichOne(a: Anchor) {
     humidity_index: ZONE_HUMIDITY[zone],
     monthly_cost_usd: monthlyCost(a, zone),
     cultural_value: a.culture ?? TIER_CULTURE[a.tier],
+    county: a.county ?? false,
     source: { geo: "real_approx", estimates: "rule_based:enrich_estimates.ts", climate_zone: zone },
   };
 }

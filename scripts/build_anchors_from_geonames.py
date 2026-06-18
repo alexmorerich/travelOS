@@ -130,7 +130,7 @@ def main():
     seen, bykey = {}, {}
     for line in raw.splitlines():
         c = line.split("\t")
-        if len(c) < 18 or c[6] != "P" or c[7] not in ("PPLA", "PPLA2", "PPLC"):
+        if len(c) < 18 or c[6] != "P" or c[7] not in ("PPLA", "PPLA2", "PPLA3", "PPLC"):
             continue
         name_en = c[2].strip()
         if not name_en:
@@ -157,13 +157,24 @@ def main():
 
         a = {"id": f"CN-{abbr(province)}-{n.upper()}",
              "name": zh, "name_en": name_en, "province": province,
-             "lat": lat, "lng": lng, "altitude_m": altitude, "tier": tier}
+             "lat": lat, "lng": lng, "altitude_m": altitude, "tier": tier,
+             "_pop": pop, "_fc": c[7]}
+        if c[7] == "PPLA3": a["county"] = True
         if coastal: a["coastal"] = True
         if remote: a["remote"] = True
         if n in CULTURE: a["culture"] = CULTURE[n]
         bykey[key] = a
 
-    anchors = list(bykey.values())
+    # Select ~700: keep all capitals/prefecture seats, then the most populous
+    # county seats (PPLA3) to fill out the target.
+    TARGET = 700
+    allnodes = list(bykey.values())
+    prefecture = [a for a in allnodes if a["_fc"] in ("PPLC", "PPLA", "PPLA2")]
+    counties = sorted((a for a in allnodes if a["_fc"] == "PPLA3"), key=lambda a: -a["_pop"])
+    anchors = prefecture + counties[: max(0, TARGET - len(prefecture))]
+    for a in anchors:
+        a.pop("_pop", None)
+        a.pop("_fc", None)
 
     # ensure unique ids
     counts = {}
@@ -194,7 +205,8 @@ def main():
     print(f"wrote {len(anchors)} anchors across {prov} provinces -> data/city_anchors.json")
     print("  tiers:", {t: sum(1 for a in anchors if a['tier'] == t) for t in (1, 2, 3)})
     print("  coastal:", sum(1 for a in anchors if a.get('coastal')),
-          "remote:", sum(1 for a in anchors if a.get('remote')))
+          "remote:", sum(1 for a in anchors if a.get('remote')),
+          "county-seats:", sum(1 for a in anchors if a.get('county')))
 
 
 if __name__ == "__main__":

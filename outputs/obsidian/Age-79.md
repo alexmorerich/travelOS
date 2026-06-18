@@ -2,16 +2,16 @@
 age: 79
 calendar_year: 2055
 r_age: 0.35
-annual_cost_usd: 38371
-cities: ["Beijing"]
-provinces: ["Beijing"]
-lead_trei: 0.56
+annual_cost_usd: 21583
+cities: ["Hangzhou"]
+provinces: ["Zhejiang"]
+lead_trei: 1.13
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 79
 
-> Physiology factor **R_age = 0.35** · TREI cutoff 1.91 · annual cost **$38,371**
+> Physiology factor **R_age = 0.35** · TREI cutoff 3.41 · annual cost **$21,583**
 
 [[Age-78|← Age 78]] · [[Age-80|Age 80 →]]
 
@@ -19,26 +19,26 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Beijing (北京) | Beijing | 365 | 3200 | 2.28 | 0.87 | 0.56 | ALLOWED |
+| Hangzhou (杭州) | Zhejiang | 365 | 1800 | 2.97 | 1.33 | 1.13 | ALLOWED |
 
 
 ## Monthly schedule — calendar 2055
 
-> Q1 Beijing (-0.2°C) · Q2 Beijing (19.6°C) · Q3 Beijing (24.9°C) · Q4 Beijing (5.1°C)
+> Q1 Hangzhou (10.2°C) · Q2 Hangzhou (24.6°C) · Q3 Hangzhou (28.4°C) · Q4 Hangzhou (14.1°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Beijing (北京) | -3.5 | 13 |
-| Feb | Beijing (北京) | -1.4 | 11.5 |
-| Mar | Beijing (北京) | 4.4 | 7.4 |
-| Apr | Beijing (北京) | 12.3 | 1.9 |
-| May | Beijing (北京) | 20.3 | 0 |
-| Jun | Beijing (北京) | 26.1 | 0 |
-| Jul | Beijing (北京) | 28.2 | 1.3 |
-| Aug | Beijing (北京) | 26.1 | 0 |
-| Sep | Beijing (北京) | 20.3 | 0 |
-| Oct | Beijing (北京) | 12.3 | 1.9 |
-| Nov | Beijing (北京) | 4.4 | 7.4 |
-| Dec | Beijing (北京) | -1.4 | 11.5 |
+| Jan | Hangzhou (杭州) | 7.8 | 5.1 |
+| Feb | Hangzhou (杭州) | 9.3 | 4 |
+| Mar | Hangzhou (杭州) | 13.6 | 1 |
+| Apr | Hangzhou (杭州) | 19.3 | 0 |
+| May | Hangzhou (杭州) | 25.1 | 0 |
+| Jun | Hangzhou (杭州) | 29.3 | 2 |
+| Jul | Hangzhou (杭州) | 30.8 | 2.9 |
+| Aug | Hangzhou (杭州) | 29.3 | 2 |
+| Sep | Hangzhou (杭州) | 25.1 | 0 |
+| Oct | Hangzhou (杭州) | 19.3 | 0 |
+| Nov | Hangzhou (杭州) | 13.6 | 1 |
+| Dec | Hangzhou (杭州) | 9.3 | 4 |
 
-Starts from `CN-SN-XIAN`. See [[Travel-OS-Overview]].
+Starts from `CN-GD-GUANGZHOU`. See [[Travel-OS-Overview]].

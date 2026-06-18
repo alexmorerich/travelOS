@@ -11,7 +11,7 @@ tags: [travel-os, yearly-plan]
 
 # Age 70
 
-> Physiology factor **R_age = 0.35** · TREI cutoff 3.12 · annual cost **$21,583**
+> Physiology factor **R_age = 0.35** · TREI cutoff 3.41 · annual cost **$21,583**
 
 [[Age-69|← Age 69]] · [[Age-71|Age 71 →]]
 
@@ -41,4 +41,4 @@ tags: [travel-os, yearly-plan]
 | Nov | Xi'an (西安) | 7.3 | 5.4 |
 | Dec | Xi'an (西安) | 2.4 | 8.8 |
 
-Starts from `CN-YN-KUNMING`. See [[Travel-OS-Overview]].
+Starts from `CN-HA-ZHENGZHOU`. See [[Travel-OS-Overview]].

@@ -6,7 +6,7 @@
 // the finance model); the scheduler only decides WHICH months each city gets,
 // minimizing seasonal discomfort. The result is a natural snowbird pattern:
 // warm-south months land in winter, cool-north/plateau months in summer.
-import { systemConfig } from "../config";
+import { systemConfig, ageBands } from "../config";
 import { monthlyTemp, monthlyDiscomfort } from "../core_engine/climate_engine";
 import type { ProcessedCity, YearPlan, ScheduleYear, ScheduleMonth, ScheduleBlock, ScheduleQuarter } from "../types";
 
@@ -116,11 +116,14 @@ function toQuarters(months: ScheduleMonth[]): ScheduleQuarter[] {
     for (const m of slice) counts.set(m.city_id, (counts.get(m.city_id) ?? 0) + 1);
     const dominant = [...counts.entries()].sort((a, b) => b[1] - a[1])[0][0];
     const pick = slice.find((m) => m.city_id === dominant)!;
+    const avg = Math.round((slice.reduce((s, m) => s + m.temp_c, 0) / slice.length) * 10) / 10;
+    const [lo, hi] = ageBands.comfort_celsius;
     out.push({
       quarter: q,
       city_id: dominant,
       name_en: pick.name_en,
-      avg_temp_c: Math.round((slice.reduce((s, m) => s + m.temp_c, 0) / slice.length) * 10) / 10,
+      avg_temp_c: avg,
+      comfort_ok: avg >= lo && avg <= hi,
     });
   }
   return out;

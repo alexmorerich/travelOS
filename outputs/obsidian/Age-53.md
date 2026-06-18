@@ -2,16 +2,16 @@
 age: 53
 calendar_year: 2029
 r_age: 0.815
-annual_cost_usd: 22199
-cities: ["Suzhou", "Qingdao", "Wuhan"]
-provinces: ["Jiangsu", "Shandong", "Hubei"]
-lead_trei: 0.49
+annual_cost_usd: 15588
+cities: ["Hegang", "Heihe", "Jiamusi"]
+provinces: ["Heilongjiang"]
+lead_trei: 0.82
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 53
 
-> Physiology factor **R_age = 0.815** · TREI cutoff 1.34 · annual cost **$22,199**
+> Physiology factor **R_age = 0.815** · TREI cutoff 1.47 · annual cost **$15,588**
 
 [[Age-52|← Age 52]] · [[Age-54|Age 54 →]]
 
@@ -19,28 +19,28 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Suzhou (苏州) | Jiangsu | 133 | 1800 | 2.97 | 1.33 | 0.49 | ALLOWED |
-| Qingdao (青岛) | Shandong | 125 | 1950 | 2.31 | 1.33 | 0.38 | ALLOWED |
-| Wuhan (武汉) | Hubei | 107 | 1800 | 2.97 | 1.33 | 0.49 | ALLOWED |
+| Hegang (鶴崗) | Heilongjiang | 125 | 1300 | 3.58 | 1.87 | 0.82 | ALLOWED |
+| Heihe (黑河) | Heilongjiang | 120 | 1300 | 3.58 | 1.87 | 0.82 | ALLOWED |
+| Jiamusi (佳木斯) | Heilongjiang | 120 | 1300 | 3.58 | 1.87 | 0.82 | ALLOWED |
 
 
 ## Monthly schedule — calendar 2029
 
-> Q1 Wuhan (9.9°C) · Q2 Suzhou (23.6°C) · Q3 Qingdao (27.2°C) · Q4 Qingdao (12.3°C)
+> Q1 Jiamusi (-7.5°C) · Q2 Hegang (14.8°C) · Q3 Heihe (20.7°C) · Q4 Hegang (-2.1°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Wuhan (武汉) | 7.4 | 5.3 |
-| Feb | Wuhan (武汉) | 9 | 4.2 |
-| Mar | Wuhan (武汉) | 13.2 | 1.2 |
-| Apr | Suzhou (苏州) | 18.6 | 0 |
-| May | Suzhou (苏州) | 24.6 | 0 |
-| Jun | Qingdao (青岛) | 27.5 | 0.9 |
-| Jul | Qingdao (青岛) | 29.4 | 2 |
-| Aug | Qingdao (青岛) | 27.5 | 0.9 |
-| Sep | Suzhou (苏州) | 24.6 | 0 |
-| Oct | Qingdao (青岛) | 15.3 | 0 |
-| Nov | Suzhou (苏州) | 12.6 | 1.7 |
-| Dec | Wuhan (武汉) | 9 | 4.2 |
+| Jan | Jiamusi (佳木斯) | -11.5 | 18.6 |
+| Feb | Jiamusi (佳木斯) | -9 | 16.8 |
+| Mar | Jiamusi (佳木斯) | -2.1 | 11.9 |
+| Apr | Hegang (鶴崗) | 6.2 | 6.1 |
+| May | Hegang (鶴崗) | 15.8 | 0 |
+| Jun | Heihe (黑河) | 22.3 | 0 |
+| Jul | Heihe (黑河) | 25 | 0 |
+| Aug | Heihe (黑河) | 22.3 | 0 |
+| Sep | Heihe (黑河) | 14.8 | 0.2 |
+| Oct | Hegang (鶴崗) | 6.2 | 6.1 |
+| Nov | Hegang (鶴崗) | -3.4 | 12.9 |
+| Dec | Jiamusi (佳木斯) | -9 | 16.8 |
 
-Starts from `CN-JS-NANJING`. See [[Travel-OS-Overview]].
+Starts from `CN-SD-QINGDAO`. See [[Travel-OS-Overview]].

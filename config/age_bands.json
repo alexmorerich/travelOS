@@ -1,0 +1,40 @@
+{
+  "_comment": "The 30-Year Optimization Matrix. Routing shifts 'entropy' from frontier expeditions (early) to climate-stable, hospital-rich coasts (late). target_provinces get a utility bonus during the band; comfort_bonus (18-25°C fit) and hospital_bonus rise with age — the Frontier→Infrastructure shift. frontier_share_target is reported, not hard-enforced.",
+  "comfort_celsius": [18, 25],
+  "frontier_provinces": ["Xinjiang", "Tibet", "Inner Mongolia", "Heilongjiang", "Qinghai", "Gansu", "Ningxia"],
+  "bands": [
+    {
+      "key": "expedition",
+      "label": "Expedition",
+      "age_from": 50,
+      "age_to": 60,
+      "target_provinces": ["Xinjiang", "Tibet", "Inner Mongolia", "Heilongjiang"],
+      "zone_bonus": 3.0,
+      "comfort_bonus": 0.0,
+      "hospital_bonus": 0.0,
+      "frontier_share_target": 0.6
+    },
+    {
+      "key": "cultural",
+      "label": "Cultural deep-dive",
+      "age_from": 61,
+      "age_to": 70,
+      "target_provinces": ["Yunnan", "Guizhou", "Shaanxi", "Sichuan", "Henan", "Shanxi"],
+      "zone_bonus": 2.5,
+      "comfort_bonus": 1.0,
+      "hospital_bonus": 1.5,
+      "frontier_share_target": 0.3
+    },
+    {
+      "key": "comfort",
+      "label": "Climate & comfort",
+      "age_from": 71,
+      "age_to": 80,
+      "target_provinces": ["Fujian", "Guangdong", "Hainan", "Guangxi", "Zhejiang"],
+      "zone_bonus": 2.5,
+      "comfort_bonus": 3.5,
+      "hospital_bonus": 3.5,
+      "frontier_share_target": 0.0
+    }
+  ]
+}

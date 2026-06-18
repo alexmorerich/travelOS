@@ -4,6 +4,7 @@
 // map shows your route "footprint" growing across China, and the side panel
 // shows exactly where you are, the monthly cost, total spent so far, and the
 // median portfolio remaining. Data is inlined so it opens straight from disk.
+import { bandForAge } from "../core_engine/routing_engine";
 import type { ScheduleYear, ProcessedCity, FinanceResult } from "../types";
 
 export interface TimelineInput {
@@ -16,7 +17,7 @@ export interface TimelineInput {
 interface MonthPoint {
   y: number; m: number; age: number;
   city: string; zh: string; prov: string;
-  lng: number; lat: number; cost: number; temp: number;
+  lng: number; lat: number; cost: number; temp: number; band: string;
 }
 
 export function renderTimeline(input: TimelineInput): string {
@@ -31,6 +32,7 @@ export function renderTimeline(input: TimelineInput): string {
         lat: c ? Number(c.lat.toFixed(2)) : 0,
         cost: c?.monthly_cost_usd ?? 0,
         temp: mm.temp_c,
+        band: bandForAge(yr.age).label,
       };
     }),
   );
@@ -62,6 +64,7 @@ export function renderTimeline(input: TimelineInput): string {
   .mapwrap { flex:1 1 560px; background:#111a2b; border:1px solid #1e2a40; border-radius:14px; padding:8px; }
   svg#map { width:100%; height:auto; display:block; }
   .panel { flex:1 1 280px; background:#111a2b; border:1px solid #1e2a40; border-radius:14px; padding:20px 22px; min-width:260px; }
+  .phase { display:inline-block; font-size:11px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; padding:3px 10px; border-radius:999px; background:#1e2a40; color:#9fd0ff; margin-bottom:9px; }
   .date { color:#7c8aa5; font-size:13px; letter-spacing:.03em; }
   .city { font-size:30px; font-weight:680; margin:4px 0 2px; }
   .meta { color:#9fb0cc; margin-bottom:18px; }
@@ -92,6 +95,7 @@ export function renderTimeline(input: TimelineInput): string {
       </svg>
     </div>
     <div class="panel">
+      <div class="phase" id="phase"></div>
       <div class="date" id="date"></div>
       <div class="city" id="city"></div>
       <div class="meta" id="meta"></div>
@@ -154,6 +158,7 @@ function render(i){
   document.getElementById("halo").setAttribute("cx",cx);
   document.getElementById("halo").setAttribute("cy",cy);
 
+  document.getElementById("phase").textContent = m.band;
   document.getElementById("date").textContent = MON[m.m-1]+" "+m.y+"  ·  age "+m.age;
   document.getElementById("city").textContent = m.zh+" · "+m.city;
   document.getElementById("meta").textContent = m.prov+"  ·  "+m.temp+"°C";

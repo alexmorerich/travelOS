@@ -9,12 +9,30 @@
 //   * Breaks near-ties (within a 5% band) with the seeded RNG.
 //   * Number of cities per year shrinks with age via R_age, so the itinerary
 //     naturally collapses toward single-city stabilisation in late life.
-import { systemConfig, thresholds } from "../config";
+import { systemConfig, thresholds, ageBands } from "../config";
 import { clamp, percentile } from "../lib/geo";
 import { rAge, trei, medicalRisk } from "./trei_engine";
+import { annualMeanTemp } from "./climate_engine";
 import { isHardBlocked, decide } from "./constraint_engine";
-import type { ProcessedCity, Graph, YearPlan, YearPlanCity, Decision, RoutingWeights } from "../types";
+import type { ProcessedCity, Graph, YearPlan, YearPlanCity, Decision, RoutingWeights, AgeBand } from "../types";
 import type { Rng } from "../lib/rng";
+
+/** The lifecycle band (Expedition / Cultural / Comfort) covering a given age. */
+export function bandForAge(age: number): AgeBand {
+  return (
+    ageBands.bands.find((b) => age >= b.age_from && age <= b.age_to) ??
+    ageBands.bands[ageBands.bands.length - 1]
+  );
+}
+
+/** How well a city's annual climate sits inside the comfort band (1 = ideal). */
+function comfortFit(city: ProcessedCity): number {
+  const [lo, hi] = ageBands.comfort_celsius;
+  const t = annualMeanTemp(city.lat, city.altitude_m ?? 0);
+  if (t >= lo && t <= hi) return 1;
+  const dist = t < lo ? lo - t : t - hi;
+  return clamp(1 - dist / 10, 0, 1);
+}
 
 export interface YearContext {
   nodes: ProcessedCity[];
@@ -40,16 +58,26 @@ function utilityOf(
   treiValue: number,
   travelKm: number,
   w: RoutingWeights,
+  band: AgeBand,
+  medRisk: number,
 ): number {
   const cultureTerm = w.culture_pursuit * (city.cultural_value / (treiValue + w.utility_eps));
   const costTerm = w.cost_weight * ((city.monthly_cost_usd ?? 2000) / 1000);
   const travelTerm = w.travel_weight * (travelKm / 1000);
-  return cultureTerm - costTerm - travelTerm;
+
+  // 30-year lifecycle matrix: favour this band's target zones, and increasingly
+  // weight climate comfort + hospital access as the bands progress with age.
+  const zoneTerm = band.target_provinces.includes(city.province) ? band.zone_bonus : 0;
+  const comfortTerm = band.comfort_bonus * comfortFit(city);
+  const hospitalTerm = band.hospital_bonus * clamp(1 - medRisk / 10, 0, 1);
+
+  return cultureTerm - costTerm - travelTerm + zoneTerm + comfortTerm + hospitalTerm;
 }
 
 export function planYear(ctx: YearContext): YearPlan {
   const { nodes, graph, age, startCity, visitedRecent, rng, seed, weights } = ctx;
   const R = rAge(age);
+  const band = bandForAge(age);
 
   // Per-age risk for every node, plus the feasible-set TREI distribution.
   const byId = new Map<string, { city: ProcessedCity; med: number; treiVal: number; blocked: boolean }>();
@@ -69,7 +97,31 @@ export function planYear(ctx: YearContext): YearPlan {
   const usedThisYear = new Set<string>();
   let current = startCity;
 
-  for (let hop = 0; hop < nCities; hop++) {
+  // Regional anchor: each year, migrate (one long-haul move) into the best
+  // feasible city of this band's target zone, then explore locally from there.
+  // This is what lets the Expedition band actually reach the far frontier that
+  // a radius-limited walk from the south could never hop to.
+  if (band.target_provinces.length > 0) {
+    let bestRec: { city: ProcessedCity; med: number; treiVal: number } | null = null;
+    let bestU = -Infinity;
+    for (const city of nodes) {
+      if (!band.target_provinces.includes(city.province) || visitedRecent.has(city.id)) continue;
+      const rec = byId.get(city.id);
+      if (!rec || rec.blocked) continue;
+      const u = utilityOf(rec.city, rec.treiVal, 0, weights, band, rec.med); // no travel cost: it's a flight
+      if (u > bestU) { bestU = u; bestRec = rec; }
+    }
+    if (bestRec) {
+      chosen.push({
+        city: bestRec.city, medical_risk: bestRec.med, TREI: bestRec.treiVal,
+        utility: bestU, decision: decide(false, bestRec.treiVal, cutoff),
+      });
+      usedThisYear.add(bestRec.city.id);
+      current = bestRec.city.id;
+    }
+  }
+
+  for (let hop = chosen.length; hop < nCities; hop++) {
     const neighbours = graph.adj.get(current);
     if (!neighbours || neighbours.size === 0) break;
 
@@ -78,7 +130,7 @@ export function planYear(ctx: YearContext): YearPlan {
       if (usedThisYear.has(id) || visitedRecent.has(id)) continue;
       const rec = byId.get(id);
       if (!rec || rec.blocked) continue;
-      const u = utilityOf(rec.city, rec.treiVal, edge.distance_km, weights);
+      const u = utilityOf(rec.city, rec.treiVal, edge.distance_km, weights, band, rec.med);
       candidates.push({
         scored: {
           city: rec.city,
@@ -94,9 +146,9 @@ export function planYear(ctx: YearContext): YearPlan {
 
     candidates.sort((a, b) => b.scored.utility - a.scored.utility);
     const best = candidates[0].scored.utility;
-    const band = weights.tie_break_band;
+    const tieBand = weights.tie_break_band;
     const tied = candidates.filter(
-      (c) => best - c.scored.utility <= Math.abs(best) * band,
+      (c) => best - c.scored.utility <= Math.abs(best) * tieBand,
     );
     const pick = tied[Math.floor(rng.uniform() * tied.length)] ?? candidates[0];
 
@@ -119,10 +171,10 @@ export function planYear(ctx: YearContext): YearPlan {
     }
   }
 
-  return assemblePlan(ctx, R, cutoff, chosen);
+  return assemblePlan(ctx, R, band, cutoff, chosen);
 }
 
-function assemblePlan(ctx: YearContext, R: number, cutoff: number, chosen: Scored[]): YearPlan {
+function assemblePlan(ctx: YearContext, R: number, band: AgeBand, cutoff: number, chosen: Scored[]): YearPlan {
   const days = distributeDays(chosen, systemConfig.days_per_year);
   const cities: YearPlanCity[] = chosen.map((s, i) => ({
     id: s.city.id,
@@ -143,16 +195,22 @@ function assemblePlan(ctx: YearContext, R: number, cutoff: number, chosen: Score
     0,
   );
 
+  const frontierSet = new Set(ageBands.frontier_provinces);
+  const totalDays = days.reduce((a, b) => a + b, 0) || 1;
+  const frontierDays = cities.filter((c) => frontierSet.has(c.province)).reduce((s, c) => s + c.days, 0);
+
   return {
     age: ctx.age,
     seed: ctx.seed,
     R_age: Number(R.toFixed(3)),
+    band: band.label,
     trei_cutoff: Number.isFinite(cutoff) ? Number(cutoff.toFixed(2)) : -1,
     start_city: ctx.startCity,
     cities,
     annual_cost_usd: Math.round(annualCost),
     total_days: days.reduce((a, b) => a + b, 0),
     provinces_visited: [...new Set(cities.map((c) => c.province))],
+    frontier_share: Number((frontierDays / totalDays).toFixed(2)),
   };
 }
 

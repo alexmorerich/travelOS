@@ -2,16 +2,16 @@
 age: 68
 calendar_year: 2044
 r_age: 0.414
-annual_cost_usd: 31431
-cities: ["Xiamen", "Shenzhen"]
-provinces: ["Fujian", "Guangdong"]
-lead_trei: 0.87
+annual_cost_usd: 15588
+cities: ["Tongren", "Kaili"]
+provinces: ["Guizhou"]
+lead_trei: 0.59
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 68
 
-> Physiology factor **R_age = 0.414** · TREI cutoff 2.64 · annual cost **$31,431**
+> Physiology factor **R_age = 0.414** · TREI cutoff 2.88 · annual cost **$15,588**
 
 [[Age-67|← Age 67]] · [[Age-69|Age 69 →]]
 
@@ -19,27 +19,27 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Xiamen (厦门) | Fujian | 190 | 1950 | 2.71 | 1.33 | 0.87 | ALLOWED |
-| Shenzhen (深圳) | Guangdong | 175 | 3350 | 2.71 | 0.87 | 0.57 | ALLOWED |
+| Tongren (铜仁市) | Guizhou | 189 | 1300 | 1.3 | 1.87 | 0.59 | ALLOWED |
+| Kaili (凯里) | Guizhou | 176 | 1300 | 1.54 | 1.87 | 0.7 | ALLOWED |
 
 
 ## Monthly schedule — calendar 2044
 
-> Q1 Shenzhen (17.7°C) · Q2 Xiamen (27.9°C) · Q3 Xiamen (30.4°C) · Q4 Shenzhen (21.1°C)
+> Q1 Tongren (11.3°C) · Q2 Kaili (22.6°C) · Q3 Kaili (25.2°C) · Q4 Tongren (14.1°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Shenzhen (深圳) | 16.7 | 0 |
-| Feb | Xiamen (厦门) | 15.7 | 0 |
-| Mar | Shenzhen (深圳) | 20.8 | 0 |
-| Apr | Shenzhen (深圳) | 24.8 | 0 |
-| May | Xiamen (厦门) | 27.8 | 1.1 |
-| Jun | Xiamen (厦门) | 31.1 | 3.1 |
-| Jul | Xiamen (厦门) | 32.3 | 3.8 |
-| Aug | Xiamen (厦门) | 31.1 | 3.1 |
-| Sep | Xiamen (厦门) | 27.8 | 1.1 |
-| Oct | Shenzhen (深圳) | 24.8 | 0 |
-| Nov | Shenzhen (深圳) | 20.8 | 0 |
-| Dec | Shenzhen (深圳) | 17.8 | 0 |
+| Jan | Tongren (铜仁市) | 9.1 | 4.1 |
+| Feb | Tongren (铜仁市) | 10.5 | 3.1 |
+| Mar | Tongren (铜仁市) | 14.3 | 0.5 |
+| Apr | Tongren (铜仁市) | 19.5 | 0 |
+| May | Kaili (凯里) | 22.4 | 0 |
+| Jun | Kaili (凯里) | 26 | 0 |
+| Jul | Kaili (凯里) | 27.3 | 0.8 |
+| Aug | Kaili (凯里) | 26 | 0 |
+| Sep | Kaili (凯里) | 22.4 | 0 |
+| Oct | Kaili (凯里) | 17.4 | 0 |
+| Nov | Tongren (铜仁市) | 14.3 | 0.5 |
+| Dec | Tongren (铜仁市) | 10.5 | 3.1 |
 
-Starts from `CN-ZJ-HANGZHOU`. See [[Travel-OS-Overview]].
+Starts from `CN-GZ-GUIYANG`. See [[Travel-OS-Overview]].

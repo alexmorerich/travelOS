@@ -2,16 +2,16 @@
 age: 77
 calendar_year: 2053
 r_age: 0.35
-annual_cost_usd: 21583
-cities: ["Hangzhou"]
-provinces: ["Zhejiang"]
-lead_trei: 1.13
+annual_cost_usd: 40169
+cities: ["Shenzhen"]
+provinces: ["Guangdong"]
+lead_trei: 0.67
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 77
 
-> Physiology factor **R_age = 0.35** · TREI cutoff 1.91 · annual cost **$21,583**
+> Physiology factor **R_age = 0.35** · TREI cutoff 3.41 · annual cost **$40,169**
 
 [[Age-76|← Age 76]] · [[Age-78|Age 78 →]]
 
@@ -19,26 +19,26 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Hangzhou (杭州) | Zhejiang | 365 | 1800 | 2.97 | 1.33 | 1.13 | ALLOWED |
+| Shenzhen (深圳) | Guangdong | 365 | 3350 | 2.71 | 0.87 | 0.67 | ALLOWED |
 
 
 ## Monthly schedule — calendar 2053
 
-> Q1 Hangzhou (10.2°C) · Q2 Hangzhou (24.6°C) · Q3 Hangzhou (28.4°C) · Q4 Hangzhou (14.1°C)
+> Q1 Shenzhen (18.4°C) · Q2 Shenzhen (28.5°C) · Q3 Shenzhen (31.1°C) · Q4 Shenzhen (21.1°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Hangzhou (杭州) | 7.8 | 5.1 |
-| Feb | Hangzhou (杭州) | 9.3 | 4 |
-| Mar | Hangzhou (杭州) | 13.6 | 1 |
-| Apr | Hangzhou (杭州) | 19.3 | 0 |
-| May | Hangzhou (杭州) | 25.1 | 0 |
-| Jun | Hangzhou (杭州) | 29.3 | 2 |
-| Jul | Hangzhou (杭州) | 30.8 | 2.9 |
-| Aug | Hangzhou (杭州) | 29.3 | 2 |
-| Sep | Hangzhou (杭州) | 25.1 | 0 |
-| Oct | Hangzhou (杭州) | 19.3 | 0 |
-| Nov | Hangzhou (杭州) | 13.6 | 1 |
-| Dec | Hangzhou (杭州) | 9.3 | 4 |
+| Jan | Shenzhen (深圳) | 16.7 | 0 |
+| Feb | Shenzhen (深圳) | 17.8 | 0 |
+| Mar | Shenzhen (深圳) | 20.8 | 0 |
+| Apr | Shenzhen (深圳) | 24.8 | 0 |
+| May | Shenzhen (深圳) | 28.8 | 1.7 |
+| Jun | Shenzhen (深圳) | 31.8 | 3.5 |
+| Jul | Shenzhen (深圳) | 32.8 | 4.1 |
+| Aug | Shenzhen (深圳) | 31.8 | 3.5 |
+| Sep | Shenzhen (深圳) | 28.8 | 1.7 |
+| Oct | Shenzhen (深圳) | 24.8 | 0 |
+| Nov | Shenzhen (深圳) | 20.8 | 0 |
+| Dec | Shenzhen (深圳) | 17.8 | 0 |
 
-Starts from `CN-SH-SHANGHAI`. See [[Travel-OS-Overview]].
+Starts from `CN-FJ-XIAMEN`. See [[Travel-OS-Overview]].

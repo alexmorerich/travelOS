@@ -2,16 +2,16 @@
 age: 63
 calendar_year: 2039
 r_age: 0.564
-annual_cost_usd: 30596
-cities: ["Shanghai", "Hangzhou"]
-provinces: ["Shanghai", "Zhejiang"]
-lead_trei: 0.42
+annual_cost_usd: 18709
+cities: ["Guiyang", "Dali"]
+provinces: ["Guizhou", "Yunnan"]
+lead_trei: 0.47
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 63
 
-> Physiology factor **R_age = 0.564** · TREI cutoff 1.94 · annual cost **$30,596**
+> Physiology factor **R_age = 0.564** · TREI cutoff 2.12 · annual cost **$18,709**
 
 [[Age-62|← Age 62]] · [[Age-64|Age 64 →]]
 
@@ -19,27 +19,27 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Shanghai (上海) | Shanghai | 177 | 3350 | 2.71 | 0.87 | 0.42 | ALLOWED |
-| Hangzhou (杭州) | Zhejiang | 188 | 1800 | 2.97 | 1.33 | 0.7 | ALLOWED |
+| Guiyang (贵阳) | Guizhou | 190 | 1800 | 2.01 | 1.33 | 0.47 | ALLOWED |
+| Dali (大理) | Yunnan | 175 | 1300 | 3.08 | 1.87 | 1.02 | ALLOWED |
 
 
 ## Monthly schedule — calendar 2039
 
-> Q1 Hangzhou (10.2°C) · Q2 Shanghai (24.1°C) · Q3 Shanghai (28.1°C) · Q4 Hangzhou (14.1°C)
+> Q1 Guiyang (7.2°C) · Q2 Dali (15.8°C) · Q3 Dali (17.3°C) · Q4 Guiyang (8.7°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Hangzhou (杭州) | 7.8 | 5.1 |
-| Feb | Hangzhou (杭州) | 9.3 | 4 |
-| Mar | Hangzhou (杭州) | 13.6 | 1 |
-| Apr | Shanghai (上海) | 18.7 | 0 |
-| May | Shanghai (上海) | 24.6 | 0 |
-| Jun | Shanghai (上海) | 29 | 1.8 |
-| Jul | Shanghai (上海) | 30.6 | 2.8 |
-| Aug | Shanghai (上海) | 29 | 1.8 |
-| Sep | Shanghai (上海) | 24.6 | 0 |
-| Oct | Hangzhou (杭州) | 19.3 | 0 |
-| Nov | Hangzhou (杭州) | 13.6 | 1 |
-| Dec | Hangzhou (杭州) | 9.3 | 4 |
+| Jan | Guiyang (贵阳) | 5.1 | 7 |
+| Feb | Guiyang (贵阳) | 6.4 | 6 |
+| Mar | Guiyang (贵阳) | 10 | 3.5 |
+| Apr | Guiyang (贵阳) | 14.9 | 0.1 |
+| May | Dali (大理) | 14.5 | 0.3 |
+| Jun | Dali (大理) | 18 | 0 |
+| Jul | Dali (大理) | 19.3 | 0 |
+| Aug | Dali (大理) | 18 | 0 |
+| Sep | Dali (大理) | 14.5 | 0.3 |
+| Oct | Dali (大理) | 9.8 | 3.6 |
+| Nov | Guiyang (贵阳) | 10 | 3.5 |
+| Dec | Guiyang (贵阳) | 6.4 | 6 |
 
-Starts from `CN-BJ-BEIJING`. See [[Travel-OS-Overview]].
+Starts from `CN-HA-LUOYANG`. See [[Travel-OS-Overview]].

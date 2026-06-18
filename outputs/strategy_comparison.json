@@ -2,14 +2,14 @@
   {
     "key": "nomad_frugal",
     "label": "Nomad · frugal",
-    "survival_probability": 0.303,
-    "median_bankruptcy_age": 72,
-    "mean_annual_cost_usd": 19016,
-    "effective_withdrawal_rate": 0.038,
+    "survival_probability": 0.364,
+    "median_bankruptcy_age": 73,
+    "mean_annual_cost_usd": 17618,
+    "effective_withdrawal_rate": 0.0352,
     "median_terminal_net_worth": 0,
     "sample_itinerary_age65": [
-      "Longnan",
-      "Qingyang"
+      "Shuifu",
+      "Nanxi"
     ],
     "buy": false,
     "settle_city": null,
@@ -19,14 +19,14 @@
   {
     "key": "offshore_frugal_settle",
     "label": "Offshore + frugal + settle Chengdu",
-    "survival_probability": 0.11,
+    "survival_probability": 0.1375,
     "median_bankruptcy_age": 66,
-    "mean_annual_cost_usd": 31203,
-    "effective_withdrawal_rate": 0.0624,
+    "mean_annual_cost_usd": 29640,
+    "effective_withdrawal_rate": 0.0593,
     "median_terminal_net_worth": 226800,
     "sample_itinerary_age65": [
-      "Longnan",
-      "Qingyang"
+      "Shuifu",
+      "Nanxi"
     ],
     "buy": true,
     "settle_city": "CN-SC-CHENGDU",
@@ -36,14 +36,14 @@
   {
     "key": "settle_daya_bay",
     "label": "Buy & settle · Daya Bay",
-    "survival_probability": 0.0785,
+    "survival_probability": 0.094,
     "median_bankruptcy_age": 66,
-    "mean_annual_cost_usd": 30457,
-    "effective_withdrawal_rate": 0.0609,
+    "mean_annual_cost_usd": 29189,
+    "effective_withdrawal_rate": 0.0584,
     "median_terminal_net_worth": 163800,
     "sample_itinerary_age65": [
-      "Lijiang",
-      "Kunming"
+      "Luoyang",
+      "Chengdu"
     ],
     "buy": true,
     "settle_city": "CN-GD-HUIZHOU",
@@ -51,29 +51,12 @@
     "property_price_usd": 163800
   },
   {
-    "key": "settle_chengdu",
-    "label": "Buy & settle · Chengdu",
-    "survival_probability": 0.038,
-    "median_bankruptcy_age": 66,
-    "mean_annual_cost_usd": 34285,
-    "effective_withdrawal_rate": 0.0686,
-    "median_terminal_net_worth": 226800,
-    "sample_itinerary_age65": [
-      "Lijiang",
-      "Kunming"
-    ],
-    "buy": true,
-    "settle_city": "CN-SC-CHENGDU",
-    "jurisdiction": "onshore",
-    "property_price_usd": 226800
-  },
-  {
     "key": "nomad_experience",
     "label": "Nomad · experience",
-    "survival_probability": 0.034,
-    "median_bankruptcy_age": 67,
-    "mean_annual_cost_usd": 29199,
-    "effective_withdrawal_rate": 0.0584,
+    "survival_probability": 0.091,
+    "median_bankruptcy_age": 69,
+    "mean_annual_cost_usd": 25265,
+    "effective_withdrawal_rate": 0.0505,
     "median_terminal_net_worth": 0,
     "sample_itinerary_age65": [
       "Chengdu",
@@ -83,5 +66,22 @@
     "settle_city": null,
     "jurisdiction": "onshore",
     "property_price_usd": 0
+  },
+  {
+    "key": "settle_chengdu",
+    "label": "Buy & settle · Chengdu",
+    "survival_probability": 0.05,
+    "median_bankruptcy_age": 66,
+    "mean_annual_cost_usd": 33226,
+    "effective_withdrawal_rate": 0.0665,
+    "median_terminal_net_worth": 226800,
+    "sample_itinerary_age65": [
+      "Luoyang",
+      "Chengdu"
+    ],
+    "buy": true,
+    "settle_city": "CN-SC-CHENGDU",
+    "jurisdiction": "onshore",
+    "property_price_usd": 226800
   }
 ]

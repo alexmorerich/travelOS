@@ -20,6 +20,7 @@ export interface RawCity {
   humidity_index: number | null;   // annual mean relative humidity, %
   monthly_cost_usd: number | null;
   cultural_value: number | null;   // 0..10
+  county?: boolean;                // county seat (vs prefecture/provincial seat)
   source?: Record<string, string>;
 }
 
@@ -71,12 +72,14 @@ export interface YearPlan {
   age: number;
   seed: number;
   R_age: number;
+  band: string;            // lifecycle phase label (Expedition / Cultural / Comfort)
   trei_cutoff: number;
   start_city: string;
   cities: YearPlanCity[];
   annual_cost_usd: number;
   total_days: number;
   provinces_visited: string[];
+  frontier_share: number;  // fraction of days in frontier provinces this year
 }
 
 export interface RegionPhase {
@@ -114,6 +117,7 @@ export interface ScheduleQuarter {
   city_id: string;
   name_en: string;
   avg_temp_c: number;
+  comfort_ok: boolean;    // quarterly "entropy audit": avg temp within comfort band
 }
 
 export interface ScheduleYear {
@@ -249,6 +253,26 @@ export interface FinanceConfig {
 export interface RoutingProfilesConfig {
   primary: string;
   profiles: RoutingProfile[];
+}
+
+// ---- 30-year lifecycle matrix (age-band zone targeting) ------------------
+
+export interface AgeBand {
+  key: string;
+  label: string;
+  age_from: number;
+  age_to: number;
+  target_provinces: string[];   // zones favoured during this band
+  zone_bonus: number;           // utility bonus for being in a target province
+  comfort_bonus: number;        // weight on 18–25°C climate fit (grows with age)
+  hospital_bonus: number;       // weight on tier-3A hospital access (grows with age)
+  frontier_share_target: number;// intended share of frontier-province time (reporting)
+}
+
+export interface AgeBandsConfig {
+  comfort_celsius: [number, number];
+  frontier_provinces: string[];
+  bands: AgeBand[];
 }
 
 export interface HousingParams {
