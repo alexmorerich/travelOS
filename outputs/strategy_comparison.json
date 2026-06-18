@@ -2,14 +2,16 @@
   {
     "key": "nomad_frugal",
     "label": "Nomad · frugal",
-    "survival_probability": 0.354,
-    "median_bankruptcy_age": 73,
-    "mean_annual_cost_usd": 17928,
-    "effective_withdrawal_rate": 0.0359,
+    "survival_probability": 0.2955,
+    "median_bankruptcy_age": 72,
+    "mean_annual_cost_usd": 19124,
+    "effective_withdrawal_rate": 0.0382,
     "median_terminal_net_worth": 0,
     "sample_itinerary_age65": [
       "Tancheng",
-      "Wuhe Chengguanzhen"
+      "Wuhe Chengguanzhen",
+      "Quanzhou",
+      "Xi'an"
     ],
     "buy": false,
     "settle_city": null,
@@ -19,14 +21,16 @@
   {
     "key": "nomad_experience",
     "label": "Nomad · experience",
-    "survival_probability": 0.1655,
-    "median_bankruptcy_age": 72,
-    "mean_annual_cost_usd": 22202,
-    "effective_withdrawal_rate": 0.0444,
+    "survival_probability": 0.18,
+    "median_bankruptcy_age": 71,
+    "mean_annual_cost_usd": 21850,
+    "effective_withdrawal_rate": 0.0437,
     "median_terminal_net_worth": 0,
     "sample_itinerary_age65": [
       "Qingdao",
-      "Linyi"
+      "Linyi",
+      "Quanzhou",
+      "Xi'an"
     ],
     "buy": false,
     "settle_city": null,
@@ -36,14 +40,16 @@
   {
     "key": "settle_daya_bay",
     "label": "Buy & settle · Daya Bay",
-    "survival_probability": 0.138,
+    "survival_probability": 0.1345,
     "median_bankruptcy_age": 66,
-    "mean_annual_cost_usd": 26934,
-    "effective_withdrawal_rate": 0.0539,
+    "mean_annual_cost_usd": 27177,
+    "effective_withdrawal_rate": 0.0544,
     "median_terminal_net_worth": 163800,
     "sample_itinerary_age65": [
       "Qingdao",
-      "Rizhao"
+      "Rizhao",
+      "Quanzhou",
+      "Xi'an"
     ],
     "buy": true,
     "settle_city": "CN-GD-HUIZHOU",
@@ -53,14 +59,16 @@
   {
     "key": "offshore_frugal_settle",
     "label": "Offshore + frugal + settle Chengdu",
-    "survival_probability": 0.134,
+    "survival_probability": 0.1215,
     "median_bankruptcy_age": 66,
-    "mean_annual_cost_usd": 29937,
-    "effective_withdrawal_rate": 0.0599,
+    "mean_annual_cost_usd": 30678,
+    "effective_withdrawal_rate": 0.0614,
     "median_terminal_net_worth": 226800,
     "sample_itinerary_age65": [
       "Tancheng",
-      "Wuhe Chengguanzhen"
+      "Wuhe Chengguanzhen",
+      "Quanzhou",
+      "Xi'an"
     ],
     "buy": true,
     "settle_city": "CN-SC-CHENGDU",
@@ -70,14 +78,16 @@
   {
     "key": "settle_chengdu",
     "label": "Buy & settle · Chengdu",
-    "survival_probability": 0.0755,
+    "survival_probability": 0.0735,
     "median_bankruptcy_age": 66,
-    "mean_annual_cost_usd": 31158,
-    "effective_withdrawal_rate": 0.0623,
+    "mean_annual_cost_usd": 31396,
+    "effective_withdrawal_rate": 0.0628,
     "median_terminal_net_worth": 226800,
     "sample_itinerary_age65": [
       "Qingdao",
-      "Rizhao"
+      "Rizhao",
+      "Quanzhou",
+      "Xi'an"
     ],
     "buy": true,
     "settle_city": "CN-SC-CHENGDU",

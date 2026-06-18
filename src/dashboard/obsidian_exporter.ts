@@ -21,7 +21,7 @@ function ageNoteName(age: number): string {
 function scheduleSection(sched: ScheduleYear | undefined): string {
   if (!sched || sched.months.length === 0) return "";
   const rows = sched.months
-    .map((m) => `| ${MON[m.month - 1]} | ${m.name_en} (${m.name}) | ${m.temp_c} | ${m.discomfort} |`)
+    .map((m) => `| ${MON[m.month - 1]} | ${m.name_en} (${m.name}) | ${m.temp_c} | ${m.night_temp_c} | ${m.discomfort} |`)
     .join("\n");
   const q = sched.quarters.map((x) => `Q${x.quarter} ${x.name_en} (${x.avg_temp_c}°C)`).join(" · ");
   return `
@@ -30,8 +30,8 @@ function scheduleSection(sched: ScheduleYear | undefined): string {
 
 > ${q}
 
-| Month | City | Est °C | Discomfort |
-|-------|------|-------:|-----------:|
+| Month | City | Est °C | Night °C | Discomfort |
+|-------|------|-------:|---------:|-----------:|
 ${rows}
 `;
 }

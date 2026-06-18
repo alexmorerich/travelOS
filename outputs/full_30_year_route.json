@@ -6,9 +6,10 @@
       "Burqin",
       "Toqsun",
       "Sandaohezi",
-      "Jing"
+      "Jing",
+      "Quanzhou"
     ],
-    "annual_cost_usd": 12590
+    "annual_cost_usd": 13338
   },
   {
     "age": 51,
@@ -16,9 +17,10 @@
     "cities": [
       "Motuo",
       "Lhasa",
-      "Rikaze"
+      "Rikaze",
+      "Quanzhou"
     ],
-    "annual_cost_usd": 15688
+    "annual_cost_usd": 15654
   },
   {
     "age": 52,
@@ -26,9 +28,10 @@
     "cities": [
       "Jishi",
       "Liujiaxia",
-      "Hezheng Chengguanzhen"
+      "Hezheng Chengguanzhen",
+      "Quanzhou"
     ],
-    "annual_cost_usd": 11391
+    "annual_cost_usd": 12438
   },
   {
     "age": 53,
@@ -36,9 +39,10 @@
     "cities": [
       "Baokang",
       "Changchun",
-      "Erdao"
+      "Erdao",
+      "Quanzhou"
     ],
-    "annual_cost_usd": 15687
+    "annual_cost_usd": 15669
   },
   {
     "age": 54,
@@ -46,9 +50,10 @@
     "cities": [
       "Huixian Chengguanzhen",
       "Zhouqu Chengguanzhen",
-      "Qingyuan"
+      "Qingyuan",
+      "Quanzhou"
     ],
-    "annual_cost_usd": 11391
+    "annual_cost_usd": 12438
   },
   {
     "age": 55,
@@ -56,9 +61,10 @@
     "cities": [
       "Beijie",
       "Xinli",
-      "Pingluo Chengguanzhen"
+      "Pingluo Chengguanzhen",
+      "Quanzhou"
     ],
-    "annual_cost_usd": 11391
+    "annual_cost_usd": 12438
   },
   {
     "age": 56,
@@ -66,9 +72,10 @@
     "cities": [
       "Xi'an",
       "Jidong",
-      "Sifangtai"
+      "Sifangtai",
+      "Quanzhou"
     ],
-    "annual_cost_usd": 15604
+    "annual_cost_usd": 15595
   },
   {
     "age": 57,
@@ -76,9 +83,10 @@
     "cities": [
       "Antu",
       "Huadian",
-      "Liuhe"
+      "Liuhe",
+      "Quanzhou"
     ],
-    "annual_cost_usd": 13190
+    "annual_cost_usd": 13788
   },
   {
     "age": 58,
@@ -86,9 +94,11 @@
     "cities": [
       "Shenyang",
       "Lianshan",
-      "Dashiqiao"
+      "Dashiqiao",
+      "Quanzhou",
+      "Xi'an"
     ],
-    "annual_cost_usd": 16802
+    "annual_cost_usd": 17086
   },
   {
     "age": 59,
@@ -96,9 +106,10 @@
     "cities": [
       "Gaochang",
       "Bofeng",
-      "Gumudi"
+      "Gumudi",
+      "Quanzhou"
     ],
-    "annual_cost_usd": 12590
+    "annual_cost_usd": 13338
   },
   {
     "age": 60,
@@ -106,177 +117,207 @@
     "cities": [
       "Nyingchi",
       "Nagqu",
-      "Lhuenzhub"
+      "Lhuenzhub",
+      "Quanzhou"
     ],
-    "annual_cost_usd": 14989
+    "annual_cost_usd": 15138
   },
   {
     "age": 61,
-    "primary_region": "[Cultural deep-dive] Shaanxi dual-base",
+    "primary_region": "[Cultural deep-dive] Shaanxi + multi-region loop",
     "cities": [
       "Xi'an",
-      "Dali"
+      "Dali",
+      "Quanzhou"
     ],
-    "annual_cost_usd": 18111
+    "annual_cost_usd": 17467
   },
   {
     "age": 62,
-    "primary_region": "[Cultural deep-dive] Shanxi dual-base",
+    "primary_region": "[Cultural deep-dive] Shanxi + multi-region loop",
     "cities": [
       "Taiyuan",
-      "Jinzhong"
+      "Jinzhong",
+      "Quanzhou"
     ],
-    "annual_cost_usd": 18890
+    "annual_cost_usd": 18068
   },
   {
     "age": 63,
-    "primary_region": "[Cultural deep-dive] Henan dual-base",
+    "primary_region": "[Cultural deep-dive] Henan + multi-region loop",
     "cities": [
       "Luoyang",
-      "Baofeng"
+      "Baofeng",
+      "Quanzhou",
+      "Xi'an"
     ],
-    "annual_cost_usd": 14589
+    "annual_cost_usd": 15986
   },
   {
     "age": 64,
-    "primary_region": "[Cultural deep-dive] Hebei dual-base",
+    "primary_region": "[Cultural deep-dive] Hebei + multi-region loop",
     "cities": [
       "Shijiazhuang",
-      "Huaiyang"
+      "Huaiyang",
+      "Quanzhou",
+      "Xi'an"
     ],
-    "annual_cost_usd": 17904
+    "annual_cost_usd": 17651
   },
   {
     "age": 65,
-    "primary_region": "[Cultural deep-dive] Shandong dual-base",
+    "primary_region": "[Cultural deep-dive] Shandong + multi-region loop",
     "cities": [
       "Qingdao",
-      "Linyi"
+      "Linyi",
+      "Quanzhou",
+      "Xi'an"
     ],
-    "annual_cost_usd": 20094
+    "annual_cost_usd": 18748
   },
   {
     "age": 66,
-    "primary_region": "[Cultural deep-dive] Sichuan dual-base",
+    "primary_region": "[Cultural deep-dive] Sichuan + multi-region loop",
     "cities": [
       "Chengdu",
-      "Kaijiang"
+      "Kaijiang",
+      "Quanzhou",
+      "Xi'an"
     ],
-    "annual_cost_usd": 18341
+    "annual_cost_usd": 17881
   },
   {
     "age": 67,
-    "primary_region": "[Cultural deep-dive] Chongqing dual-base",
+    "primary_region": "[Cultural deep-dive] Chongqing + multi-region loop",
     "cities": [
       "Chongqing",
-      "Yuxi"
+      "Yuxi",
+      "Quanzhou"
     ],
-    "annual_cost_usd": 17697
+    "annual_cost_usd": 17168
   },
   {
     "age": 68,
-    "primary_region": "[Cultural deep-dive] Yunnan dual-base",
+    "primary_region": "[Cultural deep-dive] Yunnan + multi-region loop",
     "cities": [
       "Kunming",
-      "Yisa"
+      "Yisa",
+      "Quanzhou"
     ],
-    "annual_cost_usd": 17628
+    "annual_cost_usd": 17122
   },
   {
     "age": 69,
-    "primary_region": "[Cultural deep-dive] Guizhou dual-base",
+    "primary_region": "[Cultural deep-dive] Guizhou + multi-region loop",
     "cities": [
       "Tongren",
-      "Kaili"
+      "Kaili",
+      "Quanzhou"
     ],
     "annual_cost_usd": 15588
   },
   {
     "age": 70,
-    "primary_region": "[Cultural deep-dive] Hubei single-city",
+    "primary_region": "[Cultural deep-dive] Hubei + multi-region loop",
     "cities": [
-      "Wuhan"
+      "Wuhan",
+      "Quanzhou",
+      "Xi'an"
     ],
-    "annual_cost_usd": 21583
+    "annual_cost_usd": 19491
   },
   {
     "age": 71,
-    "primary_region": "[Climate & comfort] Fujian single-city",
+    "primary_region": "[Climate & comfort] Fujian dual-base",
     "cities": [
-      "Xiamen"
+      "Xiamen",
+      "Xi'an"
     ],
-    "annual_cost_usd": 23382
+    "annual_cost_usd": 22336
   },
   {
     "age": 72,
-    "primary_region": "[Climate & comfort] Guangdong single-city",
+    "primary_region": "[Climate & comfort] Guangdong dual-base",
     "cities": [
-      "Shenzhen"
+      "Shenzhen",
+      "Xi'an"
     ],
-    "annual_cost_usd": 40169
+    "annual_cost_usd": 34938
   },
   {
     "age": 73,
-    "primary_region": "[Climate & comfort] Hainan single-city",
+    "primary_region": "[Climate & comfort] Hainan dual-base",
     "cities": [
-      "Haikou"
+      "Haikou",
+      "Xi'an"
     ],
-    "annual_cost_usd": 25780
+    "annual_cost_usd": 24136
   },
   {
     "age": 74,
-    "primary_region": "[Climate & comfort] Guangxi single-city",
+    "primary_region": "[Climate & comfort] Guangxi + multi-region loop",
     "cities": [
-      "Guilin"
+      "Guilin",
+      "Quanzhou",
+      "Xi'an"
     ],
-    "annual_cost_usd": 15588
+    "annual_cost_usd": 16485
   },
   {
     "age": 75,
-    "primary_region": "[Climate & comfort] Zhejiang single-city",
+    "primary_region": "[Climate & comfort] Zhejiang + multi-region loop",
     "cities": [
-      "Hangzhou"
+      "Hangzhou",
+      "Quanzhou",
+      "Xi'an"
     ],
-    "annual_cost_usd": 21583
+    "annual_cost_usd": 19491
   },
   {
     "age": 76,
-    "primary_region": "[Climate & comfort] Jiangsu single-city",
+    "primary_region": "[Climate & comfort] Jiangsu + multi-region loop",
     "cities": [
-      "Nanjing"
+      "Nanjing",
+      "Quanzhou",
+      "Xi'an"
     ],
-    "annual_cost_usd": 21583
+    "annual_cost_usd": 19491
   },
   {
     "age": 77,
-    "primary_region": "[Climate & comfort] Shanghai single-city",
+    "primary_region": "[Climate & comfort] Shanghai + multi-region loop",
     "cities": [
-      "Shanghai"
+      "Shanghai",
+      "Quanzhou",
+      "Xi'an"
     ],
-    "annual_cost_usd": 40169
+    "annual_cost_usd": 28809
   },
   {
     "age": 78,
-    "primary_region": "[Climate & comfort] Fujian single-city",
+    "primary_region": "[Climate & comfort] Fujian dual-base",
     "cities": [
-      "Xiamen"
+      "Xiamen",
+      "Xi'an"
     ],
-    "annual_cost_usd": 23382
+    "annual_cost_usd": 22336
   },
   {
     "age": 79,
-    "primary_region": "[Climate & comfort] Guangdong single-city",
+    "primary_region": "[Climate & comfort] Guangdong dual-base",
     "cities": [
-      "Shenzhen"
+      "Shenzhen",
+      "Xi'an"
     ],
-    "annual_cost_usd": 40169
+    "annual_cost_usd": 34938
   },
   {
     "age": 80,
-    "primary_region": "[Climate & comfort] Hainan single-city",
+    "primary_region": "[Climate & comfort] Hainan dual-base",
     "cities": [
-      "Haikou"
+      "Haikou",
+      "Xi'an"
     ],
-    "annual_cost_usd": 25780
+    "annual_cost_usd": 24136
   }
 ]

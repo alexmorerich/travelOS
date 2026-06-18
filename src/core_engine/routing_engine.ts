@@ -12,7 +12,7 @@
 import { systemConfig, thresholds, ageBands } from "../config";
 import { clamp, percentile } from "../lib/geo";
 import { rAge, trei, medicalRisk } from "./trei_engine";
-import { annualMeanTemp } from "./climate_engine";
+import { annualMeanTemp, nightTemp, monthlyDiscomfort, NIGHT_FLOOR_C, NIGHT_CEIL_C } from "./climate_engine";
 import { isHardBlocked, decide } from "./constraint_engine";
 import type { ProcessedCity, Graph, YearPlan, YearPlanCity, Decision, RoutingWeights, AgeBand } from "../types";
 import type { Rng } from "../lib/rng";
@@ -34,6 +34,20 @@ function comfortFit(city: ProcessedCity): number {
   return clamp(1 - dist / 10, 0, 1);
 }
 
+// Seasonal refuge rule (Bug 2 — routing layer). Comfort is judged on the OVERNIGHT
+// low. A city can host deep winter only if its January night clears NIGHT_FLOOR_C;
+// it can host peak summer only if its July night stays under NIGHT_CEIL_C. When a
+// year's whole itinerary is too cold (frontier expeditions, interior cultural
+// loops) we graft on a warm-south wintering base; when it is too hot (the southern
+// comfort band) we graft on a cool-highland summering base. The scheduler then
+// retreats to each in its season — the snowbird pattern, made explicit.
+const WINTER_MONTHS = [12, 1, 2];
+const SUMMER_MONTHS = [6, 7, 8];
+const seasonNight = (c: ProcessedCity, month: number): number =>
+  nightTemp(c.lat, c.altitude_m ?? 0, month, c.humidity_index ?? 55);
+const seasonDiscomfort = (c: ProcessedCity, months: number[]): number =>
+  months.reduce((s, m) => s + monthlyDiscomfort(c.lat, c.altitude_m ?? 0, m, c.humidity_index ?? 55), 0);
+
 export interface YearContext {
   nodes: ProcessedCity[];
   graph: Graph;
@@ -52,6 +66,8 @@ interface Scored {
   TREI: number;
   utility: number;
   decision: Decision;
+  winterRefuge?: boolean;          // a warm-south base grafted on for the cold months
+  summerRefuge?: boolean;          // a cool-highland base grafted on for the hot months
 }
 
 function utilityOf(
@@ -189,6 +205,43 @@ export function planYear(ctx: YearContext): YearPlan {
     }
   }
 
+  // Seasonal refuges: if no chosen city can keep the deep-winter night >= floor,
+  // graft the best warm-south wintering base; if none can keep the peak-summer
+  // night <= ceiling, graft the best cool-highland summering base (each: lowest
+  // in-season discomfort, mild culture tie-break, revisits allowed — a seasonal
+  // home is meant to recur). distributeDays reserves each refuge its share and the
+  // scheduler assigns the matching months there.
+  const addRefuge = (
+    need: boolean, share: number, season: "winter" | "summer",
+    eligible: (c: ProcessedCity) => boolean, months: number[],
+  ): void => {
+    if (share <= 0 || !need || chosen.length === 0) return;
+    let best: { city: ProcessedCity; med: number; treiVal: number } | null = null;
+    let bestD = Infinity, bestCult = -1;
+    for (const { city, med, treiVal, blocked } of byId.values()) {
+      if (blocked || usedThisYear.has(city.id) || !eligible(city)) continue;
+      const d = seasonDiscomfort(city, months);
+      if (d < bestD || (d === bestD && city.cultural_value > bestCult)) {
+        bestD = d; bestCult = city.cultural_value; best = { city, med, treiVal };
+      }
+    }
+    if (!best) return;
+    const sc: Scored = {
+      city: best.city, medical_risk: best.med, TREI: best.treiVal,
+      utility: 0, decision: decide(false, best.treiVal, cutoff),
+    };
+    if (season === "winter") sc.winterRefuge = true; else sc.summerRefuge = true;
+    chosen.push(sc);
+    usedThisYear.add(best.city.id);
+  };
+
+  const warmestWinterNight = Math.max(...chosen.map((s) => seasonNight(s.city, 1)));
+  const coolestSummerNight = Math.min(...chosen.map((s) => seasonNight(s.city, 7)));
+  addRefuge(warmestWinterNight < NIGHT_FLOOR_C, systemConfig.winter_refuge_share, "winter",
+            (c) => seasonNight(c, 1) >= NIGHT_FLOOR_C, WINTER_MONTHS);
+  addRefuge(coolestSummerNight > NIGHT_CEIL_C, systemConfig.summer_refuge_share, "summer",
+            (c) => seasonNight(c, 7) <= NIGHT_CEIL_C, SUMMER_MONTHS);
+
   return assemblePlan(ctx, R, band, cutoff, chosen);
 }
 
@@ -232,14 +285,32 @@ function assemblePlan(ctx: YearContext, R: number, band: AgeBand, cutoff: number
   };
 }
 
-/** Distribute the year's days across cities, weighted by positive utility. */
+/** Distribute the year's days across cities, weighted by positive utility. Any
+ *  seasonal refuge first claims its fixed share (winter_/summer_refuge_share); the
+ *  remainder is split by utility across the exploration cities. */
 function distributeDays(chosen: Scored[], totalDays: number): number[] {
   if (chosen.length === 0) return [];
   if (chosen.length === 1) return [totalDays];
-  const weights = chosen.map((s) => Math.max(s.utility, 0.1));
+
+  const days = new Array(chosen.length).fill(0);
+  const shareOf = (s: Scored): number =>
+    s.winterRefuge ? systemConfig.winter_refuge_share
+    : s.summerRefuge ? systemConfig.summer_refuge_share : 0;
+
+  const refuges = chosen.map((_, i) => i).filter((i) => shareOf(chosen[i]) > 0);
+  const others = chosen.map((_, i) => i).filter((i) => shareOf(chosen[i]) === 0);
+  for (const i of refuges) days[i] = Math.round(totalDays * shareOf(chosen[i]));
+
+  if (others.length === 0) { // refuges only — split remaining evenly among them
+    let rem = totalDays - days.reduce((a, b) => a + b, 0);
+    for (let k = 0; rem !== 0; k = (k + 1) % refuges.length, rem -= Math.sign(rem)) days[refuges[k]] += Math.sign(rem);
+    return days;
+  }
+  const pool = Math.max(0, totalDays - refuges.reduce((s, i) => s + days[i], 0));
+  const weights = others.map((i) => Math.max(chosen[i].utility, 0.1));
   const sum = weights.reduce((a, b) => a + b, 0);
-  const days = weights.map((w) => Math.floor((w / sum) * totalDays));
+  others.forEach((i, k) => { days[i] = Math.floor((weights[k] / sum) * pool); });
   let remainder = totalDays - days.reduce((a, b) => a + b, 0);
-  for (let i = 0; remainder > 0; i = (i + 1) % days.length, remainder--) days[i]++;
+  for (let k = 0; remainder > 0; k = (k + 1) % others.length, remainder--) days[others[k]]++;
   return days;
 }

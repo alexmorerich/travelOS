@@ -9,6 +9,8 @@
   "max_cities_per_year": 4,
   "visited_window_years": 3,
   "days_per_year": 365,
+  "winter_refuge_share": 0.25,
+  "summer_refuge_share": 0.25,
   "routing": {
     "tie_break_band": 0.05,
     "utility_eps": 0.5,

@@ -5,27 +5,30 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-XJ-TOQSUN",
-        "name_en": "Toqsun",
-        "name": "托克逊",
-        "temp_c": -6.5,
-        "discomfort": 15
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-XJ-TOQSUN",
-        "name_en": "Toqsun",
-        "name": "托克逊",
-        "temp_c": -4.2,
-        "discomfort": 13.4
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
-        "city_id": "CN-XJ-JING",
-        "name_en": "Jing",
-        "name": "精河",
-        "temp_c": -1.8,
-        "discomfort": 11.7
+        "city_id": "CN-XJ-TOQSUN",
+        "name_en": "Toqsun",
+        "name": "托克逊",
+        "temp_c": 2.1,
+        "night_temp_c": -2.6,
+        "discomfort": 8.8
       },
       {
         "month": 4,
@@ -33,7 +36,8 @@
         "name_en": "Jing",
         "name": "精河",
         "temp_c": 7.2,
-        "discomfort": 5.4
+        "night_temp_c": 2.2,
+        "discomfort": 5.5
       },
       {
         "month": 5,
@@ -41,7 +45,8 @@
         "name_en": "Sandaohezi",
         "name": "三道河子",
         "temp_c": 15.1,
-        "discomfort": 0
+        "night_temp_c": 9.9,
+        "discomfort": 0.1
       },
       {
         "month": 6,
@@ -49,6 +54,7 @@
         "name_en": "Burqin",
         "name": "Burqin",
         "temp_c": 20.9,
+        "night_temp_c": 15.8,
         "discomfort": 0
       },
       {
@@ -57,6 +63,7 @@
         "name_en": "Burqin",
         "name": "Burqin",
         "temp_c": 23.5,
+        "night_temp_c": 18.4,
         "discomfort": 0
       },
       {
@@ -65,6 +72,7 @@
         "name_en": "Burqin",
         "name": "Burqin",
         "temp_c": 20.9,
+        "night_temp_c": 15.8,
         "discomfort": 0
       },
       {
@@ -73,55 +81,73 @@
         "name_en": "Sandaohezi",
         "name": "三道河子",
         "temp_c": 15.1,
-        "discomfort": 0
+        "night_temp_c": 9.9,
+        "discomfort": 0.1
       },
       {
         "month": 10,
-        "city_id": "CN-XJ-SANDAOHEZI",
-        "name_en": "Sandaohezi",
-        "name": "三道河子",
-        "temp_c": 6.1,
-        "discomfort": 6.2
-      },
-      {
-        "month": 11,
         "city_id": "CN-XJ-JING",
         "name_en": "Jing",
         "name": "精河",
-        "temp_c": -1.8,
-        "discomfort": 11.7
+        "temp_c": 7.2,
+        "night_temp_c": 2.2,
+        "discomfort": 5.5
       },
       {
-        "month": 12,
+        "month": 11,
         "city_id": "CN-XJ-TOQSUN",
         "name_en": "Toqsun",
         "name": "托克逊",
-        "temp_c": -4.2,
-        "discomfort": 13.4
+        "temp_c": 2.1,
+        "night_temp_c": -2.6,
+        "discomfort": 8.8
+      },
+      {
+        "month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
         "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2026-01-01",
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
+      },
+      {
+        "from_month": 3,
+        "to_month": 3,
         "city_id": "CN-XJ-TOQSUN",
         "name_en": "Toqsun",
         "name": "托克逊",
         "province": "Xinjiang",
-        "days": 60,
-        "move_in": "2026-01-01",
-        "avg_temp_c": -5.3
+        "days": 30,
+        "move_in": "2026-03-01",
+        "avg_temp_c": 2.1,
+        "avg_night_c": -2.6
       },
       {
-        "from_month": 3,
+        "from_month": 4,
         "to_month": 4,
         "city_id": "CN-XJ-JING",
         "name_en": "Jing",
         "name": "精河",
         "province": "Xinjiang",
-        "days": 60,
-        "move_in": "2026-03-01",
-        "avg_temp_c": 2.7
+        "days": 30,
+        "move_in": "2026-04-01",
+        "avg_temp_c": 7.2,
+        "avg_night_c": 2.2
       },
       {
         "from_month": 5,
@@ -132,7 +158,8 @@
         "province": "Xinjiang",
         "days": 30,
         "move_in": "2026-05-01",
-        "avg_temp_c": 15.1
+        "avg_temp_c": 15.1,
+        "avg_night_c": 9.9
       },
       {
         "from_month": 6,
@@ -143,48 +170,64 @@
         "province": "Xinjiang",
         "days": 90,
         "move_in": "2026-06-01",
-        "avg_temp_c": 21.8
+        "avg_temp_c": 21.8,
+        "avg_night_c": 16.7
       },
       {
         "from_month": 9,
-        "to_month": 10,
+        "to_month": 9,
         "city_id": "CN-XJ-SANDAOHEZI",
         "name_en": "Sandaohezi",
         "name": "三道河子",
         "province": "Xinjiang",
-        "days": 60,
+        "days": 30,
         "move_in": "2026-09-01",
-        "avg_temp_c": 10.6
+        "avg_temp_c": 15.1,
+        "avg_night_c": 9.9
       },
       {
-        "from_month": 11,
-        "to_month": 11,
+        "from_month": 10,
+        "to_month": 10,
         "city_id": "CN-XJ-JING",
         "name_en": "Jing",
         "name": "精河",
         "province": "Xinjiang",
         "days": 30,
-        "move_in": "2026-11-01",
-        "avg_temp_c": -1.8
+        "move_in": "2026-10-01",
+        "avg_temp_c": 7.2,
+        "avg_night_c": 2.2
       },
       {
-        "from_month": 12,
-        "to_month": 12,
+        "from_month": 11,
+        "to_month": 11,
         "city_id": "CN-XJ-TOQSUN",
         "name_en": "Toqsun",
         "name": "托克逊",
         "province": "Xinjiang",
         "days": 30,
+        "move_in": "2026-11-01",
+        "avg_temp_c": 2.1,
+        "avg_night_c": -2.6
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
         "move_in": "2026-12-01",
-        "avg_temp_c": -4.2
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-XJ-TOQSUN",
-        "name_en": "Toqsun",
-        "avg_temp_c": -4.2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 10.4,
         "comfort_ok": false
       },
       {
@@ -203,9 +246,9 @@
       },
       {
         "quarter": 4,
-        "city_id": "CN-XJ-SANDAOHEZI",
-        "name_en": "Sandaohezi",
-        "avg_temp_c": 0,
+        "city_id": "CN-XJ-JING",
+        "name_en": "Jing",
+        "avg_temp_c": 8.2,
         "comfort_ok": false
       }
     ]
@@ -216,19 +259,21 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-XZ-MOTUO",
-        "name_en": "Motuo",
-        "name": "墨脱",
-        "temp_c": 2.6,
-        "discomfort": 8.7
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-XZ-MOTUO",
-        "name_en": "Motuo",
-        "name": "墨脱",
-        "temp_c": 4.1,
-        "discomfort": 7.6
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -236,7 +281,8 @@
         "name_en": "Motuo",
         "name": "墨脱",
         "temp_c": 8.2,
-        "discomfort": 4.8
+        "night_temp_c": 2.7,
+        "discomfort": 5.1
       },
       {
         "month": 4,
@@ -244,39 +290,44 @@
         "name_en": "Lhasa",
         "name": "拉萨",
         "temp_c": -3.9,
-        "discomfort": 13.2
+        "night_temp_c": -11.5,
+        "discomfort": 15
       },
       {
         "month": 5,
-        "city_id": "CN-XZ-LHASA",
-        "name_en": "Lhasa",
-        "name": "拉萨",
-        "temp_c": 1.7,
-        "discomfort": 9.3
+        "city_id": "CN-XZ-RIKAZE",
+        "name_en": "Rikaze",
+        "name": "日喀则",
+        "temp_c": 0.7,
+        "night_temp_c": -7.1,
+        "discomfort": 12
       },
       {
         "month": 6,
+        "city_id": "CN-XZ-MOTUO",
+        "name_en": "Motuo",
+        "name": "墨脱",
+        "temp_c": 23.3,
+        "night_temp_c": 17.9,
+        "discomfort": 0
+      },
+      {
+        "month": 7,
+        "city_id": "CN-XZ-MOTUO",
+        "name_en": "Motuo",
+        "name": "墨脱",
+        "temp_c": 24.8,
+        "night_temp_c": 19.4,
+        "discomfort": 0
+      },
+      {
+        "month": 8,
         "city_id": "CN-XZ-LHASA",
         "name_en": "Lhasa",
         "name": "拉萨",
         "temp_c": 5.8,
-        "discomfort": 6.4
-      },
-      {
-        "month": 7,
-        "city_id": "CN-XZ-RIKAZE",
-        "name_en": "Rikaze",
-        "name": "日喀则",
-        "temp_c": 6.2,
-        "discomfort": 6.2
-      },
-      {
-        "month": 8,
-        "city_id": "CN-XZ-RIKAZE",
-        "name_en": "Rikaze",
-        "name": "日喀则",
-        "temp_c": 4.7,
-        "discomfort": 7.2
+        "night_temp_c": -1.7,
+        "discomfort": 8.2
       },
       {
         "month": 9,
@@ -284,7 +335,8 @@
         "name_en": "Rikaze",
         "name": "日喀则",
         "temp_c": 0.7,
-        "discomfort": 10
+        "night_temp_c": -7.1,
+        "discomfort": 12
       },
       {
         "month": 10,
@@ -292,7 +344,8 @@
         "name_en": "Lhasa",
         "name": "拉萨",
         "temp_c": -3.9,
-        "discomfort": 13.2
+        "night_temp_c": -11.5,
+        "discomfort": 15
       },
       {
         "month": 11,
@@ -300,50 +353,103 @@
         "name_en": "Motuo",
         "name": "墨脱",
         "temp_c": 8.2,
-        "discomfort": 4.8
+        "night_temp_c": 2.7,
+        "discomfort": 5.1
       },
       {
         "month": 12,
-        "city_id": "CN-XZ-MOTUO",
-        "name_en": "Motuo",
-        "name": "墨脱",
-        "temp_c": 4.1,
-        "discomfort": 7.6
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2027-01-01",
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
+      },
+      {
+        "from_month": 3,
         "to_month": 3,
         "city_id": "CN-XZ-MOTUO",
         "name_en": "Motuo",
         "name": "墨脱",
         "province": "Tibet",
-        "days": 90,
-        "move_in": "2027-01-01",
-        "avg_temp_c": 5
+        "days": 30,
+        "move_in": "2027-03-01",
+        "avg_temp_c": 8.2,
+        "avg_night_c": 2.7
       },
       {
         "from_month": 4,
-        "to_month": 6,
+        "to_month": 4,
         "city_id": "CN-XZ-LHASA",
         "name_en": "Lhasa",
         "name": "拉萨",
         "province": "Tibet",
-        "days": 90,
+        "days": 30,
         "move_in": "2027-04-01",
-        "avg_temp_c": 1.2
+        "avg_temp_c": -3.9,
+        "avg_night_c": -11.5
       },
       {
-        "from_month": 7,
+        "from_month": 5,
+        "to_month": 5,
+        "city_id": "CN-XZ-RIKAZE",
+        "name_en": "Rikaze",
+        "name": "日喀则",
+        "province": "Tibet",
+        "days": 30,
+        "move_in": "2027-05-01",
+        "avg_temp_c": 0.7,
+        "avg_night_c": -7.1
+      },
+      {
+        "from_month": 6,
+        "to_month": 7,
+        "city_id": "CN-XZ-MOTUO",
+        "name_en": "Motuo",
+        "name": "墨脱",
+        "province": "Tibet",
+        "days": 60,
+        "move_in": "2027-06-01",
+        "avg_temp_c": 24.1,
+        "avg_night_c": 18.7
+      },
+      {
+        "from_month": 8,
+        "to_month": 8,
+        "city_id": "CN-XZ-LHASA",
+        "name_en": "Lhasa",
+        "name": "拉萨",
+        "province": "Tibet",
+        "days": 30,
+        "move_in": "2027-08-01",
+        "avg_temp_c": 5.8,
+        "avg_night_c": -1.7
+      },
+      {
+        "from_month": 9,
         "to_month": 9,
         "city_id": "CN-XZ-RIKAZE",
         "name_en": "Rikaze",
         "name": "日喀则",
         "province": "Tibet",
-        "days": 90,
-        "move_in": "2027-07-01",
-        "avg_temp_c": 3.9
+        "days": 30,
+        "move_in": "2027-09-01",
+        "avg_temp_c": 0.7,
+        "avg_night_c": -7.1
       },
       {
         "from_month": 10,
@@ -354,47 +460,61 @@
         "province": "Tibet",
         "days": 30,
         "move_in": "2027-10-01",
-        "avg_temp_c": -3.9
+        "avg_temp_c": -3.9,
+        "avg_night_c": -11.5
       },
       {
         "from_month": 11,
-        "to_month": 12,
+        "to_month": 11,
         "city_id": "CN-XZ-MOTUO",
         "name_en": "Motuo",
         "name": "墨脱",
         "province": "Tibet",
-        "days": 60,
+        "days": 30,
         "move_in": "2027-11-01",
-        "avg_temp_c": 6.1
+        "avg_temp_c": 8.2,
+        "avg_night_c": 2.7
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
+        "move_in": "2027-12-01",
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-XZ-MOTUO",
-        "name_en": "Motuo",
-        "avg_temp_c": 5,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 12.5,
         "comfort_ok": false
       },
       {
         "quarter": 2,
         "city_id": "CN-XZ-LHASA",
         "name_en": "Lhasa",
-        "avg_temp_c": 1.2,
+        "avg_temp_c": 6.7,
         "comfort_ok": false
       },
       {
         "quarter": 3,
-        "city_id": "CN-XZ-RIKAZE",
-        "name_en": "Rikaze",
-        "avg_temp_c": 3.9,
+        "city_id": "CN-XZ-MOTUO",
+        "name_en": "Motuo",
+        "avg_temp_c": 10.4,
         "comfort_ok": false
       },
       {
         "quarter": 4,
-        "city_id": "CN-XZ-MOTUO",
-        "name_en": "Motuo",
-        "avg_temp_c": 2.8,
+        "city_id": "CN-XZ-LHASA",
+        "name_en": "Lhasa",
+        "avg_temp_c": 6.5,
         "comfort_ok": false
       }
     ]
@@ -405,19 +525,21 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-GS-LIUJIAXIA",
-        "name_en": "Liujiaxia",
-        "name": "刘家峡",
-        "temp_c": -9.3,
-        "discomfort": 17
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-GS-LIUJIAXIA",
-        "name_en": "Liujiaxia",
-        "name": "刘家峡",
-        "temp_c": -7.4,
-        "discomfort": 15.7
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -425,15 +547,17 @@
         "name_en": "Liujiaxia",
         "name": "刘家峡",
         "temp_c": -2.3,
-        "discomfort": 12.1
+        "night_temp_c": -8.3,
+        "discomfort": 12.8
       },
       {
         "month": 4,
-        "city_id": "CN-QH-JISHI",
-        "name_en": "Jishi",
-        "name": "撒拉族自治县",
-        "temp_c": 3.3,
-        "discomfort": 8.2
+        "city_id": "CN-GS-LIUJIAXIA",
+        "name_en": "Liujiaxia",
+        "name": "刘家峡",
+        "temp_c": 4.8,
+        "night_temp_c": -1.3,
+        "discomfort": 7.9
       },
       {
         "month": 5,
@@ -441,7 +565,8 @@
         "name_en": "Jishi",
         "name": "撒拉族自治县",
         "temp_c": 10.3,
-        "discomfort": 3.3
+        "night_temp_c": 4.1,
+        "discomfort": 4.1
       },
       {
         "month": 6,
@@ -449,7 +574,8 @@
         "name_en": "Hezheng Chengguanzhen",
         "name": "和政县",
         "temp_c": 14.1,
-        "discomfort": 0.6
+        "night_temp_c": 7.8,
+        "discomfort": 1.6
       },
       {
         "month": 7,
@@ -457,7 +583,8 @@
         "name_en": "Hezheng Chengguanzhen",
         "name": "和政县",
         "temp_c": 16,
-        "discomfort": 0
+        "night_temp_c": 9.6,
+        "discomfort": 0.3
       },
       {
         "month": 8,
@@ -465,15 +592,17 @@
         "name_en": "Hezheng Chengguanzhen",
         "name": "和政县",
         "temp_c": 14.1,
-        "discomfort": 0.6
+        "night_temp_c": 7.8,
+        "discomfort": 1.6
       },
       {
         "month": 9,
-        "city_id": "CN-GS-HEZHENGCHENGGUANZHEN",
-        "name_en": "Hezheng Chengguanzhen",
-        "name": "和政县",
-        "temp_c": 9.1,
-        "discomfort": 4.2
+        "city_id": "CN-QH-JISHI",
+        "name_en": "Jishi",
+        "name": "撒拉族自治县",
+        "temp_c": 10.3,
+        "night_temp_c": 4.1,
+        "discomfort": 4.1
       },
       {
         "month": 10,
@@ -481,109 +610,141 @@
         "name_en": "Jishi",
         "name": "撒拉族自治县",
         "temp_c": 3.3,
-        "discomfort": 8.2
+        "night_temp_c": -2.9,
+        "discomfort": 9
       },
       {
         "month": 11,
-        "city_id": "CN-QH-JISHI",
-        "name_en": "Jishi",
-        "name": "撒拉族自治县",
-        "temp_c": -3.7,
-        "discomfort": 13.1
-      },
-      {
-        "month": 12,
         "city_id": "CN-GS-LIUJIAXIA",
         "name_en": "Liujiaxia",
         "name": "刘家峡",
-        "temp_c": -7.4,
-        "discomfort": 15.7
+        "temp_c": -2.3,
+        "night_temp_c": -8.3,
+        "discomfort": 12.8
+      },
+      {
+        "month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
-        "to_month": 3,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2028-01-01",
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
+      },
+      {
+        "from_month": 3,
+        "to_month": 4,
         "city_id": "CN-GS-LIUJIAXIA",
         "name_en": "Liujiaxia",
         "name": "刘家峡",
         "province": "Gansu",
-        "days": 90,
-        "move_in": "2028-01-01",
-        "avg_temp_c": -6.3
+        "days": 60,
+        "move_in": "2028-03-01",
+        "avg_temp_c": 1.3,
+        "avg_night_c": -4.8
       },
       {
-        "from_month": 4,
+        "from_month": 5,
         "to_month": 5,
         "city_id": "CN-QH-JISHI",
         "name_en": "Jishi",
         "name": "撒拉族自治县",
         "province": "Qinghai",
-        "days": 60,
-        "move_in": "2028-04-01",
-        "avg_temp_c": 6.8
+        "days": 30,
+        "move_in": "2028-05-01",
+        "avg_temp_c": 10.3,
+        "avg_night_c": 4.1
       },
       {
         "from_month": 6,
-        "to_month": 9,
+        "to_month": 8,
         "city_id": "CN-GS-HEZHENGCHENGGUANZHEN",
         "name_en": "Hezheng Chengguanzhen",
         "name": "和政县",
         "province": "Gansu",
-        "days": 120,
+        "days": 90,
         "move_in": "2028-06-01",
-        "avg_temp_c": 13.3
+        "avg_temp_c": 14.7,
+        "avg_night_c": 8.4
       },
       {
-        "from_month": 10,
-        "to_month": 11,
+        "from_month": 9,
+        "to_month": 10,
         "city_id": "CN-QH-JISHI",
         "name_en": "Jishi",
         "name": "撒拉族自治县",
         "province": "Qinghai",
         "days": 60,
-        "move_in": "2028-10-01",
-        "avg_temp_c": -0.2
+        "move_in": "2028-09-01",
+        "avg_temp_c": 6.8,
+        "avg_night_c": 0.6
       },
       {
-        "from_month": 12,
-        "to_month": 12,
+        "from_month": 11,
+        "to_month": 11,
         "city_id": "CN-GS-LIUJIAXIA",
         "name_en": "Liujiaxia",
         "name": "刘家峡",
         "province": "Gansu",
         "days": 30,
+        "move_in": "2028-11-01",
+        "avg_temp_c": -2.3,
+        "avg_night_c": -8.3
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
         "move_in": "2028-12-01",
-        "avg_temp_c": -7.4
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-GS-LIUJIAXIA",
-        "name_en": "Liujiaxia",
-        "avg_temp_c": -6.3,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 9,
         "comfort_ok": false
       },
       {
         "quarter": 2,
-        "city_id": "CN-QH-JISHI",
-        "name_en": "Jishi",
-        "avg_temp_c": 9.2,
+        "city_id": "CN-GS-LIUJIAXIA",
+        "name_en": "Liujiaxia",
+        "avg_temp_c": 9.7,
         "comfort_ok": false
       },
       {
         "quarter": 3,
         "city_id": "CN-GS-HEZHENGCHENGGUANZHEN",
         "name_en": "Hezheng Chengguanzhen",
-        "avg_temp_c": 13.1,
+        "avg_temp_c": 13.5,
         "comfort_ok": false
       },
       {
         "quarter": 4,
         "city_id": "CN-QH-JISHI",
         "name_en": "Jishi",
-        "avg_temp_c": -2.6,
+        "avg_temp_c": 5.4,
         "comfort_ok": false
       }
     ]
@@ -594,27 +755,30 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-NM-BAOKANG",
-        "name_en": "Baokang",
-        "name": "保康",
-        "temp_c": -9,
-        "discomfort": 16.8
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-NM-BAOKANG",
-        "name_en": "Baokang",
-        "name": "保康",
-        "temp_c": -6.6,
-        "discomfort": 15.1
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
-        "city_id": "CN-NM-BAOKANG",
-        "name_en": "Baokang",
-        "name": "保康",
-        "temp_c": -0.1,
-        "discomfort": 10.6
+        "city_id": "CN-JL-ERDAO",
+        "name_en": "Erdao",
+        "name": "二道",
+        "temp_c": -0.2,
+        "night_temp_c": -4.5,
+        "discomfort": 10.2
       },
       {
         "month": 4,
@@ -622,31 +786,35 @@
         "name_en": "Erdao",
         "name": "二道",
         "temp_c": 8.6,
-        "discomfort": 4.5
+        "night_temp_c": 4.3,
+        "discomfort": 4
       },
       {
         "month": 5,
-        "city_id": "CN-JL-CHANGCHUN",
-        "name_en": "Changchun",
-        "name": "长春",
-        "temp_c": 17.4,
+        "city_id": "CN-NM-BAOKANG",
+        "name_en": "Baokang",
+        "name": "保康",
+        "temp_c": 17.6,
+        "night_temp_c": 12.8,
         "discomfort": 0
       },
       {
         "month": 6,
-        "city_id": "CN-JL-CHANGCHUN",
-        "name_en": "Changchun",
-        "name": "长春",
-        "temp_c": 23.8,
+        "city_id": "CN-NM-BAOKANG",
+        "name_en": "Baokang",
+        "name": "保康",
+        "temp_c": 24.1,
+        "night_temp_c": 19.3,
         "discomfort": 0
       },
       {
         "month": 7,
-        "city_id": "CN-JL-CHANGCHUN",
-        "name_en": "Changchun",
-        "name": "长春",
-        "temp_c": 26.2,
-        "discomfort": 0.1
+        "city_id": "CN-NM-BAOKANG",
+        "name_en": "Baokang",
+        "name": "保康",
+        "temp_c": 26.5,
+        "night_temp_c": 21.7,
+        "discomfort": 0
       },
       {
         "month": 8,
@@ -654,23 +822,26 @@
         "name_en": "Changchun",
         "name": "长春",
         "temp_c": 23.8,
+        "night_temp_c": 19.5,
         "discomfort": 0
       },
       {
         "month": 9,
-        "city_id": "CN-JL-ERDAO",
-        "name_en": "Erdao",
-        "name": "二道",
+        "city_id": "CN-JL-CHANGCHUN",
+        "name_en": "Changchun",
+        "name": "长春",
         "temp_c": 17.4,
+        "night_temp_c": 13,
         "discomfort": 0
       },
       {
         "month": 10,
-        "city_id": "CN-JL-ERDAO",
-        "name_en": "Erdao",
-        "name": "二道",
-        "temp_c": 8.6,
-        "discomfort": 4.5
+        "city_id": "CN-JL-CHANGCHUN",
+        "name_en": "Changchun",
+        "name": "长春",
+        "temp_c": 8.5,
+        "night_temp_c": 4.2,
+        "discomfort": 4.1
       },
       {
         "month": 11,
@@ -678,101 +849,120 @@
         "name_en": "Erdao",
         "name": "二道",
         "temp_c": -0.2,
-        "discomfort": 10.6
+        "night_temp_c": -4.5,
+        "discomfort": 10.2
       },
       {
         "month": 12,
-        "city_id": "CN-NM-BAOKANG",
-        "name_en": "Baokang",
-        "name": "保康",
-        "temp_c": -6.6,
-        "discomfort": 15.1
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
-        "to_month": 3,
-        "city_id": "CN-NM-BAOKANG",
-        "name_en": "Baokang",
-        "name": "保康",
-        "province": "Inner Mongolia",
-        "days": 90,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
         "move_in": "2029-01-01",
-        "avg_temp_c": -5.2
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
       },
       {
-        "from_month": 4,
+        "from_month": 3,
         "to_month": 4,
         "city_id": "CN-JL-ERDAO",
         "name_en": "Erdao",
         "name": "二道",
         "province": "Jilin",
-        "days": 30,
-        "move_in": "2029-04-01",
-        "avg_temp_c": 8.6
+        "days": 60,
+        "move_in": "2029-03-01",
+        "avg_temp_c": 4.2,
+        "avg_night_c": -0.1
       },
       {
         "from_month": 5,
-        "to_month": 8,
+        "to_month": 7,
+        "city_id": "CN-NM-BAOKANG",
+        "name_en": "Baokang",
+        "name": "保康",
+        "province": "Inner Mongolia",
+        "days": 90,
+        "move_in": "2029-05-01",
+        "avg_temp_c": 22.7,
+        "avg_night_c": 17.9
+      },
+      {
+        "from_month": 8,
+        "to_month": 10,
         "city_id": "CN-JL-CHANGCHUN",
         "name_en": "Changchun",
         "name": "长春",
         "province": "Jilin",
-        "days": 120,
-        "move_in": "2029-05-01",
-        "avg_temp_c": 22.8
+        "days": 90,
+        "move_in": "2029-08-01",
+        "avg_temp_c": 16.6,
+        "avg_night_c": 12.2
       },
       {
-        "from_month": 9,
+        "from_month": 11,
         "to_month": 11,
         "city_id": "CN-JL-ERDAO",
         "name_en": "Erdao",
         "name": "二道",
         "province": "Jilin",
-        "days": 90,
-        "move_in": "2029-09-01",
-        "avg_temp_c": 8.6
+        "days": 30,
+        "move_in": "2029-11-01",
+        "avg_temp_c": -0.2,
+        "avg_night_c": -4.5
       },
       {
         "from_month": 12,
         "to_month": 12,
-        "city_id": "CN-NM-BAOKANG",
-        "name_en": "Baokang",
-        "name": "保康",
-        "province": "Inner Mongolia",
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
         "days": 30,
         "move_in": "2029-12-01",
-        "avg_temp_c": -6.6
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-NM-BAOKANG",
-        "name_en": "Baokang",
-        "avg_temp_c": -5.2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 9.7,
         "comfort_ok": false
       },
       {
         "quarter": 2,
-        "city_id": "CN-JL-CHANGCHUN",
-        "name_en": "Changchun",
-        "avg_temp_c": 16.6,
+        "city_id": "CN-NM-BAOKANG",
+        "name_en": "Baokang",
+        "avg_temp_c": 16.8,
         "comfort_ok": false
       },
       {
         "quarter": 3,
         "city_id": "CN-JL-CHANGCHUN",
         "name_en": "Changchun",
-        "avg_temp_c": 22.5,
+        "avg_temp_c": 22.6,
         "comfort_ok": true
       },
       {
         "quarter": 4,
-        "city_id": "CN-JL-ERDAO",
-        "name_en": "Erdao",
-        "avg_temp_c": 0.6,
+        "city_id": "CN-JL-CHANGCHUN",
+        "name_en": "Changchun",
+        "avg_temp_c": 7.8,
         "comfort_ok": false
       }
     ]
@@ -783,19 +973,21 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-GS-HUIXIANCHENGGUANZHEN",
-        "name_en": "Huixian Chengguanzhen",
-        "name": "城关镇",
-        "temp_c": -2.1,
-        "discomfort": 11.9
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-GS-HUIXIANCHENGGUANZHEN",
-        "name_en": "Huixian Chengguanzhen",
-        "name": "城关镇",
-        "temp_c": -0.3,
-        "discomfort": 10.7
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -803,15 +995,17 @@
         "name_en": "Huixian Chengguanzhen",
         "name": "城关镇",
         "temp_c": 4.5,
-        "discomfort": 7.4
+        "night_temp_c": -1,
+        "discomfort": 7.7
       },
       {
         "month": 4,
-        "city_id": "CN-GS-ZHOUQUCHENGGUANZHEN",
-        "name_en": "Zhouqu Chengguanzhen",
-        "name": "舟曲",
-        "temp_c": 8.3,
-        "discomfort": 4.7
+        "city_id": "CN-GS-HUIXIANCHENGGUANZHEN",
+        "name_en": "Huixian Chengguanzhen",
+        "name": "城关镇",
+        "temp_c": 11,
+        "night_temp_c": 5.6,
+        "discomfort": 3.1
       },
       {
         "month": 5,
@@ -819,7 +1013,8 @@
         "name_en": "Zhouqu Chengguanzhen",
         "name": "舟曲",
         "temp_c": 14.9,
-        "discomfort": 0.1
+        "night_temp_c": 9.1,
+        "discomfort": 0.6
       },
       {
         "month": 6,
@@ -827,7 +1022,8 @@
         "name_en": "Qingyuan",
         "name": "清源",
         "temp_c": 14.4,
-        "discomfort": 0.4
+        "night_temp_c": 8.1,
+        "discomfort": 1.3
       },
       {
         "month": 7,
@@ -835,7 +1031,8 @@
         "name_en": "Qingyuan",
         "name": "清源",
         "temp_c": 16.3,
-        "discomfort": 0
+        "night_temp_c": 9.9,
+        "discomfort": 0.1
       },
       {
         "month": 8,
@@ -843,15 +1040,17 @@
         "name_en": "Qingyuan",
         "name": "清源",
         "temp_c": 14.4,
-        "discomfort": 0.4
+        "night_temp_c": 8.1,
+        "discomfort": 1.3
       },
       {
         "month": 9,
-        "city_id": "CN-GS-QINGYUAN",
-        "name_en": "Qingyuan",
-        "name": "清源",
-        "temp_c": 9.4,
-        "discomfort": 3.9
+        "city_id": "CN-GS-ZHOUQUCHENGGUANZHEN",
+        "name_en": "Zhouqu Chengguanzhen",
+        "name": "舟曲",
+        "temp_c": 14.9,
+        "night_temp_c": 9.1,
+        "discomfort": 0.6
       },
       {
         "month": 10,
@@ -859,109 +1058,141 @@
         "name_en": "Zhouqu Chengguanzhen",
         "name": "舟曲",
         "temp_c": 8.3,
-        "discomfort": 4.7
+        "night_temp_c": 2.5,
+        "discomfort": 5.2
       },
       {
         "month": 11,
-        "city_id": "CN-GS-ZHOUQUCHENGGUANZHEN",
-        "name_en": "Zhouqu Chengguanzhen",
-        "name": "舟曲",
-        "temp_c": 1.8,
-        "discomfort": 9.3
-      },
-      {
-        "month": 12,
         "city_id": "CN-GS-HUIXIANCHENGGUANZHEN",
         "name_en": "Huixian Chengguanzhen",
         "name": "城关镇",
-        "temp_c": -0.3,
-        "discomfort": 10.7
+        "temp_c": 4.5,
+        "night_temp_c": -1,
+        "discomfort": 7.7
+      },
+      {
+        "month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
-        "to_month": 3,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2030-01-01",
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
+      },
+      {
+        "from_month": 3,
+        "to_month": 4,
         "city_id": "CN-GS-HUIXIANCHENGGUANZHEN",
         "name_en": "Huixian Chengguanzhen",
         "name": "城关镇",
         "province": "Gansu",
-        "days": 90,
-        "move_in": "2030-01-01",
-        "avg_temp_c": 0.7
+        "days": 60,
+        "move_in": "2030-03-01",
+        "avg_temp_c": 7.8,
+        "avg_night_c": 2.3
       },
       {
-        "from_month": 4,
+        "from_month": 5,
         "to_month": 5,
         "city_id": "CN-GS-ZHOUQUCHENGGUANZHEN",
         "name_en": "Zhouqu Chengguanzhen",
         "name": "舟曲",
         "province": "Gansu",
-        "days": 60,
-        "move_in": "2030-04-01",
-        "avg_temp_c": 11.6
+        "days": 30,
+        "move_in": "2030-05-01",
+        "avg_temp_c": 14.9,
+        "avg_night_c": 9.1
       },
       {
         "from_month": 6,
-        "to_month": 9,
+        "to_month": 8,
         "city_id": "CN-GS-QINGYUAN",
         "name_en": "Qingyuan",
         "name": "清源",
         "province": "Gansu",
-        "days": 120,
+        "days": 90,
         "move_in": "2030-06-01",
-        "avg_temp_c": 13.6
+        "avg_temp_c": 15,
+        "avg_night_c": 8.7
       },
       {
-        "from_month": 10,
-        "to_month": 11,
+        "from_month": 9,
+        "to_month": 10,
         "city_id": "CN-GS-ZHOUQUCHENGGUANZHEN",
         "name_en": "Zhouqu Chengguanzhen",
         "name": "舟曲",
         "province": "Gansu",
         "days": 60,
-        "move_in": "2030-10-01",
-        "avg_temp_c": 5.1
+        "move_in": "2030-09-01",
+        "avg_temp_c": 11.6,
+        "avg_night_c": 5.8
       },
       {
-        "from_month": 12,
-        "to_month": 12,
+        "from_month": 11,
+        "to_month": 11,
         "city_id": "CN-GS-HUIXIANCHENGGUANZHEN",
         "name_en": "Huixian Chengguanzhen",
         "name": "城关镇",
         "province": "Gansu",
         "days": 30,
+        "move_in": "2030-11-01",
+        "avg_temp_c": 4.5,
+        "avg_night_c": -1
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
         "move_in": "2030-12-01",
-        "avg_temp_c": -0.3
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-GS-HUIXIANCHENGGUANZHEN",
-        "name_en": "Huixian Chengguanzhen",
-        "avg_temp_c": 0.7,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 11.2,
         "comfort_ok": false
       },
       {
         "quarter": 2,
-        "city_id": "CN-GS-ZHOUQUCHENGGUANZHEN",
-        "name_en": "Zhouqu Chengguanzhen",
-        "avg_temp_c": 12.5,
+        "city_id": "CN-GS-HUIXIANCHENGGUANZHEN",
+        "name_en": "Huixian Chengguanzhen",
+        "avg_temp_c": 13.4,
         "comfort_ok": false
       },
       {
         "quarter": 3,
         "city_id": "CN-GS-QINGYUAN",
         "name_en": "Qingyuan",
-        "avg_temp_c": 13.4,
+        "avg_temp_c": 15.2,
         "comfort_ok": false
       },
       {
         "quarter": 4,
         "city_id": "CN-GS-ZHOUQUCHENGGUANZHEN",
         "name_en": "Zhouqu Chengguanzhen",
-        "avg_temp_c": 3.3,
+        "avg_temp_c": 9.3,
         "comfort_ok": false
       }
     ]
@@ -972,19 +1203,21 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-NX-PINGLUOCHENGGUANZHEN",
-        "name_en": "Pingluo Chengguanzhen",
-        "name": "平罗县",
-        "temp_c": -9.2,
-        "discomfort": 16.9
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-NX-PINGLUOCHENGGUANZHEN",
-        "name_en": "Pingluo Chengguanzhen",
-        "name": "平罗县",
-        "temp_c": -7.1,
-        "discomfort": 15.5
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -992,15 +1225,17 @@
         "name_en": "Pingluo Chengguanzhen",
         "name": "平罗县",
         "temp_c": -1.5,
-        "discomfort": 11.5
+        "night_temp_c": -7.1,
+        "discomfort": 12
       },
       {
         "month": 4,
-        "city_id": "CN-NX-BEIJIE",
-        "name_en": "Beijie",
-        "name": "北街",
-        "temp_c": 6,
-        "discomfort": 6.3
+        "city_id": "CN-NX-PINGLUOCHENGGUANZHEN",
+        "name_en": "Pingluo Chengguanzhen",
+        "name": "平罗县",
+        "temp_c": 6.2,
+        "night_temp_c": 0.6,
+        "discomfort": 6.6
       },
       {
         "month": 5,
@@ -1008,7 +1243,8 @@
         "name_en": "Beijie",
         "name": "北街",
         "temp_c": 13.8,
-        "discomfort": 0.8
+        "night_temp_c": 8.2,
+        "discomfort": 1.3
       },
       {
         "month": 6,
@@ -1016,6 +1252,7 @@
         "name_en": "Xinli",
         "name": "杭锦旗",
         "temp_c": 17.6,
+        "night_temp_c": 11.7,
         "discomfort": 0
       },
       {
@@ -1024,6 +1261,7 @@
         "name_en": "Xinli",
         "name": "杭锦旗",
         "temp_c": 19.7,
+        "night_temp_c": 13.9,
         "discomfort": 0
       },
       {
@@ -1032,15 +1270,17 @@
         "name_en": "Xinli",
         "name": "杭锦旗",
         "temp_c": 17.6,
+        "night_temp_c": 11.7,
         "discomfort": 0
       },
       {
         "month": 9,
-        "city_id": "CN-NM-XINLI",
-        "name_en": "Xinli",
-        "name": "杭锦旗",
-        "temp_c": 11.8,
-        "discomfort": 2.3
+        "city_id": "CN-NX-BEIJIE",
+        "name_en": "Beijie",
+        "name": "北街",
+        "temp_c": 13.8,
+        "night_temp_c": 8.2,
+        "discomfort": 1.3
       },
       {
         "month": 10,
@@ -1048,94 +1288,126 @@
         "name_en": "Beijie",
         "name": "北街",
         "temp_c": 6,
-        "discomfort": 6.3
+        "night_temp_c": 0.4,
+        "discomfort": 6.7
       },
       {
         "month": 11,
-        "city_id": "CN-NX-BEIJIE",
-        "name_en": "Beijie",
-        "name": "北街",
-        "temp_c": -1.7,
-        "discomfort": 11.7
-      },
-      {
-        "month": 12,
         "city_id": "CN-NX-PINGLUOCHENGGUANZHEN",
         "name_en": "Pingluo Chengguanzhen",
         "name": "平罗县",
-        "temp_c": -7.1,
-        "discomfort": 15.5
+        "temp_c": -1.5,
+        "night_temp_c": -7.1,
+        "discomfort": 12
+      },
+      {
+        "month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
-        "to_month": 3,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2031-01-01",
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
+      },
+      {
+        "from_month": 3,
+        "to_month": 4,
         "city_id": "CN-NX-PINGLUOCHENGGUANZHEN",
         "name_en": "Pingluo Chengguanzhen",
         "name": "平罗县",
         "province": "Ningxia",
-        "days": 90,
-        "move_in": "2031-01-01",
-        "avg_temp_c": -5.9
+        "days": 60,
+        "move_in": "2031-03-01",
+        "avg_temp_c": 2.4,
+        "avg_night_c": -3.2
       },
       {
-        "from_month": 4,
+        "from_month": 5,
         "to_month": 5,
         "city_id": "CN-NX-BEIJIE",
         "name_en": "Beijie",
         "name": "北街",
         "province": "Ningxia",
-        "days": 60,
-        "move_in": "2031-04-01",
-        "avg_temp_c": 9.9
+        "days": 30,
+        "move_in": "2031-05-01",
+        "avg_temp_c": 13.8,
+        "avg_night_c": 8.2
       },
       {
         "from_month": 6,
-        "to_month": 9,
+        "to_month": 8,
         "city_id": "CN-NM-XINLI",
         "name_en": "Xinli",
         "name": "杭锦旗",
         "province": "Inner Mongolia",
-        "days": 120,
+        "days": 90,
         "move_in": "2031-06-01",
-        "avg_temp_c": 16.7
+        "avg_temp_c": 18.3,
+        "avg_night_c": 12.4
       },
       {
-        "from_month": 10,
-        "to_month": 11,
+        "from_month": 9,
+        "to_month": 10,
         "city_id": "CN-NX-BEIJIE",
         "name_en": "Beijie",
         "name": "北街",
         "province": "Ningxia",
         "days": 60,
-        "move_in": "2031-10-01",
-        "avg_temp_c": 2.2
+        "move_in": "2031-09-01",
+        "avg_temp_c": 9.9,
+        "avg_night_c": 4.3
       },
       {
-        "from_month": 12,
-        "to_month": 12,
+        "from_month": 11,
+        "to_month": 11,
         "city_id": "CN-NX-PINGLUOCHENGGUANZHEN",
         "name_en": "Pingluo Chengguanzhen",
         "name": "平罗县",
         "province": "Ningxia",
         "days": 30,
+        "move_in": "2031-11-01",
+        "avg_temp_c": -1.5,
+        "avg_night_c": -7.1
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
         "move_in": "2031-12-01",
-        "avg_temp_c": -7.1
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-NX-PINGLUOCHENGGUANZHEN",
-        "name_en": "Pingluo Chengguanzhen",
-        "avg_temp_c": -5.9,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 9.2,
         "comfort_ok": false
       },
       {
         "quarter": 2,
-        "city_id": "CN-NX-BEIJIE",
-        "name_en": "Beijie",
+        "city_id": "CN-NX-PINGLUOCHENGGUANZHEN",
+        "name_en": "Pingluo Chengguanzhen",
         "avg_temp_c": 12.5,
         "comfort_ok": false
       },
@@ -1143,14 +1415,14 @@
         "quarter": 3,
         "city_id": "CN-NM-XINLI",
         "name_en": "Xinli",
-        "avg_temp_c": 16.4,
+        "avg_temp_c": 17,
         "comfort_ok": false
       },
       {
         "quarter": 4,
         "city_id": "CN-NX-BEIJIE",
         "name_en": "Beijie",
-        "avg_temp_c": -0.9,
+        "avg_temp_c": 6.6,
         "comfort_ok": false
       }
     ]
@@ -1161,19 +1433,21 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-HL-XIAN",
-        "name_en": "Xi'an",
-        "name": "西安",
-        "temp_c": -10.1,
-        "discomfort": 17.6
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-HL-XIAN",
-        "name_en": "Xi'an",
-        "name": "西安",
-        "temp_c": -7.7,
-        "discomfort": 15.9
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -1181,15 +1455,17 @@
         "name_en": "Xi'an",
         "name": "西安",
         "temp_c": -1.2,
-        "discomfort": 11.3
+        "night_temp_c": -5.5,
+        "discomfort": 10.9
       },
       {
         "month": 4,
-        "city_id": "CN-HL-JIDONG",
-        "name_en": "Jidong",
-        "name": "鸡东",
-        "temp_c": 7.3,
-        "discomfort": 5.4
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 7.8,
+        "night_temp_c": 3.4,
+        "discomfort": 4.6
       },
       {
         "month": 5,
@@ -1197,14 +1473,16 @@
         "name_en": "Jidong",
         "name": "鸡东",
         "temp_c": 16.4,
+        "night_temp_c": 12,
         "discomfort": 0
       },
       {
         "month": 6,
-        "city_id": "CN-HL-SIFANGTAI",
-        "name_en": "Sifangtai",
-        "name": "四方台",
-        "temp_c": 23,
+        "city_id": "CN-HL-JIDONG",
+        "name_en": "Jidong",
+        "name": "鸡东",
+        "temp_c": 23.1,
+        "night_temp_c": 18.7,
         "discomfort": 0
       },
       {
@@ -1213,6 +1491,7 @@
         "name_en": "Sifangtai",
         "name": "四方台",
         "temp_c": 25.5,
+        "night_temp_c": 21.2,
         "discomfort": 0
       },
       {
@@ -1221,6 +1500,7 @@
         "name_en": "Sifangtai",
         "name": "四方台",
         "temp_c": 23,
+        "night_temp_c": 18.6,
         "discomfort": 0
       },
       {
@@ -1229,6 +1509,7 @@
         "name_en": "Sifangtai",
         "name": "四方台",
         "temp_c": 16.1,
+        "night_temp_c": 11.7,
         "discomfort": 0
       },
       {
@@ -1237,95 +1518,127 @@
         "name_en": "Jidong",
         "name": "鸡东",
         "temp_c": 7.3,
-        "discomfort": 5.4
+        "night_temp_c": 2.9,
+        "discomfort": 5
       },
       {
         "month": 11,
-        "city_id": "CN-HL-JIDONG",
-        "name_en": "Jidong",
-        "name": "鸡东",
-        "temp_c": -1.8,
-        "discomfort": 11.8
-      },
-      {
-        "month": 12,
         "city_id": "CN-HL-XIAN",
         "name_en": "Xi'an",
         "name": "西安",
-        "temp_c": -7.7,
-        "discomfort": 15.9
+        "temp_c": -1.2,
+        "night_temp_c": -5.5,
+        "discomfort": 10.9
+      },
+      {
+        "month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
-        "to_month": 3,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2032-01-01",
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
+      },
+      {
+        "from_month": 3,
+        "to_month": 4,
         "city_id": "CN-HL-XIAN",
         "name_en": "Xi'an",
         "name": "西安",
         "province": "Heilongjiang",
-        "days": 90,
-        "move_in": "2032-01-01",
-        "avg_temp_c": -6.3
+        "days": 60,
+        "move_in": "2032-03-01",
+        "avg_temp_c": 3.3,
+        "avg_night_c": -1
       },
       {
-        "from_month": 4,
-        "to_month": 5,
+        "from_month": 5,
+        "to_month": 6,
         "city_id": "CN-HL-JIDONG",
         "name_en": "Jidong",
         "name": "鸡东",
         "province": "Heilongjiang",
         "days": 60,
-        "move_in": "2032-04-01",
-        "avg_temp_c": 11.9
+        "move_in": "2032-05-01",
+        "avg_temp_c": 19.8,
+        "avg_night_c": 15.4
       },
       {
-        "from_month": 6,
+        "from_month": 7,
         "to_month": 9,
         "city_id": "CN-HL-SIFANGTAI",
         "name_en": "Sifangtai",
         "name": "四方台",
         "province": "Heilongjiang",
-        "days": 120,
-        "move_in": "2032-06-01",
-        "avg_temp_c": 21.9
+        "days": 90,
+        "move_in": "2032-07-01",
+        "avg_temp_c": 21.5,
+        "avg_night_c": 17.2
       },
       {
         "from_month": 10,
-        "to_month": 11,
+        "to_month": 10,
         "city_id": "CN-HL-JIDONG",
         "name_en": "Jidong",
         "name": "鸡东",
         "province": "Heilongjiang",
-        "days": 60,
+        "days": 30,
         "move_in": "2032-10-01",
-        "avg_temp_c": 2.8
+        "avg_temp_c": 7.3,
+        "avg_night_c": 2.9
       },
       {
-        "from_month": 12,
-        "to_month": 12,
+        "from_month": 11,
+        "to_month": 11,
         "city_id": "CN-HL-XIAN",
         "name_en": "Xi'an",
         "name": "西安",
         "province": "Heilongjiang",
         "days": 30,
+        "move_in": "2032-11-01",
+        "avg_temp_c": -1.2,
+        "avg_night_c": -5.5
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
         "move_in": "2032-12-01",
-        "avg_temp_c": -7.7
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-HL-XIAN",
-        "name_en": "Xi'an",
-        "avg_temp_c": -6.3,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 9.3,
         "comfort_ok": false
       },
       {
         "quarter": 2,
         "city_id": "CN-HL-JIDONG",
         "name_en": "Jidong",
-        "avg_temp_c": 15.6,
+        "avg_temp_c": 15.8,
         "comfort_ok": false
       },
       {
@@ -1339,7 +1652,7 @@
         "quarter": 4,
         "city_id": "CN-HL-JIDONG",
         "name_en": "Jidong",
-        "avg_temp_c": -0.7,
+        "avg_temp_c": 7.1,
         "comfort_ok": false
       }
     ]
@@ -1350,27 +1663,30 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-JL-LIUHE",
-        "name_en": "Liuhe",
-        "name": "柳河",
-        "temp_c": -8.2,
-        "discomfort": 16.3
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-JL-LIUHE",
-        "name_en": "Liuhe",
-        "name": "柳河",
-        "temp_c": -6,
-        "discomfort": 14.7
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
-        "city_id": "CN-JL-LIUHE",
-        "name_en": "Liuhe",
-        "name": "柳河",
+        "city_id": "CN-JL-HUADIAN",
+        "name_en": "Huadian",
+        "name": "桦甸",
         "temp_c": 0.2,
-        "discomfort": 10.3
+        "night_temp_c": -4.2,
+        "discomfort": 9.9
       },
       {
         "month": 4,
@@ -1378,7 +1694,8 @@
         "name_en": "Huadian",
         "name": "桦甸",
         "temp_c": 8.8,
-        "discomfort": 4.3
+        "night_temp_c": 4.4,
+        "discomfort": 3.9
       },
       {
         "month": 5,
@@ -1386,6 +1703,7 @@
         "name_en": "Antu",
         "name": "安图",
         "temp_c": 16.8,
+        "night_temp_c": 12.4,
         "discomfort": 0
       },
       {
@@ -1394,6 +1712,7 @@
         "name_en": "Antu",
         "name": "安图",
         "temp_c": 23.2,
+        "night_temp_c": 18.7,
         "discomfort": 0
       },
       {
@@ -1402,31 +1721,35 @@
         "name_en": "Antu",
         "name": "安图",
         "temp_c": 25.5,
+        "night_temp_c": 21,
         "discomfort": 0
       },
       {
         "month": 8,
-        "city_id": "CN-JL-ANTU",
-        "name_en": "Antu",
-        "name": "安图",
-        "temp_c": 23.2,
+        "city_id": "CN-JL-LIUHE",
+        "name_en": "Liuhe",
+        "name": "柳河",
+        "temp_c": 23.4,
+        "night_temp_c": 18.9,
         "discomfort": 0
       },
       {
         "month": 9,
-        "city_id": "CN-JL-HUADIAN",
-        "name_en": "Huadian",
-        "name": "桦甸",
-        "temp_c": 17.4,
+        "city_id": "CN-JL-LIUHE",
+        "name_en": "Liuhe",
+        "name": "柳河",
+        "temp_c": 17.2,
+        "night_temp_c": 12.7,
         "discomfort": 0
       },
       {
         "month": 10,
-        "city_id": "CN-JL-HUADIAN",
-        "name_en": "Huadian",
-        "name": "桦甸",
-        "temp_c": 8.8,
-        "discomfort": 4.3
+        "city_id": "CN-JL-LIUHE",
+        "name_en": "Liuhe",
+        "name": "柳河",
+        "temp_c": 8.7,
+        "night_temp_c": 4.2,
+        "discomfort": 4
       },
       {
         "month": 11,
@@ -1434,80 +1757,99 @@
         "name_en": "Huadian",
         "name": "桦甸",
         "temp_c": 0.2,
-        "discomfort": 10.4
+        "night_temp_c": -4.2,
+        "discomfort": 9.9
       },
       {
         "month": 12,
-        "city_id": "CN-JL-LIUHE",
-        "name_en": "Liuhe",
-        "name": "柳河",
-        "temp_c": -6,
-        "discomfort": 14.7
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
-        "to_month": 3,
-        "city_id": "CN-JL-LIUHE",
-        "name_en": "Liuhe",
-        "name": "柳河",
-        "province": "Jilin",
-        "days": 90,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
         "move_in": "2033-01-01",
-        "avg_temp_c": -4.7
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
       },
       {
-        "from_month": 4,
+        "from_month": 3,
         "to_month": 4,
         "city_id": "CN-JL-HUADIAN",
         "name_en": "Huadian",
         "name": "桦甸",
         "province": "Jilin",
-        "days": 30,
-        "move_in": "2033-04-01",
-        "avg_temp_c": 8.8
+        "days": 60,
+        "move_in": "2033-03-01",
+        "avg_temp_c": 4.5,
+        "avg_night_c": 0.1
       },
       {
         "from_month": 5,
-        "to_month": 8,
+        "to_month": 7,
         "city_id": "CN-JL-ANTU",
         "name_en": "Antu",
         "name": "安图",
         "province": "Jilin",
-        "days": 120,
+        "days": 90,
         "move_in": "2033-05-01",
-        "avg_temp_c": 22.2
+        "avg_temp_c": 21.8,
+        "avg_night_c": 17.4
       },
       {
-        "from_month": 9,
+        "from_month": 8,
+        "to_month": 10,
+        "city_id": "CN-JL-LIUHE",
+        "name_en": "Liuhe",
+        "name": "柳河",
+        "province": "Jilin",
+        "days": 90,
+        "move_in": "2033-08-01",
+        "avg_temp_c": 16.4,
+        "avg_night_c": 11.9
+      },
+      {
+        "from_month": 11,
         "to_month": 11,
         "city_id": "CN-JL-HUADIAN",
         "name_en": "Huadian",
         "name": "桦甸",
         "province": "Jilin",
-        "days": 90,
-        "move_in": "2033-09-01",
-        "avg_temp_c": 8.8
+        "days": 30,
+        "move_in": "2033-11-01",
+        "avg_temp_c": 0.2,
+        "avg_night_c": -4.2
       },
       {
         "from_month": 12,
         "to_month": 12,
-        "city_id": "CN-JL-LIUHE",
-        "name_en": "Liuhe",
-        "name": "柳河",
-        "province": "Jilin",
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
         "days": 30,
         "move_in": "2033-12-01",
-        "avg_temp_c": -6
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-JL-LIUHE",
-        "name_en": "Liuhe",
-        "avg_temp_c": -4.7,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 9.8,
         "comfort_ok": false
       },
       {
@@ -1519,16 +1861,16 @@
       },
       {
         "quarter": 3,
-        "city_id": "CN-JL-ANTU",
-        "name_en": "Antu",
+        "city_id": "CN-JL-LIUHE",
+        "name_en": "Liuhe",
         "avg_temp_c": 22,
         "comfort_ok": true
       },
       {
         "quarter": 4,
-        "city_id": "CN-JL-HUADIAN",
-        "name_en": "Huadian",
-        "avg_temp_c": 1,
+        "city_id": "CN-JL-LIUHE",
+        "name_en": "Liuhe",
+        "avg_temp_c": 8,
         "comfort_ok": false
       }
     ]
@@ -1539,19 +1881,21 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-LN-DASHIQIAO",
-        "name_en": "Dashiqiao",
-        "name": "大石桥",
-        "temp_c": -4.1,
-        "discomfort": 13.4
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-LN-DASHIQIAO",
-        "name_en": "Dashiqiao",
-        "name": "大石桥",
-        "temp_c": -2,
-        "discomfort": 11.9
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -1559,7 +1903,8 @@
         "name_en": "Dashiqiao",
         "name": "大石桥",
         "temp_c": 4,
-        "discomfort": 7.7
+        "night_temp_c": -0.2,
+        "discomfort": 7.2
       },
       {
         "month": 4,
@@ -1567,7 +1912,8 @@
         "name_en": "Lianshan",
         "name": "连山",
         "temp_c": 12,
-        "discomfort": 2.1
+        "night_temp_c": 7.8,
+        "discomfort": 1.6
       },
       {
         "month": 5,
@@ -1575,6 +1921,7 @@
         "name_en": "Shenyang",
         "name": "沈阳",
         "temp_c": 19.4,
+        "night_temp_c": 15.1,
         "discomfort": 0
       },
       {
@@ -1583,30 +1930,34 @@
         "name_en": "Shenyang",
         "name": "沈阳",
         "temp_c": 25.5,
+        "night_temp_c": 21.2,
         "discomfort": 0
       },
       {
         "month": 7,
-        "city_id": "CN-LN-SHENYANG",
-        "name_en": "Shenyang",
-        "name": "沈阳",
-        "temp_c": 27.7,
-        "discomfort": 1
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.8,
+        "night_temp_c": 21.4,
+        "discomfort": 0
       },
       {
         "month": 8,
-        "city_id": "CN-LN-SHENYANG",
-        "name_en": "Shenyang",
-        "name": "沈阳",
-        "temp_c": 25.5,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
         "discomfort": 0
       },
       {
         "month": 9,
-        "city_id": "CN-LN-LIANSHAN",
-        "name_en": "Lianshan",
-        "name": "连山",
-        "temp_c": 20.1,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 16.8,
+        "night_temp_c": 12.4,
         "discomfort": 0
       },
       {
@@ -1615,36 +1966,52 @@
         "name_en": "Lianshan",
         "name": "连山",
         "temp_c": 12,
-        "discomfort": 2.1
+        "night_temp_c": 7.8,
+        "discomfort": 1.6
       },
       {
         "month": 11,
-        "city_id": "CN-LN-LIANSHAN",
-        "name_en": "Lianshan",
-        "name": "连山",
-        "temp_c": 3.8,
-        "discomfort": 7.8
-      },
-      {
-        "month": 12,
         "city_id": "CN-LN-DASHIQIAO",
         "name_en": "Dashiqiao",
         "name": "大石桥",
-        "temp_c": -2,
-        "discomfort": 11.9
+        "temp_c": 4,
+        "night_temp_c": -0.2,
+        "discomfort": 7.2
+      },
+      {
+        "month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2034-01-01",
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
+      },
+      {
+        "from_month": 3,
         "to_month": 3,
         "city_id": "CN-LN-DASHIQIAO",
         "name_en": "Dashiqiao",
         "name": "大石桥",
         "province": "Liaoning",
-        "days": 90,
-        "move_in": "2034-01-01",
-        "avg_temp_c": -0.7
+        "days": 30,
+        "move_in": "2034-03-01",
+        "avg_temp_c": 4,
+        "avg_night_c": -0.2
       },
       {
         "from_month": 4,
@@ -1655,48 +2022,76 @@
         "province": "Liaoning",
         "days": 30,
         "move_in": "2034-04-01",
-        "avg_temp_c": 12
+        "avg_temp_c": 12,
+        "avg_night_c": 7.8
       },
       {
         "from_month": 5,
-        "to_month": 8,
+        "to_month": 6,
         "city_id": "CN-LN-SHENYANG",
         "name_en": "Shenyang",
         "name": "沈阳",
         "province": "Liaoning",
-        "days": 120,
+        "days": 60,
         "move_in": "2034-05-01",
-        "avg_temp_c": 24.5
+        "avg_temp_c": 22.5,
+        "avg_night_c": 18.2
       },
       {
-        "from_month": 9,
-        "to_month": 11,
+        "from_month": 7,
+        "to_month": 9,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Heilongjiang",
+        "days": 90,
+        "move_in": "2034-07-01",
+        "avg_temp_c": 22,
+        "avg_night_c": 17.6
+      },
+      {
+        "from_month": 10,
+        "to_month": 10,
         "city_id": "CN-LN-LIANSHAN",
         "name_en": "Lianshan",
         "name": "连山",
         "province": "Liaoning",
-        "days": 90,
-        "move_in": "2034-09-01",
-        "avg_temp_c": 12
+        "days": 30,
+        "move_in": "2034-10-01",
+        "avg_temp_c": 12,
+        "avg_night_c": 7.8
       },
       {
-        "from_month": 12,
-        "to_month": 12,
+        "from_month": 11,
+        "to_month": 11,
         "city_id": "CN-LN-DASHIQIAO",
         "name_en": "Dashiqiao",
         "name": "大石桥",
         "province": "Liaoning",
         "days": 30,
+        "move_in": "2034-11-01",
+        "avg_temp_c": 4,
+        "avg_night_c": -0.2
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
         "move_in": "2034-12-01",
-        "avg_temp_c": -2
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-LN-DASHIQIAO",
-        "name_en": "Dashiqiao",
-        "avg_temp_c": -0.7,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 11.1,
         "comfort_ok": false
       },
       {
@@ -1708,16 +2103,16 @@
       },
       {
         "quarter": 3,
-        "city_id": "CN-LN-SHENYANG",
-        "name_en": "Shenyang",
-        "avg_temp_c": 24.4,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 22,
         "comfort_ok": true
       },
       {
         "quarter": 4,
         "city_id": "CN-LN-LIANSHAN",
         "name_en": "Lianshan",
-        "avg_temp_c": 4.6,
+        "avg_temp_c": 10.4,
         "comfort_ok": false
       }
     ]
@@ -1728,19 +2123,21 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-XJ-GAOCHANG",
-        "name_en": "Gaochang",
-        "name": "高昌",
-        "temp_c": -6.8,
-        "discomfort": 15.2
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-XJ-GAOCHANG",
-        "name_en": "Gaochang",
-        "name": "高昌",
-        "temp_c": -4.5,
-        "discomfort": 13.6
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -1748,15 +2145,17 @@
         "name_en": "Gaochang",
         "name": "高昌",
         "temp_c": 1.9,
-        "discomfort": 9.2
+        "night_temp_c": -2.9,
+        "discomfort": 9
       },
       {
         "month": 4,
-        "city_id": "CN-XJ-BOFENG",
-        "name_en": "Bofeng",
-        "name": "博峰",
-        "temp_c": 6,
-        "discomfort": 6.3
+        "city_id": "CN-XJ-GAOCHANG",
+        "name_en": "Gaochang",
+        "name": "高昌",
+        "temp_c": 10.5,
+        "night_temp_c": 5.7,
+        "discomfort": 3
       },
       {
         "month": 5,
@@ -1764,7 +2163,8 @@
         "name_en": "Bofeng",
         "name": "博峰",
         "temp_c": 14.9,
-        "discomfort": 0.1
+        "night_temp_c": 9.7,
+        "discomfort": 0.2
       },
       {
         "month": 6,
@@ -1772,6 +2172,7 @@
         "name_en": "Gumudi",
         "name": "古木地",
         "temp_c": 21,
+        "night_temp_c": 15.8,
         "discomfort": 0
       },
       {
@@ -1780,6 +2181,7 @@
         "name_en": "Gumudi",
         "name": "古木地",
         "temp_c": 23.4,
+        "night_temp_c": 18.1,
         "discomfort": 0
       },
       {
@@ -1788,15 +2190,17 @@
         "name_en": "Gumudi",
         "name": "古木地",
         "temp_c": 21,
+        "night_temp_c": 15.8,
         "discomfort": 0
       },
       {
         "month": 9,
-        "city_id": "CN-XJ-GUMUDI",
-        "name_en": "Gumudi",
-        "name": "古木地",
-        "temp_c": 14.6,
-        "discomfort": 0.3
+        "city_id": "CN-XJ-BOFENG",
+        "name_en": "Bofeng",
+        "name": "博峰",
+        "temp_c": 14.9,
+        "night_temp_c": 9.7,
+        "discomfort": 0.2
       },
       {
         "month": 10,
@@ -1804,109 +2208,141 @@
         "name_en": "Bofeng",
         "name": "博峰",
         "temp_c": 6,
-        "discomfort": 6.3
+        "night_temp_c": 0.8,
+        "discomfort": 6.4
       },
       {
         "month": 11,
-        "city_id": "CN-XJ-BOFENG",
-        "name_en": "Bofeng",
-        "name": "博峰",
-        "temp_c": -2.9,
-        "discomfort": 12.5
-      },
-      {
-        "month": 12,
         "city_id": "CN-XJ-GAOCHANG",
         "name_en": "Gaochang",
         "name": "高昌",
-        "temp_c": -4.5,
-        "discomfort": 13.6
+        "temp_c": 1.9,
+        "night_temp_c": -2.9,
+        "discomfort": 9
+      },
+      {
+        "month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
-        "to_month": 3,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2035-01-01",
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
+      },
+      {
+        "from_month": 3,
+        "to_month": 4,
         "city_id": "CN-XJ-GAOCHANG",
         "name_en": "Gaochang",
         "name": "高昌",
         "province": "Xinjiang",
-        "days": 90,
-        "move_in": "2035-01-01",
-        "avg_temp_c": -3.1
+        "days": 60,
+        "move_in": "2035-03-01",
+        "avg_temp_c": 6.2,
+        "avg_night_c": 1.4
       },
       {
-        "from_month": 4,
+        "from_month": 5,
         "to_month": 5,
         "city_id": "CN-XJ-BOFENG",
         "name_en": "Bofeng",
         "name": "博峰",
         "province": "Xinjiang",
-        "days": 60,
-        "move_in": "2035-04-01",
-        "avg_temp_c": 10.5
+        "days": 30,
+        "move_in": "2035-05-01",
+        "avg_temp_c": 14.9,
+        "avg_night_c": 9.7
       },
       {
         "from_month": 6,
-        "to_month": 9,
+        "to_month": 8,
         "city_id": "CN-XJ-GUMUDI",
         "name_en": "Gumudi",
         "name": "古木地",
         "province": "Xinjiang",
-        "days": 120,
+        "days": 90,
         "move_in": "2035-06-01",
-        "avg_temp_c": 20
+        "avg_temp_c": 21.8,
+        "avg_night_c": 16.6
       },
       {
-        "from_month": 10,
-        "to_month": 11,
+        "from_month": 9,
+        "to_month": 10,
         "city_id": "CN-XJ-BOFENG",
         "name_en": "Bofeng",
         "name": "博峰",
         "province": "Xinjiang",
         "days": 60,
-        "move_in": "2035-10-01",
-        "avg_temp_c": 1.6
+        "move_in": "2035-09-01",
+        "avg_temp_c": 10.5,
+        "avg_night_c": 5.3
       },
       {
-        "from_month": 12,
-        "to_month": 12,
+        "from_month": 11,
+        "to_month": 11,
         "city_id": "CN-XJ-GAOCHANG",
         "name_en": "Gaochang",
         "name": "高昌",
         "province": "Xinjiang",
         "days": 30,
+        "move_in": "2035-11-01",
+        "avg_temp_c": 1.9,
+        "avg_night_c": -2.9
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
         "move_in": "2035-12-01",
-        "avg_temp_c": -4.5
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-XJ-GAOCHANG",
-        "name_en": "Gaochang",
-        "avg_temp_c": -3.1,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 10.4,
         "comfort_ok": false
       },
       {
         "quarter": 2,
-        "city_id": "CN-XJ-BOFENG",
-        "name_en": "Bofeng",
-        "avg_temp_c": 14,
+        "city_id": "CN-XJ-GAOCHANG",
+        "name_en": "Gaochang",
+        "avg_temp_c": 15.5,
         "comfort_ok": false
       },
       {
         "quarter": 3,
         "city_id": "CN-XJ-GUMUDI",
         "name_en": "Gumudi",
-        "avg_temp_c": 19.7,
+        "avg_temp_c": 19.8,
         "comfort_ok": true
       },
       {
         "quarter": 4,
         "city_id": "CN-XJ-BOFENG",
         "name_en": "Bofeng",
-        "avg_temp_c": -0.5,
+        "avg_temp_c": 7.7,
         "comfort_ok": false
       }
     ]
@@ -1917,19 +2353,21 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-XZ-NYINGCHI",
-        "name_en": "Nyingchi",
-        "name": "Nyingchi",
-        "temp_c": -10.7,
-        "discomfort": 18
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-XZ-NYINGCHI",
-        "name_en": "Nyingchi",
-        "name": "Nyingchi",
-        "temp_c": -9.2,
-        "discomfort": 16.9
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -1937,15 +2375,17 @@
         "name_en": "Nyingchi",
         "name": "Nyingchi",
         "temp_c": -5.1,
-        "discomfort": 14.1
+        "night_temp_c": -12.1,
+        "discomfort": 15.5
       },
       {
         "month": 4,
-        "city_id": "CN-XZ-LHUENZHUB",
-        "name_en": "Lhuenzhub",
-        "name": "Lhuenzhub",
-        "temp_c": -4.9,
-        "discomfort": 13.9
+        "city_id": "CN-XZ-NYINGCHI",
+        "name_en": "Nyingchi",
+        "name": "Nyingchi",
+        "temp_c": 0.5,
+        "night_temp_c": -6.5,
+        "discomfort": 11.6
       },
       {
         "month": 5,
@@ -1953,7 +2393,8 @@
         "name_en": "Lhuenzhub",
         "name": "Lhuenzhub",
         "temp_c": 0.8,
-        "discomfort": 9.9
+        "night_temp_c": -6.9,
+        "discomfort": 11.8
       },
       {
         "month": 6,
@@ -1961,7 +2402,8 @@
         "name_en": "Nagqu",
         "name": "那曲",
         "temp_c": -0.3,
-        "discomfort": 10.7
+        "night_temp_c": -8.6,
+        "discomfort": 13
       },
       {
         "month": 7,
@@ -1969,7 +2411,8 @@
         "name_en": "Nagqu",
         "name": "那曲",
         "temp_c": 1.3,
-        "discomfort": 9.6
+        "night_temp_c": -7,
+        "discomfort": 11.9
       },
       {
         "month": 8,
@@ -1977,15 +2420,17 @@
         "name_en": "Nagqu",
         "name": "那曲",
         "temp_c": -0.3,
-        "discomfort": 10.7
+        "night_temp_c": -8.6,
+        "discomfort": 13
       },
       {
         "month": 9,
-        "city_id": "CN-XZ-NAGQU",
-        "name_en": "Nagqu",
-        "name": "那曲",
-        "temp_c": -4.7,
-        "discomfort": 13.8
+        "city_id": "CN-XZ-LHUENZHUB",
+        "name_en": "Lhuenzhub",
+        "name": "Lhuenzhub",
+        "temp_c": 0.8,
+        "night_temp_c": -6.9,
+        "discomfort": 11.8
       },
       {
         "month": 10,
@@ -1993,109 +2438,141 @@
         "name_en": "Lhuenzhub",
         "name": "Lhuenzhub",
         "temp_c": -4.9,
-        "discomfort": 13.9
+        "night_temp_c": -12.6,
+        "discomfort": 15.8
       },
       {
         "month": 11,
-        "city_id": "CN-XZ-LHUENZHUB",
-        "name_en": "Lhuenzhub",
-        "name": "Lhuenzhub",
-        "temp_c": -10.5,
-        "discomfort": 17.9
-      },
-      {
-        "month": 12,
         "city_id": "CN-XZ-NYINGCHI",
         "name_en": "Nyingchi",
         "name": "Nyingchi",
-        "temp_c": -9.2,
-        "discomfort": 16.9
+        "temp_c": -5.1,
+        "night_temp_c": -12.1,
+        "discomfort": 15.5
+      },
+      {
+        "month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
-        "to_month": 3,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2036-01-01",
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
+      },
+      {
+        "from_month": 3,
+        "to_month": 4,
         "city_id": "CN-XZ-NYINGCHI",
         "name_en": "Nyingchi",
         "name": "Nyingchi",
         "province": "Tibet",
-        "days": 90,
-        "move_in": "2036-01-01",
-        "avg_temp_c": -8.3
+        "days": 60,
+        "move_in": "2036-03-01",
+        "avg_temp_c": -2.3,
+        "avg_night_c": -9.3
       },
       {
-        "from_month": 4,
+        "from_month": 5,
         "to_month": 5,
         "city_id": "CN-XZ-LHUENZHUB",
         "name_en": "Lhuenzhub",
         "name": "Lhuenzhub",
         "province": "Tibet",
-        "days": 60,
-        "move_in": "2036-04-01",
-        "avg_temp_c": -2.1
+        "days": 30,
+        "move_in": "2036-05-01",
+        "avg_temp_c": 0.8,
+        "avg_night_c": -6.9
       },
       {
         "from_month": 6,
-        "to_month": 9,
+        "to_month": 8,
         "city_id": "CN-XZ-NAGQU",
         "name_en": "Nagqu",
         "name": "那曲",
         "province": "Tibet",
-        "days": 120,
+        "days": 90,
         "move_in": "2036-06-01",
-        "avg_temp_c": -1
+        "avg_temp_c": 0.2,
+        "avg_night_c": -8.1
       },
       {
-        "from_month": 10,
-        "to_month": 11,
+        "from_month": 9,
+        "to_month": 10,
         "city_id": "CN-XZ-LHUENZHUB",
         "name_en": "Lhuenzhub",
         "name": "Lhuenzhub",
         "province": "Tibet",
         "days": 60,
-        "move_in": "2036-10-01",
-        "avg_temp_c": -7.7
+        "move_in": "2036-09-01",
+        "avg_temp_c": -2.1,
+        "avg_night_c": -9.7
       },
       {
-        "from_month": 12,
-        "to_month": 12,
+        "from_month": 11,
+        "to_month": 11,
         "city_id": "CN-XZ-NYINGCHI",
         "name_en": "Nyingchi",
         "name": "Nyingchi",
         "province": "Tibet",
         "days": 30,
+        "move_in": "2036-11-01",
+        "avg_temp_c": -5.1,
+        "avg_night_c": -12.1
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
         "move_in": "2036-12-01",
-        "avg_temp_c": -9.2
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-XZ-NYINGCHI",
-        "name_en": "Nyingchi",
-        "avg_temp_c": -8.3,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 8,
         "comfort_ok": false
       },
       {
         "quarter": 2,
-        "city_id": "CN-XZ-LHUENZHUB",
-        "name_en": "Lhuenzhub",
-        "avg_temp_c": -1.5,
+        "city_id": "CN-XZ-NYINGCHI",
+        "name_en": "Nyingchi",
+        "avg_temp_c": 0.3,
         "comfort_ok": false
       },
       {
         "quarter": 3,
         "city_id": "CN-XZ-NAGQU",
         "name_en": "Nagqu",
-        "avg_temp_c": -1.2,
+        "avg_temp_c": 0.6,
         "comfort_ok": false
       },
       {
         "quarter": 4,
         "city_id": "CN-XZ-LHUENZHUB",
         "name_en": "Lhuenzhub",
-        "avg_temp_c": -8.2,
+        "avg_temp_c": 1.7,
         "comfort_ok": false
       }
     ]
@@ -2106,19 +2583,21 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-SN-XIAN",
-        "name_en": "Xi'an",
-        "name": "西安",
-        "temp_c": 0.6,
-        "discomfort": 10.1
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-SN-XIAN",
-        "name_en": "Xi'an",
-        "name": "西安",
-        "temp_c": 2.4,
-        "discomfort": 8.8
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -2126,7 +2605,8 @@
         "name_en": "Xi'an",
         "name": "西安",
         "temp_c": 7.3,
-        "discomfort": 5.4
+        "night_temp_c": 2.5,
+        "discomfort": 5.2
       },
       {
         "month": 4,
@@ -2134,7 +2614,8 @@
         "name_en": "Dali",
         "name": "大理",
         "temp_c": 14,
-        "discomfort": 0.7
+        "night_temp_c": 9.3,
+        "discomfort": 0.5
       },
       {
         "month": 5,
@@ -2142,14 +2623,16 @@
         "name_en": "Xi'an",
         "name": "西安",
         "temp_c": 20.6,
+        "night_temp_c": 15.8,
         "discomfort": 0
       },
       {
         "month": 6,
-        "city_id": "CN-SN-DALI",
-        "name_en": "Dali",
-        "name": "大理",
-        "temp_c": 25.7,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.4,
+        "night_temp_c": 20.7,
         "discomfort": 0
       },
       {
@@ -2158,7 +2641,8 @@
         "name_en": "Xi'an",
         "name": "西安",
         "temp_c": 27.2,
-        "discomfort": 0.7
+        "night_temp_c": 22.5,
+        "discomfort": 0
       },
       {
         "month": 8,
@@ -2166,6 +2650,7 @@
         "name_en": "Dali",
         "name": "大理",
         "temp_c": 25.7,
+        "night_temp_c": 21,
         "discomfort": 0
       },
       {
@@ -2174,6 +2659,7 @@
         "name_en": "Dali",
         "name": "大理",
         "temp_c": 20.7,
+        "night_temp_c": 16.1,
         "discomfort": 0
       },
       {
@@ -2182,7 +2668,8 @@
         "name_en": "Dali",
         "name": "大理",
         "temp_c": 14,
-        "discomfort": 0.7
+        "night_temp_c": 9.3,
+        "discomfort": 0.5
       },
       {
         "month": 11,
@@ -2190,28 +2677,43 @@
         "name_en": "Xi'an",
         "name": "西安",
         "temp_c": 7.3,
-        "discomfort": 5.4
+        "night_temp_c": 2.5,
+        "discomfort": 5.2
       },
       {
         "month": 12,
-        "city_id": "CN-SN-XIAN",
-        "name_en": "Xi'an",
-        "name": "西安",
-        "temp_c": 2.4,
-        "discomfort": 8.8
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2037-01-01",
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
+      },
+      {
+        "from_month": 3,
         "to_month": 3,
         "city_id": "CN-SN-XIAN",
         "name_en": "Xi'an",
         "name": "西安",
         "province": "Shaanxi",
-        "days": 90,
-        "move_in": "2037-01-01",
-        "avg_temp_c": 3.4
+        "days": 30,
+        "move_in": "2037-03-01",
+        "avg_temp_c": 7.3,
+        "avg_night_c": 2.5
       },
       {
         "from_month": 4,
@@ -2222,40 +2724,20 @@
         "province": "Shaanxi",
         "days": 30,
         "move_in": "2037-04-01",
-        "avg_temp_c": 14
+        "avg_temp_c": 14,
+        "avg_night_c": 9.3
       },
       {
         "from_month": 5,
-        "to_month": 5,
-        "city_id": "CN-SN-XIAN",
-        "name_en": "Xi'an",
-        "name": "西安",
-        "province": "Shaanxi",
-        "days": 30,
-        "move_in": "2037-05-01",
-        "avg_temp_c": 20.6
-      },
-      {
-        "from_month": 6,
-        "to_month": 6,
-        "city_id": "CN-SN-DALI",
-        "name_en": "Dali",
-        "name": "大理",
-        "province": "Shaanxi",
-        "days": 30,
-        "move_in": "2037-06-01",
-        "avg_temp_c": 25.7
-      },
-      {
-        "from_month": 7,
         "to_month": 7,
         "city_id": "CN-SN-XIAN",
         "name_en": "Xi'an",
         "name": "西安",
         "province": "Shaanxi",
-        "days": 30,
-        "move_in": "2037-07-01",
-        "avg_temp_c": 27.2
+        "days": 90,
+        "move_in": "2037-05-01",
+        "avg_temp_c": 24.4,
+        "avg_night_c": 19.7
       },
       {
         "from_month": 8,
@@ -2266,33 +2748,47 @@
         "province": "Shaanxi",
         "days": 90,
         "move_in": "2037-08-01",
-        "avg_temp_c": 20.1
+        "avg_temp_c": 20.1,
+        "avg_night_c": 15.5
       },
       {
         "from_month": 11,
-        "to_month": 12,
+        "to_month": 11,
         "city_id": "CN-SN-XIAN",
         "name_en": "Xi'an",
         "name": "西安",
         "province": "Shaanxi",
-        "days": 60,
+        "days": 30,
         "move_in": "2037-11-01",
-        "avg_temp_c": 4.9
+        "avg_temp_c": 7.3,
+        "avg_night_c": 2.5
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
+        "move_in": "2037-12-01",
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-SN-XIAN",
-        "name_en": "Xi'an",
-        "avg_temp_c": 3.4,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 12.2,
         "comfort_ok": false
       },
       {
         "quarter": 2,
-        "city_id": "CN-SN-DALI",
-        "name_en": "Dali",
-        "avg_temp_c": 20.1,
+        "city_id": "CN-SN-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 20,
         "comfort_ok": true
       },
       {
@@ -2304,9 +2800,9 @@
       },
       {
         "quarter": 4,
-        "city_id": "CN-SN-XIAN",
-        "name_en": "Xi'an",
-        "avg_temp_c": 7.9,
+        "city_id": "CN-SN-DALI",
+        "name_en": "Dali",
+        "avg_temp_c": 12.2,
         "comfort_ok": false
       }
     ]
@@ -2317,26 +2813,29 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-SX-JINZHONG",
-        "name_en": "Jinzhong",
-        "name": "晋中市",
-        "temp_c": -6,
-        "discomfort": 14.7
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-SX-JINZHONG",
-        "name_en": "Jinzhong",
-        "name": "晋中市",
-        "temp_c": -4,
-        "discomfort": 13.3
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
-        "city_id": "CN-SX-JINZHONG",
-        "name_en": "Jinzhong",
-        "name": "晋中市",
+        "city_id": "CN-SX-TAIYUAN",
+        "name_en": "Taiyuan",
+        "name": "太原",
         "temp_c": 1.5,
+        "night_temp_c": -3.6,
         "discomfort": 9.5
       },
       {
@@ -2345,6 +2844,7 @@
         "name_en": "Taiyuan",
         "name": "太原",
         "temp_c": 8.9,
+        "night_temp_c": 3.9,
         "discomfort": 4.3
       },
       {
@@ -2353,38 +2853,43 @@
         "name_en": "Taiyuan",
         "name": "太原",
         "temp_c": 16.4,
+        "night_temp_c": 11.4,
         "discomfort": 0
       },
       {
         "month": 6,
-        "city_id": "CN-SX-TAIYUAN",
-        "name_en": "Taiyuan",
-        "name": "太原",
-        "temp_c": 21.9,
+        "city_id": "CN-SX-JINZHONG",
+        "name_en": "Jinzhong",
+        "name": "晋中市",
+        "temp_c": 21.8,
+        "night_temp_c": 16.7,
         "discomfort": 0
       },
       {
         "month": 7,
-        "city_id": "CN-SX-TAIYUAN",
-        "name_en": "Taiyuan",
-        "name": "太原",
-        "temp_c": 23.9,
+        "city_id": "CN-SX-JINZHONG",
+        "name_en": "Jinzhong",
+        "name": "晋中市",
+        "temp_c": 23.7,
+        "night_temp_c": 18.7,
         "discomfort": 0
       },
       {
         "month": 8,
-        "city_id": "CN-SX-TAIYUAN",
-        "name_en": "Taiyuan",
-        "name": "太原",
-        "temp_c": 21.9,
+        "city_id": "CN-SX-JINZHONG",
+        "name_en": "Jinzhong",
+        "name": "晋中市",
+        "temp_c": 21.8,
+        "night_temp_c": 16.7,
         "discomfort": 0
       },
       {
         "month": 9,
-        "city_id": "CN-SX-TAIYUAN",
-        "name_en": "Taiyuan",
-        "name": "太原",
-        "temp_c": 16.4,
+        "city_id": "CN-SX-JINZHONG",
+        "name_en": "Jinzhong",
+        "name": "晋中市",
+        "temp_c": 16.3,
+        "night_temp_c": 11.3,
         "discomfort": 0
       },
       {
@@ -2393,66 +2898,96 @@
         "name_en": "Taiyuan",
         "name": "太原",
         "temp_c": 8.9,
+        "night_temp_c": 3.9,
         "discomfort": 4.3
       },
       {
         "month": 11,
-        "city_id": "CN-SX-JINZHONG",
-        "name_en": "Jinzhong",
-        "name": "晋中市",
+        "city_id": "CN-SX-TAIYUAN",
+        "name_en": "Taiyuan",
+        "name": "太原",
         "temp_c": 1.5,
+        "night_temp_c": -3.6,
         "discomfort": 9.5
       },
       {
         "month": 12,
-        "city_id": "CN-SX-JINZHONG",
-        "name_en": "Jinzhong",
-        "name": "晋中市",
-        "temp_c": -4,
-        "discomfort": 13.3
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
-        "to_month": 3,
-        "city_id": "CN-SX-JINZHONG",
-        "name_en": "Jinzhong",
-        "name": "晋中市",
-        "province": "Shanxi",
-        "days": 90,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
         "move_in": "2038-01-01",
-        "avg_temp_c": -2.8
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
       },
       {
-        "from_month": 4,
-        "to_month": 10,
+        "from_month": 3,
+        "to_month": 5,
         "city_id": "CN-SX-TAIYUAN",
         "name_en": "Taiyuan",
         "name": "太原",
         "province": "Shanxi",
-        "days": 210,
-        "move_in": "2038-04-01",
-        "avg_temp_c": 16.9
+        "days": 90,
+        "move_in": "2038-03-01",
+        "avg_temp_c": 8.9,
+        "avg_night_c": 3.9
       },
       {
-        "from_month": 11,
-        "to_month": 12,
+        "from_month": 6,
+        "to_month": 9,
         "city_id": "CN-SX-JINZHONG",
         "name_en": "Jinzhong",
         "name": "晋中市",
         "province": "Shanxi",
+        "days": 120,
+        "move_in": "2038-06-01",
+        "avg_temp_c": 20.9,
+        "avg_night_c": 15.8
+      },
+      {
+        "from_month": 10,
+        "to_month": 11,
+        "city_id": "CN-SX-TAIYUAN",
+        "name_en": "Taiyuan",
+        "name": "太原",
+        "province": "Shanxi",
         "days": 60,
-        "move_in": "2038-11-01",
-        "avg_temp_c": -1.2
+        "move_in": "2038-10-01",
+        "avg_temp_c": 5.2,
+        "avg_night_c": 0.1
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
+        "move_in": "2038-12-01",
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-SX-JINZHONG",
-        "name_en": "Jinzhong",
-        "avg_temp_c": -2.8,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 10.2,
         "comfort_ok": false
       },
       {
@@ -2464,16 +2999,16 @@
       },
       {
         "quarter": 3,
-        "city_id": "CN-SX-TAIYUAN",
-        "name_en": "Taiyuan",
-        "avg_temp_c": 20.7,
+        "city_id": "CN-SX-JINZHONG",
+        "name_en": "Jinzhong",
+        "avg_temp_c": 20.6,
         "comfort_ok": true
       },
       {
         "quarter": 4,
-        "city_id": "CN-SX-JINZHONG",
-        "name_en": "Jinzhong",
-        "avg_temp_c": 2.1,
+        "city_id": "CN-SX-TAIYUAN",
+        "name_en": "Taiyuan",
+        "avg_temp_c": 8.5,
         "comfort_ok": false
       }
     ]
@@ -2484,19 +3019,21 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-HA-BAOFENG",
-        "name_en": "Baofeng",
-        "name": "宝丰",
-        "temp_c": 3.1,
-        "discomfort": 8.4
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-HA-BAOFENG",
-        "name_en": "Baofeng",
-        "name": "宝丰",
-        "temp_c": 4.8,
-        "discomfort": 7.1
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -2504,7 +3041,8 @@
         "name_en": "Baofeng",
         "name": "宝丰",
         "temp_c": 9.6,
-        "discomfort": 3.8
+        "night_temp_c": 5.2,
+        "discomfort": 3.4
       },
       {
         "month": 4,
@@ -2512,6 +3050,7 @@
         "name_en": "Luoyang",
         "name": "洛阳",
         "temp_c": 15.5,
+        "night_temp_c": 11,
         "discomfort": 0
       },
       {
@@ -2520,6 +3059,7 @@
         "name_en": "Luoyang",
         "name": "洛阳",
         "temp_c": 22.2,
+        "night_temp_c": 17.8,
         "discomfort": 0
       },
       {
@@ -2528,15 +3068,17 @@
         "name_en": "Luoyang",
         "name": "洛阳",
         "temp_c": 27.2,
-        "discomfort": 0.7
+        "night_temp_c": 22.7,
+        "discomfort": 0
       },
       {
         "month": 7,
-        "city_id": "CN-HA-LUOYANG",
-        "name_en": "Luoyang",
-        "name": "洛阳",
-        "temp_c": 29,
-        "discomfort": 1.8
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.8,
+        "night_temp_c": 21.4,
+        "discomfort": 0
       },
       {
         "month": 8,
@@ -2544,23 +3086,26 @@
         "name_en": "Luoyang",
         "name": "洛阳",
         "temp_c": 27.2,
-        "discomfort": 0.7
+        "night_temp_c": 22.7,
+        "discomfort": 0
       },
       {
         "month": 9,
-        "city_id": "CN-HA-LUOYANG",
-        "name_en": "Luoyang",
-        "name": "洛阳",
-        "temp_c": 22.2,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 16.8,
+        "night_temp_c": 12.4,
         "discomfort": 0
       },
       {
         "month": 10,
-        "city_id": "CN-HA-LUOYANG",
-        "name_en": "Luoyang",
-        "name": "洛阳",
-        "temp_c": 15.5,
-        "discomfort": 0
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 7.8,
+        "night_temp_c": 3.4,
+        "discomfort": 4.6
       },
       {
         "month": 11,
@@ -2568,58 +3113,123 @@
         "name_en": "Baofeng",
         "name": "宝丰",
         "temp_c": 9.6,
-        "discomfort": 3.8
+        "night_temp_c": 5.2,
+        "discomfort": 3.4
       },
       {
         "month": 12,
-        "city_id": "CN-HA-BAOFENG",
-        "name_en": "Baofeng",
-        "name": "宝丰",
-        "temp_c": 4.8,
-        "discomfort": 7.1
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2039-01-01",
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
+      },
+      {
+        "from_month": 3,
         "to_month": 3,
         "city_id": "CN-HA-BAOFENG",
         "name_en": "Baofeng",
         "name": "宝丰",
         "province": "Henan",
-        "days": 90,
-        "move_in": "2039-01-01",
-        "avg_temp_c": 5.8
+        "days": 30,
+        "move_in": "2039-03-01",
+        "avg_temp_c": 9.6,
+        "avg_night_c": 5.2
       },
       {
         "from_month": 4,
-        "to_month": 10,
+        "to_month": 6,
         "city_id": "CN-HA-LUOYANG",
         "name_en": "Luoyang",
         "name": "洛阳",
         "province": "Henan",
-        "days": 210,
+        "days": 90,
         "move_in": "2039-04-01",
-        "avg_temp_c": 22.7
+        "avg_temp_c": 21.6,
+        "avg_night_c": 17.2
+      },
+      {
+        "from_month": 7,
+        "to_month": 7,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Heilongjiang",
+        "days": 30,
+        "move_in": "2039-07-01",
+        "avg_temp_c": 25.8,
+        "avg_night_c": 21.4
+      },
+      {
+        "from_month": 8,
+        "to_month": 8,
+        "city_id": "CN-HA-LUOYANG",
+        "name_en": "Luoyang",
+        "name": "洛阳",
+        "province": "Henan",
+        "days": 30,
+        "move_in": "2039-08-01",
+        "avg_temp_c": 27.2,
+        "avg_night_c": 22.7
+      },
+      {
+        "from_month": 9,
+        "to_month": 10,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Heilongjiang",
+        "days": 60,
+        "move_in": "2039-09-01",
+        "avg_temp_c": 12.3,
+        "avg_night_c": 7.9
       },
       {
         "from_month": 11,
-        "to_month": 12,
+        "to_month": 11,
         "city_id": "CN-HA-BAOFENG",
         "name_en": "Baofeng",
         "name": "宝丰",
         "province": "Henan",
-        "days": 60,
+        "days": 30,
         "move_in": "2039-11-01",
-        "avg_temp_c": 7.2
+        "avg_temp_c": 9.6,
+        "avg_night_c": 5.2
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
+        "move_in": "2039-12-01",
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-HA-BAOFENG",
-        "name_en": "Baofeng",
-        "avg_temp_c": 5.8,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 12.9,
         "comfort_ok": false
       },
       {
@@ -2631,16 +3241,16 @@
       },
       {
         "quarter": 3,
-        "city_id": "CN-HA-LUOYANG",
-        "name_en": "Luoyang",
-        "avg_temp_c": 26.1,
-        "comfort_ok": false
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 23.3,
+        "comfort_ok": true
       },
       {
         "quarter": 4,
-        "city_id": "CN-HA-BAOFENG",
-        "name_en": "Baofeng",
-        "avg_temp_c": 10,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 10.9,
         "comfort_ok": false
       }
     ]
@@ -2651,19 +3261,21 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-HE-HUAIYANG",
-        "name_en": "Huaiyang",
-        "name": "槐阳",
-        "temp_c": -1.2,
-        "discomfort": 11.3
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-HE-HUAIYANG",
-        "name_en": "Huaiyang",
-        "name": "槐阳",
-        "temp_c": 0.8,
-        "discomfort": 9.9
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -2671,15 +3283,17 @@
         "name_en": "Huaiyang",
         "name": "槐阳",
         "temp_c": 6.3,
-        "discomfort": 6.1
+        "night_temp_c": 1.8,
+        "discomfort": 5.7
       },
       {
         "month": 4,
-        "city_id": "CN-HE-SHIJIAZHUANG",
-        "name_en": "Shijiazhuang",
-        "name": "石家庄",
-        "temp_c": 13.5,
-        "discomfort": 1.1
+        "city_id": "CN-HE-HUAIYANG",
+        "name_en": "Huaiyang",
+        "name": "槐阳",
+        "temp_c": 13.7,
+        "night_temp_c": 9.3,
+        "discomfort": 0.5
       },
       {
         "month": 5,
@@ -2687,6 +3301,7 @@
         "name_en": "Shijiazhuang",
         "name": "石家庄",
         "temp_c": 21,
+        "night_temp_c": 16.5,
         "discomfort": 0
       },
       {
@@ -2695,30 +3310,34 @@
         "name_en": "Shijiazhuang",
         "name": "石家庄",
         "temp_c": 26.5,
-        "discomfort": 0.3
+        "night_temp_c": 22,
+        "discomfort": 0
       },
       {
         "month": 7,
-        "city_id": "CN-HE-SHIJIAZHUANG",
-        "name_en": "Shijiazhuang",
-        "name": "石家庄",
-        "temp_c": 28.5,
-        "discomfort": 1.5
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.8,
+        "night_temp_c": 21.4,
+        "discomfort": 0
       },
       {
         "month": 8,
-        "city_id": "CN-HE-SHIJIAZHUANG",
-        "name_en": "Shijiazhuang",
-        "name": "石家庄",
-        "temp_c": 26.5,
-        "discomfort": 0.3
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 9,
-        "city_id": "CN-HE-SHIJIAZHUANG",
-        "name_en": "Shijiazhuang",
-        "name": "石家庄",
-        "temp_c": 21,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 16.8,
+        "night_temp_c": 12.4,
         "discomfort": 0
       },
       {
@@ -2727,7 +3346,8 @@
         "name_en": "Shijiazhuang",
         "name": "石家庄",
         "temp_c": 13.5,
-        "discomfort": 1.1
+        "night_temp_c": 9,
+        "discomfort": 0.7
       },
       {
         "month": 11,
@@ -2735,79 +3355,132 @@
         "name_en": "Huaiyang",
         "name": "槐阳",
         "temp_c": 6.3,
-        "discomfort": 6.1
+        "night_temp_c": 1.8,
+        "discomfort": 5.7
       },
       {
         "month": 12,
-        "city_id": "CN-HE-HUAIYANG",
-        "name_en": "Huaiyang",
-        "name": "槐阳",
-        "temp_c": 0.8,
-        "discomfort": 9.9
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
-        "to_month": 3,
-        "city_id": "CN-HE-HUAIYANG",
-        "name_en": "Huaiyang",
-        "name": "槐阳",
-        "province": "Hebei",
-        "days": 90,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
         "move_in": "2040-01-01",
-        "avg_temp_c": 2
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
       },
       {
-        "from_month": 4,
-        "to_month": 10,
-        "city_id": "CN-HE-SHIJIAZHUANG",
-        "name_en": "Shijiazhuang",
-        "name": "石家庄",
-        "province": "Hebei",
-        "days": 210,
-        "move_in": "2040-04-01",
-        "avg_temp_c": 21.5
-      },
-      {
-        "from_month": 11,
-        "to_month": 12,
+        "from_month": 3,
+        "to_month": 4,
         "city_id": "CN-HE-HUAIYANG",
         "name_en": "Huaiyang",
         "name": "槐阳",
         "province": "Hebei",
         "days": 60,
+        "move_in": "2040-03-01",
+        "avg_temp_c": 10,
+        "avg_night_c": 5.6
+      },
+      {
+        "from_month": 5,
+        "to_month": 6,
+        "city_id": "CN-HE-SHIJIAZHUANG",
+        "name_en": "Shijiazhuang",
+        "name": "石家庄",
+        "province": "Hebei",
+        "days": 60,
+        "move_in": "2040-05-01",
+        "avg_temp_c": 23.8,
+        "avg_night_c": 19.3
+      },
+      {
+        "from_month": 7,
+        "to_month": 9,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Heilongjiang",
+        "days": 90,
+        "move_in": "2040-07-01",
+        "avg_temp_c": 22,
+        "avg_night_c": 17.6
+      },
+      {
+        "from_month": 10,
+        "to_month": 10,
+        "city_id": "CN-HE-SHIJIAZHUANG",
+        "name_en": "Shijiazhuang",
+        "name": "石家庄",
+        "province": "Hebei",
+        "days": 30,
+        "move_in": "2040-10-01",
+        "avg_temp_c": 13.5,
+        "avg_night_c": 9
+      },
+      {
+        "from_month": 11,
+        "to_month": 11,
+        "city_id": "CN-HE-HUAIYANG",
+        "name_en": "Huaiyang",
+        "name": "槐阳",
+        "province": "Hebei",
+        "days": 30,
         "move_in": "2040-11-01",
-        "avg_temp_c": 3.6
+        "avg_temp_c": 6.3,
+        "avg_night_c": 1.8
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
+        "move_in": "2040-12-01",
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-HE-HUAIYANG",
-        "name_en": "Huaiyang",
-        "avg_temp_c": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 11.8,
         "comfort_ok": false
       },
       {
         "quarter": 2,
         "city_id": "CN-HE-SHIJIAZHUANG",
         "name_en": "Shijiazhuang",
-        "avg_temp_c": 20.3,
+        "avg_temp_c": 20.4,
         "comfort_ok": true
       },
       {
         "quarter": 3,
-        "city_id": "CN-HE-SHIJIAZHUANG",
-        "name_en": "Shijiazhuang",
-        "avg_temp_c": 25.3,
-        "comfort_ok": false
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 22,
+        "comfort_ok": true
       },
       {
         "quarter": 4,
-        "city_id": "CN-HE-HUAIYANG",
-        "name_en": "Huaiyang",
-        "avg_temp_c": 6.9,
+        "city_id": "CN-HE-SHIJIAZHUANG",
+        "name_en": "Shijiazhuang",
+        "avg_temp_c": 11.7,
         "comfort_ok": false
       }
     ]
@@ -2818,19 +3491,21 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-SD-LINYI",
-        "name_en": "Linyi",
-        "name": "临沂",
-        "temp_c": 1.9,
-        "discomfort": 9.1
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-SD-LINYI",
-        "name_en": "Linyi",
-        "name": "临沂",
-        "temp_c": 3.8,
-        "discomfort": 7.9
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -2838,7 +3513,8 @@
         "name_en": "Linyi",
         "name": "临沂",
         "temp_c": 8.8,
-        "discomfort": 4.4
+        "night_temp_c": 4.7,
+        "discomfort": 3.7
       },
       {
         "month": 4,
@@ -2846,6 +3522,7 @@
         "name_en": "Qingdao",
         "name": "青岛",
         "temp_c": 15.3,
+        "night_temp_c": 11.3,
         "discomfort": 0
       },
       {
@@ -2854,31 +3531,35 @@
         "name_en": "Qingdao",
         "name": "青岛",
         "temp_c": 22.3,
+        "night_temp_c": 18.3,
         "discomfort": 0
       },
       {
         "month": 6,
-        "city_id": "CN-SD-QINGDAO",
-        "name_en": "Qingdao",
-        "name": "青岛",
-        "temp_c": 27.5,
-        "discomfort": 0.9
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 7,
-        "city_id": "CN-SD-QINGDAO",
-        "name_en": "Qingdao",
-        "name": "青岛",
-        "temp_c": 29.4,
-        "discomfort": 2
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.8,
+        "night_temp_c": 21.4,
+        "discomfort": 0
       },
       {
         "month": 8,
-        "city_id": "CN-SD-QINGDAO",
-        "name_en": "Qingdao",
-        "name": "青岛",
-        "temp_c": 27.5,
-        "discomfort": 0.9
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 9,
@@ -2886,14 +3567,16 @@
         "name_en": "Qingdao",
         "name": "青岛",
         "temp_c": 22.3,
+        "night_temp_c": 18.3,
         "discomfort": 0
       },
       {
         "month": 10,
-        "city_id": "CN-SD-QINGDAO",
-        "name_en": "Qingdao",
-        "name": "青岛",
-        "temp_c": 15.3,
+        "city_id": "CN-SD-LINYI",
+        "name_en": "Linyi",
+        "name": "临沂",
+        "temp_c": 15.6,
+        "night_temp_c": 11.6,
         "discomfort": 0
       },
       {
@@ -2902,79 +3585,132 @@
         "name_en": "Linyi",
         "name": "临沂",
         "temp_c": 8.8,
-        "discomfort": 4.4
+        "night_temp_c": 4.7,
+        "discomfort": 3.7
       },
       {
         "month": 12,
-        "city_id": "CN-SD-LINYI",
-        "name_en": "Linyi",
-        "name": "临沂",
-        "temp_c": 3.8,
-        "discomfort": 7.9
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2041-01-01",
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
+      },
+      {
+        "from_month": 3,
         "to_month": 3,
         "city_id": "CN-SD-LINYI",
         "name_en": "Linyi",
         "name": "临沂",
         "province": "Shandong",
-        "days": 90,
-        "move_in": "2041-01-01",
-        "avg_temp_c": 4.8
+        "days": 30,
+        "move_in": "2041-03-01",
+        "avg_temp_c": 8.8,
+        "avg_night_c": 4.7
       },
       {
         "from_month": 4,
-        "to_month": 10,
+        "to_month": 5,
         "city_id": "CN-SD-QINGDAO",
         "name_en": "Qingdao",
         "name": "青岛",
         "province": "Shandong",
-        "days": 210,
+        "days": 60,
         "move_in": "2041-04-01",
-        "avg_temp_c": 22.8
+        "avg_temp_c": 18.8,
+        "avg_night_c": 14.8
       },
       {
-        "from_month": 11,
-        "to_month": 12,
+        "from_month": 6,
+        "to_month": 8,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Heilongjiang",
+        "days": 90,
+        "move_in": "2041-06-01",
+        "avg_temp_c": 24.2,
+        "avg_night_c": 19.8
+      },
+      {
+        "from_month": 9,
+        "to_month": 9,
+        "city_id": "CN-SD-QINGDAO",
+        "name_en": "Qingdao",
+        "name": "青岛",
+        "province": "Shandong",
+        "days": 30,
+        "move_in": "2041-09-01",
+        "avg_temp_c": 22.3,
+        "avg_night_c": 18.3
+      },
+      {
+        "from_month": 10,
+        "to_month": 11,
         "city_id": "CN-SD-LINYI",
         "name_en": "Linyi",
         "name": "临沂",
         "province": "Shandong",
         "days": 60,
-        "move_in": "2041-11-01",
-        "avg_temp_c": 6.3
+        "move_in": "2041-10-01",
+        "avg_temp_c": 12.2,
+        "avg_night_c": 8.2
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
+        "move_in": "2041-12-01",
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-SD-LINYI",
-        "name_en": "Linyi",
-        "avg_temp_c": 4.8,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 12.7,
         "comfort_ok": false
       },
       {
         "quarter": 2,
         "city_id": "CN-SD-QINGDAO",
         "name_en": "Qingdao",
-        "avg_temp_c": 21.7,
+        "avg_temp_c": 20.3,
         "comfort_ok": true
       },
       {
         "quarter": 3,
-        "city_id": "CN-SD-QINGDAO",
-        "name_en": "Qingdao",
-        "avg_temp_c": 26.4,
-        "comfort_ok": false
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 23.8,
+        "comfort_ok": true
       },
       {
         "quarter": 4,
         "city_id": "CN-SD-LINYI",
         "name_en": "Linyi",
-        "avg_temp_c": 9.3,
+        "avg_temp_c": 13.2,
         "comfort_ok": false
       }
     ]
@@ -2985,19 +3721,21 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-SC-KAIJIANG",
-        "name_en": "Kaijiang",
-        "name": "凯江",
-        "temp_c": 4.2,
-        "discomfort": 7.6
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-SC-KAIJIANG",
-        "name_en": "Kaijiang",
-        "name": "凯江",
-        "temp_c": 5.8,
-        "discomfort": 6.4
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -3005,7 +3743,8 @@
         "name_en": "Kaijiang",
         "name": "凯江",
         "temp_c": 10.1,
-        "discomfort": 3.4
+        "night_temp_c": 6.1,
+        "discomfort": 2.7
       },
       {
         "month": 4,
@@ -3013,6 +3752,7 @@
         "name_en": "Chengdu",
         "name": "成都",
         "temp_c": 15.9,
+        "night_temp_c": 11.8,
         "discomfort": 0
       },
       {
@@ -3021,6 +3761,7 @@
         "name_en": "Chengdu",
         "name": "成都",
         "temp_c": 21.7,
+        "night_temp_c": 17.6,
         "discomfort": 0
       },
       {
@@ -3029,15 +3770,17 @@
         "name_en": "Chengdu",
         "name": "成都",
         "temp_c": 26,
+        "night_temp_c": 21.9,
         "discomfort": 0
       },
       {
         "month": 7,
-        "city_id": "CN-SC-CHENGDU",
-        "name_en": "Chengdu",
-        "name": "成都",
-        "temp_c": 27.6,
-        "discomfort": 1
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.8,
+        "night_temp_c": 21.4,
+        "discomfort": 0
       },
       {
         "month": 8,
@@ -3045,23 +3788,26 @@
         "name_en": "Chengdu",
         "name": "成都",
         "temp_c": 26,
+        "night_temp_c": 21.9,
         "discomfort": 0
       },
       {
         "month": 9,
-        "city_id": "CN-SC-CHENGDU",
-        "name_en": "Chengdu",
-        "name": "成都",
-        "temp_c": 21.7,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 16.8,
+        "night_temp_c": 12.4,
         "discomfort": 0
       },
       {
         "month": 10,
-        "city_id": "CN-SC-CHENGDU",
-        "name_en": "Chengdu",
-        "name": "成都",
-        "temp_c": 15.9,
-        "discomfort": 0
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 7.8,
+        "night_temp_c": 3.4,
+        "discomfort": 4.6
       },
       {
         "month": 11,
@@ -3069,58 +3815,123 @@
         "name_en": "Kaijiang",
         "name": "凯江",
         "temp_c": 10.1,
-        "discomfort": 3.4
+        "night_temp_c": 6.1,
+        "discomfort": 2.7
       },
       {
         "month": 12,
-        "city_id": "CN-SC-KAIJIANG",
-        "name_en": "Kaijiang",
-        "name": "凯江",
-        "temp_c": 5.8,
-        "discomfort": 6.4
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2042-01-01",
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
+      },
+      {
+        "from_month": 3,
         "to_month": 3,
         "city_id": "CN-SC-KAIJIANG",
         "name_en": "Kaijiang",
         "name": "凯江",
         "province": "Sichuan",
-        "days": 90,
-        "move_in": "2042-01-01",
-        "avg_temp_c": 6.7
+        "days": 30,
+        "move_in": "2042-03-01",
+        "avg_temp_c": 10.1,
+        "avg_night_c": 6.1
       },
       {
         "from_month": 4,
-        "to_month": 10,
+        "to_month": 6,
         "city_id": "CN-SC-CHENGDU",
         "name_en": "Chengdu",
         "name": "成都",
         "province": "Sichuan",
-        "days": 210,
+        "days": 90,
         "move_in": "2042-04-01",
-        "avg_temp_c": 22.1
+        "avg_temp_c": 21.2,
+        "avg_night_c": 17.1
+      },
+      {
+        "from_month": 7,
+        "to_month": 7,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Heilongjiang",
+        "days": 30,
+        "move_in": "2042-07-01",
+        "avg_temp_c": 25.8,
+        "avg_night_c": 21.4
+      },
+      {
+        "from_month": 8,
+        "to_month": 8,
+        "city_id": "CN-SC-CHENGDU",
+        "name_en": "Chengdu",
+        "name": "成都",
+        "province": "Sichuan",
+        "days": 30,
+        "move_in": "2042-08-01",
+        "avg_temp_c": 26,
+        "avg_night_c": 21.9
+      },
+      {
+        "from_month": 9,
+        "to_month": 10,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Heilongjiang",
+        "days": 60,
+        "move_in": "2042-09-01",
+        "avg_temp_c": 12.3,
+        "avg_night_c": 7.9
       },
       {
         "from_month": 11,
-        "to_month": 12,
+        "to_month": 11,
         "city_id": "CN-SC-KAIJIANG",
         "name_en": "Kaijiang",
         "name": "凯江",
         "province": "Sichuan",
-        "days": 60,
+        "days": 30,
         "move_in": "2042-11-01",
-        "avg_temp_c": 8
+        "avg_temp_c": 10.1,
+        "avg_night_c": 6.1
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
+        "move_in": "2042-12-01",
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-SC-KAIJIANG",
-        "name_en": "Kaijiang",
-        "avg_temp_c": 6.7,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 13.1,
         "comfort_ok": false
       },
       {
@@ -3132,16 +3943,16 @@
       },
       {
         "quarter": 3,
-        "city_id": "CN-SC-CHENGDU",
-        "name_en": "Chengdu",
-        "avg_temp_c": 25.1,
-        "comfort_ok": false
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 22.9,
+        "comfort_ok": true
       },
       {
         "quarter": 4,
-        "city_id": "CN-SC-KAIJIANG",
-        "name_en": "Kaijiang",
-        "avg_temp_c": 10.6,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 11,
         "comfort_ok": false
       }
     ]
@@ -3152,19 +3963,21 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-CQ-CHONGQING",
-        "name_en": "Chongqing",
-        "name": "重庆",
-        "temp_c": 6.8,
-        "discomfort": 5.7
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-CQ-CHONGQING",
-        "name_en": "Chongqing",
-        "name": "重庆",
-        "temp_c": 8.3,
-        "discomfort": 4.7
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -3172,7 +3985,8 @@
         "name_en": "Chongqing",
         "name": "重庆",
         "temp_c": 12.4,
-        "discomfort": 1.8
+        "night_temp_c": 8.5,
+        "discomfort": 1
       },
       {
         "month": 4,
@@ -3180,14 +3994,16 @@
         "name_en": "Chongqing",
         "name": "重庆",
         "temp_c": 18,
+        "night_temp_c": 14.1,
         "discomfort": 0
       },
       {
         "month": 5,
-        "city_id": "CN-GZ-YUXI",
-        "name_en": "Yuxi",
-        "name": "玉溪",
-        "temp_c": 21.4,
+        "city_id": "CN-CQ-CHONGQING",
+        "name_en": "Chongqing",
+        "name": "重庆",
+        "temp_c": 23.6,
+        "night_temp_c": 19.7,
         "discomfort": 0
       },
       {
@@ -3196,6 +4012,7 @@
         "name_en": "Yuxi",
         "name": "玉溪",
         "temp_c": 25.4,
+        "night_temp_c": 20.7,
         "discomfort": 0
       },
       {
@@ -3204,7 +4021,8 @@
         "name_en": "Yuxi",
         "name": "玉溪",
         "temp_c": 26.8,
-        "discomfort": 0.5
+        "night_temp_c": 22.2,
+        "discomfort": 0
       },
       {
         "month": 8,
@@ -3212,14 +4030,16 @@
         "name_en": "Yuxi",
         "name": "玉溪",
         "temp_c": 25.4,
+        "night_temp_c": 20.7,
         "discomfort": 0
       },
       {
         "month": 9,
-        "city_id": "CN-GZ-YUXI",
-        "name_en": "Yuxi",
-        "name": "玉溪",
-        "temp_c": 21.4,
+        "city_id": "CN-CQ-CHONGQING",
+        "name_en": "Chongqing",
+        "name": "重庆",
+        "temp_c": 23.6,
+        "night_temp_c": 19.7,
         "discomfort": 0
       },
       {
@@ -3228,6 +4048,7 @@
         "name_en": "Yuxi",
         "name": "玉溪",
         "temp_c": 15.9,
+        "night_temp_c": 11.3,
         "discomfort": 0
       },
       {
@@ -3236,79 +4057,132 @@
         "name_en": "Chongqing",
         "name": "重庆",
         "temp_c": 12.4,
-        "discomfort": 1.8
+        "night_temp_c": 8.5,
+        "discomfort": 1
       },
       {
         "month": 12,
-        "city_id": "CN-CQ-CHONGQING",
-        "name_en": "Chongqing",
-        "name": "重庆",
-        "temp_c": 8.3,
-        "discomfort": 4.7
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
-        "to_month": 4,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2043-01-01",
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
+      },
+      {
+        "from_month": 3,
+        "to_month": 5,
         "city_id": "CN-CQ-CHONGQING",
         "name_en": "Chongqing",
         "name": "重庆",
         "province": "Chongqing",
-        "days": 120,
-        "move_in": "2043-01-01",
-        "avg_temp_c": 11.4
+        "days": 90,
+        "move_in": "2043-03-01",
+        "avg_temp_c": 18,
+        "avg_night_c": 14.1
       },
       {
-        "from_month": 5,
+        "from_month": 6,
+        "to_month": 8,
+        "city_id": "CN-GZ-YUXI",
+        "name_en": "Yuxi",
+        "name": "玉溪",
+        "province": "Guizhou",
+        "days": 90,
+        "move_in": "2043-06-01",
+        "avg_temp_c": 25.9,
+        "avg_night_c": 21.2
+      },
+      {
+        "from_month": 9,
+        "to_month": 9,
+        "city_id": "CN-CQ-CHONGQING",
+        "name_en": "Chongqing",
+        "name": "重庆",
+        "province": "Chongqing",
+        "days": 30,
+        "move_in": "2043-09-01",
+        "avg_temp_c": 23.6,
+        "avg_night_c": 19.7
+      },
+      {
+        "from_month": 10,
         "to_month": 10,
         "city_id": "CN-GZ-YUXI",
         "name_en": "Yuxi",
         "name": "玉溪",
         "province": "Guizhou",
-        "days": 180,
-        "move_in": "2043-05-01",
-        "avg_temp_c": 22.7
+        "days": 30,
+        "move_in": "2043-10-01",
+        "avg_temp_c": 15.9,
+        "avg_night_c": 11.3
       },
       {
         "from_month": 11,
-        "to_month": 12,
+        "to_month": 11,
         "city_id": "CN-CQ-CHONGQING",
         "name_en": "Chongqing",
         "name": "重庆",
         "province": "Chongqing",
-        "days": 60,
+        "days": 30,
         "move_in": "2043-11-01",
-        "avg_temp_c": 10.4
+        "avg_temp_c": 12.4,
+        "avg_night_c": 8.5
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
+        "move_in": "2043-12-01",
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-CQ-CHONGQING",
-        "name_en": "Chongqing",
-        "avg_temp_c": 9.2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 13.9,
         "comfort_ok": false
       },
       {
         "quarter": 2,
-        "city_id": "CN-GZ-YUXI",
-        "name_en": "Yuxi",
-        "avg_temp_c": 21.6,
+        "city_id": "CN-CQ-CHONGQING",
+        "name_en": "Chongqing",
+        "avg_temp_c": 22.3,
         "comfort_ok": true
       },
       {
         "quarter": 3,
         "city_id": "CN-GZ-YUXI",
         "name_en": "Yuxi",
-        "avg_temp_c": 24.5,
-        "comfort_ok": true
+        "avg_temp_c": 25.3,
+        "comfort_ok": false
       },
       {
         "quarter": 4,
-        "city_id": "CN-CQ-CHONGQING",
-        "name_en": "Chongqing",
-        "avg_temp_c": 12.2,
+        "city_id": "CN-GZ-YUXI",
+        "name_en": "Yuxi",
+        "avg_temp_c": 14.5,
         "comfort_ok": false
       }
     ]
@@ -3319,19 +4193,21 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-YN-YISA",
-        "name_en": "Yisa",
-        "name": "迤萨",
-        "temp_c": 11.2,
-        "discomfort": 2.7
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-YN-YISA",
-        "name_en": "Yisa",
-        "name": "迤萨",
-        "temp_c": 12.3,
-        "discomfort": 1.9
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -3339,6 +4215,7 @@
         "name_en": "Yisa",
         "name": "迤萨",
         "temp_c": 15.4,
+        "night_temp_c": 10.7,
         "discomfort": 0
       },
       {
@@ -3347,14 +4224,16 @@
         "name_en": "Yisa",
         "name": "迤萨",
         "temp_c": 19.6,
+        "night_temp_c": 14.9,
         "discomfort": 0
       },
       {
         "month": 5,
-        "city_id": "CN-YN-KUNMING",
-        "name_en": "Kunming",
-        "name": "昆明",
-        "temp_c": 15.3,
+        "city_id": "CN-YN-YISA",
+        "name_en": "Yisa",
+        "name": "迤萨",
+        "temp_c": 23.8,
+        "night_temp_c": 19.1,
         "discomfort": 0
       },
       {
@@ -3363,6 +4242,7 @@
         "name_en": "Kunming",
         "name": "昆明",
         "temp_c": 18.7,
+        "night_temp_c": 13.1,
         "discomfort": 0
       },
       {
@@ -3371,6 +4251,7 @@
         "name_en": "Kunming",
         "name": "昆明",
         "temp_c": 19.9,
+        "night_temp_c": 14.3,
         "discomfort": 0
       },
       {
@@ -3379,23 +4260,26 @@
         "name_en": "Kunming",
         "name": "昆明",
         "temp_c": 18.7,
+        "night_temp_c": 13.1,
         "discomfort": 0
       },
       {
         "month": 9,
-        "city_id": "CN-YN-KUNMING",
-        "name_en": "Kunming",
-        "name": "昆明",
-        "temp_c": 15.3,
+        "city_id": "CN-YN-YISA",
+        "name_en": "Yisa",
+        "name": "迤萨",
+        "temp_c": 23.8,
+        "night_temp_c": 19.1,
         "discomfort": 0
       },
       {
         "month": 10,
-        "city_id": "CN-YN-YISA",
-        "name_en": "Yisa",
-        "name": "迤萨",
-        "temp_c": 19.6,
-        "discomfort": 0
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "name": "昆明",
+        "temp_c": 10.8,
+        "night_temp_c": 5.1,
+        "discomfort": 3.4
       },
       {
         "month": 11,
@@ -3403,101 +4287,120 @@
         "name_en": "Kunming",
         "name": "昆明",
         "temp_c": 6.2,
-        "discomfort": 6.2
+        "night_temp_c": 0.5,
+        "discomfort": 6.6
       },
       {
         "month": 12,
-        "city_id": "CN-YN-YISA",
-        "name_en": "Yisa",
-        "name": "迤萨",
-        "temp_c": 12.3,
-        "discomfort": 1.9
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
-        "to_month": 4,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2044-01-01",
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
+      },
+      {
+        "from_month": 3,
+        "to_month": 5,
         "city_id": "CN-YN-YISA",
         "name_en": "Yisa",
         "name": "迤萨",
         "province": "Yunnan",
-        "days": 120,
-        "move_in": "2044-01-01",
-        "avg_temp_c": 14.6
+        "days": 90,
+        "move_in": "2044-03-01",
+        "avg_temp_c": 19.6,
+        "avg_night_c": 14.9
       },
       {
-        "from_month": 5,
-        "to_month": 9,
+        "from_month": 6,
+        "to_month": 8,
         "city_id": "CN-YN-KUNMING",
         "name_en": "Kunming",
         "name": "昆明",
         "province": "Yunnan",
-        "days": 150,
-        "move_in": "2044-05-01",
-        "avg_temp_c": 17.6
+        "days": 90,
+        "move_in": "2044-06-01",
+        "avg_temp_c": 19.1,
+        "avg_night_c": 13.5
       },
       {
-        "from_month": 10,
-        "to_month": 10,
+        "from_month": 9,
+        "to_month": 9,
         "city_id": "CN-YN-YISA",
         "name_en": "Yisa",
         "name": "迤萨",
         "province": "Yunnan",
         "days": 30,
-        "move_in": "2044-10-01",
-        "avg_temp_c": 19.6
+        "move_in": "2044-09-01",
+        "avg_temp_c": 23.8,
+        "avg_night_c": 19.1
       },
       {
-        "from_month": 11,
+        "from_month": 10,
         "to_month": 11,
         "city_id": "CN-YN-KUNMING",
         "name_en": "Kunming",
         "name": "昆明",
         "province": "Yunnan",
-        "days": 30,
-        "move_in": "2044-11-01",
-        "avg_temp_c": 6.2
+        "days": 60,
+        "move_in": "2044-10-01",
+        "avg_temp_c": 8.5,
+        "avg_night_c": 2.8
       },
       {
         "from_month": 12,
         "to_month": 12,
-        "city_id": "CN-YN-YISA",
-        "name_en": "Yisa",
-        "name": "迤萨",
-        "province": "Yunnan",
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
         "days": 30,
         "move_in": "2044-12-01",
-        "avg_temp_c": 12.3
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-YN-YISA",
-        "name_en": "Yisa",
-        "avg_temp_c": 13,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 14.9,
         "comfort_ok": false
       },
       {
         "quarter": 2,
-        "city_id": "CN-YN-KUNMING",
-        "name_en": "Kunming",
-        "avg_temp_c": 17.9,
-        "comfort_ok": false
+        "city_id": "CN-YN-YISA",
+        "name_en": "Yisa",
+        "avg_temp_c": 20.7,
+        "comfort_ok": true
       },
       {
         "quarter": 3,
         "city_id": "CN-YN-KUNMING",
         "name_en": "Kunming",
-        "avg_temp_c": 18,
+        "avg_temp_c": 20.8,
         "comfort_ok": true
       },
       {
         "quarter": 4,
-        "city_id": "CN-YN-YISA",
-        "name_en": "Yisa",
-        "avg_temp_c": 12.7,
+        "city_id": "CN-YN-KUNMING",
+        "name_en": "Kunming",
+        "avg_temp_c": 10.7,
         "comfort_ok": false
       }
     ]
@@ -3508,19 +4411,21 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-GZ-TONGREN",
-        "name_en": "Tongren",
-        "name": "铜仁市",
-        "temp_c": 9.1,
-        "discomfort": 4.1
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-GZ-TONGREN",
-        "name_en": "Tongren",
-        "name": "铜仁市",
-        "temp_c": 10.5,
-        "discomfort": 3.1
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -3528,7 +4433,8 @@
         "name_en": "Tongren",
         "name": "铜仁市",
         "temp_c": 14.3,
-        "discomfort": 0.5
+        "night_temp_c": 10,
+        "discomfort": 0
       },
       {
         "month": 4,
@@ -3536,14 +4442,16 @@
         "name_en": "Tongren",
         "name": "铜仁市",
         "temp_c": 19.5,
+        "night_temp_c": 15.2,
         "discomfort": 0
       },
       {
         "month": 5,
-        "city_id": "CN-GZ-KAILI",
-        "name_en": "Kaili",
-        "name": "凯里",
-        "temp_c": 22.4,
+        "city_id": "CN-GZ-TONGREN",
+        "name_en": "Tongren",
+        "name": "铜仁市",
+        "temp_c": 24.7,
+        "night_temp_c": 20.3,
         "discomfort": 0
       },
       {
@@ -3552,6 +4460,7 @@
         "name_en": "Kaili",
         "name": "凯里",
         "temp_c": 26,
+        "night_temp_c": 21.3,
         "discomfort": 0
       },
       {
@@ -3560,7 +4469,8 @@
         "name_en": "Kaili",
         "name": "凯里",
         "temp_c": 27.3,
-        "discomfort": 0.8
+        "night_temp_c": 22.6,
+        "discomfort": 0
       },
       {
         "month": 8,
@@ -3568,14 +4478,16 @@
         "name_en": "Kaili",
         "name": "凯里",
         "temp_c": 26,
+        "night_temp_c": 21.3,
         "discomfort": 0
       },
       {
         "month": 9,
-        "city_id": "CN-GZ-KAILI",
-        "name_en": "Kaili",
-        "name": "凯里",
-        "temp_c": 22.4,
+        "city_id": "CN-GZ-TONGREN",
+        "name_en": "Tongren",
+        "name": "铜仁市",
+        "temp_c": 24.7,
+        "night_temp_c": 20.3,
         "discomfort": 0
       },
       {
@@ -3584,6 +4496,7 @@
         "name_en": "Kaili",
         "name": "凯里",
         "temp_c": 17.4,
+        "night_temp_c": 12.8,
         "discomfort": 0
       },
       {
@@ -3592,79 +4505,132 @@
         "name_en": "Tongren",
         "name": "铜仁市",
         "temp_c": 14.3,
-        "discomfort": 0.5
+        "night_temp_c": 10,
+        "discomfort": 0
       },
       {
         "month": 12,
-        "city_id": "CN-GZ-TONGREN",
-        "name_en": "Tongren",
-        "name": "铜仁市",
-        "temp_c": 10.5,
-        "discomfort": 3.1
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
-        "to_month": 4,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2045-01-01",
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
+      },
+      {
+        "from_month": 3,
+        "to_month": 5,
         "city_id": "CN-GZ-TONGREN",
         "name_en": "Tongren",
         "name": "铜仁市",
         "province": "Guizhou",
-        "days": 120,
-        "move_in": "2045-01-01",
-        "avg_temp_c": 13.4
+        "days": 90,
+        "move_in": "2045-03-01",
+        "avg_temp_c": 19.5,
+        "avg_night_c": 15.2
       },
       {
-        "from_month": 5,
+        "from_month": 6,
+        "to_month": 8,
+        "city_id": "CN-GZ-KAILI",
+        "name_en": "Kaili",
+        "name": "凯里",
+        "province": "Guizhou",
+        "days": 90,
+        "move_in": "2045-06-01",
+        "avg_temp_c": 26.4,
+        "avg_night_c": 21.7
+      },
+      {
+        "from_month": 9,
+        "to_month": 9,
+        "city_id": "CN-GZ-TONGREN",
+        "name_en": "Tongren",
+        "name": "铜仁市",
+        "province": "Guizhou",
+        "days": 30,
+        "move_in": "2045-09-01",
+        "avg_temp_c": 24.7,
+        "avg_night_c": 20.3
+      },
+      {
+        "from_month": 10,
         "to_month": 10,
         "city_id": "CN-GZ-KAILI",
         "name_en": "Kaili",
         "name": "凯里",
         "province": "Guizhou",
-        "days": 180,
-        "move_in": "2045-05-01",
-        "avg_temp_c": 23.6
+        "days": 30,
+        "move_in": "2045-10-01",
+        "avg_temp_c": 17.4,
+        "avg_night_c": 12.8
       },
       {
         "from_month": 11,
-        "to_month": 12,
+        "to_month": 11,
         "city_id": "CN-GZ-TONGREN",
         "name_en": "Tongren",
         "name": "铜仁市",
         "province": "Guizhou",
-        "days": 60,
+        "days": 30,
         "move_in": "2045-11-01",
-        "avg_temp_c": 12.4
+        "avg_temp_c": 14.3,
+        "avg_night_c": 10
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
+        "move_in": "2045-12-01",
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-GZ-TONGREN",
-        "name_en": "Tongren",
-        "avg_temp_c": 11.3,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 14.5,
         "comfort_ok": false
       },
       {
         "quarter": 2,
-        "city_id": "CN-GZ-KAILI",
-        "name_en": "Kaili",
-        "avg_temp_c": 22.6,
+        "city_id": "CN-GZ-TONGREN",
+        "name_en": "Tongren",
+        "avg_temp_c": 23.4,
         "comfort_ok": true
       },
       {
         "quarter": 3,
         "city_id": "CN-GZ-KAILI",
         "name_en": "Kaili",
-        "avg_temp_c": 25.2,
+        "avg_temp_c": 26,
         "comfort_ok": false
       },
       {
         "quarter": 4,
-        "city_id": "CN-GZ-TONGREN",
-        "name_en": "Tongren",
-        "avg_temp_c": 14.1,
+        "city_id": "CN-GZ-KAILI",
+        "name_en": "Kaili",
+        "avg_temp_c": 15.6,
         "comfort_ok": false
       }
     ]
@@ -3675,19 +4641,21 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-HB-WUHAN",
-        "name_en": "Wuhan",
-        "name": "武汉",
-        "temp_c": 7.4,
-        "discomfort": 5.3
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-HB-WUHAN",
-        "name_en": "Wuhan",
-        "name": "武汉",
-        "temp_c": 9,
-        "discomfort": 4.2
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -3695,7 +4663,8 @@
         "name_en": "Wuhan",
         "name": "武汉",
         "temp_c": 13.2,
-        "discomfort": 1.2
+        "night_temp_c": 9.5,
+        "discomfort": 0.3
       },
       {
         "month": 4,
@@ -3703,6 +4672,7 @@
         "name_en": "Wuhan",
         "name": "武汉",
         "temp_c": 19.1,
+        "night_temp_c": 15.4,
         "discomfort": 0
       },
       {
@@ -3711,31 +4681,35 @@
         "name_en": "Wuhan",
         "name": "武汉",
         "temp_c": 24.9,
+        "night_temp_c": 21.2,
         "discomfort": 0
       },
       {
         "month": 6,
-        "city_id": "CN-HB-WUHAN",
-        "name_en": "Wuhan",
-        "name": "武汉",
-        "temp_c": 29.2,
-        "discomfort": 1.9
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 7,
-        "city_id": "CN-HB-WUHAN",
-        "name_en": "Wuhan",
-        "name": "武汉",
-        "temp_c": 30.7,
-        "discomfort": 2.8
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.8,
+        "night_temp_c": 21.4,
+        "discomfort": 0
       },
       {
         "month": 8,
-        "city_id": "CN-HB-WUHAN",
-        "name_en": "Wuhan",
-        "name": "武汉",
-        "temp_c": 29.2,
-        "discomfort": 1.9
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 9,
@@ -3743,6 +4717,7 @@
         "name_en": "Wuhan",
         "name": "武汉",
         "temp_c": 24.9,
+        "night_temp_c": 21.2,
         "discomfort": 0
       },
       {
@@ -3751,6 +4726,7 @@
         "name_en": "Wuhan",
         "name": "武汉",
         "temp_c": 19.1,
+        "night_temp_c": 15.4,
         "discomfort": 0
       },
       {
@@ -3759,57 +4735,108 @@
         "name_en": "Wuhan",
         "name": "武汉",
         "temp_c": 13.2,
-        "discomfort": 1.2
+        "night_temp_c": 9.5,
+        "discomfort": 0.3
       },
       {
         "month": 12,
-        "city_id": "CN-HB-WUHAN",
-        "name_en": "Wuhan",
-        "name": "武汉",
-        "temp_c": 9,
-        "discomfort": 4.2
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
-        "to_month": 12,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2046-01-01",
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
+      },
+      {
+        "from_month": 3,
+        "to_month": 5,
         "city_id": "CN-HB-WUHAN",
         "name_en": "Wuhan",
         "name": "武汉",
         "province": "Hubei",
-        "days": 360,
-        "move_in": "2046-01-01",
-        "avg_temp_c": 19.1
+        "days": 90,
+        "move_in": "2046-03-01",
+        "avg_temp_c": 19.1,
+        "avg_night_c": 15.4
+      },
+      {
+        "from_month": 6,
+        "to_month": 8,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Heilongjiang",
+        "days": 90,
+        "move_in": "2046-06-01",
+        "avg_temp_c": 24.2,
+        "avg_night_c": 19.8
+      },
+      {
+        "from_month": 9,
+        "to_month": 11,
+        "city_id": "CN-HB-WUHAN",
+        "name_en": "Wuhan",
+        "name": "武汉",
+        "province": "Hubei",
+        "days": 90,
+        "move_in": "2046-09-01",
+        "avg_temp_c": 19.1,
+        "avg_night_c": 15.4
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
+        "move_in": "2046-12-01",
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-HB-WUHAN",
-        "name_en": "Wuhan",
-        "avg_temp_c": 9.9,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 14.1,
         "comfort_ok": false
       },
       {
         "quarter": 2,
         "city_id": "CN-HB-WUHAN",
         "name_en": "Wuhan",
-        "avg_temp_c": 24.4,
+        "avg_temp_c": 22.5,
         "comfort_ok": true
       },
       {
         "quarter": 3,
-        "city_id": "CN-HB-WUHAN",
-        "name_en": "Wuhan",
-        "avg_temp_c": 28.3,
-        "comfort_ok": false
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 24.7,
+        "comfort_ok": true
       },
       {
         "quarter": 4,
         "city_id": "CN-HB-WUHAN",
         "name_en": "Wuhan",
-        "avg_temp_c": 13.8,
+        "avg_temp_c": 15.8,
         "comfort_ok": false
       }
     ]
@@ -3824,7 +4851,8 @@
         "name_en": "Xiamen",
         "name": "厦门",
         "temp_c": 14.5,
-        "discomfort": 0.4
+        "night_temp_c": 10.8,
+        "discomfort": 0
       },
       {
         "month": 2,
@@ -3832,6 +4860,7 @@
         "name_en": "Xiamen",
         "name": "厦门",
         "temp_c": 15.7,
+        "night_temp_c": 12,
         "discomfort": 0
       },
       {
@@ -3840,6 +4869,7 @@
         "name_en": "Xiamen",
         "name": "厦门",
         "temp_c": 18.9,
+        "night_temp_c": 15.2,
         "discomfort": 0
       },
       {
@@ -3848,6 +4878,7 @@
         "name_en": "Xiamen",
         "name": "厦门",
         "temp_c": 23.4,
+        "night_temp_c": 19.7,
         "discomfort": 0
       },
       {
@@ -3856,31 +4887,35 @@
         "name_en": "Xiamen",
         "name": "厦门",
         "temp_c": 27.8,
-        "discomfort": 1.1
+        "night_temp_c": 24.1,
+        "discomfort": 0.7
       },
       {
         "month": 6,
-        "city_id": "CN-FJ-XIAMEN",
-        "name_en": "Xiamen",
-        "name": "厦门",
-        "temp_c": 31.1,
-        "discomfort": 3.1
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 7,
-        "city_id": "CN-FJ-XIAMEN",
-        "name_en": "Xiamen",
-        "name": "厦门",
-        "temp_c": 32.3,
-        "discomfort": 3.8
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.8,
+        "night_temp_c": 21.4,
+        "discomfort": 0
       },
       {
         "month": 8,
-        "city_id": "CN-FJ-XIAMEN",
-        "name_en": "Xiamen",
-        "name": "厦门",
-        "temp_c": 31.1,
-        "discomfort": 3.1
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 9,
@@ -3888,7 +4923,8 @@
         "name_en": "Xiamen",
         "name": "厦门",
         "temp_c": 27.8,
-        "discomfort": 1.1
+        "night_temp_c": 24.1,
+        "discomfort": 0.7
       },
       {
         "month": 10,
@@ -3896,6 +4932,7 @@
         "name_en": "Xiamen",
         "name": "厦门",
         "temp_c": 23.4,
+        "night_temp_c": 19.7,
         "discomfort": 0
       },
       {
@@ -3904,6 +4941,7 @@
         "name_en": "Xiamen",
         "name": "厦门",
         "temp_c": 18.9,
+        "night_temp_c": 15.2,
         "discomfort": 0
       },
       {
@@ -3912,20 +4950,46 @@
         "name_en": "Xiamen",
         "name": "厦门",
         "temp_c": 15.7,
+        "night_temp_c": 12,
         "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
+        "to_month": 5,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "province": "Fujian",
+        "days": 150,
+        "move_in": "2047-01-01",
+        "avg_temp_c": 20.1,
+        "avg_night_c": 16.4
+      },
+      {
+        "from_month": 6,
+        "to_month": 8,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Heilongjiang",
+        "days": 90,
+        "move_in": "2047-06-01",
+        "avg_temp_c": 24.2,
+        "avg_night_c": 19.8
+      },
+      {
+        "from_month": 9,
         "to_month": 12,
         "city_id": "CN-FJ-XIAMEN",
         "name_en": "Xiamen",
         "name": "厦门",
         "province": "Fujian",
-        "days": 360,
-        "move_in": "2047-01-01",
-        "avg_temp_c": 23.4
+        "days": 120,
+        "move_in": "2047-09-01",
+        "avg_temp_c": 21.5,
+        "avg_night_c": 17.8
       }
     ],
     "quarters": [
@@ -3940,14 +5004,14 @@
         "quarter": 2,
         "city_id": "CN-FJ-XIAMEN",
         "name_en": "Xiamen",
-        "avg_temp_c": 27.4,
-        "comfort_ok": false
+        "avg_temp_c": 24.9,
+        "comfort_ok": true
       },
       {
         "quarter": 3,
-        "city_id": "CN-FJ-XIAMEN",
-        "name_en": "Xiamen",
-        "avg_temp_c": 30.4,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 25.7,
         "comfort_ok": false
       },
       {
@@ -3969,6 +5033,7 @@
         "name_en": "Shenzhen",
         "name": "深圳",
         "temp_c": 16.7,
+        "night_temp_c": 13,
         "discomfort": 0
       },
       {
@@ -3977,6 +5042,7 @@
         "name_en": "Shenzhen",
         "name": "深圳",
         "temp_c": 17.8,
+        "night_temp_c": 14.1,
         "discomfort": 0
       },
       {
@@ -3985,6 +5051,7 @@
         "name_en": "Shenzhen",
         "name": "深圳",
         "temp_c": 20.8,
+        "night_temp_c": 17.1,
         "discomfort": 0
       },
       {
@@ -3993,6 +5060,7 @@
         "name_en": "Shenzhen",
         "name": "深圳",
         "temp_c": 24.8,
+        "night_temp_c": 21.1,
         "discomfort": 0
       },
       {
@@ -4001,31 +5069,35 @@
         "name_en": "Shenzhen",
         "name": "深圳",
         "temp_c": 28.8,
-        "discomfort": 1.7
+        "night_temp_c": 25.1,
+        "discomfort": 1.3
       },
       {
         "month": 6,
-        "city_id": "CN-GD-SHENZHEN",
-        "name_en": "Shenzhen",
-        "name": "深圳",
-        "temp_c": 31.8,
-        "discomfort": 3.5
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 7,
-        "city_id": "CN-GD-SHENZHEN",
-        "name_en": "Shenzhen",
-        "name": "深圳",
-        "temp_c": 32.8,
-        "discomfort": 4.1
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.8,
+        "night_temp_c": 21.4,
+        "discomfort": 0
       },
       {
         "month": 8,
-        "city_id": "CN-GD-SHENZHEN",
-        "name_en": "Shenzhen",
-        "name": "深圳",
-        "temp_c": 31.8,
-        "discomfort": 3.5
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 9,
@@ -4033,7 +5105,8 @@
         "name_en": "Shenzhen",
         "name": "深圳",
         "temp_c": 28.8,
-        "discomfort": 1.7
+        "night_temp_c": 25.1,
+        "discomfort": 1.3
       },
       {
         "month": 10,
@@ -4041,6 +5114,7 @@
         "name_en": "Shenzhen",
         "name": "深圳",
         "temp_c": 24.8,
+        "night_temp_c": 21.1,
         "discomfort": 0
       },
       {
@@ -4049,6 +5123,7 @@
         "name_en": "Shenzhen",
         "name": "深圳",
         "temp_c": 20.8,
+        "night_temp_c": 17.1,
         "discomfort": 0
       },
       {
@@ -4057,20 +5132,46 @@
         "name_en": "Shenzhen",
         "name": "深圳",
         "temp_c": 17.8,
+        "night_temp_c": 14.1,
         "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
+        "to_month": 5,
+        "city_id": "CN-GD-SHENZHEN",
+        "name_en": "Shenzhen",
+        "name": "深圳",
+        "province": "Guangdong",
+        "days": 150,
+        "move_in": "2048-01-01",
+        "avg_temp_c": 21.8,
+        "avg_night_c": 18.1
+      },
+      {
+        "from_month": 6,
+        "to_month": 8,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Heilongjiang",
+        "days": 90,
+        "move_in": "2048-06-01",
+        "avg_temp_c": 24.2,
+        "avg_night_c": 19.8
+      },
+      {
+        "from_month": 9,
         "to_month": 12,
         "city_id": "CN-GD-SHENZHEN",
         "name_en": "Shenzhen",
         "name": "深圳",
         "province": "Guangdong",
-        "days": 360,
-        "move_in": "2048-01-01",
-        "avg_temp_c": 24.8
+        "days": 120,
+        "move_in": "2048-09-01",
+        "avg_temp_c": 23.1,
+        "avg_night_c": 19.4
       }
     ],
     "quarters": [
@@ -4085,14 +5186,14 @@
         "quarter": 2,
         "city_id": "CN-GD-SHENZHEN",
         "name_en": "Shenzhen",
-        "avg_temp_c": 28.5,
+        "avg_temp_c": 25.7,
         "comfort_ok": false
       },
       {
         "quarter": 3,
-        "city_id": "CN-GD-SHENZHEN",
-        "name_en": "Shenzhen",
-        "avg_temp_c": 31.1,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 26,
         "comfort_ok": false
       },
       {
@@ -4114,6 +5215,7 @@
         "name_en": "Haikou",
         "name": "海口",
         "temp_c": 19.6,
+        "night_temp_c": 16,
         "discomfort": 0
       },
       {
@@ -4122,6 +5224,7 @@
         "name_en": "Haikou",
         "name": "海口",
         "temp_c": 20.5,
+        "night_temp_c": 17,
         "discomfort": 0
       },
       {
@@ -4130,6 +5233,7 @@
         "name_en": "Haikou",
         "name": "海口",
         "temp_c": 23.1,
+        "night_temp_c": 19.5,
         "discomfort": 0
       },
       {
@@ -4138,7 +5242,8 @@
         "name_en": "Haikou",
         "name": "海口",
         "temp_c": 26.5,
-        "discomfort": 0.3
+        "night_temp_c": 23,
+        "discomfort": 0
       },
       {
         "month": 5,
@@ -4146,31 +5251,35 @@
         "name_en": "Haikou",
         "name": "海口",
         "temp_c": 30,
-        "discomfort": 2.4
+        "night_temp_c": 26.4,
+        "discomfort": 2
       },
       {
         "month": 6,
-        "city_id": "CN-HI-HAIKOU",
-        "name_en": "Haikou",
-        "name": "海口",
-        "temp_c": 32.5,
-        "discomfort": 3.9
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 7,
-        "city_id": "CN-HI-HAIKOU",
-        "name_en": "Haikou",
-        "name": "海口",
-        "temp_c": 33.4,
-        "discomfort": 4.5
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.8,
+        "night_temp_c": 21.4,
+        "discomfort": 0
       },
       {
         "month": 8,
-        "city_id": "CN-HI-HAIKOU",
-        "name_en": "Haikou",
-        "name": "海口",
-        "temp_c": 32.5,
-        "discomfort": 3.9
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 9,
@@ -4178,7 +5287,8 @@
         "name_en": "Haikou",
         "name": "海口",
         "temp_c": 30,
-        "discomfort": 2.4
+        "night_temp_c": 26.4,
+        "discomfort": 2
       },
       {
         "month": 10,
@@ -4186,7 +5296,8 @@
         "name_en": "Haikou",
         "name": "海口",
         "temp_c": 26.5,
-        "discomfort": 0.3
+        "night_temp_c": 23,
+        "discomfort": 0
       },
       {
         "month": 11,
@@ -4194,6 +5305,7 @@
         "name_en": "Haikou",
         "name": "海口",
         "temp_c": 23.1,
+        "night_temp_c": 19.5,
         "discomfort": 0
       },
       {
@@ -4202,20 +5314,46 @@
         "name_en": "Haikou",
         "name": "海口",
         "temp_c": 20.5,
+        "night_temp_c": 17,
         "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
+        "to_month": 5,
+        "city_id": "CN-HI-HAIKOU",
+        "name_en": "Haikou",
+        "name": "海口",
+        "province": "Hainan",
+        "days": 150,
+        "move_in": "2049-01-01",
+        "avg_temp_c": 23.9,
+        "avg_night_c": 20.4
+      },
+      {
+        "from_month": 6,
+        "to_month": 8,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Heilongjiang",
+        "days": 90,
+        "move_in": "2049-06-01",
+        "avg_temp_c": 24.2,
+        "avg_night_c": 19.8
+      },
+      {
+        "from_month": 9,
         "to_month": 12,
         "city_id": "CN-HI-HAIKOU",
         "name_en": "Haikou",
         "name": "海口",
         "province": "Hainan",
-        "days": 360,
-        "move_in": "2049-01-01",
-        "avg_temp_c": 26.5
+        "days": 120,
+        "move_in": "2049-09-01",
+        "avg_temp_c": 25,
+        "avg_night_c": 21.5
       }
     ],
     "quarters": [
@@ -4230,14 +5368,14 @@
         "quarter": 2,
         "city_id": "CN-HI-HAIKOU",
         "name_en": "Haikou",
-        "avg_temp_c": 29.7,
+        "avg_temp_c": 26.6,
         "comfort_ok": false
       },
       {
         "quarter": 3,
-        "city_id": "CN-HI-HAIKOU",
-        "name_en": "Haikou",
-        "avg_temp_c": 32,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 26.4,
         "comfort_ok": false
       },
       {
@@ -4255,11 +5393,12 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-GX-GUILIN",
-        "name_en": "Guilin",
-        "name": "桂林",
-        "temp_c": 12.7,
-        "discomfort": 1.6
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
@@ -4267,7 +5406,8 @@
         "name_en": "Guilin",
         "name": "桂林",
         "temp_c": 14,
-        "discomfort": 0.7
+        "night_temp_c": 10.1,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -4275,6 +5415,7 @@
         "name_en": "Guilin",
         "name": "桂林",
         "temp_c": 17.3,
+        "night_temp_c": 13.5,
         "discomfort": 0
       },
       {
@@ -4283,6 +5424,7 @@
         "name_en": "Guilin",
         "name": "桂林",
         "temp_c": 22,
+        "night_temp_c": 18.2,
         "discomfort": 0
       },
       {
@@ -4291,31 +5433,35 @@
         "name_en": "Guilin",
         "name": "桂林",
         "temp_c": 26.6,
-        "discomfort": 0.4
+        "night_temp_c": 22.8,
+        "discomfort": 0
       },
       {
         "month": 6,
-        "city_id": "CN-GX-GUILIN",
-        "name_en": "Guilin",
-        "name": "桂林",
-        "temp_c": 30,
-        "discomfort": 2.4
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 7,
-        "city_id": "CN-GX-GUILIN",
-        "name_en": "Guilin",
-        "name": "桂林",
-        "temp_c": 31.3,
-        "discomfort": 3.2
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.8,
+        "night_temp_c": 21.4,
+        "discomfort": 0
       },
       {
         "month": 8,
-        "city_id": "CN-GX-GUILIN",
-        "name_en": "Guilin",
-        "name": "桂林",
-        "temp_c": 30,
-        "discomfort": 2.4
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 9,
@@ -4323,7 +5469,8 @@
         "name_en": "Guilin",
         "name": "桂林",
         "temp_c": 26.6,
-        "discomfort": 0.4
+        "night_temp_c": 22.8,
+        "discomfort": 0
       },
       {
         "month": 10,
@@ -4331,36 +5478,88 @@
         "name_en": "Guilin",
         "name": "桂林",
         "temp_c": 22,
+        "night_temp_c": 18.2,
         "discomfort": 0
       },
       {
         "month": 11,
-        "city_id": "CN-GX-GUILIN",
-        "name_en": "Guilin",
-        "name": "桂林",
-        "temp_c": 17.3,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 18.5,
+        "night_temp_c": 14.8,
         "discomfort": 0
       },
       {
         "month": 12,
-        "city_id": "CN-GX-GUILIN",
-        "name_en": "Guilin",
-        "name": "桂林",
-        "temp_c": 14,
-        "discomfort": 0.7
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
-        "to_month": 12,
+        "to_month": 1,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
+        "move_in": "2050-01-01",
+        "avg_temp_c": 14,
+        "avg_night_c": 10.3
+      },
+      {
+        "from_month": 2,
+        "to_month": 5,
         "city_id": "CN-GX-GUILIN",
         "name_en": "Guilin",
         "name": "桂林",
         "province": "Guangxi",
-        "days": 360,
-        "move_in": "2050-01-01",
-        "avg_temp_c": 22
+        "days": 120,
+        "move_in": "2050-02-01",
+        "avg_temp_c": 20,
+        "avg_night_c": 16.2
+      },
+      {
+        "from_month": 6,
+        "to_month": 8,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Heilongjiang",
+        "days": 90,
+        "move_in": "2050-06-01",
+        "avg_temp_c": 24.2,
+        "avg_night_c": 19.8
+      },
+      {
+        "from_month": 9,
+        "to_month": 10,
+        "city_id": "CN-GX-GUILIN",
+        "name_en": "Guilin",
+        "name": "桂林",
+        "province": "Guangxi",
+        "days": 60,
+        "move_in": "2050-09-01",
+        "avg_temp_c": 24.3,
+        "avg_night_c": 20.5
+      },
+      {
+        "from_month": 11,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2050-11-01",
+        "avg_temp_c": 16.9,
+        "avg_night_c": 13.2
       }
     ],
     "quarters": [
@@ -4368,29 +5567,29 @@
         "quarter": 1,
         "city_id": "CN-GX-GUILIN",
         "name_en": "Guilin",
-        "avg_temp_c": 14.7,
+        "avg_temp_c": 15.1,
         "comfort_ok": false
       },
       {
         "quarter": 2,
         "city_id": "CN-GX-GUILIN",
         "name_en": "Guilin",
-        "avg_temp_c": 26.2,
-        "comfort_ok": false
+        "avg_temp_c": 24,
+        "comfort_ok": true
       },
       {
         "quarter": 3,
-        "city_id": "CN-GX-GUILIN",
-        "name_en": "Guilin",
-        "avg_temp_c": 29.3,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 25.3,
         "comfort_ok": false
       },
       {
         "quarter": 4,
-        "city_id": "CN-GX-GUILIN",
-        "name_en": "Guilin",
-        "avg_temp_c": 17.8,
-        "comfort_ok": false
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 18.6,
+        "comfort_ok": true
       }
     ]
   },
@@ -4400,19 +5599,21 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-ZJ-HANGZHOU",
-        "name_en": "Hangzhou",
-        "name": "杭州",
-        "temp_c": 7.8,
-        "discomfort": 5.1
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-ZJ-HANGZHOU",
-        "name_en": "Hangzhou",
-        "name": "杭州",
-        "temp_c": 9.3,
-        "discomfort": 4
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -4420,7 +5621,8 @@
         "name_en": "Hangzhou",
         "name": "杭州",
         "temp_c": 13.6,
-        "discomfort": 1
+        "night_temp_c": 9.8,
+        "discomfort": 0.1
       },
       {
         "month": 4,
@@ -4428,6 +5630,7 @@
         "name_en": "Hangzhou",
         "name": "杭州",
         "temp_c": 19.3,
+        "night_temp_c": 15.6,
         "discomfort": 0
       },
       {
@@ -4436,31 +5639,35 @@
         "name_en": "Hangzhou",
         "name": "杭州",
         "temp_c": 25.1,
+        "night_temp_c": 21.4,
         "discomfort": 0
       },
       {
         "month": 6,
-        "city_id": "CN-ZJ-HANGZHOU",
-        "name_en": "Hangzhou",
-        "name": "杭州",
-        "temp_c": 29.3,
-        "discomfort": 2
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 7,
-        "city_id": "CN-ZJ-HANGZHOU",
-        "name_en": "Hangzhou",
-        "name": "杭州",
-        "temp_c": 30.8,
-        "discomfort": 2.9
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.8,
+        "night_temp_c": 21.4,
+        "discomfort": 0
       },
       {
         "month": 8,
-        "city_id": "CN-ZJ-HANGZHOU",
-        "name_en": "Hangzhou",
-        "name": "杭州",
-        "temp_c": 29.3,
-        "discomfort": 2
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 9,
@@ -4468,6 +5675,7 @@
         "name_en": "Hangzhou",
         "name": "杭州",
         "temp_c": 25.1,
+        "night_temp_c": 21.4,
         "discomfort": 0
       },
       {
@@ -4476,6 +5684,7 @@
         "name_en": "Hangzhou",
         "name": "杭州",
         "temp_c": 19.3,
+        "night_temp_c": 15.6,
         "discomfort": 0
       },
       {
@@ -4484,57 +5693,108 @@
         "name_en": "Hangzhou",
         "name": "杭州",
         "temp_c": 13.6,
-        "discomfort": 1
+        "night_temp_c": 9.8,
+        "discomfort": 0.1
       },
       {
         "month": 12,
-        "city_id": "CN-ZJ-HANGZHOU",
-        "name_en": "Hangzhou",
-        "name": "杭州",
-        "temp_c": 9.3,
-        "discomfort": 4
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
-        "to_month": 12,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2051-01-01",
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
+      },
+      {
+        "from_month": 3,
+        "to_month": 5,
         "city_id": "CN-ZJ-HANGZHOU",
         "name_en": "Hangzhou",
         "name": "杭州",
         "province": "Zhejiang",
-        "days": 360,
-        "move_in": "2051-01-01",
-        "avg_temp_c": 19.3
+        "days": 90,
+        "move_in": "2051-03-01",
+        "avg_temp_c": 19.3,
+        "avg_night_c": 15.6
+      },
+      {
+        "from_month": 6,
+        "to_month": 8,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Heilongjiang",
+        "days": 90,
+        "move_in": "2051-06-01",
+        "avg_temp_c": 24.2,
+        "avg_night_c": 19.8
+      },
+      {
+        "from_month": 9,
+        "to_month": 11,
+        "city_id": "CN-ZJ-HANGZHOU",
+        "name_en": "Hangzhou",
+        "name": "杭州",
+        "province": "Zhejiang",
+        "days": 90,
+        "move_in": "2051-09-01",
+        "avg_temp_c": 19.3,
+        "avg_night_c": 15.6
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
+        "move_in": "2051-12-01",
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-ZJ-HANGZHOU",
-        "name_en": "Hangzhou",
-        "avg_temp_c": 10.2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 14.3,
         "comfort_ok": false
       },
       {
         "quarter": 2,
         "city_id": "CN-ZJ-HANGZHOU",
         "name_en": "Hangzhou",
-        "avg_temp_c": 24.6,
+        "avg_temp_c": 22.6,
         "comfort_ok": true
       },
       {
         "quarter": 3,
-        "city_id": "CN-ZJ-HANGZHOU",
-        "name_en": "Hangzhou",
-        "avg_temp_c": 28.4,
-        "comfort_ok": false
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 24.8,
+        "comfort_ok": true
       },
       {
         "quarter": 4,
         "city_id": "CN-ZJ-HANGZHOU",
         "name_en": "Hangzhou",
-        "avg_temp_c": 14.1,
+        "avg_temp_c": 16,
         "comfort_ok": false
       }
     ]
@@ -4545,19 +5805,21 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-JS-NANJING",
-        "name_en": "Nanjing",
-        "name": "南京",
-        "temp_c": 5.7,
-        "discomfort": 6.5
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-JS-NANJING",
-        "name_en": "Nanjing",
-        "name": "南京",
-        "temp_c": 7.3,
-        "discomfort": 5.4
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -4565,7 +5827,8 @@
         "name_en": "Nanjing",
         "name": "南京",
         "temp_c": 11.8,
-        "discomfort": 2.2
+        "night_temp_c": 8.1,
+        "discomfort": 1.3
       },
       {
         "month": 4,
@@ -4573,6 +5836,7 @@
         "name_en": "Nanjing",
         "name": "南京",
         "temp_c": 18,
+        "night_temp_c": 14.3,
         "discomfort": 0
       },
       {
@@ -4581,31 +5845,35 @@
         "name_en": "Nanjing",
         "name": "南京",
         "temp_c": 24.2,
+        "night_temp_c": 20.5,
         "discomfort": 0
       },
       {
         "month": 6,
-        "city_id": "CN-JS-NANJING",
-        "name_en": "Nanjing",
-        "name": "南京",
-        "temp_c": 28.7,
-        "discomfort": 1.6
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 7,
-        "city_id": "CN-JS-NANJING",
-        "name_en": "Nanjing",
-        "name": "南京",
-        "temp_c": 30.3,
-        "discomfort": 2.6
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.8,
+        "night_temp_c": 21.4,
+        "discomfort": 0
       },
       {
         "month": 8,
-        "city_id": "CN-JS-NANJING",
-        "name_en": "Nanjing",
-        "name": "南京",
-        "temp_c": 28.7,
-        "discomfort": 1.6
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 9,
@@ -4613,6 +5881,7 @@
         "name_en": "Nanjing",
         "name": "南京",
         "temp_c": 24.2,
+        "night_temp_c": 20.5,
         "discomfort": 0
       },
       {
@@ -4621,6 +5890,7 @@
         "name_en": "Nanjing",
         "name": "南京",
         "temp_c": 18,
+        "night_temp_c": 14.3,
         "discomfort": 0
       },
       {
@@ -4629,57 +5899,108 @@
         "name_en": "Nanjing",
         "name": "南京",
         "temp_c": 11.8,
-        "discomfort": 2.2
+        "night_temp_c": 8.1,
+        "discomfort": 1.3
       },
       {
         "month": 12,
-        "city_id": "CN-JS-NANJING",
-        "name_en": "Nanjing",
-        "name": "南京",
-        "temp_c": 7.3,
-        "discomfort": 5.4
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
-        "to_month": 12,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2052-01-01",
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
+      },
+      {
+        "from_month": 3,
+        "to_month": 5,
         "city_id": "CN-JS-NANJING",
         "name_en": "Nanjing",
         "name": "南京",
         "province": "Jiangsu",
-        "days": 360,
-        "move_in": "2052-01-01",
-        "avg_temp_c": 18
+        "days": 90,
+        "move_in": "2052-03-01",
+        "avg_temp_c": 18,
+        "avg_night_c": 14.3
+      },
+      {
+        "from_month": 6,
+        "to_month": 8,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Heilongjiang",
+        "days": 90,
+        "move_in": "2052-06-01",
+        "avg_temp_c": 24.2,
+        "avg_night_c": 19.8
+      },
+      {
+        "from_month": 9,
+        "to_month": 11,
+        "city_id": "CN-JS-NANJING",
+        "name_en": "Nanjing",
+        "name": "南京",
+        "province": "Jiangsu",
+        "days": 90,
+        "move_in": "2052-09-01",
+        "avg_temp_c": 18,
+        "avg_night_c": 14.3
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
+        "move_in": "2052-12-01",
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-JS-NANJING",
-        "name_en": "Nanjing",
-        "avg_temp_c": 8.3,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 13.7,
         "comfort_ok": false
       },
       {
         "quarter": 2,
         "city_id": "CN-JS-NANJING",
         "name_en": "Nanjing",
-        "avg_temp_c": 23.6,
+        "avg_temp_c": 21.9,
         "comfort_ok": true
       },
       {
         "quarter": 3,
-        "city_id": "CN-JS-NANJING",
-        "name_en": "Nanjing",
-        "avg_temp_c": 27.7,
-        "comfort_ok": false
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 24.5,
+        "comfort_ok": true
       },
       {
         "quarter": 4,
         "city_id": "CN-JS-NANJING",
         "name_en": "Nanjing",
-        "avg_temp_c": 12.4,
+        "avg_temp_c": 15,
         "comfort_ok": false
       }
     ]
@@ -4690,19 +6011,21 @@
     "months": [
       {
         "month": 1,
-        "city_id": "CN-SH-SHANGHAI",
-        "name_en": "Shanghai",
-        "name": "上海",
-        "temp_c": 6.7,
-        "discomfort": 5.8
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 14,
+        "night_temp_c": 10.3,
+        "discomfort": 0
       },
       {
         "month": 2,
-        "city_id": "CN-SH-SHANGHAI",
-        "name_en": "Shanghai",
-        "name": "上海",
-        "temp_c": 8.3,
-        "discomfort": 4.7
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       },
       {
         "month": 3,
@@ -4710,7 +6033,8 @@
         "name_en": "Shanghai",
         "name": "上海",
         "temp_c": 12.7,
-        "discomfort": 1.6
+        "night_temp_c": 9,
+        "discomfort": 0.7
       },
       {
         "month": 4,
@@ -4718,6 +6042,7 @@
         "name_en": "Shanghai",
         "name": "上海",
         "temp_c": 18.7,
+        "night_temp_c": 15,
         "discomfort": 0
       },
       {
@@ -4726,31 +6051,35 @@
         "name_en": "Shanghai",
         "name": "上海",
         "temp_c": 24.6,
+        "night_temp_c": 20.9,
         "discomfort": 0
       },
       {
         "month": 6,
-        "city_id": "CN-SH-SHANGHAI",
-        "name_en": "Shanghai",
-        "name": "上海",
-        "temp_c": 29,
-        "discomfort": 1.8
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 7,
-        "city_id": "CN-SH-SHANGHAI",
-        "name_en": "Shanghai",
-        "name": "上海",
-        "temp_c": 30.6,
-        "discomfort": 2.8
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.8,
+        "night_temp_c": 21.4,
+        "discomfort": 0
       },
       {
         "month": 8,
-        "city_id": "CN-SH-SHANGHAI",
-        "name_en": "Shanghai",
-        "name": "上海",
-        "temp_c": 29,
-        "discomfort": 1.8
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 9,
@@ -4758,6 +6087,7 @@
         "name_en": "Shanghai",
         "name": "上海",
         "temp_c": 24.6,
+        "night_temp_c": 20.9,
         "discomfort": 0
       },
       {
@@ -4766,6 +6096,7 @@
         "name_en": "Shanghai",
         "name": "上海",
         "temp_c": 18.7,
+        "night_temp_c": 15,
         "discomfort": 0
       },
       {
@@ -4774,57 +6105,108 @@
         "name_en": "Shanghai",
         "name": "上海",
         "temp_c": 12.7,
-        "discomfort": 1.6
+        "night_temp_c": 9,
+        "discomfort": 0.7
       },
       {
         "month": 12,
-        "city_id": "CN-SH-SHANGHAI",
-        "name_en": "Shanghai",
-        "name": "上海",
-        "temp_c": 8.3,
-        "discomfort": 4.7
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "temp_c": 15.2,
+        "night_temp_c": 11.5,
+        "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
-        "to_month": 12,
+        "to_month": 2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 60,
+        "move_in": "2053-01-01",
+        "avg_temp_c": 14.6,
+        "avg_night_c": 10.9
+      },
+      {
+        "from_month": 3,
+        "to_month": 5,
         "city_id": "CN-SH-SHANGHAI",
         "name_en": "Shanghai",
         "name": "上海",
         "province": "Shanghai",
-        "days": 360,
-        "move_in": "2053-01-01",
-        "avg_temp_c": 18.7
+        "days": 90,
+        "move_in": "2053-03-01",
+        "avg_temp_c": 18.7,
+        "avg_night_c": 15
+      },
+      {
+        "from_month": 6,
+        "to_month": 8,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Heilongjiang",
+        "days": 90,
+        "move_in": "2053-06-01",
+        "avg_temp_c": 24.2,
+        "avg_night_c": 19.8
+      },
+      {
+        "from_month": 9,
+        "to_month": 11,
+        "city_id": "CN-SH-SHANGHAI",
+        "name_en": "Shanghai",
+        "name": "上海",
+        "province": "Shanghai",
+        "days": 90,
+        "move_in": "2053-09-01",
+        "avg_temp_c": 18.7,
+        "avg_night_c": 15
+      },
+      {
+        "from_month": 12,
+        "to_month": 12,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "name": "泉州",
+        "province": "Fujian",
+        "days": 30,
+        "move_in": "2053-12-01",
+        "avg_temp_c": 15.2,
+        "avg_night_c": 11.5
       }
     ],
     "quarters": [
       {
         "quarter": 1,
-        "city_id": "CN-SH-SHANGHAI",
-        "name_en": "Shanghai",
-        "avg_temp_c": 9.2,
+        "city_id": "CN-FJ-QUANZHOU",
+        "name_en": "Quanzhou",
+        "avg_temp_c": 14,
         "comfort_ok": false
       },
       {
         "quarter": 2,
         "city_id": "CN-SH-SHANGHAI",
         "name_en": "Shanghai",
-        "avg_temp_c": 24.1,
+        "avg_temp_c": 22.2,
         "comfort_ok": true
       },
       {
         "quarter": 3,
-        "city_id": "CN-SH-SHANGHAI",
-        "name_en": "Shanghai",
-        "avg_temp_c": 28.1,
-        "comfort_ok": false
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 24.6,
+        "comfort_ok": true
       },
       {
         "quarter": 4,
         "city_id": "CN-SH-SHANGHAI",
         "name_en": "Shanghai",
-        "avg_temp_c": 13.2,
+        "avg_temp_c": 15.5,
         "comfort_ok": false
       }
     ]
@@ -4839,7 +6221,8 @@
         "name_en": "Xiamen",
         "name": "厦门",
         "temp_c": 14.5,
-        "discomfort": 0.4
+        "night_temp_c": 10.8,
+        "discomfort": 0
       },
       {
         "month": 2,
@@ -4847,6 +6230,7 @@
         "name_en": "Xiamen",
         "name": "厦门",
         "temp_c": 15.7,
+        "night_temp_c": 12,
         "discomfort": 0
       },
       {
@@ -4855,6 +6239,7 @@
         "name_en": "Xiamen",
         "name": "厦门",
         "temp_c": 18.9,
+        "night_temp_c": 15.2,
         "discomfort": 0
       },
       {
@@ -4863,6 +6248,7 @@
         "name_en": "Xiamen",
         "name": "厦门",
         "temp_c": 23.4,
+        "night_temp_c": 19.7,
         "discomfort": 0
       },
       {
@@ -4871,31 +6257,35 @@
         "name_en": "Xiamen",
         "name": "厦门",
         "temp_c": 27.8,
-        "discomfort": 1.1
+        "night_temp_c": 24.1,
+        "discomfort": 0.7
       },
       {
         "month": 6,
-        "city_id": "CN-FJ-XIAMEN",
-        "name_en": "Xiamen",
-        "name": "厦门",
-        "temp_c": 31.1,
-        "discomfort": 3.1
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 7,
-        "city_id": "CN-FJ-XIAMEN",
-        "name_en": "Xiamen",
-        "name": "厦门",
-        "temp_c": 32.3,
-        "discomfort": 3.8
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.8,
+        "night_temp_c": 21.4,
+        "discomfort": 0
       },
       {
         "month": 8,
-        "city_id": "CN-FJ-XIAMEN",
-        "name_en": "Xiamen",
-        "name": "厦门",
-        "temp_c": 31.1,
-        "discomfort": 3.1
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 9,
@@ -4903,7 +6293,8 @@
         "name_en": "Xiamen",
         "name": "厦门",
         "temp_c": 27.8,
-        "discomfort": 1.1
+        "night_temp_c": 24.1,
+        "discomfort": 0.7
       },
       {
         "month": 10,
@@ -4911,6 +6302,7 @@
         "name_en": "Xiamen",
         "name": "厦门",
         "temp_c": 23.4,
+        "night_temp_c": 19.7,
         "discomfort": 0
       },
       {
@@ -4919,6 +6311,7 @@
         "name_en": "Xiamen",
         "name": "厦门",
         "temp_c": 18.9,
+        "night_temp_c": 15.2,
         "discomfort": 0
       },
       {
@@ -4927,20 +6320,46 @@
         "name_en": "Xiamen",
         "name": "厦门",
         "temp_c": 15.7,
+        "night_temp_c": 12,
         "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
+        "to_month": 5,
+        "city_id": "CN-FJ-XIAMEN",
+        "name_en": "Xiamen",
+        "name": "厦门",
+        "province": "Fujian",
+        "days": 150,
+        "move_in": "2054-01-01",
+        "avg_temp_c": 20.1,
+        "avg_night_c": 16.4
+      },
+      {
+        "from_month": 6,
+        "to_month": 8,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Heilongjiang",
+        "days": 90,
+        "move_in": "2054-06-01",
+        "avg_temp_c": 24.2,
+        "avg_night_c": 19.8
+      },
+      {
+        "from_month": 9,
         "to_month": 12,
         "city_id": "CN-FJ-XIAMEN",
         "name_en": "Xiamen",
         "name": "厦门",
         "province": "Fujian",
-        "days": 360,
-        "move_in": "2054-01-01",
-        "avg_temp_c": 23.4
+        "days": 120,
+        "move_in": "2054-09-01",
+        "avg_temp_c": 21.5,
+        "avg_night_c": 17.8
       }
     ],
     "quarters": [
@@ -4955,14 +6374,14 @@
         "quarter": 2,
         "city_id": "CN-FJ-XIAMEN",
         "name_en": "Xiamen",
-        "avg_temp_c": 27.4,
-        "comfort_ok": false
+        "avg_temp_c": 24.9,
+        "comfort_ok": true
       },
       {
         "quarter": 3,
-        "city_id": "CN-FJ-XIAMEN",
-        "name_en": "Xiamen",
-        "avg_temp_c": 30.4,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 25.7,
         "comfort_ok": false
       },
       {
@@ -4984,6 +6403,7 @@
         "name_en": "Shenzhen",
         "name": "深圳",
         "temp_c": 16.7,
+        "night_temp_c": 13,
         "discomfort": 0
       },
       {
@@ -4992,6 +6412,7 @@
         "name_en": "Shenzhen",
         "name": "深圳",
         "temp_c": 17.8,
+        "night_temp_c": 14.1,
         "discomfort": 0
       },
       {
@@ -5000,6 +6421,7 @@
         "name_en": "Shenzhen",
         "name": "深圳",
         "temp_c": 20.8,
+        "night_temp_c": 17.1,
         "discomfort": 0
       },
       {
@@ -5008,6 +6430,7 @@
         "name_en": "Shenzhen",
         "name": "深圳",
         "temp_c": 24.8,
+        "night_temp_c": 21.1,
         "discomfort": 0
       },
       {
@@ -5016,31 +6439,35 @@
         "name_en": "Shenzhen",
         "name": "深圳",
         "temp_c": 28.8,
-        "discomfort": 1.7
+        "night_temp_c": 25.1,
+        "discomfort": 1.3
       },
       {
         "month": 6,
-        "city_id": "CN-GD-SHENZHEN",
-        "name_en": "Shenzhen",
-        "name": "深圳",
-        "temp_c": 31.8,
-        "discomfort": 3.5
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 7,
-        "city_id": "CN-GD-SHENZHEN",
-        "name_en": "Shenzhen",
-        "name": "深圳",
-        "temp_c": 32.8,
-        "discomfort": 4.1
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.8,
+        "night_temp_c": 21.4,
+        "discomfort": 0
       },
       {
         "month": 8,
-        "city_id": "CN-GD-SHENZHEN",
-        "name_en": "Shenzhen",
-        "name": "深圳",
-        "temp_c": 31.8,
-        "discomfort": 3.5
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 9,
@@ -5048,7 +6475,8 @@
         "name_en": "Shenzhen",
         "name": "深圳",
         "temp_c": 28.8,
-        "discomfort": 1.7
+        "night_temp_c": 25.1,
+        "discomfort": 1.3
       },
       {
         "month": 10,
@@ -5056,6 +6484,7 @@
         "name_en": "Shenzhen",
         "name": "深圳",
         "temp_c": 24.8,
+        "night_temp_c": 21.1,
         "discomfort": 0
       },
       {
@@ -5064,6 +6493,7 @@
         "name_en": "Shenzhen",
         "name": "深圳",
         "temp_c": 20.8,
+        "night_temp_c": 17.1,
         "discomfort": 0
       },
       {
@@ -5072,20 +6502,46 @@
         "name_en": "Shenzhen",
         "name": "深圳",
         "temp_c": 17.8,
+        "night_temp_c": 14.1,
         "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
+        "to_month": 5,
+        "city_id": "CN-GD-SHENZHEN",
+        "name_en": "Shenzhen",
+        "name": "深圳",
+        "province": "Guangdong",
+        "days": 150,
+        "move_in": "2055-01-01",
+        "avg_temp_c": 21.8,
+        "avg_night_c": 18.1
+      },
+      {
+        "from_month": 6,
+        "to_month": 8,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Heilongjiang",
+        "days": 90,
+        "move_in": "2055-06-01",
+        "avg_temp_c": 24.2,
+        "avg_night_c": 19.8
+      },
+      {
+        "from_month": 9,
         "to_month": 12,
         "city_id": "CN-GD-SHENZHEN",
         "name_en": "Shenzhen",
         "name": "深圳",
         "province": "Guangdong",
-        "days": 360,
-        "move_in": "2055-01-01",
-        "avg_temp_c": 24.8
+        "days": 120,
+        "move_in": "2055-09-01",
+        "avg_temp_c": 23.1,
+        "avg_night_c": 19.4
       }
     ],
     "quarters": [
@@ -5100,14 +6556,14 @@
         "quarter": 2,
         "city_id": "CN-GD-SHENZHEN",
         "name_en": "Shenzhen",
-        "avg_temp_c": 28.5,
+        "avg_temp_c": 25.7,
         "comfort_ok": false
       },
       {
         "quarter": 3,
-        "city_id": "CN-GD-SHENZHEN",
-        "name_en": "Shenzhen",
-        "avg_temp_c": 31.1,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 26,
         "comfort_ok": false
       },
       {
@@ -5129,6 +6585,7 @@
         "name_en": "Haikou",
         "name": "海口",
         "temp_c": 19.6,
+        "night_temp_c": 16,
         "discomfort": 0
       },
       {
@@ -5137,6 +6594,7 @@
         "name_en": "Haikou",
         "name": "海口",
         "temp_c": 20.5,
+        "night_temp_c": 17,
         "discomfort": 0
       },
       {
@@ -5145,6 +6603,7 @@
         "name_en": "Haikou",
         "name": "海口",
         "temp_c": 23.1,
+        "night_temp_c": 19.5,
         "discomfort": 0
       },
       {
@@ -5153,7 +6612,8 @@
         "name_en": "Haikou",
         "name": "海口",
         "temp_c": 26.5,
-        "discomfort": 0.3
+        "night_temp_c": 23,
+        "discomfort": 0
       },
       {
         "month": 5,
@@ -5161,31 +6621,35 @@
         "name_en": "Haikou",
         "name": "海口",
         "temp_c": 30,
-        "discomfort": 2.4
+        "night_temp_c": 26.4,
+        "discomfort": 2
       },
       {
         "month": 6,
-        "city_id": "CN-HI-HAIKOU",
-        "name_en": "Haikou",
-        "name": "海口",
-        "temp_c": 32.5,
-        "discomfort": 3.9
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 7,
-        "city_id": "CN-HI-HAIKOU",
-        "name_en": "Haikou",
-        "name": "海口",
-        "temp_c": 33.4,
-        "discomfort": 4.5
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 25.8,
+        "night_temp_c": 21.4,
+        "discomfort": 0
       },
       {
         "month": 8,
-        "city_id": "CN-HI-HAIKOU",
-        "name_en": "Haikou",
-        "name": "海口",
-        "temp_c": 32.5,
-        "discomfort": 3.9
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "temp_c": 23.4,
+        "night_temp_c": 19,
+        "discomfort": 0
       },
       {
         "month": 9,
@@ -5193,7 +6657,8 @@
         "name_en": "Haikou",
         "name": "海口",
         "temp_c": 30,
-        "discomfort": 2.4
+        "night_temp_c": 26.4,
+        "discomfort": 2
       },
       {
         "month": 10,
@@ -5201,7 +6666,8 @@
         "name_en": "Haikou",
         "name": "海口",
         "temp_c": 26.5,
-        "discomfort": 0.3
+        "night_temp_c": 23,
+        "discomfort": 0
       },
       {
         "month": 11,
@@ -5209,6 +6675,7 @@
         "name_en": "Haikou",
         "name": "海口",
         "temp_c": 23.1,
+        "night_temp_c": 19.5,
         "discomfort": 0
       },
       {
@@ -5217,20 +6684,46 @@
         "name_en": "Haikou",
         "name": "海口",
         "temp_c": 20.5,
+        "night_temp_c": 17,
         "discomfort": 0
       }
     ],
     "blocks": [
       {
         "from_month": 1,
+        "to_month": 5,
+        "city_id": "CN-HI-HAIKOU",
+        "name_en": "Haikou",
+        "name": "海口",
+        "province": "Hainan",
+        "days": 150,
+        "move_in": "2056-01-01",
+        "avg_temp_c": 23.9,
+        "avg_night_c": 20.4
+      },
+      {
+        "from_month": 6,
+        "to_month": 8,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "name": "西安",
+        "province": "Heilongjiang",
+        "days": 90,
+        "move_in": "2056-06-01",
+        "avg_temp_c": 24.2,
+        "avg_night_c": 19.8
+      },
+      {
+        "from_month": 9,
         "to_month": 12,
         "city_id": "CN-HI-HAIKOU",
         "name_en": "Haikou",
         "name": "海口",
         "province": "Hainan",
-        "days": 360,
-        "move_in": "2056-01-01",
-        "avg_temp_c": 26.5
+        "days": 120,
+        "move_in": "2056-09-01",
+        "avg_temp_c": 25,
+        "avg_night_c": 21.5
       }
     ],
     "quarters": [
@@ -5245,14 +6738,14 @@
         "quarter": 2,
         "city_id": "CN-HI-HAIKOU",
         "name_en": "Haikou",
-        "avg_temp_c": 29.7,
+        "avg_temp_c": 26.6,
         "comfort_ok": false
       },
       {
         "quarter": 3,
-        "city_id": "CN-HI-HAIKOU",
-        "name_en": "Haikou",
-        "avg_temp_c": 32,
+        "city_id": "CN-HL-XIAN",
+        "name_en": "Xi'an",
+        "avg_temp_c": 26.4,
         "comfort_ok": false
       },
       {

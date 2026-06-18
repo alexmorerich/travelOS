@@ -18,7 +18,9 @@ CREATE TABLE IF NOT EXISTS cities (
   monthly_cost_usd        REAL,
   cultural_value          REAL,
   env_risk                REAL NOT NULL,
-  completeness            TEXT NOT NULL CHECK (completeness IN ('VALID','PARTIAL','INVALID'))
+  completeness            TEXT NOT NULL CHECK (completeness IN ('VALID','PARTIAL','INVALID')),
+  district                INTEGER NOT NULL DEFAULT 0,  -- 1 = 市辖区, collapsed to `parent`, not routed
+  parent                  TEXT                          -- parent prefecture city id (districts only)
 );
 
 CREATE TABLE IF NOT EXISTS edges (

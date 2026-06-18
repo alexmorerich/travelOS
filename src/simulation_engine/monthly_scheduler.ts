@@ -7,7 +7,7 @@
 // minimizing seasonal discomfort. The result is a natural snowbird pattern:
 // warm-south months land in winter, cool-north/plateau months in summer.
 import { systemConfig, ageBands } from "../config";
-import { monthlyTemp, monthlyDiscomfort } from "../core_engine/climate_engine";
+import { monthlyTemp, monthlyDiscomfort, nightTemp } from "../core_engine/climate_engine";
 import type { ProcessedCity, YearPlan, ScheduleYear, ScheduleMonth, ScheduleBlock, ScheduleQuarter } from "../types";
 
 const MONTH_NAMES = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -34,18 +34,20 @@ function assignMonths(plan: YearPlan, byId: Map<string, ProcessedCity>): Schedul
 
   const dis = (ci: number, m: number): number => {
     const c = byId.get(chosen[ci].id);
-    return c ? monthlyDiscomfort(c.lat, c.altitude_m ?? 0, m) : 5;
+    return c ? monthlyDiscomfort(c.lat, c.altitude_m ?? 0, m, c.humidity_index ?? 55) : 5;
   };
 
-  // Assign the HARDEST months first (those whose best-available comfort is
-  // worst — deep winter / peak summer) so they claim their most comfortable
-  // city before quotas fill. This yields the snowbird pattern instead of
-  // letting the high-day base city absorb both temperature extremes.
-  const monthOrder = Array.from({ length: 12 }, (_, k) => k + 1).sort((a, b) => {
-    const bestA = Math.min(...chosen.map((_, ci) => dis(ci, a)));
-    const bestB = Math.min(...chosen.map((_, ci) => dis(ci, b)));
-    return bestB - bestA; // hardest (highest best-discomfort) first
-  });
+  // Assign months by REGRET (gap between the best and 2nd-best city) high→low, so
+  // a month that strongly needs one specific city claims it before quotas fill.
+  // Deep winter has huge regret (the warm-south refuge scores ~0 vs −15°C frontier
+  // nights) so Dec–Feb grab the refuge first; peak summer grabs the cool plateau;
+  // low-regret shoulder months fill whatever remains. This is what pins the
+  // snowbird retreat to the actual cold months instead of spending it on shoulders.
+  const regret = (m: number): number => {
+    const ds = chosen.map((_, ci) => dis(ci, m)).sort((x, y) => x - y);
+    return (ds[1] ?? ds[0]) - ds[0];
+  };
+  const monthOrder = Array.from({ length: 12 }, (_, k) => k + 1).sort((a, b) => regret(b) - regret(a));
 
   const remaining = [...quota];
   const monthCity = new Array(13).fill(-1);
@@ -71,13 +73,15 @@ function assignMonths(plan: YearPlan, byId: Map<string, ProcessedCity>): Schedul
     const ci = monthCity[m] >= 0 ? monthCity[m] : 0;
     const planCity = chosen[ci];
     const c = byId.get(planCity.id);
+    const hum = c?.humidity_index ?? 55;
     months.push({
       month: m,
       city_id: planCity.id,
       name_en: planCity.name_en,
       name: planCity.name,
       temp_c: c ? Math.round(monthlyTemp(c.lat, c.altitude_m ?? 0, m) * 10) / 10 : 20,
-      discomfort: c ? Math.round(monthlyDiscomfort(c.lat, c.altitude_m ?? 0, m) * 10) / 10 : 0,
+      night_temp_c: c ? Math.round(nightTemp(c.lat, c.altitude_m ?? 0, m, hum) * 10) / 10 : 12,
+      discomfort: c ? Math.round(monthlyDiscomfort(c.lat, c.altitude_m ?? 0, m, hum) * 10) / 10 : 0,
     });
   }
   return months;
@@ -102,6 +106,7 @@ function toBlocks(months: ScheduleMonth[], year: number, byId: Map<string, Proce
       days: (to - from + 1) * 30,
       move_in: `${year}-${pad(from)}-01`,
       avg_temp_c: Math.round((span.reduce((s, m) => s + m.temp_c, 0) / span.length) * 10) / 10,
+      avg_night_c: Math.round((span.reduce((s, m) => s + m.night_temp_c, 0) / span.length) * 10) / 10,
     });
     i = j + 1;
   }
@@ -160,7 +165,7 @@ export function toICS(schedule: ScheduleYear[]): string {
         `DTSTART;VALUE=DATE:${dtStart}`,
         `DTEND;VALUE=DATE:${dtEnd}`,
         `SUMMARY:Age ${yr.age} · ${b.name_en} (${b.name}) ${MONTH_NAMES[b.from_month]}–${MONTH_NAMES[b.to_month]}`,
-        `DESCRIPTION:${b.province} · ~${b.avg_temp_c}°C avg`,
+        `DESCRIPTION:${b.province} · ~${b.avg_temp_c}°C avg · nights ~${b.avg_night_c}°C`,
         "END:VEVENT",
       );
     }

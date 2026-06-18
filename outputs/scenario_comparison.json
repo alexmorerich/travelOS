@@ -2,40 +2,46 @@
   {
     "key": "frugal",
     "label": "Cost-minimized",
-    "survival_probability": 0.759,
-    "median_bankruptcy_age": 76,
-    "mean_annual_cost_usd": 13019,
-    "effective_withdrawal_rate": 0.026,
-    "median_terminal_net_worth": 151227,
+    "survival_probability": 0.6785,
+    "median_bankruptcy_age": 75,
+    "mean_annual_cost_usd": 14394,
+    "effective_withdrawal_rate": 0.0288,
+    "median_terminal_net_worth": 103963,
     "sample_itinerary_age65": [
       "Tancheng",
-      "Wuhe Chengguanzhen"
+      "Wuhe Chengguanzhen",
+      "Quanzhou",
+      "Xi'an"
     ]
   },
   {
     "key": "balanced",
     "label": "Balanced",
-    "survival_probability": 0.5185,
+    "survival_probability": 0.514,
     "median_bankruptcy_age": 75,
-    "mean_annual_cost_usd": 16655,
-    "effective_withdrawal_rate": 0.0333,
-    "median_terminal_net_worth": 17206,
+    "mean_annual_cost_usd": 16766,
+    "effective_withdrawal_rate": 0.0335,
+    "median_terminal_net_worth": 12929,
     "sample_itinerary_age65": [
       "Qingdao",
-      "Rizhao"
+      "Rizhao",
+      "Quanzhou",
+      "Xi'an"
     ]
   },
   {
     "key": "experience",
     "label": "Experience-optimized",
-    "survival_probability": 0.4085,
-    "median_bankruptcy_age": 75,
-    "mean_annual_cost_usd": 18638,
-    "effective_withdrawal_rate": 0.0373,
+    "survival_probability": 0.4485,
+    "median_bankruptcy_age": 74,
+    "mean_annual_cost_usd": 17996,
+    "effective_withdrawal_rate": 0.036,
     "median_terminal_net_worth": 0,
     "sample_itinerary_age65": [
       "Qingdao",
-      "Linyi"
+      "Linyi",
+      "Quanzhou",
+      "Xi'an"
     ]
   }
 ]

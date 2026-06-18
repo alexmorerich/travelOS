@@ -21,6 +21,8 @@ export interface RawCity {
   monthly_cost_usd: number | null;
   cultural_value: number | null;   // 0..10
   county?: boolean;                // county seat (vs prefecture/provincial seat)
+  district?: boolean;              // 市辖区 urban district — collapsed to `parent`, excluded from the engine
+  parent?: string;                 // for a district: the prefecture city id it collapses into
   source?: Record<string, string>;
 }
 
@@ -97,6 +99,7 @@ export interface ScheduleMonth {
   name_en: string;
   name: string;
   temp_c: number;         // estimated mean temp that month
+  night_temp_c: number;   // estimated overnight low — the comfort driver
   discomfort: number;
 }
 
@@ -110,6 +113,7 @@ export interface ScheduleBlock {
   days: number;
   move_in: string;        // YYYY-MM-DD
   avg_temp_c: number;
+  avg_night_c: number;    // mean overnight low across the stay
 }
 
 export interface ScheduleQuarter {
@@ -212,6 +216,8 @@ export interface SystemConfig {
   max_cities_per_year: number;
   visited_window_years: number;
   days_per_year: number;
+  winter_refuge_share: number;   // fraction of the year reserved for a warm-south wintering base
+  summer_refuge_share: number;   // fraction reserved for a cool-highland summering base
   routing: {
     tie_break_band: number;
     utility_eps: number;

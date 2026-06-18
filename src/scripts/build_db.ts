@@ -7,7 +7,7 @@
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { ROOT } from "../config";
-import { loadCities } from "../data_layer/loader";
+import { loadCities, loadAllCities } from "../data_layer/loader";
 import { buildGraph } from "../graph_layer/city_graph_builder";
 import type { YearPlan, FinanceResult, ScenarioResult, StrategyResult, ScheduleYear } from "../types";
 
@@ -43,7 +43,8 @@ async function main(): Promise<void> {
   // Delete children before parents (cities is referenced by edges/plans).
   db.exec("DELETE FROM edges; DELETE FROM yearly_plan_cities; DELETE FROM finance_summary; DELETE FROM scenario_results; DELETE FROM strategy_results; DELETE FROM schedule_months; DELETE FROM cities;");
 
-  const cities = loadCities();
+  const allCities = loadAllCities();          // full county-level set, incl. 市辖区 districts (for the count)
+  const cities = allCities.filter((c) => !c.district); // engine cities: distinct locations only
   const graph = buildGraph(cities);
   const plans = JSON.parse(readFileSync(planPath, "utf8")) as YearPlan[];
   const finance = JSON.parse(readFileSync(financePath, "utf8")) as FinanceResult;
@@ -53,8 +54,8 @@ async function main(): Promise<void> {
   const schedule = readOpt<ScheduleYear>(join(outDir, "schedule.json"));
 
   const insertCity = db.prepare(
-    `INSERT INTO cities (id,name,name_en,province,lat,lng,altitude_m,tier3_hospital_minutes,avg_temp_range,humidity_index,monthly_cost_usd,cultural_value,env_risk,completeness)
-     VALUES (@id,@name,@name_en,@province,@lat,@lng,@altitude_m,@tier3_hospital_minutes,@avg_temp_range,@humidity_index,@monthly_cost_usd,@cultural_value,@env_risk,@completeness)`,
+    `INSERT INTO cities (id,name,name_en,province,lat,lng,altitude_m,tier3_hospital_minutes,avg_temp_range,humidity_index,monthly_cost_usd,cultural_value,env_risk,completeness,district,parent)
+     VALUES (@id,@name,@name_en,@province,@lat,@lng,@altitude_m,@tier3_hospital_minutes,@avg_temp_range,@humidity_index,@monthly_cost_usd,@cultural_value,@env_risk,@completeness,@district,@parent)`,
   );
   const insertEdge = db.prepare(
     `INSERT INTO edges (from_id,to_id,distance_km,travel_time_hours,cost_index,method) VALUES (?,?,?,?,?,?)`,
@@ -65,13 +66,14 @@ async function main(): Promise<void> {
   );
 
   const tx = db.transaction(() => {
-    for (const c of cities) {
+    for (const c of allCities) {
       insertCity.run({
         id: c.id, name: c.name, name_en: c.name_en, province: c.province,
         lat: c.lat, lng: c.lng, altitude_m: c.altitude_m,
         tier3_hospital_minutes: c.tier3_hospital_minutes, avg_temp_range: c.avg_temp_range,
         humidity_index: c.humidity_index, monthly_cost_usd: c.monthly_cost_usd,
         cultural_value: c.cultural_value, env_risk: c.env_risk, completeness: c.completeness,
+        district: c.district ? 1 : 0, parent: c.parent ?? null,
       });
     }
     for (const e of graph.edges) insertEdge.run(e.from, e.to, e.distance_km, e.travel_time_hours, e.cost_index, e.method);

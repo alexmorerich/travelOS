@@ -112,6 +112,24 @@ def pick_zh(name_en, alts):
     return name_en
 
 
+def han_token(alts):
+    """First pure-Han token in a GeoNames alternatenames field (e.g. 镇海)."""
+    for t in alts.split(","):
+        t = t.strip()
+        if re.fullmatch(r"[一-龥]{2,8}", t):
+            return t
+    return ""
+
+
+def is_district(c):
+    """A 市辖区 (urban district): GeoNames romanises it '... Qu' or names it …区."""
+    return c[2].endswith("Qu") or han_token(c[3]).endswith("区")
+
+
+def strip_qu(name_en):
+    return name_en[:-3] if name_en.endswith(" Qu") else name_en
+
+
 def fetch(url):
     return urllib.request.urlopen(url, timeout=60).read()
 
@@ -161,24 +179,74 @@ def main():
         a = {"id": f"CN-{abbr(province)}-{n.upper()}",
              "name": zh, "name_en": name_en, "province": province,
              "lat": lat, "lng": lng, "altitude_m": altitude, "tier": tier,
-             "_pop": pop, "_fc": c[7]}
+             "_pop": pop, "_fc": c[7], "_a1": c[10], "_a2": c[11]}
         if c[7] == "PPLA3": a["county"] = True
         if coastal: a["coastal"] = True
         if remote: a["remote"] = True
         if n in CULTURE: a["culture"] = CULTURE[n]
         bykey[key] = a
 
-    # FULL COVERAGE: keep every seat GeoNames provides — province capitals (PPLC/
-    # PPLA), prefecture seats (PPLA2), and county seats (PPLA3). Target per MCA
-    # 2013 (xzqh.mca.gov.cn): 34 province-level / 333 prefecture-level / 2853
-    # county-level. GeoNames covers most county SEATS but not urban districts
-    # (市辖区), so the county count lands below 2853 — see the printed breakdown.
+    # SEATS: every populated place GeoNames provides — province capitals (PPLC/
+    # PPLA), prefecture seats (PPLA2), and county seats (PPLA3). These are the
+    # distinct-location cities the engine actually routes/schedules over.
     LEVEL = {"PPLC": "province", "PPLA": "province", "PPLA2": "prefecture", "PPLA3": "county"}
     anchors = list(bykey.values())
     by_level = Counter(LEVEL.get(a["_fc"], "?") for a in anchors)
+    n_seats = len(anchors)
+
+    # COUNTY-LEVEL COMPLETION: add 市辖区 (urban districts) — county-level units that
+    # GeoNames lists as ADM3 administrative AREAS but not as separate populated-place
+    # seats, because they are the urban core of a prefecture city (no distinct seat
+    # town). They are co-located with their parent prefecture, so they are tagged
+    # district=true + parent and COLLAPSED by the engine (loadCities filters them):
+    # they exist for the full county-level COUNT (MCA target ~2853 county-level /
+    # ~3211 total), not to distort routing or climate.
+    pref_by_a2 = {(a["_a1"], a["_a2"]): a for a in anchors if a["_fc"] == "PPLA2"}
+    cap_by_prov, seats_by_prov = {}, defaultdict(list)
     for a in anchors:
-        a.pop("_pop", None)
-        a.pop("_fc", None)
+        seats_by_prov[a["province"]].append(a)
+        if a["_fc"] in ("PPLA", "PPLC"):
+            cap_by_prov.setdefault(a["province"], a)
+
+    seen_d = set()
+    for line in raw.splitlines():
+        c = line.split("\t")
+        if len(c) < 18 or c[6] != "A" or c[7] != "ADM3" or not is_district(c):
+            continue
+        province = a1.get("CN." + c[10], c[10])
+        name_en = strip_qu(c[2].strip())
+        if not province.strip() or not name_en:
+            continue
+        lat, lng = round(float(c[4]), 4), round(float(c[5]), 4)
+        # parent: prefecture seat in same admin2 -> nearest seat in province -> capital
+        parent = pref_by_a2.get((c[10], c[11]))
+        if parent is None:
+            cand = seats_by_prov.get(province)
+            parent = min(cand, key=lambda s: haversine(lat, lng, s["lat"], s["lng"])) if cand \
+                     else cap_by_prov.get(province)
+        if parent is None:
+            continue  # province with no seats at all (shouldn't happen)
+        n = norm(name_en)
+        key = (n, c[10], c[11])
+        if key in seen_d:
+            continue
+        seen_d.add(key)
+        anchors.append({
+            "id": f"CN-{abbr(province)}-{n.upper()}-Q",
+            "name": pick_zh(name_en, c[3]), "name_en": name_en, "province": province,
+            "lat": lat, "lng": lng, "altitude_m": parse_alt(c), "tier": 3,
+            "district": True, "_parent_ref": parent,
+        })
+    n_districts = len(anchors) - n_seats
+
+    for a in anchors:
+        for k in ("_pop", "_fc", "_a1", "_a2"):
+            a.pop(k, None)
+
+    # manual extras: a county with no tier-3A (exercises PARTIAL/BLOCK) + a scenic county
+    anchors.append({"id": "CN-XZ-MEDOG", "name": "墨脱", "name_en": "Medog",
+                    "province": "Tibet", "lat": 29.33, "lng": 95.30, "altitude_m": 1200,
+                    "tier": 3, "remote": True, "med_access": "none", "culture": 7})
 
     # ensure unique ids
     counts = {}
@@ -189,32 +257,33 @@ def main():
         else:
             counts[i] = 0
 
-    # manual extras: a county with no tier-3A (exercises PARTIAL/BLOCK) + a scenic county
-    anchors.append({"id": "CN-XZ-MEDOG", "name": "墨脱", "name_en": "Medog",
-                    "province": "Tibet", "lat": 29.33, "lng": 95.30, "altitude_m": 1200,
-                    "tier": 3, "remote": True, "med_access": "none", "culture": 7})
+    # resolve district parent ids now that every id is final
+    for a in anchors:
+        if "_parent_ref" in a:
+            a["parent"] = a["_parent_ref"]["id"]
+            del a["_parent_ref"]
 
-    anchors.sort(key=lambda a: (a["province"], a["name_en"]))
+    anchors.sort(key=lambda a: (a["province"], a.get("district", False), a["name_en"]))
     out = {"_meta": {
-        "description": "Real-geography anchors built from GeoNames (PPLA/PPLA2 seats) + curated tags.",
+        "description": "Real-geography anchors built from GeoNames (PPLA/PPLA2/PPLA3 seats + ADM3 市辖区 districts) + curated tags.",
         "source": "GeoNames CN dump (CC BY 4.0), https://www.geonames.org",
         "generator": "scripts/build_anchors_from_geonames.py",
         "count": len(anchors),
-        "tags": "tier 1|2|3; coastal (<60km to coast); remote (west region or >2500m); culture override; med_access 'none' => hospital=null"},
+        "seats": n_seats, "districts": n_districts,
+        "tags": "tier 1|2|3; coastal (<60km to coast); remote (west region or >2500m); culture override; med_access 'none' => hospital=null; district true + parent => 市辖区, collapsed to its prefecture by the engine"},
         "anchors": anchors}
     path = os.path.join(ROOT, "data", "city_anchors.json")
     with open(path, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
     prov = len({a["province"] for a in anchors})
     print(f"wrote {len(anchors)} anchors across {prov} provinces -> data/city_anchors.json")
-    print(f"  levels (GeoNames vs MCA-2013 target): "
-          f"province {by_level['province']}/34, "
-          f"prefecture {by_level['prefecture']}/333, "
-          f"county {by_level['county']}/2853")
+    print(f"  seats {n_seats} (province {by_level['province']}/34, prefecture {by_level['prefecture']}/333, "
+          f"county {by_level['county']}) + 市辖区 districts {n_districts} = {len(anchors)} total")
     print("  tiers:", {t: sum(1 for a in anchors if a['tier'] == t) for t in (1, 2, 3)})
     print("  coastal:", sum(1 for a in anchors if a.get('coastal')),
           "remote:", sum(1 for a in anchors if a.get('remote')),
-          "county-seats:", sum(1 for a in anchors if a.get('county')))
+          "county-seats:", sum(1 for a in anchors if a.get('county')),
+          "districts:", sum(1 for a in anchors if a.get('district')))
 
 
 if __name__ == "__main__":

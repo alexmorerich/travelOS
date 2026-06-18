@@ -22,6 +22,8 @@ interface Anchor {
   coastal?: boolean;
   remote?: boolean;
   county?: boolean;
+  district?: boolean;
+  parent?: string;
   med_access?: "none";
   culture?: number;
 }
@@ -105,6 +107,7 @@ function enrichOne(a: Anchor) {
     monthly_cost_usd: monthlyCost(a, zone),
     cultural_value: a.culture ?? TIER_CULTURE[a.tier],
     county: a.county ?? false,
+    ...(a.district ? { district: true, parent: a.parent } : {}),
     source: { geo: "real_approx", estimates: "rule_based:enrich_estimates.ts", climate_zone: zone },
   };
 }
