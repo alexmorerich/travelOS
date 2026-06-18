@@ -104,7 +104,7 @@ export function renderTimeline(input: TimelineInput): string {
         <div><span>Spent since age 50</span><b id="spent"></b></div>
         <div><span>Median portfolio left</span><b id="rem"></b></div>
       </div>
-      <div class="legend">Faint dots = all 284 cities. Cost is the city's monthly living cost; portfolio is the median Monte-Carlo path (incl. returns). Planning model, not advice.</div>
+      <div class="legend">Faint dots = all ${input.cities.length} cities. The phase badge is the lifecycle band (Expedition → Cultural → Comfort). Cost is the city's monthly living cost; portfolio is the median Monte-Carlo path (incl. returns). Planning model, not advice.</div>
     </div>
   </div>
 

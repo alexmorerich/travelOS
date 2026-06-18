@@ -1,0 +1,25 @@
+- generic [ref=e2]:
+  - heading "🗺️ Travel Life OS — Interactive Timeline" [level=1] [ref=e3]
+  - paragraph [ref=e4]: Scrub or ▶ Play across 372 months (2026–2056). The trail is your route footprint; the panel shows where you are and what it costs. · seed 12345
+  - generic [ref=e5]:
+    - img [ref=e7]
+    - generic [ref=e714]:
+      - generic [ref=e715]: Expedition
+      - generic [ref=e716]: Jan 2026 · age 50
+      - generic [ref=e717]: 成都 · Chengdu
+      - generic [ref=e718]: Sichuan · 4.2°C
+      - generic [ref=e719]:
+        - generic [ref=e720]:
+          - generic [ref=e721]: This month
+          - generic [ref=e722]: $1,800 / mo
+        - generic [ref=e723]:
+          - generic [ref=e724]: Spent since age 50
+          - generic [ref=e725]: $1,800
+        - generic [ref=e726]:
+          - generic [ref=e727]: Median portfolio left
+          - generic [ref=e728]: $486,708
+      - generic [ref=e729]: Faint dots = all 701 cities. The phase badge is the lifecycle band (Expedition → Cultural → Comfort). Cost is the city's monthly living cost; portfolio is the median Monte-Carlo path (incl. returns). Planning model, not advice.
+  - generic [ref=e730]:
+    - button "▶ Play" [ref=e731] [cursor=pointer]
+    - slider [ref=e732]: "0"
+    - generic [ref=e733]: Jan 2026 · 1/372

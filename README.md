@@ -58,7 +58,7 @@ Each year is split into 12 months and each month placed in its most comfortable 
 
 ![Interactive timeline — scrub the 30-year route on a China map, with live city + cost](docs/timeline.png)
 
-> ⭐ **`open outputs/timeline.html`** — scrub or ▶ Play across all 372 months; the blue trail is your route footprint, the panel shows where you are and what it costs (above: Jul 2041, age 65, Kunming — $1,800/mo, $378k spent, $140k left).
+> ⭐ **`open outputs/timeline.html`** — scrub or ▶ Play across all 372 months; the blue trail is your route footprint, the phase badge is the lifecycle band (above: Oct 2028, age 52 — **Expedition** phase, Daxing'anling in the far-northeast frontier; $1,300/mo, $56k spent, $458k left).
 
 > Planning model, **not financial advice.** Non-geographic fields are rule-based estimates (see [Data honesty](#data-honesty)).
 
