@@ -157,7 +157,7 @@ function main(): void {
   }
   console.log("  ────────────────────────────────────────────");
   console.log(`\n  outputs/  → 9 JSON files, schedule.ics, dashboard.html, timeline.html, obsidian/ (${noteCount} notes)`);
-  console.log("  open outputs/timeline.html  → interactive map: scrub the route, see city + cost over 30 years");
+  console.log("  open outputs/timeline.html  → life timeline: scroll = time, the map fills in your route over 30 years");
   console.log("  open outputs/dashboard.html → comparisons, survival curve, calendar.\n");
 }
 

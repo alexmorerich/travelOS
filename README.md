@@ -8,7 +8,7 @@ A constrained life-trajectory optimizer — *not* a travel planner. It loads **3
 
 **🔴 Live demo — opens on any phone:** **<https://alexmorerich.github.io/travelOS/>**
 
-*English · [中文](#-中文文档)*
+*English · [中文](#-中文文档) · [📘 Operator & Developer Manual](MANUAL.md)*
 
 ---
 
@@ -56,9 +56,9 @@ Full cost reality (age-rising healthcare + tax drag + rent-vs-buy), ranked by su
 
 Each year is split into 12 months and each month placed in its most comfortable city, producing a **snowbird pattern** — e.g. at age 60: winter in **Xiamen (14.5°C)**, summer inland. Month placement is judged on the **estimated overnight low** against a **10–23°C comfort window** (winter nights ≥10°C, summer nights ≤23°C). To honor that even in otherwise too-cold/too-hot years, the router grafts on a **warm-south winter base** (Dec–Feb, e.g. Quanzhou/Xiamen) and a **cool summer base** (Jun–Aug, e.g. Xi'an/highlands) — the snowbird pattern made explicit. Across the 30-year run **every** deep-winter month lands a night ≥10°C and **every** peak-summer month a night ≤23°C (93/93 and 93/93). Exported as `schedule.json`, a quarterly rollup, and an importable **`schedule.ics`**.
 
-![Interactive timeline — scrub the 30-year route on a China map, with live city + cost](docs/timeline.png)
+![Interactive timeline — scroll the 30-year route on a China map, with live city + cost](docs/timeline.png)
 
-> ⭐ **`open outputs/timeline.html`** — scrub or ▶ Play across all 372 months; the faint dots are all **2,348 cities** the engine routes over (the whole country, frontier included; of 3,149 total units), the blue trail is your route footprint (26 of 31 provinces over 30 years), the badge is the lifecycle phase (above: Dec 2036, age 60 — **Expedition** phase, **Nyingchi, Tibet**; $1,250/mo, $151k spent, $382k left).
+> ⭐ **`open outputs/timeline.html`** — **scroll = time**: the 372 months collapse into ~163 *stays* (one card per city you live in), and the sticky map fills in your route as you scroll. Fast travel expands, settling compresses; each card is colored by the season you arrive in. The faint dots are all **2,348 cities** the engine routes over (the whole country, frontier included; of 3,149 total units), the blue trail is your route footprint (26 of 31 provinces over 30 years), and the badge is the lifecycle phase.
 
 > Planning model, **not financial advice.** Non-geographic fields are rule-based estimates (see [Data honesty](#data-honesty)).
 
@@ -134,13 +134,13 @@ npm run anchors && npm run enrich && npm run simulate
 
 Then open the results:
 
-- **`outputs/timeline.html`** — the ⭐ interactive demo: drag the slider (or press ▶ Play) to move through 30 years and watch your route + cost unfold.
+- **`outputs/timeline.html`** — the ⭐ interactive demo: **scroll** through 30 years and watch your route + cost unfold (no playback — scrolling *is* the time control).
 - **`outputs/dashboard.html`** — the survival probability, the "frugal vs. fancy" comparison, and the seasonal calendar.
 - **`outputs/schedule.ics`** — import into your phone / Google Calendar to see the plan as real calendar events.
 
 ### Reading the interactive timeline
 
-As you scrub: the **blue trail** is your route so far (your "footprint"), the **yellow dot** is where you are that month, and the panel shows the **city, month, age, monthly cost, total spent, and money left.** When "money left" turns orange/red, the plan is running low.
+As you scroll, the centered card is "now": the **blue trail** is your route so far (your "footprint"), the **yellow dot** is the current city, and the panel shows the **city, dates, age, monthly cost, total spent, and money left.** Each card's color is the season you arrive in, and its height tracks pace (rapid travel taller, settling shorter). When "money left" turns orange/red, the plan is running low. (Full UI manual: **[MANUAL.md §10](MANUAL.md#10-the-life-timeline-ui)**.)
 
 ### Make it about *you*
 
@@ -167,7 +167,7 @@ npm install
 npm run anchors         # download GeoNames -> data/city_anchors.json (3,149 units: 2,348 cities + 801 districts) [needs python3 + network]
 npm run enrich          # anchors -> data/cities_china.json (rule-based estimates)
 npm run simulate        # full pipeline -> outputs/ (routing + scenarios + v4.1 + schedule)
-open outputs/timeline.html  # ⭐ interactive map: scrub the route, see city + cost month-by-month
+open outputs/timeline.html  # ⭐ interactive map: scroll = time, the map fills in your route as you go
 open outputs/dashboard.html
 open outputs/schedule.ics   # import the 30-year residence calendar
 
@@ -307,7 +307,7 @@ The scheduler keeps each year's day counts (so cost is unchanged) and assigns th
 | `risk_heatmap.json` | per-city TREI + decision at representative ages |
 | `edges.json` | the weighted city graph (24,071 edges) |
 | `invalid_nodes_report.json` | data-quality audit |
-| `timeline.html` | **interactive demo** — scrub/play the 30-year route on a China map; live city, monthly cost, total spent, portfolio left |
+| `timeline.html` | **interactive demo** — scroll = time through the 30-year route on a China map; per-stay cards (season-colored, pace-scaled) + live city, monthly cost, total spent, portfolio left |
 | `dashboard.html` | self-contained dashboard: comparisons, survival curve, TREI histogram, seasonal calendar, route |
 | `obsidian/` | linked vault — overview + one note per year (with monthly schedule) |
 | `travel_os.db` | SQLite (D1-compatible): cities, edges, plans, scenarios, strategies, schedule |
@@ -474,11 +474,11 @@ npm install
 npm run anchors && npm run enrich && npm run simulate
 ```
 
-然后打开：**`outputs/timeline.html`**（⭐ 交互演示，拖动滑块或 ▶ 播放，看路线+花费随 30 年展开）、**`outputs/dashboard.html`**（存活率、节俭vs奢华对比、季节日历）、**`outputs/schedule.ics`**（导入手机/谷歌日历）。
+然后打开：**`outputs/timeline.html`**（⭐ 交互演示，**滚动即时间**——372 个月折叠为约 163 段「居留」，地图随滚动填充路线）、**`outputs/dashboard.html`**（存活率、节俭vs奢华对比、季节日历）、**`outputs/schedule.ics`**（导入手机/谷歌日历）。
 
 ### 看交互时间轴
 
-拖动时：**蓝色轨迹**是你的路线足迹，**黄点**是当月所在城市，面板显示**城市、月份、年龄、月度花费、累计支出、剩余资产**。当“剩余资产”变橙/红，说明计划吃紧。
+滚动时，居中的卡片即“当下”：**蓝色轨迹**是你的路线足迹，**黄点**是当前城市，面板显示**城市、日期、年龄、月度花费、累计支出、剩余资产**。卡片颜色为你抵达时的季节，高度对应节奏（快速旅行更高、定居更矮）。当“剩余资产”变橙/红，说明计划吃紧。（完整 UI 手册见 **[MANUAL.md §10](MANUAL.md#10-the-life-timeline-ui)**。）
 
 ### 改成你自己的
 
@@ -500,7 +500,7 @@ npm install
 npm run anchors         # 下载 GeoNames -> data/city_anchors.json（3,149 单元：2,348 城 + 801 市辖区）[需 python3 + 网络]
 npm run enrich          # 锚点 -> data/cities_china.json（规则化估算）
 npm run simulate        # 完整管线 -> outputs/（路由 + 场景 + v4.1 + 日历）
-open outputs/timeline.html  # ⭐ 交互式地图：拖动时间轴，逐月查看城市与花费
+open outputs/timeline.html  # ⭐ 交互式地图：滚动即时间，地图随滚动填充路线
 open outputs/dashboard.html
 open outputs/schedule.ics   # 导入 30 年居住日历
 
@@ -570,7 +570,7 @@ temp(month)    = mean − amplitude·cos(2π·(month−1)/12)   （1 月最冷�
 | `schedule.json` | **时间层** — 逐月居住 + 季度 |
 | `schedule.ics` | 可导入的 30 年居住日历 |
 | `cashflow_report.json` · `risk_heatmap.json` · `edges.json` · `invalid_nodes_report.json` | 现金流 / 风险热图 / 图（24071 边）/ 数据审计 |
-| `timeline.html` | **交互式演示** — 在中国地图上拖动/播放 30 年路线；实时显示城市、月度花费、累计支出、剩余资产 |
+| `timeline.html` | **交互式演示** — 滚动即时间，在中国地图上展开 30 年路线；逐段卡片（按季节着色、按节奏缩放）+ 实时城市、月度花费、累计支出、剩余资产 |
 | `dashboard.html` | 自包含仪表盘：对比表 + 存活曲线 + TREI 直方图 + 季节日历 + 路线 |
 | `obsidian/` | 互链笔记库——总览 + 每年一篇（含逐月排程）|
 | `travel_os.db` | SQLite（D1 兼容）：城市/边/计划/场景/策略/日历 |
