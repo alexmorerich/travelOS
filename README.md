@@ -6,7 +6,7 @@ A constrained life-trajectory optimizer — *not* a travel planner. It loads **3
 
 > **Does the money last to 80 — which life strategy survives best — and where should I physically be each month?**
 
-**🔴 Live demo — opens on any phone:** **<https://alexmorerich.github.io/travelos-demo/>**
+**🔴 Live demo — opens on any phone:** **<https://alexmorerich.github.io/travelOS/>**
 
 *English · [中文](#-中文文档)*
 
@@ -124,7 +124,7 @@ It loads **3,149 real administrative units** (2,348 routed cities + 801 collapse
 
 ### Your first run (3 steps)
 
-> **Just want to look?** Open the **[live demo](https://alexmorerich.github.io/travelos-demo/)** on your phone — no install needed. To run and customize it yourself:
+> **Just want to look?** Open the **[live demo](https://alexmorerich.github.io/travelOS/)** on your phone — no install needed. To run and customize it yourself:
 
 ```bash
 git clone https://github.com/alexmorerich/travelOS && cd travelOS
@@ -366,7 +366,7 @@ MIT © 2026 alexmorerich · city data © GeoNames (CC BY 4.0)
 
 **面向中国、覆盖 50–80 岁的确定性「地理-人生」规划 + 金融约束引擎。**
 
-**🔴 在线演示——手机即可打开：** **<https://alexmorerich.github.io/travelos-demo/>**
+**🔴 在线演示——手机即可打开：** **<https://alexmorerich.github.io/travelOS/>**
 
 这不是旅行规划器，而是**带约束的人生轨迹优化器**。它加载 **3,149 个行政单元**（2,348 座参与路由的城市 + 801 个折叠的市辖区）——已实现县级全覆盖：GeoNames 收录的全部省会、地级市与县城（**31/34 省、251/333 地级、2065 县城**），再加上来自 GeoNames ADM3 的 801 个市辖区（折叠到其上级地级市，故计入总数但不参与路由），对每座城市的医疗 / 气候 / 海拔风险打分，在**年龄分段生命周期矩阵**（边疆探险→文化腹地→舒适沿海）下逐年在加权城市图上行走，对 50 万美元资产组合做耦合**住房、医疗、税务**的蒙特卡洛消耗模拟，并输出可导入 `.ics` 的**逐月居住日历**。它回答那些决定一切的问题：
 
@@ -466,7 +466,7 @@ MIT © 2026 alexmorerich · city data © GeoNames (CC BY 4.0)
 
 ### 三步上手
 
-> **只想看看？** 用手机打开 **[在线演示](https://alexmorerich.github.io/travelos-demo/)**，无需安装。想自己运行并定制：
+> **只想看看？** 用手机打开 **[在线演示](https://alexmorerich.github.io/travelOS/)**，无需安装。想自己运行并定制：
 
 ```bash
 git clone https://github.com/alexmorerich/travelOS && cd travelOS
