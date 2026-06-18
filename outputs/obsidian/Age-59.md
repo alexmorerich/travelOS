@@ -2,16 +2,16 @@
 age: 59
 calendar_year: 2035
 r_age: 0.673
-annual_cost_usd: 15588
-cities: ["Daqing", "Qiqihar", "Shuangyashan"]
-provinces: ["Heilongjiang"]
-lead_trei: 0.99
+annual_cost_usd: 12590
+cities: ["Wusu", "Sandaohezi", "Huocheng"]
+provinces: ["Xinjiang"]
+lead_trei: 2.24
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 59
 
-> Physiology factor **R_age = 0.673** · TREI cutoff 1.78 · annual cost **$15,588**
+> Physiology factor **R_age = 0.673** · TREI cutoff 1.78 · annual cost **$12,590**
 
 [[Age-58|← Age 58]] · [[Age-60|Age 60 →]]
 
@@ -19,28 +19,28 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Daqing (大庆) | Heilongjiang | 124 | 1300 | 3.58 | 1.87 | 0.99 | ALLOWED |
-| Qiqihar (齊齊哈爾) | Heilongjiang | 123 | 1300 | 3.58 | 1.87 | 0.99 | ALLOWED |
-| Shuangyashan (双鴨山市) | Heilongjiang | 118 | 1300 | 3.58 | 1.87 | 0.99 | ALLOWED |
+| Wusu (乌苏) | Xinjiang | 124 | 1050 | 2.26 | 6.67 | 2.24 | LOW_PRIORITY |
+| Sandaohezi (三道河子) | Xinjiang | 123 | 1050 | 2.3 | 6.67 | 2.28 | LOW_PRIORITY |
+| Huocheng (霍城) | Xinjiang | 118 | 1050 | 2.43 | 6.67 | 2.41 | LOW_PRIORITY |
 
 
 ## Monthly schedule — calendar 2035
 
-> Q1 Daqing (-7.8°C) · Q2 Qiqihar (15.4°C) · Q3 Qiqihar (21.7°C) · Q4 Shuangyashan (-1.6°C)
+> Q1 Wusu (-7.7°C) · Q2 Sandaohezi (14.1°C) · Q3 Huocheng (19.6°C) · Q4 Sandaohezi (-1.9°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Daqing (大庆) | -11.8 | 18.8 |
-| Feb | Daqing (大庆) | -9.3 | 17 |
-| Mar | Daqing (大庆) | -2.4 | 12.2 |
-| Apr | Shuangyashan (双鴨山市) | 6.9 | 5.6 |
-| May | Qiqihar (齊齊哈爾) | 16.1 | 0 |
-| Jun | Qiqihar (齊齊哈爾) | 23.1 | 0 |
-| Jul | Qiqihar (齊齊哈爾) | 25.7 | 0 |
-| Aug | Qiqihar (齊齊哈爾) | 23.1 | 0 |
-| Sep | Shuangyashan (双鴨山市) | 16.4 | 0 |
-| Oct | Shuangyashan (双鴨山市) | 6.9 | 5.6 |
-| Nov | Shuangyashan (双鴨山市) | -2.5 | 12.3 |
-| Dec | Daqing (大庆) | -9.3 | 17 |
+| Jan | Wusu (乌苏) | -11.5 | 18.5 |
+| Feb | Wusu (乌苏) | -9.1 | 16.9 |
+| Mar | Wusu (乌苏) | -2.5 | 12.3 |
+| Apr | Sandaohezi (三道河子) | 6.1 | 6.2 |
+| May | Sandaohezi (三道河子) | 15.1 | 0 |
+| Jun | Huocheng (霍城) | 21 | 0 |
+| Jul | Huocheng (霍城) | 23.3 | 0 |
+| Aug | Huocheng (霍城) | 21 | 0 |
+| Sep | Huocheng (霍城) | 14.5 | 0.4 |
+| Oct | Sandaohezi (三道河子) | 6.1 | 6.2 |
+| Nov | Sandaohezi (三道河子) | -2.8 | 12.4 |
+| Dec | Wusu (乌苏) | -9.1 | 16.9 |
 
-Starts from `CN-SN-XIAN`. See [[Travel-OS-Overview]].
+Starts from `CN-HL-LONGFENG`. See [[Travel-OS-Overview]].

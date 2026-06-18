@@ -126,7 +126,7 @@ function init(){
   var d="";
   for(var k=0;k<DATA.cities.length;k++){
     var c=DATA.cities[k];
-    d+='<circle cx="'+px(c[0]).toFixed(1)+'" cy="'+py(c[1]).toFixed(1)+'" r="1.6" fill="#2a3a55"/>';
+    d+='<circle cx="'+px(c[0]).toFixed(1)+'" cy="'+py(c[1]).toFixed(1)+'" r="1.8" fill="#46618f" opacity="0.85"/>';
   }
   document.getElementById("dots").innerHTML=d;
   var s=document.getElementById("scrub");

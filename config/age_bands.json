@@ -8,33 +8,36 @@
       "label": "Expedition",
       "age_from": 50,
       "age_to": 60,
-      "target_provinces": ["Xinjiang", "Tibet", "Inner Mongolia", "Heilongjiang"],
+      "target_provinces": ["Xinjiang", "Tibet", "Qinghai", "Inner Mongolia", "Gansu", "Ningxia", "Heilongjiang", "Jilin", "Liaoning"],
       "zone_bonus": 3.0,
       "comfort_bonus": 0.0,
       "hospital_bonus": 0.0,
-      "frontier_share_target": 0.6
+      "frontier_share_target": 0.6,
+      "explore": true
     },
     {
       "key": "cultural",
       "label": "Cultural deep-dive",
       "age_from": 61,
       "age_to": 70,
-      "target_provinces": ["Yunnan", "Guizhou", "Shaanxi", "Sichuan", "Henan", "Shanxi"],
+      "target_provinces": ["Shaanxi", "Shanxi", "Henan", "Hebei", "Shandong", "Sichuan", "Chongqing", "Yunnan", "Guizhou", "Hubei", "Hunan", "Jiangxi", "Anhui"],
       "zone_bonus": 2.5,
       "comfort_bonus": 1.0,
       "hospital_bonus": 1.5,
-      "frontier_share_target": 0.3
+      "frontier_share_target": 0.3,
+      "explore": true
     },
     {
       "key": "comfort",
       "label": "Climate & comfort",
       "age_from": 71,
       "age_to": 80,
-      "target_provinces": ["Fujian", "Guangdong", "Hainan", "Guangxi", "Zhejiang"],
+      "target_provinces": ["Fujian", "Guangdong", "Hainan", "Guangxi", "Zhejiang", "Jiangsu", "Shanghai"],
       "zone_bonus": 2.5,
       "comfort_bonus": 3.5,
       "hospital_bonus": 3.5,
-      "frontier_share_target": 0.0
+      "frontier_share_target": 0.0,
+      "explore": false
     }
   ]
 }

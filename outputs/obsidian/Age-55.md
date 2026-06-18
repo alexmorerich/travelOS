@@ -2,16 +2,16 @@
 age: 55
 calendar_year: 2031
 r_age: 0.77
-annual_cost_usd: 15588
-cities: ["Daqing", "Qitaihe", "Shuangyashan"]
-provinces: ["Heilongjiang"]
-lead_trei: 0.87
+annual_cost_usd: 18428
+cities: ["Beijie", "Nanjing", "Suzhou"]
+provinces: ["Ningxia", "Jiangsu"]
+lead_trei: 2.58
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 55
 
-> Physiology factor **R_age = 0.77** · TREI cutoff 1.55 · annual cost **$15,588**
+> Physiology factor **R_age = 0.77** · TREI cutoff 1.55 · annual cost **$18,428**
 
 [[Age-54|← Age 54]] · [[Age-56|Age 56 →]]
 
@@ -19,28 +19,28 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Daqing (大庆) | Heilongjiang | 124 | 1300 | 3.58 | 1.87 | 0.87 | ALLOWED |
-| Qitaihe (七台河) | Heilongjiang | 119 | 1300 | 3.58 | 1.87 | 0.87 | ALLOWED |
-| Shuangyashan (双鴨山市) | Heilongjiang | 122 | 1300 | 3.58 | 1.87 | 0.87 | ALLOWED |
+| Beijie (北街) | Ningxia | 113 | 950 | 2.98 | 6.67 | 2.58 | LOW_PRIORITY |
+| Nanjing (南京) | Jiangsu | 121 | 1800 | 2.97 | 1.33 | 0.51 | ALLOWED |
+| Suzhou (苏州) | Jiangsu | 131 | 1800 | 2.97 | 1.33 | 0.51 | ALLOWED |
 
 
 ## Monthly schedule — calendar 2031
 
-> Q1 Qitaihe (-7.4°C) · Q2 Daqing (15.6°C) · Q3 Shuangyashan (21.8°C) · Q4 Daqing (-1.4°C)
+> Q1 Suzhou (9.1°C) · Q2 Nanjing (20.6°C) · Q3 Beijie (21.8°C) · Q4 Beijie (8.7°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Qitaihe (七台河) | -11.3 | 18.4 |
-| Feb | Qitaihe (七台河) | -8.8 | 16.7 |
-| Mar | Qitaihe (七台河) | -2.1 | 11.9 |
-| Apr | Daqing (大庆) | 7 | 5.6 |
-| May | Daqing (大庆) | 16.5 | 0 |
-| Jun | Shuangyashan (双鴨山市) | 23.3 | 0 |
-| Jul | Shuangyashan (双鴨山市) | 25.8 | 0 |
-| Aug | Shuangyashan (双鴨山市) | 23.3 | 0 |
-| Sep | Shuangyashan (双鴨山市) | 16.4 | 0 |
-| Oct | Daqing (大庆) | 7 | 5.6 |
-| Nov | Daqing (大庆) | -2.4 | 12.2 |
-| Dec | Qitaihe (七台河) | -8.8 | 16.7 |
+| Jan | Suzhou (苏州) | 6.6 | 5.9 |
+| Feb | Suzhou (苏州) | 8.2 | 4.7 |
+| Mar | Suzhou (苏州) | 12.6 | 1.7 |
+| Apr | Nanjing (南京) | 18 | 0 |
+| May | Nanjing (南京) | 24.2 | 0 |
+| Jun | Beijie (北街) | 19.5 | 0 |
+| Jul | Beijie (北街) | 21.6 | 0 |
+| Aug | Beijie (北街) | 19.5 | 0 |
+| Sep | Nanjing (南京) | 24.2 | 0 |
+| Oct | Beijie (北街) | 6 | 6.3 |
+| Nov | Nanjing (南京) | 11.8 | 2.2 |
+| Dec | Suzhou (苏州) | 8.2 | 4.7 |
 
-Starts from `CN-SN-XIAN`. See [[Travel-OS-Overview]].
+Starts from `CN-JL-CHANGCHUN`. See [[Travel-OS-Overview]].

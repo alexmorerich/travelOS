@@ -41,4 +41,4 @@ tags: [travel-os, yearly-plan]
 | Nov | Hangzhou (杭州) | 13.6 | 1 |
 | Dec | Hangzhou (杭州) | 9.3 | 4 |
 
-Starts from `CN-GD-GUANGZHOU`. See [[Travel-OS-Overview]].
+Starts from `CN-GX-GUILIN`. See [[Travel-OS-Overview]].

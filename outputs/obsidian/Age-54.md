@@ -2,16 +2,16 @@
 age: 54
 calendar_year: 2030
 r_age: 0.793
-annual_cost_usd: 27516
-cities: ["Harbin", "Beijing", "Xi'an"]
-provinces: ["Heilongjiang", "Beijing", "Shaanxi"]
-lead_trei: 0.6
+annual_cost_usd: 25261
+cities: ["Huixian Chengguanzhen", "Shanghai", "Changchun"]
+provinces: ["Gansu", "Shanghai", "Jilin"]
+lead_trei: 2.32
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 54
 
-> Physiology factor **R_age = 0.793** · TREI cutoff 1.51 · annual cost **$27,516**
+> Physiology factor **R_age = 0.793** · TREI cutoff 1.51 · annual cost **$25,261**
 
 [[Age-53|← Age 53]] · [[Age-55|Age 55 →]]
 
@@ -19,28 +19,28 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Harbin (哈尔滨) | Heilongjiang | 101 | 1800 | 3.58 | 1.33 | 0.6 | ALLOWED |
-| Beijing (北京) | Beijing | 129 | 3200 | 2.28 | 0.87 | 0.25 | ALLOWED |
-| Xi'an (西安) | Shaanxi | 135 | 1800 | 2.28 | 1.33 | 0.38 | ALLOWED |
+| Huixian Chengguanzhen (城关镇) | Gansu | 109 | 950 | 2.76 | 6.67 | 2.32 | LOW_PRIORITY |
+| Shanghai (上海) | Shanghai | 132 | 3350 | 2.71 | 0.87 | 0.3 | ALLOWED |
+| Changchun (长春) | Jilin | 124 | 1800 | 3.58 | 1.33 | 0.6 | ALLOWED |
 
 
 ## Monthly schedule — calendar 2030
 
-> Q1 Xi'an (3.4°C) · Q2 Harbin (17.6°C) · Q3 Harbin (23.4°C) · Q4 Beijing (6.4°C)
+> Q1 Shanghai (9.2°C) · Q2 Huixian Chengguanzhen (17°C) · Q3 Changchun (22.5°C) · Q4 Changchun (7.1°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Xi'an (西安) | 0.6 | 10.1 |
-| Feb | Xi'an (西安) | 2.4 | 8.8 |
-| Mar | Xi'an (西安) | 7.3 | 5.4 |
-| Apr | Beijing (北京) | 12.3 | 1.9 |
-| May | Harbin (哈尔滨) | 16.9 | 0 |
-| Jun | Harbin (哈尔滨) | 23.7 | 0 |
-| Jul | Harbin (哈尔滨) | 26.2 | 0.1 |
-| Aug | Harbin (哈尔滨) | 23.7 | 0 |
-| Sep | Beijing (北京) | 20.3 | 0 |
-| Oct | Beijing (北京) | 12.3 | 1.9 |
-| Nov | Beijing (北京) | 4.4 | 7.4 |
-| Dec | Xi'an (西安) | 2.4 | 8.8 |
+| Jan | Shanghai (上海) | 6.7 | 5.8 |
+| Feb | Shanghai (上海) | 8.3 | 4.7 |
+| Mar | Shanghai (上海) | 12.7 | 1.6 |
+| Apr | Huixian Chengguanzhen (城关镇) | 11 | 2.8 |
+| May | Huixian Chengguanzhen (城关镇) | 17.6 | 0 |
+| Jun | Huixian Chengguanzhen (城关镇) | 22.4 | 0 |
+| Jul | Changchun (长春) | 26.2 | 0.1 |
+| Aug | Changchun (长春) | 23.8 | 0 |
+| Sep | Changchun (长春) | 17.4 | 0 |
+| Oct | Changchun (长春) | 8.5 | 4.5 |
+| Nov | Huixian Chengguanzhen (城关镇) | 4.5 | 7.4 |
+| Dec | Shanghai (上海) | 8.3 | 4.7 |
 
-Starts from `CN-HL-JIAMUSI`. See [[Travel-OS-Overview]].
+Starts from `CN-ZJ-HANGZHOU`. See [[Travel-OS-Overview]].

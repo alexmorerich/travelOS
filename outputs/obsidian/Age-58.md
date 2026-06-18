@@ -2,16 +2,16 @@
 age: 58
 calendar_year: 2034
 r_age: 0.698
-annual_cost_usd: 27516
-cities: ["Harbin", "Beijing", "Xi'an"]
-provinces: ["Heilongjiang", "Beijing", "Shaanxi"]
-lead_trei: 0.68
+annual_cost_usd: 13811
+cities: ["Biancheng", "Hunchun", "Longfeng"]
+provinces: ["Liaoning", "Jilin", "Heilongjiang"]
+lead_trei: 1.59
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 58
 
-> Physiology factor **R_age = 0.698** · TREI cutoff 1.71 · annual cost **$27,516**
+> Physiology factor **R_age = 0.698** · TREI cutoff 1.71 · annual cost **$13,811**
 
 [[Age-57|← Age 57]] · [[Age-59|Age 59 →]]
 
@@ -19,28 +19,28 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Harbin (哈尔滨) | Heilongjiang | 101 | 1800 | 3.58 | 1.33 | 0.68 | ALLOWED |
-| Beijing (北京) | Beijing | 129 | 3200 | 2.28 | 0.87 | 0.28 | ALLOWED |
-| Xi'an (西安) | Shaanxi | 135 | 1800 | 2.28 | 1.33 | 0.44 | ALLOWED |
+| Biancheng (老边) | Liaoning | 126 | 1250 | 3.33 | 3.33 | 1.59 | ALLOWED |
+| Hunchun (珲春) | Jilin | 119 | 1100 | 3.58 | 3.33 | 1.71 | ALLOWED |
+| Longfeng (龙凤) | Heilongjiang | 120 | 1100 | 3.58 | 3.33 | 1.71 | ALLOWED |
 
 
 ## Monthly schedule — calendar 2034
 
-> Q1 Xi'an (3.4°C) · Q2 Harbin (17.6°C) · Q3 Harbin (23.4°C) · Q4 Beijing (6.4°C)
+> Q1 Biancheng (-0.7°C) · Q2 Hunchun (17.5°C) · Q3 Longfeng (21.9°C) · Q4 Hunchun (3.4°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Xi'an (西安) | 0.6 | 10.1 |
-| Feb | Xi'an (西安) | 2.4 | 8.8 |
-| Mar | Xi'an (西安) | 7.3 | 5.4 |
-| Apr | Beijing (北京) | 12.3 | 1.9 |
-| May | Harbin (哈尔滨) | 16.9 | 0 |
-| Jun | Harbin (哈尔滨) | 23.7 | 0 |
-| Jul | Harbin (哈尔滨) | 26.2 | 0.1 |
-| Aug | Harbin (哈尔滨) | 23.7 | 0 |
-| Sep | Beijing (北京) | 20.3 | 0 |
-| Oct | Beijing (北京) | 12.3 | 1.9 |
-| Nov | Beijing (北京) | 4.4 | 7.4 |
-| Dec | Xi'an (西安) | 2.4 | 8.8 |
+| Jan | Biancheng (老边) | -4.1 | 13.4 |
+| Feb | Biancheng (老边) | -1.9 | 11.9 |
+| Mar | Biancheng (老边) | 4 | 7.7 |
+| Apr | Hunchun (珲春) | 10.3 | 3.3 |
+| May | Hunchun (珲春) | 18.9 | 0 |
+| Jun | Longfeng (龙凤) | 23.4 | 0 |
+| Jul | Longfeng (龙凤) | 25.9 | 0 |
+| Aug | Longfeng (龙凤) | 23.4 | 0 |
+| Sep | Longfeng (龙凤) | 16.5 | 0 |
+| Oct | Hunchun (珲春) | 10.3 | 3.3 |
+| Nov | Hunchun (珲春) | 1.7 | 9.3 |
+| Dec | Biancheng (老边) | -1.9 | 11.9 |
 
-Starts from `CN-ZJ-HANGZHOU`. See [[Travel-OS-Overview]].
+Starts from `CN-HL-HULAN`. See [[Travel-OS-Overview]].

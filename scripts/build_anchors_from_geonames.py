@@ -9,6 +9,7 @@ tier / coastal / remote tags consumed by `npm run enrich`.
 Reproducible: re-run to regenerate. Source: https://www.geonames.org (CC BY).
 """
 import io, json, math, os, re, unicodedata, urllib.request, zipfile
+from collections import defaultdict
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GEO = "https://download.geonames.org/export/dump"
@@ -136,6 +137,8 @@ def main():
         if not name_en:
             continue
         province = a1.get("CN." + c[10], c[10])
+        if not province.strip():
+            continue  # unmapped admin1 (rare GeoNames glitch)
         key = (norm(name_en), province)
         pop = int(c[14]) if c[14] else 0
         if key in seen and pop <= seen[key]:
@@ -165,13 +168,28 @@ def main():
         if n in CULTURE: a["culture"] = CULTURE[n]
         bykey[key] = a
 
-    # Select ~700: keep all capitals/prefecture seats, then the most populous
-    # county seats (PPLA3) to fill out the target.
-    TARGET = 700
+    # Select with GEOGRAPHIC SPREAD: keep every capital/prefecture seat, then
+    # round-robin the most populous county seats ACROSS PROVINCES so the frontier
+    # (Tibet / Xinjiang / Inner Mongolia) is covered too — not just the dense
+    # east that a pure population sort would pick.
+    TARGET = 1000
     allnodes = list(bykey.values())
     prefecture = [a for a in allnodes if a["_fc"] in ("PPLC", "PPLA", "PPLA2")]
-    counties = sorted((a for a in allnodes if a["_fc"] == "PPLA3"), key=lambda a: -a["_pop"])
-    anchors = prefecture + counties[: max(0, TARGET - len(prefecture))]
+    by_prov = defaultdict(list)
+    for a in allnodes:
+        if a["_fc"] == "PPLA3":
+            by_prov[a["province"]].append(a)
+    for p in by_prov:
+        by_prov[p].sort(key=lambda a: -a["_pop"])
+    provs = sorted(by_prov)
+    selected, need, r = [], TARGET - len(prefecture), 0
+    while need > 0 and any(by_prov[p] for p in provs):
+        p = provs[r % len(provs)]
+        if by_prov[p]:
+            selected.append(by_prov[p].pop(0))
+            need -= 1
+        r += 1
+    anchors = prefecture + selected
     for a in anchors:
         a.pop("_pop", None)
         a.pop("_fc", None)

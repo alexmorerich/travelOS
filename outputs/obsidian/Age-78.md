@@ -2,16 +2,16 @@
 age: 78
 calendar_year: 2054
 r_age: 0.35
-annual_cost_usd: 38371
-cities: ["Guangzhou"]
-provinces: ["Guangdong"]
-lead_trei: 0.73
+annual_cost_usd: 23382
+cities: ["Xiamen"]
+provinces: ["Fujian"]
+lead_trei: 1.03
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 78
 
-> Physiology factor **R_age = 0.35** · TREI cutoff 3.41 · annual cost **$38,371**
+> Physiology factor **R_age = 0.35** · TREI cutoff 3.41 · annual cost **$23,382**
 
 [[Age-77|← Age 77]] · [[Age-79|Age 79 →]]
 
@@ -19,26 +19,26 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Guangzhou (广州) | Guangdong | 365 | 3200 | 2.97 | 0.87 | 0.73 | ALLOWED |
+| Xiamen (厦门) | Fujian | 365 | 1950 | 2.71 | 1.33 | 1.03 | ALLOWED |
 
 
 ## Monthly schedule — calendar 2054
 
-> Q1 Guangzhou (17.8°C) · Q2 Guangzhou (28.1°C) · Q3 Guangzhou (30.9°C) · Q4 Guangzhou (20.5°C)
+> Q1 Xiamen (16.4°C) · Q2 Xiamen (27.4°C) · Q3 Xiamen (30.4°C) · Q4 Xiamen (19.3°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Guangzhou (广州) | 16 | 0 |
-| Feb | Guangzhou (广州) | 17.1 | 0 |
-| Mar | Guangzhou (广州) | 20.2 | 0 |
-| Apr | Guangzhou (广州) | 24.3 | 0 |
-| May | Guangzhou (广州) | 28.5 | 1.5 |
-| Jun | Guangzhou (广州) | 31.5 | 3.3 |
-| Jul | Guangzhou (广州) | 32.6 | 4 |
-| Aug | Guangzhou (广州) | 31.5 | 3.3 |
-| Sep | Guangzhou (广州) | 28.5 | 1.5 |
-| Oct | Guangzhou (广州) | 24.3 | 0 |
-| Nov | Guangzhou (广州) | 20.2 | 0 |
-| Dec | Guangzhou (广州) | 17.1 | 0 |
+| Jan | Xiamen (厦门) | 14.5 | 0.4 |
+| Feb | Xiamen (厦门) | 15.7 | 0 |
+| Mar | Xiamen (厦门) | 18.9 | 0 |
+| Apr | Xiamen (厦门) | 23.4 | 0 |
+| May | Xiamen (厦门) | 27.8 | 1.1 |
+| Jun | Xiamen (厦门) | 31.1 | 3.1 |
+| Jul | Xiamen (厦门) | 32.3 | 3.8 |
+| Aug | Xiamen (厦门) | 31.1 | 3.1 |
+| Sep | Xiamen (厦门) | 27.8 | 1.1 |
+| Oct | Xiamen (厦门) | 23.4 | 0 |
+| Nov | Xiamen (厦门) | 18.9 | 0 |
+| Dec | Xiamen (厦门) | 15.7 | 0 |
 
-Starts from `CN-GD-SHENZHEN`. See [[Travel-OS-Overview]].
+Starts from `CN-SH-SHANGHAI`. See [[Travel-OS-Overview]].

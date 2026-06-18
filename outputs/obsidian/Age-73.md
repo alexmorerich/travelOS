@@ -2,16 +2,16 @@
 age: 73
 calendar_year: 2049
 r_age: 0.35
-annual_cost_usd: 40169
-cities: ["Shenzhen"]
-provinces: ["Guangdong"]
-lead_trei: 0.67
+annual_cost_usd: 25780
+cities: ["Haikou"]
+provinces: ["Hainan"]
+lead_trei: 0.73
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 73
 
-> Physiology factor **R_age = 0.35** · TREI cutoff 3.41 · annual cost **$40,169**
+> Physiology factor **R_age = 0.35** · TREI cutoff 3.41 · annual cost **$25,780**
 
 [[Age-72|← Age 72]] · [[Age-74|Age 74 →]]
 
@@ -19,26 +19,26 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Shenzhen (深圳) | Guangdong | 365 | 3350 | 2.71 | 0.87 | 0.67 | ALLOWED |
+| Haikou (海口) | Hainan | 365 | 2150 | 1.92 | 1.33 | 0.73 | ALLOWED |
 
 
 ## Monthly schedule — calendar 2049
 
-> Q1 Shenzhen (18.4°C) · Q2 Shenzhen (28.5°C) · Q3 Shenzhen (31.1°C) · Q4 Shenzhen (21.1°C)
+> Q1 Haikou (21.1°C) · Q2 Haikou (29.7°C) · Q3 Haikou (32°C) · Q4 Haikou (23.4°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Shenzhen (深圳) | 16.7 | 0 |
-| Feb | Shenzhen (深圳) | 17.8 | 0 |
-| Mar | Shenzhen (深圳) | 20.8 | 0 |
-| Apr | Shenzhen (深圳) | 24.8 | 0 |
-| May | Shenzhen (深圳) | 28.8 | 1.7 |
-| Jun | Shenzhen (深圳) | 31.8 | 3.5 |
-| Jul | Shenzhen (深圳) | 32.8 | 4.1 |
-| Aug | Shenzhen (深圳) | 31.8 | 3.5 |
-| Sep | Shenzhen (深圳) | 28.8 | 1.7 |
-| Oct | Shenzhen (深圳) | 24.8 | 0 |
-| Nov | Shenzhen (深圳) | 20.8 | 0 |
-| Dec | Shenzhen (深圳) | 17.8 | 0 |
+| Jan | Haikou (海口) | 19.6 | 0 |
+| Feb | Haikou (海口) | 20.5 | 0 |
+| Mar | Haikou (海口) | 23.1 | 0 |
+| Apr | Haikou (海口) | 26.5 | 0.3 |
+| May | Haikou (海口) | 30 | 2.4 |
+| Jun | Haikou (海口) | 32.5 | 3.9 |
+| Jul | Haikou (海口) | 33.4 | 4.5 |
+| Aug | Haikou (海口) | 32.5 | 3.9 |
+| Sep | Haikou (海口) | 30 | 2.4 |
+| Oct | Haikou (海口) | 26.5 | 0.3 |
+| Nov | Haikou (海口) | 23.1 | 0 |
+| Dec | Haikou (海口) | 20.5 | 0 |
 
-Starts from `CN-FJ-XIAMEN`. See [[Travel-OS-Overview]].
+Starts from `CN-GD-SHENZHEN`. See [[Travel-OS-Overview]].

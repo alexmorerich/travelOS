@@ -2,16 +2,16 @@
 age: 71
 calendar_year: 2047
 r_age: 0.35
-annual_cost_usd: 21583
-cities: ["Hangzhou"]
-provinces: ["Zhejiang"]
-lead_trei: 1.13
+annual_cost_usd: 23382
+cities: ["Xiamen"]
+provinces: ["Fujian"]
+lead_trei: 1.03
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 71
 
-> Physiology factor **R_age = 0.35** · TREI cutoff 3.41 · annual cost **$21,583**
+> Physiology factor **R_age = 0.35** · TREI cutoff 3.41 · annual cost **$23,382**
 
 [[Age-70|← Age 70]] · [[Age-72|Age 72 →]]
 
@@ -19,26 +19,26 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Hangzhou (杭州) | Zhejiang | 365 | 1800 | 2.97 | 1.33 | 1.13 | ALLOWED |
+| Xiamen (厦门) | Fujian | 365 | 1950 | 2.71 | 1.33 | 1.03 | ALLOWED |
 
 
 ## Monthly schedule — calendar 2047
 
-> Q1 Hangzhou (10.2°C) · Q2 Hangzhou (24.6°C) · Q3 Hangzhou (28.4°C) · Q4 Hangzhou (14.1°C)
+> Q1 Xiamen (16.4°C) · Q2 Xiamen (27.4°C) · Q3 Xiamen (30.4°C) · Q4 Xiamen (19.3°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Hangzhou (杭州) | 7.8 | 5.1 |
-| Feb | Hangzhou (杭州) | 9.3 | 4 |
-| Mar | Hangzhou (杭州) | 13.6 | 1 |
-| Apr | Hangzhou (杭州) | 19.3 | 0 |
-| May | Hangzhou (杭州) | 25.1 | 0 |
-| Jun | Hangzhou (杭州) | 29.3 | 2 |
-| Jul | Hangzhou (杭州) | 30.8 | 2.9 |
-| Aug | Hangzhou (杭州) | 29.3 | 2 |
-| Sep | Hangzhou (杭州) | 25.1 | 0 |
-| Oct | Hangzhou (杭州) | 19.3 | 0 |
-| Nov | Hangzhou (杭州) | 13.6 | 1 |
-| Dec | Hangzhou (杭州) | 9.3 | 4 |
+| Jan | Xiamen (厦门) | 14.5 | 0.4 |
+| Feb | Xiamen (厦门) | 15.7 | 0 |
+| Mar | Xiamen (厦门) | 18.9 | 0 |
+| Apr | Xiamen (厦门) | 23.4 | 0 |
+| May | Xiamen (厦门) | 27.8 | 1.1 |
+| Jun | Xiamen (厦门) | 31.1 | 3.1 |
+| Jul | Xiamen (厦门) | 32.3 | 3.8 |
+| Aug | Xiamen (厦门) | 31.1 | 3.1 |
+| Sep | Xiamen (厦门) | 27.8 | 1.1 |
+| Oct | Xiamen (厦门) | 23.4 | 0 |
+| Nov | Xiamen (厦门) | 18.9 | 0 |
+| Dec | Xiamen (厦门) | 15.7 | 0 |
 
-Starts from `CN-SN-XIAN`. See [[Travel-OS-Overview]].
+Starts from `CN-HB-EZHOU`. See [[Travel-OS-Overview]].

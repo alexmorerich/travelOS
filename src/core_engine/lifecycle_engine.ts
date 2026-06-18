@@ -21,6 +21,7 @@ export function runLifecycle(
 ): LifecycleResult {
   const plans: YearPlan[] = [];
   const history: { age: number; ids: string[] }[] = [];
+  const visitedEver = new Set<string>();
   let current = systemConfig.base_city;
 
   for (let age = systemConfig.age_start; age <= systemConfig.age_end; age++) {
@@ -36,6 +37,7 @@ export function runLifecycle(
       age,
       startCity: current,
       visitedRecent: recent,
+      visitedEver,
       rng: makeRng(seed),
       seed,
       weights,
@@ -44,6 +46,7 @@ export function runLifecycle(
     if (plan.cities.length > 0) {
       current = plan.cities[plan.cities.length - 1].id;
       history.push({ age, ids: plan.cities.map((c) => c.id) });
+      for (const c of plan.cities) visitedEver.add(c.id);
     }
   }
 

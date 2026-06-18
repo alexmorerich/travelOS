@@ -2,16 +2,16 @@
 age: 74
 calendar_year: 2050
 r_age: 0.35
-annual_cost_usd: 38371
-cities: ["Guangzhou"]
-provinces: ["Guangdong"]
-lead_trei: 0.73
+annual_cost_usd: 15588
+cities: ["Guilin"]
+provinces: ["Guangxi"]
+lead_trei: 1.58
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 74
 
-> Physiology factor **R_age = 0.35** · TREI cutoff 3.41 · annual cost **$38,371**
+> Physiology factor **R_age = 0.35** · TREI cutoff 3.41 · annual cost **$15,588**
 
 [[Age-73|← Age 73]] · [[Age-75|Age 75 →]]
 
@@ -19,26 +19,26 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Guangzhou (广州) | Guangdong | 365 | 3200 | 2.97 | 0.87 | 0.73 | ALLOWED |
+| Guilin (桂林) | Guangxi | 365 | 1300 | 2.97 | 1.87 | 1.58 | ALLOWED |
 
 
 ## Monthly schedule — calendar 2050
 
-> Q1 Guangzhou (17.8°C) · Q2 Guangzhou (28.1°C) · Q3 Guangzhou (30.9°C) · Q4 Guangzhou (20.5°C)
+> Q1 Guilin (14.7°C) · Q2 Guilin (26.2°C) · Q3 Guilin (29.3°C) · Q4 Guilin (17.8°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Guangzhou (广州) | 16 | 0 |
-| Feb | Guangzhou (广州) | 17.1 | 0 |
-| Mar | Guangzhou (广州) | 20.2 | 0 |
-| Apr | Guangzhou (广州) | 24.3 | 0 |
-| May | Guangzhou (广州) | 28.5 | 1.5 |
-| Jun | Guangzhou (广州) | 31.5 | 3.3 |
-| Jul | Guangzhou (广州) | 32.6 | 4 |
-| Aug | Guangzhou (广州) | 31.5 | 3.3 |
-| Sep | Guangzhou (广州) | 28.5 | 1.5 |
-| Oct | Guangzhou (广州) | 24.3 | 0 |
-| Nov | Guangzhou (广州) | 20.2 | 0 |
-| Dec | Guangzhou (广州) | 17.1 | 0 |
+| Jan | Guilin (桂林) | 12.7 | 1.6 |
+| Feb | Guilin (桂林) | 14 | 0.7 |
+| Mar | Guilin (桂林) | 17.3 | 0 |
+| Apr | Guilin (桂林) | 22 | 0 |
+| May | Guilin (桂林) | 26.6 | 0.4 |
+| Jun | Guilin (桂林) | 30 | 2.4 |
+| Jul | Guilin (桂林) | 31.3 | 3.2 |
+| Aug | Guilin (桂林) | 30 | 2.4 |
+| Sep | Guilin (桂林) | 26.6 | 0.4 |
+| Oct | Guilin (桂林) | 22 | 0 |
+| Nov | Guilin (桂林) | 17.3 | 0 |
+| Dec | Guilin (桂林) | 14 | 0.7 |
 
-Starts from `CN-GD-SHENZHEN`. See [[Travel-OS-Overview]].
+Starts from `CN-HI-HAIKOU`. See [[Travel-OS-Overview]].

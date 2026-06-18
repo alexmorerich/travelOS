@@ -8,67 +8,64 @@
     "start_city": "CN-GD-SHENZHEN",
     "cities": [
       {
-        "id": "CN-HL-HARBIN",
-        "name": "哈尔滨",
-        "name_en": "Harbin",
-        "province": "Heilongjiang",
-        "days": 78,
-        "monthly_cost_usd": 1800,
-        "env_risk": 3.58,
-        "medical_risk": 1.33,
-        "TREI": 0.55,
-        "utility": 7.296,
-        "decision": "ALLOWED"
+        "id": "CN-XJ-BURQIN",
+        "name": "Burqin",
+        "name_en": "Burqin",
+        "province": "Xinjiang",
+        "days": 94,
+        "monthly_cost_usd": 1050,
+        "env_risk": 2.26,
+        "medical_risk": 6.67,
+        "TREI": 1.72,
+        "utility": 6.008,
+        "decision": "LOW_PRIORITY"
       },
       {
-        "id": "CN-BJ-BEIJING",
-        "name": "北京",
-        "name_en": "Beijing",
-        "province": "Beijing",
-        "days": 100,
-        "monthly_cost_usd": 3200,
-        "env_risk": 2.28,
-        "medical_risk": 0.87,
-        "TREI": 0.23,
-        "utility": 9.417,
-        "decision": "ALLOWED"
+        "id": "CN-XJ-CHAPCHAL",
+        "name": "察布查尔",
+        "name_en": "Chapchal",
+        "province": "Xinjiang",
+        "days": 89,
+        "monthly_cost_usd": 1050,
+        "env_risk": 2.38,
+        "medical_risk": 6.67,
+        "TREI": 1.81,
+        "utility": 5.674,
+        "decision": "LOW_PRIORITY"
       },
       {
-        "id": "CN-SN-XIAN",
-        "name": "西安",
-        "name_en": "Xi'an",
-        "province": "Shaanxi",
-        "days": 105,
-        "monthly_cost_usd": 1800,
-        "env_risk": 2.28,
-        "medical_risk": 1.33,
-        "TREI": 0.35,
-        "utility": 9.996,
-        "decision": "ALLOWED"
+        "id": "CN-XJ-SHIHEZI",
+        "name": "石河子",
+        "name_en": "Shihezi",
+        "province": "Xinjiang",
+        "days": 91,
+        "monthly_cost_usd": 1050,
+        "env_risk": 2.26,
+        "medical_risk": 6.67,
+        "TREI": 1.72,
+        "utility": 5.851,
+        "decision": "LOW_PRIORITY"
       },
       {
-        "id": "CN-SC-CHENGDU",
-        "name": "成都",
-        "name_en": "Chengdu",
-        "province": "Sichuan",
-        "days": 82,
-        "monthly_cost_usd": 1800,
-        "env_risk": 2.97,
-        "medical_risk": 1.33,
-        "TREI": 0.45,
-        "utility": 7.772,
-        "decision": "ALLOWED"
+        "id": "CN-XJ-EMIN",
+        "name": "额敏",
+        "name_en": "Emin",
+        "province": "Xinjiang",
+        "days": 91,
+        "monthly_cost_usd": 1050,
+        "env_risk": 2.29,
+        "medical_risk": 6.67,
+        "TREI": 1.74,
+        "utility": 5.864,
+        "decision": "LOW_PRIORITY"
       }
     ],
-    "annual_cost_usd": 26183,
+    "annual_cost_usd": 12590,
     "total_days": 365,
     "provinces_visited": [
-      "Heilongjiang",
-      "Beijing",
-      "Shaanxi",
-      "Sichuan"
+      "Xinjiang"
     ],
-    "frontier_share": 0.21
+    "frontier_share": 1
   },
   {
     "age": 51,
@@ -76,54 +73,56 @@
     "R_age": 0.856,
     "band": "Expedition",
     "trei_cutoff": 1.4,
-    "start_city": "CN-SC-CHENGDU",
+    "start_city": "CN-XJ-EMIN",
     "cities": [
       {
-        "id": "CN-HL-DAQING",
-        "name": "大庆",
-        "name_en": "Daqing",
-        "province": "Heilongjiang",
-        "days": 123,
-        "monthly_cost_usd": 1300,
-        "env_risk": 3.58,
-        "medical_risk": 1.87,
-        "TREI": 0.78,
-        "utility": 5.862,
+        "id": "CN-XZ-MOTUO",
+        "name": "墨脱",
+        "name_en": "Motuo",
+        "province": "Tibet",
+        "days": 92,
+        "monthly_cost_usd": 1050,
+        "env_risk": 1.77,
+        "medical_risk": 6.67,
+        "TREI": 1.38,
+        "utility": 6.419,
         "decision": "ALLOWED"
       },
       {
-        "id": "CN-HL-QIQIHAR",
-        "name": "齊齊哈爾",
-        "name_en": "Qiqihar",
-        "province": "Heilongjiang",
-        "days": 122,
-        "monthly_cost_usd": 1300,
-        "env_risk": 3.58,
-        "medical_risk": 1.87,
-        "TREI": 0.78,
-        "utility": 5.816,
+        "id": "CN-SN-XIAN",
+        "name": "西安",
+        "name_en": "Xi'an",
+        "province": "Shaanxi",
+        "days": 139,
+        "monthly_cost_usd": 1800,
+        "env_risk": 2.28,
+        "medical_risk": 1.33,
+        "TREI": 0.36,
+        "utility": 9.694,
         "decision": "ALLOWED"
       },
       {
-        "id": "CN-HL-SUIHUA",
-        "name": "綏化",
-        "name_en": "Suihua",
-        "province": "Heilongjiang",
-        "days": 120,
-        "monthly_cost_usd": 1300,
-        "env_risk": 3.58,
-        "medical_risk": 1.87,
-        "TREI": 0.78,
-        "utility": 5.765,
+        "id": "CN-BJ-BEIJING",
+        "name": "北京",
+        "name_en": "Beijing",
+        "province": "Beijing",
+        "days": 134,
+        "monthly_cost_usd": 3200,
+        "env_risk": 2.28,
+        "medical_risk": 0.87,
+        "TREI": 0.23,
+        "utility": 9.389,
         "decision": "ALLOWED"
       }
     ],
-    "annual_cost_usd": 15588,
+    "annual_cost_usd": 25480,
     "total_days": 365,
     "provinces_visited": [
-      "Heilongjiang"
+      "Tibet",
+      "Shaanxi",
+      "Beijing"
     ],
-    "frontier_share": 1
+    "frontier_share": 0.25
   },
   {
     "age": 52,
@@ -131,55 +130,56 @@
     "R_age": 0.836,
     "band": "Expedition",
     "trei_cutoff": 1.43,
-    "start_city": "CN-HL-SUIHUA",
+    "start_city": "CN-BJ-BEIJING",
     "cities": [
       {
-        "id": "CN-HL-DAXINGANLING",
-        "name": "大兴安岭",
-        "name_en": "Daxing'anling",
-        "province": "Heilongjiang",
-        "days": 123,
-        "monthly_cost_usd": 1300,
-        "env_risk": 3.58,
-        "medical_risk": 1.87,
-        "TREI": 0.8,
-        "utility": 5.805,
-        "decision": "ALLOWED"
+        "id": "CN-QH-JISHI",
+        "name": "撒拉族自治县",
+        "name_en": "Jishi",
+        "province": "Qinghai",
+        "days": 105,
+        "monthly_cost_usd": 950,
+        "env_risk": 2.86,
+        "medical_risk": 6.67,
+        "TREI": 2.28,
+        "utility": 5.638,
+        "decision": "LOW_PRIORITY"
       },
       {
-        "id": "CN-HL-MUDANJIANG",
-        "name": "牡丹江",
-        "name_en": "Mudanjiang",
-        "province": "Heilongjiang",
-        "days": 115,
-        "monthly_cost_usd": 1300,
-        "env_risk": 3.58,
-        "medical_risk": 1.87,
-        "TREI": 0.8,
-        "utility": 5.43,
-        "decision": "ALLOWED"
-      },
-      {
-        "id": "CN-SD-QINGDAO",
-        "name": "青岛",
-        "name_en": "Qingdao",
-        "province": "Shandong",
-        "days": 127,
-        "monthly_cost_usd": 1950,
-        "env_risk": 2.31,
+        "id": "CN-SC-CHENGDU",
+        "name": "成都",
+        "name_en": "Chengdu",
+        "province": "Sichuan",
+        "days": 140,
+        "monthly_cost_usd": 1800,
+        "env_risk": 2.97,
         "medical_risk": 1.33,
-        "TREI": 0.37,
-        "utility": 6.003,
+        "TREI": 0.47,
+        "utility": 7.57,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HA-LUOYANG",
+        "name": "洛阳",
+        "name_en": "Luoyang",
+        "province": "Henan",
+        "days": 120,
+        "monthly_cost_usd": 1300,
+        "env_risk": 2.28,
+        "medical_risk": 1.87,
+        "TREI": 0.51,
+        "utility": 6.526,
         "decision": "ALLOWED"
       }
     ],
-    "annual_cost_usd": 18300,
+    "annual_cost_usd": 16680,
     "total_days": 365,
     "provinces_visited": [
-      "Heilongjiang",
-      "Shandong"
+      "Qinghai",
+      "Sichuan",
+      "Henan"
     ],
-    "frontier_share": 0.65
+    "frontier_share": 0.29
   },
   {
     "age": 53,
@@ -187,254 +187,32 @@
     "R_age": 0.815,
     "band": "Expedition",
     "trei_cutoff": 1.47,
-    "start_city": "CN-SD-QINGDAO",
+    "start_city": "CN-HA-LUOYANG",
     "cities": [
       {
-        "id": "CN-HL-HEGANG",
-        "name": "鶴崗",
-        "name_en": "Hegang",
-        "province": "Heilongjiang",
-        "days": 125,
-        "monthly_cost_usd": 1300,
-        "env_risk": 3.58,
-        "medical_risk": 1.87,
-        "TREI": 0.82,
-        "utility": 5.745,
-        "decision": "ALLOWED"
+        "id": "CN-NM-OROQENZIZHIQI",
+        "name": "鄂伦春自治旗",
+        "name_en": "Oroqen Zizhiqi",
+        "province": "Inner Mongolia",
+        "days": 110,
+        "monthly_cost_usd": 950,
+        "env_risk": 2.26,
+        "medical_risk": 6.67,
+        "TREI": 1.85,
+        "utility": 5.966,
+        "decision": "LOW_PRIORITY"
       },
       {
-        "id": "CN-HL-HEIHE",
-        "name": "黑河",
-        "name_en": "Heihe",
-        "province": "Heilongjiang",
-        "days": 120,
-        "monthly_cost_usd": 1300,
-        "env_risk": 3.58,
-        "medical_risk": 1.87,
-        "TREI": 0.82,
-        "utility": 5.593,
-        "decision": "ALLOWED"
-      },
-      {
-        "id": "CN-HL-JIAMUSI",
-        "name": "佳木斯",
-        "name_en": "Jiamusi",
-        "province": "Heilongjiang",
-        "days": 120,
-        "monthly_cost_usd": 1300,
-        "env_risk": 3.58,
-        "medical_risk": 1.87,
-        "TREI": 0.82,
-        "utility": 5.571,
-        "decision": "ALLOWED"
-      }
-    ],
-    "annual_cost_usd": 15588,
-    "total_days": 365,
-    "provinces_visited": [
-      "Heilongjiang"
-    ],
-    "frontier_share": 1
-  },
-  {
-    "age": 54,
-    "seed": 1605606255,
-    "R_age": 0.793,
-    "band": "Expedition",
-    "trei_cutoff": 1.51,
-    "start_city": "CN-HL-JIAMUSI",
-    "cities": [
-      {
-        "id": "CN-HL-HARBIN",
-        "name": "哈尔滨",
-        "name_en": "Harbin",
-        "province": "Heilongjiang",
-        "days": 101,
-        "monthly_cost_usd": 1800,
-        "env_risk": 3.58,
-        "medical_risk": 1.33,
-        "TREI": 0.6,
-        "utility": 7.002,
-        "decision": "ALLOWED"
-      },
-      {
-        "id": "CN-BJ-BEIJING",
-        "name": "北京",
-        "name_en": "Beijing",
-        "province": "Beijing",
-        "days": 129,
-        "monthly_cost_usd": 3200,
-        "env_risk": 2.28,
-        "medical_risk": 0.87,
-        "TREI": 0.25,
-        "utility": 9.03,
-        "decision": "ALLOWED"
-      },
-      {
-        "id": "CN-SN-XIAN",
-        "name": "西安",
-        "name_en": "Xi'an",
-        "province": "Shaanxi",
-        "days": 135,
-        "monthly_cost_usd": 1800,
-        "env_risk": 2.28,
-        "medical_risk": 1.33,
-        "TREI": 0.38,
-        "utility": 9.515,
-        "decision": "ALLOWED"
-      }
-    ],
-    "annual_cost_usd": 27516,
-    "total_days": 365,
-    "provinces_visited": [
-      "Heilongjiang",
-      "Beijing",
-      "Shaanxi"
-    ],
-    "frontier_share": 0.28
-  },
-  {
-    "age": 55,
-    "seed": 4260042046,
-    "R_age": 0.77,
-    "band": "Expedition",
-    "trei_cutoff": 1.55,
-    "start_city": "CN-SN-XIAN",
-    "cities": [
-      {
-        "id": "CN-HL-DAQING",
-        "name": "大庆",
-        "name_en": "Daqing",
-        "province": "Heilongjiang",
+        "id": "CN-LN-SHENYANG",
+        "name": "沈阳",
+        "name_en": "Shenyang",
+        "province": "Liaoning",
         "days": 124,
-        "monthly_cost_usd": 1300,
+        "monthly_cost_usd": 1800,
         "env_risk": 3.58,
-        "medical_risk": 1.87,
-        "TREI": 0.87,
-        "utility": 5.615,
-        "decision": "ALLOWED"
-      },
-      {
-        "id": "CN-HL-QITAIHE",
-        "name": "七台河",
-        "name_en": "Qitaihe",
-        "province": "Heilongjiang",
-        "days": 119,
-        "monthly_cost_usd": 1300,
-        "env_risk": 3.58,
-        "medical_risk": 1.87,
-        "TREI": 0.87,
-        "utility": 5.427,
-        "decision": "ALLOWED"
-      },
-      {
-        "id": "CN-HL-SHUANGYASHAN",
-        "name": "双鴨山市",
-        "name_en": "Shuangyashan",
-        "province": "Heilongjiang",
-        "days": 122,
-        "monthly_cost_usd": 1300,
-        "env_risk": 3.58,
-        "medical_risk": 1.87,
-        "TREI": 0.87,
-        "utility": 5.574,
-        "decision": "ALLOWED"
-      }
-    ],
-    "annual_cost_usd": 15588,
-    "total_days": 365,
-    "provinces_visited": [
-      "Heilongjiang"
-    ],
-    "frontier_share": 1
-  },
-  {
-    "age": 56,
-    "seed": 2619518593,
-    "R_age": 0.747,
-    "band": "Expedition",
-    "trei_cutoff": 1.6,
-    "start_city": "CN-HL-SHUANGYASHAN",
-    "cities": [
-      {
-        "id": "CN-HL-DAXINGANLING",
-        "name": "大兴安岭",
-        "name_en": "Daxing'anling",
-        "province": "Heilongjiang",
-        "days": 125,
-        "monthly_cost_usd": 1300,
-        "env_risk": 3.58,
-        "medical_risk": 1.87,
-        "TREI": 0.9,
-        "utility": 5.543,
-        "decision": "ALLOWED"
-      },
-      {
-        "id": "CN-HL-SUIHUA",
-        "name": "綏化",
-        "name_en": "Suihua",
-        "province": "Heilongjiang",
-        "days": 119,
-        "monthly_cost_usd": 1300,
-        "env_risk": 3.58,
-        "medical_risk": 1.87,
-        "TREI": 0.9,
-        "utility": 5.282,
-        "decision": "ALLOWED"
-      },
-      {
-        "id": "CN-HL-MUDANJIANG",
-        "name": "牡丹江",
-        "name_en": "Mudanjiang",
-        "province": "Heilongjiang",
-        "days": 121,
-        "monthly_cost_usd": 1300,
-        "env_risk": 3.58,
-        "medical_risk": 1.87,
-        "TREI": 0.9,
-        "utility": 5.419,
-        "decision": "ALLOWED"
-      }
-    ],
-    "annual_cost_usd": 15588,
-    "total_days": 365,
-    "provinces_visited": [
-      "Heilongjiang"
-    ],
-    "frontier_share": 1
-  },
-  {
-    "age": 57,
-    "seed": 978987088,
-    "R_age": 0.723,
-    "band": "Expedition",
-    "trei_cutoff": 1.65,
-    "start_city": "CN-HL-MUDANJIANG",
-    "cities": [
-      {
-        "id": "CN-HL-HEGANG",
-        "name": "鶴崗",
-        "name_en": "Hegang",
-        "province": "Heilongjiang",
-        "days": 113,
-        "monthly_cost_usd": 1300,
-        "env_risk": 3.58,
-        "medical_risk": 1.87,
-        "TREI": 0.93,
-        "utility": 5.468,
-        "decision": "ALLOWED"
-      },
-      {
-        "id": "CN-SD-QINGDAO",
-        "name": "青岛",
-        "name_en": "Qingdao",
-        "province": "Shandong",
-        "days": 111,
-        "monthly_cost_usd": 1950,
-        "env_risk": 2.31,
         "medical_risk": 1.33,
-        "TREI": 0.43,
-        "utility": 5.394,
+        "TREI": 0.59,
+        "utility": 6.693,
         "decision": "ALLOWED"
       },
       {
@@ -442,23 +220,248 @@
         "name": "杭州",
         "name_en": "Hangzhou",
         "province": "Zhejiang",
-        "days": 141,
+        "days": 131,
         "monthly_cost_usd": 1800,
         "env_risk": 2.97,
         "medical_risk": 1.33,
-        "TREI": 0.55,
-        "utility": 6.899,
+        "TREI": 0.49,
+        "utility": 7.169,
         "decision": "ALLOWED"
       }
     ],
-    "annual_cost_usd": 20274,
+    "annual_cost_usd": 18512,
+    "total_days": 365,
+    "provinces_visited": [
+      "Inner Mongolia",
+      "Liaoning",
+      "Zhejiang"
+    ],
+    "frontier_share": 0.3
+  },
+  {
+    "age": 54,
+    "seed": 1605606255,
+    "R_age": 0.793,
+    "band": "Expedition",
+    "trei_cutoff": 1.51,
+    "start_city": "CN-ZJ-HANGZHOU",
+    "cities": [
+      {
+        "id": "CN-GS-HUIXIANCHENGGUANZHEN",
+        "name": "城关镇",
+        "name_en": "Huixian Chengguanzhen",
+        "province": "Gansu",
+        "days": 109,
+        "monthly_cost_usd": 950,
+        "env_risk": 2.76,
+        "medical_risk": 6.67,
+        "TREI": 2.32,
+        "utility": 5.615,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-SH-SHANGHAI",
+        "name": "上海",
+        "name_en": "Shanghai",
+        "province": "Shanghai",
+        "days": 132,
+        "monthly_cost_usd": 3350,
+        "env_risk": 2.71,
+        "medical_risk": 0.87,
+        "TREI": 0.3,
+        "utility": 6.783,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JL-CHANGCHUN",
+        "name": "长春",
+        "name_en": "Changchun",
+        "province": "Jilin",
+        "days": 124,
+        "monthly_cost_usd": 1800,
+        "env_risk": 3.58,
+        "medical_risk": 1.33,
+        "TREI": 0.6,
+        "utility": 6.423,
+        "decision": "ALLOWED"
+      }
+    ],
+    "annual_cost_usd": 25261,
+    "total_days": 365,
+    "provinces_visited": [
+      "Gansu",
+      "Shanghai",
+      "Jilin"
+    ],
+    "frontier_share": 0.3
+  },
+  {
+    "age": 55,
+    "seed": 4260042046,
+    "R_age": 0.77,
+    "band": "Expedition",
+    "trei_cutoff": 1.55,
+    "start_city": "CN-JL-CHANGCHUN",
+    "cities": [
+      {
+        "id": "CN-NX-BEIJIE",
+        "name": "北街",
+        "name_en": "Beijie",
+        "province": "Ningxia",
+        "days": 113,
+        "monthly_cost_usd": 950,
+        "env_risk": 2.98,
+        "medical_risk": 6.67,
+        "TREI": 2.58,
+        "utility": 5.466,
+        "decision": "LOW_PRIORITY"
+      },
+      {
+        "id": "CN-JS-NANJING",
+        "name": "南京",
+        "name_en": "Nanjing",
+        "province": "Jiangsu",
+        "days": 121,
+        "monthly_cost_usd": 1800,
+        "env_risk": 2.97,
+        "medical_risk": 1.33,
+        "TREI": 0.51,
+        "utility": 5.917,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JS-SUZHOU",
+        "name": "苏州",
+        "name_en": "Suzhou",
+        "province": "Jiangsu",
+        "days": 131,
+        "monthly_cost_usd": 1800,
+        "env_risk": 2.97,
+        "medical_risk": 1.33,
+        "TREI": 0.51,
+        "utility": 6.378,
+        "decision": "ALLOWED"
+      }
+    ],
+    "annual_cost_usd": 18428,
+    "total_days": 365,
+    "provinces_visited": [
+      "Ningxia",
+      "Jiangsu"
+    ],
+    "frontier_share": 0.31
+  },
+  {
+    "age": 56,
+    "seed": 2619518593,
+    "R_age": 0.747,
+    "band": "Expedition",
+    "trei_cutoff": 1.6,
+    "start_city": "CN-JS-SUZHOU",
+    "cities": [
+      {
+        "id": "CN-HL-HARBIN",
+        "name": "哈尔滨",
+        "name_en": "Harbin",
+        "province": "Heilongjiang",
+        "days": 134,
+        "monthly_cost_usd": 1800,
+        "env_risk": 3.58,
+        "medical_risk": 1.33,
+        "TREI": 0.64,
+        "utility": 6.825,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HL-BOLI",
+        "name": "勃利",
+        "name_en": "Boli",
+        "province": "Heilongjiang",
+        "days": 116,
+        "monthly_cost_usd": 1100,
+        "env_risk": 3.58,
+        "medical_risk": 3.33,
+        "TREI": 1.6,
+        "utility": 5.98,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JL-SHUANGYANG",
+        "name": "双阳",
+        "name_en": "Shuangyang",
+        "province": "Jilin",
+        "days": 115,
+        "monthly_cost_usd": 1100,
+        "env_risk": 3.58,
+        "medical_risk": 3.33,
+        "TREI": 1.6,
+        "utility": 5.918,
+        "decision": "ALLOWED"
+      }
+    ],
+    "annual_cost_usd": 16271,
     "total_days": 365,
     "provinces_visited": [
       "Heilongjiang",
-      "Shandong",
-      "Zhejiang"
+      "Jilin"
     ],
-    "frontier_share": 0.31
+    "frontier_share": 0.68
+  },
+  {
+    "age": 57,
+    "seed": 978987088,
+    "R_age": 0.723,
+    "band": "Expedition",
+    "trei_cutoff": 1.65,
+    "start_city": "CN-JL-SHUANGYANG",
+    "cities": [
+      {
+        "id": "CN-JL-ANTU",
+        "name": "安图",
+        "name_en": "Antu",
+        "province": "Jilin",
+        "days": 124,
+        "monthly_cost_usd": 1100,
+        "env_risk": 3.58,
+        "medical_risk": 3.33,
+        "TREI": 1.65,
+        "utility": 6.043,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HL-CHENGZIHE",
+        "name": "城子河",
+        "name_en": "Chengzihe",
+        "province": "Heilongjiang",
+        "days": 121,
+        "monthly_cost_usd": 1100,
+        "env_risk": 3.58,
+        "medical_risk": 3.33,
+        "TREI": 1.65,
+        "utility": 5.924,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HL-HULAN",
+        "name": "呼兰",
+        "name_en": "Hulan",
+        "province": "Heilongjiang",
+        "days": 120,
+        "monthly_cost_usd": 1100,
+        "env_risk": 3.58,
+        "medical_risk": 3.33,
+        "TREI": 1.65,
+        "utility": 5.903,
+        "decision": "ALLOWED"
+      }
+    ],
+    "annual_cost_usd": 13190,
+    "total_days": 365,
+    "provinces_visited": [
+      "Jilin",
+      "Heilongjiang"
+    ],
+    "frontier_share": 0.66
   },
   {
     "age": 58,
@@ -466,56 +469,56 @@
     "R_age": 0.698,
     "band": "Expedition",
     "trei_cutoff": 1.71,
-    "start_city": "CN-ZJ-HANGZHOU",
+    "start_city": "CN-HL-HULAN",
     "cities": [
       {
-        "id": "CN-HL-HARBIN",
-        "name": "哈尔滨",
-        "name_en": "Harbin",
-        "province": "Heilongjiang",
-        "days": 101,
-        "monthly_cost_usd": 1800,
+        "id": "CN-LN-BIANCHENG",
+        "name": "老边",
+        "name_en": "Biancheng",
+        "province": "Liaoning",
+        "days": 126,
+        "monthly_cost_usd": 1250,
+        "env_risk": 3.33,
+        "medical_risk": 3.33,
+        "TREI": 1.59,
+        "utility": 5.995,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-JL-HUNCHUN",
+        "name": "珲春",
+        "name_en": "Hunchun",
+        "province": "Jilin",
+        "days": 119,
+        "monthly_cost_usd": 1100,
         "env_risk": 3.58,
-        "medical_risk": 1.33,
-        "TREI": 0.68,
-        "utility": 6.626,
+        "medical_risk": 3.33,
+        "TREI": 1.71,
+        "utility": 5.699,
         "decision": "ALLOWED"
       },
       {
-        "id": "CN-BJ-BEIJING",
-        "name": "北京",
-        "name_en": "Beijing",
-        "province": "Beijing",
-        "days": 129,
-        "monthly_cost_usd": 3200,
-        "env_risk": 2.28,
-        "medical_risk": 0.87,
-        "TREI": 0.28,
-        "utility": 8.511,
-        "decision": "ALLOWED"
-      },
-      {
-        "id": "CN-SN-XIAN",
-        "name": "西安",
-        "name_en": "Xi'an",
-        "province": "Shaanxi",
-        "days": 135,
-        "monthly_cost_usd": 1800,
-        "env_risk": 2.28,
-        "medical_risk": 1.33,
-        "TREI": 0.44,
-        "utility": 8.885,
+        "id": "CN-HL-LONGFENG",
+        "name": "龙凤",
+        "name_en": "Longfeng",
+        "province": "Heilongjiang",
+        "days": 120,
+        "monthly_cost_usd": 1100,
+        "env_risk": 3.58,
+        "medical_risk": 3.33,
+        "TREI": 1.71,
+        "utility": 5.749,
         "decision": "ALLOWED"
       }
     ],
-    "annual_cost_usd": 27516,
+    "annual_cost_usd": 13811,
     "total_days": 365,
     "provinces_visited": [
-      "Heilongjiang",
-      "Beijing",
-      "Shaanxi"
+      "Liaoning",
+      "Jilin",
+      "Heilongjiang"
     ],
-    "frontier_share": 0.28
+    "frontier_share": 0.33
   },
   {
     "age": 59,
@@ -523,52 +526,52 @@
     "R_age": 0.673,
     "band": "Expedition",
     "trei_cutoff": 1.78,
-    "start_city": "CN-SN-XIAN",
+    "start_city": "CN-HL-LONGFENG",
     "cities": [
       {
-        "id": "CN-HL-DAQING",
-        "name": "大庆",
-        "name_en": "Daqing",
-        "province": "Heilongjiang",
+        "id": "CN-XJ-WUSU",
+        "name": "乌苏",
+        "name_en": "Wusu",
+        "province": "Xinjiang",
         "days": 124,
-        "monthly_cost_usd": 1300,
-        "env_risk": 3.58,
-        "medical_risk": 1.87,
-        "TREI": 0.99,
-        "utility": 5.306,
-        "decision": "ALLOWED"
+        "monthly_cost_usd": 1050,
+        "env_risk": 2.26,
+        "medical_risk": 6.67,
+        "TREI": 2.24,
+        "utility": 5.583,
+        "decision": "LOW_PRIORITY"
       },
       {
-        "id": "CN-HL-QIQIHAR",
-        "name": "齊齊哈爾",
-        "name_en": "Qiqihar",
-        "province": "Heilongjiang",
+        "id": "CN-XJ-SANDAOHEZI",
+        "name": "三道河子",
+        "name_en": "Sandaohezi",
+        "province": "Xinjiang",
         "days": 123,
-        "monthly_cost_usd": 1300,
-        "env_risk": 3.58,
-        "medical_risk": 1.87,
-        "TREI": 0.99,
-        "utility": 5.26,
-        "decision": "ALLOWED"
+        "monthly_cost_usd": 1050,
+        "env_risk": 2.3,
+        "medical_risk": 6.67,
+        "TREI": 2.28,
+        "utility": 5.531,
+        "decision": "LOW_PRIORITY"
       },
       {
-        "id": "CN-HL-SHUANGYASHAN",
-        "name": "双鴨山市",
-        "name_en": "Shuangyashan",
-        "province": "Heilongjiang",
+        "id": "CN-XJ-HUOCHENG",
+        "name": "霍城",
+        "name_en": "Huocheng",
+        "province": "Xinjiang",
         "days": 118,
-        "monthly_cost_usd": 1300,
-        "env_risk": 3.58,
-        "medical_risk": 1.87,
-        "TREI": 0.99,
-        "utility": 5.086,
-        "decision": "ALLOWED"
+        "monthly_cost_usd": 1050,
+        "env_risk": 2.43,
+        "medical_risk": 6.67,
+        "TREI": 2.41,
+        "utility": 5.327,
+        "decision": "LOW_PRIORITY"
       }
     ],
-    "annual_cost_usd": 15588,
+    "annual_cost_usd": 12590,
     "total_days": 365,
     "provinces_visited": [
-      "Heilongjiang"
+      "Xinjiang"
     ],
     "frontier_share": 1
   },
@@ -578,74 +581,32 @@
     "R_age": 0.646,
     "band": "Expedition",
     "trei_cutoff": 1.85,
-    "start_city": "CN-HL-SHUANGYASHAN",
+    "start_city": "CN-XJ-HUOCHENG",
     "cities": [
       {
-        "id": "CN-HL-DAXINGANLING",
-        "name": "大兴安岭",
-        "name_en": "Daxing'anling",
-        "province": "Heilongjiang",
-        "days": 126,
-        "monthly_cost_usd": 1300,
-        "env_risk": 3.58,
-        "medical_risk": 1.87,
-        "TREI": 1.03,
-        "utility": 5.218,
-        "decision": "ALLOWED"
+        "id": "CN-XZ-LHASA",
+        "name": "拉萨",
+        "name_en": "Lhasa",
+        "province": "Tibet",
+        "days": 95,
+        "monthly_cost_usd": 1750,
+        "env_risk": 4.84,
+        "medical_risk": 5.67,
+        "TREI": 4.24,
+        "utility": 3.708,
+        "decision": "LOW_PRIORITY"
       },
       {
-        "id": "CN-HL-MUDANJIANG",
-        "name": "牡丹江",
-        "name_en": "Mudanjiang",
-        "province": "Heilongjiang",
-        "days": 116,
+        "id": "CN-YN-DALI",
+        "name": "大理",
+        "name_en": "Dali",
+        "province": "Yunnan",
+        "days": 127,
         "monthly_cost_usd": 1300,
-        "env_risk": 3.58,
+        "env_risk": 3.08,
         "medical_risk": 1.87,
-        "TREI": 1.03,
-        "utility": 4.843,
-        "decision": "ALLOWED"
-      },
-      {
-        "id": "CN-HL-QITAIHE",
-        "name": "七台河",
-        "name_en": "Qitaihe",
-        "province": "Heilongjiang",
-        "days": 123,
-        "monthly_cost_usd": 1300,
-        "env_risk": 3.58,
-        "medical_risk": 1.87,
-        "TREI": 1.03,
-        "utility": 5.149,
-        "decision": "ALLOWED"
-      }
-    ],
-    "annual_cost_usd": 15588,
-    "total_days": 365,
-    "provinces_visited": [
-      "Heilongjiang"
-    ],
-    "frontier_share": 1
-  },
-  {
-    "age": 61,
-    "seed": 3006779156,
-    "R_age": 0.62,
-    "band": "Cultural deep-dive",
-    "trei_cutoff": 1.93,
-    "start_city": "CN-HL-QITAIHE",
-    "cities": [
-      {
-        "id": "CN-SC-CHENGDU",
-        "name": "成都",
-        "name_en": "Chengdu",
-        "province": "Sichuan",
-        "days": 198,
-        "monthly_cost_usd": 1800,
-        "env_risk": 2.97,
-        "medical_risk": 1.33,
-        "TREI": 0.64,
-        "utility": 11.056,
+        "TREI": 0.89,
+        "utility": 5.042,
         "decision": "ALLOWED"
       },
       {
@@ -653,20 +614,63 @@
         "name": "昆明",
         "name_en": "Kunming",
         "province": "Yunnan",
-        "days": 167,
+        "days": 143,
         "monthly_cost_usd": 1800,
         "env_risk": 2.98,
         "medical_risk": 1.33,
-        "TREI": 0.64,
-        "utility": 9.393,
+        "TREI": 0.61,
+        "utility": 5.638,
         "decision": "ALLOWED"
       }
     ],
-    "annual_cost_usd": 21583,
+    "annual_cost_usd": 19341,
     "total_days": 365,
     "provinces_visited": [
-      "Sichuan",
+      "Tibet",
       "Yunnan"
+    ],
+    "frontier_share": 0.26
+  },
+  {
+    "age": 61,
+    "seed": 3006779156,
+    "R_age": 0.62,
+    "band": "Cultural deep-dive",
+    "trei_cutoff": 1.93,
+    "start_city": "CN-YN-KUNMING",
+    "cities": [
+      {
+        "id": "CN-SN-YANGZHOU",
+        "name": "扬州",
+        "name_en": "Yangzhou",
+        "province": "Shaanxi",
+        "days": 170,
+        "monthly_cost_usd": 1100,
+        "env_risk": 2.28,
+        "medical_risk": 3.33,
+        "TREI": 1.23,
+        "utility": 8.215,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-SD-QINGDAO",
+        "name": "青岛",
+        "name_en": "Qingdao",
+        "province": "Shandong",
+        "days": 195,
+        "monthly_cost_usd": 1950,
+        "env_risk": 2.31,
+        "medical_risk": 1.33,
+        "TREI": 0.5,
+        "utility": 9.493,
+        "decision": "ALLOWED"
+      }
+    ],
+    "annual_cost_usd": 18635,
+    "total_days": 365,
+    "provinces_visited": [
+      "Shaanxi",
+      "Shandong"
     ],
     "frontier_share": 0
   },
@@ -676,40 +680,40 @@
     "R_age": 0.592,
     "band": "Cultural deep-dive",
     "trei_cutoff": 2.02,
-    "start_city": "CN-YN-KUNMING",
+    "start_city": "CN-SD-QINGDAO",
     "cities": [
       {
-        "id": "CN-SN-XIAN",
-        "name": "西安",
-        "name_en": "Xi'an",
-        "province": "Shaanxi",
-        "days": 207,
+        "id": "CN-SX-TAIYUAN",
+        "name": "太原",
+        "name_en": "Taiyuan",
+        "province": "Shanxi",
+        "days": 163,
         "monthly_cost_usd": 1800,
-        "env_risk": 2.28,
+        "env_risk": 2.63,
         "medical_risk": 1.33,
-        "TREI": 0.51,
-        "utility": 12.819,
+        "TREI": 0.59,
+        "utility": 7.941,
         "decision": "ALLOWED"
       },
       {
-        "id": "CN-HA-LUOYANG",
-        "name": "洛阳",
-        "name_en": "Luoyang",
-        "province": "Henan",
-        "days": 158,
-        "monthly_cost_usd": 1300,
-        "env_risk": 2.28,
-        "medical_risk": 1.87,
-        "TREI": 0.72,
-        "utility": 9.864,
+        "id": "CN-AH-SUZHOU",
+        "name": "苏州",
+        "name_en": "Suzhou",
+        "province": "Anhui",
+        "days": 202,
+        "monthly_cost_usd": 1800,
+        "env_risk": 2.97,
+        "medical_risk": 1.33,
+        "TREI": 0.67,
+        "utility": 9.847,
         "decision": "ALLOWED"
       }
     ],
-    "annual_cost_usd": 18988,
+    "annual_cost_usd": 21583,
     "total_days": 365,
     "provinces_visited": [
-      "Shaanxi",
-      "Henan"
+      "Shanxi",
+      "Anhui"
     ],
     "frontier_share": 0
   },
@@ -719,40 +723,40 @@
     "R_age": 0.564,
     "band": "Cultural deep-dive",
     "trei_cutoff": 2.12,
-    "start_city": "CN-HA-LUOYANG",
+    "start_city": "CN-AH-SUZHOU",
     "cities": [
       {
-        "id": "CN-GZ-GUIYANG",
-        "name": "贵阳",
-        "name_en": "Guiyang",
-        "province": "Guizhou",
-        "days": 190,
+        "id": "CN-HA-ZHENGZHOU",
+        "name": "郑州",
+        "name_en": "Zhengzhou",
+        "province": "Henan",
+        "days": 184,
         "monthly_cost_usd": 1800,
-        "env_risk": 2.01,
+        "env_risk": 2.28,
         "medical_risk": 1.33,
-        "TREI": 0.47,
-        "utility": 9.209,
+        "TREI": 0.54,
+        "utility": 8.894,
         "decision": "ALLOWED"
       },
       {
-        "id": "CN-YN-DALI",
-        "name": "大理",
-        "name_en": "Dali",
-        "province": "Yunnan",
-        "days": 175,
-        "monthly_cost_usd": 1300,
-        "env_risk": 3.08,
-        "medical_risk": 1.87,
-        "TREI": 1.02,
-        "utility": 8.53,
+        "id": "CN-CQ-CHONGQING",
+        "name": "重庆",
+        "name_en": "Chongqing",
+        "province": "Chongqing",
+        "days": 181,
+        "monthly_cost_usd": 1800,
+        "env_risk": 2.97,
+        "medical_risk": 1.33,
+        "TREI": 0.7,
+        "utility": 8.835,
         "decision": "ALLOWED"
       }
     ],
-    "annual_cost_usd": 18709,
+    "annual_cost_usd": 21583,
     "total_days": 365,
     "provinces_visited": [
-      "Guizhou",
-      "Yunnan"
+      "Henan",
+      "Chongqing"
     ],
     "frontier_share": 0
   },
@@ -762,40 +766,40 @@
     "R_age": 0.535,
     "band": "Cultural deep-dive",
     "trei_cutoff": 2.23,
-    "start_city": "CN-YN-DALI",
+    "start_city": "CN-CQ-CHONGQING",
     "cities": [
       {
-        "id": "CN-GZ-TONGREN",
-        "name": "铜仁市",
-        "name_en": "Tongren",
-        "province": "Guizhou",
-        "days": 189,
-        "monthly_cost_usd": 1300,
-        "env_risk": 1.3,
-        "medical_risk": 1.87,
-        "TREI": 0.45,
-        "utility": 8.919,
-        "decision": "ALLOWED"
-      },
-      {
-        "id": "CN-HA-ZHENGZHOU",
-        "name": "郑州",
-        "name_en": "Zhengzhou",
-        "province": "Henan",
-        "days": 176,
+        "id": "CN-HE-SHIJIAZHUANG",
+        "name": "石家庄",
+        "name_en": "Shijiazhuang",
+        "province": "Hebei",
+        "days": 183,
         "monthly_cost_usd": 1800,
         "env_risk": 2.28,
         "medical_risk": 1.33,
         "TREI": 0.57,
-        "utility": 8.382,
+        "utility": 8.525,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HN-CHANGSHA",
+        "name": "长沙",
+        "name_en": "Changsha",
+        "province": "Hunan",
+        "days": 182,
+        "monthly_cost_usd": 1800,
+        "env_risk": 2.97,
+        "medical_risk": 1.33,
+        "TREI": 0.74,
+        "utility": 8.569,
         "decision": "ALLOWED"
       }
     ],
-    "annual_cost_usd": 18479,
+    "annual_cost_usd": 21583,
     "total_days": 365,
     "provinces_visited": [
-      "Guizhou",
-      "Henan"
+      "Hebei",
+      "Hunan"
     ],
     "frontier_share": 0
   },
@@ -805,40 +809,40 @@
     "R_age": 0.506,
     "band": "Cultural deep-dive",
     "trei_cutoff": 2.36,
-    "start_city": "CN-HA-ZHENGZHOU",
+    "start_city": "CN-HN-CHANGSHA",
     "cities": [
       {
-        "id": "CN-SC-CHENGDU",
-        "name": "成都",
-        "name_en": "Chengdu",
-        "province": "Sichuan",
-        "days": 198,
+        "id": "CN-SD-JINAN",
+        "name": "济南",
+        "name_en": "Jinan",
+        "province": "Shandong",
+        "days": 179,
+        "monthly_cost_usd": 1800,
+        "env_risk": 2.57,
+        "medical_risk": 1.33,
+        "TREI": 0.68,
+        "utility": 8.127,
+        "decision": "ALLOWED"
+      },
+      {
+        "id": "CN-HB-WUHAN",
+        "name": "武汉",
+        "name_en": "Wuhan",
+        "province": "Hubei",
+        "days": 186,
         "monthly_cost_usd": 1800,
         "env_risk": 2.97,
         "medical_risk": 1.33,
         "TREI": 0.78,
-        "utility": 10.171,
-        "decision": "ALLOWED"
-      },
-      {
-        "id": "CN-YN-KUNMING",
-        "name": "昆明",
-        "name_en": "Kunming",
-        "province": "Yunnan",
-        "days": 167,
-        "monthly_cost_usd": 1800,
-        "env_risk": 2.98,
-        "medical_risk": 1.33,
-        "TREI": 0.78,
-        "utility": 8.607,
+        "utility": 8.533,
         "decision": "ALLOWED"
       }
     ],
     "annual_cost_usd": 21583,
     "total_days": 365,
     "provinces_visited": [
-      "Sichuan",
-      "Yunnan"
+      "Shandong",
+      "Hubei"
     ],
     "frontier_share": 0
   },
@@ -848,40 +852,40 @@
     "R_age": 0.476,
     "band": "Cultural deep-dive",
     "trei_cutoff": 2.51,
-    "start_city": "CN-YN-KUNMING",
+    "start_city": "CN-HB-WUHAN",
     "cities": [
       {
-        "id": "CN-SN-XIAN",
-        "name": "西安",
-        "name_en": "Xi'an",
-        "province": "Shaanxi",
-        "days": 210,
-        "monthly_cost_usd": 1800,
-        "env_risk": 2.28,
-        "medical_risk": 1.33,
-        "TREI": 0.64,
-        "utility": 11.733,
+        "id": "CN-SC-LUZHOU",
+        "name": "泸州",
+        "name_en": "Luzhou",
+        "province": "Sichuan",
+        "days": 162,
+        "monthly_cost_usd": 1300,
+        "env_risk": 2.97,
+        "medical_risk": 1.87,
+        "TREI": 1.16,
+        "utility": 6.686,
         "decision": "ALLOWED"
       },
       {
-        "id": "CN-BJ-BEIJING",
-        "name": "北京",
-        "name_en": "Beijing",
-        "province": "Beijing",
-        "days": 155,
-        "monthly_cost_usd": 3200,
-        "env_risk": 2.28,
-        "medical_risk": 0.87,
-        "TREI": 0.42,
-        "utility": 8.714,
+        "id": "CN-GZ-TONGREN",
+        "name": "铜仁市",
+        "name_en": "Tongren",
+        "province": "Guizhou",
+        "days": 203,
+        "monthly_cost_usd": 1300,
+        "env_risk": 1.3,
+        "medical_risk": 1.87,
+        "TREI": 0.51,
+        "utility": 8.47,
         "decision": "ALLOWED"
       }
     ],
-    "annual_cost_usd": 28712,
+    "annual_cost_usd": 15588,
     "total_days": 365,
     "provinces_visited": [
-      "Shaanxi",
-      "Beijing"
+      "Sichuan",
+      "Guizhou"
     ],
     "frontier_share": 0
   },
@@ -891,19 +895,19 @@
     "R_age": 0.445,
     "band": "Cultural deep-dive",
     "trei_cutoff": 2.68,
-    "start_city": "CN-BJ-BEIJING",
+    "start_city": "CN-GZ-TONGREN",
     "cities": [
       {
-        "id": "CN-HA-LUOYANG",
-        "name": "洛阳",
-        "name_en": "Luoyang",
-        "province": "Henan",
-        "days": 192,
-        "monthly_cost_usd": 1300,
-        "env_risk": 2.28,
-        "medical_risk": 1.87,
-        "TREI": 0.96,
-        "utility": 8.926,
+        "id": "CN-CQ-BANAN",
+        "name": "巴南区",
+        "name_en": "Banan",
+        "province": "Chongqing",
+        "days": 158,
+        "monthly_cost_usd": 1100,
+        "env_risk": 2.97,
+        "medical_risk": 3.33,
+        "TREI": 2.22,
+        "utility": 6.373,
         "decision": "ALLOWED"
       },
       {
@@ -911,19 +915,19 @@
         "name": "贵阳",
         "name_en": "Guiyang",
         "province": "Guizhou",
-        "days": 173,
+        "days": 207,
         "monthly_cost_usd": 1800,
         "env_risk": 2.01,
         "medical_risk": 1.33,
         "TREI": 0.6,
-        "utility": 8.082,
+        "utility": 8.379,
         "decision": "ALLOWED"
       }
     ],
-    "annual_cost_usd": 18430,
+    "annual_cost_usd": 17950,
     "total_days": 365,
     "provinces_visited": [
-      "Henan",
+      "Chongqing",
       "Guizhou"
     ],
     "frontier_share": 0
@@ -937,35 +941,36 @@
     "start_city": "CN-GZ-GUIYANG",
     "cities": [
       {
-        "id": "CN-GZ-TONGREN",
-        "name": "铜仁市",
-        "name_en": "Tongren",
-        "province": "Guizhou",
-        "days": 189,
-        "monthly_cost_usd": 1300,
+        "id": "CN-YN-SHUIFU",
+        "name": "向家坝",
+        "name_en": "Shuifu",
+        "province": "Yunnan",
+        "days": 185,
+        "monthly_cost_usd": 1100,
         "env_risk": 1.3,
-        "medical_risk": 1.87,
-        "TREI": 0.59,
-        "utility": 8.28,
+        "medical_risk": 3.33,
+        "TREI": 1.05,
+        "utility": 7.764,
         "decision": "ALLOWED"
       },
       {
-        "id": "CN-GZ-KAILI",
-        "name": "凯里",
-        "name_en": "Kaili",
+        "id": "CN-GZ-LONGPING",
+        "name": "龙坪",
+        "name_en": "Longping",
         "province": "Guizhou",
-        "days": 176,
-        "monthly_cost_usd": 1300,
-        "env_risk": 1.54,
-        "medical_risk": 1.87,
-        "TREI": 0.7,
-        "utility": 7.736,
+        "days": 180,
+        "monthly_cost_usd": 1100,
+        "env_risk": 1.3,
+        "medical_risk": 3.33,
+        "TREI": 1.05,
+        "utility": 7.594,
         "decision": "ALLOWED"
       }
     ],
-    "annual_cost_usd": 15588,
+    "annual_cost_usd": 13190,
     "total_days": 365,
     "provinces_visited": [
+      "Yunnan",
       "Guizhou"
     ],
     "frontier_share": 0
@@ -976,40 +981,39 @@
     "R_age": 0.383,
     "band": "Cultural deep-dive",
     "trei_cutoff": 3.12,
-    "start_city": "CN-GZ-KAILI",
+    "start_city": "CN-GZ-LONGPING",
     "cities": [
       {
-        "id": "CN-SC-CHENGDU",
-        "name": "成都",
-        "name_en": "Chengdu",
-        "province": "Sichuan",
-        "days": 202,
-        "monthly_cost_usd": 1800,
-        "env_risk": 2.97,
-        "medical_risk": 1.33,
-        "TREI": 1.03,
-        "utility": 9.019,
+        "id": "CN-GZ-KAILI",
+        "name": "凯里",
+        "name_en": "Kaili",
+        "province": "Guizhou",
+        "days": 184,
+        "monthly_cost_usd": 1300,
+        "env_risk": 1.54,
+        "medical_risk": 1.87,
+        "TREI": 0.75,
+        "utility": 7.613,
         "decision": "ALLOWED"
       },
       {
-        "id": "CN-HA-ZHENGZHOU",
-        "name": "郑州",
-        "name_en": "Zhengzhou",
-        "province": "Henan",
-        "days": 163,
-        "monthly_cost_usd": 1800,
-        "env_risk": 2.28,
-        "medical_risk": 1.33,
-        "TREI": 0.79,
-        "utility": 7.353,
+        "id": "CN-GZ-HEPING",
+        "name": "和平",
+        "name_en": "Heping",
+        "province": "Guizhou",
+        "days": 181,
+        "monthly_cost_usd": 1100,
+        "env_risk": 1.3,
+        "medical_risk": 3.33,
+        "TREI": 1.13,
+        "utility": 7.503,
         "decision": "ALLOWED"
       }
     ],
-    "annual_cost_usd": 21583,
+    "annual_cost_usd": 14399,
     "total_days": 365,
     "provinces_visited": [
-      "Sichuan",
-      "Henan"
+      "Guizhou"
     ],
     "frontier_share": 0
   },
@@ -1019,26 +1023,26 @@
     "R_age": 0.35,
     "band": "Cultural deep-dive",
     "trei_cutoff": 3.41,
-    "start_city": "CN-HA-ZHENGZHOU",
+    "start_city": "CN-GZ-HEPING",
     "cities": [
       {
-        "id": "CN-SN-XIAN",
-        "name": "西安",
-        "name_en": "Xi'an",
-        "province": "Shaanxi",
+        "id": "CN-HB-EZHOU",
+        "name": "鄂州",
+        "name_en": "E'zhou",
+        "province": "Hubei",
         "days": 365,
-        "monthly_cost_usd": 1800,
-        "env_risk": 2.28,
-        "medical_risk": 1.33,
-        "TREI": 0.87,
-        "utility": 10.265,
+        "monthly_cost_usd": 1300,
+        "env_risk": 2.97,
+        "medical_risk": 1.87,
+        "TREI": 1.58,
+        "utility": 6.084,
         "decision": "ALLOWED"
       }
     ],
-    "annual_cost_usd": 21583,
+    "annual_cost_usd": 15588,
     "total_days": 365,
     "provinces_visited": [
-      "Shaanxi"
+      "Hubei"
     ],
     "frontier_share": 0
   },
@@ -1048,36 +1052,7 @@
     "R_age": 0.35,
     "band": "Climate & comfort",
     "trei_cutoff": 3.41,
-    "start_city": "CN-SN-XIAN",
-    "cities": [
-      {
-        "id": "CN-ZJ-HANGZHOU",
-        "name": "杭州",
-        "name_en": "Hangzhou",
-        "province": "Zhejiang",
-        "days": 365,
-        "monthly_cost_usd": 1800,
-        "env_risk": 2.97,
-        "medical_risk": 1.33,
-        "TREI": 1.13,
-        "utility": 13.115,
-        "decision": "ALLOWED"
-      }
-    ],
-    "annual_cost_usd": 21583,
-    "total_days": 365,
-    "provinces_visited": [
-      "Zhejiang"
-    ],
-    "frontier_share": 0
-  },
-  {
-    "age": 72,
-    "seed": 2140801521,
-    "R_age": 0.35,
-    "band": "Climate & comfort",
-    "trei_cutoff": 3.41,
-    "start_city": "CN-ZJ-HANGZHOU",
+    "start_city": "CN-HB-EZHOU",
     "cities": [
       {
         "id": "CN-FJ-XIAMEN",
@@ -1101,8 +1076,8 @@
     "frontier_share": 0
   },
   {
-    "age": 73,
-    "seed": 500269888,
+    "age": 72,
+    "seed": 2140801521,
     "R_age": 0.35,
     "band": "Climate & comfort",
     "trei_cutoff": 3.41,
@@ -1130,31 +1105,60 @@
     "frontier_share": 0
   },
   {
-    "age": 74,
-    "seed": 3154713875,
+    "age": 73,
+    "seed": 500269888,
     "R_age": 0.35,
     "band": "Climate & comfort",
     "trei_cutoff": 3.41,
     "start_city": "CN-GD-SHENZHEN",
     "cities": [
       {
-        "id": "CN-GD-GUANGZHOU",
-        "name": "广州",
-        "name_en": "Guangzhou",
-        "province": "Guangdong",
+        "id": "CN-HI-HAIKOU",
+        "name": "海口",
+        "name_en": "Haikou",
+        "province": "Hainan",
         "days": 365,
-        "monthly_cost_usd": 3200,
-        "env_risk": 2.97,
-        "medical_risk": 0.87,
+        "monthly_cost_usd": 2150,
+        "env_risk": 1.92,
+        "medical_risk": 1.33,
         "TREI": 0.73,
-        "utility": 12.308,
+        "utility": 11.655,
         "decision": "ALLOWED"
       }
     ],
-    "annual_cost_usd": 38371,
+    "annual_cost_usd": 25780,
     "total_days": 365,
     "provinces_visited": [
-      "Guangdong"
+      "Hainan"
+    ],
+    "frontier_share": 0
+  },
+  {
+    "age": 74,
+    "seed": 3154713875,
+    "R_age": 0.35,
+    "band": "Climate & comfort",
+    "trei_cutoff": 3.41,
+    "start_city": "CN-HI-HAIKOU",
+    "cities": [
+      {
+        "id": "CN-GX-GUILIN",
+        "name": "桂林",
+        "name_en": "Guilin",
+        "province": "Guangxi",
+        "days": 365,
+        "monthly_cost_usd": 1300,
+        "env_risk": 2.97,
+        "medical_risk": 1.87,
+        "TREI": 1.58,
+        "utility": 12.13,
+        "decision": "ALLOWED"
+      }
+    ],
+    "annual_cost_usd": 15588,
+    "total_days": 365,
+    "provinces_visited": [
+      "Guangxi"
     ],
     "frontier_share": 0
   },
@@ -1164,7 +1168,7 @@
     "R_age": 0.35,
     "band": "Climate & comfort",
     "trei_cutoff": 3.41,
-    "start_city": "CN-GD-GUANGZHOU",
+    "start_city": "CN-GX-GUILIN",
     "cities": [
       {
         "id": "CN-ZJ-HANGZHOU",
@@ -1196,6 +1200,64 @@
     "start_city": "CN-ZJ-HANGZHOU",
     "cities": [
       {
+        "id": "CN-JS-NANJING",
+        "name": "南京",
+        "name_en": "Nanjing",
+        "province": "Jiangsu",
+        "days": 365,
+        "monthly_cost_usd": 1800,
+        "env_risk": 2.97,
+        "medical_risk": 1.33,
+        "TREI": 1.13,
+        "utility": 12.502,
+        "decision": "ALLOWED"
+      }
+    ],
+    "annual_cost_usd": 21583,
+    "total_days": 365,
+    "provinces_visited": [
+      "Jiangsu"
+    ],
+    "frontier_share": 0
+  },
+  {
+    "age": 77,
+    "seed": 2528094724,
+    "R_age": 0.35,
+    "band": "Climate & comfort",
+    "trei_cutoff": 3.41,
+    "start_city": "CN-JS-NANJING",
+    "cities": [
+      {
+        "id": "CN-SH-SHANGHAI",
+        "name": "上海",
+        "name_en": "Shanghai",
+        "province": "Shanghai",
+        "days": 365,
+        "monthly_cost_usd": 3350,
+        "env_risk": 2.71,
+        "medical_risk": 0.87,
+        "TREI": 0.67,
+        "utility": 13.35,
+        "decision": "ALLOWED"
+      }
+    ],
+    "annual_cost_usd": 40169,
+    "total_days": 365,
+    "provinces_visited": [
+      "Shanghai"
+    ],
+    "frontier_share": 0
+  },
+  {
+    "age": 78,
+    "seed": 887563223,
+    "R_age": 0.35,
+    "band": "Climate & comfort",
+    "trei_cutoff": 3.41,
+    "start_city": "CN-SH-SHANGHAI",
+    "cities": [
+      {
         "id": "CN-FJ-XIAMEN",
         "name": "厦门",
         "name_en": "Xiamen",
@@ -1217,8 +1279,8 @@
     "frontier_share": 0
   },
   {
-    "age": 77,
-    "seed": 2528094724,
+    "age": 79,
+    "seed": 3542007206,
     "R_age": 0.35,
     "band": "Climate & comfort",
     "trei_cutoff": 3.41,
@@ -1246,89 +1308,31 @@
     "frontier_share": 0
   },
   {
-    "age": 78,
-    "seed": 887563223,
+    "age": 80,
+    "seed": 1901475689,
     "R_age": 0.35,
     "band": "Climate & comfort",
     "trei_cutoff": 3.41,
     "start_city": "CN-GD-SHENZHEN",
     "cities": [
       {
-        "id": "CN-GD-GUANGZHOU",
-        "name": "广州",
-        "name_en": "Guangzhou",
-        "province": "Guangdong",
+        "id": "CN-HI-HAIKOU",
+        "name": "海口",
+        "name_en": "Haikou",
+        "province": "Hainan",
         "days": 365,
-        "monthly_cost_usd": 3200,
-        "env_risk": 2.97,
-        "medical_risk": 0.87,
+        "monthly_cost_usd": 2150,
+        "env_risk": 1.92,
+        "medical_risk": 1.33,
         "TREI": 0.73,
-        "utility": 12.308,
+        "utility": 11.655,
         "decision": "ALLOWED"
       }
     ],
-    "annual_cost_usd": 38371,
+    "annual_cost_usd": 25780,
     "total_days": 365,
     "provinces_visited": [
-      "Guangdong"
-    ],
-    "frontier_share": 0
-  },
-  {
-    "age": 79,
-    "seed": 3542007206,
-    "R_age": 0.35,
-    "band": "Climate & comfort",
-    "trei_cutoff": 3.41,
-    "start_city": "CN-GD-GUANGZHOU",
-    "cities": [
-      {
-        "id": "CN-ZJ-HANGZHOU",
-        "name": "杭州",
-        "name_en": "Hangzhou",
-        "province": "Zhejiang",
-        "days": 365,
-        "monthly_cost_usd": 1800,
-        "env_risk": 2.97,
-        "medical_risk": 1.33,
-        "TREI": 1.13,
-        "utility": 13.115,
-        "decision": "ALLOWED"
-      }
-    ],
-    "annual_cost_usd": 21583,
-    "total_days": 365,
-    "provinces_visited": [
-      "Zhejiang"
-    ],
-    "frontier_share": 0
-  },
-  {
-    "age": 80,
-    "seed": 1901475689,
-    "R_age": 0.35,
-    "band": "Climate & comfort",
-    "trei_cutoff": 3.41,
-    "start_city": "CN-ZJ-HANGZHOU",
-    "cities": [
-      {
-        "id": "CN-FJ-XIAMEN",
-        "name": "厦门",
-        "name_en": "Xiamen",
-        "province": "Fujian",
-        "days": 365,
-        "monthly_cost_usd": 1950,
-        "env_risk": 2.71,
-        "medical_risk": 1.33,
-        "TREI": 1.03,
-        "utility": 12.696,
-        "decision": "ALLOWED"
-      }
-    ],
-    "annual_cost_usd": 23382,
-    "total_days": 365,
-    "provinces_visited": [
-      "Fujian"
+      "Hainan"
     ],
     "frontier_share": 0
   }

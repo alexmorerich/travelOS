@@ -267,6 +267,7 @@ export interface AgeBand {
   comfort_bonus: number;        // weight on 18–25°C climate fit (grows with age)
   hospital_bonus: number;       // weight on tier-3A hospital access (grows with age)
   frontier_share_target: number;// intended share of frontier-province time (reporting)
+  explore: boolean;             // true => prefer never-visited cities (broad coverage); false => allow settling
 }
 
 export interface AgeBandsConfig {

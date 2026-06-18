@@ -40,6 +40,7 @@ export interface YearContext {
   age: number;
   startCity: string;
   visitedRecent: Set<string>;
+  visitedEver: Set<string>;
   rng: Rng;
   seed: number;
   weights: RoutingWeights;
@@ -70,14 +71,19 @@ function utilityOf(
   const zoneTerm = band.target_provinces.includes(city.province) ? band.zone_bonus : 0;
   const comfortTerm = band.comfort_bonus * comfortFit(city);
   const hospitalTerm = band.hospital_bonus * clamp(1 - medRisk / 10, 0, 1);
+  // Rural-discovery / coverage bonus: pull in county seats early, fade to ~0 by
+  // the comfort phase (where hospital access matters more than novelty).
+  const ruralTerm = city.county ? 1.6 * clamp(1 - band.hospital_bonus / 3.5, 0, 1) : 0;
 
-  return cultureTerm - costTerm - travelTerm + zoneTerm + comfortTerm + hospitalTerm;
+  return cultureTerm - costTerm - travelTerm + zoneTerm + comfortTerm + hospitalTerm + ruralTerm;
 }
 
 export function planYear(ctx: YearContext): YearPlan {
-  const { nodes, graph, age, startCity, visitedRecent, rng, seed, weights } = ctx;
+  const { nodes, graph, age, startCity, visitedRecent, visitedEver, rng, seed, weights } = ctx;
   const R = rAge(age);
   const band = bandForAge(age);
+  // Explore bands sweep new ground (avoid ever-visited); the comfort band may settle.
+  const exclude = band.explore ? visitedEver : visitedRecent;
 
   // Per-age risk for every node, plus the feasible-set TREI distribution.
   const byId = new Map<string, { city: ProcessedCity; med: number; treiVal: number; blocked: boolean }>();
@@ -97,27 +103,36 @@ export function planYear(ctx: YearContext): YearPlan {
   const usedThisYear = new Set<string>();
   let current = startCity;
 
-  // Regional anchor: each year, migrate (one long-haul move) into the best
-  // feasible city of this band's target zone, then explore locally from there.
-  // This is what lets the Expedition band actually reach the far frontier that
-  // a radius-limited walk from the south could never hop to.
+  // Regional anchor: each year, migrate (one long-haul move) into this band's
+  // target zone, then explore locally. The focus province ROTATES year by year
+  // so the Expedition band spreads across ALL of Xinjiang / Tibet / Inner
+  // Mongolia / Heilongjiang instead of concentrating in whichever happens to
+  // have the most cities. Falls back to the whole zone if the focus is infeasible.
   if (band.target_provinces.length > 0) {
-    let bestRec: { city: ProcessedCity; med: number; treiVal: number } | null = null;
-    let bestU = -Infinity;
-    for (const city of nodes) {
-      if (!band.target_provinces.includes(city.province) || visitedRecent.has(city.id)) continue;
-      const rec = byId.get(city.id);
-      if (!rec || rec.blocked) continue;
-      const u = utilityOf(rec.city, rec.treiVal, 0, weights, band, rec.med); // no travel cost: it's a flight
-      if (u > bestU) { bestU = u; bestRec = rec; }
-    }
-    if (bestRec) {
+    const focus = new Set([band.target_provinces[(age - band.age_from) % band.target_provinces.length]]);
+    const zone = new Set(band.target_provinces);
+    const pickAnchor = (provs: Set<string>, useExclude: boolean) => {
+      let bestRec: { city: ProcessedCity; med: number; treiVal: number } | null = null;
+      let bestU = -Infinity;
+      for (const city of nodes) {
+        if (!provs.has(city.province) || usedThisYear.has(city.id)) continue;
+        if (useExclude && exclude.has(city.id)) continue;
+        const rec = byId.get(city.id);
+        if (!rec || rec.blocked) continue;
+        const u = utilityOf(rec.city, rec.treiVal, 0, weights, band, rec.med); // no travel: it's a flight
+        if (u > bestU) { bestU = u; bestRec = rec; }
+      }
+      return bestRec ? { rec: bestRec, u: bestU } : null;
+    };
+    // prefer a never-visited city in the rotating focus province; widen as needed
+    const a = pickAnchor(focus, true) ?? pickAnchor(zone, true) ?? pickAnchor(focus, false) ?? pickAnchor(zone, false);
+    if (a) {
       chosen.push({
-        city: bestRec.city, medical_risk: bestRec.med, TREI: bestRec.treiVal,
-        utility: bestU, decision: decide(false, bestRec.treiVal, cutoff),
+        city: a.rec.city, medical_risk: a.rec.med, TREI: a.rec.treiVal,
+        utility: a.u, decision: decide(false, a.rec.treiVal, cutoff),
       });
-      usedThisYear.add(bestRec.city.id);
-      current = bestRec.city.id;
+      usedThisYear.add(a.rec.city.id);
+      current = a.rec.city.id;
     }
   }
 
@@ -125,24 +140,27 @@ export function planYear(ctx: YearContext): YearPlan {
     const neighbours = graph.adj.get(current);
     if (!neighbours || neighbours.size === 0) break;
 
-    const candidates: { scored: Scored; travelKm: number }[] = [];
-    for (const [id, edge] of neighbours) {
-      if (usedThisYear.has(id) || visitedRecent.has(id)) continue;
-      const rec = byId.get(id);
-      if (!rec || rec.blocked) continue;
-      const u = utilityOf(rec.city, rec.treiVal, edge.distance_km, weights, band, rec.med);
-      candidates.push({
-        scored: {
-          city: rec.city,
-          medical_risk: rec.med,
-          TREI: rec.treiVal,
-          utility: u,
-          decision: decide(false, rec.treiVal, cutoff),
-        },
-        travelKm: edge.distance_km,
-      });
-    }
-    if (candidates.length === 0) break; // backtrack: no feasible neighbour -> stop early
+    const buildCandidates = (useExclude: boolean) => {
+      const out: { scored: Scored; travelKm: number }[] = [];
+      for (const [id, edge] of neighbours) {
+        if (usedThisYear.has(id)) continue;
+        if (useExclude && exclude.has(id)) continue;
+        const rec = byId.get(id);
+        if (!rec || rec.blocked) continue;
+        const u = utilityOf(rec.city, rec.treiVal, edge.distance_km, weights, band, rec.med);
+        out.push({
+          scored: {
+            city: rec.city, medical_risk: rec.med, TREI: rec.treiVal,
+            utility: u, decision: decide(false, rec.treiVal, cutoff),
+          },
+          travelKm: edge.distance_km,
+        });
+      }
+      return out;
+    };
+    let candidates = buildCandidates(true);
+    if (candidates.length === 0) candidates = buildCandidates(false); // fall back to visited if no new ground
+    if (candidates.length === 0) break;
 
     candidates.sort((a, b) => b.scored.utility - a.scored.utility);
     const best = candidates[0].scored.utility;

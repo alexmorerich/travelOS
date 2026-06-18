@@ -2,16 +2,16 @@
 age: 51
 calendar_year: 2027
 r_age: 0.856
-annual_cost_usd: 15588
-cities: ["Daqing", "Qiqihar", "Suihua"]
-provinces: ["Heilongjiang"]
-lead_trei: 0.78
+annual_cost_usd: 25480
+cities: ["Motuo", "Xi'an", "Beijing"]
+provinces: ["Tibet", "Shaanxi", "Beijing"]
+lead_trei: 1.38
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 51
 
-> Physiology factor **R_age = 0.856** · TREI cutoff 1.4 · annual cost **$15,588**
+> Physiology factor **R_age = 0.856** · TREI cutoff 1.4 · annual cost **$25,480**
 
 [[Age-50|← Age 50]] · [[Age-52|Age 52 →]]
 
@@ -19,28 +19,28 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Daqing (大庆) | Heilongjiang | 123 | 1300 | 3.58 | 1.87 | 0.78 | ALLOWED |
-| Qiqihar (齊齊哈爾) | Heilongjiang | 122 | 1300 | 3.58 | 1.87 | 0.78 | ALLOWED |
-| Suihua (綏化) | Heilongjiang | 120 | 1300 | 3.58 | 1.87 | 0.78 | ALLOWED |
+| Motuo (墨脱) | Tibet | 92 | 1050 | 1.77 | 6.67 | 1.38 | ALLOWED |
+| Xi'an (西安) | Shaanxi | 139 | 1800 | 2.28 | 1.33 | 0.36 | ALLOWED |
+| Beijing (北京) | Beijing | 134 | 3200 | 2.28 | 0.87 | 0.23 | ALLOWED |
 
 
 ## Monthly schedule — calendar 2027
 
-> Q1 Daqing (-7.8°C) · Q2 Qiqihar (15.3°C) · Q3 Qiqihar (21.7°C) · Q4 Suihua (-1.7°C)
+> Q1 Motuo (4.7°C) · Q2 Xi'an (20.2°C) · Q3 Beijing (24.9°C) · Q4 Xi'an (8.4°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Daqing (大庆) | -11.8 | 18.8 |
-| Feb | Daqing (大庆) | -9.3 | 17 |
-| Mar | Daqing (大庆) | -2.4 | 12.2 |
-| Apr | Suihua (綏化) | 6.8 | 5.8 |
-| May | Qiqihar (齊齊哈爾) | 16.1 | 0 |
-| Jun | Qiqihar (齊齊哈爾) | 23.1 | 0 |
-| Jul | Qiqihar (齊齊哈爾) | 25.7 | 0 |
-| Aug | Qiqihar (齊齊哈爾) | 23.1 | 0 |
-| Sep | Suihua (綏化) | 16.2 | 0 |
-| Oct | Suihua (綏化) | 6.8 | 5.8 |
-| Nov | Suihua (綏化) | -2.7 | 12.4 |
-| Dec | Daqing (大庆) | -9.3 | 17 |
+| Jan | Motuo (墨脱) | 2.6 | 8.7 |
+| Feb | Motuo (墨脱) | 4.1 | 7.6 |
+| Mar | Xi'an (西安) | 7.3 | 5.4 |
+| Apr | Xi'an (西安) | 13.9 | 0.8 |
+| May | Xi'an (西安) | 20.6 | 0 |
+| Jun | Beijing (北京) | 26.1 | 0 |
+| Jul | Beijing (北京) | 28.2 | 1.3 |
+| Aug | Beijing (北京) | 26.1 | 0 |
+| Sep | Beijing (北京) | 20.3 | 0 |
+| Oct | Xi'an (西安) | 13.9 | 0.8 |
+| Nov | Xi'an (西安) | 7.3 | 5.4 |
+| Dec | Motuo (墨脱) | 4.1 | 7.6 |
 
-Starts from `CN-SC-CHENGDU`. See [[Travel-OS-Overview]].
+Starts from `CN-XJ-EMIN`. See [[Travel-OS-Overview]].

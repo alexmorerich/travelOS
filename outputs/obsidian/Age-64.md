@@ -2,16 +2,16 @@
 age: 64
 calendar_year: 2040
 r_age: 0.535
-annual_cost_usd: 18479
-cities: ["Tongren", "Zhengzhou"]
-provinces: ["Guizhou", "Henan"]
-lead_trei: 0.45
+annual_cost_usd: 21583
+cities: ["Shijiazhuang", "Changsha"]
+provinces: ["Hebei", "Hunan"]
+lead_trei: 0.57
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 64
 
-> Physiology factor **R_age = 0.535** · TREI cutoff 2.23 · annual cost **$18,479**
+> Physiology factor **R_age = 0.535** · TREI cutoff 2.23 · annual cost **$21,583**
 
 [[Age-63|← Age 63]] · [[Age-65|Age 65 →]]
 
@@ -19,27 +19,27 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Tongren (铜仁市) | Guizhou | 189 | 1300 | 1.3 | 1.87 | 0.45 | ALLOWED |
-| Zhengzhou (郑州) | Henan | 176 | 1800 | 2.28 | 1.33 | 0.57 | ALLOWED |
+| Shijiazhuang (石家庄) | Hebei | 183 | 1800 | 2.28 | 1.33 | 0.57 | ALLOWED |
+| Changsha (长沙) | Hunan | 182 | 1800 | 2.97 | 1.33 | 0.74 | ALLOWED |
 
 
 ## Monthly schedule — calendar 2040
 
-> Q1 Tongren (11.3°C) · Q2 Zhengzhou (23.1°C) · Q3 Zhengzhou (26.3°C) · Q4 Tongren (13.5°C)
+> Q1 Changsha (12.1°C) · Q2 Shijiazhuang (22.6°C) · Q3 Shijiazhuang (25.3°C) · Q4 Changsha (12.6°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Tongren (铜仁市) | 9.1 | 4.1 |
-| Feb | Tongren (铜仁市) | 10.5 | 3.1 |
-| Mar | Tongren (铜仁市) | 14.3 | 0.5 |
-| Apr | Tongren (铜仁市) | 19.5 | 0 |
-| May | Zhengzhou (郑州) | 22.4 | 0 |
-| Jun | Zhengzhou (郑州) | 27.3 | 0.8 |
-| Jul | Zhengzhou (郑州) | 29.1 | 1.9 |
-| Aug | Zhengzhou (郑州) | 27.3 | 0.8 |
-| Sep | Zhengzhou (郑州) | 22.4 | 0 |
-| Oct | Zhengzhou (郑州) | 15.6 | 0 |
-| Nov | Tongren (铜仁市) | 14.3 | 0.5 |
-| Dec | Tongren (铜仁市) | 10.5 | 3.1 |
+| Jan | Changsha (长沙) | 9.8 | 3.6 |
+| Feb | Changsha (长沙) | 11.3 | 2.6 |
+| Mar | Changsha (长沙) | 15.1 | 0 |
+| Apr | Changsha (长沙) | 20.4 | 0 |
+| May | Shijiazhuang (石家庄) | 21 | 0 |
+| Jun | Shijiazhuang (石家庄) | 26.5 | 0.3 |
+| Jul | Shijiazhuang (石家庄) | 28.5 | 1.5 |
+| Aug | Shijiazhuang (石家庄) | 26.5 | 0.3 |
+| Sep | Shijiazhuang (石家庄) | 21 | 0 |
+| Oct | Changsha (长沙) | 20.4 | 0 |
+| Nov | Shijiazhuang (石家庄) | 6 | 6.3 |
+| Dec | Changsha (长沙) | 11.3 | 2.6 |
 
-Starts from `CN-YN-DALI`. See [[Travel-OS-Overview]].
+Starts from `CN-CQ-CHONGQING`. See [[Travel-OS-Overview]].

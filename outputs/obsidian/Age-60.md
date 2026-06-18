@@ -2,16 +2,16 @@
 age: 60
 calendar_year: 2036
 r_age: 0.646
-annual_cost_usd: 15588
-cities: ["Daxing'anling", "Mudanjiang", "Qitaihe"]
-provinces: ["Heilongjiang"]
-lead_trei: 1.03
+annual_cost_usd: 19341
+cities: ["Lhasa", "Dali", "Kunming"]
+provinces: ["Tibet", "Yunnan"]
+lead_trei: 4.24
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 60
 
-> Physiology factor **R_age = 0.646** · TREI cutoff 1.85 · annual cost **$15,588**
+> Physiology factor **R_age = 0.646** · TREI cutoff 1.85 · annual cost **$19,341**
 
 [[Age-59|← Age 59]] · [[Age-61|Age 61 →]]
 
@@ -19,28 +19,28 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Daxing'anling (大兴安岭) | Heilongjiang | 126 | 1300 | 3.58 | 1.87 | 1.03 | ALLOWED |
-| Mudanjiang (牡丹江) | Heilongjiang | 116 | 1300 | 3.58 | 1.87 | 1.03 | ALLOWED |
-| Qitaihe (七台河) | Heilongjiang | 123 | 1300 | 3.58 | 1.87 | 1.03 | ALLOWED |
+| Lhasa (拉萨) | Tibet | 95 | 1750 | 4.84 | 5.67 | 4.24 | LOW_PRIORITY |
+| Dali (大理) | Yunnan | 127 | 1300 | 3.08 | 1.87 | 0.89 | ALLOWED |
+| Kunming (昆明) | Yunnan | 143 | 1800 | 2.98 | 1.33 | 0.61 | ALLOWED |
 
 
 ## Monthly schedule — calendar 2036
 
-> Q1 Mudanjiang (-6.4°C) · Q2 Qitaihe (14.6°C) · Q3 Daxing'anling (18.6°C) · Q4 Qitaihe (-0.9°C)
+> Q1 Kunming (3.5°C) · Q2 Dali (14.1°C) · Q3 Lhasa (5°C) · Q4 Kunming (6.3°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Mudanjiang (牡丹江) | -10.2 | 17.6 |
-| Feb | Mudanjiang (牡丹江) | -7.8 | 15.9 |
-| Mar | Mudanjiang (牡丹江) | -1.2 | 11.3 |
-| Apr | Qitaihe (七台河) | 7.2 | 5.5 |
-| May | Qitaihe (七台河) | 16.4 | 0 |
-| Jun | Daxing'anling (大兴安岭) | 20.3 | 0 |
-| Jul | Daxing'anling (大兴安岭) | 23.2 | 0 |
-| Aug | Daxing'anling (大兴安岭) | 20.3 | 0 |
-| Sep | Daxing'anling (大兴安岭) | 12.4 | 1.8 |
-| Oct | Qitaihe (七台河) | 7.2 | 5.5 |
-| Nov | Qitaihe (七台河) | -2.1 | 11.9 |
-| Dec | Mudanjiang (牡丹江) | -7.8 | 15.9 |
+| Jan | Kunming (昆明) | 1.6 | 9.4 |
+| Feb | Kunming (昆明) | 2.8 | 8.5 |
+| Mar | Kunming (昆明) | 6.2 | 6.2 |
+| Apr | Dali (大理) | 9.8 | 3.6 |
+| May | Dali (大理) | 14.5 | 0.3 |
+| Jun | Dali (大理) | 18 | 0 |
+| Jul | Lhasa (拉萨) | 7.4 | 5.4 |
+| Aug | Lhasa (拉萨) | 5.8 | 6.4 |
+| Sep | Lhasa (拉萨) | 1.7 | 9.3 |
+| Oct | Dali (大理) | 9.8 | 3.6 |
+| Nov | Kunming (昆明) | 6.2 | 6.2 |
+| Dec | Kunming (昆明) | 2.8 | 8.5 |
 
-Starts from `CN-HL-SHUANGYASHAN`. See [[Travel-OS-Overview]].
+Starts from `CN-XJ-HUOCHENG`. See [[Travel-OS-Overview]].

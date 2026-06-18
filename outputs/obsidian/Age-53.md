@@ -2,16 +2,16 @@
 age: 53
 calendar_year: 2029
 r_age: 0.815
-annual_cost_usd: 15588
-cities: ["Hegang", "Heihe", "Jiamusi"]
-provinces: ["Heilongjiang"]
-lead_trei: 0.82
+annual_cost_usd: 18512
+cities: ["Oroqen Zizhiqi", "Shenyang", "Hangzhou"]
+provinces: ["Inner Mongolia", "Liaoning", "Zhejiang"]
+lead_trei: 1.85
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 53
 
-> Physiology factor **R_age = 0.815** · TREI cutoff 1.47 · annual cost **$15,588**
+> Physiology factor **R_age = 0.815** · TREI cutoff 1.47 · annual cost **$18,512**
 
 [[Age-52|← Age 52]] · [[Age-54|Age 54 →]]
 
@@ -19,28 +19,28 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Hegang (鶴崗) | Heilongjiang | 125 | 1300 | 3.58 | 1.87 | 0.82 | ALLOWED |
-| Heihe (黑河) | Heilongjiang | 120 | 1300 | 3.58 | 1.87 | 0.82 | ALLOWED |
-| Jiamusi (佳木斯) | Heilongjiang | 120 | 1300 | 3.58 | 1.87 | 0.82 | ALLOWED |
+| Oroqen Zizhiqi (鄂伦春自治旗) | Inner Mongolia | 110 | 950 | 2.26 | 6.67 | 1.85 | LOW_PRIORITY |
+| Shenyang (沈阳) | Liaoning | 124 | 1800 | 3.58 | 1.33 | 0.59 | ALLOWED |
+| Hangzhou (杭州) | Zhejiang | 131 | 1800 | 2.97 | 1.33 | 0.49 | ALLOWED |
 
 
 ## Monthly schedule — calendar 2029
 
-> Q1 Jiamusi (-7.5°C) · Q2 Hegang (14.8°C) · Q3 Heihe (20.7°C) · Q4 Hegang (-2.1°C)
+> Q1 Hangzhou (10.2°C) · Q2 Shenyang (16.9°C) · Q3 Oroqen Zizhiqi (21°C) · Q4 Oroqen Zizhiqi (4.8°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Jiamusi (佳木斯) | -11.5 | 18.6 |
-| Feb | Jiamusi (佳木斯) | -9 | 16.8 |
-| Mar | Jiamusi (佳木斯) | -2.1 | 11.9 |
-| Apr | Hegang (鶴崗) | 6.2 | 6.1 |
-| May | Hegang (鶴崗) | 15.8 | 0 |
-| Jun | Heihe (黑河) | 22.3 | 0 |
-| Jul | Heihe (黑河) | 25 | 0 |
-| Aug | Heihe (黑河) | 22.3 | 0 |
-| Sep | Heihe (黑河) | 14.8 | 0.2 |
-| Oct | Hegang (鶴崗) | 6.2 | 6.1 |
-| Nov | Hegang (鶴崗) | -3.4 | 12.9 |
-| Dec | Jiamusi (佳木斯) | -9 | 16.8 |
+| Jan | Hangzhou (杭州) | 7.8 | 5.1 |
+| Feb | Hangzhou (杭州) | 9.3 | 4 |
+| Mar | Hangzhou (杭州) | 13.6 | 1 |
+| Apr | Shenyang (沈阳) | 11 | 2.8 |
+| May | Shenyang (沈阳) | 19.4 | 0 |
+| Jun | Oroqen Zizhiqi (鄂伦春自治旗) | 20.4 | 0 |
+| Jul | Oroqen Zizhiqi (鄂伦春自治旗) | 23.1 | 0 |
+| Aug | Oroqen Zizhiqi (鄂伦春自治旗) | 20.4 | 0 |
+| Sep | Shenyang (沈阳) | 19.4 | 0 |
+| Oct | Oroqen Zizhiqi (鄂伦春自治旗) | 2.5 | 8.8 |
+| Nov | Shenyang (沈阳) | 2.6 | 8.6 |
+| Dec | Hangzhou (杭州) | 9.3 | 4 |
 
-Starts from `CN-SD-QINGDAO`. See [[Travel-OS-Overview]].
+Starts from `CN-HA-LUOYANG`. See [[Travel-OS-Overview]].
