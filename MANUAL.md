@@ -386,9 +386,10 @@ This is **not** a slideshow or an autoplay animation. The page *is* the timeline
 
 ### 10.2 Layout
 
-- **Left (sticky):** the China map — faint dots for all candidate cities, a blue trail of your route so far, a pulsing marker on the current city — plus a live readout panel and a life-progress bar.
-- **Right (scrolls):** one card per **stay** (a contiguous run of months in the same city). The active card glows in its season color; neighbors fade.
-- **Mobile (<880px):** single column; the map docks to the top as a compact sticky banner.
+- **Left (sticky):** the China map — faint dots for all candidate cities, a blue trail of your route so far, a pulsing marker on the current city — plus the **month bar** (annual clock), a life-progress bar, and the live readout panel (with the mood line).
+- **Right (scrolls):** one card per **stay** (a contiguous run of months in the same city), separated by `🌈 Transition Week` marks. The active card glows in its season color; neighbors fade.
+- **Fixed corner:** the **season badge** (`🌱/🌊/🍂/❄`).
+- **Mobile (<880px):** single column; the map docks to the top as a compact sticky banner; the badge moves to the bottom corner.
 
 ### 10.3 The "stay" node
 
@@ -402,18 +403,29 @@ The 372 months are collapsed into **city-stay segments** (≈163 on the default 
 | **↓ / → / ↑ / ←** | Jump to the next / previous stay (smooth-scrolls it to center). |
 | **Scroll-snap** | `scroll-snap-type: y proximity` + `scroll-snap-align: center` — cards gently settle to center without trapping inertial scroll. |
 
-### 10.5 Seasonal color system
+### 10.5 Season Engine
 
-Each stay is tagged with the **actual N-hemisphere season of its start month** (the season you arrive in) — not decoration:
+An **additive chronobiology layer** over the (unchanged) city scheduler. Because city switching is climate-optimized, the felt sense of seasons can blur; the Season Engine restores annual rhythm so the experience reads as *"living through years,"* not hopping 2,348 cities. Each stay is tagged with the **actual N-hemisphere season of its start month** (the season you arrive in) — not decoration.
 
-| Months | Season | CSS variable | Cognitive meaning |
+**Palette** (per season: primary / secondary / accent) and **semantics:**
+
+| Months | Season | primary · secondary · accent | Mood (suggestions) |
 |---|---|---|---|
-| 3–5 | spring | `--spring: hsl(140,30%,85%)` | start / planning |
-| 6–8 | summer | `--summer: hsl(30,90%,65%)` | peak activity / travel density |
-| 9–11 | autumn | `--autumn: hsl(15,60%,50%)` | reflection / transition |
-| 12,1,2 | winter | `--winter: hsl(200,40%,80%)` | rest / low entropy |
+| 3–5 | 🌱 spring | `#DFF5E3` · `#A8E6A3` · `#FFF7C2` | Study · Build · Learn |
+| 6–8 | 🌊 summer | `#7DD3FC` · `#38BDF8` · `#FEF08A` | Hiking · Sports · Exploration |
+| 9–11 | 🍂 autumn | `#F59E0B` · `#D97706` · `#92400E` | Writing · Reading · Long projects |
+| 12,1,2 | ❄ winter | `#CBD5E1` · `#94A3B8` · `#0F172A` | Review · Planning · Recovery |
 
-The season drives (a) the card's left-border accent and season chip, and (b) one of four full-bleed background layers that **crossfade** (opacity transition) as the active season changes — smooth banding, no hard jumps.
+**How it's wired** — the live palette is three CSS custom properties `--sp` / `--ss` / `--sa`, **registered via `@property`** so they *interpolate* (≈1.5 s ease) instead of snapping at season boundaries. One rule (`[data-season="…"]`) feeds **both** `<html>` (the global/animated theme, set by `setActive()`) and each `.seg` card (static — its own arrival season). Crucially, the palette is applied as **accents + a subtle wash over the dark base** (background gradient, progress bar, badge, borders, card tint), never as raw page backgrounds — that would blow out the dark cockpit and break readability (which the spec itself requires).
+
+**Five surfaces the engine drives:**
+1. **Global theme** — the whole UI eases Green → Blue → Orange → Gray as the active stay's season changes.
+2. **Month bar** — a compact Jan…Dec strip (DJF winter · MAM spring · JJA summer · SON autumn), with the active stay's months lit (start month strongest): the annual clock.
+3. **Season badge** — fixed corner `🌱/🌊/🍂/❄ + WORD`, white text on a season-tinted pill (readable on any season), gentle `breathe` animation.
+4. **Transition marks** — a purple `🌈 Transition Week` interstitial between consecutive stays (chapter breaks); the mark leading into the active stay lights up. *(The spec's literal "7-day timer" is a time-elapsing idea that doesn't fit scroll navigation, so it's realized spatially.)*
+5. **Mood layer** — season-appropriate activity suggestions in the readout (suggestions only, never forced).
+
+Per-card: the head chip is `emoji + Season`, the left border + tint use the card's own season, and the active card glows in it.
 
 ### 10.6 Non-linear time scaling
 
@@ -428,8 +440,9 @@ Short stays (rapid travel) expand toward **1.6**; long settles compress toward *
 ### 10.7 Performance
 
 - `content-visibility: auto` + `contain-intrinsic-size` on every card — the browser skips rendering off-screen cards. This **is** native virtualization; at ≈163 nodes (≪ ~1000) no JS windowing is needed.
-- Two `IntersectionObserver`s: a **reveal** observer fades/slides each card in as it enters; an **active** observer (center band `-46% 0 -46% 0`) marks the centered card and updates the map, readout, season background, and neighbor fade.
-- `prefers-reduced-motion` disables smooth scrolling.
+- Two `IntersectionObserver`s: a **reveal** observer fades/slides each card in as it enters; an **active** observer (center band `-46% 0 -46% 0`) marks the centered card and updates the map, readout, neighbor fade, **and the whole Season Engine** (global palette, badge, month bar, transition mark, mood).
+- Season transitions ride **registered `@property` custom-property interpolation** (no per-frame JS); browsers without `@property` simply swap colors instantly (graceful degradation).
+- `prefers-reduced-motion` disables smooth scrolling and the seasonal interpolation.
 
 ### 10.8 Customizing it
 
@@ -437,15 +450,18 @@ All in `src/dashboard/timeline_generator.ts`, then `npm run simulate`:
 
 | Want to change | Where |
 |---|---|
-| Season colors | `:root` CSS variables (`--spring`…`--winter`). |
-| Density curve | `scaleFor(months)`. |
+| Season palette | the `[data-season="…"]` CSS rules (`--sp`/`--ss`/`--sa`). |
+| Season interpolation speed | the `transition` on `html` (default `1.5s`). |
 | Season boundaries / hemisphere | `seasonOf(month)`. |
+| Emoji / season words / moods | `SEASON_EMOJI` · `SEASON_WORD` · `SEASON_MOOD` (TS) and `SEMOJI`/`SWORD`/`SMOOD` (client). |
+| Transition-mark text | the `.xfer` markup in `cardsHtml`. |
+| Density curve | `scaleFor(months)`. |
 | Node granularity | the segment-collapse loop (group by something other than city). |
 | Snap firmness | `scroll-snap-type` (`proximity` ↔ `mandatory`). |
 | Active-card sensitivity | the active observer's `rootMargin`. |
-| Readout fields | the `setActive()` DOM writes + the readout markup. |
+| Readout / month-bar / badge updates | the `setActive()` DOM writes. |
 
-Browser support: modern evergreen (Chrome/Edge/Firefox/Safari). Uses `content-visibility`, `color-mix()`, `IntersectionObserver`, CSS scroll-snap.
+Browser support: modern evergreen (Chrome/Edge/Firefox/Safari). Uses `@property`, `content-visibility`, `color-mix()`, `IntersectionObserver`, CSS scroll-snap. Real seasonal photos are intentionally omitted to keep the file self-contained/offline — the seasonal *atmosphere* is pure CSS.
 
 ---
 

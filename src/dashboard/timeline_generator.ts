@@ -1,4 +1,4 @@
-// Life Timeline OS — interaction-driven, scroll-as-time navigation.
+// Life Timeline OS — interaction-driven, scroll-as-time navigation + Season Engine.
 //
 // Not a slideshow and not an autoplay loop. The page itself is the timeline:
 // you scroll through your life and the sticky map fills in your route footprint
@@ -6,14 +6,22 @@
 // place you live) — the low-entropy unit. Scroll position drives everything via
 // IntersectionObserver; there is no setInterval, no fixed-speed playback.
 //
-// Cognitive system layered on top:
-//   • Non-linear time — fast travel (short stays) expands, settling compresses,
-//     so visual density ≈ cognitive density (--time-scale per segment).
-//   • Seasonal colour — each segment is tagged with the season it begins in
-//     (N. hemisphere), driving a crossfading background band + card accent.
-//   • content-visibility:auto culls off-screen cards natively (real
-//     virtualization at this scale; 163 nodes ≪ the ~1000 where JS windowing
-//     would start to pay off).
+// The Season Engine is an ADDITIVE chronobiology layer on top of the (unchanged)
+// city scheduler. Its job is to restore the felt sense of annual rhythm even
+// though city switching is climate-optimized: as the active stay changes, the
+// whole UI eases between four seasonal palettes — Green → Blue → Orange → Gray —
+// so the user perceives "living through years," not "hopping 2,348 cities."
+//   • Global theme — live --sp/--ss/--sa (primary/secondary/accent) CSS vars,
+//     registered with @property so they interpolate smoothly (~1.5s) at season
+//     boundaries. Applied as accents + a subtle wash over the dark base, never
+//     as raw backgrounds (readability first).
+//   • Month bar — a compact Jan…Dec strip, color-coded by season, the active
+//     stay's months highlighted: the annual clock.
+//   • Season badge — fixed corner 🌱/🌊/🍂/❄ with a gentle breathe.
+//   • Transition marks — a purple 🌈 interstitial between stays (chapters).
+//   • Mood layer — season-appropriate activity suggestions (never forced).
+//   • Non-linear time — fast travel expands, settling compresses (--time-scale).
+//   • content-visibility:auto culls off-screen cards (native virtualization).
 // Data is inlined so it opens straight from disk, no server, no CDN.
 import { bandForAge } from "../core_engine/routing_engine";
 import type { ScheduleYear, ProcessedCity, FinanceResult } from "../types";
@@ -50,8 +58,8 @@ interface Segment {
 }
 
 // Northern-hemisphere calendar season (China). The *actual* season experienced
-// on arrival, not decoration — it maps to cognition: spring=start/planning,
-// summer=peak activity, autumn=transition, winter=rest/low-entropy.
+// on arrival, not decoration — it maps to cognition: spring=start/learning,
+// summer=exploration, autumn=reflection, winter=rest/review.
 function seasonOf(m: number): Season {
   if (m >= 3 && m <= 5) return "spring";
   if (m >= 6 && m <= 8) return "summer";
@@ -64,6 +72,17 @@ function seasonOf(m: number): Season {
 function scaleFor(months: number): number {
   return Math.round(Math.max(0.6, Math.min(1.6, 1.6 - (months - 1) * 0.25)) * 100) / 100;
 }
+
+// Season Engine palette + semantics (the v2 spec). Emoji + mood drive the badge,
+// the card chips, and the suggestion layer; the hex palette lives in CSS.
+const SEASON_EMOJI: Record<Season, string> = { spring: "🌱", summer: "🌊", autumn: "🍂", winter: "❄" };
+const SEASON_WORD: Record<Season, string> = { spring: "Spring", summer: "Summer", autumn: "Autumn", winter: "Winter" };
+const SEASON_MOOD: Record<Season, string[]> = {
+  spring: ["Study", "Build", "Learn"],
+  summer: ["Hiking", "Sports", "Exploration"],
+  autumn: ["Writing", "Reading", "Long projects"],
+  winter: ["Review", "Planning", "Recovery"],
+};
 
 export function renderTimeline(input: TimelineInput): string {
   const byId = new Map(input.cities.map((c) => [c.id, c]));
@@ -128,9 +147,11 @@ export function renderTimeline(input: TimelineInput): string {
   };
 
   const span = months.length ? `${months[0].y}–${months[months.length - 1].y}` : "";
+  const firstSeason: Season = segments[0]?.season ?? "winter";
 
   // Pre-render the segment cards server-side (data-first: data.map -> node).
   // Each carries its --time-scale and data-season; client JS only toggles state.
+  // A purple 🌈 Transition mark is interleaved between stays (chapter breaks).
   const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   const usd = (n: number) => "$" + Math.round(n).toLocaleString("en-US");
   const cardsHtml = segments
@@ -140,10 +161,15 @@ export function renderTimeline(input: TimelineInput): string {
           ? `${MON[s.startM - 1]} ${s.startY}`
           : `${MON[s.startM - 1]} ${s.startY} – ${MON[s.endM - 1]} ${s.endY}`;
       const dur = s.months === 1 ? "1 month" : `${s.months} months`;
+      const xfer =
+        s.i > 0
+          ? `<div class="xfer" aria-hidden="true"><span class="xfer__dot">🌈</span><span class="xfer__lab">Transition Week</span></div>`
+          : "";
       return (
+        xfer +
         `<article class="seg" id="seg${s.i}" data-i="${s.i}" data-season="${s.season}" style="--time-scale:${s.scale}">` +
         `<div class="seg__card">` +
-        `<div class="seg__head"><span class="seg__season">${s.season}</span><span class="seg__date">${range} · ${dur}</span></div>` +
+        `<div class="seg__head"><span class="seg__season">${SEASON_EMOJI[s.season]} ${SEASON_WORD[s.season]}</span><span class="seg__date">${range} · ${dur}</span></div>` +
         `<div class="seg__city">${s.zh} · ${s.city}</div>` +
         `<div class="seg__meta">${s.prov} · age ${s.age} · ${s.band}</div>` +
         `<div class="seg__nums"><span>${usd(s.cost)}/mo</span><span>${s.temp}°C · nights ${s.night}°C</span></div>` +
@@ -152,33 +178,55 @@ export function renderTimeline(input: TimelineInput): string {
     })
     .join("");
 
+  // Month bar — the annual clock (DJF winter · MAM spring · JJA summer · SON autumn).
+  const monthCells = MON.map((mn, idx) =>
+    `<b data-season="${seasonOf(idx + 1)}" title="${mn}">${mn[0]}</b>`,
+  ).join("");
+
   return `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"/>
+<html lang="en" data-season="${firstSeason}"><head><meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Travel Life OS — Life Timeline</title>
 <style>
+  /* Registered so the live season vars INTERPOLATE (not snap) at boundaries. */
+  @property --sp { syntax: "<color>"; inherits: true; initial-value: #CBD5E1; }
+  @property --ss { syntax: "<color>"; inherits: true; initial-value: #94A3B8; }
+  @property --sa { syntax: "<color>"; inherits: true; initial-value: #0F172A; }
+
   :root {
     color-scheme: dark;
     --bg:#0c1320; --panel:#111a2b; --line:#1e2a40; --ink:#dfe6f1; --dim:#7c8aa5;
-    /* Seasonal cognitive palette */
-    --spring: hsl(140, 30%, 85%);
-    --summer: hsl(30, 90%, 65%);
-    --autumn: hsl(15, 60%, 50%);
-    --winter: hsl(200, 40%, 80%);
+    --sp:#CBD5E1; --ss:#94A3B8; --sa:#0F172A;     /* live season palette (winter default) */
   }
+  /* The v2 seasonal palette — one rule, consumed by BOTH <html> (live/global,
+     animated) and each .seg card (static, its own arrival season). */
+  [data-season="spring"]{ --sp:#DFF5E3; --ss:#A8E6A3; --sa:#FFF7C2; }
+  [data-season="summer"]{ --sp:#7DD3FC; --ss:#38BDF8; --sa:#FEF08A; }
+  [data-season="autumn"]{ --sp:#F59E0B; --ss:#D97706; --sa:#92400E; }
+  [data-season="winter"]{ --sp:#CBD5E1; --ss:#94A3B8; --sa:#0F172A; }
+
   * { box-sizing: border-box; }
-  html { scroll-snap-type: y proximity; scroll-behavior: smooth; scroll-padding: 38vh 0; }
-  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+  /* Smooth ~1.5s seasonal cross-interpolation on the global vars. */
+  html { scroll-snap-type: y proximity; scroll-behavior: smooth; scroll-padding: 38vh 0;
+         transition: --sp 1.5s ease, --ss 1.5s ease, --sa 1.5s ease; }
+  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; transition:none; } }
   body { margin:0; background:var(--bg); color:var(--ink); font:14px/1.5 -apple-system,Segoe UI,Roboto,sans-serif; }
 
-  /* Crossfading seasonal background bands (subtle tint over the dark base). */
-  .seasonbg{ position:fixed; inset:0; z-index:-1; background:var(--bg); }
-  .seasonbg .sb{ position:absolute; inset:0; opacity:0; transition:opacity .8s ease; }
-  .seasonbg .sb.on{ opacity:1; }
-  .sb[data-season="spring"]{ background:radial-gradient(130% 90% at 28% 0%, color-mix(in srgb, var(--spring) 17%, var(--bg)), var(--bg) 62%); }
-  .sb[data-season="summer"]{ background:radial-gradient(130% 90% at 72% 0%, color-mix(in srgb, var(--summer) 18%, var(--bg)), var(--bg) 60%); }
-  .sb[data-season="autumn"]{ background:radial-gradient(130% 95% at 50% 5%, color-mix(in srgb, var(--autumn) 17%, var(--bg)), var(--bg) 60%); }
-  .sb[data-season="winter"]{ background:radial-gradient(130% 95% at 50% 0%, color-mix(in srgb, var(--winter) 14%, var(--bg)), var(--bg) 64%); }
+  /* Subtle full-bleed seasonal wash over the dark base — tracks the live var,
+     so it eases Green→Blue→Orange→Gray as you scroll through the years. */
+  .seasonbg{ position:fixed; inset:0; z-index:-1; background:var(--bg);
+    background-image:radial-gradient(135% 95% at 50% -5%, color-mix(in srgb, var(--ss) 20%, var(--bg)), var(--bg) 60%); }
+
+  /* Season badge — fixed corner, gentle breathe. Text stays white (readable on
+     any season); the emoji + glow carry the color cue. */
+  .seasonbadge{ position:fixed; top:14px; right:16px; z-index:20; display:flex; align-items:center; gap:7px;
+    padding:7px 13px; border-radius:999px; font-size:12px; font-weight:700; letter-spacing:.14em;
+    color:#f4f8ff; background:color-mix(in srgb, var(--ss) 20%, rgba(12,19,32,.72)); backdrop-filter:blur(7px);
+    border:1px solid color-mix(in srgb, var(--ss) 55%, var(--line));
+    box-shadow:0 6px 24px -10px color-mix(in srgb, var(--ss) 80%, #000);
+    transition:background 1.5s ease, border-color 1.5s ease, box-shadow 1.5s ease;
+    animation:breathe 5s ease-in-out infinite; }
+  @keyframes breathe { 0%,100%{ transform:scale(1); opacity:.92 } 50%{ transform:scale(1.035); opacity:1 } }
 
   .wrap { max-width:1100px; margin:0 auto; padding:26px 20px 0; }
   h1 { font-size:21px; margin:0 0 2px; }
@@ -186,13 +234,29 @@ export function renderTimeline(input: TimelineInput): string {
 
   .osframe { display:grid; grid-template-columns:minmax(320px, 1fr) minmax(300px, 380px); gap:26px; align-items:start; }
 
-  /* Sticky map + live readout — the cognitive anchor while you scroll. */
+  /* Sticky map + live readout — the cognitive anchor while you scroll. Borders
+     pick up a faint season tint that eases with the global var. */
   .deck { position:sticky; top:18px; }
-  .mapwrap { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:8px; }
+  .mapwrap { background:var(--panel); border:1px solid color-mix(in srgb, var(--ss) 24%, var(--line)); border-radius:14px; padding:8px;
+    transition:border-color 1.5s ease; }
   svg#map { width:100%; height:auto; display:block; }
+
+  /* Month bar — the annual clock. */
+  .monthbar{ display:grid; grid-template-columns:repeat(12,1fr); gap:3px; margin:12px 2px 0; }
+  .monthbar b{ font:600 10px/1 ui-monospace,Menlo,monospace; text-align:center; padding:5px 0; border-radius:5px;
+    color:#0b1220; opacity:.34; transition:opacity .4s ease, box-shadow .4s ease, transform .4s ease; }
+  .monthbar b[data-season="spring"]{ background:#A8E6A3; }
+  .monthbar b[data-season="summer"]{ background:#38BDF8; }
+  .monthbar b[data-season="autumn"]{ background:#D97706; }
+  .monthbar b[data-season="winter"]{ background:#94A3B8; }
+  .monthbar b.now{ opacity:.9; }
+  .monthbar b.now-start{ opacity:1; transform:translateY(-1px); box-shadow:0 0 0 2px var(--bg), 0 0 0 3px #fff; }
+
   .lifebar { height:4px; background:var(--line); border-radius:999px; margin:12px 2px 14px; overflow:hidden; }
-  .lifebar i { display:block; height:100%; width:0; background:linear-gradient(90deg,#4f8bff,#9fd0ff); border-radius:999px; transition:width .4s ease; }
-  .readout { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px 20px; }
+  .lifebar i { display:block; height:100%; width:0; background:linear-gradient(90deg, var(--ss), var(--sp)); border-radius:999px;
+    transition:width .4s ease, background 1.5s ease; }
+  .readout { background:var(--panel); border:1px solid color-mix(in srgb, var(--ss) 22%, var(--line)); border-radius:14px; padding:18px 20px;
+    transition:border-color 1.5s ease; }
   .phase { display:inline-block; font-size:11px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; padding:3px 10px; border-radius:999px; background:var(--line); color:#9fd0ff; margin-bottom:8px; }
   .date { color:var(--dim); font-size:13px; }
   .city { font-size:26px; font-weight:680; margin:3px 0 2px; }
@@ -200,12 +264,26 @@ export function renderTimeline(input: TimelineInput): string {
   .stats > div { display:flex; justify-content:space-between; align-items:baseline; padding:8px 0; border-top:1px solid #1b2740; }
   .stats span { color:var(--dim); font-size:12.5px; }
   .stats b { font-size:17px; font-weight:650; }
-  .legend { color:#5d6a85; font-size:11.5px; margin-top:14px; }
+  .mood { margin-top:13px; font-size:12px; color:color-mix(in srgb, var(--ss) 60%, var(--ink)); letter-spacing:.02em; transition:color 1.5s ease; }
+  .legend { color:#5d6a85; font-size:11.5px; margin-top:10px; }
   @keyframes pulse { 0%{r:7;opacity:.5} 70%{r:15;opacity:0} 100%{opacity:0} }
   #halo { animation: pulse 1.7s ease-out infinite; }
 
   /* The timeline column: one card per stay, density-scaled, season-accented. */
-  .timeline { padding-block: 38vh; display:flex; flex-direction:column; gap:10px; }
+  .timeline { padding-block: 38vh; display:flex; flex-direction:column; gap:4px; }
+
+  /* Transition mark between stays — psychologically separates two chapters.
+     Subtle by default; lights up (label appears) when its next stay is active. */
+  .xfer{ display:flex; align-items:center; justify-content:center; gap:9px; min-height:24px; opacity:.45;
+    transition:opacity .45s ease; }
+  .xfer::before,.xfer::after{ content:""; height:1px; width:30px; }
+  .xfer::before{ background:linear-gradient(90deg, transparent, #A855F7); }
+  .xfer::after{ background:linear-gradient(90deg, #A855F7, transparent); }
+  .xfer__dot{ font-size:13px; }
+  .xfer__lab{ font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:#c4b5fd; opacity:0; transition:opacity .45s ease; white-space:nowrap; }
+  .xfer.lit{ opacity:1; }
+  .xfer.lit .xfer__lab{ opacity:1; }
+
   .seg {
     scroll-snap-align:center;
     min-height: calc(108px * var(--time-scale));     /* non-linear time scaling */
@@ -218,21 +296,18 @@ export function renderTimeline(input: TimelineInput): string {
   .seg:not(.in){ opacity:0; transform:translateY(26px); }   /* lazy reveal on enter */
   .seg.near{ opacity:.7; }
   .seg__card{
-    width:100%; background:var(--panel); border:1px solid var(--line);
-    border-left:3px solid color-mix(in srgb, var(--season-c) 65%, var(--line));
+    width:100%; background:color-mix(in srgb, var(--ss) 7%, var(--panel));   /* subtle seasonal tint */
+    border:1px solid var(--line);
+    border-left:3px solid color-mix(in srgb, var(--ss) 70%, var(--line));
     border-radius:14px; padding:16px 18px; transition:box-shadow .45s ease, border-color .45s ease;
   }
   .seg.is-active{ opacity:1; }
   .seg.is-active .seg__card{
-    border-color:color-mix(in srgb, var(--season-c) 45%, var(--line));
-    box-shadow:0 0 0 1px color-mix(in srgb, var(--season-c) 30%, transparent), 0 16px 46px -18px color-mix(in srgb, var(--season-c) 70%, #000);
+    border-color:color-mix(in srgb, var(--ss) 45%, var(--line));
+    box-shadow:0 0 0 1px color-mix(in srgb, var(--ss) 30%, transparent), 0 16px 46px -18px color-mix(in srgb, var(--ss) 70%, #000);
   }
-  .seg[data-season="spring"]{ --season-c:var(--spring); }
-  .seg[data-season="summer"]{ --season-c:var(--summer); }
-  .seg[data-season="autumn"]{ --season-c:var(--autumn); }
-  .seg[data-season="winter"]{ --season-c:var(--winter); }
   .seg__head{ display:flex; justify-content:space-between; align-items:center; gap:10px; margin-bottom:6px; }
-  .seg__season{ font-size:10.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:color-mix(in srgb, var(--season-c) 78%, #fff); }
+  .seg__season{ font-size:10.5px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:color-mix(in srgb, var(--ss) 78%, #fff); }
   .seg__date{ color:var(--dim); font-size:12px; }
   .seg__city{ font-size:19px; font-weight:660; }
   .seg__meta{ color:#9fb0cc; font-size:12.5px; margin-top:1px; }
@@ -243,13 +318,15 @@ export function renderTimeline(input: TimelineInput): string {
     .deck{ top:0; z-index:5; background:linear-gradient(var(--bg) 78%, transparent); padding:8px 0 10px; }
     svg#map{ max-height:30vh; }
     .timeline{ padding-block:30vh; }
+    .seasonbadge{ top:auto; bottom:14px; }
   }
 </style></head>
 <body>
-<div class="seasonbg"><div class="sb" data-season="spring"></div><div class="sb" data-season="summer"></div><div class="sb" data-season="autumn"></div><div class="sb" data-season="winter"></div></div>
+<div class="seasonbg"></div>
+<div class="seasonbadge" id="seasonbadge" aria-live="polite">❄ WINTER</div>
 <div class="wrap">
   <h1>🗺️ Travel Life OS — Life Timeline</h1>
-  <p class="sub">Scroll = time. ${segments.length} stays across ${months.length} months (${span}); the map fills in your route as you go. Fast travel expands, settling compresses. · seed ${input.seed}</p>
+  <p class="sub">Scroll = time. ${segments.length} stays across ${months.length} months (${span}); the map fills in your route and the whole UI eases through the seasons — 🌱 → 🌊 → 🍂 → ❄ — so you live through years, not 2,348 cities. · seed ${input.seed}</p>
 
   <div class="osframe">
     <div class="deck">
@@ -262,6 +339,7 @@ export function renderTimeline(input: TimelineInput): string {
           <circle id="marker" r="5.5" fill="#ffcf5a" stroke="#0c1320" stroke-width="1.6"/>
         </svg>
       </div>
+      <div class="monthbar" id="monthbar" title="Annual clock — current stay's months are lit">${monthCells}</div>
       <div class="lifebar"><i id="lifefill"></i></div>
       <div class="readout">
         <div class="phase" id="phase"></div>
@@ -273,7 +351,8 @@ export function renderTimeline(input: TimelineInput): string {
           <div><span>Spent since age 50</span><b id="spent"></b></div>
           <div><span>Median portfolio left</span><b id="rem"></b></div>
         </div>
-        <div class="legend">Faint dots = all ${input.cities.length} candidate cities. Each card is one stay; height ≈ pace (rapid travel taller, settled shorter). Colour = the season you arrive in. Portfolio is the median Monte-Carlo path. Planning model, not advice.</div>
+        <div class="mood" id="mood"></div>
+        <div class="legend">Faint dots = all ${input.cities.length} candidate cities. Each card is one stay; height ≈ pace, colour = the season you arrive in. The whole UI eases between seasonal palettes as you scroll. Portfolio is the median Monte-Carlo path. Planning model, not advice.</div>
       </div>
     </div>
 
@@ -285,12 +364,14 @@ var DATA = ${JSON.stringify(data)};
 var SEG = DATA.segments;
 var W=620,H=470,P=26, LNG0=73,LNG1=135,LAT0=17,LAT1=54;
 var MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var SEMOJI={spring:"🌱",summer:"🌊",autumn:"🍂",winter:"❄"};
+var SWORD={spring:"Spring",summer:"Summer",autumn:"Autumn",winter:"Winter"};
+var SMOOD={spring:["Study","Build","Learn"],summer:["Hiking","Sports","Exploration"],autumn:["Writing","Reading","Long projects"],winter:["Review","Planning","Recovery"]};
 function px(lng){ return P + ((lng-LNG0)/(LNG1-LNG0))*(W-2*P); }
 function py(lat){ return P + ((LAT1-lat)/(LAT1-LAT0))*(H-2*P); }
 function usd(n){ return "$"+Math.round(n).toLocaleString("en-US"); }
 
-var nodes=[], active=-1;
-var seasonLayers={};
+var nodes=[], monthCells=[], active=-1, litXfer=null;
 
 function init(){
   // Faint candidate-city dots (the route's possibility space).
@@ -301,10 +382,8 @@ function init(){
   }
   document.getElementById("dots").innerHTML=d;
 
-  var sbs=document.querySelectorAll(".seasonbg .sb");
-  for(var s=0;s<sbs.length;s++){ seasonLayers[sbs[s].getAttribute("data-season")]=sbs[s]; }
-
   nodes=[].slice.call(document.querySelectorAll(".seg"));
+  monthCells=[].slice.call(document.querySelectorAll("#monthbar b"));
 
   // Reveal observer — cards fade/slide in as they enter (lazy, no work off-screen).
   var reveal=new IntersectionObserver(function(es){
@@ -313,7 +392,7 @@ function init(){
   nodes.forEach(function(n){ reveal.observe(n); });
 
   // Active observer — the card crossing the viewport centre band IS "now".
-  // Scroll position alone drives time; no setInterval, no playback loop.
+  // Scroll position alone drives time AND the season engine; no setInterval.
   var center=new IntersectionObserver(function(es){
     var best=null, bestRatio=0;
     es.forEach(function(e){ if(e.isIntersecting && e.intersectionRatio>=bestRatio){ bestRatio=e.intersectionRatio; best=e.target; } });
@@ -338,17 +417,30 @@ function jump(dir){
 
 function setActive(i){
   if(i===active || !SEG[i]) return;
-  var prev=active; active=i;
+  active=i;
   var s=SEG[i];
 
+  // ── Season Engine: ease the whole UI into this stay's season ──
+  document.documentElement.setAttribute("data-season", s.season);
+  var badge=document.getElementById("seasonbadge");
+  badge.textContent = SEMOJI[s.season]+" "+SWORD[s.season].toUpperCase();
+  document.getElementById("mood").textContent = SEMOJI[s.season]+" in season · "+SMOOD[s.season].join(" · ");
+  // Annual clock: light the months this stay spans (start month strongest).
+  for(var c=0;c<monthCells.length;c++){ monthCells[c].classList.remove("now","now-start"); }
+  for(var k=0;k<s.months;k++){
+    var mi=((s.startM-1)+k)%12, cell=monthCells[mi];
+    if(cell){ cell.classList.add("now"); if(k===0) cell.classList.add("now-start"); }
+  }
+  // Transition mark: light the chapter break leading into this stay.
+  if(litXfer){ litXfer.classList.remove("lit"); litXfer=null; }
+  var prev=nodes[i] ? nodes[i].previousElementSibling : null;
+  if(prev && prev.classList.contains("xfer")){ prev.classList.add("lit"); litXfer=prev; }
+
   // Focus mode: highlight current, fade neighbours.
-  for(var k=0;k<nodes.length;k++){ nodes[k].classList.remove("is-active","near"); }
+  for(var n=0;n<nodes.length;n++){ nodes[n].classList.remove("is-active","near"); }
   if(nodes[i]) nodes[i].classList.add("is-active");
   if(nodes[i-1]) nodes[i-1].classList.add("near");
   if(nodes[i+1]) nodes[i+1].classList.add("near");
-
-  // Seasonal background crossfade.
-  for(var key in seasonLayers){ seasonLayers[key].classList.toggle("on", key===s.season); }
 
   // Route footprint up to here.
   var pts=[], vis="";

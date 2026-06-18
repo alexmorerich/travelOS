@@ -58,7 +58,7 @@ Each year is split into 12 months and each month placed in its most comfortable 
 
 ![Interactive timeline — scroll the 30-year route on a China map, with live city + cost](docs/timeline.png)
 
-> ⭐ **`open outputs/timeline.html`** — **scroll = time**: the 372 months collapse into ~163 *stays* (one card per city you live in), and the sticky map fills in your route as you scroll. Fast travel expands, settling compresses; each card is colored by the season you arrive in. The faint dots are all **2,348 cities** the engine routes over (the whole country, frontier included; of 3,149 total units), the blue trail is your route footprint (26 of 31 provinces over 30 years), and the badge is the lifecycle phase.
+> ⭐ **`open outputs/timeline.html`** — **scroll = time**: the 372 months collapse into ~163 *stays* (one card per city you live in), and the sticky map fills in your route as you scroll. Fast travel expands, settling compresses. A lightweight **Season Engine** eases the whole UI through 🌱→🌊→🍂→❄ (Green→Blue→Orange→Gray) — season badge, annual-clock month bar, per-stay color, and `🌈` transition marks — so it feels like *living through years*, not hopping cities. The faint dots are all **2,348 cities** the engine routes over (the whole country, frontier included; of 3,149 total units), the blue trail is your route footprint (26 of 31 provinces over 30 years).
 
 > Planning model, **not financial advice.** Non-geographic fields are rule-based estimates (see [Data honesty](#data-honesty)).
 
