@@ -6,6 +6,8 @@ A constrained life-trajectory optimizer — *not* a travel planner. It loads **2
 
 > **Does the money last to 80 — which life strategy survives best — and where should I physically be each month?**
 
+**🔴 Live demo — opens on any phone:** **<https://alexmorerich.github.io/travelos-demo/>**
+
 *English · [中文](#-中文文档)*
 
 ---
@@ -81,6 +83,8 @@ It loads **284 real Chinese cities**, scores each on risk, walks a year-by-year 
 | **Strategies** | It compares life plans (keep moving vs. buy a home and settle; onshore vs. offshore money) and ranks them by survival. |
 
 ### Your first run (3 steps)
+
+> **Just want to look?** Open the **[live demo](https://alexmorerich.github.io/travelos-demo/)** on your phone — no install needed. To run and customize it yourself:
 
 ```bash
 git clone https://github.com/alexmorerich/travelOS && cd travelOS
@@ -321,6 +325,8 @@ MIT © 2026 alexmorerich · city data © GeoNames (CC BY 4.0)
 
 **面向中国、覆盖 50–80 岁的确定性「地理-人生」规划 + 金融约束引擎。**
 
+**🔴 在线演示——手机即可打开：** **<https://alexmorerich.github.io/travelos-demo/>**
+
 这不是旅行规划器，而是**带约束的人生轨迹优化器**。它加载 **284 座真实地级市**，对每座城市的医疗 / 气候 / 海拔风险打分，在年龄生理约束下逐年在加权城市图上行走，对 50 万美元资产组合做耦合**住房、医疗、税务**的蒙特卡洛消耗模拟，并输出可导入 `.ics` 的**逐月居住日历**。它回答那三个决定一切的问题：
 
 > **钱能撑到 80 岁吗？哪种人生策略存活率最高？每个月该待在哪里？**
@@ -378,6 +384,8 @@ MIT © 2026 alexmorerich · city data © GeoNames (CC BY 4.0)
 | **策略** | 比较人生方案（一直游牧 vs 买房定居；在岸 vs 离岸），按存活率排序。 |
 
 ### 三步上手
+
+> **只想看看？** 用手机打开 **[在线演示](https://alexmorerich.github.io/travelos-demo/)**，无需安装。想自己运行并定制：
 
 ```bash
 git clone https://github.com/alexmorerich/travelOS && cd travelOS
