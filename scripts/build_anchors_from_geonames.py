@@ -9,7 +9,7 @@ tier / coastal / remote tags consumed by `npm run enrich`.
 Reproducible: re-run to regenerate. Source: https://www.geonames.org (CC BY).
 """
 import io, json, math, os, re, unicodedata, urllib.request, zipfile
-from collections import defaultdict
+from collections import defaultdict, Counter
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GEO = "https://download.geonames.org/export/dump"
@@ -168,28 +168,14 @@ def main():
         if n in CULTURE: a["culture"] = CULTURE[n]
         bykey[key] = a
 
-    # Select with GEOGRAPHIC SPREAD: keep every capital/prefecture seat, then
-    # round-robin the most populous county seats ACROSS PROVINCES so the frontier
-    # (Tibet / Xinjiang / Inner Mongolia) is covered too — not just the dense
-    # east that a pure population sort would pick.
-    TARGET = 1000
-    allnodes = list(bykey.values())
-    prefecture = [a for a in allnodes if a["_fc"] in ("PPLC", "PPLA", "PPLA2")]
-    by_prov = defaultdict(list)
-    for a in allnodes:
-        if a["_fc"] == "PPLA3":
-            by_prov[a["province"]].append(a)
-    for p in by_prov:
-        by_prov[p].sort(key=lambda a: -a["_pop"])
-    provs = sorted(by_prov)
-    selected, need, r = [], TARGET - len(prefecture), 0
-    while need > 0 and any(by_prov[p] for p in provs):
-        p = provs[r % len(provs)]
-        if by_prov[p]:
-            selected.append(by_prov[p].pop(0))
-            need -= 1
-        r += 1
-    anchors = prefecture + selected
+    # FULL COVERAGE: keep every seat GeoNames provides — province capitals (PPLC/
+    # PPLA), prefecture seats (PPLA2), and county seats (PPLA3). Target per MCA
+    # 2013 (xzqh.mca.gov.cn): 34 province-level / 333 prefecture-level / 2853
+    # county-level. GeoNames covers most county SEATS but not urban districts
+    # (市辖区), so the county count lands below 2853 — see the printed breakdown.
+    LEVEL = {"PPLC": "province", "PPLA": "province", "PPLA2": "prefecture", "PPLA3": "county"}
+    anchors = list(bykey.values())
+    by_level = Counter(LEVEL.get(a["_fc"], "?") for a in anchors)
     for a in anchors:
         a.pop("_pop", None)
         a.pop("_fc", None)
@@ -221,6 +207,10 @@ def main():
         json.dump(out, f, ensure_ascii=False, indent=2)
     prov = len({a["province"] for a in anchors})
     print(f"wrote {len(anchors)} anchors across {prov} provinces -> data/city_anchors.json")
+    print(f"  levels (GeoNames vs MCA-2013 target): "
+          f"province {by_level['province']}/34, "
+          f"prefecture {by_level['prefecture']}/333, "
+          f"county {by_level['county']}/2853")
     print("  tiers:", {t: sum(1 for a in anchors if a['tier'] == t) for t in (1, 2, 3)})
     print("  coastal:", sum(1 for a in anchors if a.get('coastal')),
           "remote:", sum(1 for a in anchors if a.get('remote')),

@@ -208,6 +208,7 @@ export interface SystemConfig {
   base_calendar_year: number;
   base_city: string;
   radius_km: number;
+  max_neighbors: number;
   max_cities_per_year: number;
   visited_window_years: number;
   days_per_year: number;

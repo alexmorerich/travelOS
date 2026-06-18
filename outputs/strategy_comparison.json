@@ -2,14 +2,14 @@
   {
     "key": "nomad_frugal",
     "label": "Nomad · frugal",
-    "survival_probability": 0.358,
+    "survival_probability": 0.354,
     "median_bankruptcy_age": 73,
-    "mean_annual_cost_usd": 17743,
-    "effective_withdrawal_rate": 0.0355,
+    "mean_annual_cost_usd": 17928,
+    "effective_withdrawal_rate": 0.0359,
     "median_terminal_net_worth": 0,
     "sample_itinerary_age65": [
-      "Dingtao",
-      "Wacheng Neighborhood"
+      "Tancheng",
+      "Wuhe Chengguanzhen"
     ],
     "buy": false,
     "settle_city": null,
@@ -17,33 +17,33 @@
     "property_price_usd": 0
   },
   {
-    "key": "offshore_frugal_settle",
-    "label": "Offshore + frugal + settle Chengdu",
-    "survival_probability": 0.1375,
-    "median_bankruptcy_age": 66,
-    "mean_annual_cost_usd": 29679,
-    "effective_withdrawal_rate": 0.0594,
-    "median_terminal_net_worth": 226800,
+    "key": "nomad_experience",
+    "label": "Nomad · experience",
+    "survival_probability": 0.1655,
+    "median_bankruptcy_age": 72,
+    "mean_annual_cost_usd": 22202,
+    "effective_withdrawal_rate": 0.0444,
+    "median_terminal_net_worth": 0,
     "sample_itinerary_age65": [
-      "Dingtao",
-      "Wacheng Neighborhood"
+      "Qingdao",
+      "Linyi"
     ],
-    "buy": true,
-    "settle_city": "CN-SC-CHENGDU",
-    "jurisdiction": "offshore",
-    "property_price_usd": 226800
+    "buy": false,
+    "settle_city": null,
+    "jurisdiction": "onshore",
+    "property_price_usd": 0
   },
   {
     "key": "settle_daya_bay",
     "label": "Buy & settle · Daya Bay",
-    "survival_probability": 0.135,
+    "survival_probability": 0.138,
     "median_bankruptcy_age": 66,
-    "mean_annual_cost_usd": 27086,
-    "effective_withdrawal_rate": 0.0542,
+    "mean_annual_cost_usd": 26934,
+    "effective_withdrawal_rate": 0.0539,
     "median_terminal_net_worth": 163800,
     "sample_itinerary_age65": [
       "Qingdao",
-      "Tongren"
+      "Rizhao"
     ],
     "buy": true,
     "settle_city": "CN-GD-HUIZHOU",
@@ -51,33 +51,33 @@
     "property_price_usd": 163800
   },
   {
-    "key": "nomad_experience",
-    "label": "Nomad · experience",
-    "survival_probability": 0.1235,
-    "median_bankruptcy_age": 71,
-    "mean_annual_cost_usd": 23761,
-    "effective_withdrawal_rate": 0.0475,
-    "median_terminal_net_worth": 0,
+    "key": "offshore_frugal_settle",
+    "label": "Offshore + frugal + settle Chengdu",
+    "survival_probability": 0.134,
+    "median_bankruptcy_age": 66,
+    "mean_annual_cost_usd": 29937,
+    "effective_withdrawal_rate": 0.0599,
+    "median_terminal_net_worth": 226800,
     "sample_itinerary_age65": [
-      "Jinan",
-      "Wuhan"
+      "Tancheng",
+      "Wuhe Chengguanzhen"
     ],
-    "buy": false,
-    "settle_city": null,
-    "jurisdiction": "onshore",
-    "property_price_usd": 0
+    "buy": true,
+    "settle_city": "CN-SC-CHENGDU",
+    "jurisdiction": "offshore",
+    "property_price_usd": 226800
   },
   {
     "key": "settle_chengdu",
     "label": "Buy & settle · Chengdu",
-    "survival_probability": 0.073,
+    "survival_probability": 0.0755,
     "median_bankruptcy_age": 66,
-    "mean_annual_cost_usd": 31312,
-    "effective_withdrawal_rate": 0.0626,
+    "mean_annual_cost_usd": 31158,
+    "effective_withdrawal_rate": 0.0623,
     "median_terminal_net_worth": 226800,
     "sample_itinerary_age65": [
       "Qingdao",
-      "Tongren"
+      "Rizhao"
     ],
     "buy": true,
     "settle_city": "CN-SC-CHENGDU",

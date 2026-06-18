@@ -2,16 +2,16 @@
 age: 60
 calendar_year: 2036
 r_age: 0.646
-annual_cost_usd: 19341
-cities: ["Lhasa", "Dali", "Kunming"]
-provinces: ["Tibet", "Yunnan"]
-lead_trei: 4.24
+annual_cost_usd: 14989
+cities: ["Nyingchi", "Nagqu", "Lhuenzhub"]
+provinces: ["Tibet"]
+lead_trei: 3.99
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 60
 
-> Physiology factor **R_age = 0.646** · TREI cutoff 1.85 · annual cost **$19,341**
+> Physiology factor **R_age = 0.646** · TREI cutoff 1.85 · annual cost **$14,989**
 
 [[Age-59|← Age 59]] · [[Age-61|Age 61 →]]
 
@@ -19,28 +19,28 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Lhasa (拉萨) | Tibet | 95 | 1750 | 4.84 | 5.67 | 4.24 | LOW_PRIORITY |
-| Dali (大理) | Yunnan | 127 | 1300 | 3.08 | 1.87 | 0.89 | ALLOWED |
-| Kunming (昆明) | Yunnan | 143 | 1800 | 2.98 | 1.33 | 0.61 | ALLOWED |
+| Nyingchi (Nyingchi) | Tibet | 129 | 1250 | 4.16 | 6.2 | 3.99 | LOW_PRIORITY |
+| Nagqu (那曲) | Tibet | 117 | 1250 | 5.07 | 6.2 | 4.86 | LOW_PRIORITY |
+| Lhuenzhub (Lhuenzhub) | Tibet | 119 | 1250 | 4.87 | 6.2 | 4.67 | LOW_PRIORITY |
 
 
 ## Monthly schedule — calendar 2036
 
-> Q1 Kunming (3.5°C) · Q2 Dali (14.1°C) · Q3 Lhasa (5°C) · Q4 Kunming (6.3°C)
+> Q1 Nyingchi (-8.3°C) · Q2 Lhuenzhub (-1.5°C) · Q3 Nagqu (-1.2°C) · Q4 Lhuenzhub (-8.2°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Kunming (昆明) | 1.6 | 9.4 |
-| Feb | Kunming (昆明) | 2.8 | 8.5 |
-| Mar | Kunming (昆明) | 6.2 | 6.2 |
-| Apr | Dali (大理) | 9.8 | 3.6 |
-| May | Dali (大理) | 14.5 | 0.3 |
-| Jun | Dali (大理) | 18 | 0 |
-| Jul | Lhasa (拉萨) | 7.4 | 5.4 |
-| Aug | Lhasa (拉萨) | 5.8 | 6.4 |
-| Sep | Lhasa (拉萨) | 1.7 | 9.3 |
-| Oct | Dali (大理) | 9.8 | 3.6 |
-| Nov | Kunming (昆明) | 6.2 | 6.2 |
-| Dec | Kunming (昆明) | 2.8 | 8.5 |
+| Jan | Nyingchi (Nyingchi) | -10.7 | 18 |
+| Feb | Nyingchi (Nyingchi) | -9.2 | 16.9 |
+| Mar | Nyingchi (Nyingchi) | -5.1 | 14.1 |
+| Apr | Lhuenzhub (Lhuenzhub) | -4.9 | 13.9 |
+| May | Lhuenzhub (Lhuenzhub) | 0.8 | 9.9 |
+| Jun | Nagqu (那曲) | -0.3 | 10.7 |
+| Jul | Nagqu (那曲) | 1.3 | 9.6 |
+| Aug | Nagqu (那曲) | -0.3 | 10.7 |
+| Sep | Nagqu (那曲) | -4.7 | 13.8 |
+| Oct | Lhuenzhub (Lhuenzhub) | -4.9 | 13.9 |
+| Nov | Lhuenzhub (Lhuenzhub) | -10.5 | 17.9 |
+| Dec | Nyingchi (Nyingchi) | -9.2 | 16.9 |
 
-Starts from `CN-XJ-HUOCHENG`. See [[Travel-OS-Overview]].
+Starts from `CN-XJ-GUMUDI`. See [[Travel-OS-Overview]].

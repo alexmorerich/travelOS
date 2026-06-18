@@ -3,7 +3,7 @@ age: 50
 calendar_year: 2026
 r_age: 0.875
 annual_cost_usd: 12590
-cities: ["Burqin", "Chapchal", "Shihezi", "Emin"]
+cities: ["Burqin", "Toqsun", "Sandaohezi", "Jing"]
 provinces: ["Xinjiang"]
 lead_trei: 1.72
 tags: [travel-os, yearly-plan]
@@ -20,28 +20,28 @@ tags: [travel-os, yearly-plan]
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
 | Burqin (Burqin) | Xinjiang | 94 | 1050 | 2.26 | 6.67 | 1.72 | LOW_PRIORITY |
-| Chapchal (察布查尔) | Xinjiang | 89 | 1050 | 2.38 | 6.67 | 1.81 | LOW_PRIORITY |
-| Shihezi (石河子) | Xinjiang | 91 | 1050 | 2.26 | 6.67 | 1.72 | LOW_PRIORITY |
-| Emin (额敏) | Xinjiang | 91 | 1050 | 2.29 | 6.67 | 1.74 | LOW_PRIORITY |
+| Toqsun (托克逊) | Xinjiang | 90 | 1050 | 2.26 | 6.67 | 1.72 | LOW_PRIORITY |
+| Sandaohezi (三道河子) | Xinjiang | 90 | 1050 | 2.3 | 6.67 | 1.75 | LOW_PRIORITY |
+| Jing (精河) | Xinjiang | 91 | 1050 | 2.26 | 6.67 | 1.72 | LOW_PRIORITY |
 
 
 ## Monthly schedule — calendar 2026
 
-> Q1 Shihezi (-7.7°C) · Q2 Chapchal (13.7°C) · Q3 Burqin (19.5°C) · Q4 Emin (-2.4°C)
+> Q1 Toqsun (-4.2°C) · Q2 Jing (14.4°C) · Q3 Burqin (19.8°C) · Q4 Sandaohezi (0°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Shihezi (石河子) | -11.3 | 18.4 |
-| Feb | Shihezi (石河子) | -8.9 | 16.7 |
-| Mar | Chapchal (察布查尔) | -2.8 | 12.4 |
-| Apr | Chapchal (察布查尔) | 6 | 6.3 |
-| May | Emin (额敏) | 14.1 | 0.7 |
+| Jan | Toqsun (托克逊) | -6.5 | 15 |
+| Feb | Toqsun (托克逊) | -4.2 | 13.4 |
+| Mar | Jing (精河) | -1.8 | 11.7 |
+| Apr | Jing (精河) | 7.2 | 5.4 |
+| May | Sandaohezi (三道河子) | 15.1 | 0 |
 | Jun | Burqin (Burqin) | 20.9 | 0 |
 | Jul | Burqin (Burqin) | 23.5 | 0 |
 | Aug | Burqin (Burqin) | 20.9 | 0 |
-| Sep | Emin (额敏) | 14.1 | 0.7 |
-| Oct | Emin (额敏) | 4.6 | 7.3 |
-| Nov | Chapchal (察布查尔) | -2.8 | 12.4 |
-| Dec | Shihezi (石河子) | -8.9 | 16.7 |
+| Sep | Sandaohezi (三道河子) | 15.1 | 0 |
+| Oct | Sandaohezi (三道河子) | 6.1 | 6.2 |
+| Nov | Jing (精河) | -1.8 | 11.7 |
+| Dec | Toqsun (托克逊) | -4.2 | 13.4 |
 
 Starts from `CN-GD-SHENZHEN`. See [[Travel-OS-Overview]].

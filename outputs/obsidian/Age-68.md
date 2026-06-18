@@ -2,16 +2,16 @@
 age: 68
 calendar_year: 2044
 r_age: 0.414
-annual_cost_usd: 13190
-cities: ["Shuifu", "Longping"]
-provinces: ["Yunnan", "Guizhou"]
-lead_trei: 1.05
+annual_cost_usd: 17628
+cities: ["Kunming", "Yisa"]
+provinces: ["Yunnan"]
+lead_trei: 0.96
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 68
 
-> Physiology factor **R_age = 0.414** · TREI cutoff 2.88 · annual cost **$13,190**
+> Physiology factor **R_age = 0.414** · TREI cutoff 2.88 · annual cost **$17,628**
 
 [[Age-67|← Age 67]] · [[Age-69|Age 69 →]]
 
@@ -19,27 +19,27 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Shuifu (向家坝) | Yunnan | 185 | 1100 | 1.3 | 3.33 | 1.05 | ALLOWED |
-| Longping (龙坪) | Guizhou | 180 | 1100 | 1.3 | 3.33 | 1.05 | ALLOWED |
+| Kunming (昆明) | Yunnan | 193 | 1800 | 2.98 | 1.33 | 0.96 | ALLOWED |
+| Yisa (迤萨) | Yunnan | 172 | 1100 | 1.57 | 3.33 | 1.26 | ALLOWED |
 
 
 ## Monthly schedule — calendar 2044
 
-> Q1 Longping (12.7°C) · Q2 Shuifu (23.7°C) · Q3 Shuifu (27.2°C) · Q4 Longping (15.4°C)
+> Q1 Yisa (13°C) · Q2 Kunming (17.9°C) · Q3 Kunming (18°C) · Q4 Yisa (12.7°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Longping (龙坪) | 10.7 | 3 |
-| Feb | Longping (龙坪) | 11.9 | 2.1 |
-| Mar | Longping (龙坪) | 15.4 | 0 |
-| Apr | Shuifu (向家坝) | 18.8 | 0 |
-| May | Shuifu (向家坝) | 24.2 | 0 |
-| Jun | Shuifu (向家坝) | 28.1 | 1.3 |
-| Jul | Longping (龙坪) | 29.4 | 2 |
-| Aug | Shuifu (向家坝) | 28.1 | 1.3 |
-| Sep | Shuifu (向家坝) | 24.2 | 0 |
-| Oct | Shuifu (向家坝) | 18.8 | 0 |
-| Nov | Longping (龙坪) | 15.4 | 0 |
-| Dec | Longping (龙坪) | 11.9 | 2.1 |
+| Jan | Yisa (迤萨) | 11.2 | 2.7 |
+| Feb | Yisa (迤萨) | 12.3 | 1.9 |
+| Mar | Yisa (迤萨) | 15.4 | 0 |
+| Apr | Yisa (迤萨) | 19.6 | 0 |
+| May | Kunming (昆明) | 15.3 | 0 |
+| Jun | Kunming (昆明) | 18.7 | 0 |
+| Jul | Kunming (昆明) | 19.9 | 0 |
+| Aug | Kunming (昆明) | 18.7 | 0 |
+| Sep | Kunming (昆明) | 15.3 | 0 |
+| Oct | Yisa (迤萨) | 19.6 | 0 |
+| Nov | Kunming (昆明) | 6.2 | 6.2 |
+| Dec | Yisa (迤萨) | 12.3 | 1.9 |
 
-Starts from `CN-GZ-GUIYANG`. See [[Travel-OS-Overview]].
+Starts from `CN-GZ-YUXI`. See [[Travel-OS-Overview]].

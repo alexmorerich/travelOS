@@ -4,79 +4,79 @@
     "primary_region": "[Expedition] Xinjiang + multi-region loop",
     "cities": [
       "Burqin",
-      "Chapchal",
-      "Shihezi",
-      "Emin"
+      "Toqsun",
+      "Sandaohezi",
+      "Jing"
     ],
     "annual_cost_usd": 12590
   },
   {
     "age": 51,
-    "primary_region": "[Expedition] Shaanxi + multi-region loop",
+    "primary_region": "[Expedition] Tibet + multi-region loop",
     "cities": [
       "Motuo",
-      "Xi'an",
-      "Beijing"
+      "Lhasa",
+      "Rikaze"
     ],
-    "annual_cost_usd": 25480
+    "annual_cost_usd": 15688
   },
   {
     "age": 52,
-    "primary_region": "[Expedition] Sichuan + multi-region loop",
+    "primary_region": "[Expedition] Gansu + multi-region loop",
     "cities": [
       "Jishi",
-      "Chengdu",
-      "Luoyang"
+      "Liujiaxia",
+      "Hezheng Chengguanzhen"
     ],
-    "annual_cost_usd": 16680
+    "annual_cost_usd": 11391
   },
   {
     "age": 53,
-    "primary_region": "[Expedition] Zhejiang + multi-region loop",
+    "primary_region": "[Expedition] Jilin + multi-region loop",
     "cities": [
-      "Oroqen Zizhiqi",
-      "Shenyang",
-      "Hangzhou"
+      "Baokang",
+      "Changchun",
+      "Erdao"
     ],
-    "annual_cost_usd": 18512
+    "annual_cost_usd": 15687
   },
   {
     "age": 54,
-    "primary_region": "[Expedition] Shanghai + multi-region loop",
+    "primary_region": "[Expedition] Gansu + multi-region loop",
     "cities": [
       "Huixian Chengguanzhen",
-      "Shanghai",
-      "Changchun"
+      "Zhouqu Chengguanzhen",
+      "Qingyuan"
     ],
-    "annual_cost_usd": 25261
+    "annual_cost_usd": 11391
   },
   {
     "age": 55,
-    "primary_region": "[Expedition] Jiangsu + multi-region loop",
+    "primary_region": "[Expedition] Ningxia + multi-region loop",
     "cities": [
       "Beijie",
-      "Nanjing",
-      "Suzhou"
+      "Xinli",
+      "Pingluo Chengguanzhen"
     ],
-    "annual_cost_usd": 18428
+    "annual_cost_usd": 11391
   },
   {
     "age": 56,
     "primary_region": "[Expedition] Heilongjiang + multi-region loop",
     "cities": [
-      "Harbin",
-      "Boli",
-      "Shuangyang"
+      "Xi'an",
+      "Jidong",
+      "Sifangtai"
     ],
-    "annual_cost_usd": 16271
+    "annual_cost_usd": 15604
   },
   {
     "age": 57,
-    "primary_region": "[Expedition] Heilongjiang + multi-region loop",
+    "primary_region": "[Expedition] Jilin + multi-region loop",
     "cities": [
       "Antu",
-      "Chengzihe",
-      "Hulan"
+      "Huadian",
+      "Liuhe"
     ],
     "annual_cost_usd": 13190
   },
@@ -84,120 +84,120 @@
     "age": 58,
     "primary_region": "[Expedition] Liaoning + multi-region loop",
     "cities": [
-      "Biancheng",
-      "Hunchun",
-      "Longfeng"
+      "Shenyang",
+      "Lianshan",
+      "Dashiqiao"
     ],
-    "annual_cost_usd": 13811
+    "annual_cost_usd": 16802
   },
   {
     "age": 59,
     "primary_region": "[Expedition] Xinjiang + multi-region loop",
     "cities": [
-      "Wusu",
-      "Sandaohezi",
-      "Huocheng"
+      "Gaochang",
+      "Bofeng",
+      "Gumudi"
     ],
     "annual_cost_usd": 12590
   },
   {
     "age": 60,
-    "primary_region": "[Expedition] Yunnan + multi-region loop",
+    "primary_region": "[Expedition] Tibet + multi-region loop",
     "cities": [
-      "Lhasa",
-      "Dali",
-      "Kunming"
+      "Nyingchi",
+      "Nagqu",
+      "Lhuenzhub"
     ],
-    "annual_cost_usd": 19341
+    "annual_cost_usd": 14989
   },
   {
     "age": 61,
-    "primary_region": "[Cultural deep-dive] Shandong dual-base",
+    "primary_region": "[Cultural deep-dive] Shaanxi dual-base",
     "cities": [
-      "Yangzhou",
-      "Qingdao"
+      "Xi'an",
+      "Dali"
     ],
-    "annual_cost_usd": 18635
+    "annual_cost_usd": 18111
   },
   {
     "age": 62,
-    "primary_region": "[Cultural deep-dive] Anhui dual-base",
+    "primary_region": "[Cultural deep-dive] Shanxi dual-base",
     "cities": [
       "Taiyuan",
-      "Suzhou"
+      "Jinzhong"
     ],
-    "annual_cost_usd": 21583
+    "annual_cost_usd": 18890
   },
   {
     "age": 63,
     "primary_region": "[Cultural deep-dive] Henan dual-base",
     "cities": [
-      "Zhengzhou",
-      "Chongqing"
+      "Luoyang",
+      "Baofeng"
     ],
-    "annual_cost_usd": 21583
+    "annual_cost_usd": 14589
   },
   {
     "age": 64,
     "primary_region": "[Cultural deep-dive] Hebei dual-base",
     "cities": [
       "Shijiazhuang",
-      "Changsha"
+      "Huaiyang"
     ],
-    "annual_cost_usd": 21583
+    "annual_cost_usd": 17904
   },
   {
     "age": 65,
-    "primary_region": "[Cultural deep-dive] Hubei dual-base",
+    "primary_region": "[Cultural deep-dive] Shandong dual-base",
     "cities": [
-      "Jinan",
-      "Wuhan"
+      "Qingdao",
+      "Linyi"
     ],
-    "annual_cost_usd": 21583
+    "annual_cost_usd": 20094
   },
   {
     "age": 66,
-    "primary_region": "[Cultural deep-dive] Guizhou dual-base",
+    "primary_region": "[Cultural deep-dive] Sichuan dual-base",
     "cities": [
-      "Luzhou",
-      "Tongren"
+      "Chengdu",
+      "Kaijiang"
     ],
-    "annual_cost_usd": 15588
+    "annual_cost_usd": 18341
   },
   {
     "age": 67,
-    "primary_region": "[Cultural deep-dive] Guizhou dual-base",
+    "primary_region": "[Cultural deep-dive] Chongqing dual-base",
     "cities": [
-      "Banan",
-      "Guiyang"
+      "Chongqing",
+      "Yuxi"
     ],
-    "annual_cost_usd": 17950
+    "annual_cost_usd": 17697
   },
   {
     "age": 68,
     "primary_region": "[Cultural deep-dive] Yunnan dual-base",
     "cities": [
-      "Shuifu",
-      "Longping"
+      "Kunming",
+      "Yisa"
     ],
-    "annual_cost_usd": 13190
+    "annual_cost_usd": 17628
   },
   {
     "age": 69,
     "primary_region": "[Cultural deep-dive] Guizhou dual-base",
     "cities": [
-      "Kaili",
-      "Heping"
+      "Tongren",
+      "Kaili"
     ],
-    "annual_cost_usd": 14399
+    "annual_cost_usd": 15588
   },
   {
     "age": 70,
     "primary_region": "[Cultural deep-dive] Hubei single-city",
     "cities": [
-      "E'zhou"
+      "Wuhan"
     ],
-    "annual_cost_usd": 15588
+    "annual_cost_usd": 21583
   },
   {
     "age": 71,

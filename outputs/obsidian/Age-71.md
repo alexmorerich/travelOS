@@ -41,4 +41,4 @@ tags: [travel-os, yearly-plan]
 | Nov | Xiamen (厦门) | 18.9 | 0 |
 | Dec | Xiamen (厦门) | 15.7 | 0 |
 
-Starts from `CN-HB-EZHOU`. See [[Travel-OS-Overview]].
+Starts from `CN-HB-WUHAN`. See [[Travel-OS-Overview]].

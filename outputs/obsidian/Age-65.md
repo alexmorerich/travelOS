@@ -2,16 +2,16 @@
 age: 65
 calendar_year: 2041
 r_age: 0.506
-annual_cost_usd: 21583
-cities: ["Jinan", "Wuhan"]
-provinces: ["Shandong", "Hubei"]
-lead_trei: 0.68
+annual_cost_usd: 20094
+cities: ["Qingdao", "Linyi"]
+provinces: ["Shandong"]
+lead_trei: 0.61
 tags: [travel-os, yearly-plan]
 ---
 
 # Age 65
 
-> Physiology factor **R_age = 0.506** · TREI cutoff 2.36 · annual cost **$21,583**
+> Physiology factor **R_age = 0.506** · TREI cutoff 2.36 · annual cost **$20,094**
 
 [[Age-64|← Age 64]] · [[Age-66|Age 66 →]]
 
@@ -19,27 +19,27 @@ tags: [travel-os, yearly-plan]
 
 | City | Province | Days | $/mo | Env risk | Med risk | TREI | Decision |
 |------|----------|-----:|-----:|---------:|---------:|-----:|----------|
-| Jinan (济南) | Shandong | 179 | 1800 | 2.57 | 1.33 | 0.68 | ALLOWED |
-| Wuhan (武汉) | Hubei | 186 | 1800 | 2.97 | 1.33 | 0.78 | ALLOWED |
+| Qingdao (青岛) | Shandong | 211 | 1950 | 2.31 | 1.33 | 0.61 | ALLOWED |
+| Linyi (临沂) | Shandong | 154 | 1300 | 2.57 | 1.87 | 0.95 | ALLOWED |
 
 
 ## Monthly schedule — calendar 2041
 
-> Q1 Wuhan (9.9°C) · Q2 Jinan (22.7°C) · Q3 Jinan (26.1°C) · Q4 Wuhan (12.3°C)
+> Q1 Linyi (4.8°C) · Q2 Qingdao (21.7°C) · Q3 Qingdao (26.4°C) · Q4 Linyi (9.3°C)
 
 | Month | City | Est °C | Discomfort |
 |-------|------|-------:|-----------:|
-| Jan | Wuhan (武汉) | 7.4 | 5.3 |
-| Feb | Wuhan (武汉) | 9 | 4.2 |
-| Mar | Wuhan (武汉) | 13.2 | 1.2 |
-| Apr | Wuhan (武汉) | 19.1 | 0 |
-| May | Jinan (济南) | 21.9 | 0 |
-| Jun | Jinan (济南) | 27.2 | 0.7 |
-| Jul | Jinan (济南) | 29.1 | 1.9 |
-| Aug | Jinan (济南) | 27.2 | 0.7 |
-| Sep | Jinan (济南) | 21.9 | 0 |
-| Oct | Jinan (济南) | 14.7 | 0.2 |
-| Nov | Wuhan (武汉) | 13.2 | 1.2 |
-| Dec | Wuhan (武汉) | 9 | 4.2 |
+| Jan | Linyi (临沂) | 1.9 | 9.1 |
+| Feb | Linyi (临沂) | 3.8 | 7.9 |
+| Mar | Linyi (临沂) | 8.8 | 4.4 |
+| Apr | Qingdao (青岛) | 15.3 | 0 |
+| May | Qingdao (青岛) | 22.3 | 0 |
+| Jun | Qingdao (青岛) | 27.5 | 0.9 |
+| Jul | Qingdao (青岛) | 29.4 | 2 |
+| Aug | Qingdao (青岛) | 27.5 | 0.9 |
+| Sep | Qingdao (青岛) | 22.3 | 0 |
+| Oct | Qingdao (青岛) | 15.3 | 0 |
+| Nov | Linyi (临沂) | 8.8 | 4.4 |
+| Dec | Linyi (临沂) | 3.8 | 7.9 |
 
-Starts from `CN-HN-CHANGSHA`. See [[Travel-OS-Overview]].
+Starts from `CN-HE-HUAIYANG`. See [[Travel-OS-Overview]].

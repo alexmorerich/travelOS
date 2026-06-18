@@ -5,6 +5,7 @@
   "base_calendar_year": 2026,
   "base_city": "CN-GD-SHENZHEN",
   "radius_km": 1500,
+  "max_neighbors": 40,
   "max_cities_per_year": 4,
   "visited_window_years": 3,
   "days_per_year": 365,
