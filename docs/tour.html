@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<title>中国县城 · 旅游线路图 — Travel Life OS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet"/>
+<style>
+  /* ============================================================================
+     China County Tour Map — light "tour" view of the same 3,149-county dataset.
+     Design handoff recreated on our house engine (MapLibre GL, no token) with
+     REAL data: macro-region colouring, a China-only mask, and a life-journey
+     player driven by the actual age-50→80 itinerary. Tokens follow the handoff.
+  ============================================================================ */
+  :root{
+    --page:#161616; --card:#ffffff; --ink:#1c1c1c; --ink2:#21262e;
+    --muted:#9a9a9a; --muted2:#8a8a8a; --faint:#bdbdbd; --hair:#ececec;
+    --surround:#eceae4;                 /* mask / out-of-China fill */
+    --player:#F5F4EE; --player-line:#E5E2D6; --track:#E3DFD3;
+    --blue:#2f7ef0;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%}
+  body{background:var(--page);min-height:100vh;display:flex;align-items:center;justify-content:center;
+    padding:40px 24px;
+    font:14px/1.5 'Helvetica Neue',Helvetica,Arial,'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;
+    color:var(--ink);-webkit-font-smoothing:antialiased}
+  .frame{width:min(1120px,96vw);background:var(--card);border-radius:16px;
+    box-shadow:0 30px 80px rgba(0,0,0,.45);padding:28px 30px 26px}
+
+  /* ---- header --------------------------------------------------------------- */
+  .head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:18px}
+  .head .t{font-size:20px;font-weight:700;color:var(--ink);letter-spacing:-0.01em}
+  .head .s{font-size:12px;color:var(--muted);margin-top:4px;letter-spacing:.02em}
+  .head .meta{font-size:11px;color:var(--faint);white-space:nowrap;text-align:right}
+  .head .meta a{color:#a8a8a8;text-decoration:none;transition:.15s}
+  .head .meta a:hover{color:var(--ink)}
+  .head .nav{margin-top:5px;font-size:11px;color:#cfcfcf}
+
+  /* ---- map viewport --------------------------------------------------------- */
+  .viewport{position:relative;height:560px;border-radius:10px;overflow:hidden;
+    border:1px solid var(--hair);background:var(--surround)}
+  #map{position:absolute;inset:0}
+  .maplibregl-ctrl-attrib{font-size:10px}
+  .maplibregl-ctrl-bottom-right{margin-bottom:2px}
+  canvas{outline:none}
+
+  /* overlay: Map / Satellite segmented control */
+  .seg{position:absolute;top:16px;left:16px;z-index:20;display:flex;gap:2px;padding:3px;
+    background:#fff;border-radius:7px;box-shadow:0 2px 8px rgba(0,0,0,.18);border:1px solid #efefef}
+  .seg button{border:none;border-radius:5px;padding:5px 14px;font:500 12px/1.2 inherit;cursor:pointer;
+    color:#8a8a8a;background:transparent;letter-spacing:.03em;transition:all .15s}
+  .seg button.on{background:var(--ink);color:#fff}
+
+  /* overlay: reset / home */
+  .home{position:absolute;top:16px;left:184px;z-index:20;height:34px;padding:0 12px;display:flex;
+    align-items:center;gap:6px;background:#fff;border:1px solid #efefef;border-radius:7px;
+    box-shadow:0 2px 8px rgba(0,0,0,.18);cursor:pointer;color:#5a5a5a;font:12px/1 inherit}
+  .home:hover{color:var(--ink)}
+
+  /* overlay: county card popup (anchored above the dot) */
+  .pop{position:absolute;left:0;top:0;width:264px;z-index:30;
+    transform:translate(-50%,calc(-100% - 18px));pointer-events:none;display:none}
+  .pop.show{display:block}
+  .pop .inner{position:relative;background:#fff;border-radius:10px;overflow:hidden;
+    box-shadow:0 14px 40px rgba(0,0,0,.4);border:1px solid rgba(0,0,0,.06);pointer-events:auto}
+  .pop .thumbs{display:flex;gap:2px;height:84px;background:#1c1c1c}
+  .pop .th{flex:1;position:relative;overflow:hidden;display:flex;align-items:flex-end}
+  .pop .th img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .pop .th .cap{position:relative;width:100%;padding:4px 5px;
+    background:linear-gradient(transparent,rgba(0,0,0,.55));color:#fff;font-size:9px;line-height:1.15;font-weight:500}
+  .pop .info{background:#1c1c1c;color:#fff;padding:11px 13px 13px}
+  .pop .eyebrow{font-size:9px;letter-spacing:.16em;color:#8f8f8f;text-transform:uppercase}
+  .pop .name{font-size:15px;font-weight:700;margin-top:3px}
+  .pop .name small{font-size:11px;font-weight:500;color:#9a9a9a;margin-left:6px}
+  .pop .foot{display:flex;align-items:center;justify-content:space-between;margin-top:9px}
+  .pop .foot .l{font-size:11px;color:#b9b9b9}
+  .pop .foot .r{font-size:11px;color:#e6e6e6;cursor:pointer}
+  .pop .x{position:absolute;top:7px;right:7px;width:20px;height:20px;border-radius:50%;border:none;
+    background:rgba(255,255,255,.92);color:#444;font-size:13px;line-height:1;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;box-shadow:0 1px 3px rgba(0,0,0,.25);z-index:2}
+  .pop .tip{width:0;height:0;margin:0 auto;border-left:8px solid transparent;border-right:8px solid transparent;
+    border-top:9px solid #1c1c1c}
+
+  /* loading overlay */
+  #load{position:absolute;inset:0;z-index:40;display:flex;flex-direction:column;align-items:center;
+    justify-content:center;gap:16px;
+    background:linear-gradient(100deg,#f1f0ec 30%,#e6e5e0 50%,#f1f0ec 70%);background-size:700px 100%;
+    animation:shimmer 1.4s linear infinite;transition:opacity .4s}
+  #load.done{opacity:0;pointer-events:none}
+  #load .spin{width:26px;height:26px;border:3px solid #d6d5cf;border-top-color:#1c1c1c;border-radius:50%;
+    animation:spin .8s linear infinite}
+  #load .txt{font-size:12px;color:#8a8a8a;letter-spacing:.05em}
+  @keyframes shimmer{0%{background-position:-700px 0}100%{background-position:700px 0}}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @media (prefers-reduced-motion:reduce){#load{animation:none}.spin{animation:none}}
+
+  /* ---- journey player bar (Claude cream surface) ---------------------------- */
+  .player{margin-top:16px;background:var(--player);border:1px solid var(--player-line);
+    border-radius:14px;padding:15px 20px 13px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+  .prow{display:flex;align-items:center;gap:18px}
+  .play{flex:none;width:52px;height:52px;border-radius:50%;border:none;cursor:pointer;background:var(--blue);
+    color:#fff;font-size:19px;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 6px 18px rgba(47,126,240,.45);transition:transform .15s}
+  .play:hover{transform:scale(1.05)}
+  .season{flex:none;padding:8px 16px;border-radius:10px;font-size:13px;font-weight:700;letter-spacing:.18em;
+    text-align:center;min-width:104px}
+  .now{flex:1;min-width:0}
+  .now .age{font-size:22px;font-weight:700;color:var(--ink2);letter-spacing:-0.01em;line-height:1.1}
+  .now .age b{font-weight:700}
+  .now .city{font-size:13px;color:#6f7682;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .now .city small{color:#a2a097;font-size:12px}
+  .speeds{flex:none;display:flex;gap:7px}
+  .speeds button{border:1px solid #d8d3c5;background:transparent;color:#6b7078;border-radius:9px;
+    padding:6px 12px;font:600 12px/1 inherit;cursor:pointer;min-width:40px}
+  .speeds button.on{background:var(--ink2);color:#fff;border-color:var(--ink2)}
+  .scrub{position:relative;margin-top:15px;height:18px;display:flex;align-items:center;cursor:pointer;touch-action:none}
+  .scrub .trk{position:absolute;left:0;right:0;height:6px;border-radius:3px;background:var(--track)}
+  .scrub .fill{position:absolute;left:0;height:6px;border-radius:3px;background:linear-gradient(90deg,#3a6fd0,#46c7e6);width:0}
+  .scrub .knob{position:absolute;top:50%;left:0;transform:translate(-50%,-50%);width:16px;height:16px;
+    border-radius:50%;background:#fff;border:1px solid #d9d4c6;box-shadow:0 1px 4px rgba(0,0,0,.25)}
+  .ticks{display:flex;justify-content:space-between;margin-top:8px;font-size:11px;color:#9a9488;letter-spacing:.02em}
+
+  /* ---- legend --------------------------------------------------------------- */
+  .legend{margin-top:16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .legend .lab{font-size:11px;color:var(--muted);letter-spacing:.06em;margin-right:4px}
+  .legend .pill{display:flex;align-items:center;gap:7px;padding:4px 10px 4px 6px;border:1px solid #eee;border-radius:20px}
+  .legend .dot{width:10px;height:10px;border-radius:50%}
+  .legend .nm{font-size:12px;color:#3a3a3a}
+  .legend .ct{font-size:11px;color:var(--faint)}
+
+  @media (max-width:640px){
+    body{padding:16px 10px}
+    .frame{padding:18px 16px 16px}
+    .viewport{height:440px}
+    .home{left:auto;right:16px;top:60px}
+    .prow{flex-wrap:wrap;gap:12px}
+    .now{order:5;flex-basis:100%}
+  }
+</style></head>
+<body>
+<div class="frame">
+
+  <div class="head">
+    <div>
+      <div class="t">中国 <span id="count">3,149</span> 县城 · 旅游线路图</div>
+      <div class="s">Representative County Tour Map · 普通 / 卫星双图层 · 50→80 岁人生旅程</div>
+    </div>
+    <div class="meta">
+      <span id="count2">3,149</span> 个县城
+      <div class="nav"><a href="./timeline.html">时间轴</a> · <a href="./map.html">轨迹图</a></div>
+    </div>
+  </div>
+
+  <div class="viewport">
+    <div id="map"></div>
+
+    <div class="seg" role="tablist" aria-label="底图">
+      <button id="b-map" class="on" aria-selected="true">普通地图</button>
+      <button id="b-sat" aria-selected="false">卫星图</button>
+    </div>
+    <button class="home" id="home" title="回到全国">⌂ 全国</button>
+
+    <div class="pop" id="pop">
+      <div class="inner">
+        <button class="x" id="popx" aria-label="关闭">×</button>
+        <div class="thumbs" id="popthumbs"></div>
+        <div class="info">
+          <div class="eyebrow" id="popeyebrow"></div>
+          <div class="name" id="popname"></div>
+          <div class="foot"><span class="l">3 个标志性景点</span><span class="r">查看线路 ›</span></div>
+        </div>
+      </div>
+      <div class="tip"></div>
+    </div>
+
+    <div id="load"><div class="spin"></div><div class="txt">正在加载地图瓦片与全国县城…</div></div>
+  </div>
+
+  <div class="player" id="player">
+    <div class="prow">
+      <button class="play" id="play" aria-label="播放">▶</button>
+      <div class="season" id="season">WINTER</div>
+      <div class="now">
+        <div class="age" id="age">Age <b>50</b> · Jan 2026</div>
+        <div class="city" id="city">—</div>
+      </div>
+      <div class="speeds" id="speeds">
+        <button data-s="0.5">0.5×</button>
+        <button data-s="1" class="on">1×</button>
+        <button data-s="2">2×</button>
+        <button data-s="4">4×</button>
+      </div>
+    </div>
+    <div class="scrub" id="scrub">
+      <div class="trk"></div><div class="fill" id="fill"></div><div class="knob" id="knob"></div>
+    </div>
+    <div class="ticks"><span>age 50</span><span>age 60</span><span>age 70</span><span>age 80</span></div>
+  </div>
+
+  <div class="legend" id="legend"><span class="lab">图例 · 按大区</span></div>
+</div>
+
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script>
+"use strict";
+/* ============================================================================
+   Data is FETCHED (map_data.json + landmarks/manifest.json + DataV boundary),
+   never hardcoded. The county dots, region legend, and journey player are all
+   driven by the real 3,149-county dataset and the real 30-year itinerary.
+============================================================================ */
+const $=id=>document.getElementById(id);
+const MONTHS=['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+// ---- 7 macro-regions: order, colour, and province lookup -------------------
+const REGION_ORDER=['华北','东北','华东','华中','华南','西南','西北'];
+const REGION_COLOR={'华北':'#E08A3C','东北':'#C2A13A','华东':'#2FA46E','华中':'#2E93A6',
+  '华南':'#4A72D0','西南':'#8A5FD0','西北':'#D04A6A'};
+// province code (the middle token of an id like CN-AH-ANQING) → [region, fullCN, shortCN]
+const PROV={
+  AH:['华东','安徽省','安徽'], BJ:['华北','北京市','北京'], CQ:['西南','重庆市','重庆'],
+  FJ:['华东','福建省','福建'], GD:['华南','广东省','广东'], GS:['西北','甘肃省','甘肃'],
+  GX:['华南','广西壮族自治区','广西'], GZ:['西南','贵州省','贵州'], HA:['华中','河南省','河南'],
+  HB:['华中','湖北省','湖北'], HE:['华北','河北省','河北'], HI:['华南','海南省','海南'],
+  HL:['东北','黑龙江省','黑龙江'], HN:['华中','湖南省','湖南'], JL:['东北','吉林省','吉林'],
+  JS:['华东','江苏省','江苏'], JX:['华东','江西省','江西'], LN:['东北','辽宁省','辽宁'],
+  NM:['华北','内蒙古自治区','内蒙古'], NX:['西北','宁夏回族自治区','宁夏'], QH:['西北','青海省','青海'],
+  SC:['西南','四川省','四川'], SD:['华东','山东省','山东'], SH:['华东','上海市','上海'],
+  SN:['西北','陕西省','陕西'], SX:['华北','山西省','山西'], TJ:['华北','天津市','天津'],
+  XJ:['西北','新疆维吾尔自治区','新疆'], XZ:['西南','西藏自治区','西藏'], YN:['西南','云南省','云南'],
+  ZJ:['华东','浙江省','浙江']
+};
+const provOf=id=>PROV[(id.split('-')[1]||'')]||['华东','',''];
+
+// ---- seasons (data is lowercase) → label + pill colours --------------------
+const SEASON={
+  winter:{en:'WINTER',bg:'#3c4f6b',fg:'#dbe6f5'}, spring:{en:'SPRING',bg:'#2f6b46',fg:'#d7f0df'},
+  summer:{en:'SUMMER',bg:'#8a5f24',fg:'#fbecc9'}, autumn:{en:'AUTUMN',bg:'#8a4a2a',fg:'#f6dcc9'},
+};
+
+// deterministic gradient (keyed off id) behind every thumbnail tile
+function hashHue(s){let h=0;for(let i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))|0;return Math.abs(h)%360;}
+const gradBg=seed=>`background:linear-gradient(135deg,hsl(${hashHue(seed)} 30% 78%),hsl(${(hashHue(seed)+40)%360} 28% 70%))`;
+
+const CHINA_BOUNDS=[[73.4,18.0],[135.0,53.6]];
+
+// ---- state -----------------------------------------------------------------
+let MAN={}, BYID={}, TOUR=[], map=null;
+let layer='map', pinned=null, selected=null, hoverId=null;
+let playing=false, idx=0, speed=1, dwellTimer=null, baseDwell=2600;
+
+// ============================================================================
+// Load data, then init the map.
+// ============================================================================
+Promise.all([
+  fetch('./map_data.json').then(r=>r.json()),
+  fetch('./landmarks/manifest.json').then(r=>r.ok?r.json():{}).catch(()=>({})),
+]).then(([md,man])=>{
+  MAN=man||{};
+  const counts={}; REGION_ORDER.forEach(r=>counts[r]=0);
+
+  // county → enriched record (region + Chinese province) keyed by id
+  const features=md.counties.map(c=>{
+    const [region,full,short]=provOf(c.id);
+    counts[region]=(counts[region]||0)+1;
+    BYID[c.id]={id:c.id, z:c.z, n:c.n, lng:c.lng, lat:c.lat, region, provFull:full, provShort:short,
+                color:REGION_COLOR[region]};
+    return {type:'Feature',geometry:{type:'Point',coordinates:[c.lng,c.lat]},
+            properties:{id:c.id, color:REGION_COLOR[region]}};
+  });
+  window.__countiesFC={type:'FeatureCollection',features};
+
+  // real life-journey = distinct cities in the trajectory, first occurrence,
+  // in chronological order — each already carries age / year / month / season.
+  const seen=new Set();
+  md.trajectory.forEach(s=>{
+    if(seen.has(s.id))return; seen.add(s.id);
+    const base=BYID[s.id]||{id:s.id,z:s.z,n:s.n,lng:s.lng,lat:s.lat,...((p=>({region:p[0],provFull:p[1],provShort:p[2],color:REGION_COLOR[p[0]]}))(provOf(s.id)))};
+    TOUR.push({...base, age:s.age, year:s.year, month:s.month, season:s.season});
+  });
+
+  // header counts + legend
+  const total=md.counties.length.toLocaleString();
+  $('count').textContent=total; $('count2').textContent=total;
+  const lg=$('legend');
+  REGION_ORDER.forEach(r=>{
+    const el=document.createElement('div'); el.className='pill';
+    el.innerHTML=`<span class="dot" style="background:${REGION_COLOR[r]}"></span>`+
+                 `<span class="nm">${r}</span><span class="ct">${(counts[r]||0).toLocaleString()}</span>`;
+    lg.appendChild(el);
+  });
+
+  updatePlayer(); buildSpeeds();
+  initMap();
+});
+
+// ============================================================================
+// MapLibre — light raster base, China-only mask, region-coloured county dots.
+// ============================================================================
+const cartoTiles=['a','b','c','d'].map(s=>`https://${s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png`);
+const esriTiles=['https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'];
+const esriLabelTiles=['a','b','c','d'].map(s=>`https://${s}.basemaps.cartocdn.com/rastertiles/light_only_labels/{z}/{x}/{y}{r}.png`);
+const empty=()=>({type:'FeatureCollection',features:[]});
+
+function initMap(){
+  map=new maplibregl.Map({container:'map', dragRotate:false, attributionControl:{compact:true},
+    minZoom:2.6, maxZoom:12, center:[103,35], zoom:3.2,
+    style:{version:8, sources:{
+        carto:{type:'raster',tileSize:256,tiles:cartoTiles,attribution:'© OpenStreetMap, © CARTO'},
+        esri:{type:'raster',tileSize:256,tiles:esriTiles,attribution:'Imagery © Esri, Maxar, Earthstar Geographics'},
+        esrilabels:{type:'raster',tileSize:256,tiles:esriLabelTiles},
+      },
+      layers:[
+        {id:'l-carto',type:'raster',source:'carto'},
+        {id:'l-esri',type:'raster',source:'esri',layout:{visibility:'none'}},
+        {id:'l-esrilabels',type:'raster',source:'esrilabels',layout:{visibility:'none'}},
+      ]}});
+  map.addControl(new maplibregl.NavigationControl({showCompass:false}),'bottom-right');
+  map.addControl(new maplibregl.FullscreenControl(),'top-right');
+  window.tourMap=map;   // debug handle (also handy from the console)
+
+  map.on('load',()=>{
+    map.fitBounds(CHINA_BOUNDS,{padding:24,duration:0});
+
+    map.addSource('mask',{type:'geojson',data:empty()});
+    map.addSource('boundary',{type:'geojson',data:empty()});
+    map.addSource('counties',{type:'geojson',data:window.__countiesFC});
+    map.addSource('sel',{type:'geojson',data:empty()});
+
+    // order (bottom→top): tiles < mask < province borders < dots < selection ring
+    map.addLayer({id:'mask-fill',type:'fill',source:'mask',
+      paint:{'fill-color':'#eceae4','fill-opacity':1}});
+    map.addLayer({id:'prov-line',type:'line',source:'boundary',layout:{visibility:'none'},
+      paint:{'line-color':'#ffffff','line-width':0.6,'line-opacity':0.32}});
+    map.addLayer({id:'counties',type:'circle',source:'counties',paint:{
+      'circle-color':['get','color'],
+      'circle-radius':['interpolate',['linear'],['zoom'],3,2.2,5,2.8,7,3.8,10,6,12,8],
+      'circle-opacity':0.95,
+      'circle-stroke-width':0.8,
+      'circle-stroke-color':'rgba(255,255,255,0.9)'}});
+    map.addLayer({id:'sel-ring',type:'circle',source:'sel',paint:{
+      'circle-radius':['interpolate',['linear'],['zoom'],3,6,7,11,12,20],
+      'circle-color':'#ffffff','circle-opacity':0.16,
+      'circle-stroke-width':2.4,'circle-stroke-color':'#ffffff'}});
+
+    wireMap();
+    $('load').classList.add('done');           // reveal map immediately…
+    loadBoundary().then(applyBoundary);          // …mask + borders pop in when ready
+  });
+}
+
+function wireMap(){
+  map.on('mouseenter','counties',()=>{map.getCanvas().style.cursor='pointer';});
+  map.on('mouseleave','counties',()=>{map.getCanvas().style.cursor='';});
+  // hover previews the card (no fly); ignored while the journey is playing
+  map.on('mousemove','counties',e=>{
+    if(playing||!e.features.length)return;
+    const id=e.features[0].properties.id;
+    if(id===hoverId)return; hoverId=id;
+    select(BYID[id],{fly:false});
+  });
+  map.on('mouseleave','counties',()=>{
+    hoverId=null;
+    if(pinned)select(pinned,{fly:false}); else closeCard();
+  });
+  // click a dot: pin + fly + (pause the journey if running)
+  map.on('click','counties',e=>{
+    if(!e.features.length)return;
+    if(playing)pause();
+    pinned=BYID[e.features[0].properties.id];
+    select(pinned,{fly:true});
+  });
+  // click empty map: deselect
+  map.on('click',e=>{
+    if(map.queryRenderedFeatures(e.point,{layers:['counties']}).length)return;
+    closeCard();
+  });
+  map.on('move',anchorCard);
+}
+
+// ---- China-only mask: world polygon with every province ring as a hole ------
+async function loadBoundary(){
+  let geo=null;
+  try{const c=localStorage.getItem('cn_geo_wgs_v1');if(c)geo=JSON.parse(c);}catch(e){}
+  if(!geo){
+    try{
+      const r=await fetch('https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json');
+      if(r.ok){geo=await r.json(); if(geo&&geo.features){convertGCJ(geo);   // DataV is GCJ-02 → WGS84
+        try{localStorage.setItem('cn_geo_wgs_v1',JSON.stringify(geo));}catch(e){}}}
+    }catch(e){}
+  }
+  if(!geo||!geo.features)geo=fallbackGeo();       // coarse offline outline (already ~WGS84)
+  return geo;
+}
+function polysOf(g){return !g?[]:g.type==='Polygon'?[g.coordinates]:g.type==='MultiPolygon'?g.coordinates:[];}
+function applyBoundary(geo){
+  if(!map||!map.getSource('mask'))return;
+  const holes=[];
+  geo.features.forEach(f=>polysOf(f.geometry).forEach(poly=>{if(poly[0]&&poly[0].length>3)holes.push(poly[0]);}));
+  const world=[[-180,-85],[180,-85],[180,85],[-180,85],[-180,-85]];
+  map.getSource('mask').setData({type:'Feature',geometry:{type:'Polygon',coordinates:[world,...holes]}});
+  map.getSource('boundary').setData(geo);
+}
+// GCJ-02 → WGS84 so the mask/borders line up with WGS84 tiles + WGS84 county dots
+function convertGCJ(geo){
+  const PI=Math.PI,A=6378245.0,EE=0.00669342162296594323;
+  const out=(lng,lat)=>lng<72.004||lng>137.8347||lat<0.8293||lat>55.8271;
+  const tl=(x,y)=>{let r=-100+2*x+3*y+0.2*y*y+0.1*x*y+0.2*Math.sqrt(Math.abs(x));
+    r+=(20*Math.sin(6*x*PI)+20*Math.sin(2*x*PI))*2/3;r+=(20*Math.sin(y*PI)+40*Math.sin(y/3*PI))*2/3;
+    r+=(160*Math.sin(y/12*PI)+320*Math.sin(y*PI/30))*2/3;return r;};
+  const tn=(x,y)=>{let r=300+x+2*y+0.1*x*x+0.1*x*y+0.1*Math.sqrt(Math.abs(x));
+    r+=(20*Math.sin(6*x*PI)+20*Math.sin(2*x*PI))*2/3;r+=(20*Math.sin(x*PI)+40*Math.sin(x/3*PI))*2/3;
+    r+=(150*Math.sin(x/12*PI)+300*Math.sin(x/30*PI))*2/3;return r;};
+  const conv=p=>{const lng=p[0],lat=p[1]; if(out(lng,lat))return;
+    let dLat=tl(lng-105,lat-35),dLng=tn(lng-105,lat-35);
+    const rad=lat/180*PI; let m=Math.sin(rad); m=1-EE*m*m; const s=Math.sqrt(m);
+    dLat=(dLat*180)/((A*(1-EE))/(m*s)*PI); dLng=(dLng*180)/(A/s*Math.cos(rad)*PI);
+    p[0]=lng-dLng; p[1]=lat-dLat;};
+  const walk=a=>{if(typeof a[0]==='number'){conv(a);return;} for(const x of a)walk(x);};
+  geo.features.forEach(f=>polysOf(f.geometry).forEach(walk));
+}
+function fallbackGeo(){
+  const ring=[[73,39],[80,45],[87,49],[91,45],[96,43],[105,42],[112,45],[120,53],[126,53],[131,48],
+    [134,48],[128,42],[122,39],[120,34],[121,30],[119,26],[115,23],[110,21],[108,18],[100,22],[98,26],
+    [94,29],[88,28],[82,30],[78,35],[74,38],[73,39]];
+  return {type:'FeatureCollection',features:[{type:'Feature',properties:{name:'中国'},
+    geometry:{type:'Polygon',coordinates:[ring]}}]};
+}
+
+// ---- base-map toggle -------------------------------------------------------
+function setLayer(l){
+  layer=l; const sat=l==='satellite';
+  ['b-map','b-sat'].forEach(id=>{const on=(id==='b-sat')===sat;$(id).classList.toggle('on',on);$(id).setAttribute('aria-selected',on);});
+  if(!map)return;
+  map.setLayoutProperty('l-carto','visibility',sat?'none':'visible');
+  map.setLayoutProperty('l-esri','visibility',sat?'visible':'none');
+  map.setLayoutProperty('l-esrilabels','visibility',sat?'visible':'none');
+  map.setLayoutProperty('prov-line','visibility',sat?'visible':'none');   // borders help over imagery
+  map.setPaintProperty('counties','circle-stroke-color',sat?'rgba(0,0,0,0.55)':'rgba(255,255,255,0.9)');
+}
+$('b-map').onclick=()=>setLayer('map');
+$('b-sat').onclick=()=>setLayer('satellite');
+$('home').onclick=()=>{closeCard();if(map)map.fitBounds(CHINA_BOUNDS,{padding:24,duration:900});};
+
+// ============================================================================
+// Selection + anchored card.
+// ============================================================================
+function select(c,opts){
+  if(!c)return; selected=c;
+  if(map&&map.getSource('sel'))
+    map.getSource('sel').setData({type:'Feature',geometry:{type:'Point',coordinates:[c.lng,c.lat]},properties:{}});
+  renderCard(c); anchorCard();
+  if(opts&&opts.fly&&map){
+    const dur=Math.max(550,1500/speed);
+    map.flyTo({center:[c.lng,c.lat],zoom:6.6,duration:dur});
+  }
+}
+function renderCard(c){
+  const imgs=(MAN[c.id]&&MAN[c.id].images)||[];
+  let th='';
+  for(let k=0;k<3;k++){
+    const im=imgs[k];
+    const bg=im?gradBg(c.id+k):'background:repeating-linear-gradient(135deg,#cdccc6 0 7px,#dad9d3 7px 14px)';
+    th+=`<div class="th" style="${bg}">`+
+        (im?`<img loading="lazy" src="./${im.src}" alt="" onerror="this.style.display='none'">`:'')+
+        (im?'':`<div class="cap">景点 ${k+1}</div>`)+`</div>`;
+  }
+  $('popthumbs').innerHTML=th;
+  $('popeyebrow').textContent=`${c.region} · ${c.provFull}`;
+  $('popname').innerHTML=`${c.z}<small>${c.n}</small>`;
+  $('pop').classList.add('show');
+}
+function anchorCard(){
+  const pop=$('pop'); if(!selected||!map||!pop.classList.contains('show'))return;
+  const p=map.project([selected.lng,selected.lat]);
+  pop.style.left=p.x+'px'; pop.style.top=p.y+'px';
+}
+function closeCard(){
+  selected=null; pinned=null; $('pop').classList.remove('show');
+  if(map&&map.getSource('sel'))map.getSource('sel').setData(empty());
+}
+$('popx').onclick=closeCard;
+
+// ============================================================================
+// Journey player.
+// ============================================================================
+function updatePlayer(){
+  if(!TOUR.length)return;
+  const st=TOUR[idx], s=SEASON[st.season]||SEASON.winter, N=TOUR.length;
+  $('age').innerHTML=`Age <b>${st.age}</b> · ${MONTHS[st.month]} ${st.year}`;
+  $('city').innerHTML=`${st.z} <small>${st.n} · ${st.provFull}</small>`;
+  const se=$('season'); se.textContent=s.en; se.style.background=s.bg; se.style.color=s.fg;
+  const pct=(idx/Math.max(1,N-1))*100;
+  $('fill').style.width=pct+'%'; $('knob').style.left=pct+'%';
+}
+function buildSpeeds(){
+  $('speeds').onclick=e=>{const b=e.target.closest('button');if(!b)return;
+    speed=+b.dataset.s;[...$('speeds').children].forEach(x=>x.classList.toggle('on',x===b));
+    if(playing){clearTimeout(dwellTimer);tick();}};
+}
+function setPlay(p){playing=p;$('play').textContent=p?'⏸':'▶';$('play').setAttribute('aria-label',p?'暂停':'播放');}
+function togglePlay(){playing?pause():play();}
+function play(){if(!TOUR.length)return;if(idx>=TOUR.length-1)idx=0;setPlay(true);tick();}
+function pause(){setPlay(false);clearTimeout(dwellTimer);}
+function tick(){
+  goStop(idx);
+  clearTimeout(dwellTimer);
+  dwellTimer=setTimeout(()=>{
+    if(!playing)return;
+    if(idx<TOUR.length-1){idx++;tick();} else setPlay(false);
+  }, baseDwell/speed);
+}
+function goStop(i){
+  idx=Math.max(0,Math.min(TOUR.length-1,i));
+  pinned=TOUR[idx]; updatePlayer(); select(TOUR[idx],{fly:true});
+}
+$('play').onclick=togglePlay;
+
+// scrubber: pointer-down pauses + jumps to nearest stop, drag updates live
+$('scrub').addEventListener('pointerdown',e=>{
+  pause(); const trk=$('scrub');
+  const at=ev=>{const r=trk.getBoundingClientRect();
+    let ratio=(ev.clientX-r.left)/r.width; ratio=Math.max(0,Math.min(1,ratio));
+    const i=Math.round(ratio*(TOUR.length-1)); if(i!==idx)goStop(i); else updatePlayer();};
+  at(e);
+  const mv=ev=>at(ev), up=()=>{document.removeEventListener('pointermove',mv);document.removeEventListener('pointerup',up);};
+  document.addEventListener('pointermove',mv); document.addEventListener('pointerup',up);
+});
+
+document.addEventListener('keydown',e=>{
+  if(e.code==='Space'){e.preventDefault();togglePlay();}
+  else if(e.code==='ArrowRight'){pause();goStop(idx+1);}
+  else if(e.code==='ArrowLeft'){pause();goStop(idx-1);}
+});
+</script>
+</body></html>

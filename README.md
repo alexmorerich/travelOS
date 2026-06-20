@@ -68,6 +68,8 @@ Each year is split into 12 months and each month placed in its most comfortable 
 
 Landmark photos are fetched from **Wikimedia Commons** (geosearched near each county center — CC/public-domain, author + license credited in-card) and hosted in `docs/landmarks/` (58 of the 61 route cities covered; the rest fall back to a generated gradient tile). Regenerate with `npm run map:data` (joins the engine output into `docs/map_data.json`) and `npm run map:img` (re-fetches the thumbnails).
 
+**`open docs/tour.html`** — a companion *tour* view of the **same** dataset, in a light editorial frame. All 3,149 counties are coloured by **macro-region** (7 大区: 华北/东北/华东/华中/华南/西南/西北) on a **China-only MapLibre map** — a fill mask hides every other country, so the country reads as a clean cutout (plain **CARTO** or **Esri satellite**, with province borders over the imagery). Hover or click a county for an anchored card (region · province + landmark photos); the cream **life-journey player** flies through the real age-50→80 itinerary one stop at a time, with a season pill, age/date, speed (0.5–4×) and a draggable scrubber. Built on the same fetched `map_data.json` + Wikimedia manifest — no token, no hardcoded data. *(The macro-region/Chinese-province names derive from each county's province code; the boundary is DataV.GeoAtlas, converted GCJ-02→WGS84 so it aligns with the WGS84 tiles and dots.)*
+
 ---
 
 ## 🧭 The 30-year roadmap & Quarter-Agent operating model
@@ -144,6 +146,7 @@ Then open the results:
 - **`outputs/dashboard.html`** — the survival probability, the "frugal vs. fancy" comparison, and the seasonal calendar.
 - **`outputs/schedule.ics`** — import into your phone / Google Calendar to see the plan as real calendar events.
 - **`docs/map.html`** — the 🌏 **playable map**: press play and the camera flies through your 30-year route; click any stop for its landmark photos and stats.
+- **`docs/tour.html`** — the 🧭 **county tour map**: all 3,149 counties coloured by macro-region on a China-only map, with the 50→80 journey as a player (plain / satellite layers).
 
 ### Reading the interactive timeline
 
@@ -492,7 +495,7 @@ npm install
 npm run anchors && npm run enrich && npm run simulate
 ```
 
-然后打开：**`outputs/timeline.html`**（⭐ 交互演示，**滚动即时间**——372 个月折叠为约 163 段「居留」，地图随滚动填充路线）、**`outputs/dashboard.html`**（存活率、节俭vs奢华对比、季节日历）、**`outputs/schedule.ics`**（导入手机/谷歌日历）、**`docs/map.html`**（🌏 可播放地图：点播放，镜头沿 30 年路线飞行；点任意停留点看地标照片与数据）。
+然后打开：**`outputs/timeline.html`**（⭐ 交互演示，**滚动即时间**——372 个月折叠为约 163 段「居留」，地图随滚动填充路线）、**`outputs/dashboard.html`**（存活率、节俭vs奢华对比、季节日历）、**`outputs/schedule.ics`**（导入手机/谷歌日历）、**`docs/map.html`**（🌏 可播放地图：点播放，镜头沿 30 年路线飞行；点任意停留点看地标照片与数据）、**`docs/tour.html`**（🧭 县城旅游线路图：3,149 个县城按「七大区」配色，仅显示中国版图，配 50→80 岁人生旅程播放器，普通/卫星双图层）。
 
 ### 看交互时间轴
 
