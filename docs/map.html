@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<title>Travel Life OS — County Trajectory Mapper</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet"/>
+<style>
+  :root{
+    color-scheme:dark;
+    --bg:#0c1320; --panel:#111a2b; --line:#1e2a40; --ink:#dfe6f1; --dim:#7c8aa5; --accent:#4f8bff;
+    /* season palette — same hues as the scroll timeline */
+    --spring:#7fd98a; --summer:#38bdf8; --autumn:#f59e0b; --winter:#94a3b8;
+    --glass:color-mix(in srgb, var(--panel) 72%, transparent);
+    --glass-line:color-mix(in srgb,#ffffff 9%, var(--line));
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);
+    font:14px/1.5 -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;overflow:hidden}
+  #map{position:absolute;inset:0}
+  .maplibregl-ctrl-attrib{font-size:10px}
+  canvas{outline:none}
+
+  /* ---- generic glass surface ---------------------------------------------- */
+  .glass{background:var(--glass);backdrop-filter:blur(14px) saturate(1.25);
+    -webkit-backdrop-filter:blur(14px) saturate(1.25);
+    border:1px solid var(--glass-line);border-radius:14px;
+    box-shadow:0 10px 34px rgba(0,0,0,.42), inset 0 1px 0 rgba(255,255,255,.05)}
+
+  /* ---- top-left: title + Map/Satellite pill ------------------------------- */
+  .topleft{position:absolute;top:14px;left:14px;z-index:10;display:flex;flex-direction:column;gap:10px}
+  .brand{display:flex;align-items:center;gap:9px;padding:9px 14px;font-weight:700;letter-spacing:.01em}
+  .brand .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent)}
+  .brand small{font-weight:500;color:var(--dim);letter-spacing:.04em}
+  .seg{display:inline-flex;padding:4px;gap:3px;border-radius:999px}
+  .seg button{appearance:none;border:0;background:transparent;color:var(--dim);
+    font:600 12.5px/1 inherit;letter-spacing:.06em;padding:8px 16px;border-radius:999px;cursor:pointer;transition:.18s}
+  .seg button.on{background:color-mix(in srgb,var(--accent) 90%, #fff 0%);color:#08101e;box-shadow:0 2px 10px rgba(79,139,255,.5)}
+  .seg button:not(.on):hover{color:var(--ink)}
+
+  /* ---- top-right: fullscreen + nav ---------------------------------------- */
+  .topright{position:absolute;top:14px;right:14px;z-index:10;display:flex;gap:8px}
+  .iconbtn{width:40px;height:40px;display:grid;place-items:center;cursor:pointer;color:var(--ink);font-size:15px;
+    border-radius:12px;text-decoration:none;transition:.18s}
+  .iconbtn:hover{color:var(--accent)}
+
+  /* ---- bottom: playback bar ----------------------------------------------- */
+  .dock{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);z-index:10;
+    width:min(760px,calc(100vw - 28px));padding:13px 16px 14px}
+  .nowline{display:flex;align-items:center;gap:10px;margin-bottom:11px;flex-wrap:wrap}
+  .play{width:42px;height:42px;flex:none;border:0;border-radius:50%;cursor:pointer;
+    background:linear-gradient(160deg,#5b95ff,#3f6fe0);color:#fff;font-size:16px;display:grid;place-items:center;
+    box-shadow:0 4px 16px rgba(79,139,255,.5);transition:.15s}
+  .play:hover{transform:scale(1.06)}
+  .season-chip{flex:none;display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:11px;
+    letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px;
+    color:#08101e;background:var(--winter)}
+  .now{min-width:0;flex:1}
+  .now .age{font-weight:750;font-size:15px;letter-spacing:.01em}
+  .now .age b{color:#fff}
+  .now .city{color:var(--dim);font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .now .city .en{color:var(--ink);font-weight:600}
+  .speeds{display:flex;gap:3px;flex:none}
+  .speeds button{appearance:none;border:1px solid var(--glass-line);background:transparent;color:var(--dim);
+    font:600 11px/1 inherit;padding:6px 9px;border-radius:8px;cursor:pointer}
+  .speeds button.on{color:#08101e;background:var(--ink);border-color:transparent}
+
+  /* timeline scrubber */
+  .scrub{position:relative;height:20px;display:flex;align-items:center}
+  .scrub input{position:absolute;inset:0;width:100%;margin:0;-webkit-appearance:none;appearance:none;
+    background:transparent;cursor:pointer;z-index:3}
+  .scrub input::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;
+    background:#fff;box-shadow:0 0 0 4px rgba(79,139,255,.35),0 2px 6px rgba(0,0,0,.5);cursor:grab}
+  .scrub input::-moz-range-thumb{width:16px;height:16px;border:0;border-radius:50%;background:#fff;
+    box-shadow:0 0 0 4px rgba(79,139,255,.35)}
+  .track{position:absolute;left:0;right:0;height:5px;border-radius:999px;background:#1b2740;overflow:hidden}
+  .track .fill{position:absolute;left:0;top:0;bottom:0;width:0;
+    background:linear-gradient(90deg,var(--winter),var(--summer),var(--accent))}
+  .ticks{position:absolute;left:0;right:0;top:14px;display:flex;justify-content:space-between;
+    font-size:9.5px;color:#5d6a85;pointer-events:none}
+
+  /* ---- legend ------------------------------------------------------------- */
+  .legend{position:absolute;left:14px;bottom:18px;z-index:9;padding:11px 13px;font-size:11.5px;max-width:200px}
+  .legend h4{margin:0 0 8px;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);font-weight:700}
+  .legend .row{display:flex;align-items:center;gap:8px;margin:5px 0;color:#c4cfe2}
+  .legend .sw{width:11px;height:11px;border-radius:50%;flex:none}
+  .legend .sw.ring{background:transparent;border:2px solid var(--accent)}
+  .legend .sw.cluster{background:rgba(79,139,255,.35);border:1px solid rgba(79,139,255,.7)}
+  .legend .sw.county{width:6px;height:6px;background:#8090aa}
+  @media (max-width:640px){.legend{display:none}}
+
+  /* ---- detail card -------------------------------------------------------- */
+  .card{position:absolute;top:74px;right:14px;z-index:12;width:340px;max-width:calc(100vw - 28px);
+    padding:0;overflow:hidden;opacity:0;transform:translateY(-8px) scale(.98);pointer-events:none;transition:.22s cubic-bezier(.2,.7,.3,1)}
+  .card.show{opacity:1;transform:none;pointer-events:auto}
+  .card .thumbs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;height:118px;background:#0a111e}
+  .card .thumbs figure{margin:0;position:relative;overflow:hidden}
+  .card .thumbs img{width:100%;height:100%;object-fit:cover;display:block;transition:.4s}
+  .card .thumbs figure:hover img{transform:scale(1.08)}
+  .card .grad{width:100%;height:100%}
+  .card .x{position:absolute;top:9px;right:9px;width:28px;height:28px;border:0;border-radius:50%;cursor:pointer;
+    background:rgba(8,14,26,.6);color:#fff;backdrop-filter:blur(6px);display:grid;place-items:center;font-size:14px;z-index:2}
+  .card .body{padding:14px 16px 15px}
+  .card .head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+  .card h3{margin:0;font-size:19px;font-weight:750;letter-spacing:.01em}
+  .card h3 span{color:var(--dim);font-size:14px;font-weight:600;margin-left:6px}
+  .card .prov{color:var(--dim);font-size:12px;margin:2px 0 0}
+  .card .tier{flex:none;font-size:10px;font-weight:700;letter-spacing:.06em;padding:4px 8px;border-radius:7px;
+    background:color-mix(in srgb,var(--accent) 22%,transparent);color:#bcd2ff;border:1px solid color-mix(in srgb,var(--accent) 40%,transparent)}
+  .card .when{display:flex;align-items:center;gap:8px;margin:11px 0 13px;font-size:12.5px;color:#c4cfe2}
+  /* fintech-style stat grid */
+  .stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .stat{background:rgba(255,255,255,.03);border:1px solid var(--glass-line);border-radius:10px;padding:9px 11px}
+  .stat .k{font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);font-weight:600}
+  .stat .v{font-size:18px;font-weight:700;margin-top:3px;font-variant-numeric:tabular-nums}
+  .stat .v small{font-size:11px;color:var(--dim);font-weight:500}
+  .gauge{height:5px;border-radius:999px;background:#1b2740;margin-top:7px;overflow:hidden}
+  .gauge i{display:block;height:100%;border-radius:999px}
+  .visits{margin:12px 0 0;display:flex;flex-wrap:wrap;gap:5px}
+  .visits .v{font-size:10.5px;color:#aab8d0;background:rgba(255,255,255,.04);border:1px solid var(--glass-line);
+    padding:3px 7px;border-radius:6px;font-variant-numeric:tabular-nums}
+  .credit{margin:12px 0 0;font-size:9.5px;color:#5d6a85;line-height:1.45}
+  .credit a{color:#6f80a0;text-decoration:none}
+  .region{margin:11px 0 0;font-size:11px;color:var(--dim)}
+  @media (max-width:640px){.card{top:auto;bottom:120px;right:14px;left:14px;width:auto}.card .thumbs{height:96px}}
+
+  /* ---- loading ------------------------------------------------------------ */
+  #load{position:absolute;inset:0;z-index:30;display:grid;place-items:center;background:var(--bg);transition:.5s}
+  #load.done{opacity:0;pointer-events:none}
+  #load .b{text-align:center;color:var(--dim);font-size:13px}
+  #load .spin{width:34px;height:34px;margin:0 auto 14px;border:3px solid #1e2a40;border-top-color:var(--accent);
+    border-radius:50%;animation:spin .8s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @media (prefers-reduced-motion:reduce){.spin{animation:none}}
+</style></head>
+<body>
+<div id="map"></div>
+
+<div class="topleft">
+  <div class="brand glass">
+    <span class="dot"></span> County Trajectory <small id="brand-sub">· age 50→80</small>
+  </div>
+  <div class="seg glass" role="tablist" aria-label="Base map">
+    <button id="m-std" class="on" aria-selected="true">Map</button>
+    <button id="m-sat" aria-selected="false">Satellite</button>
+  </div>
+</div>
+
+<div class="topright">
+  <a class="iconbtn glass" href="./timeline.html" title="Open the scroll timeline">🕑</a>
+  <div class="iconbtn glass" id="fs" title="Fullscreen" role="button" tabindex="0">⛶</div>
+</div>
+
+<div class="legend glass" id="legend">
+  <h4>Arrival season</h4>
+  <div class="row"><span class="sw" style="background:var(--spring)"></span>Spring</div>
+  <div class="row"><span class="sw" style="background:var(--summer)"></span>Summer</div>
+  <div class="row"><span class="sw" style="background:var(--autumn)"></span>Autumn</div>
+  <div class="row"><span class="sw" style="background:var(--winter)"></span>Winter</div>
+  <h4 style="margin-top:11px">Map</h4>
+  <div class="row"><span class="sw ring"></span>Now visiting</div>
+  <div class="row"><span class="sw cluster"></span>County cluster</div>
+  <div class="row"><span class="sw county"></span>County (3,149)</div>
+</div>
+
+<div class="dock glass">
+  <div class="nowline">
+    <button class="play" id="play" aria-label="Play">▶</button>
+    <span class="season-chip" id="chip">Winter</span>
+    <div class="now">
+      <div class="age" id="now-age">Age <b>50</b> · Jan 2026</div>
+      <div class="city" id="now-city"><span class="en">—</span></div>
+    </div>
+    <div class="speeds" id="speeds">
+      <button data-s="6">0.5×</button>
+      <button data-s="12" class="on">1×</button>
+      <button data-s="24">2×</button>
+      <button data-s="48">4×</button>
+    </div>
+  </div>
+  <div class="scrub">
+    <div class="track"><div class="fill" id="fill"></div></div>
+    <input id="slider" type="range" min="0" max="371" step="1" value="0" aria-label="Timeline"/>
+    <div class="ticks" id="ticks"></div>
+  </div>
+</div>
+
+<div class="card glass" id="card"></div>
+
+<div id="load"><div class="b"><div class="spin"></div>Loading 3,149 counties + 30-year route…</div></div>
+
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="https://unpkg.com/supercluster@8.0.1/dist/supercluster.min.js"></script>
+<script src="https://unpkg.com/deck.gl@9.0.36/dist.min.js"></script>
+<script>
+"use strict";
+/* ============================================================================
+   China County Trajectory Mapper
+   MapLibre (free, no token) base + Deck.gl overlay (Trips/Arc/Scatter) + supercluster.
+   Data is FETCHED (map_data.json + landmarks/manifest.json), never hardcoded.
+============================================================================ */
+const MONTHS=['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const SEASON={
+  spring:{rgb:[127,217,138],css:'var(--spring)',label:'Spring'},
+  summer:{rgb:[56,189,248], css:'var(--summer)',label:'Summer'},
+  autumn:{rgb:[245,158,11], css:'var(--autumn)',label:'Autumn'},
+  winter:{rgb:[148,163,184],css:'var(--winter)',label:'Winter'},
+};
+const rgba=(name,a)=>[...SEASON[name].rgb,a];
+const $=id=>document.getElementById(id);
+
+// ---- base-map styles: free raster tiles, no API key ------------------------
+const styleStd={version:8,sources:{c:{type:'raster',tileSize:256,
+  tiles:['a','b','c','d'].map(s=>`https://${s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png`),
+  attribution:'© OpenStreetMap, © CARTO'}},layers:[{id:'c',type:'raster',source:'c'}]};
+const styleSat={version:8,sources:{
+  e:{type:'raster',tileSize:256,tiles:['https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'],
+     attribution:'© Esri, Maxar, Earthstar Geographics'},
+  l:{type:'raster',tileSize:256,tiles:['a','b','c','d'].map(s=>`https://${s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}.png`)}},
+  layers:[{id:'e',type:'raster',source:'e'},{id:'l',type:'raster',source:'l'}]};
+
+const map=new maplibregl.Map({container:'map',style:styleStd,center:[103.5,34.5],zoom:3.15,
+  minZoom:2.6,maxZoom:13,attributionControl:{compact:true},dragRotate:false});
+map.addControl(new maplibregl.NavigationControl({showCompass:false}),'bottom-right');
+const overlay=new deck.MapboxOverlay({interleaved:false,layers:[]});
+map.addControl(overlay);
+
+// ---- state -----------------------------------------------------------------
+let TRAJ=[], VISITED=[], VISITED_BY={}, ARCS=[], PATH=[], TIMES=[], MANIFEST={};
+let MAXT=0, index=null, clusterBubbles=[], clusterLeaves=[];
+let currentTime=0, playing=false, speed=12, lastTs=0, lastCityId=null, showCounties=true;
+
+// ---- load data -------------------------------------------------------------
+Promise.all([
+  fetch('./map_data.json').then(r=>r.json()),
+  fetch('./landmarks/manifest.json').then(r=>r.ok?r.json():{}).catch(()=>({})),
+]).then(([md,man])=>{
+  MANIFEST=man||{};
+  TRAJ=md.trajectory; MAXT=TRAJ.length-1;
+  $('slider').max=MAXT;
+  $('brand-sub').textContent=`· age ${md.meta.age_span[0]}→${md.meta.age_span[1]}`;
+
+  // aggregate visits per city
+  TRAJ.forEach(s=>{
+    let v=VISITED_BY[s.id];
+    if(!v){v={id:s.id,n:s.n,z:s.z,p:s.p,lng:s.lng,lat:s.lat,tier:s.tier,
+             region:s.region,firstSeason:s.season,visits:[]}; VISITED_BY[s.id]=v; VISITED.push(v);}
+    v.visits.push({age:s.age,year:s.year,month:s.month,season:s.season,
+                   temp:s.temp,night:s.night,discomfort:s.discomfort,cost:s.cost,t:s.t});
+  });
+  // animated path (one trip through all months)
+  PATH=TRAJ.map(s=>[s.lng,s.lat]); TIMES=TRAJ.map(s=>s.t);
+  // arcs: aggregate consecutive distinct-city hops
+  const seen={};
+  for(let i=1;i<TRAJ.length;i++){
+    const a=TRAJ[i-1],b=TRAJ[i]; if(a.id===b.id)continue;
+    const k=a.id+'>'+b.id;
+    if(seen[k]){seen[k].count++;continue;}
+    seen[k]={s:[a.lng,a.lat],t:[b.lng,b.lat],ss:a.season,ts:b.season,count:1}; ARCS.push(seen[k]);
+  }
+  // supercluster over the 3,149 counties (readability at low zoom)
+  index=new Supercluster({radius:58,maxZoom:9,minPoints:4});
+  index.load(md.counties.map(c=>({type:'Feature',
+    geometry:{type:'Point',coordinates:[c.lng,c.lat]},
+    properties:{id:c.id,n:c.n,t:c.t}})));
+
+  buildTicks();
+  if(map.loaded()) start(); else map.on('load',start);
+});
+
+function start(){
+  recluster();
+  map.on('moveend',recluster);
+  lastCityId=TRAJ[0].id;          // keep the all-China framing on load; fly only on later city changes
+  onTime(false);
+  $('load').classList.add('done');
+}
+
+// ---- supercluster recompute on viewport change -----------------------------
+function recluster(){
+  if(!index)return;
+  const b=map.getBounds();
+  const feats=index.getClusters([b.getWest(),b.getSouth(),b.getEast(),b.getNorth()],Math.floor(map.getZoom()));
+  clusterBubbles=feats.filter(f=>f.properties.cluster);
+  clusterLeaves =feats.filter(f=>!f.properties.cluster);
+  render();
+}
+const clusterR=n=>9+Math.min(28,Math.log2(n+1)*5);
+
+// ---- deck layers -----------------------------------------------------------
+function activeCity(){const i=Math.max(0,Math.min(MAXT,Math.round(currentTime)));const s=TRAJ[i];return s?VISITED_BY[s.id]:null;}
+function buildLayers(){
+  const L=[];
+  if(showCounties){
+    L.push(new deck.ScatterplotLayer({id:'leaves',data:clusterLeaves,
+      getPosition:d=>d.geometry.coordinates,getRadius:2.4,radiusUnits:'pixels',
+      radiusMinPixels:1.3,radiusMaxPixels:3,getFillColor:[128,144,170,95]}));
+    L.push(new deck.ScatterplotLayer({id:'clusters',data:clusterBubbles,pickable:true,
+      getPosition:d=>d.geometry.coordinates,getRadius:d=>clusterR(d.properties.point_count),
+      radiusUnits:'pixels',getFillColor:[79,139,255,52],stroked:true,getLineColor:[79,139,255,170],
+      lineWidthMinPixels:1,onClick:expandCluster,onHover:hoverCursor}));
+    L.push(new deck.TextLayer({id:'counts',data:clusterBubbles,
+      getPosition:d=>d.geometry.coordinates,getText:d=>String(d.properties.point_count_abbreviated),
+      getSize:11,getColor:[214,226,247,235],fontWeight:700,
+      fontFamily:'-apple-system,Segoe UI,Roboto,sans-serif',getTextAnchor:'middle',getAlignmentBaseline:'center'}));
+  }
+  L.push(new deck.ArcLayer({id:'arcs',data:ARCS,getSourcePosition:d=>d.s,getTargetPosition:d=>d.t,
+    getSourceColor:d=>rgba(d.ss,140),getTargetColor:d=>rgba(d.ts,140),
+    getWidth:d=>1+Math.min(d.count,6)*0.45,getHeight:0.28,opacity:0.3}));
+  L.push(new deck.TripsLayer({id:'trip',data:[{path:PATH,timestamps:TIMES}],
+    getPath:d=>d.path,getTimestamps:d=>d.timestamps,getColor:[126,213,255],
+    opacity:0.95,widthMinPixels:3.2,rounded:true,jointRounded:true,capRounded:true,
+    trailLength:16,fadeTrail:true,currentTime}));
+  L.push(new deck.ScatterplotLayer({id:'visited',data:VISITED,pickable:true,
+    getPosition:d=>[d.lng,d.lat],getRadius:d=>4+Math.min(d.visits.length,8)*0.7,radiusUnits:'pixels',
+    radiusMinPixels:3.5,getFillColor:d=>rgba(d.firstSeason,238),stroked:true,
+    getLineColor:[8,14,26,210],lineWidthMinPixels:1.2,onClick:openCard,onHover:hoverCursor}));
+  const a=activeCity();
+  if(a){const pulse=8+3*Math.sin(Date.now()/240);
+    L.push(new deck.ScatterplotLayer({id:'active',data:[a],getPosition:d=>[d.lng,d.lat],
+      getRadius:pulse,radiusUnits:'pixels',stroked:true,filled:false,
+      getLineColor:[255,255,255,230],lineWidthMinPixels:2,updateTriggers:{getRadius:pulse}}));}
+  return L;
+}
+function render(){overlay.setProps({layers:buildLayers()});}
+
+function hoverCursor(info){map.getCanvas().style.cursor=info.object?'pointer':'';}
+function expandCluster(info){
+  if(!info.object)return;
+  const z=index.getClusterExpansionZoom(info.object.properties.cluster_id);
+  map.easeTo({center:info.object.geometry.coordinates,zoom:Math.min(z,13),duration:600});
+}
+
+// ---- timeline / playback ---------------------------------------------------
+function onTime(fromPlay){
+  const i=Math.max(0,Math.min(MAXT,Math.round(currentTime)));
+  const s=TRAJ[i];
+  $('slider').value=i;
+  $('fill').style.width=(i/MAXT*100)+'%';
+  $('now-age').innerHTML=`Age <b>${s.age}</b> · ${MONTHS[s.month]} ${s.year}`;
+  $('now-city').innerHTML=`<span class="en">${s.n}</span> ${s.z} · ${s.p}`;
+  const ch=$('chip'); ch.textContent=SEASON[s.season].label; ch.style.background=SEASON[s.season].css;
+  if(s.id!==lastCityId){
+    lastCityId=s.id;
+    map.easeTo({center:[s.lng,s.lat],duration:fromPlay?1400:600,zoom:Math.max(map.getZoom(),4.4)});
+  }
+  render();
+}
+function setPlay(p){
+  playing=p; $('play').textContent=p?'❚❚':'▶'; $('play').setAttribute('aria-label',p?'Pause':'Play');
+  if(p&&currentTime>=MAXT)currentTime=0;
+}
+function loop(ts){
+  if(playing){
+    if(lastTs)currentTime=Math.min(MAXT,currentTime+(ts-lastTs)/1000*speed);
+    lastTs=ts;
+    onTime(true);
+    if(currentTime>=MAXT)setPlay(false);
+  }else{lastTs=0; if(activeCity())render();/* keep pulse alive */}
+  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+
+$('play').onclick=()=>setPlay(!playing);
+$('slider').oninput=e=>{setPlay(false);currentTime=+e.target.value;onTime(false);};
+$('speeds').onclick=e=>{const b=e.target.closest('button');if(!b)return;
+  speed=+b.dataset.s;[...$('speeds').children].forEach(x=>x.classList.toggle('on',x===b));};
+document.addEventListener('keydown',e=>{
+  if(e.code==='Space'){e.preventDefault();setPlay(!playing);}
+  if(e.code==='ArrowRight'){setPlay(false);currentTime=Math.min(MAXT,currentTime+1);onTime(false);}
+  if(e.code==='ArrowLeft'){setPlay(false);currentTime=Math.max(0,currentTime-1);onTime(false);}
+});
+function buildTicks(){
+  const t=$('ticks');t.innerHTML='';
+  for(let a=50;a<=80;a+=10){const d=document.createElement('span');d.textContent='age '+a;t.appendChild(d);}
+}
+
+// ---- base-map toggle -------------------------------------------------------
+$('m-std').onclick=()=>swapStyle(styleStd,'m-std');
+$('m-sat').onclick=()=>swapStyle(styleSat,'m-sat');
+function swapStyle(st,on){
+  map.setStyle(st);                              // deck overlay (a control) survives this
+  ['m-std','m-sat'].forEach(id=>{const b=$(id);const a=id===on;b.classList.toggle('on',a);b.setAttribute('aria-selected',a);});
+}
+
+// ---- fullscreen ------------------------------------------------------------
+$('fs').onclick=()=>{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();};
+
+/* ============================================================================
+   Detail card — glassmorphism, fintech-grade hierarchy.
+   Thumbnails come from the FETCHED manifest (real Wikimedia photos, hosted in
+   /docs/landmarks). Missing slots fall back to a deterministic gradient keyed
+   off the city id — so the layout is always 3 tiles, and zero URLs are baked
+   into this file. Swap manifest source → swap imagery, no code change.
+============================================================================ */
+function hashHue(s){let h=0;for(let i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))|0;return Math.abs(h)%360;}
+function gradBg(seed){const h=hashHue(seed);
+  return `background:linear-gradient(135deg,hsl(${h} 45% 24%),hsl(${(h+40)%360} 50% 14%))`;}
+function thumbsHTML(city){
+  // Each tile ALWAYS has a deterministic gradient background; a real photo (if the
+  // fetched manifest has one) overlays it. If that photo 404s, onerror just hides
+  // the <img> and the gradient shows through — no fragile inline HTML/escaping.
+  const imgs=(MANIFEST[city.id]&&MANIFEST[city.id].images)||[];
+  let h='';
+  for(let k=0;k<3;k++){
+    const im=imgs[k];
+    h+=`<figure style="${gradBg(city.id+k)}">`+
+       (im?`<img loading="lazy" src="./${im.src}" alt="${city.n} landmark" onerror="this.style.display='none'"/>`:'')+
+       `</figure>`;
+  }
+  return h;
+}
+function creditHTML(city){
+  const imgs=(MANIFEST[city.id]&&MANIFEST[city.id].images)||[];
+  if(!imgs.length)return '';
+  const u=[...new Set(imgs.map(i=>i.author).filter(Boolean))].slice(0,2).join(', ');
+  const lic=imgs[0].license, page=imgs[0].page;
+  return `<div class="credit">📷 ${u||'Wikimedia Commons'} · ${lic}
+    ${page?`· <a href="${page}" target="_blank" rel="noopener">source</a>`:''} — via Wikimedia Commons</div>`;
+}
+function gaugeColor(d){return d<3?'var(--spring)':d<6?'var(--autumn)':'#ef5350';}
+function openCard(info){
+  const c=info&&info.object; if(!c)return;
+  // representative month = the visit with the lowest discomfort (the "why you go")
+  const best=c.visits.reduce((a,b)=>(b.discomfort??99)<(a.discomfort??99)?b:a,c.visits[0]);
+  const dc=best.discomfort??0;
+  const card=$('card');
+  card.innerHTML=`
+    <button class="x" id="cardx" aria-label="Close">✕</button>
+    <div class="thumbs">${thumbsHTML(c)}</div>
+    <div class="body">
+      <div class="head">
+        <div>
+          <h3>${c.n}<span>${c.z}</span></h3>
+          <p class="prov">${c.p} · ${c.visits.length} visit${c.visits.length>1?'s':''} over the route</p>
+        </div>
+        <span class="tier">TIER ${c.tier}</span>
+      </div>
+      <div class="when">
+        <span class="season-chip" style="background:${SEASON[best.season].css}">${SEASON[best.season].label}</span>
+        Best stay · Age ${best.age} · ${MONTHS[best.month]} ${best.year}
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="k">Monthly cost</div><div class="v">$${(best.cost||0).toLocaleString()}<small>/mo</small></div></div>
+        <div class="stat"><div class="k">Day / Night</div><div class="v">${Math.round(best.temp)}°<small> / ${Math.round(best.night)}°C</small></div></div>
+        <div class="stat" style="grid-column:1/3"><div class="k">Climate discomfort</div>
+          <div class="v">${dc.toFixed(1)}<small> / 10</small></div>
+          <div class="gauge"><i style="width:${Math.min(100,dc*10)}%;background:${gaugeColor(dc)}"></i></div></div>
+      </div>
+      <div class="visits">${c.visits.map(v=>`<span class="v">${MONTHS[v.month]} '${String(v.year).slice(2)}</span>`).join('')}</div>
+      ${c.region?`<div class="region">↳ ${c.region}</div>`:''}
+      ${creditHTML(c)}
+    </div>`;
+  card.classList.add('show');
+  $('cardx').onclick=()=>card.classList.remove('show');
+  map.easeTo({center:[c.lng,c.lat],duration:700,zoom:Math.max(map.getZoom(),5)});
+}
+</script>
+</body></html>

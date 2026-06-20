@@ -11,3 +11,7 @@ outputs/travel_os.db
 # Large regenerable artifacts at full-coverage scale (2,348 nodes).
 outputs/edges.json
 outputs/risk_heatmap.json
+
+# Verification artifacts (Playwright MCP snapshots, ad-hoc screenshots).
+.playwright-mcp/
+/map-*.png

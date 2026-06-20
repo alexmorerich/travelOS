@@ -62,6 +62,12 @@ Each year is split into 12 months and each month placed in its most comfortable 
 
 > Planning model, **not financial advice.** Non-geographic fields are rule-based estimates (see [Data honesty](#data-honesty)).
 
+### The map layer — county trajectory mapper
+
+**`open docs/map.html`** — the same 30-year route on a high-performance **Deck.gl + MapLibre** map (no Mapbox/Google token; free raster tiles, so it runs straight off GitHub Pages). The whole 3,149-county set is indexed with **supercluster** (cluster bubbles at low zoom → individual dots when you zoom in), the route itself draws as a faint **`ArcLayer`** network with an animated **`TripsLayer`** trail, and the playback dock scrubs all 372 months — **play** auto-`flyTo`s between counties and the UI tracks the live season. Click any stop for a glassmorphism card: **3 real landmark photos**, tier, monthly cost, day/night temps, a climate-discomfort gauge, and every month you stay there.
+
+Landmark photos are fetched from **Wikimedia Commons** (geosearched near each county center — CC/public-domain, author + license credited in-card) and hosted in `docs/landmarks/` (58 of the 61 route cities covered; the rest fall back to a generated gradient tile). Regenerate with `npm run map:data` (joins the engine output into `docs/map_data.json`) and `npm run map:img` (re-fetches the thumbnails).
+
 ---
 
 ## 🧭 The 30-year roadmap & Quarter-Agent operating model

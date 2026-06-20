@@ -1,0 +1,1431 @@
+{
+"CN-FJ-QUANZHOU": {
+"name": "Quanzhou",
+"images": [
+{
+"src": "landmarks/CN-FJ-QUANZHOU/1.jpg",
+"author": "Zhangzhugang",
+"license": "CC BY-SA 4.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+"page": "https://commons.wikimedia.org/wiki/File:Quanzhou_Kaiyuan_Si_20120229-12.jpg"
+},
+{
+"src": "landmarks/CN-FJ-QUANZHOU/2.jpg",
+"author": "Zhangzhugang",
+"license": "CC BY-SA 4.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+"page": "https://commons.wikimedia.org/wiki/File:Quanzhou_Kaiyuan_Si_20120229-18.jpg"
+},
+{
+"src": "landmarks/CN-FJ-QUANZHOU/3.jpg",
+"author": "Zhangzhugang",
+"license": "CC BY-SA 4.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+"page": "https://commons.wikimedia.org/wiki/File:Quanzhou_Kaiyuan_Si_20120229-19.jpg"
+}
+]
+},
+"CN-XJ-TOQSUN": {
+"name": "Toqsun",
+"images": [
+{
+"src": "landmarks/CN-XJ-TOQSUN/1.jpg",
+"author": "罗布泊",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E5%9B%BD%E6%96%B0%E7%96%86%E6%89%98%E5%85%8B%E9%80%8AChina_Xinjiang,Toksun_China_Xinjiang_Urumqi_Wel_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-XJ-TOQSUN/2.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS043-E-272730_-_View_of_Earth.jpg"
+},
+{
+"src": "landmarks/CN-XJ-TOQSUN/3.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS043-E-272731_-_View_of_Earth.jpg"
+}
+]
+},
+"CN-XJ-JING": {
+"name": "Jing",
+"images": [
+{
+"src": "landmarks/CN-XJ-JING/1.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS006-E-5581_-_View_of_China.jpg"
+},
+{
+"src": "landmarks/CN-XJ-JING/2.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS006-E-5582_-_View_of_China.jpg"
+}
+]
+},
+"CN-XJ-SANDAOHEZI": {
+"name": "Sandaohezi",
+"images": [
+{
+"src": "landmarks/CN-XJ-SANDAOHEZI/1.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS033-E-13693_-_View_of_Earth.jpg"
+},
+{
+"src": "landmarks/CN-XJ-SANDAOHEZI/2.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS036-E-8700_-_View_of_China.jpg"
+},
+{
+"src": "landmarks/CN-XJ-SANDAOHEZI/3.jpg",
+"author": "木子子羊翔",
+"license": "CC BY-SA 4.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+"page": "https://commons.wikimedia.org/wiki/File:Shawan_Railway_Station.jpg"
+}
+]
+},
+"CN-XJ-BURQIN": {
+"name": "Burqin",
+"images": [
+{
+"src": "landmarks/CN-XJ-BURQIN/1.jpg",
+"author": "余华峰",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:Burqin_beekeeping.jpg"
+},
+{
+"src": "landmarks/CN-XJ-BURQIN/2.jpg",
+"author": "余华峰",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:Burqin_County_street.jpg"
+},
+{
+"src": "landmarks/CN-XJ-BURQIN/3.jpg",
+"author": "余华峰",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E5%B8%83%E5%B0%94%E6%B4%A5%E7%9A%84%E5%85%BB%E8%9C%82_%E4%BD%99%E5%8D%8E%E5%B3%B0_-_panoramio.jpg"
+}
+]
+},
+"CN-XZ-MOTUO": {
+"name": "Motuo",
+"images": [
+{
+"src": "landmarks/CN-XZ-MOTUO/1.jpg",
+"author": "卢传雄",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E8%A5%BF%E8%97%8F%E6%9E%97%E8%8A%9D-%E5%A2%A8%E8%84%B1_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-XZ-MOTUO/2.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS046-E-11871_-_View_of_Earth.jpg"
+},
+{
+"src": "landmarks/CN-XZ-MOTUO/3.jpg",
+"author": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS056-E-201410_-_View_of_Earth.jpg"
+}
+]
+},
+"CN-XZ-LHASA": {
+"name": "Lhasa",
+"images": [
+{
+"src": "landmarks/CN-XZ-LHASA/1.jpg",
+"author": "Dennis G. Jarvis",
+"license": "CC BY-SA 2.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Drepung_Monastery_(1).jpg"
+},
+{
+"src": "landmarks/CN-XZ-LHASA/2.jpg",
+"author": "Dennis G. Jarvis",
+"license": "CC BY-SA 2.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Pilgrims_in_Jokhang.jpg"
+},
+{
+"src": "landmarks/CN-XZ-LHASA/3.jpg",
+"author": "Dennis G. Jarvis",
+"license": "CC BY-SA 2.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Barkhor_Street,_Lhasa.jpg"
+}
+]
+},
+"CN-XZ-RIKAZE": {
+"name": "Rikaze",
+"images": [
+{
+"src": "landmarks/CN-XZ-RIKAZE/1.jpg",
+"author": "So_P from région parisienne, France",
+"license": "CC BY 2.0",
+"license_url": "https://creativecommons.org/licenses/by/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Tisane_de_chrysanth%C3%A8me.jpg"
+},
+{
+"src": "landmarks/CN-XZ-RIKAZE/2.jpg",
+"author": "白云悠悠",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E6%97%A5%E5%96%80%E5%88%99_rikaze_city_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-XZ-RIKAZE/3.jpg",
+"author": "白云悠悠",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E6%97%A5%E5%96%80%E5%88%99_rikaze_city_-_panoramio_-_%E7%99%BD%E4%BA%91%E6%82%A0%E6%82%A0.jpg"
+}
+]
+},
+"CN-GS-LIUJIAXIA": {
+"name": "Liujiaxia",
+"images": [
+{
+"src": "landmarks/CN-GS-LIUJIAXIA/1.jpg",
+"author": "guan",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E5%88%98%E5%AE%B6%E5%B3%A1.jpg"
+},
+{
+"src": "landmarks/CN-GS-LIUJIAXIA/2.jpg",
+"author": "jt Guan",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E5%88%98%E5%AE%B6%E5%B3%A1_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-GS-LIUJIAXIA/3.jpg",
+"author": "jt Guan",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E6%B0%B8%E9%9D%96_-_panoramio.jpg"
+}
+]
+},
+"CN-QH-JISHI": {
+"name": "Jishi",
+"images": [
+{
+"src": "landmarks/CN-QH-JISHI/1.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS006-E-50357_-_View_of_China.jpg"
+}
+]
+},
+"CN-GS-HEZHENGCHENGGUANZHEN": {
+"name": "Hezheng Chengguanzhen",
+"images": [
+{
+"src": "landmarks/CN-GS-HEZHENGCHENGGUANZHEN/1.jpg",
+"author": "STW932",
+"license": "CC0",
+"license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+"page": "https://commons.wikimedia.org/wiki/File:Hezheng_county_seat_01.jpg"
+}
+]
+},
+"CN-JL-ERDAO": {
+"name": "Erdao",
+"images": [
+{
+"src": "landmarks/CN-JL-ERDAO/1.jpg",
+"author": "wanghongliu",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:2002%E5%B9%B4_%E9%95%BF%E6%98%A5%E5%B8%82%E5%90%89%E6%9E%97%E5%A4%A7%E8%B7%AF%EF%BC%88%E6%96%B0%E4%BA%AC%E5%90%89%E6%9E%97%E5%A4%A7%E8%A1%97%EF%BC%89_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-JL-ERDAO/2.jpg",
+"author": "wanghongliu",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:2002%E5%B9%B4_%E8%87%AA%E7%94%B1%E5%A4%A7%E6%A1%A5%EF%BC%88%E6%96%B0%E4%BA%AC%E8%87%B3%E5%9C%A3%E5%A4%A7%E8%B7%AF%EF%BC%89_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-JL-ERDAO/3.jpg",
+"author": "wanghongliu",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:2002%E5%B9%B4_%E9%95%BF%E6%98%A5%E5%B8%82%E5%90%89%E6%9E%97%E5%A4%A7%E8%B7%AF%EF%BC%88%E6%96%B0%E4%BA%AC%E5%90%89%E6%9E%97%E5%A4%A7%E8%A1%97%EF%BC%89_-_panoramio_(1).jpg"
+}
+]
+},
+"CN-NM-BAOKANG": {
+"name": "Baokang",
+"images": []
+},
+"CN-JL-CHANGCHUN": {
+"name": "Changchun",
+"images": [
+{
+"src": "landmarks/CN-JL-CHANGCHUN/1.jpg",
+"author": "Кожин, Семён Леонидович/ Kozhin Simon Leonidivitch",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:Simon_Kozhin_Luminsu_China_Changchun_international_exhibition_2009_semptember.jpg"
+},
+{
+"src": "landmarks/CN-JL-CHANGCHUN/2.jpg",
+"author": "George Wenn",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E9%95%BF%E6%98%A5%E7%89%A1%E4%B8%B9%E5%9B%AD%E5%86%85_-_panoramio_-_George_Wenn_(2).jpg"
+},
+{
+"src": "landmarks/CN-JL-CHANGCHUN/3.jpg",
+"author": "George Wenn",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E7%89%A1%E4%B8%B9%E5%9B%AD%E9%87%8C%E7%9A%84%E7%89%A1%E4%B8%B9_-_panoramio.jpg"
+}
+]
+},
+"CN-GS-HUIXIANCHENGGUANZHEN": {
+"name": "Huixian Chengguanzhen",
+"images": [
+{
+"src": "landmarks/CN-GS-HUIXIANCHENGGUANZHEN/1.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS029-E-27798_-_View_of_Earth.jpg"
+},
+{
+"src": "landmarks/CN-GS-HUIXIANCHENGGUANZHEN/2.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS066-E-33122_-_View_of_Earth.jpg"
+},
+{
+"src": "landmarks/CN-GS-HUIXIANCHENGGUANZHEN/3.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS066-E-34567_-_View_of_Earth.jpg"
+}
+]
+},
+"CN-GS-ZHOUQUCHENGGUANZHEN": {
+"name": "Zhouqu Chengguanzhen",
+"images": [
+{
+"src": "landmarks/CN-GS-ZHOUQUCHENGGUANZHEN/1.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS065-E-378387_-_View_of_Earth.jpg"
+},
+{
+"src": "landmarks/CN-GS-ZHOUQUCHENGGUANZHEN/2.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS067-E-265737_-_View_of_Earth.jpg"
+},
+{
+"src": "landmarks/CN-GS-ZHOUQUCHENGGUANZHEN/3.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS067-E-265738_-_View_of_Earth.jpg"
+}
+]
+},
+"CN-GS-QINGYUAN": {
+"name": "Qingyuan",
+"images": [
+{
+"src": "landmarks/CN-GS-QINGYUAN/1.jpg",
+"author": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS060-E-20924_-_View_of_Earth.jpg"
+},
+{
+"src": "landmarks/CN-GS-QINGYUAN/2.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS042-E-248810_-_View_of_Earth.jpg"
+},
+{
+"src": "landmarks/CN-GS-QINGYUAN/3.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS042-E-248813_-_View_of_Earth.jpg"
+}
+]
+},
+"CN-NX-PINGLUOCHENGGUANZHEN": {
+"name": "Pingluo Chengguanzhen",
+"images": [
+{
+"src": "landmarks/CN-NX-PINGLUOCHENGGUANZHEN/1.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS067-E-266771_-_View_of_Earth.jpg"
+}
+]
+},
+"CN-NX-BEIJIE": {
+"name": "Beijie",
+"images": [
+{
+"src": "landmarks/CN-NX-BEIJIE/1.jpg",
+"author": "fish4fish",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:20130805%E7%9F%B3%E5%98%B4%E5%B1%B1%E5%B8%82G109%E9%81%93%E8%BE%B9%E8%BF%9C%E6%9C%9B%E9%BB%84%E6%B2%B3%E5%85%A8%E6%99%AF_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-NX-BEIJIE/2.jpg",
+"author": "fish4fish",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:20130805%E7%9F%B3%E5%98%B4%E5%B1%B1%E5%B8%82G109%E9%BB%84%E6%B2%B3%E5%A4%A7%E6%A1%A5%E7%BB%B4%E4%BF%AE%E5%A4%8D%E9%80%9A%E5%9C%A8%E5%8D%B3%E5%85%A8%E6%99%AF_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-NX-BEIJIE/3.jpg",
+"author": "fish4fish",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:20130805%E7%9F%B3%E5%98%B4%E5%B1%B1%E5%B8%82%E6%B8%85%E6%99%A8G109%E9%BB%84%E6%B2%B3%E5%A4%A7%E6%A1%A5%E4%B8%8B%E5%85%A8%E6%99%AF_-_panoramio.jpg"
+}
+]
+},
+"CN-NM-XINLI": {
+"name": "Xinli",
+"images": [
+{
+"src": "landmarks/CN-NM-XINLI/1.jpg",
+"author": "fish4fish",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:20130731%E5%86%85%E8%92%99%E6%9D%AD%E9%94%A6%E6%97%97%E8%A5%BF%E9%83%8AG109%E5%9B%BD%E9%81%93%E6%99%A8%E6%9B%A6_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-NM-XINLI/2.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS046-E-12115_-_View_of_Earth.jpg"
+},
+{
+"src": "landmarks/CN-NM-XINLI/3.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS046-E-12114_-_View_of_Earth.jpg"
+}
+]
+},
+"CN-HL-XIAN": {
+"name": "Xi'an",
+"images": [
+{
+"src": "landmarks/CN-HL-XIAN/1.jpg",
+"author": "TowerCard",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E5%B8%85%E5%8D%83_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-HL-XIAN/2.jpg",
+"author": "TowerCard",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E5%9C%A8%E9%AB%98%E6%A5%BC%E4%B8%8A%E4%BB%8E%E5%A4%AA%E5%B9%B3%E8%B7%AF%E5%90%91%E5%8C%97%E6%8B%8D%E6%91%84_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-HL-XIAN/3.jpg",
+"author": "TowerCard",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E6%8A%97%E6%88%98%E8%83%9C%E5%88%A9%E7%BA%AA%E5%BF%B5%E7%A2%91_-_panoramio.jpg"
+}
+]
+},
+"CN-HL-JIDONG": {
+"name": "Jidong",
+"images": [
+{
+"src": "landmarks/CN-HL-JIDONG/1.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS067-E-44589_-_View_of_Earth.jpg"
+}
+]
+},
+"CN-HL-SIFANGTAI": {
+"name": "Sifangtai",
+"images": [
+{
+"src": "landmarks/CN-HL-SIFANGTAI/1.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS044-E-22283_-_View_of_Earth.jpg"
+},
+{
+"src": "landmarks/CN-HL-SIFANGTAI/2.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS044-E-22281_-_View_of_Earth.jpg"
+},
+{
+"src": "landmarks/CN-HL-SIFANGTAI/3.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS044-E-22282_-_View_of_Earth.jpg"
+}
+]
+},
+"CN-JL-HUADIAN": {
+"name": "Huadian",
+"images": [
+{
+"src": "landmarks/CN-JL-HUADIAN/1.jpg",
+"author": "梓地",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E8%A1%8C%E6%91%84%E6%A2%93%E5%9C%B0_www.hiroko.cn_20110828064844.jpg"
+},
+{
+"src": "landmarks/CN-JL-HUADIAN/2.jpg",
+"author": "梓地",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E8%A1%8C%E6%91%84%E6%A2%93%E5%9C%B0_www.hiroko.cn_20110828065620.jpg"
+},
+{
+"src": "landmarks/CN-JL-HUADIAN/3.jpg",
+"author": "梓地",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E8%8B%8F%E5%AF%86%E5%9F%8E%E6%AE%8B%E5%A2%99%E5%92%8C%E5%85%A5%E5%8F%A3_%E8%A1%8C%E6%91%84%E6%A2%93%E5%9C%B0_20110828065416.jpg"
+}
+]
+},
+"CN-JL-ANTU": {
+"name": "Antu",
+"images": [
+{
+"src": "landmarks/CN-JL-ANTU/1.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS028-E-25282_-_View_of_Earth.jpg"
+},
+{
+"src": "landmarks/CN-JL-ANTU/2.jpg",
+"author": "Liuxingy",
+"license": "CC BY-SA 4.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E9%95%BF%E5%90%89%E7%8F%B2%E5%9F%8E%E9%99%85%E5%AE%89%E5%9B%BE%E8%A5%BF%E7%AB%99_01.jpg"
+},
+{
+"src": "landmarks/CN-JL-ANTU/3.jpg",
+"author": "Liuxingy",
+"license": "CC BY-SA 4.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E9%95%BF%E5%90%89%E7%8F%B2%E5%9F%8E%E9%99%85%E5%AE%89%E5%9B%BE%E8%A5%BF%E7%AB%99_02.jpg"
+}
+]
+},
+"CN-JL-LIUHE": {
+"name": "Liuhe",
+"images": [
+{
+"src": "landmarks/CN-JL-LIUHE/1.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS026-E-23363_-_View_of_Earth.jpg"
+},
+{
+"src": "landmarks/CN-JL-LIUHE/2.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS010-E-7461_-_View_of_China.jpg"
+}
+]
+},
+"CN-LN-DASHIQIAO": {
+"name": "Dashiqiao",
+"images": [
+{
+"src": "landmarks/CN-LN-DASHIQIAO/1.jpg",
+"author": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS054-E-36513_-_View_of_Earth.jpg"
+},
+{
+"src": "landmarks/CN-LN-DASHIQIAO/2.jpg",
+"author": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS054-E-36515_-_View_of_Earth.jpg"
+},
+{
+"src": "landmarks/CN-LN-DASHIQIAO/3.jpg",
+"author": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS054-E-36512_-_View_of_Earth.jpg"
+}
+]
+},
+"CN-LN-LIANSHAN": {
+"name": "Lianshan",
+"images": [
+{
+"src": "landmarks/CN-LN-LIANSHAN/1.jpg",
+"author": "Ian Holton from Freiburg, Germany;cropped by uploader Mr.choppers",
+"license": "CC BY 2.0",
+"license_url": "https://creativecommons.org/licenses/by/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Chang%27an_SC1011.jpg"
+},
+{
+"src": "landmarks/CN-LN-LIANSHAN/2.jpg",
+"author": "Ian Holton from Freiburg, Germany;cropped, tire drawn in by uploader Mr.choppers",
+"license": "CC BY 2.0",
+"license_url": "https://creativecommons.org/licenses/by/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:LZW1010_crew_cab.jpg"
+},
+{
+"src": "landmarks/CN-LN-LIANSHAN/3.jpg",
+"author": "白云悠悠",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E7%AC%8A%E7%AF%B1%E5%B1%B1_-_panoramio.jpg"
+}
+]
+},
+"CN-LN-SHENYANG": {
+"name": "Shenyang",
+"images": [
+{
+"src": "landmarks/CN-LN-SHENYANG/1.jpg",
+"author": "George Wenn",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:IM000327_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-LN-SHENYANG/2.jpg",
+"author": "George Wenn",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:IM000323_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-LN-SHENYANG/3.jpg",
+"author": "zafb",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E8%A5%BF%E7%94%B5%E5%AD%90%E5%B8%82%E5%9C%BA%E5%8D%97%E5%8C%BA_-_panoramio.jpg"
+}
+]
+},
+"CN-XJ-GAOCHANG": {
+"name": "Gaochang",
+"images": [
+{
+"src": "landmarks/CN-XJ-GAOCHANG/1.jpg",
+"author": "Zossolino",
+"license": "CC BY-SA 4.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+"page": "https://commons.wikimedia.org/wiki/File:2015-09-18-131412_-_Turpan-Museum.JPG"
+},
+{
+"src": "landmarks/CN-XJ-GAOCHANG/2.jpg",
+"author": "David Stanley from Nanaimo, Canada",
+"license": "CC BY 2.0",
+"license_url": "https://creativecommons.org/licenses/by/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Paraceratherium_(41805875401).jpg"
+},
+{
+"src": "landmarks/CN-XJ-GAOCHANG/3.jpg",
+"author": "David Stanley from Nanaimo, Canada",
+"license": "CC BY 2.0",
+"license_url": "https://creativecommons.org/licenses/by/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Toyok_Grottoes_(41771874852).jpg"
+}
+]
+},
+"CN-XJ-BOFENG": {
+"name": "Bofeng",
+"images": [
+{
+"src": "landmarks/CN-XJ-BOFENG/1.jpg",
+"author": "罗布泊",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E5%90%90-%E4%B9%8C%E5%A4%A7%E5%85%AC%E8%B7%AF_Turfan-Urumchi_Great_Highway_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-XJ-BOFENG/2.jpg",
+"author": "罗布泊",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E5%90%90-%E4%B9%8C%E5%A4%A7%E5%85%AC%E8%B7%AF_Spit_-_Ukraine_Great_Highway_China_Xinjiang_Urumqi_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-XJ-BOFENG/3.jpg",
+"author": "罗布泊",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E5%90%90-%E4%B9%8C%E5%A4%A7%E5%85%AC%E8%B7%AF_Spit_-_Ukraine_Great_Highway_China_Xinjiang_Urumqi_-_panoramio_-_%E7%BD%97%E5%B8%83%E6%B3%8A.jpg"
+}
+]
+},
+"CN-XJ-GUMUDI": {
+"name": "Gumudi",
+"images": [
+{
+"src": "landmarks/CN-XJ-GUMUDI/1.jpg",
+"author": "jun  jin luo",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E5%9B%BD%E6%96%B0%E7%96%86%E4%B9%8C%E9%B2%81%E6%9C%A8%E9%BD%90%E5%B8%82_China_Xinjiang_Urumqi,_China_Xinjiang_Urumqi_-_panoramio_-_jun_jin_luo_(36).jpg"
+},
+{
+"src": "landmarks/CN-XJ-GUMUDI/2.jpg",
+"author": "罗布泊",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E4%B9%8C%E9%B2%81%E6%9C%A8%E9%BD%90%E7%B1%B3%E4%B8%9C%E5%8C%BAUrumqi_m_Eastern_China_Xinjiang_Urumqi_Welcome_you_-_panoramio_-_%E7%BD%97%E5%B8%83%E6%B3%8A_(3).jpg"
+},
+{
+"src": "landmarks/CN-XJ-GUMUDI/3.jpg",
+"author": "罗布泊",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E4%B9%8C%E9%B2%81%E6%9C%A8%E9%BD%90%E7%B1%B3%E4%B8%9C%E5%8C%BAUrumqi_m_Eastern_China_Xinjiang_Urumqi_Welcome_you_-_panoramio_-_%E7%BD%97%E5%B8%83%E6%B3%8A_(6).jpg"
+}
+]
+},
+"CN-XZ-NYINGCHI": {
+"name": "Nyingchi",
+"images": [
+{
+"src": "landmarks/CN-XZ-NYINGCHI/1.jpg",
+"author": "Kosi Gramatikoff  (Kosigrim at English Wikipedia)",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:King_Cypress_Tree.jpg"
+},
+{
+"src": "landmarks/CN-XZ-NYINGCHI/2.jpg",
+"author": "卢传雄",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:Cupressus_gigantea_Bajie.jpg"
+},
+{
+"src": "landmarks/CN-XZ-NYINGCHI/3.jpg",
+"author": "山海风",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E5%86%B0%E5%B7%9D%E5%86%B0%E8%88%8C_-_panoramio.jpg"
+}
+]
+},
+"CN-XZ-LHUENZHUB": {
+"name": "Lhuenzhub",
+"images": []
+},
+"CN-XZ-NAGQU": {
+"name": "Nagqu",
+"images": [
+{
+"src": "landmarks/CN-XZ-NAGQU/1.jpg",
+"author": "Banja-Frans Mulder",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:Na_Qu,_railwaystation_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-XZ-NAGQU/2.jpg",
+"author": "罗布泊",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E5%9B%BD%E8%A5%BF%E8%97%8F%E9%82%A3%E6%9B%B2%E7%81%AB%E8%BD%A6%E7%AB%99_China_Tibet_Naqu_Train_Station_China_Xinjia_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-XZ-NAGQU/3.jpg",
+"author": "罗布泊",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E5%9B%BD%E8%A5%BF%E8%97%8F_China_Tibet_China_Xinjiang_Urumqi_Welcome_you_to_tour_the_-_panoramio_(23).jpg"
+}
+]
+},
+"CN-SN-XIAN": {
+"name": "Xi'an",
+"images": [
+{
+"src": "landmarks/CN-SN-XIAN/1.jpg",
+"author": "Arian Zwegers from Brussels, Belgium",
+"license": "CC BY 2.0",
+"license_url": "https://creativecommons.org/licenses/by/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Xian,_Big_Goose_Pagoda_(6169636399).jpg"
+},
+{
+"src": "landmarks/CN-SN-XIAN/2.jpg",
+"author": "dayu490301",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E8%A5%BF%E5%AE%89%E5%9F%8E%E9%9A%8D%E5%BA%99%E9%97%A8%E6%A5%BC_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-SN-XIAN/3.jpg",
+"author": "Nyx Ning",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E8%A5%BF%E5%AE%89_%E5%9F%8E%E9%9A%8D%E5%BA%99%E9%97%A8%E9%80%A0%E5%9E%8B_-_panoramio.jpg"
+}
+]
+},
+"CN-SN-DALI": {
+"name": "Dali",
+"images": [
+{
+"src": "landmarks/CN-SN-DALI/1.jpg",
+"author": "Liuxingy",
+"license": "CC BY-SA 4.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E8%A5%BF%E5%AE%A2%E4%B8%93%E5%A4%A7%E8%8D%94%E7%AB%99_02.jpg"
+},
+{
+"src": "landmarks/CN-SN-DALI/2.jpg",
+"author": "Liuxingy",
+"license": "CC BY-SA 4.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E8%A5%BF%E5%AE%A2%E4%B8%93%E5%A4%A7%E8%8D%94%E7%AB%99_01.jpg"
+}
+]
+},
+"CN-SX-TAIYUAN": {
+"name": "Taiyuan",
+"images": [
+{
+"src": "landmarks/CN-SX-TAIYUAN/1.jpg",
+"author": "Francisco Anzola",
+"license": "CC BY 2.0",
+"license_url": "https://creativecommons.org/licenses/by/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Chongshan_temple_(6239380320).jpg"
+},
+{
+"src": "landmarks/CN-SX-TAIYUAN/2.jpg",
+"author": "Francisco Anzola",
+"license": "CC BY 2.0",
+"license_url": "https://creativecommons.org/licenses/by/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Model_(6239384620).jpg"
+},
+{
+"src": "landmarks/CN-SX-TAIYUAN/3.jpg",
+"author": "Francisco Anzola",
+"license": "CC BY 2.0",
+"license_url": "https://creativecommons.org/licenses/by/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Confucian_temple_(6239388564).jpg"
+}
+]
+},
+"CN-SX-JINZHONG": {
+"name": "Jinzhong",
+"images": [
+{
+"src": "landmarks/CN-SX-JINZHONG/1.jpg",
+"author": "Francisco Anzola",
+"license": "CC BY 2.0",
+"license_url": "https://creativecommons.org/licenses/by/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Qio_family_courtyard_(6243046177).jpg"
+},
+{
+"src": "landmarks/CN-SX-JINZHONG/2.jpg",
+"author": "Francisco Anzola",
+"license": "CC BY 2.0",
+"license_url": "https://creativecommons.org/licenses/by/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Small_courtyard_(6243064129).jpg"
+},
+{
+"src": "landmarks/CN-SX-JINZHONG/3.jpg",
+"author": "Francisco Anzola",
+"license": "CC BY 2.0",
+"license_url": "https://creativecommons.org/licenses/by/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Small_palace_in_rural_Shanxi_(6243574798).jpg"
+}
+]
+},
+"CN-HA-BAOFENG": {
+"name": "Baofeng",
+"images": [
+{
+"src": "landmarks/CN-HA-BAOFENG/1.jpg",
+"author": "新乡日报-李宝忠",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E9%A9%AC%E8%A1%97%E4%B9%A6%E4%BC%9A_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-HA-BAOFENG/2.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS040-E-70609_-_View_of_Earth.jpg"
+},
+{
+"src": "landmarks/CN-HA-BAOFENG/3.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS040-E-70606_-_View_of_Earth.jpg"
+}
+]
+},
+"CN-HA-LUOYANG": {
+"name": "Luoyang",
+"images": [
+{
+"src": "landmarks/CN-HA-LUOYANG/1.jpg",
+"author": "江上清风1961",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E5%91%A8%E7%8E%8B%E5%9F%8E%E5%B9%BF%E5%9C%BA_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-HA-LUOYANG/2.jpg",
+"author": "Tim Wu",
+"license": "CC BY-SA 4.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+"page": "https://commons.wikimedia.org/wiki/File:Concourse,_Zhouwangcheng_Square_Station,_Luoyang_Subway_20240929.jpg"
+},
+{
+"src": "landmarks/CN-HA-LUOYANG/3.jpg",
+"author": "Tim Wu",
+"license": "CC BY-SA 4.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+"page": "https://commons.wikimedia.org/wiki/File:Platform_(N),_Zhouwangcheng_Square_Station,_Luoyang_Subway_20240929.jpg"
+}
+]
+},
+"CN-HE-HUAIYANG": {
+"name": "Huaiyang",
+"images": [
+{
+"src": "landmarks/CN-HE-HUAIYANG/1.jpg",
+"author": "Belinsky",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:The_Interior_of_YZ25G.jpg"
+},
+{
+"src": "landmarks/CN-HE-HUAIYANG/2.jpg",
+"author": "坟前的丁香花",
+"license": "CC BY-SA 4.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+"page": "https://commons.wikimedia.org/wiki/File:Quanguozhongdianwenwubaohudanweichangshanjunguchengyizhi.jpg"
+},
+{
+"src": "landmarks/CN-HE-HUAIYANG/3.jpg",
+"author": "坟前的丁香花",
+"license": "CC BY-SA 4.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E5%B8%B8%E5%B1%B1%E9%83%A1%E6%95%85%E5%9F%8E%E9%81%97%E5%9D%80%E4%BD%8D%E4%BA%8E%E7%9F%B3%E9%82%A2%E5%85%AC%E8%B7%AF%E7%9A%84%E5%85%A5%E5%8F%A3.jpg"
+}
+]
+},
+"CN-HE-SHIJIAZHUANG": {
+"name": "Shijiazhuang",
+"images": [
+{
+"src": "landmarks/CN-HE-SHIJIAZHUANG/1.jpg",
+"author": "江上清风1961",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E5%AE%B6%E5%BA%84%E8%A1%97%E6%99%AF-%E5%90%89%E6%80%9D%E5%85%8B%E5%BF%AB%E9%A4%90_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-HE-SHIJIAZHUANG/2.jpg",
+"author": "江上清风1961",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E5%AE%B6%E5%BA%84%E7%81%AB%E8%BD%A6%E7%AB%99_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-HE-SHIJIAZHUANG/3.jpg",
+"author": "江上清风1961",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E5%AE%B6%E5%BA%84%E8%A1%97%E6%99%AF_-_panoramio_-_%E6%B1%9F%E4%B8%8A%E6%B8%85%E9%A3%8E1961_(8).jpg"
+}
+]
+},
+"CN-SD-LINYI": {
+"name": "Linyi",
+"images": [
+{
+"src": "landmarks/CN-SD-LINYI/1.jpg",
+"author": "https://www.flickr.com/photos/kanegen/",
+"license": "CC BY 2.0",
+"license_url": "https://creativecommons.org/licenses/by/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Confucius_Temple_of_Linyi.jpg"
+},
+{
+"src": "landmarks/CN-SD-LINYI/2.jpg",
+"author": "kanegen",
+"license": "CC BY 2.0",
+"license_url": "https://creativecommons.org/licenses/by/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Yinqueshan_Han_tomb_museum.jpg"
+},
+{
+"src": "landmarks/CN-SD-LINYI/3.jpg",
+"author": "kanegen",
+"license": "CC BY 2.0",
+"license_url": "https://creativecommons.org/licenses/by/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Yinqueshan_Han_tomb_museum_2.jpg"
+}
+]
+},
+"CN-SD-QINGDAO": {
+"name": "Qingdao",
+"images": [
+{
+"src": "landmarks/CN-SD-QINGDAO/1.jpg",
+"author": "James Avent",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:Tsingtao_Avent_Farewell_From_Standard_Oil_Office_1938.jpg"
+},
+{
+"src": "landmarks/CN-SD-QINGDAO/2.jpg",
+"author": "George Wenn",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E4%BA%94%E5%9B%9B%E5%B9%BF%E5%9C%BA_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-SD-QINGDAO/3.jpg",
+"author": "武当山人",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E9%9D%92%E5%B2%9B%E5%B8%82%E6%94%BF%E5%B9%BF%E5%9C%BA%E7%81%AF%E5%85%89%E5%96%B7%E6%B3%89_-_panoramio.jpg"
+}
+]
+},
+"CN-SC-KAIJIANG": {
+"name": "Kaijiang",
+"images": [
+{
+"src": "landmarks/CN-SC-KAIJIANG/1.jpg",
+"author": "Nekitarc",
+"license": "CC BY-SA 4.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E6%B1%9F%E5%8C%97%E5%A1%94%E5%9B%BD%E4%BF%9D%E7%A2%91.JPG"
+},
+{
+"src": "landmarks/CN-SC-KAIJIANG/2.jpg",
+"author": "Nekitarc",
+"license": "CC BY-SA 4.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E6%B1%9F%E5%8C%97%E5%A1%94%E7%85%A7%E7%89%87.JPG"
+},
+{
+"src": "landmarks/CN-SC-KAIJIANG/3.jpg",
+"author": "jian zou",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E5%BE%B7%E9%98%B3%E5%B8%82%E4%B8%AD%E6%B1%9F%E5%8E%BF%E6%9D%B0%E5%85%B4%E9%95%87%E5%87%AF%E6%B1%9F%E9%A3%8E%E5%85%89_-_panoramio.jpg"
+}
+]
+},
+"CN-SC-CHENGDU": {
+"name": "Chengdu",
+"images": [
+{
+"src": "landmarks/CN-SC-CHENGDU/1.jpg",
+"author": "Arian Zwegers from Brussels, Belgium",
+"license": "CC BY 2.0",
+"license_url": "https://creativecommons.org/licenses/by/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Chengdu,_Zoo,_panda_(6170336830).jpg"
+},
+{
+"src": "landmarks/CN-SC-CHENGDU/2.jpg",
+"author": "Laika ac from UK",
+"license": "CC BY-SA 2.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Dujiangyan_Giant_Panda_Center_(23832434809).jpg"
+},
+{
+"src": "landmarks/CN-SC-CHENGDU/3.jpg",
+"author": "Laika ac from UK",
+"license": "CC BY-SA 2.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Dujiangyan_Giant_Panda_Center_(24174164006).jpg"
+}
+]
+},
+"CN-CQ-CHONGQING": {
+"name": "Chongqing",
+"images": [
+{
+"src": "landmarks/CN-CQ-CHONGQING/1.jpg",
+"author": "Clark Gregor from New York, NY, United States",
+"license": "CC BY 2.0",
+"license_url": "https://creativecommons.org/licenses/by/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Cityscapes_of_Chongqing_004.jpg"
+},
+{
+"src": "landmarks/CN-CQ-CHONGQING/2.jpg",
+"author": "Clark Gregor from New York, NY, United States",
+"license": "CC BY 2.0",
+"license_url": "https://creativecommons.org/licenses/by/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Cityscapes_of_Chongqing_003.jpg"
+},
+{
+"src": "landmarks/CN-CQ-CHONGQING/3.jpg",
+"author": "Graeme Bray;Cropped and otherwise altered by uploader Mr.choppers",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:Zotye_5008.jpg"
+}
+]
+},
+"CN-GZ-YUXI": {
+"name": "Yuxi",
+"images": []
+},
+"CN-YN-YISA": {
+"name": "Yisa",
+"images": [
+{
+"src": "landmarks/CN-YN-YISA/1.jpg",
+"author": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS059-E-108258_-_View_of_Earth.jpg"
+},
+{
+"src": "landmarks/CN-YN-YISA/2.jpg",
+"author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:ISS034-E-34367_-_View_of_Earth.jpg"
+}
+]
+},
+"CN-YN-KUNMING": {
+"name": "Kunming",
+"images": [
+{
+"src": "landmarks/CN-YN-KUNMING/1.jpg",
+"author": "Hector Garcia from Barcelona, Catalonia, Spain",
+"license": "CC BY-SA 2.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+"page": "https://commons.wikimedia.org/wiki/File:Kunming_square.jpg"
+},
+{
+"src": "landmarks/CN-YN-KUNMING/2.jpg",
+"author": "钟启明",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:Center_of_Kunming_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-YN-KUNMING/3.jpg",
+"author": "钟启明",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:Kunming_-_panoramio.jpg"
+}
+]
+},
+"CN-GZ-TONGREN": {
+"name": "Tongren",
+"images": [
+{
+"src": "landmarks/CN-GZ-TONGREN/1.jpg",
+"author": "Nyx Ning",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E8%B4%B5%E5%B7%9E-%E9%93%9C%E4%BB%81-%E5%BB%BA%E8%AE%BE%E4%B8%AD%E7%9A%84%E5%A4%A7%E5%87%89%E6%A1%A5_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-GZ-TONGREN/2.jpg",
+"author": "Nyx Ning",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E8%B4%B5%E5%B7%9E-%E9%93%9C%E4%BB%81-%E5%A4%A7%E5%87%89%E6%A1%A5_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-GZ-TONGREN/3.jpg",
+"author": "Huangdan2060",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:Road_in_Tongren,_Guizhou,_China,_31_March_2020b.jpg"
+}
+]
+},
+"CN-GZ-KAILI": {
+"name": "Kaili",
+"images": [
+{
+"src": "landmarks/CN-GZ-KAILI/1.jpg",
+"author": "Cardioceras",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:Houttuynia_roots_vegetable_china.jpg"
+},
+{
+"src": "landmarks/CN-GZ-KAILI/2.jpg",
+"author": "qdn_RZH",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:Kaili,_Qiandongnan,_Guizhou,_China_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-GZ-KAILI/3.jpg",
+"author": "MNXANL",
+"license": "CC BY-SA 4.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+"page": "https://commons.wikimedia.org/wiki/File:201908_Platform_2,3_of_Kaili_Station.jpg"
+}
+]
+},
+"CN-HB-WUHAN": {
+"name": "Wuhan",
+"images": [
+{
+"src": "landmarks/CN-HB-WUHAN/1.jpg",
+"author": "Towerman",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E6%AD%A6%E6%B1%89%E4%B8%AD%E5%B1%B1%E5%85%AC%E5%9B%AD1.JPG"
+},
+{
+"src": "landmarks/CN-HB-WUHAN/2.jpg",
+"author": "Towerman",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E6%AD%A6%E6%B1%89%E4%B8%AD%E5%B1%B1%E5%85%AC%E5%9B%AD4.JPG"
+},
+{
+"src": "landmarks/CN-HB-WUHAN/3.jpg",
+"author": "Towerman",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E6%AD%A6%E6%B1%89%E4%B8%AD%E5%B1%B1%E5%85%AC%E5%9B%AD5.JPG"
+}
+]
+},
+"CN-FJ-XIAMEN": {
+"name": "Xiamen",
+"images": [
+{
+"src": "landmarks/CN-FJ-XIAMEN/1.jpg",
+"author": "User:Vmenkov",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:Dongdu_Terminal_-_view_from_the_water_-_DSCF9314.JPG"
+},
+{
+"src": "landmarks/CN-FJ-XIAMEN/2.jpg",
+"author": "User:Vmenkov",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:Xiamen_International_Cruise_Terminal_-_DSCF9305.JPG"
+},
+{
+"src": "landmarks/CN-FJ-XIAMEN/3.jpg",
+"author": "Season You",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:Bombax_ceiba_with_Cracking_Fruits.JPG"
+}
+]
+},
+"CN-GD-SHENZHEN": {
+"name": "Shenzhen",
+"images": [
+{
+"src": "landmarks/CN-GD-SHENZHEN/2.jpg",
+"author": "MEAIYAVT 206 Liowcms",
+"license": "CC BY-SA 4.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+"page": "https://commons.wikimedia.org/wiki/File:SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E5%89%8D%E6%B5%B7_Qianhai_Zone_bus_view_June_2023_Px3_43.jpg"
+},
+{
+"src": "landmarks/CN-GD-SHENZHEN/3.jpg",
+"author": "Dinkun Chen",
+"license": "CC BY-SA 4.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+"page": "https://commons.wikimedia.org/wiki/File:TIANMIAN_VILLAGE,_SHENZHEN_(36).jpg"
+}
+]
+},
+"CN-HI-HAIKOU": {
+"name": "Haikou",
+"images": [
+{
+"src": "landmarks/CN-HI-HAIKOU/1.jpg",
+"author": "Anna Frodesiak",
+"license": "CC0",
+"license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+"page": "https://commons.wikimedia.org/wiki/File:Auto-rickshaw_in_Haikou_-_03.jpg"
+},
+{
+"src": "landmarks/CN-HI-HAIKOU/2.jpg",
+"author": "Anna Frodesiak",
+"license": "CC0",
+"license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+"page": "https://commons.wikimedia.org/wiki/File:Auto-rickshaw_in_Haikou_-_01.jpg"
+},
+{
+"src": "landmarks/CN-HI-HAIKOU/3.jpg",
+"author": "Anna Frodesiak",
+"license": "CC0",
+"license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+"page": "https://commons.wikimedia.org/wiki/File:Root_carving_in_Haikou_-_06.JPG"
+}
+]
+},
+"CN-GX-GUILIN": {
+"name": "Guilin",
+"images": [
+{
+"src": "landmarks/CN-GX-GUILIN/1.jpg",
+"author": "luchangjiang~鲁昌江",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E6%A1%82%E6%9E%97%E5%B8%82%E6%BC%93%E6%B1%9F%E8%BE%B9%E6%99%AF%E8%89%B2_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-GX-GUILIN/2.jpg",
+"author": "luchangjiang~鲁昌江",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E6%A1%82%E6%9E%97%E5%B8%82%E6%BC%93%E6%B1%9F%E8%BE%B9%E6%99%AF%E8%89%B2_-_panoramio_(1).jpg"
+},
+{
+"src": "landmarks/CN-GX-GUILIN/3.jpg",
+"author": "luchangjiang~鲁昌江",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E6%A1%82%E6%9E%97%E5%B8%82%E6%BC%93%E6%B1%9F%E8%BE%B9%E6%99%AF%E8%89%B2_-_panoramio_(5).jpg"
+}
+]
+},
+"CN-ZJ-HANGZHOU": {
+"name": "Hangzhou",
+"images": [
+{
+"src": "landmarks/CN-ZJ-HANGZHOU/1.jpg",
+"author": "Billanews at English Wikipedia",
+"license": "Public domain",
+"license_url": "",
+"page": "https://commons.wikimedia.org/wiki/File:Headquarters_ZJUT.jpg"
+},
+{
+"src": "landmarks/CN-ZJ-HANGZHOU/2.jpg",
+"author": "White-upper",
+"license": "CC0",
+"license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+"page": "https://commons.wikimedia.org/wiki/File:Sir_Run_Run_Shaw_Hall_ZJUT.jpg"
+},
+{
+"src": "landmarks/CN-ZJ-HANGZHOU/3.jpg",
+"author": "江上清风1961",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E6%B5%99%E6%B1%9F%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6_-_panoramio.jpg"
+}
+]
+},
+"CN-JS-NANJING": {
+"name": "Nanjing",
+"images": [
+{
+"src": "landmarks/CN-JS-NANJING/1.jpg",
+"author": "史氏",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E4%BA%AC%E9%BC%93%E6%A5%BC%E5%85%AC%E5%9B%AD_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-JS-NANJING/2.jpg",
+"author": "史氏",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E5%BB%BA%E8%AE%BE%E4%B8%AD%E7%9A%84%E5%8D%97%E4%BA%AC%E7%B4%AB%E5%B3%B0%E5%A4%A7%E5%8E%A6(08%E5%B9%B43%E6%9C%88%E6%91%84)_-_panoramio.jpg"
+},
+{
+"src": "landmarks/CN-JS-NANJING/3.jpg",
+"author": "史氏",
+"license": "CC BY 3.0",
+"license_url": "https://creativecommons.org/licenses/by/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E9%BC%93%E6%A5%BC%E5%B9%BF%E5%9C%BA(1)_-_panoramio.jpg"
+}
+]
+},
+"CN-SH-SHANGHAI": {
+"name": "Shanghai",
+"images": [
+{
+"src": "landmarks/CN-SH-SHANGHAI/1.jpg",
+"author": "Baycrest",
+"license": "CC BY-SA 2.5",
+"license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+"page": "https://commons.wikimedia.org/wiki/File:Ruijin_No.1_Road.jpg"
+},
+{
+"src": "landmarks/CN-SH-SHANGHAI/2.jpg",
+"author": "守望者爱孟",
+"license": "CC BY-SA 3.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+"page": "https://commons.wikimedia.org/wiki/File:%E4%B8%8A%E6%B5%B7%E6%96%B0%E4%B8%96%E7%95%8C%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8.jpg"
+},
+{
+"src": "landmarks/CN-SH-SHANGHAI/3.jpg",
+"author": "N509FZ",
+"license": "CC BY-SA 4.0",
+"license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+"page": "https://commons.wikimedia.org/wiki/File:Baked_clam_(20151004183309).jpg"
+}
+]
+}
+}
