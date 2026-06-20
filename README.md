@@ -143,10 +143,22 @@ Then open the results:
 - **`outputs/timeline.html`** — the ⭐ interactive demo: **scroll** through 30 years and watch your route + cost unfold (no playback — scrolling *is* the time control).
 - **`outputs/dashboard.html`** — the survival probability, the "frugal vs. fancy" comparison, and the seasonal calendar.
 - **`outputs/schedule.ics`** — import into your phone / Google Calendar to see the plan as real calendar events.
+- **`docs/map.html`** — the 🌏 **playable map**: press play and the camera flies through your 30-year route; click any stop for its landmark photos and stats.
 
 ### Reading the interactive timeline
 
 As you scroll, the centered card is "now": the **blue trail** is your route so far (your "footprint"), the **yellow dot** is the current city, and the panel shows the **city, dates, age, monthly cost, total spent, and money left.** Each card's color is the season you arrive in, and its height tracks pace (rapid travel taller, settling shorter). When "money left" turns orange/red, the plan is running low. (Full UI manual: **[MANUAL.md §10](MANUAL.md#10-the-life-timeline-ui)**.)
+
+### Using the County Trajectory Mapper (the map)
+
+**`open docs/map.html`** (or the **[live map](https://alexmorerich.github.io/travelOS/map.html)**) for a *playable* map of the whole 30-year route. The timeline uses **scrolling** as its time control; the map instead has a **playback bar** — think of it as a short video of your life route. A 60-second tour:
+
+1. **Press ▶ (or hit `Space`).** The camera flies from county to county in order; the glowing trail is where you've been, and the season chip + the "Age 50 · Jan 2026" readout update as the months pass. Drag the slider to jump anywhere, the **0.5×–4×** buttons change speed, and `←` / `→` step one month at a time.
+2. **The blue bubbles are counties.** All 3,149 administrative units sit on the map; zoomed out they group into **clusters** (the number = how many counties are inside). Zoom in (scroll, or the `+` button) and they split into individual dots. The **colored dots** are the 61 places you actually live in — colored by the season you arrive, and larger if you return often.
+3. **Click any colored dot** for its card: **3 real photos** of the place, its tier, the **monthly cost**, day/night temperatures, a **comfort gauge** (green = pleasant, red = harsh), and every month across the 30 years you stay there.
+4. **Map / Satellite** (top-left) swaps the clean dark map for satellite imagery; **⛶** (top-right) is fullscreen; **🕑** jumps back to the scroll timeline.
+
+Nothing to install — it reads the same engine output as the timeline, so re-running `npm run simulate` (then `npm run map:data`) updates the map too.
 
 ### Make it about *you*
 
@@ -480,11 +492,22 @@ npm install
 npm run anchors && npm run enrich && npm run simulate
 ```
 
-然后打开：**`outputs/timeline.html`**（⭐ 交互演示，**滚动即时间**——372 个月折叠为约 163 段「居留」，地图随滚动填充路线）、**`outputs/dashboard.html`**（存活率、节俭vs奢华对比、季节日历）、**`outputs/schedule.ics`**（导入手机/谷歌日历）。
+然后打开：**`outputs/timeline.html`**（⭐ 交互演示，**滚动即时间**——372 个月折叠为约 163 段「居留」，地图随滚动填充路线）、**`outputs/dashboard.html`**（存活率、节俭vs奢华对比、季节日历）、**`outputs/schedule.ics`**（导入手机/谷歌日历）、**`docs/map.html`**（🌏 可播放地图：点播放，镜头沿 30 年路线飞行；点任意停留点看地标照片与数据）。
 
 ### 看交互时间轴
 
 滚动时，居中的卡片即“当下”：**蓝色轨迹**是你的路线足迹，**黄点**是当前城市，面板显示**城市、日期、年龄、月度花费、累计支出、剩余资产**。卡片颜色为你抵达时的季节，高度对应节奏（快速旅行更高、定居更矮）。当“剩余资产”变橙/红，说明计划吃紧。（完整 UI 手册见 **[MANUAL.md §10](MANUAL.md#10-the-life-timeline-ui)**。）
+
+### 看县域轨迹地图
+
+**`open docs/map.html`**（或 **[在线地图](https://alexmorerich.github.io/travelOS/map.html)**）是整条 30 年路线的**可播放地图**。时间轴用「滚动即时间」，地图则由**播放条**控制时间——把它当成一段人生路线的短视频。60 秒上手：
+
+1. **按 ▶（或空格键）。** 镜头按顺序在县域间飞行，发光轨迹是走过的路，季节标签与「Age 50 · Jan 2026」读数随月份更新。拖动滑块可跳转，**0.5×–4×** 调速，`←` / `→` 单月步进。
+2. **蓝色气泡是县域。** 全部 3,149 个行政单元都在图上，缩小时聚合为**簇**（数字＝簇内县域数）；放大（滚轮或 `+`）后散为单点。**彩色圆点**是你真正居住的 61 个地方——按抵达季节着色，常回访的更大。
+3. **点任意彩色圆点**看卡片：该地的**3 张真实照片**、层级、**月度花费**、昼夜温度、**舒适度刻度**（绿＝宜人，红＝严酷），以及 30 年间你在此停留的每个月份。
+4. **Map / Satellite**（左上）在暗色地图与卫星影像间切换；**⛶**（右上）全屏；**🕑** 返回滚动时间轴。
+
+无需安装——它读取与时间轴相同的引擎输出；重跑 `npm run simulate`（再 `npm run map:data`）即可更新地图。
 
 ### 改成你自己的
 
