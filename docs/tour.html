@@ -462,8 +462,11 @@ function renderCard(c){
   for(let k=0;k<3;k++){
     const im=imgs[k];
     const bg=im?gradBg(c.id+k):'background:repeating-linear-gradient(135deg,#cdccc6 0 7px,#dad9d3 7px 14px)';
+    // src may be an absolute Commons URL (hotlinked) or a repo-relative path (self-hosted)
+    const src=im?(/^https?:\/\//.test(im.src)?im.src:'./'+im.src):'';
+    const cred=im?`${im.author||''}${im.license?' · '+im.license:''}`.trim().replace(/"/g,'&quot;'):'';
     th+=`<div class="th" style="${bg}">`+
-        (im?`<img loading="lazy" src="./${im.src}" alt="" onerror="this.style.display='none'">`:'')+
+        (im?`<img loading="lazy" referrerpolicy="no-referrer" src="${src}" alt="" title="${cred}" onerror="this.style.display='none'">`:'')+
         (im?'':`<div class="cap">景点 ${k+1}</div>`)+`</div>`;
   }
   $('popthumbs').innerHTML=th;
